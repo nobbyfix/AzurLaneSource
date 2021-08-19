@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "绝地反击",
 	init_effect = "",
+	name = "绝地反击",
+	time = 0,
 	picture = "",
 	desc = "减速，别抽风",
 	stack = 1,

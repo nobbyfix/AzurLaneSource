@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAO3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"来自{namecode:146}的温柔\n\n<size=45>三　奇妙的缘分</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "午餐时间，结束了一上午的工作，伸了伸懒腰。",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "打开点心盒，里面放着各种形状的饼干和小蛋糕，看起来十分诱人。",
 			typewriter = {
 				speed = 0.05,
@@ -114,9 +114,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "只有一半？",
 			typewriter = {
 				speed = 0.05,
@@ -140,9 +140,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "好奇的跟着拿起点心盒的{namecode:146}，向指挥室外走去。",
 			typewriter = {
 				speed = 0.05,
@@ -150,15 +150,15 @@ return {
 			}
 		},
 		{
+			actor = 301640,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我们到了哟指挥官。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -199,9 +199,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "跟着{namecode:146}来到的地方，是重樱生活区的某个房间",
 			typewriter = {
 				speed = 0.05,
@@ -225,12 +225,12 @@ return {
 			}
 		},
 		{
-			say = "哈哈，指挥官想知道小点心是要送给谁的，解释起来比较麻烦，所以就直接带指挥官过来了。",
+			actor = 301640,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哈哈，指挥官想知道小点心是要送给谁的，解释起来比较麻烦，所以就直接带指挥官过来了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -277,9 +277,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "{namecode:146}走到睡眠中的{namecode:16}旁，用盒中的饼干在{namecode:16}的鼻子下擦了一下。",
 			typewriter = {
 				speed = 0.05,
@@ -287,11 +287,11 @@ return {
 			}
 		},
 		{
+			actor = 301140,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301140,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "闻…闻……！是饼干的香味！在哪里？！",
 			typewriter = {
 				speed = 0.05,
@@ -303,8 +303,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -313,12 +313,12 @@ return {
 			}
 		},
 		{
-			say = "{namecode:16}酱起床了哦！我带来了点心给你。",
+			actor = 301640,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "{namecode:16}酱起床了哦！我带来了点心给你。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -333,11 +333,11 @@ return {
 			}
 		},
 		{
+			actor = 301140,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301140,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这……这是！！",
 			typewriter = {
 				speed = 0.05,
@@ -349,8 +349,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -375,9 +375,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "说完，激动地{namecode:16}狼吞虎咽的吃起了点心。",
 			typewriter = {
 				speed = 0.05,
@@ -401,12 +401,12 @@ return {
 			}
 		},
 		{
-			say = "指挥官不要见怪哦，她们之间的关系可是奇妙的很呢。",
+			actor = 301150,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "指挥官不要见怪哦，她们之间的关系可是奇妙的很呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -421,12 +421,12 @@ return {
 			}
 		},
 		{
+			actor = 301640,
 			side = 0,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301640,
-			nameColor = "#a9f548",
 			say = "真是的，请不要说这种会让指挥官误会的话啦！",
 			typewriter = {
 				speed = 0.05,

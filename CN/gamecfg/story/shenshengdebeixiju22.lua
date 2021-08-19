@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU22",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 404010,
 			nameColor = "#ff5c5c",
 			side = 2,
+			bgm = "story-6",
 			dir = 1,
 			say = "哼——果然帝国的那班战舰到了关键时刻一点都靠不住",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>五 不变与变化（上）</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,9 +50,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "通过花札以及其他的交流，与{namecode:93}关系渐渐加深了",
 			typewriter = {
 				speed = 0.05,
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过，工作时的她依然严厉——",
 			typewriter = {
 				speed = 0.05,
@@ -86,9 +86,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过…",
 			typewriter = {
 				speed = 0.05,
@@ -112,9 +112,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -138,9 +138,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "工作上，随着对{namecode:93}的了解加深，越发感受到她有多值得信赖",
 			typewriter = {
 				speed = 0.05,
@@ -164,9 +164,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "总感觉受到{namecode:93}的影响，也开始不禁自觉努力起来了",
 			typewriter = {
 				speed = 0.05,
@@ -190,9 +190,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "像这样得到{namecode:93}称赞的次数也逐渐多了起来。",
 			typewriter = {
 				speed = 0.05,
@@ -216,9 +216,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然开始只想搞好关系，让她不那么严格……",
 			typewriter = {
 				speed = 0.05,
@@ -226,9 +226,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过结果来说，似乎变成了自己习惯了她的节奏——",
 			typewriter = {
 				speed = 0.05,
@@ -252,9 +252,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这样似乎也不坏…",
 			typewriter = {
 				speed = 0.05,
@@ -262,11 +262,11 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官！",
 			effects = {
 				{
@@ -284,9 +284,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "！！?",
 			effects = {
 				{
@@ -321,9 +321,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "突然从{namecode:93}嘴里听到了一句想都没想过的话",
 			typewriter = {
 				speed = 0.05,
@@ -331,12 +331,12 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 307030,
-			nameColor = "#a9f548",
 			say = "那个，不知道您这个休息日有空吗？",
 			typewriter = {
 				speed = 0.05,

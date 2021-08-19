@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KAIXUAN7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"骑士公主的忧郁\n\n<size=45>七 自由鸢尾的凯旋</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "送走了福尔班和勒马尔以后…",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "送走了福尔班和勒马尔以后…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -110,9 +110,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "凯旋握紧了拳头。",
 			typewriter = {
 				speed = 0.05,
@@ -241,9 +241,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "凯旋的脸一下子红了",
 			typewriter = {
 				speed = 0.05,

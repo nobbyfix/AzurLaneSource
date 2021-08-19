@@ -1,7 +1,7 @@
 return {
-	time = 3,
-	name = "全体回满血",
 	init_effect = "",
+	name = "全体回满血",
+	time = 3,
 	picture = "",
 	desc = "全体回满血",
 	stack = 0,
@@ -15,9 +15,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 8519,
 				time = 2,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 8519
 			}
 		}
 	}

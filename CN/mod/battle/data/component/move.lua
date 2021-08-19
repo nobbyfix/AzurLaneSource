@@ -8,6 +8,8 @@ slot1._pos = Vector3.zero
 slot1._isForceMove = false
 slot1._staticState = false
 slot1._speed = Vector3.zero
+slot1._additiveSpeedList = {}
+slot1._additiveSpeed = Vector3.zero
 slot1._corpsLimitSpeed = 0
 slot1._leftCorpsBound = 0
 slot1._rightCorpsBound = 0
@@ -19,106 +21,102 @@ slot1._upBorder = 0
 slot1._downBorder = 0
 slot1._IFF = 0
 
-slot1.Ctor = function (slot0)
-	return
+function slot1.Ctor(slot0)
 end
 
-slot1.GetPos = function (slot0)
+function slot1.GetPos(slot0)
 	return slot0._pos
 end
 
-slot1.SetPos = function (slot0, slot1)
+function slot1.SetPos(slot0, slot1)
 	slot0._pos = slot1
 end
 
-slot1.Update = function (slot0)
+function slot1.Update(slot0)
 	slot0._speed = slot0:GetFinalSpeed()
 end
 
-slot1.FixSpeed = function (slot0, slot1)
+function slot1.FixSpeed(slot0, slot1)
 	slot1:FixSpeed(slot0._speed)
 end
 
-slot1.Move = function (slot0, slot1)
-	slot0._pos.x = slot0._pos.x + slot0._speed.x * (slot1 or 1)
-	slot0._pos.y = slot0._pos.y + slot0._speed.y * (slot1 or 1)
-	slot0._pos.z = slot0._pos.z + slot0._speed.z * (slot1 or 1)
+function slot1.Move(slot0, slot1)
+	slot1 = slot1 or 1
+	slot0._pos.x = slot0._pos.x + slot0._speed.x * slot1
+	slot0._pos.y = slot0._pos.y + slot0._speed.y * slot1
+	slot0._pos.z = slot0._pos.z + slot0._speed.z * slot1
 end
 
-slot1.GetSpeed = function (slot0)
+function slot1.GetSpeed(slot0)
 	return slot0._speed
 end
 
-slot1.SetCorpsArea = function (slot0, slot1, slot2)
+function slot1.SetCorpsArea(slot0, slot1, slot2)
 	slot0._leftCorpsBound = slot1
 	slot0._rightCorpsBound = slot2
 end
 
-slot1.SetBorder = function (slot0, slot1, slot2, slot3, slot4)
+function slot1.SetBorder(slot0, slot1, slot2, slot3, slot4)
 	slot0._leftBorder = slot1
 	slot0._rightBorder = slot2
 	slot0._upBorder = slot3
 	slot0._downBorder = slot4
 end
 
-slot1.GetFinalSpeed = function (slot0)
-	return slot0:BorderLimit(slot0:getInitialSpeed())
+function slot1.GetFinalSpeed(slot0)
+	return slot0:BorderLimit(slot0:AdditiveForce(slot0:getInitialSpeed()))
 end
 
-slot1.CorpsAreaLimit = function (slot0, slot1)
+function slot1.CorpsAreaLimit(slot0, slot1)
 	if slot0._immuneAreaLimit then
 		return slot1
 	end
 
-	slot3 = slot0._corpsLimitSpeed
-
 	if slot0._pos.x < slot0._leftCorpsBound then
-		slot3 = math.max(slot3, 0.1)
-
 		if slot1.x < 0 then
-			slot3 = math.min(10, slot3 * 1.04)
+			slot3 = math.min(10, math.max(slot0._corpsLimitSpeed, 0.1) * 1.04)
 		end
 	elseif slot0._rightCorpsBound < slot2 then
-		slot3 = math.min(slot3, -0.1)
-
 		if slot1.x > 0 then
-			slot3 = math.max(-10, slot3 * 1.04)
+			slot3 = math.max(-10, math.min(slot3, -0.1) * 1.04)
 		end
 	else
-		slot0._corpsLimitSpeed = (slot3 < 0.1 and slot3 > -0.1 and 0) or slot3 * 0.8
-		slot1.x = slot1.x + slot0._corpsLimitSpeed
-
-		return slot1
+		slot3 = slot3 < 0.1 and slot3 > -0.1 and 0 or slot3 * 0.8
 	end
+
+	slot0._corpsLimitSpeed = slot3
+	slot1.x = slot1.x + slot0._corpsLimitSpeed
+
+	return slot1
 end
 
-slot1.BorderLimit = function (slot0, slot1)
+function slot1.BorderLimit(slot0, slot1)
 	if slot0._immuneMaxAreaLimit then
 		return slot1
 	end
 
 	slot2 = slot0._pos
 
-	if (slot1.x < 0 and slot2.x <= slot0._leftBorder) or (slot1.x > 0 and slot0._rightBorder <= slot2.x) then
+	if slot1.x < 0 and slot2.x <= slot0._leftBorder or slot1.x > 0 and slot0._rightBorder <= slot2.x then
 		slot1.x = 0
 	end
 
-	if (slot1.z < 0 and slot2.z <= slot0._downBorder) or (slot1.z > 0 and slot0._upBorder <= slot2.z) then
+	if slot1.z < 0 and slot2.z <= slot0._downBorder or slot1.z > 0 and slot0._upBorder <= slot2.z then
 		slot1.z = 0
 	end
 
 	return slot1
 end
 
-slot1.ImmuneAreaLimit = function (slot0, slot1)
+function slot1.ImmuneAreaLimit(slot0, slot1)
 	slot0._immuneAreaLimit = slot1
 end
 
-slot1.ImmuneMaxAreaLimit = function (slot0, slot1)
+function slot1.ImmuneMaxAreaLimit(slot0, slot1)
 	slot0._immuneMaxAreaLimit = slot1
 end
 
-slot1.getInitialSpeed = function (slot0)
+function slot1.getInitialSpeed(slot0)
 	if slot0._isForceMove then
 		slot0:UpdateForceMove()
 
@@ -140,15 +138,16 @@ slot1.getInitialSpeed = function (slot0)
 	return slot0._autoMoveAi()
 end
 
-slot1.SetForceMove = function (slot0, slot1, slot2, slot3, slot4, slot5)
+function slot1.SetForceMove(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0._isForceMove = true
-	slot0._forceSpeed = slot1.normalized * slot2
-	slot0._forceReduce = slot1.normalized * slot3
+	slot1 = slot1.normalized
+	slot0._forceSpeed = slot1 * slot2
+	slot0._forceReduce = slot1 * slot3
 	slot0._forceLastTime = slot4
 	slot0._decayValve = slot5 or 0
 end
 
-slot1.UpdateForceMove = function (slot0)
+function slot1.UpdateForceMove(slot0)
 	if slot0._forceLastTime <= 0 then
 		slot0:ClearForceMove()
 
@@ -162,49 +161,62 @@ slot1.UpdateForceMove = function (slot0)
 	end
 end
 
-slot1.ClearForceMove = function (slot0)
+function slot1.ClearForceMove(slot0)
 	slot0._isForceMove = false
 	slot0._forceSpeed = nil
 	slot0._forceReduce = nil
 	slot0._forceLastTime = nil
 end
 
-slot1.SetMoveProcess = function (slot0, slot1)
+function slot1.SetMoveProcess(slot0, slot1)
 	slot0._moveProcess = slot1
 end
 
-slot1.SetStaticState = function (slot0, slot1)
+function slot1.SetStaticState(slot0, slot1)
 	slot0._staticState = slot1
 end
 
-slot1.SetAutoMoveAI = function (slot0, slot1, slot2)
-	slot0._autoMoveAi = function ()
-		return slot0:GetDirection():Mul(slot1:GetAttrByName("velocity"))
+function slot1.SetAutoMoveAI(slot0, slot1, slot2)
+	function slot0._autoMoveAi()
+		return uv0:GetDirection():Mul(uv1:GetAttrByName("velocity"))
 	end
 end
 
-slot1.SetFormationCtrlInfo = function (slot0, slot1)
-	slot0._manuallyMove = function ()
-		return slot0:UpdateFleetInfo(slot0)
+function slot1.SetFormationCtrlInfo(slot0, slot1)
+	function slot0._manuallyMove()
+		return uv0:UpdateFleetInfo(uv1)
 	end
 end
 
-slot1.CancelFormationCtrl = function (slot0)
+function slot1.CancelFormationCtrl(slot0)
 	slot0._manuallyMove = nil
 end
 
-slot1.SetMotionVO = function (slot0, slot1)
+function slot1.SetMotionVO(slot0, slot1)
 	slot0._fleetMotionVO = slot1
 end
 
-slot1.UpdateFleetInfo = function (slot0, slot1)
-	slot3 = slot0._fleetMotionVO.GetSpeed(slot2)
+function slot1.UpdateFleetInfo(slot0, slot1)
+	slot3 = slot0._fleetMotionVO:GetSpeed()
 
 	if slot1:EqualZero() then
 		return slot3
 	end
 
-	return slot2:GetDirAngle() * slot1.Add(slot5, slot4):Sub(slot0._pos):Div(25):Add(slot3)
+	return (slot2:GetDirAngle() * slot1):Add(slot2:GetPos()):Sub(slot0._pos):Div(25):Add(slot3)
 end
 
-return
+function slot1.AdditiveForce(slot0, slot1)
+	slot1.x = slot1.x + slot0._additiveSpeed.x
+	slot1.z = slot1.z + slot0._additiveSpeed.z
+
+	return slot1
+end
+
+function slot1.UpdateAdditiveSpeed(slot0, slot1)
+	slot0._additiveSpeed = slot1
+end
+
+function slot1.RemoveAdditiveSpeed(slot0)
+	slot0._additiveSpeed = Vector3.zero
+end

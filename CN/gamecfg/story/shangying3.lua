@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春天的赏樱大会\n\n<size=45>三  祭典的准备</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好～那就开始准备吧～",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 307040,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "一个人忙不过来的吧！看看我带了些谁来～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -67,12 +67,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀呀，这是",
+			actor = 306030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀呀，这是",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -151,12 +151,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀呀，真是热闹呢",
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀呀，真是热闹呢",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

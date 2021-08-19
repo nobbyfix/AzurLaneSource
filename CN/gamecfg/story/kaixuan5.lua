@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KAIXUAN5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"骑士公主的忧郁\n\n<size=45>五 心声</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "一边走一边听凯旋说了起来",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "一边走一边听凯旋说了起来",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -206,9 +206,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "凯旋脸上露出十分悲伤的表情",
 			typewriter = {
 				speed = 0.05,

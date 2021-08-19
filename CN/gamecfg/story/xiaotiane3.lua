@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春风的十字星\n\n<size=45>三  嫌疑与询问</size>",
@@ -18,13 +18,13 @@ return {
 			}
 		},
 		{
+			actor = 201110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			bgm = "story-1",
-			actor = 201110,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "随、随便就怀疑别人还是不大好呢",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			say = "是、是啊！再怎么样至少也要稍微调查一下呢",
+			actor = 201090,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是、是啊！再怎么样至少也要稍微调查一下呢",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -71,15 +71,15 @@ return {
 			}
 		},
 		{
+			actor = 207030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哎呀？小天鹅这是…冬天的锻炼吗？当心感冒了哟？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -104,12 +104,12 @@ return {
 			}
 		},
 		{
-			say = "呜…事、事情是这样的…",
+			actor = 201101,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201101,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜…事、事情是这样的…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -124,9 +124,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "…",
 			typewriter = {
 				speed = 0.05,
@@ -166,15 +166,15 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯…我也没看到那个人呢…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -199,15 +199,15 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "刚才好像看到她进了自己房间，就是那个房间——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"另一个领导者？\n\n<size=45>七　心愿</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·宿舍",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "某日，乔治表示要感谢一下胡德，于是在宿舍中，准备了简单的晚宴。",
 			typewriter = {
 				speed = 0.05,
@@ -76,11 +76,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
 			withoutActorName = true,
-			actor = 204030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "胡德说着，以一如既往优雅的姿态，品尝起了料理。",
 			typewriter = {
@@ -112,10 +112,10 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_107",
-			say = "胡德，我要谢谢你。",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "胡德，我要谢谢你。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -210,11 +210,11 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对你来说是最合适的",
 			typewriter = {
 				speed = 0.05,
@@ -226,8 +226,8 @@ return {
 			},
 			action = {
 				{
-					y = -40,
 					type = "shake",
+					y = -40,
 					delay = 0,
 					dur = 0.4,
 					x = 0,
@@ -236,9 +236,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "确实，最近不光是与乔治五世的合作更加顺畅了。给她做过饭这件事在舰队传开后，其他阵营对她也有了更加全面的看法",
 			typewriter = {
 				speed = 0.05,
@@ -266,9 +266,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "一边和胡德交谈，乔治五世也把脸望向这边。",
 			typewriter = {
 				speed = 0.05,
@@ -283,8 +283,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "无论如何，我要感谢你，让我能够认清我的本心，也让我能够和指挥官的关系更进一步。",
 			typewriter = {
@@ -300,8 +300,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "都说“想要抓住一个人的心，就要先抓住他的胃”，现在，我的心已经完全被指挥官抓住了呢。",
 			typewriter = {
@@ -314,11 +314,11 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那可真是可喜可贺。",
 			typewriter = {
 				speed = 0.05,
@@ -339,8 +339,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，抱歉抱歉。直接说这个或许太突然了？下次我会注意一下气氛的",
 			typewriter = {
@@ -372,8 +372,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过——能让我满足的人，我可是不会那么容易放走的哦？",
 			typewriter = {
@@ -386,9 +386,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "正和她正正堂堂的行事风格一样的，直接而又干脆的告白。",
 			typewriter = {
 				speed = 0.05,

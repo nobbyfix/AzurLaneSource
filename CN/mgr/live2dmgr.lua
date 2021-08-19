@@ -2,32 +2,31 @@ pg = pg or {}
 pg.Live2DMgr = singletonClass("Live2DMgr")
 this = pg.Live2DMgr
 
-this.GetLive2DModelAsync = function (slot0, slot1, slot2)
-	slot0:AddRefCount(slot1)
-	LoadAndInstantiateAsync("live2d", slot1, function (slot0)
-		if CSharpVersion < 18 and slot0 ~= nil then
-			slot0:GetComponent(tolua.findtype("Live2D.Cubism.Framework.Physics.CubismPhysicsController")).enabled = false
-			slot0.GetComponent(tolua.findtype("Live2D.Cubism.Framework.Physics.CubismPhysicsController")).enabled = true
-		end
+function this.GetLive2DModelAsync(slot0, slot1, slot2)
+	slot3, slot4 = HXSet.autoHxShift("live2d/", slot1)
 
-		slot0(slot0)
+	slot0:AddRefCount(slot4)
+	LoadAndInstantiateAsync("live2d", slot1, function (slot0)
+		uv0(slot0)
 	end)
 end
 
-this.TryReleaseLive2dRes = function (slot0, slot1)
-	if slot0:SubRefCount(slot1) then
+function this.TryReleaseLive2dRes(slot0, slot1)
+	slot2, slot3 = HXSet.autoHxShift("live2d/", slot1)
+
+	if slot0:SubRefCount(slot3) then
 		slot0:ReleaseLive2dRes(slot1)
 	end
 end
 
-this.ReleaseLive2dRes = function (slot0, slot1)
-	ResourceMgr.Inst:ClearBundleRef("live2d/" .. slot1, true, true)
+function this.ReleaseLive2dRes(slot0, slot1)
+	slot2, slot3 = HXSet.autoHxShift("live2d/", slot1)
+
+	ResourceMgr.Inst:ClearBundleRef("live2d/" .. slot3, true, true)
 end
 
-this.AddRefCount = function (slot0, slot1)
-	if not slot0.refCounterDic then
-		slot0.refCounterDic = {}
-	end
+function this.AddRefCount(slot0, slot1)
+	slot0.refCounterDic = slot0.refCounterDic or {}
 
 	if not slot0.refCounterDic[slot1] then
 		slot0.refCounterDic[slot1] = 1
@@ -36,7 +35,7 @@ this.AddRefCount = function (slot0, slot1)
 	end
 end
 
-this.SubRefCount = function (slot0, slot1)
+function this.SubRefCount(slot0, slot1)
 	if slot0.refCounterDic and slot0.refCounterDic[slot1] then
 		slot0.refCounterDic[slot1] = slot0.refCounterDic[slot1] - 1
 
@@ -51,5 +50,3 @@ this.SubRefCount = function (slot0, slot1)
 
 	return false
 end
-
-return

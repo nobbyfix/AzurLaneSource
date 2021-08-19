@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 2,
 			side = 0,
-			dir = -1,
-			bgm = "bsm-3",
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
 			say = "这是…航空母舰的舰载机吗",
+			bgm = "bsm-3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -57,8 +57,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "防空火力展开，击落它们！",
 			typewriter = {
 				speed = 0.05,
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
-			side = 0,
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
 			actor = 405010,
+			side = 0,
 			nameColor = "#ffde38",
 			say = "Feuer！",
+			dir = -1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,

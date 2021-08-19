@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG1",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -25,16 +25,16 @@ return {
 			}
 		},
 		{
+			actor = 307040,
 			side = 2,
+			nameColor = "#a9f548",
+			say = "还没准备好吗！？对方已经展开反击了！",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-2",
-			actor = 307040,
-			nameColor = "#a9f548",
-			say = "还没准备好吗！？对方已经展开反击了！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -149,12 +149,12 @@ return {
 			}
 		},
 		{
+			actor = 307020,
 			nameColor = "#a9f548",
 			side = 2,
+			say = "啊——",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			actor = 307020,
-			say = "啊——",
 			flashN = {
 				color = {
 					1,
@@ -197,16 +197,16 @@ return {
 			}
 		},
 		{
-			side = 2,
 			actorName = "{namecode:91}",
+			side = 2,
+			nameColor = "#a9f548",
+			say = "{namecode:92}，{namecode:92}！！",
 			dir = 1,
 			blackBg = true,
 			soundeffect = "event:/battle/boom2",
-			nameColor = "#a9f548",
-			say = "{namecode:92}，{namecode:92}！！",
 			flashin = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					1,
 					0
@@ -251,8 +251,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>…………</size>",
@@ -294,15 +294,15 @@ return {
 			}
 		},
 		{
+			say = "二十年前——",
 			side = 2,
 			bgName = "bg_story_tiancheng1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-tiancheng",
-			say = "二十年前——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -323,8 +323,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -339,11 +339,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 1,
+			nameColor = "#a9f548",
 			bgName = "bg_story_tiancheng1",
-			dir = 1,
 			actorName = "{namecode:92}",
+			dir = 1,
 			say = "啊——！！！",
 			dialogShake = {
 				speed = 0.09,
@@ -360,8 +360,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -376,8 +376,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -392,8 +392,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -408,8 +408,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -424,8 +424,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -440,11 +440,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "收拾好驹台，我们再战一局！",
 			typewriter = {
 				speed = 0.05,
@@ -466,12 +466,12 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			nameColor = "#a9f548",
 			say = "啊——！！！",
 			dialogShake = {
 				speed = 0.09,
@@ -488,12 +488,12 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			nameColor = "#a9f548",
 			say = "姐姐大人十一连胜～",
 			typewriter = {
 				speed = 0.05,
@@ -505,8 +505,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -521,8 +521,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -537,8 +537,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -553,8 +553,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -569,8 +569,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -585,8 +585,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -601,15 +601,15 @@ return {
 			}
 		},
 		{
+			actor = 305060,
 			stopbgm = true,
 			side = 2,
-			dir = 1,
-			actor = 305060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "姐姐大人，我去探查了一下~这一届的候选者们都很兴致昂扬呢，这一次的演习有得看了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "战术-炮击II",
 	init_effect = "",
-	id = 40041,
+	name = "战术-炮击II",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 40041,
 	icon = 40040,
 	last_effect = "",
 	effect_list = {

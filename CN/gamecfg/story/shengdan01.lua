@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN01",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -31,14 +31,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101050,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇！……原来是指挥官啊，别在人家正在想事情的时候吓人嘛",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -127,14 +127,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "锵锵~节日特派记者格里德利，准备出发啦~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

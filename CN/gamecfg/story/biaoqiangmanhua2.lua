@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIAOQIANGMANHUA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"月刊漫画Javelin\n\n<size=45>二　抽屉里的谜团</size>",
@@ -17,16 +17,16 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
-			bgm = "story-1",
 			actor = 201210,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对不起我迟到了——！",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -99,15 +99,15 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这可不能作为迟到的理由呢……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -132,11 +132,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我是说真的啦！遇到了一只会说话的指挥喵，说着“会遇到命运之人”什么的！",
 			typewriter = {
 				speed = 0.05,
@@ -148,8 +148,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"才不是小孩子！\n\n<size=45>一 功劳！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "舰队的事务，需要在各个部门之间往返。",
 			typewriter = {
 				speed = 0.05,
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "有时是传递文件，有时是交付材料……总之，免不了一顿奔波。",
 			typewriter = {
 				speed = 0.05,
@@ -74,9 +74,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过，一个小帮手的出现，着实减轻了不少这方面的负担——",
 			typewriter = {
 				speed = 0.05,
@@ -88,15 +88,15 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -121,8 +121,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1,
 					dur = 0.15,
 					x = 0,
@@ -134,8 +134,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "让我带给后勤部门的慰问品，已经全部送到啦！",
 			typewriter = {
@@ -167,8 +167,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "今天的仓库管理报告！按照指挥官的要求拿过来了！",
 			typewriter = {
@@ -187,11 +187,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "还有什么要我做的吗？",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "明白了！",
 			typewriter = {
@@ -226,15 +226,15 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "♪~~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -262,8 +262,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我看看…今天我一共帮指挥官完成了三次跑腿任务，分别是科研部门，学院和后勤——",
 			typewriter = {
@@ -279,8 +279,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "噢噢，我超级厉害！",
 			typewriter = {
@@ -296,8 +296,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			withoutActorName = true,
 			dir = 1,
+			withoutActorName = true,
 			actor = 108030,
 			nameColor = "#a9f548",
 			say = "棘鳍一脸洋洋得意的样子。",
@@ -324,9 +324,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 108030,
 			dir = 1,
 			optionFlag = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
 			say = "哼哼，指挥官没有我就什么都做不到了呢！",
 			typewriter = {
@@ -339,8 +339,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -367,9 +367,9 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 108030,
 			dir = 1,
 			optionFlag = 2,
-			actor = 108030,
 			nameColor = "#a9f548",
 			say = "！？唔——指挥官，别把我当成小孩子！",
 			typewriter = {
@@ -382,8 +382,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

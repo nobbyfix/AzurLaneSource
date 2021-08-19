@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JUNHEBOSS5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"穿越彼方的水线\n\n<size=45>五　{namecode:175}SIDE</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu2",
+			actor = 305110,
 			side = 2,
+			bgName = "bg_story_nepu2",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "cw-level",
-			actor = 305110,
-			nameColor = "#a9f548",
 			say = "演习辛苦了，{namecode:22}、{namecode:97}、还有{namecode:175}。指挥官也赞扬了这次的联合演习哦。",
+			bgm = "cw-level",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,11 +52,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真是的……最后简直一团乱嘛！演习用的是模拟弹真是万幸啊！",
 			typewriter = {
 				speed = 0.05,
@@ -68,8 +68,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -113,8 +113,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "………………！？！？",
 			typewriter = {
@@ -130,8 +130,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "请容我坚——————————————决拒绝！！",
 			dialogShake = {
@@ -149,8 +149,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -161,15 +161,15 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			blackBg = true,
-			bgm = "story-2",
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（回想起来，真是没想到会变成这样呢……）",
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -212,10 +212,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（明明以为只是个门面职位，才随便答允下来的——！）",
 			typewriter = {
 				speed = 0.05,
@@ -245,10 +245,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（真是够了，我最不擅长应对这种脑子空空行事随便的家伙了！）",
 			typewriter = {
 				speed = 0.05,
@@ -262,10 +262,10 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（但不管怎么说都是同伴啊？又不能放着不管对吧？结果还是只能靠这边努力想办法了不是嘛！）",
 			typewriter = {
 				speed = 0.05,
@@ -295,10 +295,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（那还用说吗！谁想到指挥官的舰队竟然强得那么离谱啊！）",
 			typewriter = {
 				speed = 0.05,
@@ -312,10 +312,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（不出奇招的话，绝对会被秒杀的吧！？这不是没办法嘛！明明没打算引人注目的！）",
 			typewriter = {
 				speed = 0.05,
@@ -329,10 +329,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（而且如果是其他人来想的话，绝对一下就被指挥官看穿了吧？所以还是得由我这个外人来不是嘛！）",
 			typewriter = {
 				speed = 0.05,
@@ -392,8 +392,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>如果在这里的话，说不定我也——</size>",
@@ -402,17 +402,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 305110,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "cw-story",
-			actor = 305110,
-			nameColor = "#a9f548",
 			say = "没错，就算是没有舰历的舰船，跟港区的大家也不会有隔阂的",
+			bgm = "cw-story",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -472,8 +472,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我……",
 			typewriter = {
@@ -537,8 +537,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（是啊。如果是这里的话，我，还有“她”也说不定……）",
 			typewriter = {
@@ -554,9 +554,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			actor = 900200,
 			dir = 1,
 			blackBg = true,
-			actor = 900200,
 			nameColor = "#a9f548",
 			say = "有缘再相见吧——",
 			typewriter = {

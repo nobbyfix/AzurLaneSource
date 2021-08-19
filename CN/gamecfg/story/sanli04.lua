@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1,
 	mode = 2,
-	fadeType = 2,
 	id = "SANLI04",
+	fadeType = 2,
 	fadein = 1,
 	scripts = {
 		{
 			actor = 900050,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "没想到在这个时代还能听到如此振奋人心的发言，真是一群出色的后辈们呀！",
 			typewriter = {
 				speed = 0.05,
@@ -22,12 +22,12 @@ return {
 			}
 		},
 		{
-			say = "看来是赶上了呢，多亏发现了{namecode:95}放出的侦察机~",
+			actor = 900051,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 900051,
 			actorName = "？？？",
+			dir = -1,
+			say = "看来是赶上了呢，多亏发现了{namecode:95}放出的侦察机~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -45,8 +45,8 @@ return {
 			actor = 900050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "就是那个会在天上飞的玩意吗？…真是跟不上时代了呀哈哈哈",
 			typewriter = {
 				speed = 0.05,
@@ -61,8 +61,8 @@ return {
 			actor = 307050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:95}",
+			dir = 1,
 			say = "…这个声音…",
 			typewriter = {
 				speed = 0.05,
@@ -77,8 +77,8 @@ return {
 			actor = 307060,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:96}",
+			dir = 1,
 			say = "这个传说中的旗帜…",
 			typewriter = {
 				speed = 0.05,
@@ -93,8 +93,8 @@ return {
 			actor = 307060,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:96}",
+			dir = 1,
 			say = "难道真的是…",
 			typewriter = {
 				speed = 0.05,
@@ -106,12 +106,12 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			mode = 3,
-			side = 0,
 			bgName = "bg_story_mikasa",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 307050,
+			side = 0,
 			actorName = "{namecode:95}&{namecode:96}",
 			say = "！！…重樱联合曾经的大旗舰——",
 			effects = {
@@ -130,12 +130,12 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			actorName = "{namecode:95}&{namecode:96}",
-			side = 0,
 			bgName = "bg_story_mikasa",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 307050,
+			side = 0,
 			mode = 3,
 			say = "<size=52.5>{namecode:82}！！</size>",
 			dialogShake = {
@@ -155,11 +155,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "后辈们，拿出你们的气势来！战斗才刚刚开始！！！",
 			typewriter = {
@@ -172,11 +172,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "绳锯木断，滴水穿石，今日的努力将被未来铭记",
 			typewriter = {
@@ -189,11 +189,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "而未来，将因你们今日的努力改变",
 			typewriter = {
@@ -206,11 +206,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "再次一起奋战吧！",
 			typewriter = {
@@ -223,11 +223,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "今日晴空万里，波澜壮阔——",
 			typewriter = {
@@ -240,11 +240,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "新生重樱联合",
 			typewriter = {
@@ -257,11 +257,11 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
-			side = 0,
-			nameColor = "#a9f548",
-			dir = 1,
 			actor = 305110,
+			actorName = "{namecode:82}",
+			nameColor = "#a9f548",
+			side = 0,
+			dir = 1,
 			mode = 3,
 			say = "——出击！",
 			typewriter = {

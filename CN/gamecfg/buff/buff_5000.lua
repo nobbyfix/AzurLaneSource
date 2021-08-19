@@ -29,14 +29,14 @@ return {
 	{
 		time = 10
 	},
-	time = 5,
-	name = "火力干扰",
 	init_effect = "",
-	id = 5000,
+	name = "火力干扰",
+	time = 5,
+	color = "yellow",
 	picture = "",
 	desc = "装填降低30%，自身伤害降低15%",
 	stack = 1,
-	color = "yellow",
+	id = 5000,
 	icon = 5000,
 	last_effect = "Darkness",
 	effect_list = {
@@ -47,8 +47,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -3000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = -3000
 			}
 		},
 		{
@@ -58,8 +58,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.15,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = -0.15
 			}
 		}
 	}

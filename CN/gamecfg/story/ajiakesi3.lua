@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AJIAKESI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"我的美好回忆\n\n<size=45>三 秘书舰的责任</size>",
@@ -81,11 +81,11 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好了，今天的秘书舰工作到此结束。指挥官，辛苦啦。",
 			typewriter = {
 				speed = 0.05,
@@ -151,8 +151,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			nameColor = "#a9f548",
+			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			say = "阿贾克斯完成工作非常出色，但她作为秘书舰最大的特点却是——",
@@ -166,9 +166,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "属于“打杂”范围的业务真的一点都不碰。",
 			typewriter = {
 				speed = 0.05,
@@ -260,8 +260,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			nameColor = "#a9f548",
+			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,

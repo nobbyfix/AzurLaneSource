@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TEATIME4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -301,11 +301,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "此刻的{namecode:11}……",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -330,8 +330,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "【北纬21°西经158°】",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,12 +342,12 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "{namecode:11}",
 			dir = 1,
 			blackBg = true,
-			actor = 301090,
-			actorName = "{namecode:11}",
 			say = "好像越来越热了，衣服都湿透了……嗯，一定是因为我跑得太快了！前面有个路标，Honolulu？什么意思？算了，只要一路向前应该就没问题！",
 			typewriter = {
 				speed = 0.05,

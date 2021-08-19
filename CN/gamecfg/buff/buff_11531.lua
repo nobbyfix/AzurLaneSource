@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.2
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.4,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.4
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.222,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.222
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.422,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.422
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.244,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.244
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.444,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.444
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.266,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.266
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.466,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.466
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.288,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.288
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.488,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.488
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.31,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.31
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.51,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.51
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.332,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.332
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.532,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.532
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.354,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.354
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.554,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.554
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.376,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.376
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.576,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.576
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.4,
-					attr = "manualEnhancement"
+					attr = "manualEnhancement",
+					number = 0.4
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.6,
-					attr = "initialEnhancement"
+					attr = "initialEnhancement",
+					number = 0.6
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "海盗之魂",
 	init_effect = "jinengchufared",
-	id = 11531,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "提高伤害",
 	stack = 1,
-	color = "red",
+	id = 11531,
 	icon = 11530,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.2,
-				attr = "manualEnhancement"
+				attr = "manualEnhancement",
+				number = 0.2
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.4,
-				attr = "initialEnhancement"
+				attr = "initialEnhancement",
+				number = 0.4
 			}
 		}
 	}

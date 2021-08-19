@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "潜艇下潜点燃抗性",
 	init_effect = "",
-	id = 314,
+	name = "潜艇下潜点燃抗性",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "起火概率降低100%",
 	stack = 1,
-	color = "blue",
+	id = 314,
 	icon = 314,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "igniteResist"
+				attr = "igniteResist",
+				number = 1
 			}
 		},
 		{

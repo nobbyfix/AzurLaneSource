@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 307060,
 			side = 2,
-			say = "说归说...但实际上要怎么唤醒{namecode:74}我们其实也一点头绪都没有呀...",
-			dir = 1,
 			bgm = "nagato-map",
+			dir = 1,
+			say = "说归说...但实际上要怎么唤醒{namecode:74}我们其实也一点头绪都没有呀...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -50,14 +50,14 @@ return {
 			}
 		},
 		{
-			say = "轰——",
-			side = 2,
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom1",
+			say = "轰——",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -112,8 +112,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -124,10 +124,10 @@ return {
 		{
 			actor = 0,
 			side = 2,
-			withoutPainting = true,
-			dir = 1,
 			actorName = "？？？",
 			say = "哼，哪里来的一群笨蛋，居然会跟这个木头脑袋在那边浪费时间？",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,14 +208,14 @@ return {
 			}
 		},
 		{
-			say = "轰——",
-			side = 2,
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom1",
+			say = "轰——",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -233,14 +233,14 @@ return {
 			}
 		},
 		{
-			say = "轰——",
-			side = 2,
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom1",
+			say = "轰——",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,

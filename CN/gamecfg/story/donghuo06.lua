@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO06",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			actorName = "华盛顿",
 			side = 0,
+			actorName = "华盛顿",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -19,8 +19,8 @@ return {
 			}
 		},
 		{
-			actorName = "北卡罗来纳",
 			side = 0,
+			actorName = "北卡罗来纳",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -31,8 +31,8 @@ return {
 			}
 		},
 		{
-			actorName = "海伦娜",
 			side = 0,
+			actorName = "海伦娜",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -43,8 +43,8 @@ return {
 			}
 		},
 		{
-			actorName = "华盛顿",
 			side = 0,
+			actorName = "华盛顿",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -55,8 +55,8 @@ return {
 			}
 		},
 		{
-			actorName = "海伦娜",
 			side = 0,
+			actorName = "海伦娜",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -67,8 +67,8 @@ return {
 			}
 		},
 		{
-			actorName = "华盛顿",
 			side = 0,
+			actorName = "华盛顿",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -79,8 +79,8 @@ return {
 			}
 		},
 		{
-			actorName = "华盛顿",
 			side = 0,
+			actorName = "华盛顿",
 			bgName = "bg_story_wing0",
 			nameColor = "#a9f548",
 			dir = 1,

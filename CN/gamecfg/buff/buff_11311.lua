@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 500
 				}
 			},
 			{
@@ -30,8 +30,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 500
 				}
 			}
 		}
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 440,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 440
 				}
 			},
 			{
@@ -56,8 +56,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 660
 				}
 			},
 			{
@@ -67,8 +67,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 660,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 660
 				}
 			}
 		}
@@ -82,8 +82,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 480,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 480
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 820,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 820
 				}
 			},
 			{
@@ -104,8 +104,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 820,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 820
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 550
 				}
 			},
 			{
@@ -130,8 +130,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			},
 			{
@@ -141,8 +141,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1000
 				}
 			}
 		}
@@ -156,8 +156,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 610
 				}
 			},
 			{
@@ -167,8 +167,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1160
 				}
 			},
 			{
@@ -178,8 +178,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1160
 				}
 			}
 		}
@@ -193,8 +193,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 670,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 670
 				}
 			},
 			{
@@ -204,8 +204,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1320,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1320
 				}
 			},
 			{
@@ -215,8 +215,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1320,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1320
 				}
 			}
 		}
@@ -230,8 +230,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 750,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 750
 				}
 			},
 			{
@@ -241,8 +241,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1500
 				}
 			},
 			{
@@ -252,8 +252,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1500
 				}
 			}
 		}
@@ -267,8 +267,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 820,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 820
 				}
 			},
 			{
@@ -278,8 +278,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1660
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1660
 				}
 			}
 		}
@@ -304,8 +304,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 890,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 890
 				}
 			},
 			{
@@ -315,8 +315,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1820
 				}
 			},
 			{
@@ -326,8 +326,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1820
 				}
 			}
 		}
@@ -341,8 +341,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -352,8 +352,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2000
 				}
 			},
 			{
@@ -363,20 +363,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "联合舰队旗舰-长门",
 	init_effect = "jinengchufared",
-	id = 11311,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高炮击、装填、命中属性",
 	stack = 1,
-	color = "yellow",
+	id = 11311,
 	icon = 11310,
 	last_effect = "",
 	blink = {
@@ -394,8 +394,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 400,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 400
 			}
 		},
 		{
@@ -405,8 +405,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 500
 			}
 		},
 		{
@@ -416,8 +416,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 500
 			}
 		}
 	}

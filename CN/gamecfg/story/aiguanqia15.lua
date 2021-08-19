@@ -1,15 +1,15 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA15",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			expression = 5,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "哈啊…哈啊…总算…赢了…",
 			typewriter = {
@@ -115,8 +115,8 @@ return {
 			expression = 4,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "{namecode:13}酱还真是什么都知道呢～好棒好棒♪",
 			typewriter = {
@@ -147,8 +147,8 @@ return {
 			expression = 4,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "啊～真是太可爱了～摸摸～",
 			typewriter = {
@@ -179,8 +179,8 @@ return {
 			actor = 10400030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "绊爱",
+			dir = 1,
 			say = "啊，没错！好～～大家看好了～！",
 			typewriter = {
 				speed = 0.05,
@@ -192,11 +192,11 @@ return {
 			}
 		},
 		{
+			actor = 10400040,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 10400040,
 			actorName = "绊爱",
+			dir = 1,
 			say = "锵锵～！虚拟玩家绊爱，登场～！",
 			flashN = {
 				color = {
@@ -276,8 +276,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "绊爱",
 			say = "呵呵呵，大家就尽管依靠我这艘大船吧！",
 			typewriter = {

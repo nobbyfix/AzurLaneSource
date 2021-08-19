@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAQINGHUAYU3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"大青花鱼的“陷阱”\n\n<size=45>三　后宅的大青花鱼</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·后宅",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·后宅",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "看招！",
 			typewriter = {
 				speed = 0.05,
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -75,8 +75,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "拉菲，小心！",
 			typewriter = {
@@ -89,13 +89,13 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "欸？",
+			soundeffect = "event:/battle/boom2",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -159,9 +159,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "看起来几人是在后宅玩着游戏。",
 			typewriter = {
 				speed = 0.05,
@@ -204,8 +204,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -221,8 +221,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不，现在放弃还太早了。",
 			typewriter = {
@@ -270,8 +270,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这次就先听我的指挥试试吧！",
 			typewriter = {
@@ -284,8 +284,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -342,11 +342,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那就……mission restart！",
 			typewriter = {
 				speed = 0.05,
@@ -358,8 +358,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.4,
 					dur = 0.2,
 					x = 0,
@@ -368,13 +368,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "（30分钟后）",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -395,11 +395,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这就是最后一击了！接招吧，四人合体技——“无限冲击”！",
 			typewriter = {
 				speed = 0.05,
@@ -411,8 +411,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -421,10 +421,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_room",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_story_room",
+			side = 0,
 			dir = 1,
 			actor = 106011,
 			actorName = "长岛&拉菲&本森",
@@ -462,10 +462,10 @@ return {
 			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			soundeffect = "event:/battle/cannon-356mm",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "boss，倒下了……",
+			soundeffect = "event:/battle/cannon-356mm",
 			effects = {
 				{
 					active = false,
@@ -482,11 +482,11 @@ return {
 			}
 		},
 		{
+			actor = 101160,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 101160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！我们赢了！",
 			typewriter = {
 				speed = 0.05,
@@ -498,8 +498,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -527,8 +527,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼哼，轻轻松松！在我大青花鱼面前可没有打不过去的关卡！",
 			typewriter = {
@@ -541,8 +541,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -551,9 +551,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "大青花鱼似乎非常开心。",
 			typewriter = {
 				speed = 0.05,

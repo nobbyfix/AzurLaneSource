@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>二 教教我，{namecode:93}老师！</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "听说{namecode:93}好像喜欢花札的样子，就从花札入手吧！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -48,15 +48,15 @@ return {
 			}
 		},
 		{
+			say = "港区·重樱宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·重樱宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -97,12 +97,12 @@ return {
 			}
 		},
 		{
-			say = "哦……终于到了这场决定性的战役了！",
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哦……终于到了这场决定性的战役了！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -117,11 +117,11 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "在那时，今川家还是称霸东海道的……咦，这不是指挥官吗？",
 			typewriter = {
 				speed = 0.05,
@@ -187,11 +187,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那就听一听吧。",
 			typewriter = {
@@ -204,15 +204,15 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……信长的奇袭竟然直取了义元的首级，这是谁也没想到的。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -253,15 +253,15 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "今天的课就上到这里了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -286,9 +286,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "不愧是{namecode:93}，讲解的十分简洁明了，而且面面俱到。",
 			typewriter = {
 				speed = 0.05,
@@ -296,11 +296,11 @@ return {
 			}
 		},
 		{
+			actor = 301590,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯嗯……原来如此，谢谢{namecode:93}老师！",
 			typewriter = {
 				speed = 0.05,
@@ -312,8 +312,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -354,9 +354,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "其他课程……总觉得{namecode:93}好像什么都知道的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -380,11 +380,11 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "话说回来，您来找我有什么事吗？",
 			typewriter = {
 				speed = 0.05,

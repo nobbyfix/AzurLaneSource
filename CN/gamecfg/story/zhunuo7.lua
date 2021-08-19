@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHUNUO7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "热心&阿卡司塔",
 			actor = 201030,
+			actorShadow = true,
+			actorName = "热心&阿卡司塔",
+			side = 0,
 			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",

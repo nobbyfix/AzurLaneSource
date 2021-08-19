@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 304050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			stopbgm = true,
+			dir = -1,
 			say = "呀，一大早的，今天的演习还没开始呢，大家都这么着急是出了什么事情吗？",
 			typewriter = {
 				speed = 0.05,
@@ -26,8 +26,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 301790,
+			dir = -1,
 			say = "哎呀，{namecode:161}大人你来得正好，这边情况不太妙，快跟我来！",
 			typewriter = {
 				speed = 0.05,
@@ -57,17 +57,17 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 1,
+			nameColor = "#a9f548",
+			bgName = "bg_story_tiancheng2",
+			actorName = "{namecode:92}",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_tiancheng2",
-			bgm = "story-tiancheng",
-			actorName = "{namecode:92}",
 			say = "哈？！你是笨蛋吗？",
+			bgm = "story-tiancheng",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -88,8 +88,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -100,8 +100,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -112,8 +112,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -124,8 +124,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -136,8 +136,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -148,8 +148,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -160,8 +160,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -172,8 +172,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -184,8 +184,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "{namecode:91}",
+			nameColor = "#a9f548",
 			bgName = "bg_story_tiancheng2",
 			side = 0,
 			dir = 1,
@@ -201,8 +201,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "{namecode:92}",
+			nameColor = "#a9f548",
 			bgName = "bg_story_tiancheng2",
 			side = 1,
 			dir = 1,
@@ -218,9 +218,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng2",
-			dir = 1,
 			say = "——哐！（闪光）",
 			dialogShake = {
 				speed = 0.09,
@@ -253,8 +253,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "{namecode:92}",
+			nameColor = "#a9f548",
 			bgName = "bg_story_tiancheng2",
 			side = 1,
 			dir = 1,
@@ -270,9 +270,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng2",
-			dir = 1,
 			say = "伴随着强烈的杀气和一声巨响，吵闹声戛然而止。",
 			typewriter = {
 				speed = 0.05,
@@ -280,8 +280,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -292,8 +292,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -304,9 +304,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng2",
-			dir = 1,
 			say = "——哐！（闪光）",
 			dialogShake = {
 				speed = 0.09,
@@ -339,9 +339,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng2",
-			dir = 1,
 			say = "又是一声巨响。",
 			typewriter = {
 				speed = 0.05,
@@ -349,8 +349,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -361,8 +361,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -373,9 +373,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "{namecode:161}将{namecode:91}和{namecode:92}的双手强行握在了一起，露出了和蔼的笑容。",
 			typewriter = {
 				speed = 0.05,
@@ -383,9 +383,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "只不过，两人的头顶上莫名出现了两个鲜红的大包。",
 			typewriter = {
 				speed = 0.05,
@@ -393,9 +393,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "——这个女人，很恐怖！！！",
 			typewriter = {
 				speed = 0.05,
@@ -403,9 +403,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "围观的人们瞬间就明白了这个道理。这种从和蔼的笑容里透露出的杀气，有着瞬间将周围一切生物灭杀的能力。",
 			typewriter = {
 				speed = 0.05,
@@ -413,8 +413,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng3",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -425,9 +425,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "{namecode:91}和{namecode:92}眼角的泪水，不禁流了下来。",
 			typewriter = {
 				speed = 0.05,
@@ -435,8 +435,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng3",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -447,8 +447,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:161}",
 			side = 0,
+			actorName = "{namecode:161}",
 			bgName = "bg_story_tiancheng3",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -459,9 +459,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "然而两人握着的双手却越绷越紧，头上也逐渐绷出青筋。",
 			typewriter = {
 				speed = 0.05,
@@ -469,9 +469,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "不过突然，两人感觉到边上的杀气再次涌现了上来，急忙同时甩开了手，扭头朝两个方向走去。",
 			typewriter = {
 				speed = 0.05,
@@ -479,8 +479,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:92}",
 			side = 1,
+			actorName = "{namecode:92}",
 			bgName = "bg_story_tiancheng3",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -491,8 +491,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:91}",
 			side = 0,
+			actorName = "{namecode:91}",
 			bgName = "bg_story_tiancheng3",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -503,9 +503,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "围观的人群也逐渐散开，回到了今天演习的筹备工作当中。",
 			typewriter = {
 				speed = 0.05,
@@ -513,9 +513,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_tiancheng3",
-			dir = 1,
 			say = "只剩{namecode:161}依然驻足在原地，似乎在思考着什么。",
 			typewriter = {
 				speed = 0.05,

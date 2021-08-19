@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIRUI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:71}的宴会\n\n<size=45>六 宴会·下</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 304020,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 304020,
-			nameColor = "#a9f548",
 			say = "呵呵，果然{namecode:73}还是一样很受欢迎呢",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,11 +52,11 @@ return {
 			}
 		},
 		{
+			actor = 304020,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真亏她能周旋在那么多女孩子之间呀…看来是天性的魅力使然呢。",
 			typewriter = {
 				speed = 0.05,
@@ -90,9 +90,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "说着话的{namecode:71}脸上似乎带着一丝的红晕，应该不是错觉吧",
 			typewriter = {
 				speed = 0.05,
@@ -100,13 +100,13 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			bgm = "story-1",
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "发现指挥官和{namecode:71}了喵！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -117,12 +117,12 @@ return {
 			}
 		},
 		{
-			say = "指挥官，晚上好。{namecode:71}小姐，谢谢你的邀请",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "指挥官，晚上好。{namecode:71}小姐，谢谢你的邀请",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -169,11 +169,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "{namecode:98}准备的材料，怎么可能不好喵！",
 			typewriter = {
 				speed = 0.05,
@@ -185,8 +185,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -227,12 +227,12 @@ return {
 			}
 		},
 		{
-			say = "呼喵？！吓了一跳喵…原来是{namecode:70}喵…",
+			actor = 312010,
 			side = 0,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "呼喵？！吓了一跳喵…原来是{namecode:70}喵…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -263,12 +263,12 @@ return {
 			}
 		},
 		{
-			say = "一点小事~难得的宴会，你也别就在这看着，也要多享受一下嘛",
+			actor = 304010,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "一点小事~难得的宴会，你也别就在这看着，也要多享受一下嘛",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -283,12 +283,12 @@ return {
 			}
 		},
 		{
-			say = "还是说…呵呵，我明白了，{namecode:98}、{namecode:20}，我们去那边聊会天吧~",
+			actor = 304010,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "还是说…呵呵，我明白了，{namecode:98}、{namecode:20}，我们去那边聊会天吧~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "喵！？不要把{namecode:98}举起来喵，{namecode:98}自己会走路喵！",
 			typewriter = {
 				speed = 0.05,
@@ -319,8 +319,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -377,9 +377,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "不知道为什么，似乎是被特别关照了…",
 			typewriter = {
 				speed = 0.05,
@@ -403,12 +403,12 @@ return {
 			}
 		},
 		{
+			actor = 304020,
 			side = 2,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 304020,
-			nameColor = "#a9f548",
 			say = "指挥官，不知有没有荣幸邀请您一起跳支舞呢？",
 			typewriter = {
 				speed = 0.05,

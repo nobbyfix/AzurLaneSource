@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 107030,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level",
 			dir = 1,
 			say = "嘻嘻嘻，太天真了！以为用{namecode:90}做诱饵达成了目的？这下有的你们哭的～",
-			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

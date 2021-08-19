@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIMULIFU7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"祈愿与祝福之宴\n\n<size=45>七　祝福的花火</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_night",
 			say = "港区·空地",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -112,15 +112,15 @@ return {
 			}
 		},
 		{
+			say = "港区·宴会场外",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "bsm-5",
-			say = "港区·宴会场外",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -145,13 +145,13 @@ return {
 			}
 		},
 		{
+			actor = 199021,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			soundeffect = "event:/battle/firework",
-			actor = 199021,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喔～不错嘛～",
+			soundeffect = "event:/battle/firework",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -178,13 +178,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_115",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_115",
 			say = "港区·宴会场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -209,13 +209,13 @@ return {
 			}
 		},
 		{
+			actor = 301152,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
-			soundeffect = "event:/battle/firework",
-			actor = 301152,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "快看窗外，是烟花呀！",
+			soundeffect = "event:/battle/firework",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -258,16 +258,16 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_115",
-			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/firework",
 			actor = 205051,
+			side = 2,
+			bgName = "star_level_bg_115",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这还真是…",
+			soundeffect = "event:/battle/firework",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -327,8 +327,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 405011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -344,8 +344,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 205051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "和平么…",
 			typewriter = {
@@ -377,8 +377,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 405011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "真是俗套的台词…",
 			typewriter = {
@@ -391,13 +391,13 @@ return {
 			}
 		},
 		{
+			actor = 408041,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
-			soundeffect = "event:/battle/firework",
-			actor = 408041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我相信会有这么一天的哦！俾斯麦姐姐！",
+			soundeffect = "event:/battle/firework",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -427,8 +427,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 408041,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯！吃了好多好吃的东西！还遇到了许多皇家的同伴～",
 			typewriter = {
@@ -444,8 +444,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 405011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "相信…吗？呵…那我也姑且相信一回吧，为了迎接这么一天，接下来还有许多事要做呢",
 			typewriter = {
@@ -461,8 +461,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 205051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "放心吧，我们都在这里，不会让你独自忙碌的",
 			typewriter = {
@@ -491,12 +491,12 @@ return {
 			}
 		},
 		{
-			say = "灿烂的烟花一轮又一轮地绽放在上空，灿烂的烟花像是在祝福每一个人一般。",
+			soundeffect = "event:/battle/firework",
 			side = 2,
 			bgName = "star_level_bg_115",
 			dir = 1,
 			blackBg = true,
-			soundeffect = "event:/battle/firework",
+			say = "灿烂的烟花一轮又一轮地绽放在上空，灿烂的烟花像是在祝福每一个人一般。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -1,18 +1,18 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI03",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
 			actor = 904010,
 			actorShadow = true,
 			side = 2,
+			bgm = "level03",
 			dir = 1,
 			say = "果然来了吗…皇家舰队的各位",
-			bgm = "level03",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -85,8 +85,8 @@ return {
 		{
 			actor = 904010,
 			side = 1,
-			say = "…我们海上骑士团不会听命于任何异邦人",
 			dir = 1,
+			say = "…我们海上骑士团不会听命于任何异邦人",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -280,8 +280,8 @@ return {
 		{
 			actor = 204030,
 			side = 0,
-			say = "那么请你们解除武装来证明吧",
 			dir = -1,
+			say = "那么请你们解除武装来证明吧",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

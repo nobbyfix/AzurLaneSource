@@ -5,12 +5,12 @@ return {
 	desc_get = "主炮每进行10次攻击，触发专属弹幕-吸血鬼II",
 	name = "专属弹幕-吸血鬼II",
 	init_effect = "",
-	id = 29092,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行10次攻击，触发专属弹幕-吸血鬼II",
 	stack = 1,
-	color = "red",
+	id = 29092,
 	icon = 29090,
 	last_effect = "",
 	effect_list = {
@@ -33,8 +33,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29092,
 				target = "TargetSelf",
+				skill_id = 29092,
 				countType = 29090
 			}
 		}

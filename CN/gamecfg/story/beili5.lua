@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>五 兔兔星人特征——“爱心”！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "工作差不多告一段落，是时候回去休息了。",
 			typewriter = {
 				speed = 0.05,
@@ -56,15 +56,15 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿咻，嘿咻……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -89,9 +89,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "看到贝利抱着一箱干草正在往宿舍走。",
 			typewriter = {
 				speed = 0.05,
@@ -131,9 +131,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "原来贝利真的有在养兔子吗……",
 			typewriter = {
 				speed = 0.05,
@@ -141,11 +141,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官要来看看吗？兔兔超可爱的~",
 			typewriter = {
 				speed = 0.05,
@@ -163,13 +163,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "港区·贝利宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -206,9 +206,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "……名字姑且不论，在笼子里的两只兔子确实白白的很可爱。",
 			typewriter = {
 				speed = 0.05,
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "说着，贝利打开了笼子的门，两只兔子从笼子中钻了出来。",
 			typewriter = {
 				speed = 0.05,
@@ -242,11 +242,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不要乱跑哦~嗯，趁现在贝利来给你们添草和加水~",
 			typewriter = {
 				speed = 0.05,
@@ -296,9 +296,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "贝利说着，一脸习以为常地打扫起了两只兔子在房间里乱窜留下的痕迹。",
 			typewriter = {
 				speed = 0.05,
@@ -338,9 +338,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "这么说着的贝利，脸上露出了笑容。",
 			typewriter = {
 				speed = 0.05,

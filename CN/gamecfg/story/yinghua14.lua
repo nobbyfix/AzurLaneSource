@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA14",
+	once = true,
+	fadeType = 1,
 	continueBgm = true,
 	fadein = 1.5,
 	scripts = {
@@ -11,9 +11,9 @@ return {
 			actor = 900021,
 			actorName = "净化者",
 			side = 2,
+			bgm = "nagato-boss",
 			dir = 1,
 			say = "啊~啊——为什么总是丢这些麻烦的差事给我呢，我明明只想安安静静的看看传说中巨大的樱花树而已呀——",
-			bgm = "nagato-boss",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,14 +24,14 @@ return {
 			}
 		},
 		{
-			say = "轰——",
-			side = 2,
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom1",
+			say = "轰——",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -231,15 +231,15 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
-			actor = 307010,
-			stopbgm = true,
 			say = "终于...终于要完成了...多么..多么美丽的灵魂啊呵呵呵呵~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -309,14 +309,14 @@ return {
 			}
 		},
 		{
+			actor = 307020,
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 307020,
 			say = "事态已经超出了预期...如果是你的话，又会怎么做呢？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

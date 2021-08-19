@@ -1,10 +1,10 @@
 slot0 = class("VoteFinalsRaceRankPage", import("..GroupRace.VoteGroupRaceRankPage"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "FinalsRaceRank"
 end
 
-slot0.UpdateList = function (slot0)
+function slot0.UpdateList(slot0)
 	slot0.topThree, slot0.list = slot0.voteGroup:GetDialayGroupForFinals()
 	slot0.index = 0
 	slot0.count = 0
@@ -14,19 +14,19 @@ slot0.UpdateList = function (slot0)
 			slot4 = nil
 
 			if slot1 + 1 <= 3 then
-				slot4 = slot0.topThree[slot3]
+				slot4 = uv0.topThree[slot3]
 			else
-				slot0.index = slot0.index + 1
-				slot4 = slot0.list[slot0.index]
+				uv0.index = uv0.index + 1
+				slot4 = uv0.list[uv0.index]
 			end
 
-			slot0:UpdateVoteShipItem(slot2, slot4)
+			uv0:UpdateVoteShipItem(slot2, slot4)
 		end
 	end)
 	slot0.uilist:align(#slot0.list + #slot0.topThree)
 end
 
-slot0.UpdateVoteShipItem = function (slot0, slot1, slot2)
+function slot0.UpdateVoteShipItem(slot0, slot1, slot2)
 	if slot2 then
 		slot0.count = slot0.count + 1
 
@@ -40,8 +40,7 @@ slot0.UpdateVoteShipItem = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.OnDestroy = function (slot0)
-	return
+function slot0.OnDestroy(slot0)
 end
 
 return slot0

@@ -1,7 +1,7 @@
 return {
-	time = 3,
-	name = "治疗光环",
 	init_effect = "",
+	name = "治疗光环",
+	time = 3,
 	picture = "",
 	desc = "治疗光环-治疗",
 	stack = 1,
@@ -15,8 +15,8 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				time = 3,
 				target = "TargetSelf",
+				time = 3,
 				maxHPRatio = 0.01
 			}
 		}

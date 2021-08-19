@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"才不是小孩子！\n\n<size=45>二 正义！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "几小时前——",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "几小时前——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官！大事不好了喵！今天仓库出了点状况喵！急需人手喵！",
 			effects = {
 				{
@@ -68,8 +68,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -94,15 +94,15 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "多谢指挥官喵！那我就把秘书舰小姐暂时借走了喵！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -127,8 +127,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -137,13 +137,13 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "现在——",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,9 +174,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "棘鳍被借走了，又开始不得不为了事务奔波于各个部门之间……",
 			typewriter = {
 				speed = 0.05,
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "说起来，仓库那边是出了什么事情呢…？",
 			typewriter = {
 				speed = 0.05,
@@ -202,12 +202,12 @@ return {
 			}
 		},
 		{
-			say = "我回来了！",
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我回来了！",
 			actorPosition = {
 				x = -1000,
 				y = 0
@@ -222,8 +222,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.5,
 					x = 1000
@@ -231,9 +231,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……好快？！",
 			dialogShake = {
 				speed = 0.09,
@@ -269,8 +269,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "正义必胜！",
 			typewriter = {
@@ -286,8 +286,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，指挥官看起来不知道发生了什么呢。就让我来好好说明一下吧！",
 			typewriter = {
@@ -300,13 +300,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "棘鳍讲述了她今天在仓库的经历。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -331,9 +331,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "简单来说的话就是…{namecode:98}不小心把仓库弄得一团糟，想找帮手帮她将仓库恢复原状。",
 			typewriter = {
 				speed = 0.05,
@@ -345,9 +345,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "本来{namecode:98}只拜托了秘书舰棘鳍一人，不过在处理过程中被路过的小海狸中队发现。在众人的努力之下，很快就完成了任务。",
 			typewriter = {
 				speed = 0.05,
@@ -359,9 +359,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "到底…是做了什么才把仓库给变成那样的啊……",
 			typewriter = {
 				speed = 0.05,
@@ -392,8 +392,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我觉得非常的酷！",
 			typewriter = {

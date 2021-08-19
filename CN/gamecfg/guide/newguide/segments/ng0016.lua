@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "防御作战相关的内容可以点击帮助按钮查看详细说明",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			},
 			ui = {

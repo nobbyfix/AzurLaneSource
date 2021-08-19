@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAOTIANEXINNIAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"新年的祝福\n\n<size=45>二 瑞雪天降</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
+			actor = 301141,
 			side = 2,
+			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = -1,
 			bgmDelay = 2,
-			bgm = "main-newyear",
-			actor = 301141,
-			nameColor = "#a9f548",
 			say = "呼~暖炉真是太棒了~",
+			bgm = "main-newyear",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "唉，真不愧是{namecode:16}呢，进到暖炉里就无论如何都拽不出来了……",
+			actor = 301150,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "唉，真不愧是{namecode:16}呢，进到暖炉里就无论如何都拽不出来了……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -88,12 +88,12 @@ return {
 			}
 		},
 		{
+			actor = 301141,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301141,
 			nameColor = "#a9f548",
-			say = "哦哦哦！！是雪！下雪了诶！！{namecode:16}我们去打雪仗吧！",
+			dir = -1,
+			say = "哦哦哦！！是雪！下雪了诶！！{namecode:17}我们去打雪仗吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -104,8 +104,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -114,11 +114,11 @@ return {
 			}
 		},
 		{
+			actor = 301150,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜哇，别、别扯我啊！",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -142,15 +142,15 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			actorName = "{namecode:143}",
 			bgName = "bg_story_room",
+			actorName = "{namecode:143}",
+			dir = 1,
 			actor = 301601,
 			nameColor = "#a9f548",
 			say = "哇，好大的雪呀！地上已经积起来一层了呢！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -175,12 +175,12 @@ return {
 			}
 		},
 		{
-			say = "哼、下点雪而已，兴奋成这样……",
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哼、下点雪而已，兴奋成这样……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -213,11 +213,11 @@ return {
 			}
 		},
 		{
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我、我才没有因为下雪而觉得兴奋啦！！",
 			typewriter = {
 				speed = 0.05,
@@ -229,8 +229,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -239,15 +239,15 @@ return {
 			}
 		},
 		{
+			actor = 307012,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307012,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "给指挥官的礼物就这样，然后这样…呵呵呵…啊啊，已经迫不及到想见到指挥官惊喜的神情了呢…",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -288,12 +288,12 @@ return {
 			}
 		},
 		{
-			say = "啊啊，因为下雪了，驱逐们都兴奋地准备打雪仗了",
+			actor = 307022,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307022,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊啊，因为下雪了，驱逐们都兴奋地准备打雪仗了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -372,8 +372,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -384,8 +384,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -412,12 +412,12 @@ return {
 			}
 		},
 		{
-			say = "分内之事，倒也算不上辛苦",
+			actor = 399020,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 399020,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "分内之事，倒也算不上辛苦",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -464,11 +464,11 @@ return {
 			}
 		},
 		{
+			actor = 399010,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 399010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "咦、咦？！比的是这个吗？！",
 			typewriter = {
 				speed = 0.05,
@@ -480,8 +480,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.3,
 					dur = 0.2,
 					x = 0,
@@ -602,12 +602,12 @@ return {
 			}
 		},
 		{
+			actor = 307031,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 307031,
-			nameColor = "#a9f548",
 			say = "一到新年，大家就都兴奋起来了呀……真是让人头疼，希望不要闹出什么事就好了……",
 			typewriter = {
 				speed = 0.05,

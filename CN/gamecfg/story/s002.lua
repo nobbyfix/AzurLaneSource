@@ -21,7 +21,7 @@ return {
 			}
 		},
 		{
-			actor = 900004,
+			actor = 900312,
 			nameColor = "#a9f548",
 			expression = "11",
 			side = 1,
@@ -41,9 +41,10 @@ return {
 		},
 		{
 			actor = 900009,
+			side = 2,
 			nameColor = "#ff0000",
 			actorName = "？？？？？",
-			side = 2,
+			actorAlpha = 0,
 			say = "哼哼哼，这条航线上果然被布置了伏兵呢，你们说的不详的预感就是指我们吗？",
 			shake = {
 				speed = 1,
@@ -59,11 +60,11 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "！！！注意，右舷方向！！！发现两艘大型军舰，航向220度，判断是铁血的新型战列舰！全员准备作战！",
 			expression = "13",
-			actor = 900004,
+			side = 0,
+			actor = 900312,
 			nameColor = "#a9f548",
+			say = "！！！注意，右舷方向！！！发现两艘大型军舰，航向220度，判断是铁血的新型战列舰！全员准备作战！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -97,9 +98,10 @@ return {
 		},
 		{
 			actor = 900009,
+			side = 1,
 			actorName = "？？？？？",
 			nameColor = "#ff0000",
-			side = 1,
+			actorAlpha = 0,
 			say = "哎呀呀~不过是区区两艘巡洋舰，居然准备攻过来了，哼哼哼，那就让我好好的享用一番吧~",
 			shake = {
 				speed = 1,
@@ -110,7 +112,7 @@ return {
 				speedUp = 0.01
 			},
 			painting = {
-				alpha = 0.3,
+				alpha = 0,
 				time = 0.5
 			}
 		},

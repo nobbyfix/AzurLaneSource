@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -23,8 +23,8 @@ return {
 		{
 			actor = 307050,
 			side = 1,
-			say = "是呀自从开战之后就再也没回到过这里了，真是令人怀念啊",
 			dir = 1,
+			say = "是呀自从开战之后就再也没回到过这里了，真是令人怀念啊",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -83,8 +83,8 @@ return {
 		{
 			actor = 307060,
 			side = 0,
-			say = "哈哈~没想到{namecode:82}前辈也会有示弱的时候呀嘿嘿",
 			dir = 1,
+			say = "哈哈~没想到{namecode:82}前辈也会有示弱的时候呀嘿嘿",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -134,12 +134,12 @@ return {
 			}
 		},
 		{
-			say = "轰——",
 			soundeffect = "event:/battle/boom2",
+			say = "轰——",
 			flash = {
-				wait = 0,
 				delay = 0,
 				dur = 0.5,
+				wait = 0,
 				number = 1,
 				alpha = {
 					0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ZUBING6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"前进吧，{namecode:144}！\n\n<size=45>六 烦恼的{namecode:144}</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301300,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 301300,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -99,11 +99,11 @@ return {
 			}
 		},
 		{
+			actor = 301300,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301300,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "比起最初现在进步了许多？呵呵，那是当然，毕竟是我值得自豪的后辈嘛",
 			typewriter = {
 				speed = 0.05,
@@ -137,15 +137,15 @@ return {
 			}
 		},
 		{
+			actor = 301300,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301300,
-			nameColor = "#a9f548",
 			say = "这个时间段的话，应该只有她一个人在里面休息吧，我敲敲门看看",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -204,14 +204,14 @@ return {
 		{
 			expression = 5,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_room",
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呜…不知不觉就折了好多…把这些一次性都送给指挥官的话——",
 			flashout = {
-				dur = 0.25,
 				black = true,
+				dur = 0.25,
 				alpha = {
 					0,
 					1
@@ -238,15 +238,15 @@ return {
 		{
 			expression = 5,
 			side = 2,
-			dir = 1,
-			say = "啊",
-			actorName = "{namecode:144}&{namecode:124}",
 			bgName = "bg_story_room",
+			actorName = "{namecode:144}&{namecode:124}",
+			dir = 1,
 			actor = 303090,
 			nameColor = "#a9f548",
+			say = "啊",
 			flashout = {
-				dur = 0.25,
 				black = true,
+				dur = 0.25,
 				alpha = {
 					0,
 					1
@@ -286,8 +286,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指，指挥官？！",
 			typewriter = {
@@ -300,8 +300,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -374,11 +374,11 @@ return {
 			}
 		},
 		{
+			actor = 301300,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301300,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，我突然想起来还有驱逐队的训练！我先走了~",
 			typewriter = {
 				speed = 0.05,
@@ -390,8 +390,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 1,
 					x = 3750
@@ -402,8 +402,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸，{namecode:124}前辈？别，别留下我一个人啊！",
 			typewriter = {
@@ -416,8 +416,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -428,10 +428,10 @@ return {
 		{
 			expression = 6,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 303090,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（这样就变成和指挥官两个人独处了啊！）",
 			typewriter = {
 				speed = 0.05,
@@ -445,10 +445,10 @@ return {
 		{
 			expression = 5,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 303090,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（唔唔，我，我该怎么办才好！）",
 			typewriter = {
 				speed = 0.05,

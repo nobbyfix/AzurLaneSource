@@ -1,15 +1,15 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA13",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 10400030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "绊爱",
+			dir = 1,
 			say = "哦？发现一个奇怪的箱子！",
 			typewriter = {
 				speed = 0.05,
@@ -99,8 +99,8 @@ return {
 			expression = 6,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "注意周围！空投箱附近一定会有许多埋伏的敌人的！！",
 			typewriter = {

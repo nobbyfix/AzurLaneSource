@@ -142,12 +142,12 @@ return {
 	desc_get = "占坑",
 	name = "吾妻·特殊弹幕",
 	init_effect = "",
-	id = 19210,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "占坑",
 	stack = 1,
-	color = "red",
+	id = 19210,
 	icon = 19210,
 	last_effect = "",
 	effect_list = {
@@ -157,8 +157,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 19210,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				type = {
 					3
@@ -171,8 +171,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 19210,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				weapon_group = {
 					43100,
@@ -187,8 +187,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 19212,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				weapon_group = {
 					33100

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KANGKEDE5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"康克德与甜食\n\n<size=45>五　决心</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "又过了几天，在例行巡视完毕之后——",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "又过了几天，在例行巡视完毕之后——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呼，刚才走了很长的路，有些累了~指挥官快帮我揉脚~嘻嘻~♪",
 			typewriter = {
@@ -72,8 +72,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈哈哈~指挥官这样很痒的~♪",
 			typewriter = {
@@ -86,8 +86,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -99,8 +99,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过每次捏脚都这个力度的话，就没新鲜感了~呼呼，我会腻的~",
 			typewriter = {
@@ -116,8 +116,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "每天吃同一个人做的甜品，说不定也会腻~你说是吧？",
 			typewriter = {
@@ -130,9 +130,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "康克德的眼睛斜向天花板，似乎故意把话题转向甜品",
 			typewriter = {
 				speed = 0.05,
@@ -143,8 +143,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我呢，从敦刻尔克的“糖分互助”会上就在想……",
 			typewriter = {
@@ -160,8 +160,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "也不能老是由敦刻尔克代劳做点心啦，吃久了也会腻吧~",
 			typewriter = {
@@ -177,8 +177,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "要不然，让我也试试做甜点～然后指挥官来试吃吧！",
 			typewriter = {
@@ -191,9 +191,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "在康克德的注视下顺势就答应了……",
 			typewriter = {
 				speed = 0.05,
@@ -205,15 +205,15 @@ return {
 			}
 		},
 		{
+			actor = 102010,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 102010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦，看到康克德这么有干劲，姐姐也很欣慰哦！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -273,8 +273,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "都说了，这次我超认真的！",
 			typewriter = {
@@ -287,8 +287,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -332,8 +332,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 102180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼~一定要想办法征服姐姐们。",
 			typewriter = {
@@ -362,12 +362,12 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102180,
 			side = 2,
 			bgName = "bg_story_room",
 			withoutActorName = true,
+			dir = 1,
 			blackBg = true,
-			actor = 102180,
 			nameColor = "#a9f548",
 			say = "康克德发光的眼眸里，散发着灼热的光芒。",
 			typewriter = {

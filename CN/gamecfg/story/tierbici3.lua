@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"融冰\n\n<size=45>三　演习</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "港区·演习海域",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-1",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "今天是铁血演习的日子。",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom2",
 			side = 2,
 			bgName = "bg_story_nepu1",
-			say = "提尔比茨精准地命中了蛮啾驾驶的目标舰。整个过程中，表情甚至没有一丝变化。",
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			say = "提尔比茨精准地命中了蛮啾驾驶的目标舰。整个过程中，表情甚至没有一丝变化。",
 			flashN = {
 				color = {
 					1,
@@ -121,12 +121,12 @@ return {
 			}
 		},
 		{
-			say = "提尔比茨真厉害啊。",
+			actor = 403030,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 403030,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "提尔比茨真厉害啊。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -173,11 +173,11 @@ return {
 			}
 		},
 		{
+			actor = 403010,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 403010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈？为什么我要向提尔比茨学习？",
 			typewriter = {
 				speed = 0.05,
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -231,11 +231,11 @@ return {
 			}
 		},
 		{
+			actor = 403010,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 403010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈？！我的性格就是这样还真是对不起啊！欧根我看你今天是皮痒了……",
 			typewriter = {
 				speed = 0.05,
@@ -247,8 +247,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -257,11 +257,11 @@ return {
 			}
 		},
 		{
+			actor = 403030,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 403030,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "啊哈哈——",
 			typewriter = {
 				speed = 0.05,
@@ -273,10 +273,10 @@ return {
 			},
 			action = {
 				{
-					y = 0,
+					type = "move",
 					dur = 1,
 					x = 1500,
-					type = "move"
+					y = 0
 				}
 			},
 			options = {
@@ -287,11 +287,11 @@ return {
 			}
 		},
 		{
+			actor = 403010,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 403010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官你不要管，啧，欧根，给我站住，不要跑！今天我就要让你明白我这个姐姐不是白当的！",
 			typewriter = {
 				speed = 0.05,
@@ -303,16 +303,16 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
 					number = 2
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.2,
 					dur = 1,
 					x = 2250
@@ -336,9 +336,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "提尔比茨看向希佩尔和欧根离开的方向，露出若有所思的表情",
 			typewriter = {
 				speed = 0.05,

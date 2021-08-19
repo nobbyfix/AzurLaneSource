@@ -1,30 +1,34 @@
 slot0 = class("SecondaryPasswordMediator", import("view.base.ContextMediator"))
 slot0.CONFIRM_PASSWORD = "SecondaryPasswordMediator:CONFIRM_PASSWORD"
 slot0.SET_PASSWORD = "SecondaryPasswordMediator:SET_PASSWORD"
+slot0.CANCEL_OPERATION = "SecondaryPasswordMediator:CANCEL_OPERATION"
 
-slot0.register = function (slot0)
-	slot0:bind(slot0.CONFIRM_PASSWORD, function (slot0, slot1)
-		if slot0.contextData.type == pg.SecondaryPWDMgr.CHANGE_SETTING or slot0.contextData.type == pg.SecondaryPWDMgr.CLOSE_PASSWORD then
-			slot0:sendNotification(GAME.SET_PASSWORD_SETTINGS, {
+function slot0.register(slot0)
+	slot0:bind(uv0.CONFIRM_PASSWORD, function (slot0, slot1)
+		if uv0.contextData.type == pg.SecondaryPWDMgr.CHANGE_SETTING or uv0.contextData.type == pg.SecondaryPWDMgr.CLOSE_PASSWORD then
+			uv0:sendNotification(GAME.SET_PASSWORD_SETTINGS, {
 				pwd = slot1,
-				settings = slot0.contextData.settings
+				settings = uv0.contextData.settings
 			})
 		else
-			slot0:sendNotification(GAME.CONFIRM_PASSWORD, {
+			uv0:sendNotification(GAME.CONFIRM_PASSWORD, {
 				pwd = slot1
 			})
 		end
 	end)
-	slot0:bind(slot0.SET_PASSWORD, function (slot0, slot1, slot2)
-		slot1:sendNotification(GAME.SET_PASSWORD, {
+	slot0:bind(uv0.SET_PASSWORD, function (slot0, slot1, slot2)
+		uv1:sendNotification(GAME.SET_PASSWORD, {
 			pwd = slot1,
-			tip = slot0.ClipUnicodeStr(slot2, 20),
-			settings = slot1.contextData.settings
+			tip = uv0.ClipUnicodeStr(slot2, 20),
+			settings = uv1.contextData.settings
 		})
+	end)
+	slot0:bind(uv0.CANCEL_OPERATION, function ()
+		uv0:sendNotification(GAME.CANCEL_LIMITED_OPERATION)
 	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		GAME.CONFIRM_PASSWORD_DONE,
 		GAME.SET_PASSWORD_SETTINGS_DONE,
@@ -33,19 +37,20 @@ slot0.listNotificationInterests = function (slot0)
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
+function slot0.handleNotification(slot0, slot1)
 	slot3 = slot1:getBody()
-	slot5 = getProxy(SecondaryPWDProxy).getRawData(slot4)
+	slot5 = getProxy(SecondaryPWDProxy):getRawData()
 
 	if slot1:getName() == GAME.FETCH_PASSWORD_STATE_DONE then
 		if not slot4:GetPermissionState() then
+			slot0:sendNotification(GAME.CANCEL_LIMITED_OPERATION)
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				title = "warning",
 				mode = "showresttime",
+				title = "warning",
 				hideNo = true,
 				type = MSGBOX_TYPE_SECONDPWD,
 				onPreShow = function ()
-					slot0.viewComponent:emit(BaseUI.ON_CLOSE)
+					uv0.viewComponent:emit(BaseUI.ON_CLOSE)
 				end
 			})
 		end
@@ -80,7 +85,7 @@ slot0.handleNotification = function (slot0, slot1)
 	end
 end
 
-slot0.CloseAndCallback = function (slot0)
+function slot0.CloseAndCallback(slot0)
 	slot0.viewComponent:emit(BaseUI.ON_CLOSE)
 
 	if slot0.contextData.callback then
@@ -88,7 +93,7 @@ slot0.CloseAndCallback = function (slot0)
 	end
 end
 
-slot0.ClipUnicodeStr = function (slot0, slot1)
+function slot0.ClipUnicodeStr(slot0, slot1)
 	slot2, slot3 = utf8_to_unicode(slot0)
 
 	if slot1 < slot3 then

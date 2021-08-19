@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIER4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"讴歌平稳的日常\n\n<size=45>四　恶作剧时间？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区・指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区・指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "和坐在沙发上的纽卡斯尔一起静静的工作着。",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这家伙虽然有点挺没意思的……但是在辅佐仆人你这件事上还是绰绰有余的！",
 			effects = {
 				{
@@ -78,9 +78,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "那个伊丽莎白为什么会把纽卡斯尔评价为“有点挺没意思”的呢……",
 			effects = {
 				{
@@ -115,12 +115,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "呼……",
 			typewriter = {
 				speed = 0.05,
@@ -143,9 +143,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -185,12 +185,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -213,14 +213,14 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			optionFlag = 1,
 			say = "试了好多种方法，但是纽卡斯尔始终不为所动。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -252,9 +252,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -283,13 +283,13 @@ return {
 			}
 		},
 		{
-			optionFlag = 1,
-			side = 2,
-			dir = 1,
 			blackBg = true,
-			soundeffect = "event:/battle/boom2",
+			side = 2,
 			stopbgm = true,
 			say = "（咚！！！）",
+			dir = 1,
+			optionFlag = 1,
+			soundeffect = "event:/battle/boom2",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -301,10 +301,10 @@ return {
 			}
 		},
 		{
-			blackBg = true,
+			optionFlag = 1,
 			side = 2,
 			dir = 1,
-			optionFlag = 1,
+			blackBg = true,
 			say = "从科研部方向传来一声巨响，指挥室猛地一摇。眼前也随之一黑……",
 			typewriter = {
 				speed = 0.05,
@@ -312,18 +312,18 @@ return {
 			}
 		},
 		{
-			bgmDelay = 1,
-			side = 2,
-			dir = 1,
 			optionFlag = 1,
+			side = 2,
 			bgName = "bg_story_task",
+			dir = 1,
+			bgmDelay = 1,
 			bgm = "story-1",
 			actor = 202190,
 			nameColor = "#a9f548",
 			say = "指挥官？你还好吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -370,12 +370,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "刚才的是事故呢……还是满足了您的愿望呢？",
 			typewriter = {
 				speed = 0.05,
@@ -387,12 +387,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "如果您希望的话可以尽管这样呆下去。……不过那样的话后面就要加班了呢",
 			typewriter = {
 				speed = 0.05,

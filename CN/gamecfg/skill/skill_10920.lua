@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "T字战法",
 	cd = 0,
-	picture = "0",
-	desc = "队伍中战巡、战列伤害提高3.0%（15.0%）",
 	painting = 1,
 	id = 10920,
+	picture = "0",
 	castCV = "skill",
+	desc = "队伍中战巡、战列伤害提高3.0%（15.0%）",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,20 +17,20 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetPlayerByType",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 10921,
 				shipType = 4
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetPlayerByType",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 10921,
 				shipType = 5

@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN05",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "港区•白鹰生活区",
 			typewriter = {
 				speed = 0.05,
@@ -108,14 +108,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101070,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇！是企业！？吓得我冰棒都要掉了……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -174,14 +174,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101080,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "企、企业？！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -240,14 +240,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 101060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "是企、——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -336,14 +336,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 101240,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "！——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -402,14 +402,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 107070,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "姐、姐姐…？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -532,14 +532,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿，这张照片就叫《驯鹿之主》吧，虽然没驾着驯鹿来，但也是圣诞老人呢~",
 			flashout = {
-				dur = 0.35,
 				black = false,
+				dur = 0.35,
 				alpha = {
 					0,
 					1

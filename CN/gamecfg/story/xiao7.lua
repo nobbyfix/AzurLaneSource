@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAO7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"忍者修行之路？\n\n<size=45>七　约定与等待</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·海边",
 			side = 2,
 			bgName = "star_level_bg_106",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·海边",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,9 +78,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			say = "今天是休息日，和{namecode:11}一起来到了海边",
 			typewriter = {
 				speed = 0.05,
@@ -120,11 +120,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这，这绝对不是在下不关心{namecode:12}什么的！",
 			typewriter = {
 				speed = 0.05,
@@ -136,8 +136,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -178,11 +178,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "有指挥官在身边，在下感觉变得勇敢了很多！",
 			typewriter = {
 				speed = 0.05,
@@ -200,11 +200,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇！",
 			typewriter = {
 				speed = 0.05,
@@ -216,8 +216,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -226,11 +226,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "请，请不要趁机欺负在下！",
 			typewriter = {
 				speed = 0.05,
@@ -328,11 +328,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇啊啊啊啊？",
 			typewriter = {
 				speed = 0.05,
@@ -344,8 +344,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -370,9 +370,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			say = "{namecode:13}迎面跑了过来，{namecode:14}在后面跟着",
 			typewriter = {
 				speed = 0.05,
@@ -380,11 +380,11 @@ return {
 			}
 		},
 		{
+			actor = 301110,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 301110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，{namecode:11}，一起去吃午饭吧！",
 			typewriter = {
 				speed = 0.05,
@@ -396,8 +396,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -422,9 +422,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			say = "第六驱逐队，一定会团聚的吧。那个时候的{namecode:11}，会是怎样的表情呢？",
 			typewriter = {
 				speed = 0.05,

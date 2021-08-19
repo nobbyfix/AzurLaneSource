@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIMULIFU6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"祈愿与祝福之宴\n\n<size=45>六　场外的休息</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "宴会场外",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "bsm-5",
-			say = "宴会场外",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 207022,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 207022,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "噢噢噢噢…宴会场里满满的都是可爱的驱逐妹妹们！真是太棒了！！",
 			typewriter = {
 				speed = 0.05,
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -95,8 +95,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 207022,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哇啊啊啊！！我、我只是在这边看着会场，防止有可疑人物或者意外状况而已！绝绝绝、绝对没有在做什么奇怪的事情！",
 			typewriter = {
@@ -109,8 +109,8 @@ return {
 			},
 			action = {
 				{
-					y = 35,
 					type = "shake",
+					y = 35,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -122,8 +122,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 199021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…啊哈哈哈，你这么一说不是更像是在做亏心事了吗",
 			typewriter = {
@@ -139,10 +139,10 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_night",
-			say = "啊，原来是佐治亚小姐啊，别吓我嘛…你怎么不在宴会场里玩，反而跑出来了",
-			dir = 1,
 			actor = 207022,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "啊，原来是佐治亚小姐啊，别吓我嘛…你怎么不在宴会场里玩，反而跑出来了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -176,8 +176,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 199021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "倒是你，怎么样，拍到好照片了吗",
 			typewriter = {
@@ -190,11 +190,11 @@ return {
 			}
 		},
 		{
+			actor = 207022,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 207022,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咕嘿嘿嘿，有好多好多可爱妹妹们的——",
 			typewriter = {
 				speed = 0.05,
@@ -206,8 +206,8 @@ return {
 			},
 			action = {
 				{
-					y = 10,
 					type = "shake",
+					y = 10,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -219,8 +219,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 207022,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咳、咳咳，都说了，我只是在这边保证宴会场的安全而已！",
 			typewriter = {
@@ -233,8 +233,8 @@ return {
 			},
 			action = {
 				{
-					y = 35,
 					type = "shake",
+					y = 35,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -246,8 +246,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 199021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈哈哈，所以说皇家的舰船，还真是有趣啊",
 			typewriter = {
@@ -263,11 +263,11 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			soundeffect = "event:/battle/firework",
 			actor = 207022,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这种被玩弄的微妙感觉究竟是…啊，那是…",
+			soundeffect = "event:/battle/firework",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -278,12 +278,12 @@ return {
 			}
 		},
 		{
+			actor = 199021,
 			side = 1,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 199021,
-			nameColor = "#a9f548",
 			say = "哦哦？竟然还准备了这个，是{namecode:98}吗？",
 			typewriter = {
 				speed = 0.05,

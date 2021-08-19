@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN01",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"鞍山的绘图日记\n\n<size=45>一　旧仓库的发现</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "鞍山级的～～",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀，怎么说～顺势而为？",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀，怎么说～顺势而为？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -262,11 +262,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好咧~那就收集颜料去咯~",
 			typewriter = {
 				speed = 0.05,

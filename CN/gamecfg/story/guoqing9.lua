@@ -27,11 +27,11 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "{namecode:79}，连你也成为冒牌货了吗？",
-			actorName = "{namecode:96}",
 			actor = 307060,
+			side = 0,
+			actorName = "{namecode:96}",
 			nameColor = "#a9f548",
+			say = "{namecode:79}，连你也成为冒牌货了吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

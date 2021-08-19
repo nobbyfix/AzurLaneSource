@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "最适化武装",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 12173,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 12175
 			}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AJIAKESI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"我的美好回忆\n\n<size=45>二 荣耀的意义</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 203080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 203080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "阿贾克斯，你这人真是——！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "我只是有一说一，比起正面对战还是夜战获胜的可能性更大嘛。",
+			actor = 202030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我只是有一说一，比起正面对战还是夜战获胜的可能性更大嘛。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -86,11 +86,11 @@ return {
 			}
 		},
 		{
-			say = "埃克塞特和阿贾克斯又开始吵嘴了…",
+			withoutPainting = true,
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
-			withoutPainting = true,
+			say = "埃克塞特和阿贾克斯又开始吵嘴了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -101,11 +101,11 @@ return {
 			}
 		},
 		{
-			say = "阿贾克斯的作战方案十分合理且正确。然而正因为太合理，对一部分重视名誉和身份的人来说似乎非常难以接受",
+			withoutPainting = true,
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
-			withoutPainting = true,
+			say = "阿贾克斯的作战方案十分合理且正确。然而正因为太合理，对一部分重视名誉和身份的人来说似乎非常难以接受",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -148,11 +148,11 @@ return {
 			}
 		},
 		{
-			say = "更关键的一点，是对方越是反驳她就越喜欢煽风点火，最后搞得局面更加难以收场…",
+			withoutPainting = true,
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
-			withoutPainting = true,
+			say = "更关键的一点，是对方越是反驳她就越喜欢煽风点火，最后搞得局面更加难以收场…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -163,15 +163,15 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我会向埃克塞特前辈道歉的啦。反正一直都是这样。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -212,11 +212,11 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不过这个作战把指挥官来劝架也考虑进去了就是♪",
 			typewriter = {
 				speed = 0.05,
@@ -266,12 +266,12 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202030,
-			nameColor = "#a9f548",
 			say = "…就是这样我才喜欢你呀。呵呵♪",
 			typewriter = {
 				speed = 0.05,

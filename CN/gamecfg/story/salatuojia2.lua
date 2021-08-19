@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Best Pictures!\n\n<size=45>二 小加加的工作</size>",
@@ -17,9 +17,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "第一张照片上是穿上了舰装的萨拉托加在认真航行的样子——",
 			typewriter = {
 				speed = 0.05,
@@ -27,17 +27,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 107030,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "level",
-			actor = 107030,
-			nameColor = "#a9f548",
 			say = "好了！萨拉妹妹的机动舰队作战讲座，要开始咯——",
+			bgm = "level",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 2,
 					dur = 0.1,
 					number = 2
@@ -71,11 +71,11 @@ return {
 			}
 		},
 		{
+			actor = 204010,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 204010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "请您多多指导！",
 			typewriter = {
 				speed = 0.05,
@@ -87,8 +87,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -112,11 +112,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "要好好训练哦！……怎么连我也要参加！？",
 			typewriter = {
 				speed = 0.05,
@@ -128,8 +128,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 2
@@ -137,11 +137,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那我开始讲课咯！航母的攻击距离比战舰要长很多！所以最基本的作战方法就是灵活运用这个射程！",
 			typewriter = {
 				speed = 0.05,
@@ -153,8 +153,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -194,9 +194,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -252,11 +252,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那边的！现在是无线通信管制期间，不许说悄悄话！",
 			typewriter = {
 				speed = 0.05,
@@ -268,8 +268,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -293,11 +293,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "可恶……",
 			typewriter = {
 				speed = 0.05,
@@ -309,8 +309,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -319,13 +319,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "虽然看起来不像，还是想起了萨拉托加身为大家的前辈这一事实。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

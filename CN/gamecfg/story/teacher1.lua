@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"36年Z组 Z23老师\n\n<size=45>一 问题儿童都来自——</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			bgm = "story-1",
+			say = "某日的港区·学院",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
-			say = "某日的港区·学院",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -44,12 +44,12 @@ return {
 			}
 		},
 		{
-			say = "嗯……就连我也想不出什么好办法呢……",
+			actor = 402010,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 402010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯……就连我也想不出什么好办法呢……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -101,7 +101,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "姐、姐姐…你的“教育“还是稍微收敛一点……",
+			say = "姐、姐姐…你的“教育”还是稍微收敛一点……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -149,7 +149,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "对于这群“问题儿童“们——",
+			say = "对于这群“问题儿童”们——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -176,10 +176,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 402030,
+			actorShadow = true,
+			bgName = "bg_story_school",
+			side = 0,
 			actorName = "柯尼斯堡&科隆",
 			hideOther = true,
 			nameColor = "#a9f548",

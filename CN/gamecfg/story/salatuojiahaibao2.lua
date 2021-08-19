@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIAHAIBAO2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"碧海的偶像\n\n<size=45>二 追寻之旅</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu2",
+			actor = 101400,
 			side = 2,
+			bgName = "bg_story_nepu2",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 101400,
-			nameColor = "#a9f548",
 			say = "嗯……海豹好像不在这个方向呢……",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,8 +55,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 101020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "艾尔温，雷达那边有反应了！",
 			typewriter = {
@@ -69,8 +69,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -95,9 +95,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -109,15 +109,15 @@ return {
 			}
 		},
 		{
+			actor = 201160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 201160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我说，猎人，萨拉托加说的那个“会出来捣乱的巨大章鱼邪神”真的存在吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -161,8 +161,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 201160,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼，我只是怕你到时候无法应付而已！",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -185,9 +185,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -199,15 +199,15 @@ return {
 			}
 		},
 		{
+			actor = 202170,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 202170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "研究海星成为一个合格的海洋学者也是我的梦想之一。为了保护大海我会义不容辞的！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -267,8 +267,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 103160,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "又没有规定必须朝距离近的反应找，我们走反方向，一口气超过大部队！",
 			typewriter = {
@@ -297,9 +297,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -311,9 +311,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "虽然一路上被萨拉拖着几乎毫无目的性地到处乱走，不过遇到了各种各样似乎在寻找海豹的队伍。",
 			typewriter = {
 				speed = 0.05,
@@ -325,9 +325,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "看来，海豹的传闻似乎是真的。",
 			typewriter = {
 				speed = 0.05,
@@ -342,8 +342,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯哼，今年要搞得更热闹些！",
 			typewriter = {
@@ -356,9 +356,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "能带来幸运的传说中的海豹…似乎自然而然地激起了大家的热情。",
 			typewriter = {
 				speed = 0.05,
@@ -370,11 +370,11 @@ return {
 			}
 		},
 		{
+			actor = 107034,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 107034,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "（小声）好像有许多奇怪的家伙当真了呢……",
 			typewriter = {
 				speed = 0.05,
@@ -395,8 +395,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咳咳，没、没什么，让我们继续前进吧，指挥官！",
 			typewriter = {
@@ -409,8 +409,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

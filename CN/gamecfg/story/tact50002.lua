@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -22,8 +22,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "硝烟散去之后，海面恢复了平静。在芝加哥的掩护下，巴格莱得以逃脱，代价是芝加哥承受了{namecode:54}和{namecode:56}的火力，最终不得不撤退，而逃脱的巴格莱区区一艘驱逐成不了气候…",
 			typewriter = {
@@ -50,8 +50,8 @@ return {
 			actor = 303020,
 			nameColor = "#a9f548",
 			side = 0,
-			say = "嗯，本来这次组成舰队就十分仓促，{namecode:41}和{namecode:37}还有{namecode:153}的战斗力有限，敌人的综合兵力也远超我们，不能给他们反应的时间。",
 			actorName = "{namecode:54}",
+			say = "嗯，本来这次组成舰队就十分仓促，{namecode:41}和{namecode:37}还有{namecode:153}的战斗力有限，敌人的综合兵力也远超我们，不能给他们反应的时间。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

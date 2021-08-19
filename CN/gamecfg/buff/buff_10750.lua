@@ -72,12 +72,12 @@ return {
 	desc_get = "炮击有5%概率发动，8秒内自身机动提升16.0%(满级40.0%)，受到航空伤害降低16.0%(满级40.0%)",
 	name = "The Nick",
 	init_effect = "",
-	id = 10750,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "炮击有5%概率发动，8秒内自身机动提升$1，受到航空伤害降低$2",
 	stack = 1,
-	color = "blue",
+	id = 10750,
 	icon = 10750,
 	last_effect = "",
 	effect_list = {
@@ -88,8 +88,8 @@ return {
 			},
 			arg_list = {
 				rant = 500,
-				skill_id = 10750,
 				target = "TargetSelf",
+				skill_id = 10750,
 				time = 5
 			}
 		}

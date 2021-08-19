@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			expression = 5,
+			expression = 1,
 			side = 2,
-			soundeffect = "event:/battle/boom2",
-			dir = 1,
 			bgm = "battle-boss-4",
 			actor = 102230,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "可恶…到此为止了吗…",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -77,8 +77,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -90,8 +90,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "这次居然要扮演那些东西。听我说啊，最近是不是越来越离谱了？",
 			typewriter = {
 				speed = 0.05,
@@ -103,12 +103,12 @@ return {
 			}
 		},
 		{
-			side = 0,
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
 			actor = 102070,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "不、不要再靠近了！",
+			dir = -1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -163,8 +163,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "啧，不要一边眼泪汪汪的看着我，一边掏出那么危险的武装啊！",
 			typewriter = {
 				speed = 0.05,
@@ -179,8 +179,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "不过要是就这么顺势向我求饶，说不定我真的会放过你哦~？",
 			typewriter = {
 				speed = 0.05,
@@ -195,8 +195,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "反正这次本来的目的也不是你们这些无关紧要的存在~",
 			typewriter = {
 				speed = 0.05,
@@ -211,8 +211,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "朱诺，不要管我了，快撤退…！",
 			typewriter = {
 				speed = 0.05,
@@ -239,8 +239,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -267,8 +267,8 @@ return {
 			expression = 7,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 101020,
+			dir = 1,
 			say = "大家都还……赶上了！",
 			typewriter = {
 				speed = 0.05,
@@ -295,8 +295,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -350,12 +350,12 @@ return {
 			}
 		},
 		{
-			say = "这是…哈啊，Bingo，果然和观察者所说的一样，你会亲自上阵啊",
+			actor = 900021,
 			side = 1,
 			nameColor = "#ff5c5c",
-			dir = 1,
-			actor = 900021,
 			actorName = "净化者",
+			dir = 1,
+			say = "这是…哈啊，Bingo，果然和观察者所说的一样，你会亲自上阵啊",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -373,8 +373,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "现在配角们都到齐，就差主角登场了。时间还有得是，不如先来陪我消遣一下吧~",
 			typewriter = {
 				speed = 0.05,

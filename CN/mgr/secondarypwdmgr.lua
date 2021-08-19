@@ -1,12 +1,14 @@
 pg = pg or {}
-pg.SecondaryPWDMgr = singletonClass("SecondaryPWDMgr")
-pg.SecondaryPWDMgr.UNLOCK_SHIP = 1
-pg.SecondaryPWDMgr.UNLOCK_COMMANDER = 2
-pg.SecondaryPWDMgr.RESOLVE_EQUIPMENT = 3
-pg.SecondaryPWDMgr.CREATE_INHERIT = 4
-pg.SecondaryPWDMgr.CLOSE_PASSWORD = 98
-pg.SecondaryPWDMgr.SET_PASSWORD = 99
-pg.SecondaryPWDMgr.CHANGE_SETTING = 100
+slot0 = pg
+slot0.SecondaryPWDMgr = singletonClass("SecondaryPWDMgr")
+slot1 = slot0.SecondaryPWDMgr
+slot1.UNLOCK_SHIP = 1
+slot1.UNLOCK_COMMANDER = 2
+slot1.RESOLVE_EQUIPMENT = 3
+slot1.CREATE_INHERIT = 4
+slot1.CLOSE_PASSWORD = 98
+slot1.SET_PASSWORD = 99
+slot1.CHANGE_SETTING = 100
 
 function slot2()
 	if not PLATFORM_CODE then
@@ -14,26 +16,29 @@ function slot2()
 	end
 
 	if PLATFORM_CODE ~= PLATFORM_US then
-		table.insert(slot0, 2, slot0.UNLOCK_COMMANDER)
+		table.insert({
+			uv0.UNLOCK_SHIP,
+			uv0.RESOLVE_EQUIPMENT
+		}, 2, uv0.UNLOCK_COMMANDER)
 	end
 
 	if PLATFORM_CODE == PLATFORM_JP then
-		table.insert(slot0, slot0.CREATE_INHERIT)
+		table.insert(slot0, uv0.CREATE_INHERIT)
 	end
 
 	return slot0
 end
 
-pg.SecondaryPWDMgr.Init = function (slot0, slot1)
-	slot0.LIMITED_OPERATION = slot1()
+function slot1.Init(slot0, slot1)
+	uv0.LIMITED_OPERATION = uv1()
 
 	if slot1 then
 		slot1()
 	end
 end
 
-pg.SecondaryPWDMgr.LimitedOperation = function (slot0, slot1, slot2, slot3)
-	if not table.contains(getProxy(SecondaryPWDProxy).getRawData(slot4).system_list, slot1) then
+function slot1.LimitedOperation(slot0, slot1, slot2, slot3)
+	if not table.contains(getProxy(SecondaryPWDProxy):getRawData().system_list, slot1) then
 		if slot3 then
 			slot3()
 		end
@@ -53,6 +58,7 @@ pg.SecondaryPWDMgr.LimitedOperation = function (slot0, slot1, slot2, slot3)
 
 	if not slot6 then
 		slot0:ShowWarningWindow()
+		uv0.m02:sendNotification(GAME.CANCEL_LIMITED_OPERATION)
 
 		return
 	end
@@ -72,13 +78,14 @@ pg.SecondaryPWDMgr.LimitedOperation = function (slot0, slot1, slot2, slot3)
 			mode = SecondaryPasswordLayer.InputView,
 			type = slot1,
 			info = slot2,
-			callback = slot3
+			callback = slot3,
+			LayerWeightMgr_weight = LayerWeightConst.THIRD_LAYER
 		}
 	}))
 end
 
-pg.SecondaryPWDMgr.ChangeSetting = function (slot0, slot1, slot2)
-	if table.equal(slot1, getProxy(SecondaryPWDProxy).getRawData(slot3).system_list) then
+function slot1.ChangeSetting(slot0, slot1, slot2)
+	if table.equal(slot1, getProxy(SecondaryPWDProxy):getRawData().system_list) then
 		return
 	end
 
@@ -86,6 +93,7 @@ pg.SecondaryPWDMgr.ChangeSetting = function (slot0, slot1, slot2)
 
 	if not slot5 then
 		slot0:ShowWarningWindow()
+		uv0.m02:sendNotification(GAME.CANCEL_LIMITED_OPERATION)
 
 		return
 	end
@@ -95,15 +103,15 @@ pg.SecondaryPWDMgr.ChangeSetting = function (slot0, slot1, slot2)
 		viewComponent = SecondaryPasswordLayer,
 		data = {
 			mode = SecondaryPasswordLayer.InputView,
-			type = (#slot1 == 0 and slot0.CLOSE_PASSWORD) or slot0.CHANGE_SETTING,
+			type = #slot1 == 0 and uv1.CLOSE_PASSWORD or uv1.CHANGE_SETTING,
 			settings = slot1,
 			callback = slot2
 		}
 	}))
 end
 
-pg.SecondaryPWDMgr.SetPassword = function (slot0, slot1)
-	if getProxy(SecondaryPWDProxy).getRawData(slot2).state > 0 then
+function slot1.SetPassword(slot0, slot1)
+	if getProxy(SecondaryPWDProxy):getRawData().state > 0 then
 		return
 	end
 
@@ -112,50 +120,49 @@ pg.SecondaryPWDMgr.SetPassword = function (slot0, slot1)
 		viewComponent = SecondaryPasswordLayer,
 		data = {
 			mode = SecondaryPasswordLayer.SetView,
-			type = slot0.SET_PASSWORD,
-			settings = slot0.LIMITED_OPERATION,
+			type = uv0.SET_PASSWORD,
+			settings = uv0.LIMITED_OPERATION,
 			callback = slot1
 		}
 	}))
 end
 
-pg.SecondaryPWDMgr.LoadLayer = function (slot0, slot1)
-	slot3 = getProxy(ContextProxy).getCurrentContext(slot2)
+function slot1.LoadLayer(slot0, slot1)
+	slot3 = getProxy(ContextProxy):getCurrentContext()
 	slot3 = slot3:getContextByMediator(slot3.mediator)
 
 	while slot3.parent do
 		slot3 = slot3.parent
 	end
 
-	slot0.m02:sendNotification(GAME.LOAD_LAYERS, {
+	uv0.m02:sendNotification(GAME.LOAD_LAYERS, {
 		parentContext = slot3,
 		context = slot1
 	})
 end
 
-pg.SecondaryPWDMgr.ShowWarningWindow = function (slot0)
-	slot0.MsgboxMgr.GetInstance():ShowMsgBox({
-		mode = "showresttime",
+function slot1.ShowWarningWindow(slot0)
+	uv0.MsgboxMgr.GetInstance():ShowMsgBox({
 		title = "warning",
+		mode = "showresttime",
 		hideNo = true,
 		type = MSGBOX_TYPE_SECONDPWD
 	})
 end
 
-pg.SecondaryPWDMgr.FetchData = function (slot0)
-	slot0.m02:sendNotification(GAME.FETCH_PASSWORD_STATE)
+function slot1.FetchData(slot0)
+	uv0.m02:sendNotification(GAME.FETCH_PASSWORD_STATE)
 end
 
-pg.SecondaryPWDMgr.IsNormalOp = function (slot0, slot1)
+function slot1.IsNormalOp(slot0, slot1)
 	if not slot1 then
 		return false
 	end
 
-	return table.contains(slot0.LIMITED_OPERATION, slot1)
+	return table.contains(uv0.LIMITED_OPERATION, slot1)
 end
 
-pg.SecondaryPWDMgr.Dispose = function (slot0)
-	return
+function slot1.Dispose(slot0)
 end
 
-return pg.SecondaryPWDMgr
+return slot1

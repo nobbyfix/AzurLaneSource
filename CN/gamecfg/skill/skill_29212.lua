@@ -2,20 +2,20 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 79212,
 					emitter = "BattleBulletEmitter"
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 79214,
 					emitter = "BattleBulletEmitter"
@@ -26,10 +26,10 @@ return {
 	uiEffect = "",
 	name = "专属弹幕-Z46II",
 	cd = 0,
-	picture = "0",
-	desc = "专属弹幕-Z46II",
 	painting = 1,
 	id = 29212,
+	picture = "0",
+	desc = "专属弹幕-Z46II",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -40,20 +40,20 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 79212,
 				emitter = "BattleBulletEmitter"
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 79214,
 				emitter = "BattleBulletEmitter"

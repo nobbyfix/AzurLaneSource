@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春天的赏樱大会\n\n<size=45>五  樱与幕</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "果然说到春天，就少不了樱花呢",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -66,12 +66,12 @@ return {
 			}
 		},
 		{
-			say = "看到大家那么开心，就觉得值得了呢，恩？那边是——",
+			actor = 306030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "看到大家那么开心，就觉得值得了呢，恩？那边是——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -86,15 +86,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
 			actor = 401230,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这边就是会场吗？哇，好热闹！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -119,12 +119,12 @@ return {
 			}
 		},
 		{
-			say = "我闻到美食的味道了～",
+			actor = 201210,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我闻到美食的味道了～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -219,15 +219,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
 			actor = 306030,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真是让人会心一笑的场景呢～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -60,6 +60,36 @@ pg.skin_page_template = {
 		res = "live",
 		english_name = "live"
 	},
+	[12] = {
+		id = 12,
+		name = "特别演习 ",
+		res = "laoyuyanxi",
+		english_name = "Prison Exerciese"
+	},
+	[13] = {
+		id = 13,
+		name = "运动时间",
+		res = "yundongshijian",
+		english_name = "Sport time"
+	},
+	[14] = {
+		id = 14,
+		name = "疾速狂热",
+		res = "jisukuangre",
+		english_name = "Race Queen"
+	},
+	[15] = {
+		id = 15,
+		name = "医院系列",
+		res = "yiyuanxilie",
+		english_name = "hospital"
+	},
+	[16] = {
+		id = 16,
+		name = "嘉年华",
+		res = "jianianhua",
+		english_name = "Carnival"
+	},
 	[9999] = {
 		id = 9999,
 		name = "其他",
@@ -77,8 +107,11 @@ pg.skin_page_template = {
 		9,
 		10,
 		11,
+		12,
+		13,
+		14,
+		15,
+		16,
 		9999
 	}
 }
-
-return

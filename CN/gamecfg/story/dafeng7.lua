@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAFENG7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"“献身”的{namecode:97}\n\n<size=45>七 {namecode:97}的消失(?)·下</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "这天起床后，没有看到早餐",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -48,9 +48,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "……{namecode:97}？",
 			typewriter = {
 				speed = 0.05,
@@ -58,15 +58,15 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官？怎么了？脸色这么差？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -107,13 +107,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "来到指挥室，也没有看到那熟悉的身影……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -136,19 +136,19 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			say = "指挥官！太好了，你在这里，快跟我来！{namecode:97}她、{namecode:97}她——",
-			dir = 1,
 			bgName = "bg_story_task",
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "指挥官！太好了，你在这里，快跟我来！{namecode:97}她、{namecode:97}她——",
 			actorPosition = {
 				x = 1500,
 				y = 0
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = -675
@@ -166,14 +166,14 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_103",
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对不起，指挥官…昨天原本只是开玩笑对{namecode:97}说，太过献身会导致别人的反感什么的，还给她找了一些杂志的报导",
 			flashout = {
-				dur = 0.2,
 				black = true,
+				dur = 0.2,
 				alpha = {
 					0,
 					1
@@ -201,8 +201,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "当时也没觉得有什么，没想到那之后她就把自己关在房间里不出来了……",
 			typewriter = {
@@ -218,8 +218,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官，大概只有你的话她听得进去了…拜托了，指挥官，请把{namecode:97}从房间里带出来吧！",
 			typewriter = {
@@ -232,8 +232,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -244,13 +244,13 @@ return {
 		{
 			expression = 2,
 			side = 2,
+			say = "{namecode:97}的房门紧闭着",
 			dir = 1,
 			blackBg = true,
 			bgm = "story-2",
-			say = "{namecode:97}的房门紧闭着",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -277,8 +277,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -289,8 +289,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -301,8 +301,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -313,8 +313,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -325,8 +325,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -343,8 +343,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -355,8 +355,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -367,8 +367,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -379,8 +379,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "{namecode:97}的话里带上了一丝哭腔。",
 			typewriter = {
@@ -395,8 +395,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -407,8 +407,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -419,8 +419,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:97}",
 			side = 2,
+			actorName = "{namecode:97}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -431,8 +431,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "…————",
 			typewriter = {
@@ -441,8 +441,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "还没来得及回答，房门就打开了",
 			typewriter = {
@@ -451,12 +451,12 @@ return {
 			}
 		},
 		{
-			actorScale = 1,
+			actor = 307070,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307070,
 			nameColor = "#a9f548",
+			dir = 1,
+			actorScale = 1,
 			say = "<size=45>指挥官大人！！！</size>",
 			dialogShake = {
 				speed = 0.09,
@@ -479,8 +479,8 @@ return {
 					}
 				},
 				{
-					y = -225,
 					type = "move",
+					y = -225,
 					delay = 0.01,
 					dur = 0.2,
 					x = 0
@@ -488,9 +488,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "{namecode:97}扑进了怀里……",
 			typewriter = {
 				speed = 0.05,
@@ -498,9 +498,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "看来不论是{namecode:97}还是自己都知道——",
 			typewriter = {
 				speed = 0.05,

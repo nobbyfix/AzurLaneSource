@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGTINGLIAOFA12",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
+			bgm = "airRaidAlarm",
 			side = 2,
 			bgName = "bg_xiangting_1",
-			say = "白鹰·纽约港 不久前",
 			dir = 1,
-			bgm = "airRaidAlarm",
+			say = "白鹰·纽约港 不久前",
 			effects = {
 				{
 					active = true,
@@ -60,11 +60,11 @@ return {
 			}
 		},
 		{
+			actor = 106020,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			actor = 106020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不、不好了，纽波特港彻底陷入一片火海了！！",
 			typewriter = {
 				speed = 0.05,
@@ -76,8 +76,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -182,11 +182,11 @@ return {
 			}
 		},
 		{
+			actor = 101110,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "正义必胜！",
 			typewriter = {
 				speed = 0.05,
@@ -198,8 +198,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -208,10 +208,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_xiangting_1",
 			actor = 101140,
+			nameColor = "#a9f548",
+			bgName = "bg_xiangting_1",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "富特&奥利克",
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "居然敢来偷袭这里，让它们见识一下白鹰舰队的厉害吧！",
 			typewriter = {
 				speed = 0.05,
@@ -314,8 +314,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -324,12 +324,12 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_xiangting_1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107030,
-			nameColor = "#a9f548",
 			say = "（...各位，千万注意安全)",
 			typewriter = {
 				speed = 0.05,

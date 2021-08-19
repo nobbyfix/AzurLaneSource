@@ -1,19 +1,19 @@
 return {
-	time = 0,
-	name = "弹药匮乏",
 	init_effect = "",
-	id = 210,
+	name = "弹药匮乏",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "舰队伤害降低50%",
 	stack = 1,
-	color = "yellow",
+	id = 210,
 	icon = 210,
 	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onStartGame"
+				"onAttach"
 			},
 			arg_list = {
 				skill_id = 210

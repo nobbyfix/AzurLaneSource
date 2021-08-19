@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"圣诞礼物大作战！\n\n<size=45>二　来自重樱的建议</size>",
@@ -19,17 +19,17 @@ return {
 		{
 			expression = 2,
 			side = 2,
+			bgName = "star_level_bg_104",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			actorName = "{namecode:146}",
 			bgm = "story-1",
 			actor = 301641,
-			nameColor = "#a9f548",
-			bgName = "star_level_bg_104",
+			actorName = "{namecode:146}",
 			say = "{namecode:142}酱，不要着急嘛！再等一会，就一会，我马上就选好了啦！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -59,9 +59,9 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "等不下去啦！说到底为什么选个礼物要花上两个小时啊！",
 			actor = 301591,
 			actorName = "{namecode:142}",
+			say = "等不下去啦！说到底为什么选个礼物要花上两个小时啊！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -76,8 +76,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -122,15 +122,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "star_level_bg_104",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯？是重樱的驱逐舰们呢，似乎是发生了争吵？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -155,11 +155,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_104",
-			dir = 1,
 			actor = 301641,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_104",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:146}",
 			say = "啊啦，皇家的可爱战列舰和可爱驱逐舰！你们也是来选礼物的嘛？",
 			typewriter = {
@@ -188,12 +188,12 @@ return {
 			}
 		},
 		{
-			say = "贵……贵安……",
+			actor = 201100,
 			side = 1,
 			bgName = "star_level_bg_104",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "贵……贵安……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -208,11 +208,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "star_level_bg_104",
-			dir = 1,
 			actor = 301641,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_104",
+			side = 0,
+			dir = 1,
 			actorName = "{namecode:146}",
 			say = "哦？可爱的女孩子们遇到了烦恼吗？有什么{namecode:146}能够帮忙的地方只管说哦！",
 			typewriter = {
@@ -225,11 +225,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_104",
-			dir = -1,
 			actor = 301591,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_104",
+			side = 1,
+			dir = -1,
 			actorName = "{namecode:142}",
 			say = "可真敢说，明明自己还没选好礼物，就要帮起别人来了！",
 			typewriter = {
@@ -242,8 +242,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -368,11 +368,11 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 2,
 			bgName = "star_level_bg_104",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "前辈……那样……就没有收到礼物时的……惊喜和快乐了。",
 			typewriter = {
 				speed = 0.05,
@@ -384,8 +384,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -442,12 +442,12 @@ return {
 			}
 		},
 		{
+			actor = 301641,
 			nameColor = "#a9f548",
-			side = 2,
 			bgName = "star_level_bg_104",
+			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 301641,
 			actorName = "{namecode:146}",
 			say = "圣诞快乐呀~再见，可爱的战列舰~",
 			typewriter = {

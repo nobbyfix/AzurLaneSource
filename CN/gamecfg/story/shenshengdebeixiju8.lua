@@ -1,14 +1,14 @@
 return {
-	mode = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU8",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			say = "同日13:20:00",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-boss-5",
+			say = "同日13:20:00",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -22,8 +22,8 @@ return {
 			actor = 205029,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "厌战",
+			dir = 1,
 			say = "贵安，光辉女士，劳烦您远道而来，厌战号向您献上最高的问候",
 			typewriter = {
 				speed = 0.05,
@@ -53,8 +53,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "情况如您所知，我们正准备派遣巡洋舰队同帝国共同执行搜索任务…",
 			typewriter = {
@@ -85,8 +85,8 @@ return {
 			actor = 205029,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "厌战",
+			dir = 1,
 			say = "真是瞒不过光辉女士的眼睛…对方的理由是这样的",
 			typewriter = {
 				speed = 0.05,
@@ -101,8 +101,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "“虽然非常不希望在夜晚执行搜索任务，但是塞壬的据点只有在夜间才会更为活跃”",
 			typewriter = {
@@ -118,8 +118,8 @@ return {
 			expression = 7,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "马耳他的侦察机无法在夜间工作。如果帝国借着夜色图谋不轨的话，我们将会陷入非常被动的局面。",
 			typewriter = {
@@ -150,8 +150,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "啊？光辉女士何以见得...",
 			typewriter = {
@@ -182,8 +182,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "女…女人的直觉吗？！？",
 			typewriter = {
@@ -196,8 +196,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -224,8 +224,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "是…是这样的吗？学，学习到了…",
 			typewriter = {
@@ -256,8 +256,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "照明弹？",
 			typewriter = {
@@ -300,8 +300,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "此时约克正搬着弹药箱路过指挥点",
 			typewriter = {
 				speed = 0.05,
@@ -343,8 +343,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

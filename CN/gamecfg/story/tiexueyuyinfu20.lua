@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU20",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			nameColor = "#ff5c5c",
 			side = 2,
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
-			dir = 1,
-			bgm = "bsm-5",
 			actorName = "提尔比茨",
+			dir = 1,
 			say = "喂！那边的那个小不点，不许在港区海域胡闹，立刻报上所属！！",
+			bgm = "bsm-5",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "U-556",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -40,8 +40,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "U-556",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -56,8 +56,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "提尔比茨",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -72,8 +72,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "提尔比茨",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -88,8 +88,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "U-556",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -104,8 +104,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "U-556",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -120,8 +120,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "提尔比茨",
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
 			side = 2,
 			dir = 1,
@@ -136,9 +136,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_bsm_2",
-			dir = 1,
 			say = "（只见U556一个倒身翻滚潜入了港口的水里，还是那套滑稽的动作）",
 			typewriter = {
 				speed = 0.05,
@@ -150,11 +150,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			side = 2,
+			nameColor = "#ff5c5c",
 			bgName = "bg_bsm_2",
-			dir = 1,
 			actorName = "提尔比茨",
+			dir = 1,
 			say = "你——别跑！！",
 			effects = {
 				{
@@ -177,9 +177,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_bsm_2",
-			dir = 1,
 			say = "（提尔比茨头冒青筋，对着水底下的U556大吼着）",
 			typewriter = {
 				speed = 0.05,
@@ -193,10 +193,10 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 408040,
 			nameColor = "#ff5c5c",
+			dir = 1,
+			blackBg = true,
 			say = "嘻嘻，今天又是556的胜利——",
 			effects = {
 				{

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN05",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"鞍山的绘图日记\n\n<size=45>五　鞍山的绘图本</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好…这里涂上这个颜色——",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,11 +34,11 @@ return {
 			}
 		},
 		{
+			actor = 501040,
 			actorShadow = true,
-			side = 0,
 			bgName = "bg_story_school",
 			actorName = "抚顺&长春&太原",
-			actor = 501040,
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "最后一张画~完成啦~",
@@ -66,10 +66,10 @@ return {
 			}
 		},
 		{
-			actorName = "平海&宁海",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 502030,
+			actorName = "平海&宁海",
+			bgName = "bg_story_school",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "完成啦~",
@@ -123,12 +123,12 @@ return {
 			}
 		},
 		{
-			say = "鞍山姐…原来才是最投入的那个人吗",
+			actor = 501030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "鞍山姐…原来才是最投入的那个人吗",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -239,12 +239,12 @@ return {
 			}
 		},
 		{
-			say = "逸仙！你怎么来了",
+			actor = 502020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 502020,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "逸仙！你怎么来了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -499,14 +499,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "噢噢噢~~",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -9,9 +9,9 @@ return {
 			actor = 207040,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-6",
 			dir = 1,
 			say = "有六支…七支……不对，更多塞壬舰队包围过来了！",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

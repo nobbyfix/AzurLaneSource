@@ -9,9 +9,9 @@ return {
 			actor = 107060,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-6",
 			dir = 1,
 			say = "奇怪，虽然塞壬舰队数量看起来很夸张，但战斗力还是比预期低了很多……",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,8 +112,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -137,8 +137,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -147,8 +147,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "不愧是皇家的航空母舰，在奇妙的地方有着非同一般的执着…",
 			typewriter = {
 				speed = 0.05,

@@ -8,142 +8,159 @@ slot0.ON_NEXT_CHALLENGE = "BattleResultMediator.ON_NEXT_CHALLENGE"
 slot0.ON_CHALLENGE_RANK = "BattleResultMediator:ON_CHALLENGE_RANK"
 slot0.ON_CHALLENGE_SHARE = "BattleResultMediator:ON_CHALLENGE_SHARE"
 slot0.ON_CHALLENGE_DEFEAT_SCENE = "BattleResultMediator:ON_CHALLENGE_DEFEAT_SCENE"
+slot0.DIRECT_EXIT = "BattleResultMediator:DIRECT_EXIT"
+slot0.OPEN_FAIL_TIP_LAYER = "BattleResultMediator:OPEN_FAIL_TIP_LAYER"
+slot0.PRE_BATTLE_FAIL_EXIT = "BattleResultMediator:PRE_BATTLE_FAIL_EXIT"
 
-slot0.register = function (slot0)
-	slot1 = PlayerPrefs.GetInt(AUTO_BATTLE_LABEL, 0) > 0
-
-	if ys.Battle.BattleState.IsAutoBotActive() and slot1 then
-		playSoundEffect(SFX_AUTO_BATTLE)
-		LuaHelper.Vibrate()
-	end
-
-	slot4 = getProxy(PlayerProxy).getData(slot3)
-	slot5 = getProxy(FleetProxy)
-	slot6 = getProxy(BayProxy)
-	slot7 = getProxy(ChapterProxy)
-	slot8 = getProxy(ActivityProxy)
+function slot0.register(slot0)
+	slot3 = getProxy(FleetProxy)
+	slot4 = getProxy(BayProxy)
+	slot5 = getProxy(ChapterProxy)
+	slot6 = getProxy(ActivityProxy)
 
 	if slot0.contextData.system == SYSTEM_DUEL then
-		slot10 = getProxy(MilitaryExerciseProxy)
+		slot8 = getProxy(MilitaryExerciseProxy)
 
-		slot0.viewComponent:setRivalVO(slot11)
-		slot0.viewComponent:setRank(slot4, slot10:getSeasonInfo())
-	elseif slot9 == SYSTEM_CHALLENGE then
-		slot10 = getProxy(ChallengeProxy)
+		slot0.viewComponent:setRivalVO(slot8:getPreRivalById(slot0.contextData.rivalId))
+		slot0.viewComponent:setRank(getProxy(PlayerProxy):getData(), slot8:getSeasonInfo())
+	elseif slot7 == SYSTEM_CHALLENGE then
+		slot8 = getProxy(ChallengeProxy)
 
-		slot0.viewComponent:setChallengeInfo(slot10:getUserChallengeInfo(slot0.contextData.mode), slot10:userSeaonExpire(slot0.contextData.mode))
+		slot0.viewComponent:setChallengeInfo(slot8:getUserChallengeInfo(slot0.contextData.mode), slot8:userSeaonExpire(slot0.contextData.mode))
 	else
-		if slot9 == SYSTEM_SCENARIO or slot9 == SYSTEM_ROUTINE or slot9 == SYSTEM_ACT_BOSS or slot9 == SYSTEM_HP_SHARE_ACT_BOSS or slot9 == SYSTEM_SUB_ROUTINE then
-			slot0.viewComponent:setExpBuff(slot8:getBuffList()[1], slot8:getBuffShipList())
+		if slot7 == SYSTEM_SCENARIO or slot7 == SYSTEM_ROUTINE or slot7 == SYSTEM_ACT_BOSS or slot7 == SYSTEM_HP_SHARE_ACT_BOSS or slot7 == SYSTEM_SUB_ROUTINE or slot7 == SYSTEM_WORLD then
+			slot0.viewComponent:setExpBuff(_.detect(BuffHelper.GetBuffsByActivityType(ActivityConst.ACTIVITY_TYPE_BUFF), function (slot0)
+				return slot0:getConfig("benefit_type") == "rookie_battle_exp"
+			end), slot6:getBuffShipList())
 		end
 
-		slot0.viewComponent:setPlayer(slot4)
+		slot0.viewComponent:setPlayer(slot2)
 	end
 
-	slot10 = nil
+	slot8 = nil
 
-	if slot9 == SYSTEM_SCENARIO or slot9 == SYSTEM_SHAM then
-		slot10 = {}
-		slot11 = nil
+	if slot7 == SYSTEM_SCENARIO then
+		slot8 = {}
+		slot9 = nil
 
-		if slot9 == SYSTEM_SCENARIO then
-			slot11 = slot7:getActiveChapter()
-		elseif slot9 == SYSTEM_SHAM then
-			slot11 = slot7:getShamChapter()
+		if slot7 == SYSTEM_SCENARIO then
+			slot9 = slot5:getActiveChapter()
 		end
 
-		slot14 = slot11.fleet[TeamType.Vanguard]
+		slot10 = slot9.fleet
+		slot12 = slot10[TeamType.Vanguard]
 
-		for slot18, slot19 in ipairs(slot13) do
-			table.insert(slot10, slot19)
+		for slot16, slot17 in ipairs(slot10[TeamType.Main]) do
+			table.insert(slot8, slot17)
 		end
 
-		for slot18, slot19 in ipairs(slot14) do
-			table.insert(slot10, slot19)
+		for slot16, slot17 in ipairs(slot12) do
+			table.insert(slot8, slot17)
 		end
 
-		if _.detect(slot11.fleets, function (slot0)
+		if _.detect(slot9.fleets, function (slot0)
 			return slot0:getFleetType() == FleetType.Submarine
 		end) then
-			for slot20, slot21 in ipairs(slot16) do
-				table.insert(slot10, slot21)
+			for slot18, slot19 in ipairs(slot13:getShipsByTeam(TeamType.Submarine, true)) do
+				table.insert(slot8, slot19)
 			end
 		end
-	elseif slot9 == SYSTEM_WORLD then
-		slot10 = {}
-		slot14 = getProxy(WorldProxy).GetWorld(slot11).GetActiveMap(slot12).GetFleet(slot13)
-		slot16 = slot14:GetTeamShipVOs(TeamType.Vanguard, true)
 
-		for slot20, slot21 in ipairs(slot15) do
-			table.insert(slot10, slot21)
+		slot0.viewComponent:SetSkipFlag(slot5:GetChapterAutoFlag(slot9.id) == 1)
+	elseif slot7 == SYSTEM_WORLD then
+		slot11 = nowWorld:GetActiveMap():GetFleet()
+		slot13 = slot11:GetTeamShipVOs(TeamType.Vanguard, true)
+
+		for slot17, slot18 in ipairs(slot11:GetTeamShipVOs(TeamType.Main, true)) do
+			table.insert({}, slot18)
 		end
 
-		for slot20, slot21 in ipairs(slot16) do
-			table.insert(slot10, slot21)
+		for slot17, slot18 in ipairs(slot13) do
+			table.insert(slot8, slot18)
 		end
 
-		if slot13:GetSubmarineFleet() then
-			for slot22, slot23 in ipairs(slot18) do
-				table.insert(slot10, slot23)
+		if slot10:GetSubmarineFleet() then
+			for slot19, slot20 in ipairs(slot14:GetTeamShipVOs(TeamType.Submarine, true)) do
+				table.insert(slot8, slot20)
 			end
 		end
-	elseif slot9 == SYSTEM_CHALLENGE then
-		slot0:bind(slot0.ON_CHALLENGE_SHARE, function (slot0)
-			slot0:addSubLayers(Context.New({
+
+		slot0.viewComponent:SetSkipFlag(nowWorld.isAutoFight)
+	elseif slot7 == SYSTEM_CHALLENGE then
+		slot0:bind(uv0.ON_CHALLENGE_SHARE, function (slot0)
+			uv0:addSubLayers(Context.New({
 				mediator = ChallengeShareMediator,
 				viewComponent = ChallengeShareLayer,
 				data = {
-					mode = slot0.contextData.mode
+					mode = uv0.contextData.mode
 				}
 			}))
 		end)
-		slot0:bind(slot0.ON_CHALLENGE_DEFEAT_SCENE, function (slot0, slot1)
-			slot0:addSubLayers(Context.New({
+		slot0:bind(uv0.ON_CHALLENGE_DEFEAT_SCENE, function (slot0, slot1)
+			uv0:addSubLayers(Context.New({
 				mediator = ChallengePassedMediator,
 				viewComponent = ChallengePassedLayer,
 				data = {
-					mode = slot0.contextData.mode
+					mode = uv0.contextData.mode
 				},
 				onRemoved = slot1.callback
 			}))
 		end)
-	elseif slot9 == SYSTEM_DODGEM then
-	elseif slot9 == SYSTEM_SUBMARINE_RUN then
-	elseif slot9 == SYSTEM_HP_SHARE_ACT_BOSS or slot9 == SYSTEM_ACT_BOSS or slot9 == SYSTEM_BOSS_EXPERIMENT then
-		slot11 = slot0.contextData.actId
+	elseif slot7 == SYSTEM_WORLD_BOSS then
+		slot8 = getProxy(BayProxy):getShipsByFleet(nowWorld:GetBossProxy():GetFleet())
 
-		if slot9 == SYSTEM_HP_SHARE_ACT_BOSS then
-			slot0.viewComponent:setActId(slot11)
+		slot0.viewComponent:setTitle(slot0.contextData.name)
+	elseif slot7 == SYSTEM_DODGEM then
+		-- Nothing
+	elseif slot7 == SYSTEM_SUBMARINE_RUN then
+		-- Nothing
+	elseif slot7 == SYSTEM_REWARD_PERFORM then
+		-- Nothing
+	elseif slot7 == SYSTEM_AIRFIGHT then
+		-- Nothing
+	elseif slot7 == SYSTEM_HP_SHARE_ACT_BOSS or slot7 == SYSTEM_ACT_BOSS or slot7 == SYSTEM_BOSS_EXPERIMENT then
+		slot9 = slot0.contextData.actId
+
+		if slot7 == SYSTEM_HP_SHARE_ACT_BOSS then
+			slot0.viewComponent:setActId(slot9)
 		end
 
-		slot10 = slot6:getShipsByFleet(slot13)
+		slot10 = slot3:getActivityFleets()[slot9]
 
-		for slot19, slot20 in ipairs(slot15) do
-			table.insert(slot10, slot20)
+		for slot17, slot18 in ipairs(slot4:getShipsByFleet(slot10[slot0.contextData.mainFleetId + 10])) do
+			table.insert(slot4:getShipsByFleet(slot10[slot0.contextData.mainFleetId]), slot18)
+		end
+	elseif slot7 == SYSTEM_GUILD then
+		for slot16, slot17 in ipairs(getProxy(GuildProxy):getData():GetActiveEvent():GetBossMission():GetMainFleet():GetShips()) do
+			table.insert({}, slot17.ship)
+		end
+
+		for slot17, slot18 in ipairs(slot11:GetSubFleet():GetShips()) do
+			table.insert(slot8, slot18.ship)
 		end
 	else
-		slot10 = slot6:getShipsByFleet(slot5:getFleetById(slot11))
+		slot8 = slot4:getShipsByFleet(slot3:getFleetById(slot0.contextData.mainFleetId))
 	end
 
-	slot0.viewComponent:setShips(slot10)
-	slot0:bind(slot0.ON_BACK_TO_LEVEL_SCENE, function (slot0, slot1)
-		slot2 = getProxy(ContextProxy)
+	slot0.viewComponent:setShips(slot8)
+	slot0:bind(uv0.ON_BACK_TO_LEVEL_SCENE, function (slot0, slot1)
+		if uv0 == SYSTEM_ACT_BOSS then
+			slot3, slot4 = getProxy(ContextProxy):getContextByMediator(PreCombatMediator)
 
-		if slot0 == SYSTEM_ACT_BOSS then
-			if slot2:getContextByMediator(ActivityBossBattleMediator3) then
-				slot3:removeChild(slot3:getContextByMediator(PreCombatMediator))
+			if slot3 then
+				slot4:removeChild(slot3)
 			end
-		elseif slot0 == SYSTEM_ROUTINE or slot0 == SYSTEM_SUB_ROUTINE then
+		elseif uv0 == SYSTEM_ROUTINE or uv0 == SYSTEM_SUB_ROUTINE then
 			if slot2:getContextByMediator(DailyLevelMediator) then
 				slot3:removeChild(slot3:getContextByMediator(PreCombatMediator))
 			end
-		elseif slot0 == SYSTEM_SCENARIO then
-			slot3 = slot2:getContextByMediator(LevelMediator2)
+		elseif uv0 == SYSTEM_SCENARIO then
+			if slot2:getContextByMediator(LevelMediator2):getContextByMediator(ChapterPreCombatMediator) then
+				slot3:removeChild(slot4)
+			end
 
-			slot3:removeChild(slot3:getContextByMediator(ChapterPreCombatMediator))
-
-			if slot1.contextData.score > 1 then
-				slot1:showExtraChapterActSocre()
+			if uv1.contextData.score > 1 then
+				uv1:showExtraChapterActSocre()
 			end
 
 			if getProxy(ChapterProxy):getActiveChapter() then
@@ -159,129 +176,185 @@ slot0.register = function (slot0)
 					slot5:updateChapter(slot6)
 				end
 			end
-		elseif slot0 == SYSTEM_SHAM then
-			slot3 = slot2:getContextByMediator(LevelMediator2)
+		elseif uv0 == SYSTEM_CHALLENGE then
+			slot5 = getProxy(ChallengeProxy):getUserChallengeInfo(uv1.contextData.mode)
 
-			slot3:removeChild(slot3:getContextByMediator(ShamPreCombatMediator))
-		elseif slot0 == SYSTEM_CHALLENGE then
-			slot5 = getProxy(ChallengeProxy).getUserChallengeInfo(slot3, slot4)
-
-			if slot1.contextData.score < ys.Battle.BattleConst.BattleScore.S then
-				slot1:sendNotification(GAME.CHALLENGE2_RESET, {
+			if uv1.contextData.score < ys.Battle.BattleConst.BattleScore.S then
+				uv1:sendNotification(GAME.CHALLENGE2_RESET, {
 					mode = slot4
 				})
 			else
-				slot6 = slot5:IsFinish()
-
 				slot5:updateLevelForward()
 
-				if slot5:getMode() == ChallengeProxy.MODE_INFINITE and slot6 then
+				if slot5:getMode() == ChallengeProxy.MODE_INFINITE and slot5:IsFinish() then
 					slot5:setInfiniteDungeonIDListByLevel()
 				end
 			end
 
-			slot6 = slot3:getChallengeInfo()
-
 			if not slot3:userSeaonExpire(slot5:getMode()) then
-				slot6:checkRecord(slot5)
+				slot3:getChallengeInfo():checkRecord(slot5)
 			end
 
 			if not slot1.goToNext and slot2:getContextByMediator(ChallengeMainMediator) then
 				slot7:removeChild(slot7:getContextByMediator(ChallengePreCombatMediator))
 			end
-		elseif slot0 == SYSTEM_HP_SHARE_ACT_BOSS then
-			if slot2:getContextByMediator(ActivityBossBattleMediator3):getContextByMediator(PreCombatMediator) then
+		elseif uv0 == SYSTEM_HP_SHARE_ACT_BOSS then
+			slot3, slot4 = slot2:getContextByMediator(PreCombatMediator)
+
+			if slot3 then
+				slot4:removeChild(slot3)
+			end
+		elseif uv0 == SYSTEM_WORLD_BOSS then
+			if slot2:getContextByMediator(WorldBossMediator):getContextByMediator(WorldBossFormationMediator) then
+				slot3:removeChild(slot4)
+			end
+		elseif uv0 == SYSTEM_WORLD then
+			if slot2:getContextByMediator(WorldMediator):getContextByMediator(WorldPreCombatMediator) or slot3:getContextByMediator(WorldBossInformationMediator) then
 				slot3:removeChild(slot4)
 			end
 		elseif slot2:getContextByMediator(LevelMediator2) then
 			slot3:removeChild(slot3:getContextByMediator(PreCombatMediator))
 		end
 
-		slot1:sendNotification(GAME.GO_BACK)
+		uv1:sendNotification(GAME.GO_BACK)
 	end)
-	slot0:bind(slot0.ON_GO_TO_MAIN_SCENE, function (slot0)
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.MAINUI)
+	slot0:bind(uv0.ON_GO_TO_MAIN_SCENE, function (slot0)
+		uv0:sendNotification(GAME.CHANGE_SCENE, SCENE.MAINUI)
 	end)
-	slot0:bind(slot0.ON_GO_TO_TASK_SCENE, function (slot0)
+	slot0:bind(uv0.ON_GO_TO_TASK_SCENE, function (slot0)
 		if getProxy(ContextProxy):getContextByMediator(LevelMediator2) then
 			slot2:removeChild(slot2:getContextByMediator(PreCombatMediator))
 		end
 
-		slot1:getCurrentContext().ignoreBack = true
-
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.TASK)
+		uv0:sendNotification(GAME.CHANGE_SCENE, SCENE.TASK)
 	end)
-	slot0:bind(slot0.ON_BACK_TO_DUEL_SCENE, function (slot0)
+	slot0:bind(uv0.ON_BACK_TO_DUEL_SCENE, function (slot0)
 		if getProxy(ContextProxy):getContextByMediator(MilitaryExerciseMediator) then
-			slot2:removeChild(slot2:getContextByMediator(PreCombatMediator))
+			slot2:removeChild(slot2:getContextByMediator(ExercisePreCombatMediator))
 		end
 
-		slot0:sendNotification(GAME.GO_BACK)
+		uv0:sendNotification(GAME.GO_BACK)
 	end)
-	slot0:bind(slot0.GET_NEW_SHIP, function (slot0, slot1, slot2)
-		slot0:addSubLayers(Context.New({
+	slot0:bind(uv0.GET_NEW_SHIP, function (slot0, slot1, slot2, slot3)
+		uv0:addSubLayers(Context.New({
 			mediator = NewShipMediator,
 			viewComponent = NewShipLayer,
 			data = {
-				ship = slot1
+				ship = slot1,
+				autoExitTime = slot3
 			},
 			onRemoved = slot2
 		}))
 	end)
+	slot0:bind(uv0.OPEN_FAIL_TIP_LAYER, function (slot0)
+		setActive(uv0.viewComponent._tf, false)
+		uv0:addSubLayers(Context.New({
+			mediator = BattleFailTipMediator,
+			viewComponent = BattleFailTipLayer,
+			data = {
+				mainShips = uv1,
+				battleSystem = uv0.contextData.system
+			},
+			onRemoved = function ()
+				uv0.viewComponent.failTag = nil
+
+				triggerButton(uv0.viewComponent._confirmBtn)
+			end
+		}))
+	end)
+	slot0:bind(uv0.DIRECT_EXIT, function (slot0, slot1)
+		uv0:sendNotification(GAME.GO_BACK)
+	end)
+	slot0:bind(uv0.PRE_BATTLE_FAIL_EXIT, function (slot0)
+		if uv0 == SYSTEM_SCENARIO then
+			getProxy(ChapterProxy):StopAutoFight()
+		end
+	end)
+
+	slot9 = 0
+
+	if slot8 then
+		for slot13, slot14 in ipairs(slot8) do
+			slot9 = slot14:getBattleTotalExpend() + slot9
+		end
+	end
+
+	print("耗时：", slot0.contextData.statistics._totalTime, "秒")
+	print("编队基础油耗：", slot9)
+
+	if slot0.contextData.statistics._enemyInfoList then
+		for slot13, slot14 in pairs(slot0.contextData.statistics._enemyInfoList) do
+			print("目标ID>>", slot14.id, "<< 受到伤害共 >>", slot14.damage, "<< 点")
+		end
+	end
+
+	slot10 = false
+
+	if slot7 == SYSTEM_SCENARIO then
+		slot10 = getProxy(ChapterProxy):GetChapterAutoFlag(slot5:getActiveChapter().id) == 1
+	elseif slot7 == SYSTEM_WORLD then
+		slot10 = nowWorld.isAutoFight
+	end
+
+	if ys.Battle.BattleState.IsAutoBotActive() and PlayerPrefs.GetInt(AUTO_BATTLE_LABEL, 0) > 0 and not slot10 then
+		pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_AUTO_BATTLE)
+		LuaHelper.Vibrate()
+	end
 end
 
-slot0.showExtraChapterActSocre = function (slot0)
-	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_EXTRA_CHAPTER_RANK) and not slot2:isEnd() and getProxy(ChapterProxy):getActiveChapter() then
-		slot6 = slot0.contextData.stageId
-		slot7 = slot2:getConfig("config_data")
+function slot0.showExtraChapterActSocre(slot0)
+	slot5 = getProxy(ChapterProxy):getActiveChapter() and slot3:getMapById(slot4:getConfig("map"))
 
-		if Map.New({
-			id = slot4:getConfig("map")
-		}):isActExtra() and slot7[1] == slot6 then
-			slot10, slot11 = ActivityLevelConst.getExtraChapterSocre(slot6, math.floor(slot0.contextData.statistics._totalTime), ActivityLevelConst.getShipsPower(slot0.contextData.prefabFleet or slot0.contextData.oldMainShips), slot2)
-			slot12 = (slot11 < slot10 and i18n("extra_chapter_record_updated")) or i18n("extra_chapter_record_not_updated")
+	for slot9, slot10 in ipairs(getProxy(ActivityProxy):getActivitiesByType(ActivityConst.ACTIVITY_TYPE_EXTRA_CHAPTER_RANK)) do
+		if slot10 and not slot10:isEnd() and slot10:getConfig("config_data")[1] == slot0.contextData.stageId and slot5 and slot5:isActExtra() then
+			slot15, slot16 = ActivityLevelConst.getExtraChapterSocre(slot12, math.floor(slot0.contextData.statistics._totalTime), ActivityLevelConst.getShipsPower(slot0.contextData.prefabFleet or slot0.contextData.oldMainShips), slot10)
+			slot17 = slot16 < slot15 and i18n("extra_chapter_record_updated") or i18n("extra_chapter_record_not_updated")
 
-			if slot11 < slot10 then
-				slot2.data1 = slot10
+			if slot16 < slot15 then
+				slot10.data1 = slot15
 
-				slot1:updateActivity(slot2)
+				slot1:updateActivity(slot10)
 
-				slot11 = slot10
+				slot16 = slot15
 			end
 
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				hideNo = true,
-				content = i18n("extra_chapter_socre_tip", slot10, slot11, slot12)
+				content = i18n("extra_chapter_socre_tip", slot15, slot16, slot17),
+				weight = LayerWeightConst.SECOND_LAYER
 			})
 		end
 	end
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		GAME.BEGIN_STAGE_DONE
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
-	slot3 = slot1:getBody()
-
+function slot0.handleNotification(slot0, slot1)
 	if slot1:getName() == GAME.BEGIN_STAGE_DONE then
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, slot3)
+		slot0:sendNotification(GAME.CHANGE_SCENE, SCENE.COMBATLOAD, slot1:getBody())
 	end
 end
 
-slot0.GetResultView = function (slot0)
-	slot0.RESULT_VIEW_TRANSFORM = slot0.RESULT_VIEW_TRANSFORM or {
+function slot0.GetResultView(slot0)
+	uv0.RESULT_VIEW_TRANSFORM = uv0.RESULT_VIEW_TRANSFORM or {
 		[SYSTEM_CHALLENGE] = BattleChallengeResultLayer,
 		[SYSTEM_DODGEM] = BattleDodgemResultLayer,
 		[SYSTEM_SUBMARINE_RUN] = BattleSubmarineRunResultLayer,
 		[SYSTEM_SUB_ROUTINE] = BattleSubmarineRoutineResultLayer,
 		[SYSTEM_HP_SHARE_ACT_BOSS] = BattleContributionResultLayer,
-		[SYSTEM_BOSS_EXPERIMENT] = BattleExperimentResultLayer
+		[SYSTEM_BOSS_EXPERIMENT] = BattleExperimentResultLayer,
+		[SYSTEM_ACT_BOSS] = BattleActivityBossResultLayer,
+		[SYSTEM_WORLD_BOSS] = BattleWorldBossResultLayer,
+		[SYSTEM_REWARD_PERFORM] = BattleRewardPerformResultLayer,
+		[SYSTEM_AIRFIGHT] = BattleAirFightResultLayer,
+		[SYSTEM_GUILD] = BattleGuildBossResultLayer
 	}
 
-	return slot0.RESULT_VIEW_TRANSFORM[slot0] or BattleResultLayer
+	return uv0.RESULT_VIEW_TRANSFORM[slot0] or BattleResultLayer
 end
 
 return slot0

@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU20",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 207050,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "battle-boss-italy",
 			dir = 1,
 			say = "这就是“卡拉布里亚的宝石”吗…果然是不虚此行呢~",
-			bgm = "battle-boss-italy",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -23,8 +23,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "在月光的映照下，这片神奇的海面泛起了淡淡的荧光，与岸边的历史遗迹相互辉映",
 			typewriter = {
 				speed = 0.05,
@@ -36,8 +36,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "仿佛数千年的古代文明在这一刻被悄然唤醒",
 			typewriter = {
 				speed = 0.05,
@@ -52,8 +52,8 @@ return {
 			expression = 2,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 605020,
+			dir = 1,
 			say = "“神之海岸”——也被称作“卡拉布里亚的宝石”，这就是我们帝国的宝藏",
 			typewriter = {
 				speed = 0.05,
@@ -96,8 +96,9 @@ return {
 		},
 		{
 			actor = 900198,
-			side = 2,
 			nameColor = "#ff5c5c",
+			side = 2,
+			hidePaintObj = true,
 			dir = 1,
 			say = "啊啊…利托里奥真的没救了（扶额",
 			typewriter = {
@@ -113,8 +114,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 207050,
+			dir = 1,
 			say = "那么，帝国是否愿意与皇家一起守护这颗璀璨的宝石呢？",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +127,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -142,8 +143,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -158,8 +159,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -174,8 +175,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -190,8 +191,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -206,8 +207,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -222,8 +223,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -238,8 +239,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -254,8 +255,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -270,8 +271,8 @@ return {
 			}
 		},
 		{
-			actorName = "厌战",
 			side = 2,
+			actorName = "厌战",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -286,9 +287,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg5",
-			dir = 1,
 			say = "厌战终于赶上了大部队，来到了秘约的集合点",
 			typewriter = {
 				speed = 0.05,
@@ -300,8 +301,8 @@ return {
 			}
 		},
 		{
-			actorName = "厌战",
 			side = 2,
+			actorName = "厌战",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -316,8 +317,8 @@ return {
 			}
 		},
 		{
-			actorName = "厌战",
 			side = 2,
+			actorName = "厌战",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -332,8 +333,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -348,8 +349,8 @@ return {
 			}
 		},
 		{
-			actorName = "厌战",
 			side = 2,
+			actorName = "厌战",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -364,8 +365,8 @@ return {
 			}
 		},
 		{
-			actorName = "厌战",
 			side = 2,
+			actorName = "厌战",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -380,8 +381,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -396,8 +397,8 @@ return {
 			}
 		},
 		{
-			actorName = "利托里奥",
 			side = 2,
+			actorName = "利托里奥",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -412,8 +413,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -428,8 +429,8 @@ return {
 			}
 		},
 		{
-			actorName = "利托里奥",
 			side = 2,
+			actorName = "利托里奥",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -444,8 +445,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -460,8 +461,8 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -476,12 +477,12 @@ return {
 			}
 		},
 		{
-			actorName = "维托里奥·维内托",
 			side = 2,
+			actorName = "维托里奥·维内托",
 			bgName = "bg_italy_cg5",
+			nameColor = "#ff5c5c",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#ff5c5c",
 			say = "Lunga vita all'Impero！",
 			typewriter = {
 				speed = 0.05,

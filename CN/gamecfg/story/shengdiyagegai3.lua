@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENGDIYAGEGAI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"闪耀☆战斗之星！\n\n<size=45>三　圣地亚哥、苦恼中？！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			actor = 102080,
 			side = 2,
+			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 102080,
-			nameColor = "#a9f548",
 			say = "唔…好像有点明白了，又好像不太明白…",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,11 +68,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不过聪明如圣地亚哥，一定早晚能搞明白的，嗯！",
 			typewriter = {
 				speed = 0.05,
@@ -84,8 +84,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -138,11 +138,11 @@ return {
 			}
 		},
 		{
+			actor = 101319,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101319,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊哇哇哇哇！敌、敌袭？！还是地震！？天灾来了！？",
 			typewriter = {
 				speed = 0.05,
@@ -154,8 +154,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -164,12 +164,12 @@ return {
 			}
 		},
 		{
-			say = "啊哈哈哈，是我是我啦，圣地亚哥~",
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊哈哈哈，是我是我啦，圣地亚哥~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -232,11 +232,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "噢噢！多睡觉就能有所成长吗！我记下来了！",
 			typewriter = {
 				speed = 0.05,
@@ -248,8 +248,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -274,20 +274,20 @@ return {
 			}
 		},
 		{
-			say = "才不是那样的啦啦啦啦啦！！！",
-			side = 2,
 			actor = 101259,
-			dir = 1,
+			side = 2,
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "才不是那样的啦啦啦啦啦！！！",
 			actorPosition = {
 				x = 2250,
 				y = 0
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.2,
 					x = -2250
@@ -309,12 +309,12 @@ return {
 			}
 		},
 		{
-			say = "呀吼~哈曼~",
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			actor = 102080,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呀吼~哈曼~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -335,11 +335,11 @@ return {
 			}
 		},
 		{
+			actor = 101259,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101259,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这边可是历经了千辛万苦，好不容易才完成的“改造”啊！",
 			typewriter = {
 				speed = 0.05,
@@ -351,8 +351,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -393,11 +393,11 @@ return {
 			}
 		},
 		{
+			actor = 101259,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101259,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没、没什么啦！总之我想说的就是，改造才没有那么容易呢！要做好心理准备才行啦！",
 			typewriter = {
 				speed = 0.05,
@@ -409,8 +409,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,

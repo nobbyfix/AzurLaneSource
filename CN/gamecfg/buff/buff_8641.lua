@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "2019年9月世界BOSS叠加buff",
 	init_effect = "jinengchufablue",
-	id = 8641,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8641,
 	icon = 2120,
 	last_effect = "",
 	blink = {
@@ -23,8 +23,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 2000
 			}
 		},
 		{
@@ -33,8 +33,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 2000
 			}
 		}
 	}

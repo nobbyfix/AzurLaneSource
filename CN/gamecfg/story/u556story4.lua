@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U556STORY4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"小小的骑士誓言！\n\n<size=45>四　约好了？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "距U556开始担任秘书舰已经过去了一段时间",
 			typewriter = {
 				speed = 0.05,
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "与最开始一副玩闹的样子不同，现在的她已经可以分担处理一些日常事务了",
 			typewriter = {
 				speed = 0.05,
@@ -74,9 +74,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "当然，秘书舰的工作远不止如此。今天要教些什么好呢…",
 			typewriter = {
 				speed = 0.05,
@@ -104,9 +104,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "U556看起来……有点无精打采的样子？",
 			typewriter = {
 				speed = 0.05,
@@ -121,8 +121,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，稍微有些走神，抱歉……今天要做些什么吗？",
 			typewriter = {
@@ -160,8 +160,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "俾斯麦姐姐！我来找你玩啦！",
 			effects = {
@@ -180,12 +180,12 @@ return {
 			}
 		},
 		{
-			say = "嗯？是U556吗。",
+			actor = 405010,
 			side = 1,
 			bgName = "bg_guild_red",
-			dir = 1,
-			actor = 405010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯？是U556吗。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -203,10 +203,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "抱歉，我还有些事情事情要和皇家那边商讨。",
+			say = "抱歉，我还有些事情要和皇家那边商讨。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -217,15 +217,15 @@ return {
 			}
 		},
 		{
+			actor = 408040,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
-			actor = 408040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "俾斯麦姐姐，有空吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -253,10 +253,10 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_guild_red",
-			say = "啊。",
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "啊。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -290,8 +290,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "最近姐姐她总是很忙的样子……",
 			effects = {
@@ -326,9 +326,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "原来如此。",
 			typewriter = {
 				speed = 0.05,
@@ -340,9 +340,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这样的话，能做到的事就是----",
 			typewriter = {
 				speed = 0.05,
@@ -357,8 +357,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸？指挥官……下个休息日会陪我玩吗？",
 			typewriter = {
@@ -371,8 +371,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -381,11 +381,11 @@ return {
 			}
 		},
 		{
+			actor = 408040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 408040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真的吗？",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那，那就约好了！可不能反悔！",
 			typewriter = {

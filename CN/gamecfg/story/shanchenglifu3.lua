@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANCHENGLIFU3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区的特别宴会\n\n<size=45>三　克利夫兰的入场</size>",
@@ -17,14 +17,14 @@ return {
 			}
 		},
 		{
-			side = 2,
 			stopbgm = true,
+			side = 2,
 			dir = 1,
 			blackBg = true,
 			say = "港区·大讲堂",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -109,11 +109,11 @@ return {
 			}
 		},
 		{
+			actor = 102092,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102092,
-			nameColor = "#a9f548",
 			say = "但是只有我一个男装会不会很奇怪啊……",
 			typewriter = {
 				speed = 0.05,
@@ -125,8 +125,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -265,13 +265,13 @@ return {
 			}
 		},
 		{
+			actor = 102092,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			bgm = "story-1",
-			actor = 102092,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "………………金碧辉煌啊。",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -300,14 +300,14 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_107",
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "胜利，那边就拜托你了——",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -348,12 +348,12 @@ return {
 			}
 		},
 		{
-			say = "啊哈哈…光辉你的礼服才是，就像你的名字一样，散发着光芒呢。",
+			actor = 102092,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 102092,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊哈哈…光辉你的礼服才是，就像你的名字一样，散发着光芒呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -421,8 +421,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "独角兽，{namecode:71}把宴会拜托给我，所以我还要四处走走，你一个人在这没关系吗？",
 			typewriter = {
@@ -435,12 +435,12 @@ return {
 			}
 		},
 		{
-			say = "嗯，独角兽要在这里等指挥官哥哥。",
+			actor = 206030,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 206030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯，独角兽要在这里等指挥官哥哥。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -458,8 +458,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呵呵，独角兽还是一如既往地粘指挥官呢……",
 			typewriter = {
@@ -522,12 +522,12 @@ return {
 			}
 		},
 		{
-			say = "咦，那不是企业吗，看起来心情不错啊，果然是因为埃塞克斯吧。",
+			actor = 102092,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 102092,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "咦，那不是企业吗，看起来心情不错啊，果然是因为埃塞克斯吧。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -545,8 +545,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "是呀，她最近的心情看来都相当不错的样子～",
 			typewriter = {
@@ -575,12 +575,12 @@ return {
 			}
 		},
 		{
-			say = "嗯…豪华到感觉自己都有些格格不入了。",
+			actor = 102092,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 102092,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯…豪华到感觉自己都有些格格不入了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -614,8 +614,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呵呵，习惯就好了。",
 			typewriter = {
@@ -631,8 +631,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "现在先到处走走吧，等指挥官来了之后舞会就会开始，今晚的你说不定会很忙呢～",
 			typewriter = {
@@ -661,11 +661,11 @@ return {
 			}
 		},
 		{
+			actor = 102140,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 102140,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，大姐头！这边这边！",
 			typewriter = {
 				speed = 0.05,
@@ -677,8 +677,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -703,12 +703,12 @@ return {
 			}
 		},
 		{
+			actor = 102092,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102092,
-			nameColor = "#a9f548",
 			say = "嗯，回见。",
 			typewriter = {
 				speed = 0.05,

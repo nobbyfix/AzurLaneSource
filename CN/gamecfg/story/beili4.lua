@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>四 兔兔星人特征——“偶像”？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "来到指挥室的时候，发现贝利和本森都在里面",
 			typewriter = {
 				speed = 0.05,
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "诶嘿嘿…被本森姐姐夸奖了呢",
+			actor = 101270,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "诶嘿嘿…被本森姐姐夸奖了呢",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -124,11 +124,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯！",
 			typewriter = {
 				speed = 0.05,
@@ -140,8 +140,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -182,9 +182,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "本森今天看起来也在正常运作的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -192,9 +192,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过，为什么贝利会像霍比一样想要成为偶像呢？",
 			typewriter = {
 				speed = 0.05,
@@ -224,9 +224,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……原来都是向本森学的吗。",
 			dialogShake = {
 				speed = 0.15,
@@ -287,9 +287,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……确实是很符合贝利的想法。",
 			typewriter = {
 				speed = 0.05,

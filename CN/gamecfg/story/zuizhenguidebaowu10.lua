@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZUIZHENGUIDEBAOWU10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
-			say = "时间回到大斗犬和U110对峙的时候——",
 			dir = 1,
+			side = 2,
 			bgm = "level02",
+			say = "时间回到大斗犬和U110对峙的时候——",
 			effects = {
 				{
 					active = true,
@@ -42,10 +42,10 @@ return {
 			}
 		},
 		{
+			actor = 900201,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 900201,
 			say = "「渴望救赎的机会吗」",
 			effects = {
 				{
@@ -63,10 +63,10 @@ return {
 			}
 		},
 		{
+			actor = 408080,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 408080,
 			say = "……（装死）",
 			effects = {
 				{
@@ -84,10 +84,10 @@ return {
 			}
 		},
 		{
+			actor = 900201,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 900201,
 			say = "（这招没用吗…那就……）",
 			effects = {
 				{
@@ -122,13 +122,13 @@ return {
 		{
 			actor = 408080,
 			side = 2,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -151,10 +151,10 @@ return {
 			}
 		},
 		{
+			actor = 900201,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 900201,
 			say = "「想要拯救朋友的话，就献上你最重要的东西吧」",
 			effects = {
 				{
@@ -187,10 +187,10 @@ return {
 			}
 		},
 		{
+			actor = 408080,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 408080,
 			say = "…………",
 			effects = {
 				{
@@ -268,10 +268,10 @@ return {
 			}
 		},
 		{
+			actor = 900201,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 900201,
 			say = "啊，真的丢掉了",
 			effects = {
 				{
@@ -304,8 +304,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "大斗犬的报告书上如此写着",
 			effects = {
 				{

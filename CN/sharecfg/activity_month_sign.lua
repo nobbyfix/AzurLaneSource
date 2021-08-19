@@ -2,7 +2,7 @@ pg = pg or {}
 pg.activity_month_sign = {
 	{
 		id = 1,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -180,7 +180,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100002,
+				100023,
 				1
 			}
 		},
@@ -257,7 +257,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 2,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -434,8 +434,8 @@ pg.activity_month_sign = {
 		},
 		day21 = {
 			{
-				5,
-				100003,
+				4,
+				701061,
 				1
 			}
 		},
@@ -484,7 +484,7 @@ pg.activity_month_sign = {
 		day28 = {
 			{
 				2,
-				30015,
+				30025,
 				1
 			}
 		},
@@ -512,7 +512,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 3,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -690,7 +690,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100004,
+				100024,
 				1
 			}
 		},
@@ -767,7 +767,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 4,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -944,8 +944,8 @@ pg.activity_month_sign = {
 		},
 		day21 = {
 			{
-				5,
-				100005,
+				4,
+				301851,
 				1
 			}
 		},
@@ -1022,7 +1022,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 5,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -1200,7 +1200,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100006,
+				100025,
 				1
 			}
 		},
@@ -1277,7 +1277,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 6,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -1454,8 +1454,8 @@ pg.activity_month_sign = {
 		},
 		day21 = {
 			{
-				4,
-				202071,
+				5,
+				100026,
 				1
 			}
 		},
@@ -1532,7 +1532,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 7,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -1710,7 +1710,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100007,
+				100027,
 				1
 			}
 		},
@@ -1787,7 +1787,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 8,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -1965,7 +1965,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100008,
+				100028,
 				1
 			}
 		},
@@ -2042,7 +2042,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 9,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -2219,8 +2219,8 @@ pg.activity_month_sign = {
 		},
 		day21 = {
 			{
-				4,
-				301541,
+				5,
+				100029,
 				1
 			}
 		},
@@ -2297,7 +2297,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 10,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -2475,7 +2475,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100009,
+				100020,
 				1
 			}
 		},
@@ -2552,7 +2552,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 11,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -2730,7 +2730,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100010,
+				100021,
 				1
 			}
 		},
@@ -2807,7 +2807,7 @@ pg.activity_month_sign = {
 	},
 	{
 		id = 12,
-		resign_count = 2,
+		resign_count = 0,
 		day_and_drop = {
 			{
 				5,
@@ -2985,7 +2985,7 @@ pg.activity_month_sign = {
 		day21 = {
 			{
 				5,
-				100011,
+				100022,
 				1
 			}
 		},
@@ -3075,5 +3075,3 @@ pg.activity_month_sign = {
 		12
 	}
 }
-
-return

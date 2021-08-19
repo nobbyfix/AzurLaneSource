@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "OUXIANGRICHANG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"某日的polaris\n\n<size=45>一 某日的练习</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "这是音乐组合polaris刚结成不久时的故事——",
 			side = 2,
 			bgName = "star_level_bg_121",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "这是音乐组合polaris刚结成不久时的故事——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,11 +66,11 @@ return {
 			}
 		},
 		{
+			actor = 900205,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900205,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "噢～！",
 			typewriter = {
 				speed = 0.05,
@@ -82,8 +82,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -127,8 +127,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900204,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈啊…果然没有指挥官在，{namecode:91}…燃不起来啊……",
 			typewriter = {
@@ -144,8 +144,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对不起，总觉得有些丢脸，还是算了吧",
 			typewriter = {
@@ -158,11 +158,11 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊啊！！我受够了！！为什么会变成现在这种状况啦！！",
 			typewriter = {
 				speed = 0.05,
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -186,13 +186,13 @@ return {
 		{
 			actor = 312010,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…如此这般喵！作为对新舰装的适应训练的一环，麻烦各位进行音乐组合的配合训练喵！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -223,11 +223,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "新生组合polaris，初次的共同练习！这种感觉喵！fighting喵！指挥官也在为你们加油喵！",
 			typewriter = {
 				speed = 0.05,
@@ -239,8 +239,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -251,13 +251,13 @@ return {
 		{
 			actor = 900205,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "音乐组合啊…当初在接受特殊舰装测试任务的时候可没想到会这样呢",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -291,8 +291,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "竟然真的能组起来呢…这么乱来的组合",
 			typewriter = {
@@ -308,8 +308,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这也是指挥官的“人德”吧～能让各个阵营的大家像这样凑在一起",
 			typewriter = {
@@ -341,8 +341,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900203,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "请求接受，切换模式——",
 			typewriter = {
@@ -358,8 +358,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900206,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈啊…已经不知道该从哪里开始吐槽起了…",
 			typewriter = {

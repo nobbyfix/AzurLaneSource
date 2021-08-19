@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GANGQUTAOLI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区逃离大作战！\n\n<size=45>一　这里是哪里？</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "这是，小小的钢之勇者们的冒险谭(Epos)——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -48,11 +48,11 @@ return {
 			}
 		},
 		{
-			say = "港区·仓库",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			bgm = "story-1",
+			say = "港区·仓库",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -63,11 +63,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "？？？",
 			say = "所以说，我们一定是被诱拐来的！",
 			typewriter = {
@@ -98,11 +98,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "？？？",
 			say = "你也这么认为的吧！{namecode:71}！",
 			typewriter = {
@@ -115,13 +115,13 @@ return {
 			}
 		},
 		{
-			say = "是、是吗…指挥官大人把我们…诱拐来的吗？理由也不明不白…",
+			actor = 304060,
 			side = 0,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = -1,
-			actor = 304060,
 			actorName = "？？？",
+			say = "是、是吗…指挥官大人把我们…诱拐来的吗？理由也不明不白…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -173,8 +173,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 304060,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "唔……我们应该是作为指挥官大人的部下来报道的才对，到底是怎么回事呢…",
 			typewriter = {
@@ -203,11 +203,11 @@ return {
 			}
 		},
 		{
+			actor = 304060,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 304060,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "难道说指挥官是为了让{namecode:71}一直留在身边才诱拐哦我们的！？",
 			typewriter = {
 				speed = 0.05,
@@ -219,8 +219,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -232,8 +232,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呒呒…没想到还有这一手…！很好！你终于弄明白自己现在所处的状况了！",
 			typewriter = {
@@ -281,8 +281,8 @@ return {
 			expression = 4,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……这种事无所谓啦！现在正是脱离港区的好时机！我们要出击了！",
 			typewriter = {
@@ -314,8 +314,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 304060,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "小齐柏林！……别把我丢在这里啦！",
 			typewriter = {
@@ -331,8 +331,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼，现在正是让你们见识一下，铁血第一艘航母·齐柏林伯爵的力量的时……好痛！",
 			typewriter = {
@@ -348,8 +348,8 @@ return {
 			expression = 5,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "什么嘛！从这里出来直走明明就是墙啊！那个维修舰，早就算好要骗我了吧…!",
 			typewriter = {
@@ -362,8 +362,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -388,12 +388,12 @@ return {
 			}
 		},
 		{
+			actor = 304060,
 			side = 0,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 304060,
-			nameColor = "#a9f548",
 			say = "……这下看来光是找到路就要花不少时间呢……",
 			typewriter = {
 				speed = 0.05,

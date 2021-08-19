@@ -1,31 +1,30 @@
 ys = ys or {}
-ys.Battle.BattleAntiAirBulletUnit = class("BattleAntiAirBulletUnit", ys.Battle.BattleBulletUnit)
-ys.Battle.BattleAntiAirBulletUnit.__name = "BattleAntiAirBulletUnit"
+slot0 = ys
+slot0.Battle.BattleAntiAirBulletUnit = class("BattleAntiAirBulletUnit", slot0.Battle.BattleBulletUnit)
+slot0.Battle.BattleAntiAirBulletUnit.__name = "BattleAntiAirBulletUnit"
+slot1 = slot0.Battle.BattleAntiAirBulletUnit
 
-ys.Battle.BattleAntiAirBulletUnit.Ctor = function (slot0, slot1, slot2)
-	slot0.Battle.BattleAntiAirBulletUnit.super.Ctor(slot0, slot1, slot2)
+function slot1.Ctor(slot0, slot1, slot2)
+	uv0.Battle.BattleAntiAirBulletUnit.super.Ctor(slot0, slot1, slot2)
 end
 
-ys.Battle.BattleAntiAirBulletUnit.Update = function (slot0, slot1)
-	return
+function slot1.Update(slot0, slot1)
 end
 
-ys.Battle.BattleAntiAirBulletUnit.IsOutRange = function (slot0)
+function slot1.IsOutRange(slot0)
 	return false
 end
 
-ys.Battle.BattleAntiAirBulletUnit.SetDirectHitUnit = function (slot0, slot1)
+function slot1.SetDirectHitUnit(slot0, slot1)
 	slot0._directHitUnit = slot1
 end
 
-ys.Battle.BattleAntiAirBulletUnit.GetDirectHitUnit = function (slot0)
+function slot1.GetDirectHitUnit(slot0)
 	return slot0._directHitUnit
 end
 
-ys.Battle.BattleAntiAirBulletUnit.Dispose = function (slot0)
+function slot1.Dispose(slot0)
 	slot0._directHitUnit = nil
 
-	slot0.super.Dispose(slot0)
+	uv0.super.Dispose(slot0)
 end
-
-return

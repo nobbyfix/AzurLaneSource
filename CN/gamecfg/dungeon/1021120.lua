@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -71,8 +71,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10032002,
-							delay = 1,
 							moveCast = true,
+							delay = 1,
 							corrdinate = {
 								0,
 								0,
@@ -85,8 +85,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032010,
-							delay = 2,
 							moveCast = true,
+							delay = 2,
 							corrdinate = {
 								0,
 								0,
@@ -95,8 +95,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032015,
-							delay = 2,
 							moveCast = true,
+							delay = 2,
 							corrdinate = {
 								0,
 								0,
@@ -105,8 +105,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032002,
-							delay = 1,
 							moveCast = true,
+							delay = 1,
 							corrdinate = {
 								0,
 								0,
@@ -120,8 +120,8 @@ return {
 					}
 				},
 				{
-					key = true,
 					triggerType = 0,
+					key = true,
 					waveIndex = 102,
 					conditionType = 1,
 					preWaves = {
@@ -149,8 +149,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 10032003,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								11,
 								0,
@@ -163,8 +163,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032003,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								11,
 								0,
@@ -181,8 +181,8 @@ return {
 							interval = 10,
 							onceNumber = 3,
 							formation = 10006,
-							templateID = 490054,
 							delay = 0,
+							templateID = 490054,
 							totalNumber = 3,
 							weaponID = {
 								490512
@@ -223,9 +223,9 @@ return {
 						},
 						{
 							monsterTemplateID = 10032023,
-							delay = 1,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 1,
 							corrdinate = {
 								20,
 								0,
@@ -238,9 +238,9 @@ return {
 						},
 						{
 							monsterTemplateID = 10032023,
-							delay = 1,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 1,
 							corrdinate = {
 								20,
 								0,
@@ -266,8 +266,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 10032025,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								30,
 								0,
@@ -294,8 +294,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10032023,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -304,8 +304,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032019,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -318,8 +318,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032022,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -328,8 +328,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10032023,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,

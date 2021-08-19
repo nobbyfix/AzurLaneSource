@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 50,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 50
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 60,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 60
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 70,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 70
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 80,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 80
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 95,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 95
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 110,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 110
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 125,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 125
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 145,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 145
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 170,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 170
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 200
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "恶毒1",
 	init_effect = "jinengchufared",
-	id = 12323,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 10,
-	color = "red",
+	id = 12323,
 	icon = 12320,
 	last_effect = "",
 	blink = {

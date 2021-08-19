@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YANZHAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"皇家的骑士\n\n<size=45>四 演习过后……</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "数日后·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "数日后·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -94,10 +94,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			actor = 203030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "众人",
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -136,15 +136,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "（稍微出来透透气吧。）",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -201,12 +201,12 @@ return {
 			}
 		},
 		{
-			say = "是厌战吗，祝贺你们，获得了演习的胜利。",
+			actor = 107060,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是厌战吗，祝贺你们，获得了演习的胜利。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -269,11 +269,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "（演习过程里全程疲于防空与躲避…狼狈的样子还被观战的指挥官尽收眼底……）",
 			typewriter = {
 				speed = 0.05,
@@ -285,16 +285,16 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
 					number = 2
 				},
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 1.2,
 					dur = 0.15,
 					x = 0,
@@ -399,11 +399,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈哈，关于这点彼此彼此吧。",
 			typewriter = {
 				speed = 0.05,
@@ -415,8 +415,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,

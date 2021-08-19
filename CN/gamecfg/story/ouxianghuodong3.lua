@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 502023,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "终于，要开始东煌组合“东煌姐妹”的登场秀了！冷静一点...冷静一点宁海。",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -37,8 +37,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502033,
+			dir = 1,
 			say = "那个，姐姐……平海饿了，可以先吃点东西吗？",
 			typewriter = {
 				speed = 0.05,
@@ -54,7 +54,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "只要今天的演出圆满成功，回去之后姐姐请你吃包子吃到饱哦！",
+			say = "只要今天的演出圆满成功，回去之后姐姐请你吃肉包吃到饱哦！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -67,10 +67,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			actor = 502033,
 			nameColor = "#a9f548",
-			say = "吃包子...到饱？！不论唱歌跳舞还是功夫，平海一定全力以赴！",
+			dir = 1,
+			say = "吃肉包子...到饱？！不论唱歌跳舞还是功夫，平海一定全力以赴！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -81,8 +81,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -94,8 +94,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502023,
+			dir = 1,
 			say = "没错，一定要跳出最优美的舞蹈，给世界各地的人看看！",
 			typewriter = {
 				speed = 0.05,
@@ -109,9 +109,9 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			actor = 502023,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这次是东煌选派我们参加活动的...绝对不能丢我们东煌的脸哦！",
 			typewriter = {
 				speed = 0.05,
@@ -123,8 +123,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -136,8 +136,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502033,
+			dir = 1,
 			say = "姐姐，Polaris的各位来了",
 			typewriter = {
 				speed = 0.05,
@@ -167,8 +167,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502023,
+			dir = 1,
 			say = "克利夫兰小姐，还有Polaris的各位，今天我们的演出就请多多指导了",
 			typewriter = {
 				speed = 0.05,
@@ -210,8 +210,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

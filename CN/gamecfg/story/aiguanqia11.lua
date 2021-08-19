@@ -1,15 +1,15 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA11",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_ailevel",
-			dir = 1,
 			actor = 10400030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_ailevel",
+			side = 2,
+			dir = 1,
 			actorName = "绊爱",
 			say = "各位！快看快看！",
 			typewriter = {
@@ -88,11 +88,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_ailevel",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "各位，大事不好了喵！不是悠闲地品评新衣服的时候了喵！",
 			typewriter = {
 				speed = 0.05,
@@ -104,8 +104,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -178,11 +178,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_ailevel",
-			dir = 1,
 			actor = 10400030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_ailevel",
+			side = 2,
+			dir = 1,
 			actorName = "绊爱",
 			say = "谢谢{namecode:98}酱！我们赶紧出发吧，大家！",
 			typewriter = {
@@ -195,9 +195,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_ailevel",
-			dir = 1,
 			say = "虚拟镜面海域上空·高度4000m",
 			flashN = {
 				color = {
@@ -229,11 +229,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_ailevel",
-			dir = 1,
 			actor = 10400030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_ailevel",
+			side = 2,
+			dir = 1,
 			actorName = "绊爱",
 			say = "…………诶？",
 			typewriter = {
@@ -264,8 +264,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0.5,
 					dur = 0.5,
 					x = 0
@@ -273,11 +273,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_ailevel",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "掉～～～下～～～去～～～～了！！！",
 			typewriter = {
 				speed = 0.05,
@@ -289,8 +289,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_ailevel",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呀啊啊啊啊啊啊啊啊啊啊！",
 			typewriter = {
 				speed = 0.05,
@@ -314,8 +314,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -341,8 +341,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -350,11 +350,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_ailevel",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "（昏迷）",
 			typewriter = {
 				speed = 0.05,
@@ -366,8 +366,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -425,14 +425,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 301120,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呼…总算是平安降落到海里了呢",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -460,8 +460,8 @@ return {
 			expression = 3,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "还以为要完蛋了～",
 			typewriter = {
@@ -537,8 +537,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "（抖）额…？这个场景，总觉得在哪里见过……？",
 			typewriter = {
@@ -551,8 +551,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -564,8 +564,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "超级智能的直觉在告诉我，这时候应该全力往海域中央逃跑才对！！",
 			typewriter = {

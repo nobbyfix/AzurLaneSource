@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "世界boss引导占位",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			},
 			ui = {

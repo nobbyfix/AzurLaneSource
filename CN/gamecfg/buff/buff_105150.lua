@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "盘之占卜师",
 	init_effect = "",
-	id = 105150,
+	name = "盘之占卜师",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "开场占卜一次",
 	stack = 1,
-	color = "yellow",
+	id = 105150,
 	icon = 105150,
 	last_effect = "",
 	effect_list = {
@@ -37,8 +37,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 105155,
-				time = 3,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 3
 			}
 		}
 	}

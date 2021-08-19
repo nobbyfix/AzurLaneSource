@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "敌方指挥舰指挥技能——伤害上升",
 	init_effect = "",
+	name = "敌方指挥舰指挥技能——伤害上升",
+	time = 0,
 	picture = "",
 	desc = "指挥技能——伤害上升",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.5,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.5
 			}
 		}
 	}

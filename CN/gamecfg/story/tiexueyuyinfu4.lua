@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 403030,
 			nameColor = "#ffde38",
 			side = 2,
+			bgm = "bsm-3",
 			dir = 1,
 			say = "雷达反应消失，小老鼠跑远了",
-			bgm = "bsm-3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -105,8 +105,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "我的意思是...让你独自返航，我另有打算",
 			typewriter = {
 				speed = 0.05,
@@ -136,8 +136,8 @@ return {
 			actor = 405010,
 			side = 0,
 			expression = 3,
-			dir = -1,
 			nameColor = "#ffde38",
+			dir = -1,
 			say = "这附近有盟友控制的海域，只要能到达那里，就算是皇家舰队也不敢贸然追击",
 			typewriter = {
 				speed = 0.05,
@@ -194,8 +194,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -222,8 +222,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "那就立刻启程，不要耽误时间。",
 			typewriter = {
 				speed = 0.05,
@@ -238,8 +238,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "从现在开始，就是和时间赛跑的战斗了。",
 			typewriter = {
 				speed = 0.05,
@@ -284,8 +284,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "祝你好运",
 			typewriter = {
 				speed = 0.05,
@@ -297,11 +297,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			side = 0,
+			nameColor = "#ffde38",
+			actorName = "俾斯麦",
 			dir = -1,
 			blackBg = true,
-			actorName = "俾斯麦",
 			say = "Eisen und Blut über alles！",
 			flashin = {
 				delay = 1,
@@ -322,8 +322,8 @@ return {
 			}
 		},
 		{
-			actorName = "欧根亲王",
 			side = 1,
+			actorName = "欧根亲王",
 			nameColor = "#ffde38",
 			dir = 1,
 			blackBg = true,

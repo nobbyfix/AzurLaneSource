@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>四　店内交流？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·军火商店",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·军火商店",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这个休息日，再次躲在商店外的灌木里，悄悄观察店内的情况。",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "{namecode:20}喵！！！",
 			typewriter = {
 				speed = 0.05,
@@ -76,8 +76,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.7,
 					x = 3000
@@ -85,9 +85,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "“碰”地一声，传来了撞墙的巨响。",
 			typewriter = {
 				speed = 0.05,
@@ -95,11 +95,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "呜呜呜，好过分喵，为什么要躲开{namecode:98}喵！",
 			typewriter = {
 				speed = 0.05,
@@ -111,8 +111,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -121,12 +121,12 @@ return {
 			}
 		},
 		{
-			say = "因为你这蠢猫会主动来找我多半没有好事。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "因为你这蠢猫会主动来找我多半没有好事。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -141,11 +141,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "我们难道不是好朋友喵！",
 			typewriter = {
 				speed = 0.05,
@@ -157,8 +157,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -215,11 +215,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "是有关新的促销计划喵！",
 			typewriter = {
 				speed = 0.05,
@@ -231,8 +231,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -257,11 +257,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这次不一样喵，这次是很周全的喵！",
 			typewriter = {
 				speed = 0.05,
@@ -273,8 +273,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -299,11 +299,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301180,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "茗",
 			say = "{namecode:20}喵，帮帮喵，就这一次喵！{namecode:98}一定会报答你的喵！",
 			subActors = {
@@ -325,8 +325,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -335,11 +335,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "别贴我身上，蠢猫，放开……",
 			subActors = {
 				{
@@ -360,11 +360,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301180,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "茗",
 			say = "不答应{namecode:98}就不放开喵！",
 			subActors = {
@@ -386,8 +386,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -396,11 +396,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好好好，我答应总行了吧！",
 			subActors = {
 				{
@@ -421,11 +421,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "太好了喵，那这是企划案，{namecode:98}先去准备了喵！",
 			typewriter = {
 				speed = 0.05,
@@ -437,8 +437,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1,
 					dur = 0.7,
 					x = 2250
@@ -446,11 +446,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 301180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:98}离开后，{namecode:20}拿起企划案翻了翻。",
 			typewriter = {
@@ -479,9 +479,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这么说着的{namecode:20}，拿起笔在上面修修改改了起来。",
 			typewriter = {
 				speed = 0.05,

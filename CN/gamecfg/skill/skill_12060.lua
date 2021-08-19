@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "圣山的幼巫女",
 	cd = 0,
-	picture = "0",
-	desc = "buff",
 	painting = 1,
 	id = 12060,
+	picture = "0",
 	castCV = "skill",
+	desc = "buff",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetPlayerMainFleet",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 12061
 			}

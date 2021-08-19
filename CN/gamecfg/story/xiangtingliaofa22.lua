@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA22",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "大西洋·百慕大三角中部海域",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "story-6",
+			say = "大西洋·百慕大三角中部海域",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

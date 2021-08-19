@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "指挥官，欢迎来到碧蓝航线，先去新兵训练营报道吧。",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

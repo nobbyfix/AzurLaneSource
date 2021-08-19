@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春天的赏樱大会\n\n<size=45>四  宴会开幕</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那么～赏樱大会～开始咯～",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,14 +34,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "噢！！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,15 +68,15 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:95}姐～这个天妇罗好好吃～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -101,12 +101,12 @@ return {
 			}
 		},
 		{
-			say = "是是…——",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是是…——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -121,15 +121,15 @@ return {
 			}
 		},
 		{
+			actor = 301110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 301110,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "原来如此！大家聚在一起大吃大喝就是所谓的“赏樱大会”啊！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -154,12 +154,12 @@ return {
 			}
 		},
 		{
-			say = "我想应该不是这样的…",
+			actor = 301130,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301130,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我想应该不是这样的…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -254,14 +254,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "……",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

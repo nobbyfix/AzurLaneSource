@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIER2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"讴歌平稳的日常\n\n<size=45>二　完美和平静</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "（咚咚）",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "（咚咚）",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "在和纽卡斯尔一起在指挥室工作时，从外面传来了敲门声",
 			typewriter = {
 				speed = 0.05,
@@ -88,12 +88,12 @@ return {
 			}
 		},
 		{
-			say = "关于那个仓库的事？",
+			actor = 202190,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202190,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "关于那个仓库的事？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -156,9 +156,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "简短的对话结束后，谢菲微微致了一个礼离开了房间",
 			typewriter = {
 				speed = 0.05,
@@ -268,9 +268,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "确实，对别人暂且不论，贝尔法斯特对自己的工作肯定是追求完美的",
 			typewriter = {
 				speed = 0.05,
@@ -278,9 +278,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "但是实际上，也确实有不那么追求完美，才能更加顺利的进行工作的情况呢",
 			typewriter = {
 				speed = 0.05,
@@ -304,12 +304,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "我正好是不那么追求“完美”，只要有“平稳”就能够满足的性格呢",
 			typewriter = {
 				speed = 0.05,

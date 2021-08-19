@@ -5,12 +5,12 @@ return {
 	desc_get = "主炮每进行15次攻击，触发专属弹幕-埃尔德里奇I",
 	name = "专属弹幕-埃尔德里奇I",
 	init_effect = "",
-	id = 29021,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行15次攻击，触发专属弹幕-埃尔德里奇I",
 	stack = 1,
-	color = "red",
+	id = 29021,
 	icon = 29020,
 	last_effect = "",
 	effect_list = {
@@ -33,8 +33,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29021,
 				target = "TargetSelf",
+				skill_id = 29021,
 				countType = 29020
 			}
 		}

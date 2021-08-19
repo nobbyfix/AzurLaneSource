@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIAHAIBAO3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"碧海的偶像\n\n<size=45>三 小小的插曲</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 107034,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107034,
-			nameColor = "#a9f548",
 			say = "哦哦哦，雷达的反应越来越强烈了呢！",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,9 +52,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "……而且变得非常刺耳，不愧是{namecode:98}的发明，总有一些奇怪的地方非常气人。",
 			typewriter = {
 				speed = 0.05,
@@ -69,8 +69,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官，我们快……",
 			typewriter = {
@@ -147,9 +147,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -161,11 +161,11 @@ return {
 			}
 		},
 		{
+			actor = 105200,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 105200,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "海豹是什么科的动物？",
 			typewriter = {
 				speed = 0.05,
@@ -194,9 +194,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			actor = 107034,
 			dir = 1,
 			optionFlag = 1,
-			actor = 107034,
 			nameColor = "#a9f548",
 			say = "不愧是指挥官！",
 			typewriter = {
@@ -209,8 +209,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -222,9 +222,9 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			actor = 107034,
 			dir = 1,
 			optionFlag = 2,
-			actor = 107034,
 			nameColor = "#a9f548",
 			say = "那是豹子啦！正确答案是——海豹就是海豹科的哦~",
 			typewriter = {
@@ -237,8 +237,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
+			actor = 107034,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 3,
-			actor = 107034,
-			nameColor = "#a9f548",
 			say = "正确答案是——海豹科哦~",
 			typewriter = {
 				speed = 0.05,
@@ -280,9 +280,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "……异常敷衍地被放过了。",
 			typewriter = {
 				speed = 0.05,
@@ -297,8 +297,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……噗，没想到你们会这么投入啊！？",
 			typewriter = {
@@ -311,8 +311,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -356,8 +356,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 105200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "姐姐觉得没意思吗？",
 			typewriter = {
@@ -405,8 +405,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "先不说这个，准备都完成了吗？",
 			typewriter = {
@@ -451,9 +451,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "萨拉似乎在和她们聊些奇怪的东西，难道……",
 			typewriter = {
 				speed = 0.05,
@@ -468,9 +468,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			actor = 107034,
 			dir = 1,
 			blackBg = true,
-			actor = 107034,
 			nameColor = "#a9f548",
 			say = "好啦好啦，指挥官，我们赶紧继续前进吧！",
 			typewriter = {

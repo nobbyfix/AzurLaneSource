@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "WENSENSI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"妹妹的变化\n\n<size=45>七 妹妹的笑容</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "在几位姐姐的教授之下，文森斯初步掌握了身为秘书舰该做的事。",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "在几位姐姐的教授之下，文森斯初步掌握了身为秘书舰该做的事。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,9 +78,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然比较笨拙，但是确实在慢慢地帮上忙。",
 			typewriter = {
 				speed = 0.05,
@@ -92,9 +92,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "文森斯的成长着实让人感到高兴",
 			typewriter = {
 				speed = 0.05,
@@ -122,11 +122,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "文森斯递过来……一包包装精美的饼干？",
 			typewriter = {
@@ -139,11 +139,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "饼干的形状做成了自己的样子，虽然有些粗糙，但是能够感觉到烘烤的人的心意。",
 			typewriter = {
@@ -204,9 +204,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "总觉得似乎能够想象那个场景。",
 			typewriter = {
 				speed = 0.05,
@@ -250,11 +250,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "以后文森斯也会慢慢加油的。",
 			typewriter = {
 				speed = 0.05,
@@ -272,12 +272,12 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 103100,
-			nameColor = "#a9f548",
 			say = "嗯…！不过，指挥官…以后还会陪我一起午睡的，对吧？",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILIWANSHENGJIE7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"捣蛋万圣夜！\n\n<size=45>七 万圣夜快乐！</size>",
@@ -19,17 +19,17 @@ return {
 		{
 			expression = 5,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			actorName = "{namecode:48}",
 			bgm = "story-1",
 			actor = 302051,
-			nameColor = "#a9f548",
-			bgName = "bg_night",
+			actorName = "{namecode:48}",
 			say = "总，总算回到地面了…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -57,8 +57,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "终于追上你了，幽灵小姐！",
 			typewriter = {
@@ -71,8 +71,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -84,8 +84,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…欸？这是…白布和发光的舰载机？欸？怎么大家都在这里？！",
 			typewriter = {
@@ -114,11 +114,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊！原来是萨拉托加的恶作剧吗！",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -143,8 +143,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊哈，我也出了一份力呢！",
 			typewriter = {
@@ -193,11 +193,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那个时候的声音原来是大青花鱼吗！",
 			typewriter = {
 				speed = 0.05,
@@ -209,8 +209,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -222,8 +222,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸嘿嘿，我的演技还不错吧~",
 			typewriter = {
@@ -268,10 +268,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_night",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_night",
+			side = 0,
 			dir = 1,
 			actor = 205031,
 			actorName = "纳尔逊&{namecode:48}&贝利",
@@ -301,8 +301,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -412,8 +412,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "意外的还不错…啊！罗德尼！你一开始就知道这些的吧！",
 			typewriter = {
@@ -426,8 +426,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.7,
 					dur = 0.15,
 					x = 0,
@@ -468,11 +468,11 @@ return {
 			}
 		},
 		{
+			actor = 205031,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 205031,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "罪魁祸首原来是{namecode:98}吗！？",
 			typewriter = {
 				speed = 0.05,
@@ -484,8 +484,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.15,
 					x = 0,
@@ -510,10 +510,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_night",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_night",
+			side = 0,
 			dir = 1,
 			actor = 101271,
 			actorName = "贝利&{namecode:48}&恐怖",
@@ -543,12 +543,12 @@ return {
 			}
 		},
 		{
+			actor = 205031,
 			side = 2,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205031,
-			nameColor = "#a9f548",
 			say = "等等，不要岔开话题啊！",
 			typewriter = {
 				speed = 0.05,
@@ -560,8 +560,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.1,
 					x = 0,

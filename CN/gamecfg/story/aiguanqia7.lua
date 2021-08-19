@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA7",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301120,
@@ -23,8 +23,8 @@ return {
 			expression = 1,
 			side = 1,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱(伪)",
 			say = "―――！",
 			typewriter = {
@@ -40,8 +40,8 @@ return {
 			expression = 1,
 			side = 0,
 			hideOther = true,
-			dir = 1,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			actor = 10400010,
 			actorName = "绊爱(伪)",
 			say = "………！",
@@ -89,8 +89,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -129,10 +129,10 @@ return {
 			}
 		},
 		{
-			side = 2,
-			say = "咚！",
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "咚！",
 			flashN = {
 				color = {
 					1,
@@ -223,8 +223,8 @@ return {
 			expression = 4,
 			side = 0,
 			actor = 10400020,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			hideOther = true,
 			actorName = "绊爱",
 			say = "明白了！有如今的我在，消灭敌人什么的，简直就是小菜一碟啦！",
@@ -238,8 +238,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.5,
 					x = 555
@@ -250,8 +250,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "就从那个绊爱(伪)开始吧～！嘿呀～！",
 			typewriter = {
@@ -264,8 +264,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1,
 					dur = 0.5,
 					x = 2250
@@ -276,8 +276,8 @@ return {
 			actor = 401230,
 			side = 0,
 			hideOther = true,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，爱小姐，不可以一个人冲那么快啦！",
 			typewriter = {
 				speed = 0.05,
@@ -292,8 +292,8 @@ return {
 			expression = 1,
 			side = 1,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			actorName = "绊爱(伪)",
 			say = "………！！！",
 			typewriter = {
@@ -306,10 +306,10 @@ return {
 			}
 		},
 		{
-			side = 2,
-			say = "咚！",
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "咚！",
 			flashN = {
 				color = {
 					1,
@@ -355,8 +355,8 @@ return {
 			expression = 3,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "啊啊啊啊啊啊啊啊啊啊啊啊！",
 			typewriter = {
@@ -369,8 +369,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -382,8 +382,8 @@ return {
 			expression = 3,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "大～家～救～救～我～～～～！！！",
 			typewriter = {
@@ -396,8 +396,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 0.5,
 					x = 0

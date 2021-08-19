@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ZHALA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"彼岸的玫瑰\n\n<size=45>二 体贴的姐姐？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "自从上次熬夜被批评之后，扎拉与我共同工作的时间就多了起来",
 			typewriter = {
 				speed = 0.05,
@@ -80,9 +80,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然这样子是很好啦，但是总有种自己的作用变小了的感觉……",
 			typewriter = {
 				speed = 0.05,
@@ -94,9 +94,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（敲门声）",
 			typewriter = {
 				speed = 0.05,
@@ -111,8 +111,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "打扰了！",
 			typewriter = {
@@ -125,9 +125,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "敲门而入的龙骑兵鞠了一个标准的90度躬，然后看向这边",
 			typewriter = {
 				speed = 0.05,
@@ -142,8 +142,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "如，如果打扰到扎拉阁下和指挥官工作的话，万分抱歉！",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那个……其，其实属下是来向扎拉阁下道谢的。",
 			typewriter = {
@@ -192,8 +192,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "多亏了扎拉阁下上次的建议，属下和她们玩得很开心，也交到了新的朋友！实在是非常感谢！",
 			typewriter = {
@@ -225,8 +225,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哪里的事！扎拉阁下明明特地带我去服装店一件一件的挑选——",
 			typewriter = {
@@ -242,8 +242,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "随便打扰指挥官的工作可是不好的行为哦？如果是和舰队事务无关的话题，我想回去之后再说比较好吧",
 			typewriter = {
@@ -259,8 +259,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 601020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "非，非常对不起！",
 			typewriter = {
@@ -273,9 +273,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "龙骑兵一路倒退到了办公室的门口，又鞠了个躬，然后从外面把门轻轻地关上了。",
 			typewriter = {
 				speed = 0.05,
@@ -290,8 +290,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没想到那孩子连道谢都如此执着",
 			typewriter = {
@@ -307,8 +307,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯？指挥官是对我刚刚和她说的事情感兴趣吗？随便深究少女的秘密可不是绅士的行为哦？",
 			typewriter = {
@@ -372,8 +372,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "有趣的是，最开始的时候她居然带了一堆衣服的照片让我给她提建议，实在是认真过头了。不过，衣服这东西嘛，还是要实际穿上之后才知道合不合适。",
 			typewriter = {
@@ -389,8 +389,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "最后还是陪她一起去挑衣服了。指挥官，下次你和谁约会的时候，也可以让我帮你你出出主意哦？",
 			typewriter = {

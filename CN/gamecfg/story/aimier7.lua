@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>七 埃米尔的浪漫说·下</size>",
@@ -17,16 +17,16 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
+			actor = 802010,
 			side = 2,
+			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "我觉得呢，浪漫并不在于说的话做的事在别人看来有多浪漫，而在于“为对方着想的心”呢～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -83,9 +83,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "埃米尔露出十分甜蜜的微笑",
 			typewriter = {
 				speed = 0.05,
@@ -173,9 +173,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "……总觉得被说了十分浪漫的话",
 			typewriter = {
 				speed = 0.05,
@@ -235,9 +235,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "埃米尔忽然松开手臂，向前走了几步，转身伸出手。",
 			typewriter = {
 				speed = 0.05,
@@ -261,12 +261,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "指挥官，不知道你意下如何呢？嘻嘻～",
 			typewriter = {
 				speed = 0.05,

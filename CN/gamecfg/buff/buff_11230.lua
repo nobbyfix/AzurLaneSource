@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "吴之雪风",
 	init_effect = "",
-	id = 11230,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 11230,
 	icon = 11230,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				targetMaxHPRatio = 0.2,
 				quota = 1,
+				targetMaxHPRatio = 0.2,
 				hpUpperBound = 0.2,
 				skill_id = 11230,
 				check_target = {
@@ -39,7 +39,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 11232,

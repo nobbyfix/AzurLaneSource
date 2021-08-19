@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU17",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>我又回到那幽暗而低洼的森林</size>",
@@ -33,8 +33,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>维吉尔</size>",
@@ -59,11 +59,11 @@ return {
 			}
 		},
 		{
-			bgm = "battle-italy",
-			side = 2,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
 			say = "轰-------！",
+			dir = 1,
+			bgm = "battle-italy",
 			flashN = {
 				color = {
 					1,
@@ -113,9 +113,9 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 603020,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			say = "波拉！！",
 			typewriter = {
 				speed = 0.05,
@@ -127,8 +127,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -155,8 +155,8 @@ return {
 			expression = 3,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 900197,
+			dir = 1,
 			say = "拥有世界最强装甲的扎拉级重巡洋舰可不是那么容易就会被击败的！",
 			typewriter = {
 				speed = 0.05,
@@ -186,8 +186,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 207050,
+			dir = 1,
 			say = "帝国的战舰…果然和姐姐说的一样硬邦邦的，不喜欢",
 			typewriter = {
 				speed = 0.05,
@@ -202,8 +202,8 @@ return {
 			actor = 205029,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "厌战",
+			dir = 1,
 			say = "可畏，这里就交给我吧，记得说好的规则",
 			typewriter = {
 				speed = 0.05,
@@ -218,8 +218,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 207050,
+			dir = 1,
 			say = "嗯…「午夜12:00前，夺得“卡拉布里亚的宝石”」",
 			typewriter = {
 				speed = 0.05,
@@ -234,8 +234,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "事不宜迟，快和猎户座出发吧，你们的航速比我快，不要迟到了",
 			typewriter = {
@@ -263,8 +263,8 @@ return {
 			},
 			action = {
 				{
-					y = -40,
 					type = "shake",
+					y = -40,
 					delay = 0,
 					dur = 0.25,
 					x = 0,
@@ -288,10 +288,10 @@ return {
 			}
 		},
 		{
-			say = "厌战英勇的冲上前替可畏挡下了一轮炮击",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "厌战英勇的冲上前替可畏挡下了一轮炮击",
 			flashN = {
 				color = {
 					1,
@@ -342,8 +342,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "你们的对手是我，别想动可畏一根指头！！",
 			typewriter = {
@@ -374,8 +374,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "不…只是，如果可畏生起气的话我也要遭殃的",
 			typewriter = {
@@ -391,8 +391,8 @@ return {
 			expression = 1,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			say = "啊？？",
 			typewriter = {
 				speed = 0.05,
@@ -404,8 +404,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "「旗舰大人，我的妹妹就拜托你照顾了，这是她的初阵，要是有什么意外情况请多多担待哦~」",
 			typewriter = {
 				speed = 0.05,
@@ -417,8 +417,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "「——光辉敬上」",
 			typewriter = {
 				speed = 0.05,
@@ -430,8 +430,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "厌战一边回想着收到的电报，不禁打了个寒颤",
 			typewriter = {
 				speed = 0.05,
@@ -446,8 +446,8 @@ return {
 			actor = 205029,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "厌战",
+			dir = 1,
 			say = "没什么，来吧，用舰炮公平的对决吧！Belli dura despicio！",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KELIFULAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"骑士与奖赏\n\n<size=45>二 骑士团结成！</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "傍晚·体育馆的一角",
+			bgm = "story-1",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			bgm = "story-1",
+			say = "傍晚·体育馆的一角",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -44,18 +44,18 @@ return {
 			}
 		},
 		{
-			actorName = "丹佛&蒙彼利埃",
-			side = 0,
 			actor = 102150,
-			dir = -1,
+			actorName = "丹佛&蒙彼利埃",
 			bgName = "star_level_bg_103",
+			side = 0,
+			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "噢——！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					dur = 0.2,
 					x = 0,
 					number = 1
@@ -80,16 +80,16 @@ return {
 			}
 		},
 		{
+			actor = 102100,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……噗。……噢——！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					dur = 0.2,
 					x = 0,
 					number = 1
@@ -105,9 +105,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "看来是由克利夫兰级轻巡四人组成了队伍。",
 			typewriter = {
 				speed = 0.05,
@@ -147,15 +147,15 @@ return {
 			}
 		},
 		{
+			actor = 102140,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 102140,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "……明白了。只要大姐头一声令下，就算只有我一个人也会去干掉对方全队的",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -180,12 +180,12 @@ return {
 			}
 		},
 		{
-			say = "不是啦！不是干掉对方，是要靠比赛赢过她们啊！",
+			actor = 102090,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "不是啦！不是干掉对方，是要靠比赛赢过她们啊！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -248,16 +248,16 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……什么！？///（脸红）",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.2,
 					x = 15,
 					number = 2
@@ -273,9 +273,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "克利夫兰瞬间变得满脸通红。",
 			typewriter = {
 				speed = 0.05,
@@ -299,12 +299,12 @@ return {
 			}
 		},
 		{
-			say = "我明白了。……喂，大姐头为了讨你喜欢都做到这份上了，以后不许你离开她半步听见没有。你要把她的一言一行都牢牢记住。",
+			actor = 102140,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102140,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我明白了。……喂，大姐头为了讨你喜欢都做到这份上了，以后不许你离开她半步听见没有。你要把她的一言一行都牢牢记住。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -319,17 +319,17 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102090,
-			nameColor = "#a9f548",
 			say = "不——是——啦！！你们倒是好好听人说话啊——！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					dur = 0.2,
 					x = 0,
 					number = 2

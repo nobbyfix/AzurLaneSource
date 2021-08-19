@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "使用任务奖励<color=#ff7d36>建造新角色</color>吧",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/buildButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -27,13 +27,13 @@ return {
 			style = {
 				text = "建造材料准备充足！ 点击<color=#ffde38>开始建造</color>",
 				mode = 1,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 205.91
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/BuildShipUI(Clone)/bg/main/gallery/start_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -48,13 +48,13 @@ return {
 			style = {
 				text = "点击<color=#ff7d36>确定</color>开始建造",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/build_msg/window/btns/confirm_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

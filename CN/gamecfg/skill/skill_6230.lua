@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "Z字旗",
 	cd = 0,
-	picture = "0",
-	desc = "Z字旗",
 	painting = 0,
 	id = 6230,
+	picture = "0",
 	castCV = "skill",
+	desc = "Z字旗",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,42 +17,26 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 6234
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
-			target_choise = "TargetSelf",
+			casterAniEffect = "",
+			targetAniEffect = "",
+			target_choise = {
+				"TargetSelf",
+				"TargetShipTag"
+			},
 			arg_list = {
 				buff_id = 6231,
-				effectFilter = {
-					{
-						"TargetID",
-						"=",
-						305111
-					},
-					{
-						"TargetID",
-						"=",
-						305112
-					},
-					{
-						"TargetID",
-						"=",
-						305113
-					},
-					{
-						"TargetID",
-						"=",
-						305114
-					}
+				ship_tag_list = {
+					"Mikasa"
 				}
 			}
 		}

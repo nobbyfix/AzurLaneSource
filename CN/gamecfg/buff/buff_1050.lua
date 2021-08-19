@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 100
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 100,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 100
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 100
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 200,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 200
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 200,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 200
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 200,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 200
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 300
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 300
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 300
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 400
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 400
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 500
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 500
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 600
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 600
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 700
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 700
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 800
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 800
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 900,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 900
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 900,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 900
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 900,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 900
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1000
 				}
 			},
 			{
@@ -333,20 +333,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "战术指挥",
 	init_effect = "jinengchufared",
-	id = 1050,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "提高炮击、雷击、装填属性",
 	stack = 1,
-	color = "red",
+	id = 1050,
 	icon = 1050,
 	last_effect = "",
 	blink = {
@@ -363,8 +363,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 100,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 100
 			}
 		},
 		{
@@ -373,8 +373,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 100,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 100
 			}
 		},
 		{
@@ -383,8 +383,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 100,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 100
 			}
 		}
 	}

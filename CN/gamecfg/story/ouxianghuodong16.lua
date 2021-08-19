@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG16",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			bgm = "azumaster-ins",
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "埃尔德里奇的偶像服，不是兔兔呢……",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,11 +40,11 @@ return {
 			}
 		},
 		{
+			actor = 101160,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 101160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…突然打出喵喵星之类的设定也不是办法吧…呜…怎么办呢",
 			typewriter = {
 				speed = 0.05,
@@ -56,8 +56,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -98,11 +98,11 @@ return {
 			}
 		},
 		{
+			actor = 101160,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 101160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "让你们见识下超绝可爱美少女本森酱身为偶像训练师的素质吧！",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -126,13 +126,13 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			actor = 403070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "加斯科涅，你这是……！？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -160,8 +160,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "嗯，加斯科涅曾经认为，这次活动的意义在于“舰装实验”。",
 			typewriter = {
 				speed = 0.05,
@@ -176,8 +176,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "但是，不对。我们站在这里不只是为了战斗，更是为了和大家一起享受快乐…！",
 			typewriter = {
 				speed = 0.05,
@@ -191,9 +191,9 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 905030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所以，我也会倾注此刻所有的“感情”，全力与大家一起享受的！",
 			typewriter = {
 				speed = 0.05,
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -245,8 +245,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

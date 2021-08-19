@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN08",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "港区夜晚•指挥室",
 			typewriter = {
 				speed = 0.05,
@@ -46,10 +46,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,8 +127,8 @@ return {
 			actor = 305022,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "{namecode:79}",
+			dir = 1,
 			say = "疑？好、好热闹？",
 			typewriter = {
 				speed = 0.05,
@@ -140,12 +140,12 @@ return {
 			}
 		},
 		{
-			say = "啊，指挥官这边好多人~大家一起玩~",
+			actor = 301321,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 301321,
 			actorName = "{namecode:33}",
+			dir = -1,
+			say = "啊，指挥官这边好多人~大家一起玩~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -192,10 +192,10 @@ return {
 		{
 			actor = 0,
 			side = 2,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -240,10 +240,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "众人",
 			actor = 201102,
+			actorShadow = true,
+			actorName = "众人",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "啊，是企业",
@@ -308,8 +308,8 @@ return {
 			actor = 305022,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:79}",
+			dir = 1,
 			say = "欸？我也有吗？谢、谢谢……",
 			typewriter = {
 				speed = 0.05,
@@ -324,8 +324,8 @@ return {
 			actor = 301321,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:33}",
+			dir = 1,
 			say = "哇！{namecode:33}要糖果~~",
 			typewriter = {
 				speed = 0.05,
@@ -354,10 +354,10 @@ return {
 		{
 			actor = 0,
 			side = 2,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "！！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -385,10 +385,10 @@ return {
 		{
 			actor = 0,
 			side = 2,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "！！！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -399,10 +399,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "{namecode:79}&{namecode:33}",
 			actor = 301321,
+			actorShadow = true,
+			actorName = "{namecode:79}&{namecode:33}",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "指挥官圣诞快乐~",
@@ -427,8 +427,8 @@ return {
 			actor = 305022,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "{namecode:79}",
+			dir = 1,
 			say = "姐姐说难得的圣诞装，一定要给指挥官看看……",
 			typewriter = {
 				speed = 0.05,
@@ -442,10 +442,10 @@ return {
 		{
 			actor = 0,
 			side = 2,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "！！！！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -471,14 +471,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好~既然大家都聚在一起了，那就一起来一张吧~",
 			flashout = {
-				dur = 0.35,
 				black = false,
+				dur = 0.35,
 				alpha = {
 					0,
 					1
@@ -518,14 +518,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿，非常棒~这张就叫做《爱与和平的圣夜祭》吧！",
 			flashout = {
-				dur = 0.35,
 				black = false,
+				dur = 0.35,
 				alpha = {
 					0,
 					1

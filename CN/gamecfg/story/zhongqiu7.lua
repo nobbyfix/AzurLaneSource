@@ -1,11 +1,11 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU7",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 502010,
@@ -72,14 +72,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "榜眼——Z46！喏，写在这里",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -153,14 +153,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "萨拉托加——榜眼！",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -234,14 +234,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "榜眼——逸仙！嘻嘻，是我自己呢~",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -330,14 +330,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "第二个探花——欧根！",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -411,14 +411,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "最后是状元——宁海！",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -443,12 +443,12 @@ return {
 			}
 		},
 		{
-			say = "咦！？我是状元！太棒啦！",
+			actor = 502022,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 502022,
 			actorName = "宁海",
+			dir = -1,
+			say = "咦！？我是状元！太棒啦！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -466,8 +466,8 @@ return {
 			actor = 502032,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "平海",
+			dir = -1,
 			say = "我也想成为状元……",
 			typewriter = {
 				speed = 0.05,
@@ -497,8 +497,8 @@ return {
 			actor = 502022,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actorName = "宁海",
+			dir = -1,
 			say = "要写的内容，我一开始就决定了——希望能迎来更多的、更多的同伴！",
 			typewriter = {
 				speed = 0.05,
@@ -510,14 +510,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 205060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "所有的花灯都飞到我们的双手触及不到的地方了……",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1

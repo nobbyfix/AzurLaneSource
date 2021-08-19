@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.5,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.5
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.2
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.555,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.555
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.211,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.211
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.61,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.61
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.222,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.222
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.665,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.665
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.233,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.233
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.72,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.72
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.244,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.244
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.775,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.775
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.255,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.255
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.83,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.83
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.266,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.266
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.885,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.885
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.277,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.277
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.94,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 0.94
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.288,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.288
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1,
-					attr = "hammerDamageRatio"
+					attr = "hammerDamageRatio",
+					number = 1
 				}
 			},
 			{
@@ -233,15 +233,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.3,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.3
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "彗星头槌",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "碰撞伤害提升",
 	stack = 1,
@@ -262,8 +262,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.5,
-				attr = "hammerDamageRatio"
+				attr = "hammerDamageRatio",
+				number = 0.5
 			}
 		}
 	}

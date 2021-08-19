@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA27",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			side = 0,
+			stopbgm = true,
 			actorName = "？？？",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "她们根本不应该受到这样的对待！！她们和所有的人类一样，是有心的！！",
 			effects = {
 				{
@@ -30,8 +30,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -46,8 +46,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "？？？",
+			nameColor = "#a9f548",
 			side = 0,
 			dir = 1,
 			blackBg = true,
@@ -62,8 +62,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -78,8 +78,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -110,8 +110,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "轰————",
 			effects = {
@@ -167,16 +167,16 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			side = 2,
+			nameColor = "#a9f548",
+			say = "风速越来越快，没有办法继续派出侦察机了！",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-6",
-			actor = 207040,
-			nameColor = "#a9f548",
-			say = "风速越来越快，没有办法继续派出侦察机了！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

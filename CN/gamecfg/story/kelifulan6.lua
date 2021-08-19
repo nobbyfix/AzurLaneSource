@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KELIFULAN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"骑士与奖赏\n\n<size=45>六　奋发努力！</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "体育馆的休息室里。克利夫兰和队员们嘴上虽不说，每个人脸上都是愁云满布。",
+			bgm = "story-2",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			bgm = "story-2",
+			say = "体育馆的休息室里。克利夫兰和队员们嘴上虽不说，每个人脸上都是愁云满布。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -114,9 +114,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "被气呼呼的克利夫兰所感染，大家的表情也恢复了生气。",
 			typewriter = {
 				speed = 0.05,
@@ -124,16 +124,16 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "各位！比赛还没有结束！让她们见识见识我们“海上骑士团”真正的实力吧！！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					number = 1
@@ -149,18 +149,18 @@ return {
 			}
 		},
 		{
-			actorName = "丹佛＆蒙彼利埃",
-			side = 0,
 			actor = 102150,
-			dir = -1,
+			actorName = "丹佛＆蒙彼利埃",
 			bgName = "star_level_bg_103",
+			side = 0,
+			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "噢噢噢！！！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					number = 1
@@ -201,17 +201,17 @@ return {
 			}
 		},
 		{
+			actor = 303070,
 			actorName = "{namecode:63}",
+			bgName = "star_level_bg_103",
 			side = 2,
 			dir = -1,
-			bgName = "star_level_bg_103",
-			bgm = "battle-boss-6",
-			actor = 303070,
 			nameColor = "#a9f548",
 			say = "这样下去要被反超了！一定要截住她们的传球！",
+			bgm = "battle-boss-6",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -242,13 +242,13 @@ return {
 			}
 		},
 		{
-			say = "！要是让她们配合成功，我们的战术就没用了…！",
+			actor = 302120,
 			side = 1,
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 302120,
 			actorName = "{namecode:38}",
+			say = "！要是让她们配合成功，我们的战术就没用了…！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -279,9 +279,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "（咣！！！）",
 			typewriter = {
 				speed = 0.05,
@@ -295,9 +295,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "随着终场哨声的响起，克利夫兰的一记猛烈的灌篮，宣告了比赛的结束。",
 			typewriter = {
 				speed = 0.05,
@@ -305,9 +305,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -331,9 +331,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "打进致胜一球的克利夫兰朝这边飞奔而来。",
 			typewriter = {
 				speed = 0.05,
@@ -357,9 +357,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "——少女的身体虽娇弱，分享胜利喜悦的拥抱却充满了力量。",
 			typewriter = {
 				speed = 0.05,

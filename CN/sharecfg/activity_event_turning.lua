@@ -1,8 +1,8 @@
 pg = pg or {}
 pg.activity_event_turning = {
 	{
-		total_num = 7,
 		id = 1,
+		total_num = 7,
 		groupid_list = {
 			1050001,
 			1050004,
@@ -71,5 +71,3 @@ pg.activity_event_turning = {
 		1
 	}
 }
-
-return

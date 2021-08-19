@@ -1,14 +1,15 @@
-class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("ChargeSuccessCommand", pm.SimpleCommand)
+
+function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
 	slot4 = slot2.payId
 	slot6 = slot2.gem_free
-	slot7 = Goods.New({
+	slot7 = Goods.Create({
 		shop_id = slot2.shopId
 	}, Goods.TYPE_CHARGE)
-	slot9 = getProxy(PlayerProxy).getData(slot8)
 
 	if slot2.gem > 0 then
-		slot9:addResources({
+		getProxy(PlayerProxy):getData():addResources({
 			chargeGem = slot5
 		})
 	end
@@ -37,6 +38,11 @@ class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1
 
 	slot8:updatePlayer(slot9)
 
+	if slot7:isMonthCard() then
+		MonthCardOutDateTipPanel.SetMonthCardEndDateLocal()
+		MonthCardOutDateTipPanel.SetMonthCardTipDate(0)
+	end
+
 	slot11 = getProxy(ShopsProxy):getChargedList() or {}
 	slot12 = false
 
@@ -51,7 +57,7 @@ class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	end
 
 	if not slot12 then
-		slot11[slot3] = Goods.New({
+		slot11[slot3] = Goods.Create({
 			pay_count = 1,
 			shop_id = slot3
 		}, Goods.TYPE_CHARGE)
@@ -78,4 +84,4 @@ class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	pg.TipsMgr.GetInstance():ShowTips(i18n("charge_success"))
 end
 
-return class("ChargeSuccessCommand", pm.SimpleCommand)
+return slot0

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"才不是小孩子！\n\n<size=45>六 成熟！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "今天也是和平常一样的——",
 			typewriter = {
 				speed = 0.05,
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "...？",
 			typewriter = {
 				speed = 0.05,
@@ -86,9 +86,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "(等等等等，这是什么展开？)",
 			dialogShake = {
 				speed = 0.09,
@@ -108,8 +108,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官，不明白吗？来和我约会吧！",
 			typewriter = {
@@ -122,9 +122,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（先冷静下来，弄清楚具体状况……）",
 			typewriter = {
 				speed = 0.05,
@@ -161,8 +161,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "“只要约会了，指挥官就会对我刮目相看，不再把我当做小孩子来对待了！”她是这么告诉我的！",
 			typewriter = {
@@ -194,8 +194,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "但是，这些会不会都是因为指挥官觉得我是小孩子，觉得我更需要被照顾，所以才对我这么细心……",
 			typewriter = {
@@ -211,8 +211,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我不想一直被当成小孩子看待下去",
 			typewriter = {
@@ -225,11 +225,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所以，指挥官，请和我约会吧！这样一来指挥官就能看到一个不一样的我了！",
 			typewriter = {
 				speed = 0.05,
@@ -241,8 +241,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -254,8 +254,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "拜托了！",
 			typewriter = {
@@ -281,9 +281,9 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 108030,
 			dir = 1,
 			optionFlag = 2,
-			actor = 108030,
 			nameColor = "#a9f548",
 			say = "拜托了！",
 			typewriter = {
@@ -296,8 +296,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -315,8 +315,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "太好了！",
 			typewriter = {

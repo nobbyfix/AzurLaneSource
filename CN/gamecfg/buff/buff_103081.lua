@@ -1,7 +1,7 @@
 return {
-	time = 15,
-	name = "双影无双",
 	init_effect = "",
+	name = "双影无双",
+	time = 15,
 	picture = "",
 	desc = "标记",
 	stack = 1,

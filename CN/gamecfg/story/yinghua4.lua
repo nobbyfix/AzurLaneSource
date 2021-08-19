@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -130,32 +130,32 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "少女在迄今为止的人生中，见过许多充满期待的眼神，或是希望从所谓神明的恩泽中获取些什么，或是对于未来生活的期待和向往",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			blackBg = true,
 			say = "但是，这次她所面对的，是更加令人难以忽视的眼神——眼前这批平时她最信任的重樱的精锐空母们，正用炽热的眼神看着她，期待着她从嘴里说出的那几个字…",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			blackBg = true,
 			say = "她犹豫，但是没有后退的余地，这一切，都是上层的大人物们早已安排好的剧本…",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			blackBg = true,
 			say = "她握紧了自己的拳头，深吸一口气，以她最擅长的，充满威严感的语气说道",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

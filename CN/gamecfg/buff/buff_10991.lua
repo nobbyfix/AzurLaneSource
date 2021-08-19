@@ -7,9 +7,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1000
 				}
 			}
 		}
@@ -22,9 +22,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1220
 				}
 			}
 		}
@@ -37,9 +37,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1440
 				}
 			}
 		}
@@ -52,9 +52,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1660
 				}
 			}
 		}
@@ -67,9 +67,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1880
 				}
 			}
 		}
@@ -82,9 +82,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 2100
 				}
 			}
 		}
@@ -97,9 +97,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2320,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 2320
 				}
 			}
 		}
@@ -112,9 +112,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2540,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 2540
 				}
 			}
 		}
@@ -127,9 +127,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2760,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 2760
 				}
 			}
 		}
@@ -142,16 +142,16 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 3000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "防空火力",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "自身炮击上升",
 	stack = 1,
@@ -172,9 +172,9 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
+				attr = "cannonPower",
 				convertAttr = "antiAirPower",
-				attr = "cannonPower"
+				number = 1000
 			}
 		}
 	}

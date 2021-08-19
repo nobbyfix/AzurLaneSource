@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TEATIME7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -185,10 +185,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 1,
-			actorName = "{namecode:13}&{namecode:14}",
 			actor = 301121,
+			actorShadow = true,
+			actorName = "{namecode:13}&{namecode:14}",
+			side = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "……",
@@ -225,12 +225,12 @@ return {
 			}
 		},
 		{
-			say = "对不起，请免了，绝对不要——",
+			actor = 301111,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 301111,
 			actorName = "{namecode:13}",
+			dir = -1,
+			say = "对不起，请免了，绝对不要——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -245,14 +245,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 207020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呀，已经到驱逐舰们回港的时间了。抱歉，我先走一步了~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -277,12 +277,12 @@ return {
 			}
 		},
 		{
-			say = "一、一晃眼就消失了，皇家的航空母舰，真是深不可测",
+			actor = 301111,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301111,
 			actorName = "{namecode:13}",
+			dir = 1,
+			say = "一、一晃眼就消失了，皇家的航空母舰，真是深不可测",
 			paintingFadeOut = {
 				time = 0,
 				side = 0
@@ -315,8 +315,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "这位倒也有一个深不可测的地方……",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "{namecode:14}诚心诚意地期待着下一次茶会哟~",
 			typewriter = {
 				speed = 0.05,
@@ -422,8 +422,8 @@ return {
 			actor = 301111,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actorName = "{namecode:13}",
+			dir = -1,
 			say = "下一次，我们举办电动会吧，带上长岛小姐——",
 			typewriter = {
 				speed = 0.05,
@@ -438,8 +438,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "绝对不——要！",
 			typewriter = {
 				speed = 0.05,
@@ -451,11 +451,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "此刻的{namecode:11}……",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -480,8 +480,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "【南纬71°31′34″东经24°08′17″】",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -492,12 +492,12 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "{namecode:11}",
 			dir = 1,
 			blackBg = true,
-			actor = 301090,
-			actorName = "{namecode:11}",
 			say = "完全没有{namecode:12}生活过的痕迹……咦，这里好像有文字？南极飞鸟考察站，毛德皇后地——",
 			typewriter = {
 				speed = 0.05,

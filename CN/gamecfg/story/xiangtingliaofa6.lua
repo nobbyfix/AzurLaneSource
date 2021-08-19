@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "白鹰·长岛防线 不久前",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "airRaidAlarm",
+			say = "白鹰·长岛防线 不久前",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -21,12 +21,12 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 102070,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "怎、怎么会…….这里不是安全的后方么……",
+			dir = 1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -89,8 +89,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -102,8 +102,8 @@ return {
 			actor = 102230,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "终于找到你了——",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -177,8 +177,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "不要怕，现在沿岛防线还算稳固。再怎么说也是纽约司令部的外围防御，不会这么轻易被攻克的。",
 			typewriter = {
 				speed = 0.05,
@@ -208,8 +208,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "没事，不要紧。事先谁都没料到塞壬舰队会毫无预警的打到这里来。",
 			typewriter = {
 				speed = 0.05,
@@ -251,8 +251,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -279,8 +279,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "一直隐藏在姐姐们的光环中，可是永远也发扬不出自我的！",
 			typewriter = {
 				speed = 0.05,
@@ -337,8 +337,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -350,8 +350,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "就是这样，平静下来了吗？",
 			typewriter = {
 				speed = 0.05,

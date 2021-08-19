@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAO2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"忍者修行之路？\n\n<size=45>二　忍者的“修炼”</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "在学院后面一块比较隐秘的空地上，看到了正在做着什么的{namecode:11}和{namecode:21}。",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "在学院后面一块比较隐秘的空地上，看到了正在做着什么的{namecode:11}和{namecode:21}。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 301270,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喝！",
 			typewriter = {
 				speed = 0.05,
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 75,
 					type = "shake",
+					y = 75,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "只见{namecode:21}向前一冲，然后以一个漂亮的后空翻回到了原地。",
 			typewriter = {
 				speed = 0.05,
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好厉害！",
 			typewriter = {
 				speed = 0.05,
@@ -98,8 +98,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -108,12 +108,12 @@ return {
 			}
 		},
 		{
-			say = "这不过是平时修炼的基本功而已。多练习的话，你也可以做到的。",
+			actor = 301270,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301270,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这不过是平时修炼的基本功而已。多练习的话，你也可以做到的。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -128,11 +128,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！我试试！嘿——哇！！",
 			typewriter = {
 				speed = 0.05,
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 90,
 					type = "shake",
+					y = 90,
 					delay = 0.6,
 					dur = 0.2,
 					x = 0,
@@ -154,9 +154,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "{namecode:21}轻巧地接住了在空中失去平衡的{namecode:11}。",
 			typewriter = {
 				speed = 0.05,
@@ -196,11 +196,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喝！——欸？呀！",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			},
 			action = {
 				{
-					y = 75,
 					type = "shake",
+					y = 75,
 					delay = 0.4,
 					dur = 0.1,
 					x = 0,
@@ -222,9 +222,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "{namecode:21}再次接住了头朝下往下落的{namecode:11}。",
 			typewriter = {
 				speed = 0.05,
@@ -232,11 +232,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜呜……再，再来一次！",
 			typewriter = {
 				speed = 0.05,
@@ -248,8 +248,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.2,
 					dur = 0.4,
 					x = 22.5,
@@ -258,11 +258,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这次一定能行！嘿！——哇哇！！",
 			typewriter = {
 				speed = 0.05,
@@ -274,8 +274,8 @@ return {
 			},
 			action = {
 				{
-					y = 75,
 					type = "shake",
+					y = 75,
 					delay = 0.4,
 					dur = 0.15,
 					x = 0,
@@ -284,9 +284,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "{namecode:21}用公主抱的方式接住了水平下落的{namecode:11}。",
 			typewriter = {
 				speed = 0.05,
@@ -310,12 +310,12 @@ return {
 			}
 		},
 		{
-			say = "抱歉……看来还是在下修炼不够……",
+			actor = 301090,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "抱歉……看来还是在下修炼不够……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -410,11 +410,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "抱，抱歉……",
 			typewriter = {
 				speed = 0.05,
@@ -426,8 +426,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

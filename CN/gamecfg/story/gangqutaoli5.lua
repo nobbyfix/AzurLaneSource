@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GANGQUTAOLI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区逃离大作战！\n\n<size=45>五　作战失败…？</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			actor = 407010,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 407010,
-			nameColor = "#a9f548",
 			say = "也就是说，你进行的高能热线照射试验，偶然诞生出了这些孩子吗",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -135,8 +135,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "原原来是我搞错了吗…我好憎恨…自己的不成熟…！",
 			typewriter = {
@@ -149,8 +149,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -239,11 +239,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "知、知道了喵！对不起喵！",
 			typewriter = {
 				speed = 0.05,
@@ -255,8 +255,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -270,7 +270,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "小齐柏林，小{namecode:71}！太好了喵！",
+			say = "小齐柏林，小{namecode:71}！太好了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -284,8 +284,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 304060,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "和我一样的“{namecode:71}”……那料理的技巧一定更厉害了吧……",
 			typewriter = {
@@ -317,10 +317,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "不可能…明明是铁血第一艘空母…结果竟然有“两个“…吗？",
+			say = "不可能…明明是铁血第一艘空母…结果竟然有“两个”…吗？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -331,8 +331,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -373,15 +373,15 @@ return {
 			}
 		},
 		{
+			actor = 304060,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 304060,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这下就算是告一段落了…不知道以后…能不能顺利融入港区呢…",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -486,17 +486,17 @@ return {
 			}
 		},
 		{
+			actor = 307090,
 			actorName = "？？？",
+			blackBg = true,
 			side = 2,
 			dir = 1,
 			stopngm = true,
-			blackBg = true,
-			actor = 307090,
 			nameColor = "#a9f548",
 			say = "——",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -521,12 +521,12 @@ return {
 			}
 		},
 		{
+			actor = 307090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 307090,
-			actorName = "？？？",
 			say = "那是当然，呵呵呵……",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AJIAKESI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"我的美好回忆\n\n<size=45>七 逞强和真心・下</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "照顾生病的阿贾克斯大约一小时后……",
+			bgm = "story-2",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			bgm = "story-2",
+			say = "照顾生病的阿贾克斯大约一小时后……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -64,11 +64,11 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜哇啊啊啊……",
 			typewriter = {
 				speed = 0.05,
@@ -118,9 +118,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "阿贾克斯在被窝里耍起了脾气。",
 			typewriter = {
 				speed = 0.05,
@@ -148,11 +148,11 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜呜…发生这种事……还怎么可能踩得上去啦……！",
 			typewriter = {
 				speed = 0.05,
@@ -164,8 +164,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.3,
 					x = 30,
 					number = 3
@@ -173,9 +173,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -187,9 +187,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "被窝里的动作停了下来。",
 			typewriter = {
 				speed = 0.05,
@@ -207,9 +207,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "靠近阿贾克斯时，突然被拽进了被窝里。",
 			typewriter = {
 				speed = 0.05,
@@ -221,9 +221,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "阿贾克斯的呼吸近在咫尺…。",
 			typewriter = {
 				speed = 0.05,
@@ -283,12 +283,12 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202030,
-			nameColor = "#a9f548",
 			say = "我可爱的小猪仔♡",
 			typewriter = {
 				speed = 0.05,

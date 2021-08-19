@@ -179,14 +179,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "绝对回避",
 	init_effect = "jinengchufablue",
-	id = 11661,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 11661,
 	icon = 11660,
 	last_effect = "",
 	blink = {

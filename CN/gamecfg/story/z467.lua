@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z467",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纯白之诗\n\n<size=45>七 纯白</size>",
@@ -17,8 +17,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "“不是这样”——作为兵器存在的我，被否定了。那么我的颜色，并不是灰色",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -29,8 +29,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "“46有想法也有愿望，是一个人”——并不是毫无自我的纯粹。那么我的颜色，也不是透明",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,20 +41,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "“46应该更珍重自己”——只有一时虚名的存在，却确实拥有着值得珍惜的“自己”。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			blackBg = true,
-			say = "那么，试问——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -65,15 +53,27 @@ return {
 			}
 		},
 		{
+			say = "那么，试问——",
+			blackBg = true,
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 401460,
 			side = 2,
 			bgName = "bg_story_task",
+			say = "挚爱的人啊，我究竟是何颜色？",
 			bgmDelay = 2,
 			bgm = "story-2",
-			actor = 401460,
-			say = "挚爱的人啊，我究竟是何颜色？",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1

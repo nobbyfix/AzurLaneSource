@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU5",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 502032,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "平海",
+			dir = 1,
 			say = "铛铛铛铛~中秋平海闪亮登场！",
 			typewriter = {
 				speed = 0.05,
@@ -24,12 +24,12 @@ return {
 			}
 		},
 		{
-			say = "好、好害羞……逸仙的癖好……",
+			actor = 502022,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 502022,
 			actorName = "宁海",
+			dir = 1,
+			say = "好、好害羞……逸仙的癖好……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -122,8 +122,8 @@ return {
 			actor = 502022,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "宁海",
+			dir = 1,
 			say = "总、总之，赶快开饭吧！我要喝桂花酿！",
 			typewriter = {
 				speed = 0.05,
@@ -150,14 +150,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 107020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这就是……萨拉做的“月饼”吗……",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -219,8 +219,8 @@ return {
 			actor = 502022,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "宁海",
+			dir = 1,
 			say = "那种一看就知道不能吃的食物…竟然吞下去了…何等温柔的亲情！",
 			typewriter = {
 				speed = 0.05,
@@ -235,8 +235,8 @@ return {
 			actor = 502032,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "平海",
+			dir = 1,
 			say = "列克小姐的“月饼”蛮好吃的，嚼嚼~就是味道和逸仙姐做的不太一样……",
 			typewriter = {
 				speed = 0.05,
@@ -341,8 +341,8 @@ return {
 			actor = 502032,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "平海",
+			dir = 1,
 			say = "啊哈哈~我把模具借给了萨拉……我很喜欢吃包子所以没关系，我做的都由我自己来吃吧！",
 			typewriter = {
 				speed = 0.05,
@@ -372,8 +372,8 @@ return {
 			actor = 502022,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "宁海",
+			dir = 1,
 			say = "平海，我们换着吃吧",
 			typewriter = {
 				speed = 0.05,
@@ -388,8 +388,8 @@ return {
 			actor = 502032,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "平海",
+			dir = 1,
 			say = "姐姐……",
 			typewriter = {
 				speed = 0.05,
@@ -419,8 +419,8 @@ return {
 			actor = 502022,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "宁海",
+			dir = 1,
 			say = "咕噜噜~好、好香……",
 			typewriter = {
 				speed = 0.05,
@@ -522,13 +522,13 @@ return {
 			}
 		},
 		{
-			say = "神明大人，为了将要团聚与尚未团聚的同伴们，在此向此夜明月奉上吾之祝酒——",
+			actor = 107020,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 107020,
 			actorName = "全体",
+			dir = -1,
 			withoutPainting = true,
+			say = "神明大人，为了将要团聚与尚未团聚的同伴们，在此向此夜明月奉上吾之祝酒——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

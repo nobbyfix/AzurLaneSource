@@ -6,8 +6,8 @@ return {
 		{
 			actor = 107060,
 			side = 2,
-			dir = -1,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "“AF可能缺少淡水，攻击部队带足淡水”？看来我们这次可是钓到大鱼了",
 			shake = {
 				speed = 1,
@@ -23,11 +23,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "再狡猾的狐狸，到了关键时刻也是会露出尾巴的呀，哈哈哈",
-			dir = -1,
 			actor = 107070,
+			side = 1,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "再狡猾的狐狸，到了关键时刻也是会露出尾巴的呀，哈哈哈",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -66,8 +66,8 @@ return {
 		{
 			actor = 107060,
 			side = 0,
-			dir = -1,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "可是姐姐你之前受的伤…",
 			shake = {
 				speed = 1,
@@ -121,8 +121,8 @@ return {
 		{
 			actor = 107060,
 			side = 0,
-			dir = -1,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "唔…",
 			shake = {
 				speed = 1,
@@ -156,10 +156,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "企业&大黄蜂",
 			actor = 107060,
+			actorShadow = true,
+			actorName = "企业&大黄蜂",
+			side = 0,
 			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",
@@ -196,8 +196,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			sequenceSpd = 2,
+			mode = 1,
 			bgFade = true,
 			effects = {
 				{

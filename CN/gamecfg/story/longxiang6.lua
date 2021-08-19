@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "LONGXIANG6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"轻型航母{namecode:90}参上！\n\n<size=45>六 宿敌！？传说中的偶像究竟是？！</size>",
@@ -19,16 +19,16 @@ return {
 		{
 			expression = 3,
 			side = 2,
+			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_school",
 			bgm = "story-1",
 			actor = 306060,
 			nameColor = "#a9f548",
 			say = "主公现在在做什么呢……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -53,13 +53,13 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "锵锵！来自舰载机的吓一跳攻击！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,8 +70,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -83,8 +83,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊……嗯……",
 			typewriter = {
@@ -97,12 +97,12 @@ return {
 			}
 		},
 		{
-			say = "诶、诶？{namecode:90}酱？今天的反应很差哦……",
+			actor = 107030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "诶、诶？{namecode:90}酱？今天的反应很差哦……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -120,8 +120,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "萨拉托加小姐……今天没有心情陪你恶作剧。抱歉。",
 			typewriter = {
@@ -169,8 +169,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "虽然大家现在都是同一个舰队的伙伴，但也不能那么轻易的把内心敞开给别人！",
 			typewriter = {
@@ -183,8 +183,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -212,8 +212,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "竟然敢占用主公重要的勤务时间，吾这个秘书舰绝不允许！",
 			typewriter = {
@@ -226,11 +226,11 @@ return {
 			}
 		},
 		{
+			actor = 306060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…………直说的话，萨拉托加小姐你是宿敌才对！",
 			typewriter = {
 				speed = 0.05,
@@ -242,8 +242,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -271,8 +271,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "诶？",
 			typewriter = {
@@ -285,12 +285,12 @@ return {
 			}
 		},
 		{
-			say = "明白了。也就是说{namecode:90}酱想对指挥官展示自己好的一面",
+			actor = 107030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "明白了。也就是说{namecode:90}酱想对指挥官展示自己好的一面",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -308,8 +308,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "唔！？",
 			typewriter = {
@@ -322,8 +322,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -367,8 +367,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这、这种事情对吾来说……",
 			typewriter = {
@@ -381,8 +381,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.2,
 					dur = 0.4,
 					x = 22.5,
@@ -410,9 +410,9 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
+			actor = 306060,
 			dir = 1,
 			blackBg = true,
-			actor = 306060,
 			nameColor = "#a9f548",
 			say = "萨拉托加小姐…………",
 			typewriter = {

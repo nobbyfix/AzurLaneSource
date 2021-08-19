@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春风的十字星\n\n<size=45>七  结案</size>",
@@ -18,13 +18,13 @@ return {
 			}
 		},
 		{
+			actor = 201080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "皇家方舟小姐，对不起…不该那么轻易地就认定你是凶手…",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			say = "我也有点先入为主了呢…对不起",
+			actor = 201110,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我也有点先入为主了呢…对不起",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
-			say = "啊哈哈，结果没什么事就好，折腾了这么久肚子都饿了，大家一起去吃饭吧？",
+			actor = 207020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊哈哈，结果没什么事就好，折腾了这么久肚子都饿了，大家一起去吃饭吧？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -267,14 +267,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "噢！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -301,12 +301,12 @@ return {
 			}
 		},
 		{
-			say = "咕嘿，和一群驱逐妹妹们一起吃饭…",
+			actor = 207020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "咕嘿，和一群驱逐妹妹们一起吃饭…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -321,14 +321,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "盯——",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.014,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.014
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.018,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.018
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.022,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.022
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.026,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.026
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.03,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.03
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.035
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.04
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.045
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.05
 				}
 			}
 		}
 	},
+	time = 10,
 	name = "",
 	init_effect = "",
-	id = 105093,
-	time = 10,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 105093,
 	icon = 105090,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.01,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.01
 			}
 		}
 	}

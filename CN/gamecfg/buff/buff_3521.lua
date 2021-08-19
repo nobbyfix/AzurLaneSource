@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "水面作战",
 	init_effect = "",
-	id = 3521,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 3521,
 	icon = 3520,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 3521,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 3521
 			}
 		}
 	}

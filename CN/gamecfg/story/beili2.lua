@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>二 兔兔星人特征——“兔兔”！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然还没搞清兔兔星是什么，不过并不妨碍贝利的秘书舰工作…",
 			typewriter = {
 				speed = 0.05,
@@ -88,12 +88,12 @@ return {
 			}
 		},
 		{
-			say = "啊，拉菲来得正好～指挥官，兔兔星人的特征之一就是这个！",
+			actor = 101270,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊，拉菲来得正好～指挥官，兔兔星人的特征之一就是这个！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -124,11 +124,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯嗯！兔兔星人特征其一——“兔兔”！",
 			typewriter = {
 				speed = 0.05,
@@ -140,8 +140,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -150,9 +150,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "是指外观像兔兔么…",
 			typewriter = {
 				speed = 0.05,
@@ -176,9 +176,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "拉菲把耳朵拿了下来，嗯…？",
 			typewriter = {
 				speed = 0.05,
@@ -202,9 +202,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -212,11 +212,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对了！就是这个！指挥官也想成为兔兔星人的话，只要这样就行了！",
 			typewriter = {
 				speed = 0.05,
@@ -228,8 +228,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -238,9 +238,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "被戴上了拉菲的兔兔发卡…",
 			typewriter = {
 				speed = 0.05,
@@ -264,11 +264,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呀哈哈哈！这下指挥官也是个值得骄傲的兔兔星人了！",
 			typewriter = {
 				speed = 0.05,
@@ -280,8 +280,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,

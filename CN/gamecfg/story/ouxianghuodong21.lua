@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG21",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 502023,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "“东煌姐妹”再登场！经过学习大家的Live，我们已经不是当初登场时的新人了！",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -37,8 +37,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502033,
+			dir = 1,
 			say = "在后台吃了很多大家送的点心，平海现在体力充沛！一定比之前发挥的更好！",
 			typewriter = {
 				speed = 0.05,
@@ -82,13 +82,13 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 101176,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Polaris…虽然很厉害……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -130,9 +130,9 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 201216,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没错！大家一起努力的话一定不会输给Polaris的！",
 			typewriter = {
 				speed = 0.05,
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -184,8 +184,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -194,14 +194,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 403040,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "要是欺负我家斯佩我是不会饶过你们的！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -226,8 +226,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -253,9 +253,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 301014,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "德意志的心情我能理解！我也希望我家特型驱逐舰能在舞台上最闪耀呢！",
 			typewriter = {
 				speed = 0.05,
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -292,14 +292,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 403070,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼！一起来也无妨！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -341,9 +341,9 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 102240,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这回是真正的最后一战了！加斯科涅，准备好了吗？",
 			typewriter = {
 				speed = 0.05,
@@ -355,8 +355,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -368,8 +368,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "指令确认！加斯科涅，唱响最美的歌声——",
 			typewriter = {
 				speed = 0.05,

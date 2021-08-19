@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"前辈与心结\n\n<size=45>五　心结·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "从上次演习以来，埃塞克斯的样子都有些怪怪的",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "是时候约她出来聊聊了……",
 			typewriter = {
 				speed = 0.05,
@@ -68,14 +68,14 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸？作为平时的感谢，假日一起去哪里逛逛？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -100,11 +100,11 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "只是秘书舰分内的事情，没有什么值得道谢的地方…",
 			typewriter = {
 				speed = 0.05,
@@ -125,8 +125,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "既、既然指挥官都说到这份上了…",
 			typewriter = {
@@ -139,14 +139,14 @@ return {
 			}
 		},
 		{
-			side = 2,
 			stopbgm = true,
-			dir = 1,
+			side = 2,
 			bgName = "star_level_bg_105",
+			dir = 1,
 			say = "假日，和埃塞克斯来到港区周边闲逛",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -167,13 +167,13 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			bgm = "story-1",
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "感觉除了地点不一样以外，和平时的巡逻差不多呢…",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -187,8 +187,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯？指挥官有话要说吗？",
 			typewriter = {
@@ -210,8 +210,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "企业前辈吗……",
 			typewriter = {
@@ -352,11 +352,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107060,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_105",
+			side = 2,
+			dir = 1,
 			stopbgm = true,
 			say = "不是那样的",
 			typewriter = {
@@ -372,9 +372,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
+			actor = 107090,
 			dir = 1,
 			blackBg = true,
-			actor = 107090,
 			nameColor = "#a9f548",
 			say = "欸？前、前辈？",
 			typewriter = {
@@ -387,8 +387,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.1,
 					x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>六 浪漫的约会？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·广场",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不过，说是约会，但却完全没想好要去哪里玩呢…",
 			typewriter = {
 				speed = 0.05,
@@ -94,9 +94,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "被埃米尔十分自然地抱住了手臂，传来了十分柔软的触感。",
 			typewriter = {
 				speed = 0.05,
@@ -126,13 +126,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "…………",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -153,9 +153,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "散步的路上，和埃米尔闲聊了起来",
 			typewriter = {
 				speed = 0.05,
@@ -243,11 +243,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "虽然在大家看来可能会有些夸张吧，哈哈~",
 			typewriter = {
 				speed = 0.05,
@@ -297,11 +297,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘻嘻，指挥官有没有想过用些甜言蜜语或是制造点“意外惊喜”来接近我呀？",
 			typewriter = {
 				speed = 0.05,
@@ -323,12 +323,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "幸好没有实践呢，因为我对那种完全没兴趣的~",
 			typewriter = {
 				speed = 0.05,
@@ -340,12 +340,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "嘻嘻，果然指挥官是我看中的人呢",
 			typewriter = {
 				speed = 0.05,
@@ -357,12 +357,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "这些在别人看来也许浪漫的东西，对我来说可是没有丝毫吸引力的哦～",
 			typewriter = {
 				speed = 0.05,

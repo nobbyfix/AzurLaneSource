@@ -50,8 +50,8 @@ slot0.TECH_NATION_ATTRS = {
 	AttributeType.AntiSub
 }
 
-slot0.GetNationSpriteByIndex = function (slot0)
-	return GetSpriteFromAtlas(slot0.AtlasName, slot0.NationResName[slot0] .. "01", true), GetSpriteFromAtlas(slot0.AtlasName, slot0.NationResName[slot0] .. "02", true)
+function slot0.GetNationSpriteByIndex(slot0)
+	return GetSpriteFromAtlas(uv0.AtlasName, uv0.NationResName[slot0] .. "01", true), GetSpriteFromAtlas(uv0.AtlasName, uv0.NationResName[slot0] .. "02", true)
 end
 
 slot0.TypeOrder = {
@@ -79,7 +79,8 @@ slot0.TypeOrder = {
 	},
 	{
 		ShipType.WeiXiu,
-		ShipType.ZhongPao
+		ShipType.ZhongPao,
+		ShipType.Yunshu
 	}
 }
 slot0.TypeResName = {
@@ -93,11 +94,11 @@ slot0.TypeResName = {
 	"type_all_"
 }
 
-slot0.GetTypeSpriteByIndex = function (slot0)
-	return GetSpriteFromAtlas(slot0.AtlasName, slot0.TypeResName[slot0] .. "01", true), GetSpriteFromAtlas(slot0.AtlasName, slot0.TypeResName[slot0] .. "02", true)
+function slot0.GetTypeSpriteByIndex(slot0)
+	return GetSpriteFromAtlas(uv0.AtlasName, uv0.TypeResName[slot0] .. "01", true), GetSpriteFromAtlas(uv0.AtlasName, uv0.TypeResName[slot0] .. "02", true)
 end
 
-slot0.ClassToGroupIDList = function ()
+function slot0.ClassToGroupIDList()
 	slot0 = {}
 
 	for slot4, slot5 in ipairs(pg.fleet_tech_ship_template.all) do
@@ -113,7 +114,7 @@ slot0.ClassToGroupIDList = function ()
 	return slot0
 end
 
-slot0.GetOrderClassList = function ()
+function slot0.GetOrderClassList()
 	slot0 = {}
 
 	for slot4, slot5 in ipairs(pg.fleet_tech_ship_class.all) do
@@ -123,11 +124,7 @@ slot0.GetOrderClassList = function ()
 	table.sort(slot0, function (slot0, slot1)
 		slot4 = nil
 
-		if pg.fleet_tech_ship_class[slot0].t_level == pg.fleet_tech_ship_class[slot1].t_level then
-			slot4 = slot3.t_level_1 < slot2.t_level_1
-		else
-			return slot3.t_level < slot2.t_level
-		end
+		return pg.fleet_tech_ship_class[slot0].t_level == pg.fleet_tech_ship_class[slot1].t_level and slot3.t_level_1 < slot2.t_level_1 or slot3.t_level < slot2.t_level
 	end)
 
 	return slot0

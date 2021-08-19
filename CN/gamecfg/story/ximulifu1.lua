@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIMULIFU1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"祈愿与祝福之宴\n\n<size=45>一　祝宴的邀请</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "某日·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 401234,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 401234,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，准备好了吗？我们要出发咯？",
 			typewriter = {
 				speed = 0.05,
@@ -71,8 +71,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 401234,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官是工作太累迷糊了吗？是宴会呀！",
 			typewriter = {
@@ -85,9 +85,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "啊，说起来……",
 			typewriter = {
 				speed = 0.05,
@@ -99,9 +99,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "数天前，指挥室",
 			effects = {
 				{
@@ -138,8 +138,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "毕竟是我们的女王大人和铁血一起决定要办的",
 			typewriter = {
@@ -152,11 +152,11 @@ return {
 			}
 		},
 		{
+			actor = 205050,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官要是不来的话，岂不是太过扫兴",
 			typewriter = {
 				speed = 0.05,
@@ -177,8 +177,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "期待在宴会上与指挥官共舞一曲呢，呵呵，开个玩笑",
 			typewriter = {
@@ -209,9 +209,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			actor = 401234,
 			bgName = "bg_story_task",
+			actor = 401234,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "想起来了吗？真是的，还好我来找你了",
 			flashout = {
@@ -264,8 +264,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 401234,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官要是迟到或者缺席的话，事情可就难办了",
 			typewriter = {

@@ -1,21 +1,21 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG08",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -78,15 +78,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.2,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.2,
 				number = 1,
 				alpha = {
 					0,
@@ -205,11 +205,11 @@ return {
 			}
 		},
 		{
+			actor = 201260,
 			nameColor = "#a9f548",
 			side = 0,
-			actor = 201260,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actorName = "无敌&火枪手",
 			say = "遵命——烟雾弹掩护开始！",
 			subActors = {

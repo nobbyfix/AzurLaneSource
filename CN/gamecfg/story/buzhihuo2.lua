@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>二　看板娘的日常</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·军火商店",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·军火商店",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "休息日，躲在商店外的灌木里，悄悄观察店内的情况。",
 			typewriter = {
 				speed = 0.05,
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "还没有，到了的话我会亲自给你送过去的。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "还没有，到了的话我会亲自给你送过去的。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -156,9 +156,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -166,15 +166,15 @@ return {
 			}
 		},
 		{
+			actor = 301240,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301240,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:20}，还是老样子守着寒酸的店呢~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -199,12 +199,12 @@ return {
 			}
 		},
 		{
-			say = "你也是老样子，开口没有好话呢。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "你也是老样子，开口没有好话呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -299,9 +299,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -309,15 +309,15 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呼，然后是……稍微确认一下{namecode:21}要用的忍具和{namecode:135}的人偶材料吧。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

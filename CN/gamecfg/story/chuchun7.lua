@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHUCHUN7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:30}的烦恼\n\n<size=45>七 秘书舰的日常</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "一段时间过后，港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "一段时间过后，港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,11 +78,11 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊啊！…以文化研究的名义免费弄到游戏新作的计划竟然泡汤了——",
 			typewriter = {
 				speed = 0.05,
@@ -94,8 +94,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.1,
 					dur = 0.1,
 					x = 0,
@@ -136,9 +136,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "居然想用多余的公费来买游戏…不过…",
 			typewriter = {
 				speed = 0.05,
@@ -150,9 +150,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "{namecode:30}已经变得能和其他人正常交流了",
 			typewriter = {
 				speed = 0.05,
@@ -180,11 +180,11 @@ return {
 			}
 		},
 		{
+			actor = 301230,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:30}姐姐！",
 			typewriter = {
 				speed = 0.05,
@@ -196,8 +196,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 1,
 					x = -3750
@@ -205,11 +205,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:141}？呀！不要突然扑过来啊！",
 			typewriter = {
 				speed = 0.05,
@@ -221,8 +221,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -263,9 +263,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "两人的关系依旧是那么好啊",
 			typewriter = {
 				speed = 0.05,
@@ -277,11 +277,11 @@ return {
 			}
 		},
 		{
+			actor = 301230,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对了对了，姐姐，你什么时候和指挥官表白呀？",
 			typewriter = {
 				speed = 0.05,
@@ -293,8 +293,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301210,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			stopbgm = true,
 			say = "哈咿？",
 			typewriter = {
@@ -320,9 +320,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "！？",
 			dialogShake = {
 				speed = 0.09,
@@ -339,21 +339,21 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			bgm = "story-1",
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "<size=67.5>你你你你你在说什么呀！</size>",
+			bgm = "story-1",
 			painting = {
 				alpha = 0.3,
 				time = 1
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -378,11 +378,11 @@ return {
 			}
 		},
 		{
+			actor = 301230,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊呜！",
 			typewriter = {
 				speed = 0.05,
@@ -394,8 +394,8 @@ return {
 			},
 			action = {
 				{
-					y = -750,
 					type = "move",
+					y = -750,
 					delay = 0,
 					dur = 0.4,
 					x = 0
@@ -403,11 +403,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "为、为什么{namecode:141}会听到这些啊！！！",
 			typewriter = {
 				speed = 0.05,
@@ -419,8 +419,8 @@ return {
 			},
 			action = {
 				{
-					y = 67.5,
 					type = "shake",
+					y = 67.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -429,12 +429,12 @@ return {
 			}
 		},
 		{
-			say = "欸嘿嘿，不要小看了{namecode:141}酱的耳朵哟~",
+			actor = 301230,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "欸嘿嘿，不要小看了{namecode:141}酱的耳朵哟~",
 			actorPosition = {
 				x = 0,
 				y = -750
@@ -449,8 +449,8 @@ return {
 			},
 			action = {
 				{
-					y = 750,
 					type = "move",
+					y = 750,
 					delay = 0,
 					dur = 0.4,
 					x = 0
@@ -474,11 +474,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "<size=67.5>不，不要再说了啦！！！</size>",
 			effects = {
 				{
@@ -492,8 +492,8 @@ return {
 			},
 			action = {
 				{
-					y = 67.5,
 					type = "shake",
+					y = 67.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -8,9 +8,9 @@ return {
 	desc = "传颂之物开场加血2%",
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetSelf"
 			},

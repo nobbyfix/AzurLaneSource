@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "小竹丸3",
 	init_effect = "",
-	id = 40290,
+	name = "小竹丸3",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "30秒巡洋buff",
 	stack = 1,
-	color = "yellow",
+	id = 40290,
 	icon = 40290,
 	last_effect = "",
 	effect_list = {

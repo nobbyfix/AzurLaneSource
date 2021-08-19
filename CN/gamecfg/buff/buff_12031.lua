@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 150,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 150
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 180,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 180
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1120,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1120
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 210,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 210
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1240,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1240
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 250,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 250
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1400,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1400
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 280,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 280
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1550
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 310,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 310
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1700
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 350,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 350
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 1900,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1900
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 390,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 390
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 2080,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2080
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 430,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 430
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2260
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -253,20 +253,20 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "划破夜空之火",
 	init_effect = "jinengchufared",
-	id = 12031,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "炮击、装填提高",
 	stack = 3,
-	color = "red",
+	id = 12031,
 	icon = 12030,
 	last_effect = "",
 	blink = {
@@ -284,8 +284,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 150,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 150
 			}
 		},
 		{
@@ -295,8 +295,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		}
 	}

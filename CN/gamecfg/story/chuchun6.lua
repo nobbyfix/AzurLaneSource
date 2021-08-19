@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHUCHUN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:30}的烦恼\n\n<size=45>六 改变与决心</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 301210,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 301210,
-			nameColor = "#a9f548",
 			say = "为什么，指挥官也会在这里？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -90,11 +90,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "胆小也好、对人恐惧也好，也一直没法好好克服……",
 			typewriter = {
 				speed = 0.05,
@@ -160,11 +160,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "后来…后来我成了秘书舰…但是每次和别人说话的时候，都要指挥官帮忙才能顺利进行下去…",
 			typewriter = {
 				speed = 0.05,
@@ -176,8 +176,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -266,11 +266,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我，我，我实在是……",
 			typewriter = {
 				speed = 0.05,
@@ -282,8 +282,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "！！我，我明白了…我会加油的！",
 			typewriter = {
 				speed = 0.05,
@@ -314,8 +314,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

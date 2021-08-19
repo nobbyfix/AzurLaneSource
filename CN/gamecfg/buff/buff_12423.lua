@@ -1,12 +1,12 @@
 return {
+	time = 3,
 	name = "重点打击",
 	init_effect = "jinengchufared",
-	id = 12423,
-	time = 3,
+	color = "red",
 	picture = "",
 	desc = "3秒内1号位置装备发射的子弹伤害提高",
 	stack = 1,
-	color = "red",
+	id = 12423,
 	icon = 12420,
 	last_effect = "",
 	blink = {
@@ -23,8 +23,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 1,
 				attr = "damageRatioBullet",
+				number = 1,
 				index = {
 					1
 				}

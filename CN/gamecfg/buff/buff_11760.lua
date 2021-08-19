@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "空袭信号",
 	init_effect = "",
-	id = 11760,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11760,
 	icon = 11760,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				quota = 2,
-				skill_id = 11761,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 11761
 			}
 		}
 	}

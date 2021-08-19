@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 304050,
 			nameColor = "#a9f548",
 			side = 0,
+			bgm = "battle-boss-tiancheng",
 			dir = -1,
 			say = "负责进攻的[桂马]是你啊，{namecode:40}。 ",
-			bgm = "battle-boss-tiancheng",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,8 +41,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "呵呵，很有精神呢。这应该是你第一次参加这样的演习吧？",
 			typewriter = {
 				speed = 0.05,
@@ -72,8 +72,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "真是有礼貌的好孩子呢。不过，没有忘记这里是战场吧？",
 			typewriter = {
 				speed = 0.05,
@@ -88,8 +88,8 @@ return {
 			expression = 3,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = 1,
 			actor = 302140,
+			dir = 1,
 			say = "是的，所以即使是{namecode:161}大人，我也不会鞠个躬就放您过去的哦。",
 			typewriter = {
 				speed = 0.05,

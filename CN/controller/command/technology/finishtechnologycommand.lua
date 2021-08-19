@@ -1,7 +1,10 @@
-class("FinishTechnologyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot4 = slot1:getBody().pool_id
+slot0 = class("FinishTechnologyCommand", pm.SimpleCommand)
 
-	if not getProxy(TechnologyProxy):getTechnologyById(slot1.getBody().id) then
+function slot0.execute(slot0, slot1)
+	slot2 = slot1:getBody()
+	slot4 = slot2.pool_id
+
+	if not getProxy(TechnologyProxy):getTechnologyById(slot2.id) then
 		return
 	end
 
@@ -14,37 +17,41 @@ class("FinishTechnologyCommand", pm.SimpleCommand).execute = function (slot0, sl
 		refresh_id = slot4
 	}, 63004, function (slot0)
 		if slot0.result == 0 then
-			slot0:reset()
-			slot0.reset:updateTechnology(slot0)
+			uv0:reset()
+			uv1:updateTechnology(uv0)
 
-			slot1 = {}
+			slot1 = PlayerConst.addTranDrop(slot0.drop_list)
 
-			for slot5, slot6 in ipairs(slot0.drop_list) do
-				slot2:sendNotification(GAME.ADD_ITEM, Item.New(slot6))
-				table.insert(slot1, Item.New(slot6))
+			underscore.each(PlayerConst.addTranDrop(slot0.catchup_list), function (slot0)
+				getProxy(TechnologyProxy):addCatupPrintsNum(slot0.count)
+			end)
+
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_BLUEPRINT_CATCHUP) and not slot4:isEnd() then
+				underscore.each(PlayerConst.addTranDrop(slot0.catchupact_list), function (slot0)
+					uv0.data1 = uv0.data1 + slot0.count
+				end)
 			end
 
-			slot2 = {}
+			slot5 = PlayerConst.addTranDrop(slot0.common_list)
 
-			for slot6, slot7 in ipairs(slot0.common_list) do
-				slot2:sendNotification(GAME.ADD_ITEM, Item.New(slot7))
-				table.insert(slot2, Item.New(slot7))
+			if uv0:hasCondition() and uv0:getTaskId() then
+				getProxy(TaskProxy):removeTaskById(slot6)
 			end
 
-			if slot0:hasCondition() and slot0:getTaskId() then
-				getProxy(TaskProxy):removeTaskById(slot3)
-			end
-
-			slot1:updateTechnologys(slot0)
-			slot2:sendNotification(GAME.FINISH_TECHNOLOGY_DONE, {
-				technologyId = slot0.id,
+			uv1:updateTechnologys(slot0)
+			uv2:sendNotification(GAME.FINISH_TECHNOLOGY_DONE, {
+				technologyId = uv0.id,
 				items = slot1,
-				commons = slot2
+				commons = slot5,
+				catchupItems = slot2,
+				catchupActItems = slot3
 			})
-		else
-			pg.TipsMgr.GetInstance():ShowTips(i18n("technology_finish_erro") .. slot0.result)
+
+			return
 		end
+
+		pg.TipsMgr.GetInstance():ShowTips(i18n("technology_finish_erro") .. slot0.result)
 	end)
 end
 
-return class("FinishTechnologyCommand", pm.SimpleCommand)
+return slot0

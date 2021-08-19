@@ -1,11 +1,11 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU1",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 107030,
@@ -38,14 +38,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 502020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "终于到逸仙姐秘藏的桂花酒启封的这一天了！呜哇……这香气真令人迷醉~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -137,8 +137,8 @@ return {
 			actor = 502020,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "宁海&平海",
+			dir = -1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -304,14 +304,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -340,7 +340,7 @@ return {
 			nameColor = "#a9f548",
 			side = 0,
 			dir = -1,
-			say = "我明白了！原来如此，中秋节是“祈求与亲友团聚”的节日呀，不过……现在是不是有些冷清？在我国，无论什么节日都很热闹呀！",
+			say = "我明白了！原来如此，中秋节是“祈求与亲友团聚”的节日呀，不过……现在是不是有些冷清？在东煌，无论什么节日都很热闹呀！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

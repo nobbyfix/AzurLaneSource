@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 22255,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行6次攻击，触发全弹发射-{namecode:57}级{namecode:59}型I",
 	stack = 1,
-	color = "red",
+	id = 22255,
 	icon = 20200,
 	last_effect = "",
 	effect_list = {
@@ -29,11 +29,14 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				check_target = "TargetShipTag",
-				target = "TargetSelf",
-				countType = 22255,
 				maxTargetNumber = 0,
 				skill_id = 22255,
+				target = "TargetSelf",
+				countType = 22255,
+				check_target = {
+					"TargetSelf",
+					"TargetShipTag"
+				},
 				ship_tag_list = {
 					"Suzuya"
 				}
@@ -46,10 +49,13 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				check_target = "TargetShipTag",
+				skill_id = 22257,
 				target = "TargetSelf",
 				countType = 22255,
-				skill_id = 22257,
+				check_target = {
+					"TargetSelf",
+					"TargetShipTag"
+				},
 				ship_tag_list = {
 					"Suzuya"
 				}

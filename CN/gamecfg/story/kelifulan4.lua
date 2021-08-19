@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KELIFULAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"骑士与奖赏\n\n<size=45>四　比赛开始！</size>",
@@ -17,22 +17,22 @@ return {
 			}
 		},
 		{
-			say = "篮球对抗赛当天·会场",
+			bgm = "story-1",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			bgm = "story-1",
+			say = "篮球对抗赛当天·会场",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这一天终于来了……指挥官，我们都准备好了！比赛的指挥就靠你了！",
 			typewriter = {
 				speed = 0.05,
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
-			say = "姐、姐姐！！别说了！",
+			actor = 102050,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "姐、姐姐！！别说了！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -106,13 +106,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_103",
 			say = "第一回合的比赛对手是“正义海狸”队。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -133,11 +133,11 @@ return {
 			}
 		},
 		{
+			actor = 101110,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "让对手见识见识我们的正义吧！小海狸分队，出击！……咦？",
 			effects = {
 				{
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
-			say = "太麻烦了……我做替补就好啦。",
+			actor = 101140,
 			side = 1,
 			bgName = "star_level_bg_103",
-			actor = 101140,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "太麻烦了……我做替补就好啦。",
 			effects = {
 				{
 					active = false,
@@ -181,16 +181,16 @@ return {
 			}
 		},
 		{
+			actor = 101120,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈哈哈斯彭斯又差点摔了！……啊啊啊要撞上了！",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 1,
 					dur = 0.1,
 					x = 15,
@@ -239,9 +239,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "教练唐斯的努力也没能挽回局面，克利夫兰队大获全胜",
 			typewriter = {
 				speed = 0.05,
@@ -249,15 +249,15 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好，开局还不错！一口气赢下冠军吧！……不会有这么好的事吧，嘿嘿♪",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -288,12 +288,12 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102090,
-			nameColor = "#a9f548",
 			say = "好！指挥官也睁大眼睛好好看着吧！我们会使出全力的♪",
 			typewriter = {
 				speed = 0.05,

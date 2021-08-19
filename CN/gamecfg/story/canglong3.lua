@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>三 朋友是什么？</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "因为学习花札的关系，和{namecode:93}的交流渐渐多了起来。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -44,8 +44,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "今天也去找{namecode:93}玩吧！",
 			typewriter = {
@@ -54,15 +54,15 @@ return {
 			}
 		},
 		{
+			say = "港区·{namecode:93}的宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·{namecode:93}的宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -103,12 +103,12 @@ return {
 			}
 		},
 		{
-			say = "啊哈哈，也不是总是啦，总有自己的时间的。",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊哈哈，也不是总是啦，总有自己的时间的。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -251,11 +251,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊哈哈，那还是你比较辛苦呢。",
 			typewriter = {
 				speed = 0.05,
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -405,7 +405,7 @@ return {
 			}
 		},
 		{
-			actor = 307031,
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>四 不需要的东西……？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·重樱宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·重樱宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,9 +50,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "休息日，想着放松一下，回过神来，已经来到了{namecode:93}的宿舍——",
 			typewriter = {
 				speed = 0.05,
@@ -76,12 +76,12 @@ return {
 			}
 		},
 		{
-			say = "指挥官，虽然休息日的使用方式是每个人的自由，不过希望您也能找到更有意义的事情去做。",
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "指挥官，虽然休息日的使用方式是每个人的自由，不过希望您也能找到更有意义的事情去做。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -96,11 +96,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:93}一边说着，手上还在处理着昨天带回来整理的工作，不愧是秘书舰的楷模。",
 			typewriter = {
@@ -161,11 +161,11 @@ return {
 			}
 		},
 		{
+			actor = 307040,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不是啦，我是说，姐姐你投入工作时，看起来好漂亮啊，指挥官也这么想吧？",
 			typewriter = {
 				speed = 0.05,
@@ -247,11 +247,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 1,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:93}对这方面意外的很平淡呢…",
 			typewriter = {
@@ -344,11 +344,11 @@ return {
 			}
 		},
 		{
+			actor = 307040,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咦，真的吗？！",
 			typewriter = {
 				speed = 0.05,
@@ -360,8 +360,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

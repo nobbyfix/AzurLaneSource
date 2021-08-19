@@ -2,10 +2,10 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 79101,
 					emitter = "BattleBulletEmitter"
@@ -16,10 +16,10 @@ return {
 	uiEffect = "",
 	name = "专属弹幕-贝尔法斯特I",
 	cd = 0,
-	picture = "0",
-	desc = "专属弹幕-贝尔法斯特I",
 	painting = 1,
 	id = 29101,
+	picture = "0",
+	desc = "专属弹幕-贝尔法斯特I",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -30,10 +30,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 79101,
 				emitter = "BattleBulletEmitter"

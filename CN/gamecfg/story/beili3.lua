@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>三 兔兔星人特征——“努力”！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·学院",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·学院",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "处理部分事务拖延了一下，不知不觉已经是夜里了",
 			typewriter = {
 				speed = 0.05,
@@ -72,8 +72,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -84,9 +84,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "这声音是贝利和…？",
 			typewriter = {
 				speed = 0.05,
@@ -110,12 +110,12 @@ return {
 			}
 		},
 		{
-			say = "别姐姐姐姐地叫那么亲热，我可没打算和你搞好关系……",
+			actor = 303080,
 			side = 1,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 303080,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "别姐姐姐姐地叫那么亲热，我可没打算和你搞好关系……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -130,11 +130,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "但是但是……",
 			typewriter = {
 				speed = 0.05,
@@ -146,8 +146,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -172,11 +172,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "耶~",
 			typewriter = {
 				speed = 0.05,
@@ -188,8 +188,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -246,11 +246,11 @@ return {
 			}
 		},
 		{
+			actor = 303080,
 			side = 1,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 303080,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "我、我只是在复习而已，那些都是我早就会的东西了。",
 			typewriter = {
 				speed = 0.05,
@@ -262,8 +262,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -336,11 +336,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸嘿嘿，没有啦~",
 			typewriter = {
 				speed = 0.05,
@@ -352,8 +352,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -410,11 +410,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "太好啦~",
 			typewriter = {
 				speed = 0.05,
@@ -426,8 +426,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,

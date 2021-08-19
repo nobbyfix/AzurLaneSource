@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "接下来我们的任务是支援白鹰航空舰队的作战演习    请点击<color=#ff7d36>出击</color>",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -24,19 +24,19 @@ return {
 			}
 		},
 		{
+			alpha = 0.277,
 			code = 2,
 			waitScene = "LevelScene",
-			alpha = 0.277,
 			style = {
 				text = "索敌结果显示了大黄蜂可能出现的位置，让我们朝着目标点前进吧~",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -52,8 +52,8 @@ return {
 			style = {
 				text = "这次，我们先试试<color=#ff7d36>规避</color>敌人吧",
 				mode = 2,
-				dir = 1,
 				posY = -295,
+				dir = 1,
 				posX = -297
 			},
 			baseui = {
@@ -63,8 +63,8 @@ return {
 		{
 			alpha = 0.303,
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/top/LevelAmbushView(Clone)/window/dodge_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

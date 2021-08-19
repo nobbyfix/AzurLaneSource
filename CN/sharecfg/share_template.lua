@@ -3,11 +3,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "个人信息界面",
+		show_comps = "",
 		deck = 1,
+		id = 1,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 1,
 		qrcode_location = {
 			373,
 			178
@@ -25,11 +25,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "档案界面",
+		show_comps = "",
 		deck = 1,
+		id = 2,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 2,
 		qrcode_location = {
 			373,
 			120
@@ -45,8 +45,8 @@ pg.share_template = {
 		description = "#碧蓝航线#",
 		name = "获得新舰船界面",
 		deck = 2,
-		camera = "OverlayCamera",
 		id = 3,
+		camera = "OverlayCamera",
 		qrcode_location = {
 			-340,
 			160
@@ -63,20 +63,20 @@ pg.share_template = {
 		},
 		move_comps = {
 			{
-				y = -920,
+				path = "/OverlayCamera/Overlay/UIMain/NewShipUI(Clone)/shake_panel/ship_type",
 				x = 18,
-				path = "/OverlayCamera/Overlay/UIMain/NewShipUI(Clone)/shake_panel/ship_type"
+				y = -920
 			}
 		}
 	},
 	{
 		description = "#碧蓝航线#",
 		name = "后宅",
+		show_comps = "",
 		deck = 1,
+		id = 4,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 4,
 		qrcode_location = {
 			373,
 			120
@@ -90,11 +90,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "获得新皮肤界面",
+		show_comps = "",
 		deck = 2,
+		id = 5,
 		move_comps = "",
 		camera = "OverlayCamera",
-		show_comps = "",
-		id = 5,
 		qrcode_location = {
 			-340,
 			160
@@ -110,11 +110,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "玩家历程界面",
+		show_comps = "",
 		deck = 3,
+		id = 6,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 6,
 		qrcode_location = {
 			-592,
 			-381
@@ -126,11 +126,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "拍照分享",
+		show_comps = "",
 		deck = 1,
+		id = 7,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 7,
 		qrcode_location = {
 			373,
 			120
@@ -142,12 +142,12 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "回流纪念信",
+		show_comps = "",
 		deck = 1,
 		hidden_comps = "",
+		id = 8,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 8,
 		qrcode_location = {
 			373,
 			120
@@ -156,11 +156,11 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "获得新指挥喵界面",
+		show_comps = "",
 		deck = 1,
+		id = 9,
 		move_comps = "",
 		camera = "OverlayCamera",
-		show_comps = "",
-		id = 9,
 		qrcode_location = {
 			373,
 			120
@@ -173,12 +173,12 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "画图功能分享",
+		show_comps = "",
 		deck = 1,
 		hidden_comps = "",
+		id = 10,
 		move_comps = "",
 		camera = "UICamera",
-		show_comps = "",
-		id = 10,
 		qrcode_location = {
 			-592,
 			-381
@@ -187,12 +187,12 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "挑战分享",
+		show_comps = "",
 		deck = 1,
 		hidden_comps = "",
+		id = 11,
 		move_comps = "",
 		camera = "OverlayCamera",
-		show_comps = "",
-		id = 11,
 		qrcode_location = {
 			373,
 			120
@@ -201,15 +201,77 @@ pg.share_template = {
 	{
 		description = "#碧蓝航线#",
 		name = "ins分享",
+		show_comps = "",
 		deck = 1,
 		hidden_comps = "",
+		id = 12,
 		move_comps = "",
 		camera = "OverlayCamera",
-		show_comps = "",
-		id = 12,
 		qrcode_location = {
 			373,
 			120
+		}
+	},
+	{
+		description = "#碧蓝航线#",
+		name = "必胜客分享",
+		id = 13,
+		deck = 2,
+		hidden_comps = "",
+		move_comps = "",
+		camera = "UICamera",
+		qrcode_location = {
+			314.5,
+			-539
+		},
+		show_comps = {
+			"UICamera/Canvas/UIMain/PizzahutSharePage(Clone)"
+		}
+	},
+	{
+		description = "#碧蓝航线#",
+		name = "玩家历程MarkII界面分享",
+		show_comps = "",
+		deck = 0,
+		hidden_comps = "",
+		id = 14,
+		move_comps = "",
+		camera = "UICamera",
+		qrcode_location = {
+			-38,
+			-279
+		}
+	},
+	{
+		description = "#碧蓝航线#",
+		name = "POLARIS活动大佬章界面分享",
+		show_comps = "",
+		deck = 0,
+		id = 15,
+		move_comps = "",
+		camera = "OverlayCamera",
+		qrcode_location = {
+			-592,
+			-436
+		},
+		hidden_comps = {
+			"/OverlayCamera/Overlay/UIEffect/ClickEffect(Clone)"
+		}
+	},
+	{
+		description = "#碧蓝航线#",
+		name = "熊小白分享",
+		id = 16,
+		deck = 2,
+		hidden_comps = "",
+		move_comps = "",
+		camera = "UICamera",
+		qrcode_location = {
+			314.5,
+			-539
+		},
+		show_comps = {
+			"UICamera/Canvas/UIMain/IcecreamSharePage(Clone)"
 		}
 	},
 	all = {
@@ -224,8 +286,10 @@ pg.share_template = {
 		9,
 		10,
 		11,
-		12
+		12,
+		13,
+		14,
+		15,
+		16
 	}
 }
-
-return

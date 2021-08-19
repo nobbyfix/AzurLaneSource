@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"前辈与心结\n\n<size=45>一　严格的秘书舰</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "因为处理事务太晚睡，导致早上起得晚了些",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "到达指挥室的时候，秘书舰已经在处理工作了",
 			typewriter = {
 				speed = 0.05,
@@ -75,8 +75,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…啊，指挥官？早上好",
 			typewriter = {
@@ -105,11 +105,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……………………",
 			typewriter = {
@@ -125,8 +125,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "昨晚工作到太晚…了吗？",
 			typewriter = {
@@ -158,8 +158,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "帮助指挥官安排工作时间也是秘书舰的重要职责…",
 			typewriter = {

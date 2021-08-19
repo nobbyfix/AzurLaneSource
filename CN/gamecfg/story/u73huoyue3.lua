@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U73HUOYUE3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"理科实验时间！\n\n<size=45>三　因梦想而伟大！</size>",
@@ -20,11 +20,11 @@ return {
 			actor = 408051,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			nameColor = "#a9f548",
 			say = "“让演习用的弹药全都变成美味糖果的实验”！怎么样，是不是听起来就很棒！",
+			bgm = "story-1",
 			effects = {
 				{
 					active = true,
@@ -41,11 +41,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊哈哈…槽点太多反而让人不知该从哪里吐槽起呢…",
 			effects = {
 				{
@@ -82,8 +82,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯哼！人类，因梦想而伟大！毕竟现在的我可是身披白衣，最爱理科实验的疯狂科学家U73呢～",
 			typewriter = {
@@ -115,8 +115,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哎呀，不要在意这种小细节嘛！",
 			typewriter = {
@@ -129,8 +129,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -171,11 +171,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喂，你们怎么也跟着认真思考起这事情了啦！？",
 			typewriter = {
 				speed = 0.05,
@@ -187,8 +187,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -213,12 +213,12 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "你的梦想，我听到了！就让我来助你们一臂之力吧！",
 			typewriter = {
 				speed = 0.05,

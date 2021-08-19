@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 300,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -59,8 +59,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 611,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							reinforceDelay = 5,
 							corrdinate = {
 								22,
@@ -90,8 +90,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 612,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							reinforceDelay = 5,
 							corrdinate = {
 								22,

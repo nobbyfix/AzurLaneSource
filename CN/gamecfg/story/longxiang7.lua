@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "LONGXIANG7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"轻型航母{namecode:90}参上！\n\n<size=45>七  勇气！果然还是最喜欢指挥官了！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "学园・校舍后面",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "学园・校舍后面",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "今天的公务结束后，被{namecode:90}叫到学院校舍后面，说是有想对主公传达的事情",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "既然是秘书舰，为什么不在指挥室说呢……？",
 			typewriter = {
 				speed = 0.05,
@@ -85,8 +85,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………………………………………………………",
 			typewriter = {
@@ -99,9 +99,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "尴尬的气氛在渐渐扩散。",
 			typewriter = {
 				speed = 0.05,
@@ -109,11 +109,11 @@ return {
 			}
 		},
 		{
+			actor = 306060,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 306060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那那那那那个！感、感谢您在公务时间之外抽出时间来见吾！",
 			typewriter = {
 				speed = 0.05,
@@ -125,8 +125,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.15,
 					x = 0,
@@ -138,8 +138,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "实、实际上有件思考了很久的事情想跟您商量！",
 			typewriter = {
@@ -155,8 +155,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "希望您每天都能为吾做味增汤！",
 			effects = {
@@ -175,9 +175,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "脸色通红的{namecode:90}开始手忙脚乱地进行说明。",
 			effects = {
 				{
@@ -194,8 +194,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "总、总之，之前在食堂被主公您看到了如此不成体统的一面之后，吾一天到晚都十分在意您的视线！",
 			typewriter = {
@@ -208,8 +208,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -237,8 +237,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "直说的话，萨拉托加小姐说“在校舍背面对指挥官告白的话肯定会被被壁咚然后心脏加速之前就都会万事解决啦！”，所以才变成现在这样！",
 			typewriter = {
@@ -254,8 +254,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈……哈……果然吾对于这种男女之情真是……完全应付不来呢……",
 			typewriter = {
@@ -268,9 +268,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "虽然有很多想吐槽的地方，但是她的真心无法否定。",
 			typewriter = {
 				speed = 0.05,
@@ -297,8 +297,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "所以，请接受吾的心意！不肖{namecode:90}为了主公水里来火里去也在所不惜！",
 			typewriter = {
@@ -311,8 +311,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.6,
 					dur = 0.15,
 					x = 0,
@@ -324,8 +324,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "最喜欢指挥官了！",
 			typewriter = {

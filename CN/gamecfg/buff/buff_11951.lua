@@ -7,8 +7,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "cri"
+					attr = "cri",
+					number = 0.1
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.05
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.122,
-					attr = "cri"
+					attr = "cri",
+					number = 0.122
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.061
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.144,
-					attr = "cri"
+					attr = "cri",
+					number = 0.144
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.072
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.166,
-					attr = "cri"
+					attr = "cri",
+					number = 0.166
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.083
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.188,
-					attr = "cri"
+					attr = "cri",
+					number = 0.188
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.094
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.21,
-					attr = "cri"
+					attr = "cri",
+					number = 0.21
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.105
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.232,
-					attr = "cri"
+					attr = "cri",
+					number = 0.232
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.116
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.254,
-					attr = "cri"
+					attr = "cri",
+					number = 0.254
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.127
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.276,
-					attr = "cri"
+					attr = "cri",
+					number = 0.276
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.138
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.3,
-					attr = "cri"
+					attr = "cri",
+					number = 0.3
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "不冻港的协奏曲自体BUFF",
 	init_effect = "jinengchufablue",
-	id = 11951,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11951,
 	icon = 11950,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onTorpedoWeaponBulletCreate"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "cri"
+				attr = "cri",
+				number = 0.1
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_TAG_EHC_T_1"
+				attr = "DMG_TAG_EHC_T_1",
+				number = 0.05
 			}
 		}
 	}

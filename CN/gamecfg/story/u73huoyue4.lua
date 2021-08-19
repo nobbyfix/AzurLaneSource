@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U73HUOYUE4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"理科实验时间！\n\n<size=45>四　真正的实验？</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			actor = 301050,
 			side = 2,
+			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 301050,
-			nameColor = "#a9f548",
 			say = "……{namecode:37}。",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,11 +68,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸，真、真的吗？",
 			typewriter = {
 				speed = 0.05,
@@ -84,8 +84,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -113,8 +113,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对不起，我错了！",
 			typewriter = {
@@ -127,8 +127,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -156,8 +156,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "谢谢你，{namecode:37}！",
 			typewriter = {
@@ -205,8 +205,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯嗯！（眼神发光）",
 			typewriter = {
@@ -219,11 +219,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来真的有这种东西吗！？",
 			typewriter = {
 				speed = 0.05,
@@ -235,8 +235,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -261,11 +261,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…那个，难道真的是能吃的吗？！",
 			typewriter = {
 				speed = 0.05,
@@ -277,8 +277,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -319,12 +319,12 @@ return {
 			}
 		},
 		{
+			actor = 408050,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408050,
-			nameColor = "#a9f548",
 			say = "喔！！！",
 			typewriter = {
 				speed = 0.05,

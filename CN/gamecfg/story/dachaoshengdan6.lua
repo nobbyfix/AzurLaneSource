@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"圣诞礼物大作战！\n\n<size=45>六　圣诞战士，前进！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "夜晚·港区商店",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "main-christmas",
-			say = "夜晚·港区商店",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -69,8 +69,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
 			actor = 205021,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "接下来就剩下，给陛下的特别礼物了！",
 			typewriter = {
@@ -83,12 +83,12 @@ return {
 			}
 		},
 		{
-			say = "企业刚刚说过“礼物不在乎种类而在乎的是心意”的呢……",
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "企业刚刚说过“礼物不在乎种类而在乎的是心意”的呢……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -119,11 +119,11 @@ return {
 			}
 		},
 		{
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那个的话！咱……咱也觉得女王大人她一定会喜欢的！",
 			typewriter = {
 				speed = 0.05,
@@ -135,8 +135,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -145,15 +145,15 @@ return {
 			}
 		},
 		{
+			actor = 205021,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 205021,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这下可麻烦了……这么多礼物我们两个肯定拿不回去的啊！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -178,12 +178,12 @@ return {
 			}
 		},
 		{
-			say = "呜……给大家准备的食物……买太多了……",
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜……给大家准备的食物……买太多了……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -201,8 +201,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_night",
-			dir = -1,
 			actor = 205021,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "可恶……都已经进行到这一步了，难道真的没办法了吗。",
 			typewriter = {
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -227,11 +227,11 @@ return {
 			}
 		},
 		{
+			actor = 205021,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 205021,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "竟然是企业？！她身后的是……尼古拉斯吗？",
 			typewriter = {
 				speed = 0.05,
@@ -243,8 +243,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -301,12 +301,12 @@ return {
 			}
 		},
 		{
+			actor = 201102,
 			side = 2,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 201102,
-			nameColor = "#a9f548",
 			say = "得救了……那么，就这样把礼物山运回生活区吧！",
 			typewriter = {
 				speed = 0.05,

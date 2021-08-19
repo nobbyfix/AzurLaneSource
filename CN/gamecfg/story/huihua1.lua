@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HUIHUA1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"特别庆典·开幕！\n\n<size=45>一　埃塞克斯的烦恼</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·大讲堂",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·大讲堂",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -94,12 +94,12 @@ return {
 			}
 		},
 		{
-			say = "埃塞克斯小姐？嗯，放这里就可以了",
+			actor = 202120,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "埃塞克斯小姐？嗯，放这里就可以了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -117,8 +117,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呼…看着大讲堂一步一步从原本的样子被改造成现在这样还真是令人忍不住有些感慨……",
 			typewriter = {
@@ -147,11 +147,11 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "埃塞克斯小姐这几天也帮了很多忙，再次向您表示感谢",
 			typewriter = {
 				speed = 0.05,
@@ -163,8 +163,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 1,
 					dur = 0.2,
 					x = 0,
@@ -304,8 +304,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯……就算你这么说，我也没有什么别的地方好去的——",
 			typewriter = {
@@ -318,8 +318,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 1,
+			actorName = "？？？",
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -333,8 +333,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这、这声音是？！",
 			typewriter = {
@@ -347,8 +347,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.1,
 					x = 0,
@@ -424,10 +424,10 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "企、企业前辈，你刚才说什么……",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "企、企业前辈，你刚才说什么……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -477,8 +477,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "比赛？",
 			typewriter = {
@@ -526,8 +526,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "“航母组，特约嘉宾：企业。决胜者将获得和企业比试的权利。”",
 			typewriter = {
@@ -556,12 +556,12 @@ return {
 			}
 		},
 		{
+			actor = 107060,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107060,
-			nameColor = "#a9f548",
 			say = "怎么样，有兴趣了吗？",
 			typewriter = {
 				speed = 0.05,

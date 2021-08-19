@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAO3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"忍者修行之路？\n\n<size=45>三　第六驱逐队的日常·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,10 +46,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
 			actor = 301120,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "{namecode:13}&{namecode:14}",
@@ -88,12 +88,12 @@ return {
 			}
 		},
 		{
-			say = "{namecode:11}姐姐，指挥官先生，工作辛苦了。我带了一些饮料过来，要喝吗？",
+			actor = 301120,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301120,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "{namecode:11}姐姐，指挥官先生，工作辛苦了。我带了一些饮料过来，要喝吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -162,11 +162,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜……",
 			typewriter = {
 				speed = 0.05,
@@ -178,8 +178,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -204,11 +204,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，那，那件事情……！",
 			typewriter = {
 				speed = 0.05,
@@ -220,8 +220,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -342,9 +342,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "两人离开了指挥室",
 			typewriter = {
 				speed = 0.05,
@@ -368,11 +368,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官刚刚的全听到了吧！呜呜，让你看到了不成器的一面，真是太羞愧了…",
 			typewriter = {
 				speed = 0.05,
@@ -384,8 +384,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.4,
 					dur = 0.4,
 					x = 22.5,
@@ -394,11 +394,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "但是，以忍者之名起誓，迷路和怕黑这样的事情不会再发生了！我一定能克服的！",
 			typewriter = {
 				speed = 0.05,
@@ -410,8 +410,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -420,11 +420,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "唔哦哦，总觉得现在精神百倍！有什么任务都交给我把！",
 			effects = {
 				{

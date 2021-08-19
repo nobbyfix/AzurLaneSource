@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "回血",
 	init_effect = "",
+	name = "回血",
+	time = 0,
 	picture = "",
 	desc = "回血",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 330011,
-				time = 30,
-				target = "TatrgetSelf"
+				target = "TatrgetSelf",
+				time = 30
 			}
 		}
 	}

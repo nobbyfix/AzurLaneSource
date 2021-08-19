@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG17",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
-			bgm = "story-8",
-			actor = 900021,
 			actorName = "净化者",
+			dir = 1,
 			say = "我们其实一开始就发现您最近出现在这片海域了~",
+			bgm = "story-8",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -27,8 +27,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "没想到居然还弄出了这么显眼的大动作，究竟是想要做什么，关键点G？",
 			typewriter = {
 				speed = 0.05,
@@ -55,12 +55,12 @@ return {
 			}
 		},
 		{
-			say = "不不不，经过计算，万一这个尺寸的“奇异点”坍缩，估计半个北方联合都会被炸上天…",
+			actor = 900021,
 			side = 1,
 			nameColor = "#ff0000",
-			dir = 1,
-			actor = 900021,
 			actorName = "净化者",
+			dir = 1,
+			say = "不不不，经过计算，万一这个尺寸的“奇异点”坍缩，估计半个北方联合都会被炸上天…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -78,8 +78,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "这对整个时间奇点和我们的计划都是个大麻烦，所以…能麻烦你停手吗？",
 			typewriter = {
 				speed = 0.05,
@@ -109,8 +109,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "如果是这样，作为子程序的一环，我会尽力阻止你的——",
 			typewriter = {
 				speed = 0.05,
@@ -122,15 +122,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -162,8 +162,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "嗯哼...终于赶上了吗",
 			typewriter = {
 				speed = 0.05,
@@ -235,15 +235,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -351,12 +351,12 @@ return {
 			}
 		},
 		{
-			say = "嘿嘿~要阻止你，我们只能想到这样的办法了~",
+			actor = 900021,
 			side = 1,
 			nameColor = "#ff0000",
-			dir = -1,
-			actor = 900021,
 			actorName = "净化者",
+			dir = -1,
+			say = "嘿嘿~要阻止你，我们只能想到这样的办法了~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -468,8 +468,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "别追了，你们是追不上那家伙的——况且，你们的对手应该是我~",
 			typewriter = {
 				speed = 0.05,
@@ -484,8 +484,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "不过，多亏了你们的出现，算是解决了一次大的危机~",
 			typewriter = {
 				speed = 0.05,
@@ -500,8 +500,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "作为谢礼，就让我来陪你们玩玩吧——",
 			typewriter = {
 				speed = 0.05,

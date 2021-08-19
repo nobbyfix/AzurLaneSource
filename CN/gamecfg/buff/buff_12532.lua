@@ -29,9 +29,9 @@ return {
 	{
 		time = 5
 	},
+	time = 5,
 	name = "Mighty B",
 	init_effect = "jinengchufablue",
-	time = 5,
 	picture = "",
 	desc = "完全闪避",
 	stack = 1,
@@ -53,8 +53,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "perfectDodge"
+				group = 12532,
+				attr = "perfectDodge",
+				number = 1
 			}
 		}
 	}

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 500
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 720
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 940
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 940
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1160
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1160
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1380
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1380
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1600
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1600
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1820
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1820
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2040,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2040
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2040,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2040
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2260
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2260
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			},
 			{
@@ -253,21 +253,21 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2500
 				}
 			}
 		}
 	},
+	desc_get = "被场上残血克利夫兰激活",
 	name = "天真烂漫的少女",
 	init_effect = "",
-	id = 12235,
 	time = 15,
+	color = "yellow",
 	picture = "",
 	desc = "火力上升",
-	desc_get = "被场上残血克利夫兰激活",
 	stack = 1,
-	color = "yellow",
+	id = 12235,
 	icon = 12230,
 	last_effect = "",
 	blink = {

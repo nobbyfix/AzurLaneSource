@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "LONGXIANG5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"轻型航母{namecode:90}参上！\n\n<size=45>五 烦恼！到底最近怎么了……？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区・重樱宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区・重樱宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "果、果然还是很后悔……让主公看到那副粗鲁的样子，真是武士之耻…！",
 			typewriter = {
@@ -66,8 +66,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呜…！这件事竟然会让吾如此烦恼……！",
 			typewriter = {
@@ -80,8 +80,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.2,
 					dur = 0.4,
 					x = 22.5,
@@ -90,9 +90,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "休息日在自己的房间的{namecode:90}显得坐立难安。",
 			typewriter = {
 				speed = 0.05,
@@ -103,8 +103,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这样下去的话，别说秘书舰了，就连军人的本职工作可能都没法照常进行了呢……",
 			typewriter = {
@@ -117,9 +117,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "虽然是久违的休息日，今天的{namecode:90}从早上开始便没踏出房门一步。",
 			typewriter = {
 				speed = 0.05,
@@ -127,9 +127,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "回过神来才发现，早上起床擦了三次地板，整理东西两个小时，为了把玩偶藏起来，竟然花了一整个上午的时间。",
 			typewriter = {
 				speed = 0.05,
@@ -137,11 +137,11 @@ return {
 			}
 		},
 		{
+			actor = 306060,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 306060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "唉，{namecode:6}推荐的“游戏机”都没来得及玩…！",
 			typewriter = {
 				speed = 0.05,
@@ -153,8 +153,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -166,8 +166,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这么一想，最近总是不在状态啊…",
 			typewriter = {
@@ -182,13 +182,13 @@ return {
 		{
 			actor = 306060,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对、对不起！吾忘了昨天您拜托我的资料…！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -219,8 +219,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1,
 					dur = 0.2,
 					x = 0,
@@ -231,14 +231,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_outdoor",
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "灰色幽灵！你总算来了！身为前一航战的一员，这个仇非报不可！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -282,8 +282,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "好痛！……判定中弹！？怎么会这样！",
 			typewriter = {
@@ -296,8 +296,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -308,14 +308,14 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_103",
 			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "光辉，虽说确实是我提出想要挑件和主公外出购物时穿的可爱衣服的……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -340,11 +340,11 @@ return {
 			}
 		},
 		{
+			actor = 306060,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 306060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就、就算这样也不用给我这么轻飘飘的衣服吧……！",
 			typewriter = {
 				speed = 0.05,
@@ -356,8 +356,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -368,14 +368,14 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			actor = 306060,
 			bgName = "bg_story_room",
+			actor = 306060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "吾到底是怎么了啊……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -406,9 +406,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "{namecode:90}为了驱散心底的不安，拿出几个小时前塞进抽屉的玩偶——",
 			typewriter = {
 				speed = 0.05,

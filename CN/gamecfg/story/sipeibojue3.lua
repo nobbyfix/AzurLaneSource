@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>“有人与你一同出航，有人与你并肩战斗”</size>",
@@ -29,8 +29,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港湾\n\n<size=45>三　战友</size>",
@@ -39,12 +39,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "港区·演习海域",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "港区·演习海域",
 			effects = {
 				{
 					active = false,
@@ -52,8 +52,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -170,9 +170,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "与沙恩姐妹一同训练已经成为了每周的必修课",
 			typewriter = {
 				speed = 0.05,
@@ -184,9 +184,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "不只是训练，实战也——",
 			typewriter = {
 				speed = 0.05,
@@ -198,9 +198,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -212,9 +212,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "不知道她们两位有没有什么“愿望”？",
 			typewriter = {
 				speed = 0.05,
@@ -226,9 +226,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "对了，借这个机会，正好问一下她们的想法，作为一个参考——",
 			typewriter = {
 				speed = 0.05,
@@ -250,12 +250,12 @@ return {
 			}
 		},
 		{
+			actor = 404010,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 404010,
-			nameColor = "#a9f548",
 			say = "我的“愿望”？",
 			typewriter = {
 				speed = 0.05,
@@ -267,12 +267,12 @@ return {
 			}
 		},
 		{
+			actor = 404010,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 404010,
-			nameColor = "#a9f548",
 			say = "当然是变得更强，击败更多的敌人！",
 			typewriter = {
 				speed = 0.05,
@@ -284,12 +284,12 @@ return {
 			}
 		},
 		{
+			actor = 404010,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 404010,
-			nameColor = "#a9f548",
 			say = "不管遇到什么样的敌人，我都不会后退！",
 			typewriter = {
 				speed = 0.05,
@@ -316,12 +316,12 @@ return {
 			}
 		},
 		{
+			actor = 404020,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 404020,
-			nameColor = "#a9f548",
 			say = "我的“愿望”吗……真是个不错的问题呢。",
 			typewriter = {
 				speed = 0.05,
@@ -333,12 +333,12 @@ return {
 			}
 		},
 		{
+			actor = 404020,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 404020,
-			nameColor = "#a9f548",
 			say = "目前的话应该就是更好地辅佐指挥官，以及在关键的时候能够阻止暴走的姐姐吧。",
 			typewriter = {
 				speed = 0.05,
@@ -413,9 +413,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "是啊，只要在这里，和大家在一起，不再像那个时候孤身一人，我就……",
 			typewriter = {
 				speed = 0.05,
@@ -427,9 +427,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,

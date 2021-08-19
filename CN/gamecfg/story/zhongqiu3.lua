@@ -1,11 +1,11 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU3",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 502010,
@@ -132,13 +132,13 @@ return {
 			}
 		},
 		{
+			actor = 201100,
+			side = 2,
+			actorName = "？？？",
+			nameColor = "#a9f548",
+			dir = -1,
+			withoutPainting = true,
 			say = "我都换上泳装了，胡德你也不要害羞嘛~",
-			side = 2,
-			actorName = "？？？",
-			dir = -1,
-			actor = 201100,
-			nameColor = "#a9f548",
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -149,13 +149,13 @@ return {
 			}
 		},
 		{
+			actor = 204030,
+			side = 1,
+			actorName = "？？？",
+			nameColor = "#a9f548",
+			dir = -1,
+			withoutPainting = true,
 			say = "我只说会陪你来海边，可没承诺会换上泳装。而且，在秋天冰凉的海水里游泳可不是淑女的风范",
-			side = 1,
-			actorName = "？？？",
-			dir = -1,
-			actor = 204030,
-			nameColor = "#a9f548",
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -166,13 +166,13 @@ return {
 			}
 		},
 		{
-			say = "胡德姐姐……可是咱昨天才看到你在海里练习游泳，还——",
+			actor = 201100,
 			side = 2,
 			actorName = "？？？",
-			dir = -1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = -1,
 			withoutPainting = true,
+			say = "胡德姐姐……可是咱昨天才看到你在海里练习游泳，还——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -183,13 +183,13 @@ return {
 			}
 		},
 		{
-			say = "小！天！鹅！",
+			actor = 204030,
 			side = 1,
 			actorName = "？？？",
-			dir = -1,
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = -1,
 			withoutPainting = true,
+			say = "小！天！鹅！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -200,13 +200,13 @@ return {
 			}
 		},
 		{
-			say = "呀——！！！",
+			actor = 201100,
 			side = 0,
 			actorName = "？？？",
-			dir = -1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = -1,
 			withoutPainting = true,
+			say = "呀——！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

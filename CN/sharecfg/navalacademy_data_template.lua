@@ -1,51 +1,51 @@
 pg = pg or {}
 pg.navalacademy_data_template = {
 	{
-		slot = 0,
-		painting = 0,
 		name = "大讲堂",
+		slot = 0,
+		painting = 0,
+		information = "",
 		id = 1,
-		information = "",
 		schedule = {}
 	},
 	{
-		slot = 0,
-		painting = 0,
 		name = "体育馆",
+		slot = 0,
+		painting = 0,
+		information = "",
 		id = 2,
-		information = "",
 		schedule = {}
 	},
 	{
-		slot = 0,
-		painting = 0,
 		name = "小卖部",
+		slot = 0,
+		painting = 0,
+		information = "",
 		id = 3,
-		information = "",
 		schedule = {}
 	},
 	{
-		slot = 0,
-		painting = 0,
 		name = "海军食堂",
+		slot = 0,
+		painting = 0,
+		information = "",
 		id = 4,
-		information = "",
 		schedule = {}
 	},
 	{
-		slot = 0,
-		painting = 0,
 		name = "补给商店",
-		id = 5,
+		slot = 0,
+		painting = 0,
 		information = "",
+		id = 5,
 		schedule = {}
 	},
 	{
+		name = "战术学院",
 		slot = 0,
 		painting = 0,
-		name = "战术学院",
-		id = 6,
 		information = "",
+		id = 6,
 		schedule = {}
 	},
 	all = {
@@ -57,5 +57,3 @@ pg.navalacademy_data_template = {
 		6
 	}
 }
-
-return

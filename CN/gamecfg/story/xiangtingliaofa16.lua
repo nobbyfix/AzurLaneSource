@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGTINGLIAOFA16",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>“我们是在昨日黎明时分发现莫比·迪克的，而现在，又一个黎明到来了”</size>",
@@ -33,12 +33,12 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			bgName = "bg_xiangting_3",
+			say = "轰————",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -89,11 +89,11 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_xiangting_3",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我们上当了…",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -144,8 +144,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_xiangting_3",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这里从一开始就是陷阱——",
 			typewriter = {
@@ -158,13 +158,13 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			side = 2,
 			bgName = "bg_xiangting_3",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 207040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "第十一、十七特混舰队联络中断！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -244,11 +244,11 @@ return {
 			}
 		},
 		{
+			say = "轰———",
 			side = 2,
 			bgName = "bg_xiangting_3",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			say = "轰———",
 			flashN = {
 				color = {
 					1,
@@ -296,15 +296,15 @@ return {
 			}
 		},
 		{
+			say = "稍早之前 纽约港",
 			side = 2,
 			bgName = "bg_xiangting_2",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level02",
-			say = "稍早之前 纽约港",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -681,11 +681,11 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			side = 2,
 			bgName = "bg_xiangting_2",
-			dir = 1,
-			actor = 207040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所以不论如何，必须赶在其完全成型前，歼灭正在制造奇异点的塞壬舰队！",
 			typewriter = {
 				speed = 0.05,
@@ -697,8 +697,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -787,11 +787,11 @@ return {
 			}
 		},
 		{
+			actor = 107060,
 			side = 2,
 			bgName = "bg_xiangting_2",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "期待各位出色的表现，天佑白鹰！",
 			typewriter = {
 				speed = 0.05,

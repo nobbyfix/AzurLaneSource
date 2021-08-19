@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "FUSHUN02",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"抚顺的大冒险\n\n<size=45>二　任务是维修机械？</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "长春长春！你看我们找到了什么！",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "呜哇…抚顺姐你还真的去翻了旧仓库啊…",
+			actor = 501030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜哇…抚顺姐你还真的去翻了旧仓库啊…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -214,15 +214,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这个是…掌机？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
-			say = "长春说，这方面的问题，来问长岛一定没问题！",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "长春说，这方面的问题，来问长岛一定没问题！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

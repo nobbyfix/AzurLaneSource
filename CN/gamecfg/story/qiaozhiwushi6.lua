@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"另一个领导者？\n\n<size=45>六　今天的晚饭</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "就这样，事情突然就变成了要给乔治五世做饭了。",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "就这样，事情突然就变成了要给乔治五世做饭了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 205050,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，你会做饭吗？",
 			typewriter = {
 				speed = 0.05,
@@ -79,9 +79,9 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
+			actor = 205050,
 			dir = 1,
 			optionFlag = 1,
-			actor = 205050,
 			nameColor = "#a9f548",
 			say = "那我就拭目以待了。",
 			typewriter = {
@@ -97,9 +97,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
+			actor = 205050,
 			dir = 1,
 			optionFlag = 2,
-			actor = 205050,
 			nameColor = "#a9f548",
 			say = "原来如此…但是借这个机会开始学一学也不坏",
 			typewriter = {
@@ -112,12 +112,12 @@ return {
 			}
 		},
 		{
+			actor = 205050,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 205050,
-			nameColor = "#a9f548",
 			say = "找个女仆队的人来一起帮你吧",
 			typewriter = {
 				speed = 0.05,
@@ -129,13 +129,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_107",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_107",
 			say = "总而言之，在厨房里忙活了起来。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -160,9 +160,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "先从最简单的炒青菜开始吧！",
 			typewriter = {
 				speed = 0.05,
@@ -174,9 +174,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "洗菜、切菜、下锅、翻炒、加佐料……",
 			typewriter = {
 				speed = 0.05,
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "把菜倒进盘子里，好，一盘菜大功告成！",
 			dialogShake = {
 				speed = 0.09,
@@ -207,9 +207,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "把菜端到餐厅的桌子上时，发现乔治五世坐在那里笑眯眯地看着这边。",
 			typewriter = {
 				speed = 0.05,
@@ -230,8 +230,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……没什么。",
 			typewriter = {
@@ -244,11 +244,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 205050,
 			side = 2,
 			bgName = "star_level_bg_107",
 			withoutActorName = true,
-			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "乔治五世说着，从桌上叉起一块煎蛋",
 			typewriter = {
@@ -277,9 +277,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "能给伊丽莎白做料理的水平，自然不会为自己临时随便做的一道菜所满足。",
 			typewriter = {
 				speed = 0.05,
@@ -294,8 +294,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过……",
 			typewriter = {
@@ -311,8 +311,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "“这道菜是你为了我而做的”这个事实，作为调味料来说真是非常美味啊",
 			typewriter = {
@@ -325,11 +325,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 205050,
 			side = 2,
 			bgName = "star_level_bg_107",
 			withoutActorName = true,
-			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "乔治五世的脸上露出了非常喜悦的笑容。仿佛——",
 			typewriter = {
@@ -342,11 +342,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 205050,
 			side = 2,
 			bgName = "star_level_bg_107",
 			withoutActorName = true,
-			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "坐在餐桌前的乔治五世，不是秘书舰，不是骑士长，不是拥有领导魅力的皇家高层——只是一个期待着自己所做的料理的普通少女。",
 			typewriter = {
@@ -359,9 +359,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "不知为何，第一次感觉到了乔治五世的“弱点”。",
 			typewriter = {
 				speed = 0.05,
@@ -373,9 +373,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "转身返回厨房，继续开始了烹饪。",
 			typewriter = {
 				speed = 0.05,

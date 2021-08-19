@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YANZHAN1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"皇家的骑士\n\n<size=45>一 起床了，女王陛下！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·皇家宿舍",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·皇家宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,8 +50,8 @@ return {
 			}
 		},
 		{
-			actorName = "伊丽莎白女王",
 			side = 2,
+			actorName = "伊丽莎白女王",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -130,8 +130,8 @@ return {
 			}
 		},
 		{
-			actorName = "伊丽莎白女王",
 			side = 2,
+			actorName = "伊丽莎白女王",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -146,11 +146,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "(…该怎么办呢)",
 			typewriter = {
 				speed = 0.05,
@@ -172,12 +172,12 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "陛下，该起床了。还有会议要等着你主持呢，陛下——",
 			typewriter = {
 				speed = 0.05,
@@ -189,12 +189,12 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 205010,
-			nameColor = "#a9f548",
 			say = "唔唔……嗯……嗯？怎么了，厌战，你就在旁边吗？太好了…啊——",
 			typewriter = {
 				speed = 0.05,
@@ -206,8 +206,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -216,12 +216,12 @@ return {
 			}
 		},
 		{
-			blackBg = true,
-			side = 2,
-			dir = 1,
-			optionFlag = 2,
 			actor = 205020,
+			side = 2,
+			optionFlag = 2,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "(果然这个时候得采取些强硬的手段啊…床单是在这里…陛下，请恕臣冒犯了。)",
 			typewriter = {
 				speed = 0.05,
@@ -236,9 +236,9 @@ return {
 			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			nameColor = "#a9f548",
 			say = "…喝！",
 			effects = {
 				{
@@ -264,9 +264,9 @@ return {
 			actor = 205010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			nameColor = "#a9f548",
 			say = "呜哇哇哇哇哇！！！",
 			effects = {
 				{
@@ -284,8 +284,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -294,12 +294,12 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 205010,
-			nameColor = "#a9f548",
 			say = "你，你在干什么啊厌战！！欸，等等——",
 			typewriter = {
 				speed = 0.05,
@@ -311,8 +311,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -337,11 +337,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真、真是的，为什么不早点把本王叫醒！这下会议都要迟到了啦！",
 			typewriter = {
 				speed = 0.05,
@@ -353,8 +353,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -379,15 +379,15 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "bg_guild_blue",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咳咳！总之，我们皇家决定和白鹰进行第二次的大规模的联合演习！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -444,11 +444,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_guild_blue",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "是，陛下！",
 			typewriter = {
 				speed = 0.05,
@@ -460,8 +460,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,

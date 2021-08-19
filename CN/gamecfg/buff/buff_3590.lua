@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.05
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.05
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.061
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.061
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.072
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.072
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.083
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.083
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.094
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.094
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.105
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.105
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.116
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.116
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.127
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.127
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.138
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.138
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "DMG_TAG_EHC_T_6"
+					attr = "DMG_TAG_EHC_T_6",
+					number = 0.15
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "DMG_TAG_EHC_T_7"
+					attr = "DMG_TAG_EHC_T_7",
+					number = 0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "航母猎手",
 	init_effect = "jinengchufared",
-	id = 3590,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "对航母伤害提高",
 	stack = 1,
-	color = "red",
+	id = 3590,
 	icon = 3590,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_TAG_EHC_T_6"
+				attr = "DMG_TAG_EHC_T_6",
+				number = 0.05
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_TAG_EHC_T_7"
+				attr = "DMG_TAG_EHC_T_7",
+				number = 0.05
 			}
 		}
 	}

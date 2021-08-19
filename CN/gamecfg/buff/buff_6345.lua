@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "TBD(VT-8)",
 	init_effect = "",
-	id = 6345,
+	name = "TBD(VT-8)",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "更换舰载机",
 	stack = 1,
-	color = "yellow",
+	id = 6345,
 	icon = 6320,
 	last_effect = "",
 	effect_list = {
@@ -17,7 +17,7 @@ return {
 			},
 			arg_list = {
 				detach_id = 18065,
-				attach_id = 18165
+				weapon_id = 18165
 			}
 		}
 	}

@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 401350,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			bgm = "azumaster-ins",
-			actor = 401350,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "诶Z35不能参加吗！",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 401360,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 401360,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这就是拥有魔眼之人的宿命吗……啊啊，果然还是很想上台啊！",
 			typewriter = {
 				speed = 0.05,
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -140,11 +140,11 @@ return {
 			}
 		},
 		{
+			actor = 401360,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 401360,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！这个不错",
 			typewriter = {
 				speed = 0.05,
@@ -156,8 +156,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -198,14 +198,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 307100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "（从加斯科涅的感情模块入手……似乎是不错的思路）",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -278,8 +278,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			say = "嗯？在看什么呢",
 			typewriter = {
 				speed = 0.05,
@@ -293,9 +293,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 403070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "铁血的SNS。…你别偷看别人屏幕啊",
 			typewriter = {
 				speed = 0.05,
@@ -307,8 +307,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -320,8 +320,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			say = "啊对不起对不起！我什么都没看到！…话说最近好像挺流行的额啊",
 			typewriter = {
 				speed = 0.05,
@@ -336,8 +336,8 @@ return {
 			expression = 5,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "萨拉托加给大家提建议说偶像都要搞这个，所以最近玩的人多起来了",
 			typewriter = {
 				speed = 0.05,
@@ -352,8 +352,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "在公共场合曝光个人信息，无法判断是否有效",
 			typewriter = {
 				speed = 0.05,
@@ -413,8 +413,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "………………",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>七 不变与变化（下）</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 307030,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-2",
-			actor = 307030,
-			nameColor = "#a9f548",
 			say = "今天的路上，大家都用很不可思议的眼光在看着我们呢。",
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,9 +52,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "确实，几乎每个人看到今天的{namecode:93}都露出了惊讶的表情。",
 			typewriter = {
 				speed = 0.05,
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:93}扶了一下眼镜，直视着这边。",
 			typewriter = {
@@ -175,11 +175,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "虽然做着大胆的表白，然而{namecode:93}的脸上却没有丝毫羞涩。",
 			typewriter = {
@@ -192,11 +192,11 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，你还记得之前我和{namecode:94}的对话吧？",
 			typewriter = {
 				speed = 0.05,
@@ -230,11 +230,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "原来如此，以为是自己适应了{namecode:93}的节奏，实际上，自己也悄悄影响了{namecode:93}吗……",
 			typewriter = {
@@ -263,11 +263,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
 			withoutActorName = true,
-			actor = 307030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对{namecode:93}的心意，自然不必多说，但是这个时候，果然还是应该……",
 			typewriter = {
@@ -286,11 +286,11 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…………噗。",
 			typewriter = {
 				speed = 0.05,
@@ -302,8 +302,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -328,12 +328,12 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 307030,
-			nameColor = "#a9f548",
 			say = "指挥官要是能从我手里赢下一局的话，我什么都答应你哦？",
 			typewriter = {
 				speed = 0.05,

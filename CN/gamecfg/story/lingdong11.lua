@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 207040,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-6",
 			dir = 1,
 			say = "第一特攻舰队已经准时抵达目标海域，顺利完成合流",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,15 +72,15 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			nameColor = "#a9f548",
 			side = 0,
 			dir = 1,
-			actor = 207040,
 			say = "哦哦，对了对了，这一次我还带回了来自白鹰的特产哦！",
 			shake = {
 				speed = 5,
-				y = 20,
-				number = 3
+				number = 3,
+				y = 20
 			},
 			typewriter = {
 				speed = 0.05,
@@ -257,38 +257,16 @@ return {
 			}
 		},
 		{
-			say = "……————",
+			side = 2,
 			stopbgm = true,
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
-			flash = {
-				wait = 0.5,
-				delay = 0.3,
-				dur = 0.5,
-				number = 1,
-				alpha = {
-					0,
-					1
-				}
-			},
-			dialogShake = {
-				speed = 0.09,
-				x = 8.5,
-				number = 2
-			}
-		},
-		{
+			dir = 1,
+			blackBg = true,
 			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
-			soundeffect = "event:/battle/boom1",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -302,12 +280,34 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom1",
 			side = 2,
 			dir = 1,
-			bgm = "story-6",
+			blackBg = true,
+			say = "……————",
+			flash = {
+				delay = 0.3,
+				dur = 0.5,
+				wait = 0.5,
+				number = 1,
+				alpha = {
+					0,
+					1
+				}
+			},
+			dialogShake = {
+				speed = 0.09,
+				x = 8.5,
+				number = 2
+			}
+		},
+		{
 			actor = 205070,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "！！！受到不明攻击，立刻报告损害情况！！！",
+			dir = 1,
+			bgm = "story-6",
 			dialogShake = {
 				speed = 0.09,
 				x = 15,
@@ -375,8 +375,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "啊呀呀，居然选在这个地方开启了新的奇异点，真是出人意料啊——",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "不不不，我可没这么大的能耐开启这么大个的…",
 			typewriter = {
 				speed = 0.05,
@@ -452,8 +452,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "喂！等人把话说完啊，真是一群铁壳脑袋！",
 			typewriter = {
 				speed = 0.05,

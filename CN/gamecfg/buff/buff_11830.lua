@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "花之牌",
 	init_effect = "",
-	id = 11830,
 	time = 20,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11830,
 	icon = 11830,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 11831,
-				target = "TargetSelf",
-				time = 15
+				time = 15,
+				target = "TargetSelf"
 			}
 		},
 		{
@@ -39,8 +39,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 11832,
-				target = "TargetSelf",
-				time = 15
+				time = 15,
+				target = "TargetSelf"
 			}
 		}
 	}

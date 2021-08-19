@@ -22,8 +22,8 @@ return {
 			actor = 303010,
 			nameColor = "#a9f548",
 			side = 1,
-			say = "是啊，我们受的伤也都不太重，完全可以继续战斗的。",
 			actorName = "{namecode:53}",
+			say = "是啊，我们受的伤也都不太重，完全可以继续战斗的。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -86,8 +86,8 @@ return {
 			actor = 303030,
 			nameColor = "#a9f548",
 			side = 0,
-			say = "是、是谁呢，姐姐我什么都不知道呢~",
 			actorName = "{namecode:55}",
+			say = "是、是谁呢，姐姐我什么都不知道呢~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -147,8 +147,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
 			say = "{namecode:69}转头看向瓜岛，这座处于热带气候，常年高温潮湿，被雨林均匀覆盖而且人迹罕至的岛屿，此时在月光之下，依然显得十分安静。",
@@ -158,8 +158,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "不过这份安静，马上将被战火所打破……",
 			typewriter = {

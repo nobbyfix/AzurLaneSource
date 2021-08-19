@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAOTIANEXINNIAN1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"新年的祝福\n\n<size=45>一 厨房的混乱</size>",
@@ -17,16 +17,16 @@ return {
 			}
 		},
 		{
+			blackBg = true,
 			side = 2,
 			bgName = "bg_story_room",
+			say = "港区·重樱宿舍 ",
 			dir = 1,
 			bgmDelay = 2,
-			blackBg = true,
 			bgm = "main-newyear",
-			say = "港区·重樱宿舍 ",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -79,11 +79,11 @@ return {
 			}
 		},
 		{
+			actor = 301141,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301141,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "哇哇！有年糕！我要吃我要吃……可是，不知不觉就被暖炉给困住出不来了……呜",
 			typewriter = {
 				speed = 0.05,
@@ -95,8 +95,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -201,15 +201,15 @@ return {
 			}
 		},
 		{
+			actor = 301600,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301600,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜哇！汤汁溅到衣服上了啦！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -234,8 +234,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -244,12 +244,12 @@ return {
 			}
 		},
 		{
-			say = "干嘛用力那么猛嘛！虽然说要搅拌是没错…也不用这么用力啦！",
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "干嘛用力那么猛嘛！虽然说要搅拌是没错…也不用这么用力啦！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -312,11 +312,11 @@ return {
 			}
 		},
 		{
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那个还是未完成的设计！而且，只有一件而已……",
 			typewriter = {
 				speed = 0.05,
@@ -328,8 +328,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.3,
 					dur = 0.4,
 					x = 22.5,
@@ -354,11 +354,11 @@ return {
 			}
 		},
 		{
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好了，我知道了啦！真是的，明明是{namecode:143}做错了事为什么我要被你说……",
 			typewriter = {
 				speed = 0.05,
@@ -370,8 +370,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -382,15 +382,15 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			actorName = "{namecode:143}",
 			bgName = "bg_story_room",
+			actorName = "{namecode:143}",
+			dir = 1,
 			actor = 301601,
 			nameColor = "#a9f548",
 			say = "将将~{namecode:142}做的衣服真的超级可爱的！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -495,12 +495,12 @@ return {
 			}
 		},
 		{
+			actor = 301601,
 			nameColor = "#a9f548",
-			side = 2,
 			bgName = "bg_story_room",
+			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 301601,
 			actorName = "{namecode:143}",
 			say = "等年糕煮好了我们再来帮{namecode:98}端给大家哦，这里就先退散啦！",
 			typewriter = {

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KELIFULAN7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"骑士与奖赏\n\n<size=45>七 最棒的冠军奖励</size>",
@@ -17,20 +17,20 @@ return {
 			}
 		},
 		{
-			say = "港区·体育馆",
+			bgm = "story-1",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			bgm = "story-1",
+			say = "港区·体育馆",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "怀里抱着“摇钱树”——翡翠木的盆栽，喜不自胜的克利夫兰。",
 			typewriter = {
 				speed = 0.05,
@@ -102,9 +102,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "克利夫兰变得满脸通红。",
 			typewriter = {
 				speed = 0.05,
@@ -112,15 +112,15 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "钱的问题倒是没什么，就是难得有机会在指挥官面前表现一下，结果还搞砸了……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -161,9 +161,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "轻轻地揉了揉克利夫兰的头发。",
 			typewriter = {
 				speed = 0.05,
@@ -219,16 +219,16 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "可、可爱！？！？！？",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					number = 1
@@ -244,16 +244,16 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊、啊……我可爱……可爱……呀……嗷嗷…………///（脸红）",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.15,
 					x = 30,
@@ -270,17 +270,17 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102090,
-			nameColor = "#a9f548",
 			say = "不，不要叫我克爹～！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					number = 2

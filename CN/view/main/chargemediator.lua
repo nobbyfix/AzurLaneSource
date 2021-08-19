@@ -4,100 +4,42 @@ slot0.CHARGE = "ChargeMediator:CHARGE"
 slot0.BUY_ITEM = "ChargeMediator:BUY_ITEM"
 slot0.CLICK_MING_SHI = "ChargeMediator:CLICK_MING_SHI"
 slot0.GET_CHARGE_LIST = "ChargeMediator:GET_CHARGE_LIST"
-slot0.GO_SHOPS_LAYER = "ChargeMediator:GO_SHOPS_LAYER"
 slot0.OPEN_ACTIVITY = "ChargeMediator:OPEN_ACTIVITY"
-slot0.OPEN_SCENE = "ChargeMediator:OPEN_SCENE"
 slot0.ON_SKIN_SHOP = "ChargeMediator:ON_SKIN_SHOP"
 
-slot0.register = function (slot0)
-	slot0:bind(slot0.ON_SKIN_SHOP, function ()
-		slot0.contextData.wrap = ChargeScene.TYPE_MENU
-
-		slot0.contextData:sendNotification(GAME.GO_SCENE, SCENE.SKINSHOP)
+function slot0.register(slot0)
+	slot0:bind(uv0.ON_SKIN_SHOP, function ()
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.SKINSHOP)
 	end)
-	slot0:bind(slot0.GET_CHARGE_LIST, function (slot0)
-		slot0:sendNotification(GAME.GET_CHARGE_LIST)
+	slot0:bind(uv0.GET_CHARGE_LIST, function (slot0)
+		uv0:sendNotification(GAME.GET_CHARGE_LIST)
 	end)
-	slot0.viewComponent:setPlayer(slot2)
-
-	slot3 = getProxy(ShopsProxy)
-	slot5 = slot3:getChargedList()
-	slot6 = slot3:GetNormalList()
-	slot7 = slot3:GetNormalGroupList()
-
-	if slot3:getFirstChargeList() then
-		slot0.viewComponent:setFirstChargeIds(slot4)
-	end
-
-	if slot5 then
-		slot0.viewComponent:setChargedList(slot5)
-	end
-
-	if slot6 then
-		slot0.viewComponent:setNormalList(slot6)
-	end
-
-	if slot7 then
-		slot0.viewComponent:setNormalGroupList(slot7)
-	end
-
-	if not slot4 or not chargeList or not slot6 or not slot7 then
-		slot0:sendNotification(GAME.GET_CHARGE_LIST)
-	end
-
-	slot0:bind(slot0.SWITCH_TO_SHOP, function (slot0, slot1)
-		slot1.fromCharge = true
-
-		slot0:addSubLayers(Context.New({
-			mediator = ShopsMediator,
-			viewComponent = ShopsLayer,
-			data = slot1
-		}), false, function ()
-			setActive(slot0.viewComponent._tf, false)
-		end)
+	slot0.viewComponent:setPlayer(getProxy(PlayerProxy):getData())
+	slot0:bind(uv0.SWITCH_TO_SHOP, function (slot0, slot1)
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.SHOP, slot1)
 	end)
-	slot0:bind(slot0.CHARGE, function (slot0, slot1)
-		slot0:sendNotification(GAME.CHARGE_OPERATION, {
+	slot0:bind(uv0.CHARGE, function (slot0, slot1)
+		uv0:sendNotification(GAME.CHARGE_OPERATION, {
 			shopId = slot1
 		})
 	end)
-	slot0:bind(slot0.BUY_ITEM, function (slot0, slot1, slot2)
-		slot0:sendNotification(GAME.SHOPPING, {
+	slot0:bind(uv0.BUY_ITEM, function (slot0, slot1, slot2)
+		uv0:sendNotification(GAME.SHOPPING, {
 			id = slot1,
 			count = slot2
 		})
 	end)
-	slot0:bind(slot0.CLICK_MING_SHI, function (slot0)
-		slot0:sendNotification(GAME.CLICK_MING_SHI)
+	slot0:bind(uv0.CLICK_MING_SHI, function (slot0)
+		uv0:sendNotification(GAME.CLICK_MING_SHI)
 	end)
-	slot0:bind(slot0.GO_SHOPS_LAYER, function ()
-		slot0:addSubLayers(Context.New({
-			mediator = ShopsMediator,
-			viewComponent = ShopsLayer,
-			data = {
-				warp = ShopsLayer.TYPE_ACTIVITY
-			}
-		}))
-	end)
-	slot0:bind(slot0.OPEN_ACTIVITY, function (slot0, slot1)
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
+	slot0:bind(uv0.OPEN_ACTIVITY, function (slot0, slot1)
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
 			id = slot1
 		})
 	end)
-	slot0:bind(slot0.OPEN_SCENE, function (slot0, slot1)
-		if slot1[1] == SCENE.SHOP then
-			slot0:addSubLayers(Context.New({
-				mediator = ShopsMediator,
-				viewComponent = ShopsLayer,
-				data = slot1[2]
-			}))
-		else
-			slot0:sendNotification(GAME.GO_SCENE, slot1[1], slot1[2])
-		end
-	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		PlayerProxy.UPDATED,
 		ShopsProxy.FIRST_CHARGE_IDS_UPDATED,
@@ -113,11 +55,9 @@ slot0.listNotificationInterests = function (slot0)
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
-	slot3 = slot1:getBody()
-
+function slot0.handleNotification(slot0, slot1)
 	if slot1:getName() == PlayerProxy.UPDATED then
-		slot0.viewComponent:setPlayer(slot3)
+		slot0.viewComponent:setPlayer(slot1:getBody())
 		slot0.viewComponent:updateNoRes()
 	elseif slot2 == ShopsProxy.FIRST_CHARGE_IDS_UPDATED then
 		slot0.viewComponent:setFirstChargeIds(slot3)
@@ -152,6 +92,45 @@ slot0.handleNotification = function (slot0, slot1)
 		slot6 = pg.shop_template[slot3.id]
 
 		slot0.viewComponent:checkBuyDone(slot3.id)
+
+		slot7 = pg.shop_template
+		slot8, slot9, slot10 = nil
+
+		for slot14, slot15 in ipairs(slot0.viewComponent.itemVOs) do
+			if slot7[slot15.id].genre == "gem_shop" then
+				if slot7[slot15.id].effect_args == "ship_bag_size" then
+					slot8 = slot15.id
+				elseif slot7[slot15.id].effect_args == "equip_bag_max" then
+					slot9 = slot15.id
+				elseif slot7[slot15.id].effect_args == "commander_bag_size" then
+					slot10 = slot15.id
+				end
+			end
+		end
+
+		if slot3.id == slot8 then
+			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player:getMaxShipBagExcludeGuild() then
+				slot0.viewComponent:setItemVOs()
+				slot0.viewComponent:sortItems()
+			end
+		elseif slot3.id == slot9 then
+			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player:getMaxEquipmentBag() then
+				slot0.viewComponent:setItemVOs()
+				slot0.viewComponent:sortItems()
+			end
+		elseif slot3.id == slot10 then
+			if slot7[slot3.id].limit_args[3] and slot11 < slot0.viewComponent.player.commanderBagMax then
+				slot0.viewComponent:setItemVOs()
+				slot0.viewComponent:sortItems()
+			end
+		elseif slot7[slot3.id].group > 0 and _.detect(slot0.viewComponent.itemVOs, function (slot0)
+			return slot0.id == uv0.id
+		end) then
+			if slot11:IsGroupSale() and (not slot11:IsShowWhenGroupSale(slot12) or slot0.viewComponent:getGroupLimit(slot11:getConfig("group")) == slot11:getConfig("group_limit")) then
+				slot0.viewComponent:setItemVOs()
+				slot0.viewComponent:sortItems()
+			end
+		end
 	elseif slot2 == GAME.USE_ITEM_DONE then
 		if table.getCount(slot3) ~= 0 then
 			slot0.viewComponent:emit(BaseUI.ON_AWARD, {
@@ -181,21 +160,21 @@ slot0.handleNotification = function (slot0, slot1)
 
 		if slot4 or slot5 or slot6 or slot7 then
 			slot0.viewComponent:sortDamondItems()
+			slot0.viewComponent:setItemVOs()
+			slot0.viewComponent:sortItems()
 		end
 	elseif slot2 == GAME.CLICK_MING_SHI_SUCCESS then
 		slot0.viewComponent:playHeartEffect()
-	elseif slot2 == GAME.REMOVE_LAYERS then
-		if slot3.context.mediator == ShopsMediator then
-			setActive(slot0.viewComponent._tf, true)
-		end
 	elseif slot2 == PlayerResource.GO_MALL then
 		slot4 = ChargeScene.TYPE_DIAMOND
 
 		if slot3 then
-			slot0.viewComponent:triggerPageToggle(slot3.type or ChargeScene.TYPE_DIAMOND)
-			slot0.viewComponent:updateNoRes((slot3 and slot3.noRes) or nil)
-			slot0.viewComponent:closeItemDetail()
+			slot4 = slot3.type or ChargeScene.TYPE_DIAMOND
 		end
+
+		slot0.viewComponent:triggerPageToggle(slot4)
+		slot0.viewComponent:updateNoRes(slot3 and slot3.noRes or nil)
+		slot0.viewComponent:closeItemDetail()
 	elseif slot2 == GAME.CHARGE_SUCCESS then
 		slot0.viewComponent:checkBuyDone("damonds")
 	end

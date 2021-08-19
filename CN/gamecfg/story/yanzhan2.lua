@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YANZHAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"皇家的骑士\n\n<size=45>二 舰队的工作</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -194,11 +194,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "（不、不能因为这点小事就麻烦指挥官，这里我一个人也能解决！）",
 			typewriter = {
 				speed = 0.05,
@@ -210,8 +210,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -236,11 +236,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈啊！",
 			typewriter = {
 				speed = 0.05,
@@ -252,8 +252,8 @@ return {
 			},
 			action = {
 				{
-					y = 150,
 					type = "shake",
+					y = 150,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -294,9 +294,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "哗啦啦啦啦啦——",
 			dialogShake = {
 				speed = 0.09,
@@ -309,11 +309,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "糟了！！！",
 			typewriter = {
 				speed = 0.05,
@@ -325,8 +325,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -383,11 +383,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "别，别笑了啊！",
 			typewriter = {
 				speed = 0.05,
@@ -399,8 +399,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -409,11 +409,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "(是、是不是老老实实让指挥官帮忙比较好呢……）",
 			typewriter = {
 				speed = 0.05,
@@ -425,8 +425,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,

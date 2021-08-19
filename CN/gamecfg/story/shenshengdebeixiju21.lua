@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU21",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
+			say = "数日后，皇家三岛",
 			side = 2,
 			bgName = "bg_italy_cg4",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-2",
-			say = "数日后，皇家三岛",
 			flashin = {
 				delay = 1,
 				dur = 1,
@@ -32,8 +32,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -48,8 +48,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -64,9 +64,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			say = "可畏一边端着红茶，一边淡淡的说着",
 			typewriter = {
 				speed = 0.05,
@@ -78,8 +78,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -110,8 +110,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -126,9 +126,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			say = "光辉一把将可畏搂在了怀里，像个洋娃娃一样的给她梳起了头发",
 			typewriter = {
 				speed = 0.05,
@@ -140,8 +140,8 @@ return {
 			}
 		},
 		{
-			actorName = "胜利",
 			side = 2,
+			actorName = "胜利",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -156,8 +156,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -172,8 +172,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -188,8 +188,8 @@ return {
 			}
 		},
 		{
-			actorName = "胜利",
 			side = 2,
+			actorName = "胜利",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -204,9 +204,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			say = "胜利一边说着一边轻轻的戳了戳可畏嘟起的脸蛋",
 			typewriter = {
 				speed = 0.05,
@@ -218,8 +218,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -234,8 +234,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -250,8 +250,8 @@ return {
 			}
 		},
 		{
-			actorName = "可畏",
 			side = 2,
+			actorName = "可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -266,8 +266,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -282,8 +282,8 @@ return {
 			}
 		},
 		{
-			actorName = "胜利",
 			side = 2,
+			actorName = "胜利",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			actorName = "伊丽莎白女王",
+			dir = 1,
 			say = "啊！！被我发现了，居然在偷偷的举办秘密茶会！！！",
 			dialogShake = {
 				speed = 0.09,
@@ -319,9 +319,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			say = "伊丽莎白碰巧路过花园，看到了光辉姐妹的茶会，兴奋地拿手指着茶桌",
 			typewriter = {
 				speed = 0.05,
@@ -333,8 +333,8 @@ return {
 			}
 		},
 		{
-			actorName = "贝尔法斯特",
 			side = 2,
+			actorName = "贝尔法斯特",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -349,8 +349,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉&胜利&可畏",
 			side = 2,
+			actorName = "光辉&胜利&可畏",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -365,8 +365,8 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -381,12 +381,12 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
 			side = 2,
+			actorName = "光辉",
 			bgName = "bg_italy_cg4",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "一起来享用甜蜜而又和平的午后吧~",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "MENGFEISIWANSHENG2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"混沌的万圣之夜\n\n<size=45>二 魔女快递、绝赞开张中</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 101110,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 101110,
-			nameColor = "#a9f548",
 			say = "正义的伙伴，小海狸分队，查尔斯奥斯本参上！今天又有什么样的不正义之事在等着我们解决呢~",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -84,11 +84,11 @@ return {
 			}
 		},
 		{
+			actor = 101421,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101421,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿咻…嘿咻……",
 			typewriter = {
 				speed = 0.05,
@@ -100,8 +100,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.25,
 					x = 0,
@@ -158,11 +158,11 @@ return {
 			}
 		},
 		{
+			actor = 101090,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸？魔女？快递？",
 			typewriter = {
 				speed = 0.05,
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -184,13 +184,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_night",
 			say = "……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -247,11 +247,11 @@ return {
 			}
 		},
 		{
+			actor = 101110,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "为期待万圣节的孩子们带去希望！多么正义的行为！既然如此，让我们也来帮忙吧！",
 			typewriter = {
 				speed = 0.05,
@@ -263,8 +263,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -292,8 +292,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 101421,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦哦…你们也要一起加入魔女快递的行列吗！",
 			typewriter = {
@@ -322,10 +322,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_night",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_night",
+			side = 0,
 			dir = 1,
 			actor = 101421,
 			actorName = "众人",
@@ -363,8 +363,8 @@ return {
 			hideOther = true,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 101421,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯！……嗯？那是……南瓜？",
 			effects = {

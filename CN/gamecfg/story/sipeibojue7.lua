@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港湾\n\n<size=45>七　温暖</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "早晨·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "早晨·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -126,11 +126,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，但、但是，我觉得还是没有我选的那件好！",
 			typewriter = {
 				speed = 0.05,
@@ -142,8 +142,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -184,9 +184,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "说实话……我根本不知道该说些什么，从刚才起，就是姐姐在推着我换衣服。",
 			typewriter = {
 				speed = 0.05,
@@ -198,9 +198,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "我的脑海中一片混沌，失去重量的手连怎么放都不清楚。",
 			typewriter = {
 				speed = 0.05,
@@ -212,9 +212,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "指挥官这时，走到了我身边。",
 			typewriter = {
 				speed = 0.05,
@@ -226,9 +226,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -256,9 +256,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "指挥官只说了这一句话，就回到了德意志身边。",
 			typewriter = {
 				speed = 0.05,
@@ -270,11 +270,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喂，仆人，你和妹妹说了什么！你可别想作弊！",
 			typewriter = {
 				speed = 0.05,
@@ -286,8 +286,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -376,9 +376,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "原来如此，我想要的……原来只是这么简单的东西。",
 			typewriter = {
 				speed = 0.05,
@@ -390,9 +390,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "我的不安，我的疑虑，我的恐惧，其实只要轻轻一戳，就能破掉。",
 			typewriter = {
 				speed = 0.05,
@@ -404,9 +404,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "只要有人告诉我，我是被关心着的，有人愿意和我交朋友……",
 			typewriter = {
 				speed = 0.05,
@@ -482,9 +482,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "指挥官，有些坏心眼的阿贾克斯，德意志姐姐，还有铁血的、舰队的大家——",
 			typewriter = {
 				speed = 0.05,
@@ -496,9 +496,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "为了守护这些重要的人事物而战，并不代表自己除了战斗一无所有",
 			typewriter = {
 				speed = 0.05,

@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "演唱结束",
+			bgm = "azumaster-ins",
 			side = 2,
 			bgName = "star_level_bg_120",
 			dir = 1,
-			bgm = "azumaster-ins",
+			say = "演唱结束",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,11 +70,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "应该先准备一些签名...等她们成为国际巨星之后，嘿嘿嘿",
 			typewriter = {
 				speed = 0.05,
@@ -86,8 +86,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -133,7 +133,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没事没事，麻烦事等以后再想，先拿几个签名版去……",
+			say = "没事没事，麻烦事等以后再想，先拿几个签名板去……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,15 +208,15 @@ return {
 			}
 		},
 		{
+			actor = 905030,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 905030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "兵装测试及歌唱行动结束",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -308,8 +308,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 101176,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "实际胜利的pose……",
 			typewriter = {
@@ -325,8 +325,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 502033,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "姐姐，鞍山她们也来了！",
 			typewriter = {
@@ -342,8 +342,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 502023,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "大家……！",
 			typewriter = {
@@ -356,9 +356,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			say = "在第一场比赛后，{namecode:91}静静地看着自己的新舰装",
 			typewriter = {
 				speed = 0.05,
@@ -389,8 +389,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:91}？怎么了？",
 			typewriter = {
@@ -438,8 +438,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………大家的，“感情”……",
 			typewriter = {

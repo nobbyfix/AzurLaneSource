@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"另一个领导者？\n\n<size=45>四　骑士长的指挥</size>",
@@ -17,14 +17,14 @@ return {
 			}
 		},
 		{
-			blackBg = true,
+			bgmDelay = 2,
 			side = 2,
 			dir = 1,
-			bgmDelay = 2,
+			blackBg = true,
 			say = "和乔治五世接触过后，有时会有一种其实她才是皇家领导人的错觉",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -45,12 +45,12 @@ return {
 			}
 		},
 		{
+			nameColor = "#a9f548",
 			side = 2,
 			bgName = "bg_story_nepu1",
+			say = "港区周边·演习海域",
 			dir = 1,
 			bgm = "battle-1",
-			nameColor = "#a9f548",
-			say = "港区周边·演习海域",
 			effects = {
 				{
 					active = true,
@@ -86,8 +86,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "诸位，不要慌张，不要冒进。胜利和各位的安全，我都要！",
 			typewriter = {
@@ -100,9 +100,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "在战场上，她会带领皇家舰队冲锋陷阵——",
 			typewriter = {
 				speed = 0.05,
@@ -114,15 +114,15 @@ return {
 			}
 		},
 		{
+			say = "港区·港口",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-1",
-			say = "港区·港口",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -150,8 +150,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这批物资……运到三号仓库去。",
 			typewriter = {
@@ -180,9 +180,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "在平时，她可以作为伊丽莎白的代理管理各种事物——",
 			typewriter = {
 				speed = 0.05,
@@ -194,13 +194,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "港区·广场",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -260,8 +260,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不介意的话，说给我听听吧，说不定我能帮上忙呢。",
 			typewriter = {
@@ -290,9 +290,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "在私下里，她也可以为舰队的其他成员谈心、调解矛盾——",
 			typewriter = {
 				speed = 0.05,
@@ -304,13 +304,13 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "港区·皇家宿舍",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -357,9 +357,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "餐桌边，这场晚餐的邀请人胡德，在听完对乔治五世的评价后，得出了这样的结论。",
 			typewriter = {
 				speed = 0.05,
@@ -381,12 +381,12 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "呵呵，这可是你的过错哦，乔治？",
 			typewriter = {
 				speed = 0.05,
@@ -398,12 +398,12 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "让指挥官产生这样的想法本身，就是你的问题哦，乔治。",
 			typewriter = {
 				speed = 0.05,
@@ -418,8 +418,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "原来如此…虽然我没这个意思，不过被指挥官这么一说，说明确实有人是这么看我的啊……",
 			typewriter = {

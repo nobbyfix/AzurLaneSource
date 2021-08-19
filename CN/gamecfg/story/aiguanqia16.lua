@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA16",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301050,
@@ -53,8 +53,8 @@ return {
 			actor = 10400040,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "绊爱",
+			dir = 1,
 			say = "了解！",
 			typewriter = {
 				speed = 0.05,
@@ -66,14 +66,14 @@ return {
 			}
 		},
 		{
-			side = 1,
-			dir = 1,
 			actor = 301050,
+			side = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "看那边。有个超级显眼的随机单词生成器的说",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -176,8 +176,8 @@ return {
 			expression = 3,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "绊爱",
 			say = "哇～没想到在这里发现了随机单词生成器～！！",
 			typewriter = {
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "轰隆隆隆隆隆隆",
 			dialogShake = {
 				speed = 0.09,
@@ -236,8 +236,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "绊爱",
 			say = "诶！？这是啥！？等下！快走开！别靠近我！讨厌讨厌讨厌讨厌！",
 			typewriter = {
@@ -250,8 +250,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -263,8 +263,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "绊爱",
 			say = "啊啊aa啊啊啊啊aa啊啊啊a啊a啊……",
 			typewriter = {
@@ -279,15 +279,15 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			withoutActorName = true,
 			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			withoutActorName = true,
 			nameColor = "#a9f548",
+			actorScale = 3.5,
 			say = "   ",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -308,8 +308,8 @@ return {
 			},
 			action = {
 				{
-					y = -1650,
 					type = "move",
+					y = -1650,
 					delay = 1.5,
 					dur = 2.5,
 					x = 0
@@ -373,10 +373,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "绊爱(巨大化)",
+			actorScale = 3.5,
 			say = "………",
 			actorPosition = {
 				x = 150,
@@ -395,10 +395,10 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "绊爱(巨大化)",
+			actorScale = 3.5,
 			say = "哈啊……好累，真的好累～为什么我会在这种地方战斗呢……说到底我本来就只是和平时一样在录动画而已，变成这样不是很奇怪吗？",
 			actorPosition = {
 				x = 150,
@@ -417,10 +417,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "绊爱(巨大化)",
+			actorScale = 3.5,
 			say = "甚至身体还突然变大了……不如就这样把这个世界彻底破坏掉，没准就能回到原来的世界了？",
 			actorPosition = {
 				x = 150,
@@ -438,12 +438,12 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			say = "啊～麻烦死了，就让我的分身们随便乱搞下算了——",
 			actorName = "绊爱(巨大化)",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "啊～麻烦死了，就让我的分身们随便乱搞下算了——",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -458,8 +458,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "咚",
 			effects = {
 				{
@@ -492,10 +492,10 @@ return {
 			}
 		},
 		{
+			actor = 301050,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 301050,
 			say = "不行，我们的声音完全传达不到…",
 			effects = {
 				{
@@ -603,8 +603,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"圣诞礼物大作战！\n\n<size=45>五　厌战的心意！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
+			actor = 205020,
 			side = 2,
+			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "刚才……有些言重了。其实，我们是想向有经验的你请教如何帮大家选择礼物。",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			say = "花时间？这是哪里的话。这些礼物都是我刚刚回港路过商店时买的，怎么会花很多时间呢？",
+			actor = 107061,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 107061,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "花时间？这是哪里的话。这些礼物都是我刚刚回港路过商店时买的，怎么会花很多时间呢？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -168,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "心意……心意吗……我似乎明白了。重要的送礼物时的心意，而不是礼物的价值！",
 			typewriter = {
 				speed = 0.05,
@@ -184,8 +184,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -258,11 +258,11 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "如果不介意的话，请……请前辈试试看！如果适合前辈的话……咱也……会很高兴的！",
 			typewriter = {
 				speed = 0.05,
@@ -274,8 +274,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -332,12 +332,12 @@ return {
 			}
 		},
 		{
+			actor = 107061,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107061,
-			nameColor = "#a9f548",
 			say = "皇家的圣诞节……想必会很温馨吧，哈哈哈！",
 			typewriter = {
 				speed = 0.05,

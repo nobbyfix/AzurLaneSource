@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "航空易伤",
 	init_effect = "",
-	id = 8601,
+	name = "航空易伤",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "航空易伤",
 	stack = 1,
-	color = "yellow",
+	id = 8601,
 	icon = 2120,
 	last_effect = "Darkness",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 10,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = 10
 			}
 		},
 		{
@@ -28,8 +28,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.5,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = -0.5
 			}
 		},
 		{
@@ -39,8 +39,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.5,
-				attr = "injureRatioByBulletTorpedo"
+				attr = "injureRatioByBulletTorpedo",
+				number = -0.5
 			}
 		}
 	}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENGDIYAGEGAI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"闪耀☆战斗之星！\n\n<size=45>一　圣地亚哥、想改造？！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "某日・港区",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日・港区",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我是No.1~嘿~无厘头的冒失正是可爱之处~嘿~",
 			typewriter = {
 				speed = 0.05,
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -72,11 +72,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "今天也是状态绝佳~嘿嘿——嗯？那是…",
 			typewriter = {
 				speed = 0.05,
@@ -88,8 +88,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -98,12 +98,12 @@ return {
 			}
 		},
 		{
-			say = "是时候从姐姐的羽翼下独立了！萨拉妹妹的新路线，魔法少女·萨拉托加，正式出道！",
+			actor = 107039,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是时候从姐姐的羽翼下独立了！萨拉妹妹的新路线，魔法少女·萨拉托加，正式出道！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -166,12 +166,12 @@ return {
 			}
 		},
 		{
-			say = "啊，是圣地亚哥~呀吼~",
+			actor = 107039,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊，是圣地亚哥~呀吼~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -266,11 +266,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦…噢噢…虽然不太懂，但是总觉得好厉害！",
 			typewriter = {
 				speed = 0.05,
@@ -282,8 +282,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -292,11 +292,11 @@ return {
 			}
 		},
 		{
+			actor = 107039,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸嘿嘿，那么，萨拉托加准备去试试新的恶作、不对，试试新的力量啦~拜拜~",
 			typewriter = {
 				speed = 0.05,
@@ -308,8 +308,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1.2,
 					dur = 1,
 					x = -2250
@@ -317,11 +317,11 @@ return {
 			}
 		},
 		{
+			actor = 107020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等一下，别跑那么快——哎呀，这孩子真是的…圣地亚哥可不能学她哟",
 			typewriter = {
 				speed = 0.05,
@@ -333,8 +333,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,

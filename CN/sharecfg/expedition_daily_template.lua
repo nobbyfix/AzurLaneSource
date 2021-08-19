@@ -4,9 +4,9 @@ pg.expedition_daily_template = {
 		tips = "商船护送开启时间为：每周一、周四、周日",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily1",
-		title = "商船护送",
 		id = 201,
+		title = "商船护送",
+		pic = "daily1",
 		des = "我方商船被鱼雷艇袭击了！成功反击将获得大量的装备升级部件",
 		weekday = {
 			1,
@@ -60,9 +60,9 @@ pg.expedition_daily_template = {
 		tips = "海域突进开启时间为：每周二、周五、周日",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily2",
-		title = "海域突进",
 		id = 301,
+		title = "海域突进",
+		pic = "daily2",
 		des = "海域中有大量自爆艇需要清除，击破有几率获得战术教材",
 		weekday = {
 			2,
@@ -96,9 +96,9 @@ pg.expedition_daily_template = {
 		tips = "斩首行动开启时间为：每周三、周六、周日",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily3",
-		title = "斩首行动",
 		id = 401,
+		title = "斩首行动",
+		pic = "daily3",
 		des = "大量首领级敌人需要清除，击破有几率获得不知名的科技箱",
 		weekday = {
 			3,
@@ -132,9 +132,9 @@ pg.expedition_daily_template = {
 		tips = "破交作战每天开启，每周上限两次",
 		limit_type = 2,
 		limit_time = 2,
-		pic = "daily5",
-		title = "破交作战",
 		id = 501,
+		title = "破交作战",
+		pic = "daily5",
 		des = "潜艇编队开始了破交行动，行动成功将获得各种潜艇装备设计图",
 		weekday = {
 			1,
@@ -172,9 +172,9 @@ pg.expedition_daily_template = {
 		tips = "战术研修每天开启",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily6",
-		title = "战术研修",
 		id = 601,
+		title = "战术研修",
+		pic = "daily6",
 		des = "强大的特战敌人出现了！击破有几率获得战术升级材料",
 		weekday = {
 			1,
@@ -208,5 +208,3 @@ pg.expedition_daily_template = {
 		601
 	}
 }
-
-return

@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "airPower"
+					attr = "airPower",
+					number = 1500
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1000
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1650,
-					attr = "airPower"
+					attr = "airPower",
+					number = 1650
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1110,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1110
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1110,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1110
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1800,
-					attr = "airPower"
+					attr = "airPower",
+					number = 1800
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1220
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1220
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1950,
-					attr = "airPower"
+					attr = "airPower",
+					number = 1950
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1330,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1330
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1330,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1330
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2150,
-					attr = "airPower"
+					attr = "airPower",
+					number = 2150
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1440
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1440
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2350,
-					attr = "airPower"
+					attr = "airPower",
+					number = 2350
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1550
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1550
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2600,
-					attr = "airPower"
+					attr = "airPower",
+					number = 2600
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1660
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1660
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2850,
-					attr = "airPower"
+					attr = "airPower",
+					number = 2850
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1770,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1770
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1770,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1770
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3150,
-					attr = "airPower"
+					attr = "airPower",
+					number = 3150
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1880
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1880
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3500,
-					attr = "airPower"
+					attr = "airPower",
+					number = 3500
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2000
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "锁之巫女",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性上升",
 	stack = 1,
@@ -362,8 +362,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "airPower"
+				attr = "airPower",
+				number = 1500
 			}
 		},
 		{
@@ -372,8 +372,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 1000
 			}
 		},
 		{
@@ -382,8 +382,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		}
 	}

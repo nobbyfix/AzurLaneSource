@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "再来通过“训练”开始对小猫进行培养！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -23,8 +23,8 @@ return {
 			style = {
 				text = "点击“开始训练”来选择想要训练的喵箱！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -36,15 +36,15 @@ return {
 			style = {
 				text = "最多可以一口气选择<color=#A9F548>10</color>个想要训练的喵箱，不过同时只会有<color=#A9F548>4</color>个进行训练！这次就先选择1个吧！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},
 		{
 			ui = {
-				customSize = true,
 				scale = 1,
+				customSize = true,
 				path = "/OverlayCamera/Overlay/UIMain/CommanderBoxesUI(Clone)/buildpool_panel/frame/bg/content/list/2/icon",
 				triggerType = {
 					3

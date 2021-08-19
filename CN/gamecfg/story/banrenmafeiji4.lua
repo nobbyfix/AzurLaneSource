@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMAFEIJI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"盛夏的半人马座\n\n<size=45>四　沙滩上的美味</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_106",
+			actor = 201212,
 			side = 2,
+			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 201212,
-			nameColor = "#a9f548",
 			say = "啊，自由和维希的姐妹们来了呢。",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,10 +55,10 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_106",
-			say = "还有罗德尼前辈。",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "还有罗德尼前辈。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -89,11 +89,11 @@ return {
 			}
 		},
 		{
+			actor = 201212,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "罗德尼姐姐，敦刻尔克小姐，埃米尔小姐，这边~~~",
 			typewriter = {
 				speed = 0.05,
@@ -105,8 +105,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -134,10 +134,10 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_106",
-			say = "是的，敦刻尔克前辈，埃米尔·贝尔汀前辈，还有罗德尼前辈，上午好。",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "是的，敦刻尔克前辈，埃米尔·贝尔汀前辈，还有罗德尼前辈，上午好。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -267,10 +267,10 @@ return {
 			expression = 4,
 			side = 1,
 			bgName = "star_level_bg_106",
-			say = "这样啊，那好吧……",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "这样啊，那好吧……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -352,8 +352,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……真美味啊。",
 			typewriter = {
@@ -366,11 +366,11 @@ return {
 			}
 		},
 		{
+			actor = 201212,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对吧~不过我虽然很想吃……但总觉得吃下去的话，回去要没有勇气面对体重计了。",
 			typewriter = {
 				speed = 0.05,
@@ -382,8 +382,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -507,8 +507,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "也很符合夏天的感觉呢。",
 			typewriter = {
@@ -537,13 +537,13 @@ return {
 			}
 		},
 		{
-			say = "唔，不管了，我也要吃！",
+			actor = 201212,
 			side = 2,
 			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 201212,
-			nameColor = "#a9f548",
+			say = "唔，不管了，我也要吃！",
 			paintingFadeOut = {
 				time = 0.3,
 				side = 2
@@ -558,16 +558,16 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.3,
 					dur = 0.4,
 					x = 22.5,
 					number = 1
 				},
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1.1,
 					dur = 0.2,
 					x = 0,

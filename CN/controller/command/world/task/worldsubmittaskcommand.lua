@@ -1,83 +1,94 @@
-class("WorldSubmitTaskCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot2 = slot1:getBody()
-	slot5 = slot2.callback
+slot0 = class("WorldSubmitTaskCommand", pm.SimpleCommand)
 
-	print("submit task ", slot4, " -- fleetid ", slot2.fleetId)
+function slot0.execute(slot0, slot1)
+	slot4 = nowWorld
+	slot5 = slot4:GetInventoryProxy()
 
-	if not getProxy(WorldProxy).GetWorld(slot6).getTaskProxy(slot7):getTaskById(slot2.taskId) then
+	if not slot4:GetTaskProxy():getTaskById(slot1:getBody().taskId) then
 		return
 	end
 
-	slot10, slot11 = slot9:canSubmit(slot3)
+	table.insert({}, function (slot0)
+		slot1, slot2 = uv0:canSubmit()
 
-	if not slot10 then
-		pg.TipsMgr.GetInstance():ShowTips(slot11)
-
-		return
-	end
-
-	function slot12(slot0, slot1, slot2)
-		slot3 = {}
-		slot4 = {}
-
-		for slot9, slot10 in ipairs(slot5) do
-			table.insert(slot3, Clone(slot10))
-			slot10:setIntimacy(slot10:getIntimacy() + slot2)
-			slot10:addExp(slot1)
-			getProxy(BayProxy):updateShip(slot10)
-			table.insert(slot4, slot10)
+		if slot1 then
+			slot0()
+		else
+			pg.TipsMgr.GetInstance():ShowTips(slot2)
 		end
+	end)
 
-		return {
-			oldships = slot3,
-			newships = slot4
-		}
+	if not slot7:IsAutoSubmit() and (slot7.config.complete_condition == WorldConst.TaskTypeSubmitItem and slot7.config.item_retrieve == 1) then
+		table.insert(slot8, function (slot0)
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				type = MSGBOX_TYPE_ITEM_BOX,
+				content = i18n("sub_item_warning"),
+				items = {
+					{
+						type = DROP_TYPE_WORLD_ITEM,
+						id = uv0.config.complete_parameter[1],
+						count = uv0:getMaxProgress()
+					}
+				},
+				onYes = slot0
+			})
+		end)
 	end
 
-	pg.ConnectionMgr.GetInstance():Send(33207, {
-		taskId = slot4
-	}, 33208, function (slot0)
-		if slot0.result == 0 then
-			slot1 = {}
-			slot2 = slot0.exp
-			slot3 = slot0.intimacy
+	seriesAsync(slot8, function ()
+		pg.ConnectionMgr.GetInstance():Send(33207, {
+			taskId = uv0
+		}, 33208, function (slot0)
+			if slot0.result == 0 then
+				slot3 = slot0.exp
 
-			if slot0:isSharing() then
-				for slot8, slot9 in pairs(slot4) do
-					table.insert(slot1, slot2(slot9, slot2, slot3))
+				for slot9, slot10 in pairs(uv0:GetFleets()) do
+					if slot3 > 0 then
+						table.insert({}, function (slot0, slot1, slot2)
+							slot3 = getProxy(BayProxy)
+							slot4 = {}
+							slot5 = {}
+
+							for slot10, slot11 in ipairs(slot0:GetShipVOs()) do
+								table.insert(slot4, slot11)
+
+								slot12 = slot3:getShipById(slot11.id)
+
+								slot12:setIntimacy(slot12:getIntimacy() + slot2)
+								slot12:addExp(slot1)
+								slot3:updateShip(slot12)
+								table.insert(slot5, WorldConst.FetchShipVO(slot11.id))
+							end
+
+							return {
+								oldships = slot4,
+								newships = slot5
+							}
+						end(slot10, slot3, slot0.intimacy))
+					end
 				end
+
+				slot6 = PlayerConst.addTranDrop(slot0.drops)
+
+				uv1:commited()
+				uv2:updateTask(uv1)
+				uv2:riseTaskFinishCount()
+				uv0:UpdateProgress(uv1.config.complete_stage)
+
+				if uv3 then
+					uv4:RemoveItem(uv1.config.complete_parameter[1], uv1:getMaxProgress())
+				end
+
+				uv5:sendNotification(GAME.WORLD_SUMBMIT_TASK_DONE, {
+					task = uv1,
+					drops = slot6,
+					expfleets = slot2
+				})
 			else
-				table.insert(slot1, slot2(slot4, slot2, slot3))
+				pg.TipsMgr.GetInstance():ShowTips(errorTip("task_submitTask", slot0.result))
 			end
-
-			slot4 = {}
-
-			for slot8, slot9 in ipairs(slot0.drops) do
-				table.insert(slot4, slot10)
-				slot4:sendNotification(GAME.ADD_ITEM, Item.New({
-					type = slot9.type,
-					id = slot9.id,
-					count = slot9.number
-				}))
-			end
-
-			slot0:commited()
-			slot0.commited:updateTask(slot0)
-			slot0.commited.updateTask:riseTaskFinishCount()
-
-			slot5 = nil
-
-			slot5()
-
-			if slot5 then
-				slot6()
-			end
-
-			return
-		end
-
-		pg.TipsMgr.GetInstance():ShowTips(errorTip("task_submitTask", slot0.result))
+		end)
 	end)
 end
 
-return class("WorldSubmitTaskCommand", pm.SimpleCommand)
+return slot0

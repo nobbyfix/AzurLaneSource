@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "驱逐-战术-命中II",
 	init_effect = "",
-	id = 412820,
+	name = "驱逐-战术-命中II",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 412820,
 	icon = 412820,
 	last_effect = "",
 	effect_list = {

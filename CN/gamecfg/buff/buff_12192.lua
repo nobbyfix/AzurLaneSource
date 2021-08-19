@@ -1,7 +1,7 @@
 return {
+	time = 0,
 	name = "",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -23,8 +23,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 12193,
-				target = "TargetSelf",
 				time = 2,
+				target = "TargetSelf",
 				quota = 10
 			}
 		}

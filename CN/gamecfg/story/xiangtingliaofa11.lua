@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/boom2",
-			side = 0,
-			dir = 1,
-			bgm = "story-6",
 			actor = 103160,
+			side = 0,
+			bgm = "story-6",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "坚固也要有个限度！差不多该给我倒下了吧！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -64,8 +64,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 1,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "唉，你们一直耗在我这边真的好么，那边，越烧越厉害了哦？",
 			typewriter = {
 				speed = 0.05,
@@ -107,8 +107,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -120,8 +120,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "？！！",
 			typewriter = {
 				speed = 0.05,
@@ -133,10 +133,10 @@ return {
 			}
 		},
 		{
-			say = "轰——————",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "轰——————",
 			flashN = {
 				color = {
 					1,
@@ -187,8 +187,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "净化者",
+			dir = 1,
 			say = "背后吗…居然是你这个不起眼的小姑娘，大意了…",
 			typewriter = {
 				speed = 0.05,
@@ -200,12 +200,12 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 103160,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "在冰冷的海底为牺牲的同胞赎罪吧，净化者。",
+			dir = 1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -268,8 +268,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -281,8 +281,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "朱诺…做的不错，这样大家也会对你刮目相看了吧。",
 			typewriter = {
 				speed = 0.05,
@@ -309,8 +309,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -319,8 +319,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "击败了净化者，解除了塞壬对长岛防线的最大威胁，之后的战斗可以放心交给朱诺她们了。",
 			typewriter = {
 				speed = 0.05,
@@ -332,8 +332,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "接下来舰队的目标就是…纽约港——",
 			typewriter = {
 				speed = 0.05,

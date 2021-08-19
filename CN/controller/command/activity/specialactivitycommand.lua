@@ -1,10 +1,10 @@
 slot0 = class("SpecialActivityCommand", pm.SimpleCommand)
 
-slot0.execute = function (slot0, slot1)
+function slot0.execute(slot0, slot1)
 	slot2 = getProxy(ActivityProxy):getActivityById(ActivityConst.ACT_NPC_SHIP_ID)
 
 	if not getProxy(BayProxy).isClearNpc and (not slot2 or slot2:isEnd()) then
-		for slot8, slot9 in pairs(slot4) do
+		for slot8, slot9 in pairs(slot3:getData()) do
 			if slot9:isActivityNpc() then
 				slot0:unloadEquipments(slot9)
 				slot0:checkChapters(slot9)
@@ -16,27 +16,33 @@ slot0.execute = function (slot0, slot1)
 
 		slot3.isClearNpc = true
 	end
+
+	if getProxy(ActivityProxy):getActiveBannerByType(GAMEUI_BANNER_10) then
+		slot5 = pg.item_data_statistics[50004]
+		slot5.icon = "Props/" .. slot4.pic
+		slot6 = string.split(slot4.param, "|")
+		slot5.name = slot6[1]
+		slot5.display = slot6[2]
+	end
 end
 
-slot0.unloadEquipments = function (slot0, slot1)
-	slot2 = getProxy(EquipmentProxy)
-
-	for slot7, slot8 in pairs(slot3) do
+function slot0.unloadEquipments(slot0, slot1)
+	for slot7, slot8 in pairs(slot1.equipments) do
 		if slot8 then
-			if slot8:hasSkin() then
-				slot1:updateEquipmentSkin(slot7, 0)
-				slot2:addEquipmentSkin(slot8.skinId, 1)
-			end
-
 			slot1:updateEquip(slot7, nil)
-			slot2:addEquipmentById(slot8.id, 1)
+			getProxy(EquipmentProxy):addEquipmentById(slot8.id, 1)
+		end
+
+		if slot1:getEquipSkin(slot7) ~= 0 then
+			slot1:updateEquipmentSkin(slot7, 0)
+			slot2:addEquipmentSkin(slot8.skinId, 1)
 		end
 	end
 end
 
-slot0.checkChapters = function (slot0, slot1)
+function slot0.checkChapters(slot0, slot1)
 	if getProxy(ChapterProxy):getActiveChapter() then
-		for slot8, slot9 in pairs(slot4) do
+		for slot8, slot9 in pairs(slot3.fleets) do
 			if slot9:containsShip(slot1.id) then
 				slot0:sendNotification(GAME.CHAPTER_OP, {
 					type = ChapterConst.OpRetreat
@@ -46,18 +52,10 @@ slot0.checkChapters = function (slot0, slot1)
 			end
 		end
 	end
-
-	for slot8, slot9 in pairs(slot4) do
-		for slot14, slot15 in pairs(slot10) do
-			if table.contains(slot15, slot1.id) then
-				table.remove(slot15, table.indexof(slot15, slot1.id))
-			end
-		end
-	end
 end
 
-slot0.checkFormations = function (slot0, slot1)
-	for slot7, slot8 in pairs(slot3) do
+function slot0.checkFormations(slot0, slot1)
+	for slot7, slot8 in pairs(getProxy(FleetProxy):getData()) do
 		if slot8:containShip(slot1) then
 			slot8:removeShip(slot1)
 			slot2:updateFleet(slot8)
@@ -65,8 +63,8 @@ slot0.checkFormations = function (slot0, slot1)
 	end
 end
 
-slot0.checkNavTactics = function (slot0, slot1)
-	for slot7, slot8 in ipairs(slot3) do
+function slot0.checkNavTactics(slot0, slot1)
+	for slot7, slot8 in ipairs(getProxy(NavalAcademyProxy):getStudents()) do
 		if slot8.shipId == slot1.id then
 			slot2:deleteStudent(slot8.id)
 

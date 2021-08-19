@@ -1,12 +1,21 @@
-class("GoBackCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("GoBackCommand", pm.SimpleCommand)
+
+function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
 	slot3 = slot1:getType() or 1
 
-	if getProxy(ContextProxy).getContextCount(slot4) > 1 then
+	if getProxy(ContextProxy):getContextCount() > 1 then
 		slot5 = slot4:popContext()
 		slot6 = nil
 
-		for slot10 = 1, slot3, 1 do
+		for slot10 = 1, slot3 do
+			if slot4:getContextCount() > 0 then
+				slot6 = slot4:popContext()
+			else
+				print("could not pop more context")
+
+				break
+			end
 		end
 
 		slot6:extendData(slot2)
@@ -19,4 +28,4 @@ class("GoBackCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	end
 end
 
-return class("GoBackCommand", pm.SimpleCommand)
+return slot0

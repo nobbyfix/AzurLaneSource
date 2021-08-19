@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "延迟射击",
 	init_effect = "",
-	id = 6361,
+	name = "延迟射击",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 6361,
 	icon = 6360,
 	last_effect = "",
 	effect_list = {

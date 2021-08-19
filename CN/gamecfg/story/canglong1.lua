@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CANGLONG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"与{namecode:93}共度的时光\n\n<size=45>一 自讨苦吃？</size>",
@@ -19,13 +19,13 @@ return {
 		{
 			actor = 307030,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我是{namecode:93}，从今往后，指挥官在做奇怪的事情前，请务必跟我提交书面申请。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -57,9 +57,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "初次见面的时候，就能感觉到她那种不假辞色的严肃。",
 			typewriter = {
 				speed = 0.05,
@@ -67,9 +67,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "想着有她的辅佐或许能提高工作效率吧，于是试着任命她为秘书舰了一段时间……",
 			typewriter = {
 				speed = 0.05,
@@ -77,15 +77,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			say = "港区·指挥室",
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -116,9 +116,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "一早刚来到指挥室——",
 			typewriter = {
 				speed = 0.05,
@@ -142,9 +142,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "一上来就毫不留情啊…………",
 			typewriter = {
 				speed = 0.05,
@@ -174,9 +174,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "得到了冷淡的回应。",
 			typewriter = {
 				speed = 0.05,
@@ -184,13 +184,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "…有点累了，要不要稍微放松一下——",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -243,11 +243,11 @@ return {
 			}
 		},
 		{
-			say = "头上传来了嗡嗡的声音，有点可怕……",
+			soundeffect = "event:/battle/plane",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			soundeffect = "event:/battle/plane",
+			say = "头上传来了嗡嗡的声音，有点可怕……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -258,13 +258,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "嗯…有种搬起石头砸了自己的脚的感觉。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -285,9 +285,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过，在{namecode:93}的督促，工作效率大大提高了也是事实",
 			typewriter = {
 				speed = 0.05,
@@ -295,9 +295,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "能不能和她搞好关系，让她对自己稍微宽容一些呢？",
 			typewriter = {
 				speed = 0.05,

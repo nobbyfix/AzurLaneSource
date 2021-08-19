@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.05
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.061,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.061
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.072
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.083,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.083
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.094,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.094
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.105,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.105
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.116,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.116
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.127,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.127
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.138,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.138
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.15,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "西雅图2·减伤",
 	init_effect = "jinengchufablue",
-	id = 19143,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "减伤",
 	stack = 1,
-	color = "yellow",
+	id = 19143,
 	icon = 19140,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.05,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.05
 			}
 		}
 	}

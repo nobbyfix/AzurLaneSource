@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "MENGFEISIWANSHENG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"混沌的万圣之夜\n\n<size=45>四 狂欢前的换装</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 213021,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 213021,
-			nameColor = "#a9f548",
 			say = "恐怖…换好装备了。姐姐好了吗？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -103,8 +103,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "恐怖…想和姐姐一起参加万圣节的派对…",
 			typewriter = {
@@ -133,13 +133,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -167,8 +167,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这样…就可以了吧",
 			typewriter = {
@@ -184,8 +184,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦哦…万圣节的魔女…很合适",
 			typewriter = {
@@ -201,8 +201,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "终于可以和姐姐一起参加万圣节派对了，恐怖，很开心",
 			typewriter = {
@@ -218,8 +218,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…恐怖觉得开心就好。",
 			typewriter = {
@@ -234,14 +234,14 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			bgName = "bg_night",
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "姐姐…真的不一起参加吗",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -285,8 +285,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…好吧",
 			typewriter = {
@@ -315,15 +315,15 @@ return {
 			}
 		},
 		{
+			actor = 301411,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301411,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我跳~我跳~万圣夜活动的会场是在…",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -348,8 +348,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1,
 					dur = 0.15,
 					x = 0,
@@ -374,15 +374,15 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿嘿~马上就要开始啦！今年的恶作剧之王，非我莫属啦！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -423,11 +423,11 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "胡德阿姨！？哦哦…不在不在，哼哼，我才不怕呢~呸呸~",
 			typewriter = {
 				speed = 0.05,
@@ -439,8 +439,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

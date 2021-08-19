@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "boss mio-akua",
 	init_effect = "",
-	id = 8656,
+	name = "boss mio-akua",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8656,
 	icon = 8656,
 	last_effect = "",
 	effect_list = {

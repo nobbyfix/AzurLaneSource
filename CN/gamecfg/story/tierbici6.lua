@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"融冰\n\n<size=45>六　北方女王的笑容</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "今天的工作比往常都要多，一直到晚上都没有处理完。",
 			typewriter = {
 				speed = 0.05,
@@ -88,11 +88,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "如果你感觉累了的话，就先去休息吧，剩下的工作交给我就行。",
 			typewriter = {
 				speed = 0.05,
@@ -158,11 +158,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "“经常和别人交流？”那是……",
 			typewriter = {
 				speed = 0.05,
@@ -180,11 +180,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 405020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			stopbgm = true,
 			say = "！！",
 			typewriter = {
@@ -197,15 +197,15 @@ return {
 			}
 		},
 		{
+			say = "提尔比茨一瞬间露出了吃惊的表情",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "提尔比茨一瞬间露出了吃惊的表情",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -322,9 +322,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "提尔比茨笑了。",
 			typewriter = {
 				speed = 0.05,

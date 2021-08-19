@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>六 午后的絮库夫·下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,8 +46,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -62,9 +62,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "有什么东西打到了脸上，醒了过来。",
 			typewriter = {
 				speed = 0.05,
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "让巴尔？手里拿着的是…报告书？",
 			typewriter = {
 				speed = 0.05,
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
+			actor = 905010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 905010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "午休时间都结束半小时了，你这家伙还真是悠哉啊。",
 			typewriter = {
 				speed = 0.05,
@@ -120,9 +120,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "顺着让·巴尔示意的方向看去，沙发上，絮库夫正香甜地睡着。",
 			typewriter = {
 				speed = 0.05,
@@ -130,9 +130,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……不该相信她的话的。",
 			typewriter = {
 				speed = 0.05,
@@ -140,11 +140,11 @@ return {
 			}
 		},
 		{
+			actor = 905010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 905010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，要我说就不该让这种懒散的家伙担任秘书舰",
 			typewriter = {
 				speed = 0.05,
@@ -374,9 +374,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "让·巴尔说完就离开了。",
 			typewriter = {
 				speed = 0.05,
@@ -384,9 +384,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过脸上有什么吗？",
 			typewriter = {
 				speed = 0.05,

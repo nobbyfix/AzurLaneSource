@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HAMAN7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"哈曼观察日志\n\n<size=45>七 坦率只有…一瞬间！</size>",
@@ -20,9 +20,9 @@ return {
 			actor = 107050,
 			side = 2,
 			bgName = "bg_story_room",
-			say = "哈曼，指挥官人就在这里，你就为刚才的事诚实道个歉吧？",
-			dir = 1,
 			bgm = "story-1",
+			dir = 1,
+			say = "哈曼，指挥官人就在这里，你就为刚才的事诚实道个歉吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -78,10 +78,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.2,
 					number = 2,
-					type = "shake"
+					dur = 0.2,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -131,10 +131,10 @@ return {
 			},
 			action = {
 				{
-					y = -30,
-					dur = 0.5,
 					number = 1,
-					type = "shake"
+					dur = 0.5,
+					type = "shake",
+					y = -30
 				}
 			}
 		},
@@ -154,9 +154,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "虽然声音非常小，还是能听清哈曼的心声。",
 			typewriter = {
 				speed = 0.05,
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.4,
 					x = 30,
 					number = 3
@@ -213,9 +213,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "能感受到扑过来的哈曼带来的体温。",
 			typewriter = {
 				speed = 0.05,
@@ -257,10 +257,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.1,
 					number = 2,
-					type = "shake"
+					dur = 0.1,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -280,8 +280,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.1,
 					x = 30,
 					number = 3
@@ -304,10 +304,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.5,
 					number = 3,
-					type = "shake"
+					dur = 0.5,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -357,10 +357,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 1,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		},

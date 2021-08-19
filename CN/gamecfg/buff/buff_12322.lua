@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.045
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.045
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.052,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.052
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.052,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.052
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.06
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.06
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.07
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.07
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.077,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.077
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.077,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.077
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.085,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.085
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.085,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.085
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.095,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.095
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.095,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.095
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.102,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.102
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.102,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.102
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.11,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.11
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.11,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.11
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "DMG_FROM_TAG_1_T_1"
+					attr = "DMG_FROM_TAG_1_T_1",
+					number = 0.12
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "DMG_FROM_TAG_2_T_1"
+					attr = "DMG_FROM_TAG_2_T_1",
+					number = 0.12
 				}
 			}
 		}
 	},
-	time = 5,
-	name = "恶毒",
 	init_effect = "",
+	name = "恶毒",
+	time = 5,
 	picture = "",
 	desc = "",
 	stack = 1,

@@ -1,16 +1,16 @@
 return {
-	mode = 2,
-	once = true,
 	id = "LINKPREHEAT15-1",
+	mode = 2,
 	fadein = 1,
+	once = true,
 	scripts = {
 		{
-			side = 2,
-			dir = 1,
-			bgm = "level-uta",
 			actor = 10300060,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "哼哼哼，这件事就交给大姐姐我吧",
+			dir = 1,
+			bgm = "level-uta",
 			flashin = {
 				delay = 0,
 				dur = 0.25,
@@ -33,8 +33,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10300010,
+			dir = 1,
 			say = "芙米露露？难道你真打算自己去吗？",
 			typewriter = {
 				speed = 0.05,
@@ -64,8 +64,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10300060,
+			dir = 1,
 			say = "这么危险的任务，怎么能交给小久和年幼的孩子们呢",
 			typewriter = {
 				speed = 0.05,
@@ -80,8 +80,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10300060,
+			dir = 1,
 			say = "这里还是，让大姐姐来露一手吧（摇",
 			typewriter = {
 				speed = 0.05,
@@ -108,8 +108,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -121,8 +121,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10300040,
+			dir = 1,
 			say = "不愧是芙米露露",
 			typewriter = {
 				speed = 0.05,
@@ -156,8 +156,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10300010,
+			dir = 1,
 			say = "芙米露露……你可千万别乱来哦",
 			typewriter = {
 				speed = 0.05,

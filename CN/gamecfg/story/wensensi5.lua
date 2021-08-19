@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "WENSENSI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"妹妹的变化\n\n<size=45>五 妹妹的决心</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "舰队事务暂时告一段落，大家也终于能够松口气了",
 			typewriter = {
 				speed = 0.05,
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "前一段时间有些冷落了文森斯，从现在开始弥补回来吧",
 			typewriter = {
 				speed = 0.05,
@@ -90,9 +90,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "嗯？今天的文森斯似乎有点不一样，听听她想说什么吧——",
 			typewriter = {
 				speed = 0.05,
@@ -104,11 +104,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官…能告诉我怎么样才能做好秘书舰吗？",
 			typewriter = {
 				speed = 0.05,
@@ -174,11 +174,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "文森斯的脸上露出了前所未有的认真表情。",
 			typewriter = {
@@ -223,11 +223,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "脑海里浮现出文森斯被姐姐们宠溺的模样",
 			typewriter = {
@@ -256,11 +256,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "仔细想想，不管是文森斯还是印第安纳波利斯，从一开始就是港区重要的战力，本来就有能够做出相应贡献的位置",
 			typewriter = {
@@ -273,11 +273,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 103100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "即使文森斯变得比之前更能干了，和姐姐们想要照顾这件事本身也不矛盾吧",
 			typewriter = {
@@ -296,12 +296,12 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 103100,
-			nameColor = "#a9f548",
 			say = "学习…是吗？我明白了！",
 			typewriter = {
 				speed = 0.05,

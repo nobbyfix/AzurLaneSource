@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "首先通过“预订”从{namecode:98}的商店获取喵箱！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -27,6 +27,7 @@ return {
 			}
 		},
 		{
+			delay = 1,
 			waitScene = "AwardInfoLayer",
 			ui = {
 				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",

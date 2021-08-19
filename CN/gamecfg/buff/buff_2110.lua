@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.1
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.1
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.1
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.115,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.115
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.115,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.115
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.115,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.115
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.13,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.13
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.13,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.13
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.13,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.13
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.145,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.145
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.145,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.145
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.145,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.145
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.161,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.161
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.161,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.161
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.161,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.161
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.177,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.177
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.177,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.177
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.177,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.177
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.194,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.194
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.194,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.194
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.194,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.194
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.212,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.212
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.212,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.212
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.212,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.212
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.23,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.23
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.23,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.23
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.23,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.23
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.25,
-					attr = "DMG_TAG_EHC_T_14"
+					attr = "DMG_TAG_EHC_T_14",
+					number = 0.25
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.25,
-					attr = "DMG_TAG_EHC_T_15"
+					attr = "DMG_TAG_EHC_T_15",
+					number = 0.25
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.25,
-					attr = "DMG_TAG_EHC_T_16"
+					attr = "DMG_TAG_EHC_T_16",
+					number = 0.25
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "袭扰战术",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "对自爆船、鱼雷艇、运输舰伤害提高",
 	stack = 1,
@@ -362,8 +362,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "DMG_TAG_EHC_T_14"
+				attr = "DMG_TAG_EHC_T_14",
+				number = 0.1
 			}
 		},
 		{
@@ -372,8 +372,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "DMG_TAG_EHC_T_15"
+				attr = "DMG_TAG_EHC_T_15",
+				number = 0.1
 			}
 		},
 		{
@@ -382,8 +382,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "DMG_TAG_EHC_T_16"
+				attr = "DMG_TAG_EHC_T_16",
+				number = 0.1
 			}
 		}
 	}

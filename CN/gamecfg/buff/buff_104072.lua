@@ -17,8 +17,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.15,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -44,8 +44,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.166,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -71,8 +71,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.182,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -98,8 +98,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.198,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -125,8 +125,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.214,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -152,8 +152,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.23,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -179,8 +179,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.246,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -206,8 +206,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.264,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -233,8 +233,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.282,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -260,8 +260,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.3,
 					attr = "cri",
+					number = 0.3,
 					index = {
 						1
 					}
@@ -269,14 +269,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "描边大师",
 	init_effect = "",
-	id = 104072,
+	name = "描边大师",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 104072,
 	icon = 104070,
 	last_effect = "",
 	effect_list = {
@@ -296,8 +296,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 0.15,
 				attr = "cri",
+				number = 0.15,
 				index = {
 					1
 				}

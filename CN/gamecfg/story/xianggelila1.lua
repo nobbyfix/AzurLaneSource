@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纪行的藏红花\n\n<size=45>一　回忆</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "早晨·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "早晨·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "和秘书舰香格里拉一起工作",
 			typewriter = {
 				speed = 0.05,
@@ -60,11 +60,11 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "——您遇上什么麻烦了吗？",
 			typewriter = {
 				speed = 0.05,
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 107380,
-			nameColor = "#a9f548",
 			say = "原来如此，昨晚审批的部分文件忘记收在哪里了是吧 ",
 			typewriter = {
 				speed = 0.05,
@@ -102,8 +102,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我明白了，请先不要着急，我为您泡了一杯安神的草药茶，请用",
 			typewriter = {
@@ -116,15 +116,15 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "——现在能回忆一下需要的文件大概是什么样子的吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -181,9 +181,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…如此这般，自从香格里拉担任秘书舰以后，她的“记录”给这边的工作提供了不少帮助",
 			typewriter = {
 				speed = 0.05,
@@ -198,8 +198,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……说起来，自从来到这个港区之后，真的认识了很多的伙伴呢",
 			typewriter = {
@@ -228,11 +228,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "香格里拉从随时带在身边的相册里取出了一张照片",
 			typewriter = {
@@ -251,12 +251,12 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 107380,
-			nameColor = "#a9f548",
 			say = "名字是“伙伴”，背面的文字是“香格里拉，第一次发小脾气的结果”",
 			typewriter = {
 				speed = 0.05,
@@ -303,8 +303,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "从现在看来还真是挺可笑的呢，呵呵",
 			typewriter = {
@@ -317,9 +317,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "正如她所说，在香格里拉刚到母港的时候，确实有一种所有行动都围着“埃塞克斯”转的感觉",
 			typewriter = {
 				speed = 0.05,

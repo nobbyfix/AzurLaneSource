@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESIBOSS2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"特别演习·埃塞克斯级\n\n<size=45>二　独立的奋斗</size>",
@@ -19,16 +19,16 @@ return {
 		{
 			expression = 2,
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_nepu1",
 			bgm = "level",
 			actor = 107220,
 			nameColor = "#a9f548",
 			say = "唔…比想象中的更困难啊……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -72,8 +72,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "果然还是身为轻型航母的限制吗……",
 			typewriter = {
@@ -86,12 +86,12 @@ return {
 			}
 		},
 		{
-			say = "独立小姐，能稍微打扰一下吗？",
+			actor = 107380,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "独立小姐，能稍微打扰一下吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -125,8 +125,8 @@ return {
 			expression = 4,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107380,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "是的。可能会有些冒犯，我想…我可以帮独立小姐你分析一下，你在演习中存在的一些问题。",
 			typewriter = {
@@ -158,8 +158,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107380,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "独立小姐，你是不是有点…太过心急了？继续这种战斗方式的话，可能接下来会变得更加辛苦哦？",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "太过…心急吗…？嗯…我知道了。谢谢你的提醒…",
 			typewriter = {
@@ -224,8 +224,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（但是，要怎样才能和队伍的大家配合好……）",
 			typewriter = {
@@ -238,11 +238,11 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哟，独立！怎么在这一个人发呆啊，是在烦恼刚才演习的事么？",
 			typewriter = {
 				speed = 0.05,
@@ -254,8 +254,8 @@ return {
 			},
 			action = {
 				{
-					y = 67.5,
 					type = "shake",
+					y = 67.5,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -267,8 +267,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（克利夫兰…？唔……要向她求教一下吗…作为首舰的她说不定会在这上面有什么心得……）",
 			typewriter = {
@@ -297,17 +297,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 102090,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 102090,
-			nameColor = "#a9f548",
 			say = "啊啊，和其他人的配合问题吗？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -332,11 +332,11 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这个嘛……",
 			typewriter = {
 				speed = 0.05,
@@ -348,8 +348,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -390,11 +390,11 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸？你，你们是什么时候出现的？",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -499,8 +499,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦…诶？现在吗？但是之后还有演习——",
 			typewriter = {
@@ -513,8 +513,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -542,8 +542,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦，哦……",
 			typewriter = {
@@ -572,11 +572,11 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不对等等，明明最开始倾听烦恼的是我，排忧解难的机会却被抢走了！",
 			typewriter = {
 				speed = 0.05,
@@ -588,8 +588,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

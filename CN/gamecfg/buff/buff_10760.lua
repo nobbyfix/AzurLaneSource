@@ -72,12 +72,12 @@ return {
 	desc_get = "与宁海、平海同时出击时，队伍中逸仙、宁海、平海受到伤害降低8.0%(满级20.0%)，回避率提高15.0%(满级30.0%)",
 	name = "东煌之绊",
 	init_effect = "",
-	id = 10760,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "与宁海、平海同时出击时，队伍中逸仙、宁海、平海受到伤害降低$1，回避率提高$2",
 	stack = 1,
-	color = "yellow",
+	id = 10760,
 	icon = 10760,
 	last_effect = "",
 	effect_list = {
@@ -87,19 +87,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 10760,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					502021,
-					502022,
-					502023,
-					502024,
-					502031,
-					502032,
-					502033,
-					502034
+				skill_id = 10760,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Ning Hai-Class"
 				}
 			}
 		}

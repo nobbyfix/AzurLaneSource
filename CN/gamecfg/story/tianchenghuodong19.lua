@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIANCHENGHUODONG19",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
 			stopbgm = true,
+			side = 2,
 			bgName = "bg_story_tiancheng6",
 			dir = 1,
 			say = "咕噜…咕噜噜…….",
@@ -47,12 +47,12 @@ return {
 			}
 		},
 		{
-			say = "{namecode:92}，你可终于睡醒了啊？",
+			actor = 307010,
 			side = 1,
 			bgName = "bg_story_tiancheng6",
-			dir = -1,
-			actor = 307010,
 			nameColor = "#ff0000",
+			dir = -1,
+			say = "{namecode:92}，你可终于睡醒了啊？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -243,12 +243,12 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 1,
 			bgName = "bg_story_tiancheng6",
+			nameColor = "#ff0000",
 			dir = -1,
 			blackBg = true,
-			actor = 307010,
-			nameColor = "#ff0000",
 			say = "很快就能见到「那位大人」了哦，呵呵呵….",
 			typewriter = {
 				speed = 0.05,

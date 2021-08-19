@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XINNIAN4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -218,8 +218,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "我在……这里",
 			typewriter = {
 				speed = 0.05,
@@ -231,11 +231,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "呜哇哇！{namecode:6}、{namecode:6}？",
-			dir = 1,
 			actor = 401230,
+			side = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜哇哇！{namecode:6}、{namecode:6}？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -250,9 +250,9 @@ return {
 			},
 			shake = {
 				speed = 10,
-				y = 10,
+				number = 2,
 				x = 0,
-				number = 2
+				y = 10
 			}
 		},
 		{
@@ -289,8 +289,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "到{namecode:89}那边取东西，花了一点时间……",
 			typewriter = {
 				speed = 0.05,
@@ -320,8 +320,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "拜托{namecode:89}做的，想送给大家…不过今年时间不够，只有…一套…",
 			typewriter = {
 				speed = 0.05,
@@ -393,10 +393,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "{namecode:6} & Z23",
 			hideOther = true,
+			actorShadow = true,
+			actorName = "{namecode:6} & Z23",
+			side = 0,
 			dir = 1,
 			actor = 301050,
 			nameColor = "#a9f548",
@@ -434,16 +434,16 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 201210,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "嘿嘿嘿，你喊破了喉咙也没用的，我脱！",
+			dir = 1,
+			blackBg = true,
+			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -468,14 +468,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 301050,
 			side = 0,
 			nameColor = "#a9f548",
+			actorName = "{namecode:6}",
 			dir = 1,
 			blackBg = true,
-			actor = 301050,
-			actorName = "{namecode:6}",
 			say = "拉菲的皮肤…又白又滑——",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -486,30 +486,13 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 101170,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "好冷…好痒——",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			withoutPainting = true,
-			side = 0,
 			dir = 1,
 			blackBg = true,
-			actor = 401230,
-			nameColor = "#a9f548",
-			say = "总觉得有哪里不对…算了——",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -520,14 +503,31 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
-			actor = 201210,
+			actor = 401230,
+			side = 0,
 			nameColor = "#a9f548",
+			say = "总觉得有哪里不对…算了——",
+			dir = 1,
+			blackBg = true,
+			withoutPainting = true,
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 201210,
+			side = 2,
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿，换装完成～拉菲，感觉如何～？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -567,12 +567,12 @@ return {
 			}
 		},
 		{
-			say = "但是，很可爱",
+			actor = 301050,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301050,
 			actorName = "{namecode:6}",
+			dir = 1,
+			say = "但是，很可爱",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -620,8 +620,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "下次，要准备大家的份",
 			typewriter = {
 				speed = 0.05,
@@ -681,8 +681,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "那就从动画鉴赏会开始——\t",
 			typewriter = {
 				speed = 0.05,
@@ -694,10 +694,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "众人",
 			hideOther = true,
+			actorShadow = true,
+			actorName = "众人",
+			side = 0,
 			actor = 401230,
 			nameColor = "#a9f548",
 			say = "……",

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN02",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"鞍山的绘图日记\n\n<size=45>二　港区不可思议</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这里要涂上这个…",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀～差不多就好了嘛～反正差一点影响不大啦～",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀～差不多就好了嘛～反正差一点影响不大啦～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -118,15 +118,15 @@ return {
 			}
 		},
 		{
+			actor = 100010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 100010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "purin！哒哒哒哒哒！我跑～今天的港区也没有异常～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
+			actor = 100000,
 			side = 1,
 			bgName = "bg_story_school",
-			say = "buli！姐姐今天还是一样精神！不过我也不会输的～",
-			dir = 1,
-			actor = 100000,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "buli！姐姐今天还是一样精神！不过我也不会输的～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -195,12 +195,12 @@ return {
 			}
 		},
 		{
-			say = "“港区不可思议”之一的布里酱？",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "“港区不可思议”之一的布里酱？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -247,15 +247,15 @@ return {
 			}
 		},
 		{
+			actor = 501030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，颜料…又不够了呢…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -280,12 +280,12 @@ return {
 			}
 		},
 		{
-			say = "好～这次就让我去补充颜料吧～",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "好～这次就让我去补充颜料吧～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

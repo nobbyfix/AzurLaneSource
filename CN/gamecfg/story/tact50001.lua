@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -22,8 +22,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "虽然敌方兵力并不雄厚，然而芝加哥和中途汇合的巴格莱毕竟是单枪匹马，当她们最终遭遇敌方的主力舰队时，身上已经带了不少伤……",
 			typewriter = {

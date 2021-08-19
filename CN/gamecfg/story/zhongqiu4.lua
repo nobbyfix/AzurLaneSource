@@ -1,12 +1,12 @@
 return {
 	fadeOut = 1.5,
-	once = true,
-	fadeType = 1,
-	fadein = 1.5,
 	mode = 2,
 	noWaitFade = true,
+	once = true,
+	fadeType = 1,
 	id = "ZHONGQIU4",
 	updateOnBegin = 1,
+	fadein = 1.5,
 	scripts = {
 		{
 			actor = 107030,
@@ -107,7 +107,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "既是如此亦是有缘，时候也不早了，两位不介意的话，一起留下来吃晚餐吧。今天是我国的传统节日——中秋哦",
+			say = "既是如此亦是有缘，时候也不早了，两位不介意的话，一起留下来吃晚餐吧。今天是东煌的传统节日——中秋哦",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -193,14 +193,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 107030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "姐姐，我们也来一起做吧！看看谁做得更好！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -310,13 +310,13 @@ return {
 		{
 			actor = 107030,
 			side = 2,
-			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "呀吼！终于做完啦——咦，我是最慢的？明明我以为有伙伴们的帮助至少能在中流呢……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

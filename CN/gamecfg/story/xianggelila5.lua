@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纪行的藏红花\n\n<size=45>五　战术准备·下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "演习前一日",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "演习前一日",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "演习海域",
 			typewriter = {
 				speed = 0.05,
@@ -108,12 +108,12 @@ return {
 			}
 		},
 		{
-			say = "你好，{namecode:96}小姐，我是最近加入港区的白鹰埃塞克斯级航空母舰香格里拉。",
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "你好，{namecode:96}小姐，我是最近加入港区的白鹰埃塞克斯级航空母舰香格里拉。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -131,8 +131,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "虽然有些唐突，不过能占用你一点时间吗。有点事情想要请教一下…",
 			typewriter = {
@@ -193,11 +193,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "喂——{namecode:95}姐——",
 			typewriter = {
 				speed = 0.05,
@@ -209,8 +209,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -251,15 +251,15 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来如此，想要更加了解自己的对手，于是找到了我们……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -284,11 +284,11 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呵呵，所谓敌人的敌人就是朋友，只是说说的话倒也无妨~",
 			typewriter = {
 				speed = 0.05,
@@ -300,8 +300,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -390,9 +390,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "香格里拉一边听着，一边快速地挥舞着手中的笔",
 			typewriter = {
 				speed = 0.05,
@@ -404,11 +404,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "好快的写字速度…不愧是擅长记录的秘书舰小姐…！",
 			typewriter = {
 				speed = 0.05,
@@ -420,8 +420,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

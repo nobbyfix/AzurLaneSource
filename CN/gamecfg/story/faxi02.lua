@@ -1,17 +1,17 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI02",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
 			actor = 207020,
 			side = 0,
-			say = "侦察机报告称，凯比尔港内共有4艘战列舰、1艘小型航母和6艘驱逐舰，均处于非战斗状态",
-			dir = 2,
 			bgm = "level03",
+			dir = 1,
+			say = "侦察机报告称，凯比尔港内共有4艘战列舰、1艘小型航母和6艘驱逐舰，均处于非战斗状态",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,7 +24,7 @@ return {
 		{
 			actor = 207020,
 			side = 0,
-			dir = 2,
+			dir = 1,
 			say = "但是，港口外围被塞壬的中小型舰队层层包围，看起来像是被保护着，想要进入港口，就必须先突破它们的防御圈了",
 			typewriter = {
 				speed = 0.05,
@@ -38,8 +38,8 @@ return {
 		{
 			actor = 204030,
 			side = 1,
-			say = "果然，曾经的海上骑士们如今也沦落到和塞壬为伍了吗？真是令人唏嘘呀…",
 			dir = 1,
+			say = "果然，曾经的海上骑士们如今也沦落到和塞壬为伍了吗？真是令人唏嘘呀…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

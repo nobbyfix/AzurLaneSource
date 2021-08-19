@@ -1,12 +1,12 @@
 return {
-	time = 9,
-	name = "加斯科涅1",
 	init_effect = "",
-	id = 19251,
+	name = "加斯科涅1",
+	time = 9,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 19251,
 	icon = 19250,
 	last_effect = "",
 	effect_list = {
@@ -17,11 +17,11 @@ return {
 			},
 			arg_list = {
 				check_target = "TargetSelf",
-				skill_id = 19251,
-				targetMaxHPRatio = 0.99,
 				minTargetNumber = 1,
+				targetMaxHPRatio = 0.99,
 				time = 2,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 19251
 			}
 		}
 	}

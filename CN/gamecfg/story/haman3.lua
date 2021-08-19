@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HAMAN3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"哈曼观察日志\n\n<size=45>三 不高兴的理由·中</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "被哈曼赶出指挥室后过了一会儿……",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			bgm = "story-1",
+			say = "被哈曼赶出指挥室后过了一会儿……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,14 +34,14 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			actor = 101250,
 			say = "总，总之先打扫一下指挥室吧……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,17 +62,17 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.2,
 					number = 1,
-					type = "shake"
+					dur = 0.2,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "五分钟后——",
 			typewriter = {
 				speed = 0.05,
@@ -80,14 +80,14 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			actor = 101250,
 			say = "怎，怎么办…要是被指挥官嫌弃了…哈曼就…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -112,8 +112,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.3,
 					x = 30,
 					number = 3
@@ -151,10 +151,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.2,
 					number = 1,
-					type = "shake"
+					dur = 0.2,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.2,
 					x = 30,
 					number = 3
@@ -183,9 +183,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "哈曼啪啪的拍了拍脸，振作精神。",
 			typewriter = {
 				speed = 0.05,
@@ -212,10 +212,10 @@ return {
 			},
 			action = {
 				{
-					y = -30,
-					dur = 0.25,
 					number = 1,
-					type = "shake"
+					dur = 0.25,
+					type = "shake",
+					y = -30
 				}
 			}
 		},
@@ -235,10 +235,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 2,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				},
 				painting = {
 					alpha = 0.3,
@@ -247,9 +247,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -276,8 +276,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.2,
 					x = 30,
 					number = 3
@@ -285,9 +285,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "哈曼抱着脑袋，十分苦恼的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -329,10 +329,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 2,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -352,17 +352,17 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 2,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（开门）",
 			typewriter = {
 				speed = 0.05,
@@ -389,10 +389,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.1,
 					number = 1,
-					type = "shake"
+					dur = 0.1,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -427,11 +427,11 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,
-			actor = 101250,
 			say = "啊啊啊啊啊啊啊！！！！",
 			typewriter = {
 				speed = 0.05,
@@ -443,8 +443,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.1,
 					x = 30,
 					number = 4

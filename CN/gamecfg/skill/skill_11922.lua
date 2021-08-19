@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "天之骑士",
 	cd = 0,
-	picture = "0",
-	desc = "Clev",
 	painting = 1,
 	id = 11922,
+	picture = "0",
 	castCV = "skill",
+	desc = "Clev",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetShipTag",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 11921,
 				ship_tag_list = {
@@ -29,10 +29,10 @@ return {
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 11922
 			}

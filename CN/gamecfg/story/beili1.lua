@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>一 兔兔星是什么？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "最近轮到贝利担任秘书舰",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官今天有精神吗~让贝利来给你点兔兔能量吧！",
 			typewriter = {
 				speed = 0.05,
@@ -72,8 +72,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -82,15 +82,15 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，虽然储存萝卜是好事，但储存任务可没有好处哦",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -115,8 +115,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1,
 					dur = 0.2,
 					x = 0,
@@ -125,15 +125,15 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，有邮件！是兔兔星来的吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -158,8 +158,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1,
 					dur = 0.15,
 					x = 0,
@@ -168,9 +168,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…虽然贝利表现出了充分的积极性和与其外表不符的能干不过…",
 			typewriter = {
 				speed = 0.05,
@@ -194,9 +194,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "兔兔星…究竟是什么？该不该问贝利呢…",
 			typewriter = {
 				speed = 0.05,
@@ -220,11 +220,11 @@ return {
 			}
 		},
 		{
+			actor = 101270,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101270,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿，告诉贝利，让贝利用兔兔星的智慧帮你解决烦恼吧！",
 			typewriter = {
 				speed = 0.05,

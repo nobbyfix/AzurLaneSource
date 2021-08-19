@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "",
 	init_effect = "",
-	id = 11480,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 11480,
 	icon = 11480,
 	last_effect = "",
 	effect_list = {
@@ -27,13 +27,13 @@ return {
 				"onTeammateHpRatioUpdate"
 			},
 			arg_list = {
-				skill_id = 11480,
-				targetMaxHPRatio = 0.2,
 				minTargetNumber = 1,
-				exceptCaster = true,
 				hpUpperBound = 0.2,
+				targetMaxHPRatio = 0.2,
 				target = "TargetSelf",
+				exceptCaster = true,
 				quota = 1,
+				skill_id = 11480,
 				check_target = {
 					"TargetAllHelp",
 					"TargetPlayerVanguardFleet",
@@ -48,8 +48,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 11484,
-				time = 20,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 20
 			}
 		}
 	}

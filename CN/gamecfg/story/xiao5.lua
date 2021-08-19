@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAO5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"忍者修行之路？\n\n<size=45>五　突如其来的黑暗</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "舰队的事务有点多，看起来似乎要额外花点时间才能在今天之内处理完毕。",
 			typewriter = {
 				speed = 0.05,
@@ -104,11 +104,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，一起加油吧！",
 			typewriter = {
 				speed = 0.05,
@@ -120,8 +120,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -130,9 +130,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "{namecode:11}看起来充满了干劲",
 			typewriter = {
 				speed = 0.05,
@@ -140,15 +140,15 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！这样一来就全部完成了！",
 			flashout = {
-				dur = 0.4,
 				black = true,
+				dur = 0.4,
 				alpha = {
 					0,
 					1
@@ -189,9 +189,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "看了一眼窗外，不知何时天空已然群星点点。",
 			typewriter = {
 				speed = 0.05,
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
 			say = "？！",
@@ -226,8 +226,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "整个指挥室突然变得一片漆黑。",
 			typewriter = {
@@ -236,8 +236,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -248,8 +248,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "突然感觉整个人被抱住了。",
 			typewriter = {
@@ -258,8 +258,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -270,8 +270,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -282,8 +282,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -294,8 +294,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "能感觉到{namecode:11}的身体在不停地发抖。",
 			typewriter = {
@@ -310,8 +310,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -322,8 +322,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:11}",
 			side = 2,
+			actorName = "{namecode:11}",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,

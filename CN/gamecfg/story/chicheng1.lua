@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHICHENG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"彼岸花之恋？\n\n<size=45>一 赤色的秘书舰</size>",
@@ -17,22 +17,22 @@ return {
 			}
 		},
 		{
-			say = "港区·指挥室",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			bgm = "story-1",
+			say = "港区·指挥室",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:91}",
 			say = "指挥官大人，下次开会要用的资料给你拿过来了哦。…没错，就放在老地方。有时间记得确认一下～",
 			typewriter = {
@@ -45,11 +45,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:91}",
 			say = "当然，{namecode:91}都已经仔细检查筛选过了。真是的…指挥官大人明明只要放轻松，将一切都交给{namecode:91}就好了…",
 			typewriter = {
@@ -62,11 +62,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:91}",
 			say = "…果然是怕{namecode:91}太累，在担心我吧～{namecode:91}好感动～",
 			typewriter = {
@@ -79,9 +79,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（敲门）",
 			typewriter = {
 				speed = 0.05,
@@ -105,11 +105,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:91}",
 			say = "呜…企、企业…",
 			typewriter = {
@@ -122,8 +122,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					dur = 0.1,
 					x = 0,
 					number = 1
@@ -131,12 +131,12 @@ return {
 			}
 		},
 		{
-			say = "唔，{namecode:91}……",
+			actor = 107060,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "唔，{namecode:91}……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -151,9 +151,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "{namecode:91}不经意地微微捏紧了拳头。指挥室的气氛突然凝重……",
 			typewriter = {
 				speed = 0.05,
@@ -171,12 +171,12 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			actorName = "{namecode:91}",
-			side = 2,
 			bgName = "bg_story_task",
+			side = 2,
 			dir = 1,
 			optionFlag = 1,
-			actor = 307010,
 			nameColor = "#a9f548",
 			say = "指挥官大人…哼，我知道，现在我们并非敌人，而是同伴。算了，有什么报告就快说吧。",
 			typewriter = {
@@ -189,13 +189,13 @@ return {
 			}
 		},
 		{
-			say = "不用你说我也打算这么做就是……",
+			actor = 107060,
 			side = 1,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 107060,
-			nameColor = "#a9f548",
+			say = "不用你说我也打算这么做就是……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -210,18 +210,18 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
 			bgName = "bg_story_task",
 			actorName = "{namecode:91}",
 			dir = 1,
 			optionFlag = 2,
-			actor = 307010,
 			nameColor = "#a9f548",
 			say = "…………（咬牙切齿）",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.15,
 					x = 15,
 					number = 4
@@ -248,15 +248,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
-			dir = 1,
 			actor = 107060,
+			side = 2,
+			bgName = "bg_story_task",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "报告完毕…我也不打算在这里久留，先告辞了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -281,9 +281,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（关门）",
 			typewriter = {
 				speed = 0.05,
@@ -291,11 +291,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:91}",
 			say = "哈啊…指挥官不用担心，{namecode:91}可是很公私分明的…不会打扰指挥官的公务哦。",
 			typewriter = {
@@ -308,12 +308,12 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			actorName = "{namecode:91}",
-			side = 2,
 			bgName = "bg_story_task",
+			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 307010,
 			nameColor = "#a9f548",
 			say = "没错！就算之后准备把害虫都“打扫”干净，把指挥官变成{namecode:91}的…在工作时间还是…对吧？",
 			typewriter = {

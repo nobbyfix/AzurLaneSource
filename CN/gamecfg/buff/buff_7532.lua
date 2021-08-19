@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "传颂之物前排雷伤2%",
 	init_effect = "jinengchufared",
-	id = 7532,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "传颂之物前排雷伤2%",
 	stack = 1,
-	color = "red",
+	id = 7532,
 	icon = 7530,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onTorpedoWeaponBulletCreate"
 			},
 			arg_list = {
-				number = 0.02,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.02
 			}
 		}
 	}

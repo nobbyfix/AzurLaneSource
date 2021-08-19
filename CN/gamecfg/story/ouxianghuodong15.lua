@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG15",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "舰装实验海域",
+			bgm = "azumaster-ins",
 			side = 2,
 			bgName = "bg_ouxianglevel",
 			dir = 1,
-			bgm = "azumaster-ins",
+			say = "舰装实验海域",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -54,11 +54,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actorName = "大家",
+			dir = 1,
 			say = "哦哦哦哦！",
 			dialogShake = {
 				speed = 0.09,
@@ -91,11 +91,11 @@ return {
 			}
 		},
 		{
+			actor = 301014,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 301014,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "让世界都感到震撼的特型偶像，{namecode:2}，登场！元气满满的{namecode:2}是不会输给任何人的！",
 			typewriter = {
 				speed = 0.05,
@@ -107,8 +107,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -120,8 +120,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 301014,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，特型驱逐舰的各位也来加油了吗！喂~{namecode:6}~！{namecode:13}、{namecode:14}~！我会加油的~！",
 			typewriter = {
@@ -201,13 +201,13 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "埃尔德里奇…！看起来又是名强敌啊！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -235,8 +235,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "剩下两场战斗，再坚持一下就好",
 			typewriter = {
@@ -265,11 +265,11 @@ return {
 			}
 		},
 		{
+			actor = 403070,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 403070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，不是挺好的吗！上吧！",
 			typewriter = {
 				speed = 0.05,
@@ -281,8 +281,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

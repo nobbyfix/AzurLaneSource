@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG9-2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "叮叮——",
-			side = 1,
 			dir = 1,
+			side = 1,
 			bgm = "nagato-map",
+			say = "叮叮——",
 			flashin = {
 				delay = 1,
 				dur = 1,
@@ -155,9 +155,9 @@ return {
 			}
 		},
 		{
+			dir = -1,
 			actorName = "{namecode:91}",
 			side = 2,
-			dir = -1,
 			say = "太好了！！听到了吗，姐姐就要升任旗舰了，姐姐！！！",
 			typewriter = {
 				speed = 0.05,
@@ -206,9 +206,9 @@ return {
 		{
 			actor = 305050,
 			nameColor = "#a9f548",
-			dir = -1,
 			withoutActorName = true,
 			side = 2,
+			dir = -1,
 			say = "突然，{namecode:74}的语气变得沉重了起来，刚才还在欢呼雀跃的人群也开始逐渐安静了下来。",
 			typewriter = {
 				speed = 0.05,

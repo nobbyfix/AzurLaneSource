@@ -2,10 +2,10 @@ return {
 	uiEffect = "",
 	name = "全体回满血",
 	cd = 999999,
-	picture = "0",
-	desc = "全体回满血",
 	painting = 0,
 	id = 8519,
+	picture = "0",
+	desc = "全体回满血",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -16,10 +16,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillHeal",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				exceptCaster = true,
 				maxHPRatio = 1

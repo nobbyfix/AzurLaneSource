@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILIWANSHENGJIE4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"捣蛋万圣夜！\n\n<size=45>四 嫌麻烦的魔女</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
+			actor = 205040,
 			side = 2,
+			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 205040,
-			nameColor = "#a9f548",
 			say = "姐姐，你听说了港区里幽灵小姐的传闻吗？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "从克利夫兰那里听说的吧，这种一眼看上去就像是恶作剧的东西…",
+			actor = 205030,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 205030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "从克利夫兰那里听说的吧，这种一眼看上去就像是恶作剧的东西…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -120,11 +120,11 @@ return {
 			}
 		},
 		{
+			actor = 205030,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 205030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那、那种让人害羞的装扮…",
 			typewriter = {
 				speed = 0.05,
@@ -136,8 +136,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -162,12 +162,12 @@ return {
 			}
 		},
 		{
-			say = "正好这里有一套魔女的服装呢～",
+			actor = 205040,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 205040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "正好这里有一套魔女的服装呢～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -182,11 +182,11 @@ return {
 			}
 		},
 		{
+			actor = 205030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 205030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这是哪里拿来的…等、等下,至少让我自己换啊！",
 			typewriter = {
 				speed = 0.05,
@@ -198,16 +198,16 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
 					number = 2
 				},
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.1,
 					x = 0,
@@ -216,15 +216,15 @@ return {
 			}
 		},
 		{
+			actor = 205031,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 205031,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜…真是灾难…罗德尼那家伙，也不知道在打什么主意",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -252,8 +252,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "“三个魔女”什么的…反正不过是个无聊的传闻，就随便走走应付下好了——",
 			typewriter = {
@@ -266,11 +266,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "捕获第三名魔女啦！！",
 			typewriter = {
 				speed = 0.05,
@@ -282,8 +282,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -295,8 +295,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哇啊啊啊！——原来是你们啊…",
 			typewriter = {
@@ -309,8 +309,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -340,8 +340,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊？噢，是、是吧……",
 			typewriter = {
@@ -357,8 +357,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（糟了，下意识就回应了）",
 			typewriter = {
@@ -405,12 +405,12 @@ return {
 			}
 		},
 		{
+			actor = 205031,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205031,
-			nameColor = "#a9f548",
 			say = "（虽然肯定只是恶作剧，不过也不好放着这两个孩子不管…先跟上去吧）",
 			typewriter = {
 				speed = 0.05,

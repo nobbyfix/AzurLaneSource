@@ -2,19 +2,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68561
 				}
@@ -24,19 +24,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68562
 				}
@@ -46,19 +46,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68563
 				}
@@ -68,19 +68,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68564
 				}
@@ -90,19 +90,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68565
 				}
@@ -112,19 +112,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68566
 				}
@@ -134,28 +134,28 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68567
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68567,
 					delay = 1
@@ -166,28 +166,28 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68568
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68568,
 					delay = 1
@@ -198,28 +198,28 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68569
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68569,
 					delay = 1
@@ -230,28 +230,28 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 12381
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68570
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 68570,
 					delay = 1
@@ -262,11 +262,11 @@ return {
 	uiEffect = "",
 	name = "",
 	cd = 0,
-	picture = "1",
-	desc = "上浮弹幕",
 	painting = 1,
 	id = 12380,
+	picture = "1",
 	castCV = "skill",
+	desc = "上浮弹幕",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -277,10 +277,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 68561
 			}

@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 101020,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			bgm = "azumaster-ins",
-			actor = 101020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Polaris的各位和萨拉托加妹妹都加油啊！",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,11 +40,11 @@ return {
 			}
 		},
 		{
+			actor = 101020,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 101020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇哇！？对、对不起！我有点太兴奋了……",
 			typewriter = {
 				speed = 0.05,
@@ -56,8 +56,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
+			actor = 101020,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 101020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯！我一想自己是在和列克星敦小姐一起加油，我就感觉全身都有无穷的力气！",
 			typewriter = {
 				speed = 0.05,
@@ -98,8 +98,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -126,13 +126,13 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 403070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "说起来，一开始练习的时候我就想问了，为什么是我们几个被选到Polaris里了？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -190,8 +190,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			say = "说起来是这样的……不过听说不是随机吗",
 			typewriter = {
 				speed = 0.05,
@@ -206,8 +206,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "加斯科涅拥有根据各种状况替换行动模式的功能，很适合用于兵装性能测试",
 			typewriter = {
 				speed = 0.05,
@@ -222,8 +222,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "另外关于歌声，可以根据龙骨微调整稍微改变外形及音域，对于音乐和舰装的测试皆有裨益",
 			typewriter = {
 				speed = 0.05,
@@ -238,8 +238,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			say = "虽然我不大懂你的意思，不过你说的就是你自己的事吧",
 			typewriter = {
 				speed = 0.05,
@@ -254,8 +254,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			say = "我不像俾斯麦这方面没什么知识，只能猜就是",
 			typewriter = {
 				speed = 0.05,
@@ -315,8 +315,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "也就说就这样继续就好了吧",
 			typewriter = {
 				speed = 0.05,

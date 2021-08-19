@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILIWANSHENGJIE5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"捣蛋万圣夜！\n\n<size=45>五 棺材里的帮手？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·仓库",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·仓库",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,13 +62,13 @@ return {
 			}
 		},
 		{
-			say = "这样喊的话，幽灵小姐会被吓跑吧……",
+			actor = 302051,
 			side = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 302051,
 			actorName = "{namecode:48}",
+			say = "这样喊的话，幽灵小姐会被吓跑吧……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -101,8 +101,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -114,8 +114,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "幽灵小姐——！快……嗯？那是什么？棺材？",
 			typewriter = {
@@ -146,8 +146,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -156,11 +156,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "总之先打开来看看吧！我开！",
 			typewriter = {
 				speed = 0.05,
@@ -172,8 +172,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.8,
 					dur = 0.1,
 					x = 0,
@@ -185,8 +185,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "等——",
 			typewriter = {
@@ -202,8 +202,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哇、吓你一跳。",
 			typewriter = {
@@ -216,8 +216,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -243,8 +243,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -256,8 +256,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦哦！突然出现了一个人呢！",
 			typewriter = {
@@ -323,8 +323,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…为什么恐怖你会在仓库的棺材里？",
 			typewriter = {
@@ -356,8 +356,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "恐怖不能说，恐怖答应了要保密…",
 			typewriter = {
@@ -370,11 +370,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊！快看那边！",
 			typewriter = {
 				speed = 0.05,
@@ -386,8 +386,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -414,8 +414,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.3,
 					dur = 0.15,
 					x = 0,
@@ -427,8 +427,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 205031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "是谁？！",
 			typewriter = {
@@ -460,8 +460,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "等下…请带上这个。这个是“魔女的扫把”。",
 			typewriter = {
@@ -477,8 +477,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "刚好一人一把吗…总之得先追上那个幽灵！",
 			typewriter = {
@@ -491,11 +491,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "可别以为自己能从兔兔手上逃走！贝利，追击!",
 			typewriter = {
 				speed = 0.05,
@@ -507,8 +507,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1.2,
 					dur = 1,
 					x = 2250
@@ -519,11 +519,11 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_task",
-			nameColor = "#a9f548",
+			actorName = "{namecode:48}",
 			dir = 1,
 			blackBg = true,
 			actor = 302051,
-			actorName = "{namecode:48}",
+			nameColor = "#a9f548",
 			say = "贝利，跑太快了啦…!",
 			typewriter = {
 				speed = 0.05,

@@ -1,18 +1,18 @@
 return {
-	fadeType = 1,
+	id = "HOLOGUANQIA34",
 	mode = 2,
 	once = true,
-	id = "HOLOGUANQIA34",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			bgm = "holo-sora",
 			actor = 10500020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "天空中的屏障，消失了哎",
+			bgm = "holo-sora",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,8 +71,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500020,
+			dir = 1,
 			say = "按照惯例，先派出航空队侦查一下地形…哎？为什么叫不出侦察机来…？",
 			typewriter = {
 				speed = 0.05,
@@ -87,9 +87,9 @@ return {
 			actor = 307060,
 			nameColor = "#a9f548",
 			side = 2,
+			soundeffect = "event:/battle/plane",
 			dir = 1,
 			say = "这片区域中舰载机好像只能贴着近海飞行…不妙，这样下去会迷路的",
-			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,8 +103,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500050,
+			dir = 1,
 			say = "大家快看海面，那些是…黑曜石和…岩浆？！！",
 			typewriter = {
 				speed = 0.05,
@@ -131,8 +131,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -144,8 +144,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500010,
+			dir = 1,
 			say = "就算在原本世界的服务器里，也做不到像这样直接在水面中生成流动的岩浆啊！",
 			typewriter = {
 				speed = 0.05,
@@ -160,8 +160,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500010,
+			dir = 1,
 			say = "塞壬在这里花大力气无视自然法则的目的究竟是…",
 			typewriter = {
 				speed = 0.05,
@@ -176,8 +176,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500060,
+			dir = 1,
 			say = "…前面的那座很高的塔形建筑物，该不会是，祭做的展望台吧？",
 			typewriter = {
 				speed = 0.05,
@@ -207,8 +207,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10500040,
+			dir = 1,
 			say = "可以哦！不过，不知道现在服务器变大之后还能看多远。",
 			typewriter = {
 				speed = 0.05,

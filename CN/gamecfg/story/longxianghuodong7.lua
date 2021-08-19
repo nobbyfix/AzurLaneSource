@@ -1,28 +1,28 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "另一方面，萨拉托加和企业……",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "level",
+			say = "另一方面，萨拉托加和企业……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
+			actor = 107030,
 			nameColor = "#a9f548",
 			side = 2,
+			say = "企业！！！",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			actor = 107030,
-			say = "企业！！！",
 			flashN = {
 				color = {
 					1,
@@ -80,8 +80,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,

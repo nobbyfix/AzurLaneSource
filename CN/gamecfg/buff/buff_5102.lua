@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -300,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -300
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -300,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -300
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -350,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -350
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -350,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -350
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -400
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -400,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -400
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -450
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -450,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -450
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -500
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -500,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -500
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -550
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -550,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -550
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -600
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -600,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -600
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -650,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -650
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -650,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -650
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -700
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -700,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -700
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -800
 				}
 			},
 			{
@@ -253,20 +253,20 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -800,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -800
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "应急战备",
 	init_effect = "",
-	id = 5102,
+	name = "应急战备",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 3,
-	color = "yellow",
+	id = 5102,
 	icon = 5100,
 	last_effect = "",
 	effect_list = {
@@ -277,8 +277,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = -300,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = -300
 			}
 		},
 		{
@@ -288,8 +288,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = -300,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = -300
 			}
 		}
 	}

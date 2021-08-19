@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN07",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 0,
 			dir = 1,
+			side = 0,
 			say = "港区夜晚•指挥室",
 			typewriter = {
 				speed = 0.05,
@@ -31,10 +31,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -45,12 +45,12 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 0,
 			say = "……？",
-			dir = 1,
-			actor = 0,
 			nameColor = "#a9f548",
+			dir = 1,
+			withoutPainting = true,
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -97,10 +97,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,10 +158,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "！！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -189,10 +189,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "（点头）",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -218,8 +218,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "和埃尔德里奇安静地待了很长一段时间，感受到了心灵的治愈",
 			typewriter = {
 				speed = 0.05,
@@ -231,14 +231,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "特派记者格里德利，完成任务回来报告啦！指挥官！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -265,10 +265,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "……！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,14 +294,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哎呀呀，拍到了张好照片呢，这张照片就叫作《圣夜的拥抱》吧，嗯嗯，感觉都可以拿个普利彻奖什么的了呢~",
 			flashout = {
-				dur = 0.35,
 				black = false,
+				dur = 0.35,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DEYIZHI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"德意志的忧郁\n\n<size=45>一　开端</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -83,7 +83,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "而且你身为区区下等生物的仆人，居然还敢冷落主人只顾着工作……",
+			say = "而且你身为区区低等动物的仆人，居然还敢冷落主人只顾着工作……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -94,11 +94,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "限你马上给我找些有趣的事情来，不然我就回去了！",
 			typewriter = {
 				speed = 0.05,
@@ -110,8 +110,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -123,8 +123,8 @@ return {
 			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "……虽然担任了秘书舰，不过德意志还是一如既往的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -138,12 +138,12 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
-			say = "我才不要，下等生物的工作跟我有什么关系。",
+			dir = 1,
+			say = "我才不要，低等动物的工作跟我有什么关系。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -160,11 +160,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就算你用这种眼神看着我也是没用的！",
 			typewriter = {
 				speed = 0.05,
@@ -182,12 +182,12 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
-			say = "……啧，区区下等生物，居然要让我这个主人来帮忙，真是个无可救药的仆人！",
+			dir = 1,
+			say = "……啧，区区低等动物，居然要让我这个主人来帮忙，真是个无可救药的仆人！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -198,8 +198,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -208,12 +208,12 @@ return {
 			}
 		},
 		{
-			say = "不过看在你这么诚心的份上，我就大发慈悲地帮你做些什么好了。",
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "不过看在你这么诚心的份上，我就大发慈悲地帮你做些什么好了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -228,11 +228,11 @@ return {
 			}
 		},
 		{
+			actor = 201220,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 201220,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那、那个，指挥官。",
 			typewriter = {
 				speed = 0.05,
@@ -244,8 +244,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -254,11 +254,11 @@ return {
 			}
 		},
 		{
+			actor = 201220,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 201220,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我是来提交任务报告的……",
 			typewriter = {
 				speed = 0.05,
@@ -270,8 +270,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -280,12 +280,12 @@ return {
 			}
 		},
 		{
-			say = "……",
+			actor = 403040,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -300,11 +300,11 @@ return {
 			}
 		},
 		{
+			actor = 201220,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 201220,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "!…如、如果没有什么别的事的话，我就先走了。",
 			typewriter = {
 				speed = 0.05,
@@ -316,15 +316,15 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					dur = 0.1,
 					x = 0,
 					number = 1
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1,
 					dur = 0.5,
 					x = 1500
@@ -332,9 +332,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……天后飞也似地离开了指挥室。",
 			typewriter = {
 				speed = 0.05,
@@ -342,11 +342,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈哈哈哈，仆人你看到了吗，刚才那只驱逐受惊的眼神！",
 			typewriter = {
 				speed = 0.05,
@@ -358,8 +358,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -400,9 +400,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "德意志似乎找到了作为秘书舰的乐趣。",
 			typewriter = {
 				speed = 0.05,

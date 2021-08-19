@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI0",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 107010,
 			side = 0,
 			bgName = "bg_story_newyork",
-			dir = 1,
-			bgm = "level02",
-			actor = 107010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "天空晴朗，微风，海面能见度极好，是出航的好天气",
+			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,11 +72,11 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_newyork",
-			dir = 1,
-			actor = 202080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "威尔士阁下，舰队已经准备完毕，随时可以出航",
 			typewriter = {
 				speed = 0.05,
@@ -88,8 +88,8 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 0,
 					dur = 0.3,
 					x = 0,

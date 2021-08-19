@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YANZHAN3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"皇家的骑士\n\n<size=45>三 “老女士”的速度</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……干脆就跑过去吧",
 			typewriter = {
 				speed = 0.05,
@@ -98,8 +98,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.3,
 					x = 2250
@@ -107,15 +107,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呼……呼……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1,
 					dur = 0.3,
 					x = 2250
@@ -169,11 +169,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "（等等，这里的地板怎么这么滑？拖地的时间明明不是现在啊？）",
 			typewriter = {
 				speed = 0.05,
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.3,
 					x = 2250
@@ -217,8 +217,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼~哼哼~",
 			typewriter = {
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
-			say = "危险！快闪开！",
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "危险！快闪开！",
 			actorPosition = {
 				x = -2250,
 				y = 0
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.3,
 					x = 2250
@@ -279,8 +279,8 @@ return {
 			expression = 14,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸——呜哇！！",
 			typewriter = {
@@ -293,8 +293,8 @@ return {
 			},
 			action = {
 				{
-					y = -1500,
 					type = "move",
+					y = -1500,
 					delay = 0,
 					dur = 0.2,
 					x = 0
@@ -302,9 +302,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "砰咚",
 			dialogShake = {
 				speed = 0.09,
@@ -324,8 +324,8 @@ return {
 			expression = 9,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "疼疼疼……厌，厌战大人？",
 			typewriter = {
@@ -338,8 +338,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -399,8 +399,8 @@ return {
 			expression = 13,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呼欸？原来已经打扫到走廊了吗？",
 			typewriter = {
@@ -413,8 +413,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -439,11 +439,11 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "非常抱歉，厌战大人，给您添麻烦了。",
 			typewriter = {
 				speed = 0.05,
@@ -455,8 +455,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0.15,
 					dur = 0.3,
 					x = 0,
@@ -468,8 +468,8 @@ return {
 			expression = 14,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "非、非常抱歉呜呜",
 			typewriter = {

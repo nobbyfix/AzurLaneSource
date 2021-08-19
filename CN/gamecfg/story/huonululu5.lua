@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HUONULULU5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"有关火奴鲁鲁的二三事\n\n<size=45>五　火奴鲁鲁的烦恼</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "回到指挥室坐下后，火奴鲁鲁酝酿了好久，才终于开口。",
 			typewriter = {
 				speed = 0.05,
@@ -88,11 +88,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "火奴鲁鲁顿了一下，似乎是羞于开口。",
 			typewriter = {
@@ -121,11 +121,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "完全无法想象自己像其他姐妹舰们那样率直地露出笑容的样子…",
 			typewriter = {
 				speed = 0.05,
@@ -147,11 +147,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			flag = 2,
 			say = "你的兴趣还真是够奇怪的……",
 			typewriter = {
@@ -164,9 +164,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "肩膀被火奴鲁鲁轻轻锤了一下，然后她叹了口气。",
 			typewriter = {
 				speed = 0.05,
@@ -238,11 +238,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，你说我该怎么办才好呢……",
 			typewriter = {
 				speed = 0.05,
@@ -260,11 +260,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……哈？",
 			typewriter = {
 				speed = 0.05,

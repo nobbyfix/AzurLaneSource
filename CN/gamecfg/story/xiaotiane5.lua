@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春风的十字星\n\n<size=45>五  辩解</size>",
@@ -18,13 +18,13 @@ return {
 			}
 		},
 		{
+			actor = 201090,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 201090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "果然还是她吗…",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			say = "还是走到这一步上了吗…",
+			actor = 201080,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "还是走到这一步上了吗…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -199,14 +199,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "众人",
 			say = "盯——",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

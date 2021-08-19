@@ -8,7 +8,8 @@ slot0.VanguardShipType = {
 	ShipType.ZhongXun,
 	ShipType.HangXun,
 	ShipType.LeiXun,
-	ShipType.ChaoXun
+	ShipType.ChaoXun,
+	ShipType.Yunshu
 }
 slot0.MainShipType = {
 	ShipType.ZhanXun,
@@ -35,13 +36,33 @@ slot0.TeamPos = {
 	SUB_CONSORT = "SubConsort"
 }
 
-slot0.TeamToTypeList = function (slot0)
-	if slot0 == slot0.Vanguard then
-		return slot0.VanguardShipType
-	elseif slot0 == slot0.Main then
-		return slot0.MainShipType
-	elseif slot0 == slot0.Submarine then
-		return slot0.SubShipType
+function slot0.TeamToTypeList(slot0)
+	if slot0 == uv0.Vanguard then
+		return uv0.VanguardShipType
+	elseif slot0 == uv0.Main then
+		return uv0.MainShipType
+	elseif slot0 == uv0.Submarine then
+		return uv0.SubShipType
+	end
+end
+
+function slot0.TypeToTeamType(slot0)
+	if table.contains(uv0.VanguardShipType, slot0) then
+		return uv0.Vanguard
+	elseif table.contains(uv0.MainShipType, slot0) then
+		return uv0.Main
+	elseif table.contains(uv0.SubShipType, slot0) then
+		return uv0.Submarine
+	end
+end
+
+function slot0.TeamTypeSortIndex(slot0)
+	if slot0 == uv0.Main then
+		return 1
+	elseif slot0 == uv0.Vanguard then
+		return 2
+	elseif slot0 == uv0.Submarine then
+		return 3
 	end
 end
 

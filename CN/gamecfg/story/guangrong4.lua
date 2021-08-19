@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GUANGRONG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"荣光的间奏曲\n\n<size=45>四 女王事件Ⅱ</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我之所以敢说皇家方舟是清白的，理由有三——",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,16 +82,16 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "诶。",
 			action = {
 				{
-					y = 7.5,
 					type = "shake",
+					y = 7.5,
 					delay = 0,
 					dur = 0.1,
 					X = 0,
@@ -108,42 +108,16 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 205010,
-			nameColor = "#a9f548",
-			say = "诶。",
-			action = {
-				{
-					y = 7.5,
-					type = "shake",
-					delay = 0,
-					dur = 0.1,
-					X = 0,
-					number = 1
-				}
-			},
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "诶。",
 			action = {
 				{
-					y = 7.5,
 					type = "shake",
+					y = 7.5,
 					delay = 0,
 					dur = 0.1,
 					X = 0,
@@ -160,10 +134,36 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
+			actor = 202120,
+			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "诶。",
+			action = {
+				{
+					type = "shake",
+					y = 7.5,
+					delay = 0,
+					dur = 0.1,
+					X = 0,
+					number = 1
+				}
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "一同",
@@ -213,12 +213,12 @@ return {
 			}
 		},
 		{
-			say = "我也有像可爱的妹妹一样——不，比妹妹更重要的伙伴。",
+			actor = 207060,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我也有像可爱的妹妹一样——不，比妹妹更重要的伙伴。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -281,10 +281,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "一同",
@@ -329,10 +329,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "厌战＆贝尔法斯特",
@@ -372,12 +372,12 @@ return {
 			}
 		},
 		{
-			say = "不必客气！小事一桩。……皇家方舟你能被无罪释放真是太好了。",
+			actor = 207060,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "不必客气！小事一桩。……皇家方舟你能被无罪释放真是太好了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

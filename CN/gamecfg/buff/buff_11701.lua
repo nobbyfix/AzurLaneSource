@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 600
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1300,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1300
 				}
 			},
 			{
@@ -37,8 +37,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -47,8 +47,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -2000
 				}
 			}
 		}
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 660
 				}
 			},
 			{
@@ -81,8 +81,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1430,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1430
 				}
 			},
 			{
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -101,8 +101,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1840,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1840
 				}
 			}
 		}
@@ -115,8 +115,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 720
 				}
 			},
 			{
@@ -135,8 +135,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1560,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1560
 				}
 			},
 			{
@@ -145,8 +145,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -155,8 +155,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1680,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1680
 				}
 			}
 		}
@@ -169,8 +169,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 800
 				}
 			},
 			{
@@ -189,8 +189,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1700
 				}
 			},
 			{
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1500
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 860,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 860
 				}
 			},
 			{
@@ -243,8 +243,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1830,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1830
 				}
 			},
 			{
@@ -253,8 +253,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -263,8 +263,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1340,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1340
 				}
 			}
 		}
@@ -277,8 +277,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 920,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 920
 				}
 			},
 			{
@@ -297,8 +297,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1960,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1960
 				}
 			},
 			{
@@ -307,8 +307,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -317,8 +317,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1180,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1180
 				}
 			}
 		}
@@ -331,8 +331,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1000
 				}
 			},
 			{
@@ -351,8 +351,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2100
 				}
 			},
 			{
@@ -361,8 +361,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -371,8 +371,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -1000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -1000
 				}
 			}
 		}
@@ -385,8 +385,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1060,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1060
 				}
 			},
 			{
@@ -405,8 +405,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2230,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2230
 				}
 			},
 			{
@@ -415,8 +415,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -425,8 +425,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -840,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -840
 				}
 			}
 		}
@@ -439,8 +439,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1120,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1120
 				}
 			},
 			{
@@ -459,8 +459,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2360,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2360
 				}
 			},
 			{
@@ -469,8 +469,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -479,8 +479,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -680,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -680
 				}
 			}
 		}
@@ -493,8 +493,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1200
 				}
 			},
 			{
@@ -513,8 +513,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			},
 			{
@@ -523,8 +523,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -4000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = -4000
 				}
 			},
 			{
@@ -533,20 +533,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = -500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "猛进射击",
 	init_effect = "jinengchufared",
-	id = 11701,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "自身防空降低，命中降低，机动提高，炮击提升，航速提升",
 	stack = 1,
-	color = "yellow",
+	id = 11701,
 	icon = 11700,
 	last_effect = "",
 	blink = {
@@ -563,8 +563,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 600,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 600
 			}
 		},
 		{
@@ -583,8 +583,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1300,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1300
 			}
 		},
 		{
@@ -593,8 +593,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -4000,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = -4000
 			}
 		},
 		{
@@ -603,8 +603,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -2000,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = -2000
 			}
 		}
 	}

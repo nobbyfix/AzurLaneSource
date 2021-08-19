@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "13章指挥舰技能",
 	init_effect = "",
-	id = 8631,
+	name = "13章指挥舰技能",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8631,
 	icon = 8631,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 12,
 				target = "TargetSelf",
+				time = 12,
 				skill_id = 8631
 			}
 		}

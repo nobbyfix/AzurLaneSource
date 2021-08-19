@@ -23,11 +23,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
 			nameColor = "#ff0000",
-			dir = -1,
-			actor = 307010,
 			actorName = "{namecode:91}",
+			dir = -1,
 			say = "所有轰炸机立刻停止作业，换装鱼雷对敌方航母编队发动攻击！",
 			shake = {
 				speed = 1,
@@ -43,11 +43,11 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "太晚了！麦克拉斯基队，俯冲！",
-			dir = -1,
 			actor = 107060,
+			side = 0,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "太晚了！麦克拉斯基队，俯冲！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HUONULULU2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"有关火奴鲁鲁的二三事\n\n<size=45>二　火奴鲁鲁朋友很少？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·学院广场",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·学院广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "嘻嘻~没事就不能找你了吗？",
+			actor = 102130,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 102130,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "嘻嘻~没事就不能找你了吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -98,11 +98,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……但是为什么指挥官也在这里啊？",
 			typewriter = {
 				speed = 0.05,
@@ -136,11 +136,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "幸、幸运…？",
 			typewriter = {
 				speed = 0.05,
@@ -152,8 +152,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -178,11 +178,11 @@ return {
 			}
 		},
 		{
+			actor = 102130,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 102130,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "既然担任了秘书舰，应该多和指挥官亲近一下呀。",
 			typewriter = {
 				speed = 0.05,
@@ -200,11 +200,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼…不关你的事吧。指挥官你也不要得寸进尺！",
 			typewriter = {
 				speed = 0.05,
@@ -216,8 +216,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.8,
 					dur = 0.15,
 					x = 0,
@@ -274,9 +274,9 @@ return {
 			}
 		},
 		{
+			dir = -1,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
 			say = "看起来火奴鲁鲁完全被圣路易斯摸透了性格。",
 			typewriter = {
 				speed = 0.05,
@@ -300,11 +300,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……这这这什么暴露的衣服？！只有你会喜欢吧！(///",
 			typewriter = {
 				speed = 0.05,
@@ -316,8 +316,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.1,
 					x = 0,
@@ -358,11 +358,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……随、随你们的便吧，反正到时候穿上要是不好看也不关我事。",
 			typewriter = {
 				speed = 0.05,
@@ -374,8 +374,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -416,9 +416,9 @@ return {
 			}
 		},
 		{
+			dir = -1,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
 			say = "就在这样的氛围中，聊天意外火热地继续了下去。",
 			typewriter = {
 				speed = 0.05,

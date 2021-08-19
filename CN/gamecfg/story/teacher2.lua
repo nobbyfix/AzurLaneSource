@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"36年Z组 Z23老师\n\n<size=45>二 尼特最后的尊严</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯…这里要这样！然后是这样！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊啊！危险！",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -67,15 +67,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊～又gameover了，果然最高难度还是需要多加练习啊～",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -100,12 +100,12 @@ return {
 			}
 		},
 		{
-			say = "这……这是……在这样的环境下竟然还能生存……",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这……这是……在这样的环境下竟然还能生存……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GUANGRONG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"荣光的间奏曲\n\n<size=45>一 其名为光荣</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			bgm = "story-1",
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "港区·指挥室",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,13 +76,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "一小时后——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -151,11 +151,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "（小声）不行啊光荣，要有点皇家荣光的样子……！舰历上我可是最资深的……！",
 			typewriter = {
 				speed = 0.05,
@@ -167,8 +167,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.1,
 					number = 3
@@ -186,11 +186,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没、没有紧张！……找、找到了！观测报告在这里！",
 			typewriter = {
 				speed = 0.05,
@@ -202,8 +202,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -211,9 +211,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "明明观测报告好好完成了，为什么会忘记了呢……",
 			typewriter = {
 				speed = 0.05,
@@ -258,7 +258,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "为了皇家之光而获得新生的光荣（glorius），一定会成为指挥官你最高的荣耀！",
+			say = "为了皇家之光而获得新生的光荣（glorious），一定会成为指挥官你最高的荣耀！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -269,9 +269,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（闪——）",
 			typewriter = {
 				speed = 0.05,

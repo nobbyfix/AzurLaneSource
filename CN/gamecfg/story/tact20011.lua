@@ -44,11 +44,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "从之前的战斗中，我已经收集了足够多的数据。这一次，是我们的胜率在90%以上",
-			nameColor = "#ff0000",
 			actor = 404020,
+			side = 1,
+			nameColor = "#ff0000",
 			mode = 2,
+			say = "从之前的战斗中，我已经收集了足够多的数据。这一次，是我们的胜率在90%以上",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -85,10 +85,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "沙恩霍斯特&格奈森瑙",
 			actor = 404010,
+			actorShadow = true,
+			actorName = "沙恩霍斯特&格奈森瑙",
+			side = 0,
 			hideOther = true,
 			nameColor = "#ff0000",
 			say = "碾压敌人！沙恩霍斯特级战列巡洋舰，参战！",

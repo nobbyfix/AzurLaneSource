@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIEFEIERDE4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"这个女仆不太冷\n\n<size=45>四 习惯成自然</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "在处理秘书舰的工作之余，谢菲尔德一如既往地热衷于指挥室的清扫中",
 			typewriter = {
 				speed = 0.05,
@@ -96,9 +96,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "确实，自从谢菲尔德担任秘书舰以来，指挥室的环境一直是干净的地板能反光的状态",
 			typewriter = {
 				speed = 0.05,
@@ -110,9 +110,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "工作效率也确实提高了，不过……",
 			typewriter = {
 				speed = 0.05,
@@ -140,9 +140,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不知该说是环境的整洁还是谢菲尔德的严格带来的效率呢……",
 			typewriter = {
 				speed = 0.05,
@@ -250,9 +250,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…也就是说",
 			typewriter = {
 				speed = 0.05,
@@ -264,9 +264,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（砰！）",
 			typewriter = {
 				speed = 0.05,
@@ -294,9 +294,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "感觉到一阵凉风从耳边吹过，刚才那个，是清洁弹…吧？",
 			typewriter = {
 				speed = 0.05,
@@ -308,9 +308,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲尔德一脸平静地走向射击的位置",
 			typewriter = {
 				speed = 0.05,

@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.012,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.012
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.014,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.014
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.016,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.016
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.018,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.018
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.02,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.02
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.022,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.022
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.024,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.024
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.026,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.026
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.028,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.028
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.03,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.03
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "Enigma—信号—开火",
 	init_effect = "jinengchufared",
-	id = 12691,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "本场伤害提高1.2-3%",
 	stack = 1,
-	color = "red",
+	id = 12691,
 	icon = 12690,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.012,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.012
 			}
 		}
 	}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAO4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"来自{namecode:146}的温柔\n\n<size=45>四　信赖的取材班</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·港口",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·港口",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "早晨，和秘书舰{namecode:146}来到街上进行巡视。",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "{namecode:55}痛苦的摇了摇头。",
 			typewriter = {
 				speed = 0.05,
@@ -98,11 +98,11 @@ return {
 			}
 		},
 		{
+			actor = 303030,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 303030,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "实在不行，只能靠我自己去搞个大新闻了！",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.15,
 					x = 0,
@@ -140,9 +140,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "{namecode:146}快步走上前，向她打了招呼。",
 			typewriter = {
 				speed = 0.05,
@@ -166,12 +166,12 @@ return {
 			}
 		},
 		{
-			say = "是{namecode:146}啊，你有好点子？难不成是连我都不知道的超级爆料吗？",
+			actor = 303030,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 303030,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "是{namecode:146}啊，你有好点子？难不成是连我都不知道的超级爆料吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -186,8 +186,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -196,11 +196,11 @@ return {
 			}
 		},
 		{
+			actor = 301640,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘿嘿嘿，其实嘛~如此如此……这般这般",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.5,
 					x = 825
@@ -221,9 +221,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "{namecode:146}跟{namecode:55}说起了悄悄话",
 			typewriter = {
 				speed = 0.05,
@@ -231,11 +231,11 @@ return {
 			}
 		},
 		{
+			actor = 303030,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 303030,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "哦哦哦哦哦！原来还可以这样，{namecode:146}你真是个天才！",
 			typewriter = {
 				speed = 0.05,
@@ -247,8 +247,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -257,12 +257,12 @@ return {
 			}
 		},
 		{
-			say = "{namecode:55}酱，嘘！要保密哦！",
+			actor = 301640,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "{namecode:55}酱，嘘！要保密哦！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -293,16 +293,16 @@ return {
 			}
 		},
 		{
-			withoutActorName = true,
+			actor = 303030,
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			actor = 303030,
+			withoutActorName = true,
 			say = "说完，{namecode:55}便飞快的跑开了。",
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 1,
 					x = -3750
@@ -318,9 +318,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "究竟发生了什么事？",
 			typewriter = {
 				speed = 0.05,
@@ -328,12 +328,12 @@ return {
 			}
 		},
 		{
+			actor = 301640,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301640,
-			nameColor = "#a9f548",
 			say = "嗯？我和{namecode:55}酱说了什么？是可爱的女孩子之间的小秘密，不能告诉指挥官哦！哈哈~",
 			typewriter = {
 				speed = 0.05,

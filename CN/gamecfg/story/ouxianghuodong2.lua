@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "azumaster-ins",
-			actor = 312010,
-			nameColor = "#a9f548",
 			say = "终于，激动人心的首日比赛要开始了喵！",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,8 +25,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -51,11 +51,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "除了μ兵装的通常战斗性能之外，还有2个实验的新要素喵！",
 			typewriter = {
 				speed = 0.05,
@@ -67,8 +67,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -128,8 +128,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "反过来说，中间只要失败一次COMBO就归0了吧！",
 			typewriter = {
@@ -142,11 +142,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就是这样喵！还有一个就是“边唱歌边战斗”喵！",
 			typewriter = {
 				speed = 0.05,
@@ -158,8 +158,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -187,8 +187,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "主场角色？",
 			typewriter = {
@@ -220,8 +220,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 307100,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对，其实我本想说所有的海域都是我来主唱的，不过没办法了呢",
 			typewriter = {
@@ -250,11 +250,11 @@ return {
 			}
 		},
 		{
+			actor = 403070,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 403070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈？你想唱自己来不就好了",
 			typewriter = {
 				speed = 0.05,
@@ -266,8 +266,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -279,8 +279,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这样就没法测试舰装性能了吧",
 			typewriter = {
@@ -296,8 +296,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这也是对主人展示的表演。我理解",
 			typewriter = {
@@ -313,8 +313,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "总、总之！每个海域都选一个主唱出来就是了吧！",
 			typewriter = {
@@ -327,8 +327,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -340,8 +340,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "有人愿意来吗！",
 			typewriter = {
@@ -354,8 +354,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorNAME = "大家",
+			nameColor = "#a9f548",
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
@@ -386,11 +386,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "谁都行喵！那就快开始兵装测试吧喵！",
 			typewriter = {
 				speed = 0.05,
@@ -402,8 +402,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

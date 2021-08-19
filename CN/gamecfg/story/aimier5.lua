@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>五 埃米尔的浪漫说·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "和埃米尔闲聊了起来。",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "只有细心留意，才能发掘生活中的美。而珍惜这些细小的美好，我觉得，就是浪漫的本质哦~",
 			typewriter = {
 				speed = 0.05,
@@ -110,9 +110,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "埃米尔闭上双眼，双手抱在胸前，像是在拥抱着什么美好的东西一样。",
 			typewriter = {
 				speed = 0.05,
@@ -156,11 +156,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "而且指挥官你不觉得，如果发现一个人身上有非常美好的品质，会是一件十分开心的事吗？",
 			typewriter = {
 				speed = 0.05,
@@ -210,9 +210,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -224,9 +224,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "埃米尔回过神来，露出有点不好意思的表情",
 			typewriter = {
 				speed = 0.05,
@@ -254,9 +254,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过她马上像是想到了什么一样凑了过来。",
 			typewriter = {
 				speed = 0.05,

@@ -1,9 +1,9 @@
 return {
 	fadeOut = 2,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YINGHUA8",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato3",
 			stopbgm = true,
+			bgName = "bg_story_nagato3",
 			say = "无数的神柱和绳结围绕在御神木巨大的根基周围，水面上层叠的符文结界散发着淡淡的微光",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1

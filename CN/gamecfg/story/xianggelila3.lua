@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纪行的藏红花\n\n<size=45>三　奇妙的“因缘”</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "某日·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "某日·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,9 +50,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "如同之前约定的那样，香格里拉和埃塞克斯开始了针对性训练",
 			typewriter = {
 				speed = 0.05,
@@ -80,12 +80,12 @@ return {
 			}
 		},
 		{
-			say = "嗯，根据之前特别演习的记录——",
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯，根据之前特别演习的记录——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -119,8 +119,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过，如果采用集团对抗的方法，通过与己方其他舰艇的配合避免和企业前辈一对一作战，或许有取胜的机会。",
 			typewriter = {
@@ -149,15 +149,15 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "原来如此…这时候像这样将攻击编队分散开…",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -201,8 +201,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "这样的话，就能应对企业前辈的这个战术了！",
 			typewriter = {
@@ -215,9 +215,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "战术研讨火热进行中，就在这时——",
 			typewriter = {
 				speed = 0.05,
@@ -229,11 +229,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "嘿！",
 			typewriter = {
 				speed = 0.05,
@@ -245,8 +245,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -255,11 +255,11 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "哇！原、原来是大黄蜂啊……",
 			typewriter = {
 				speed = 0.05,
@@ -271,8 +271,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -284,8 +284,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "突然吓人可不好哦，牛仔小姐？",
 			typewriter = {
@@ -346,15 +346,15 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "原来如此…看着是不坏啦，不过…总感觉这个战术前提会不会太偏重过往的经验了？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -382,10 +382,10 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			say = "…有经验才能归纳出正确的理论。企业前辈的实力不也是源自于以往经验的归纳总结吗？",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "…有经验才能归纳出正确的理论。企业前辈的实力不也是源自于以往经验的归纳总结吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -419,8 +419,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…我明白了。正好指挥官也在这里，不如就让我们在此约定一场战斗演习如何？用事实来证明谁的方针更加有效。",
 			typewriter = {

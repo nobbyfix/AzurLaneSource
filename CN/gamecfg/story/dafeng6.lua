@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAFENG6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"“献身”的{namecode:97}\n\n<size=45>六 {namecode:97}的消失(?)·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,9 +50,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "最近，似乎已经开始渐渐习惯{namecode:97}了",
 			typewriter = {
 				speed = 0.05,
@@ -79,8 +79,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "优先的放在上面，不大重要的放在下面，不需要指挥官大人关心的在垃圾桶里",
 			typewriter = {
@@ -111,14 +111,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官大人，一天工作辛苦了，请用茶~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -178,8 +178,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……怎么了指挥官？莫非您——",
 			typewriter = {
@@ -208,9 +208,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "就连这样的对话，也开始渐渐习以为常了",
 			typewriter = {
 				speed = 0.05,
@@ -218,9 +218,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然不时会出现一些过激（？）的言行，但是整体来说{namecode:97}作为秘书舰还是相当尽责的。不过……",
 			typewriter = {
 				speed = 0.05,
@@ -228,9 +228,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "偶尔…还是会希望她多注意下自己的身体呢",
 			typewriter = {
 				speed = 0.05,
@@ -238,9 +238,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这么想着，于是建议{namecode:97}去休息一天",
 			typewriter = {
 				speed = 0.05,
@@ -251,8 +251,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………………指挥官大人——",
 			typewriter = {
@@ -265,9 +265,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "{namecode:97}的表情中除了喜悦之外，少见的浮现出了一丝寂寞。",
 			typewriter = {
 				speed = 0.05,
@@ -275,14 +275,14 @@ return {
 			}
 		},
 		{
-			side = 2,
 			stopbgm = true,
+			side = 2,
 			dir = 1,
 			blackBg = true,
 			say = "第二天，{namecode:97}消失了。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

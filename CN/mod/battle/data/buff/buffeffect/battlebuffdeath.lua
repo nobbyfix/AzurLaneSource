@@ -1,12 +1,14 @@
 ys = ys or {}
-ys.Battle.BattleBuffDeath = class("BattleBuffDeath", ys.Battle.BattleBuffEffect)
-ys.Battle.BattleBuffDeath.__name = "BattleBuffDeath"
+slot0 = ys
+slot0.Battle.BattleBuffDeath = class("BattleBuffDeath", slot0.Battle.BattleBuffEffect)
+slot0.Battle.BattleBuffDeath.__name = "BattleBuffDeath"
+slot1 = slot0.Battle.BattleBuffDeath
 
-ys.Battle.BattleBuffDeath.Ctor = function (slot0, slot1)
-	slot0.super.Ctor(slot0, slot1)
+function slot1.Ctor(slot0, slot1)
+	uv0.super.Ctor(slot0, slot1)
 end
 
-ys.Battle.BattleBuffDeath.SetArgs = function (slot0, slot1, slot2)
+function slot1.SetArgs(slot0, slot1, slot2)
 	if slot0._tempData.arg_list.time then
 		slot0._time = slot3.time + pg.TimeMgr.GetInstance():GetCombatTime()
 	end
@@ -18,33 +20,32 @@ ys.Battle.BattleBuffDeath.SetArgs = function (slot0, slot1, slot2)
 	slot0._countType = slot3.countType
 end
 
-ys.Battle.BattleBuffDeath.onUpdate = function (slot0, slot1, slot2, slot3)
+function slot1.onUpdate(slot0, slot1, slot2, slot3)
 	if slot0._time and slot0._time < slot3 then
+		slot1:SetDeathReason(uv0.Battle.BattleConst.UnitDeathReason.DESTRUCT)
 		slot0:DoDead(slot1)
-	else
-		slot4 = slot1:GetPosition()
-
-		if slot0._maxX and slot0._maxX <= slot4.x then
-			slot0:DoDead(slot1)
-		elseif slot0._minX and slot4.x <= slot0._minX then
-			slot0:DoDead(slot1)
-		elseif slot0._maxY and slot0._maxY <= slot4.z then
-			slot0:DoDead(slot1)
-		elseif slot0._minY and slot4.z <= slot0._minY then
-			slot0:DoDead(slot1)
-		end
+	elseif slot0._maxX and slot0._maxX <= slot1:GetPosition().x then
+		slot1:SetDeathReason(uv0.Battle.BattleConst.UnitDeathReason.LEAVE)
+		slot0:DoDead(slot1)
+	elseif slot0._minX and slot4.x <= slot0._minX then
+		slot1:SetDeathReason(uv0.Battle.BattleConst.UnitDeathReason.LEAVE)
+		slot0:DoDead(slot1)
+	elseif slot0._maxY and slot0._maxY <= slot4.z then
+		slot1:SetDeathReason(uv0.Battle.BattleConst.UnitDeathReason.LEAVE)
+		slot0:DoDead(slot1)
+	elseif slot0._minY and slot4.z <= slot0._minY then
+		slot1:SetDeathReason(uv0.Battle.BattleConst.UnitDeathReason.LEAVE)
+		slot0:DoDead(slot1)
 	end
 end
 
-ys.Battle.BattleBuffDeath.onBattleBuffCount = function (slot0, slot1, slot2, slot3)
+function slot1.onBattleBuffCount(slot0, slot1, slot2, slot3)
 	if slot3.countType == slot0._countType then
 		slot0:DoDead(slot1)
 	end
 end
 
-ys.Battle.BattleBuffDeath.DoDead = function (slot0, slot1)
-	slot1:SetDeathReason(slot0.Battle.BattleConst.UnitDeathReason.LEAVE)
+function slot1.DoDead(slot0, slot1)
+	slot1:SetCurrentHP(0)
 	slot1:DeadAction()
 end
-
-return

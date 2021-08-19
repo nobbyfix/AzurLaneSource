@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春风的十字星\n\n<size=45>一 某个早晨的突发事件</size>",
@@ -18,14 +18,14 @@ return {
 			}
 		},
 		{
-			say = "呼欸？！！不、不见了？！怎、怎么办…",
+			actor = 201101,
 			side = 2,
+			bgm = "story-1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			bgm = "story-1",
-			actor = 201101,
-			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "呼欸？！！不、不见了？！怎、怎么办…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -36,13 +36,13 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 201101,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "呜呜…只、只能这样了吗——",
+			dir = 1,
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -53,15 +53,15 @@ return {
 			}
 		},
 		{
+			actor = 201080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "小天鹅？！你、你这是什么装备！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -86,12 +86,12 @@ return {
 			}
 		},
 		{
-			say = "暴、暴力！这是赤裸裸的暴力！反对暴力！",
+			actor = 201090,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "暴、暴力！这是赤裸裸的暴力！反对暴力！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -122,15 +122,15 @@ return {
 			}
 		},
 		{
+			actor = 201080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "放在阳台的衣服…不见了？！晾着的和准备洗的都…？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
-			say = "真、真是灾难啊…不过…（盯——）",
+			actor = 201090,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "真、真是灾难啊…不过…（盯——）",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

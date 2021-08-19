@@ -1,20 +1,19 @@
 ys = ys or {}
 ys.Story.StorySleepNode = class("StorySleepNode", ys.ISeqNode)
+slot0 = ys.Story.StorySleepNode
 
-pg.NodeMgr.RigisterNode("StorySleep", ys.Story.StorySleepNode)
+pg.NodeMgr.RigisterNode("StorySleep", slot0)
 
-ys.Story.StorySleepNode.Ctor = function (slot0, slot1, slot2)
+function slot0.Ctor(slot0, slot1, slot2)
 	slot0._time = slot2[2]
 end
 
-ys.Story.StorySleepNode.Init = function (slot0)
+function slot0.Init(slot0)
 	slot0._end = os.time() + slot0._time
 end
 
-ys.Story.StorySleepNode.Update = function (slot0)
+function slot0.Update(slot0)
 	if slot0._end <= os.time() then
 		slot0:Dispose()
 	end
 end
-
-return

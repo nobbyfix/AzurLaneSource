@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN06",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "港区•皇家生活区",
 			typewriter = {
 				speed = 0.05,
@@ -78,14 +78,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "圣、圣诞大餐……火鸡……布丁……三文鱼……我、我开动了！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -110,14 +110,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这个好棒！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -142,14 +142,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这个也好好吃！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,14 +174,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈啊~~活着真好~~~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -206,14 +206,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201080,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "每次看到小天鹅放开了吃东西的样子，都会让咱觉得自愧不如呢……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -396,14 +396,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 204030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "接下来，就是交换礼物的时间咯，大家从前面放好的礼物堆里各自选一个礼物盒吧~交换要遵循自愿原则哦~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -492,14 +492,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201102,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "怎、怎么样？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

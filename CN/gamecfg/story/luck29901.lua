@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "LUCK29901",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 299010,
@@ -24,7 +24,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘻嘻，是不是觉得可以松一口气的呢～？我们还有一段旅程需要共同进行下去呢～",
+			say = "嘻嘻，是不是觉得可以松一口气了呢～？我们还有一段旅程需要共同进行下去呢～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "小齐柏林1",
 	init_effect = "",
-	id = 12090,
+	name = "小齐柏林1",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12090,
 	icon = 12090,
 	last_effect = "",
 	effect_list = {
@@ -26,9 +26,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 12090,
 				target = "TargetSelf",
-				time = 24
+				time = 24,
+				skill_id = 12090
 			}
 		},
 		{
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 12091,
-				target = "TargetSelf",
 				time = 8,
+				target = "TargetSelf",
 				quota = 1
 			}
 		},
@@ -49,9 +49,9 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
+				skill_id = 12093,
 				minWeaponNumber = 1,
 				check_weapon = true,
-				skill_id = 12093,
 				index = {
 					3
 				},

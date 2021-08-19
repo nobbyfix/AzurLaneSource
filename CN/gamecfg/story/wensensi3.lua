@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "WENSENSI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"妹妹的变化\n\n<size=45>三 妹妹的想法</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·白鹰宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·白鹰宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "从第一次受到邀请到现在，与文森斯相处已经过了一段时间，和她的关系也亲密了起来。",
 			typewriter = {
 				speed = 0.05,
@@ -76,9 +76,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "虽然对文森斯来说，一起玩似乎只有睡觉和发呆两个选项就是了。",
 			typewriter = {
 				speed = 0.05,
@@ -90,9 +90,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "（敲门声）",
 			typewriter = {
 				speed = 0.05,
@@ -120,12 +120,12 @@ return {
 			}
 		},
 		{
-			say = "…………嗯",
+			actor = 103070,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 103070,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "…………嗯",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -194,11 +194,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "虽然和印第比起来，我家的姐姐们要普通一些就是了",
 			typewriter = {
 				speed = 0.05,

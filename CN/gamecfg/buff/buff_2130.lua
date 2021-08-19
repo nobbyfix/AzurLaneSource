@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 500
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 720
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 940
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 940
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1160
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1160
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1380
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1380
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1600
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1600
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1820
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1820
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2040,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2040
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2040,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2040
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2260
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2260
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			},
 			{
@@ -253,20 +253,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2500
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "防空支援",
 	init_effect = "jinengchufared",
-	id = 2130,
-	time = 8,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 2130,
 	icon = 2130,
 	last_effect = "",
 	blink = {
@@ -284,8 +284,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 500
 			}
 		},
 		{
@@ -295,8 +295,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = 500
 			}
 		}
 	}

@@ -1,18 +1,18 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI09",
+	once = true,
+	fadeType = 1,
 	continueBgm = true,
 	occlusion = 2,
 	scripts = {
 		{
 			actor = 905010,
 			side = 1,
-			say = "终于来到这里了吗，侵略者们",
-			dir = 1,
 			bgm = "story-french1",
+			dir = 1,
+			say = "终于来到这里了吗，侵略者们",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -193,10 +193,10 @@ return {
 		{
 			actor = 105190,
 			side = 0,
-			dir = 1,
-			bgm = "story-masazhusai",
 			actorName = "马萨诸塞&让巴尔",
 			say = "<size=66>放马过来吧，大洋彼岸“最强”的战列舰！！</size>",
+			dir = 1,
+			bgm = "story-masazhusai",
 			subActors = {
 				{
 					actor = 905010,

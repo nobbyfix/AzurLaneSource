@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENGDIYAGEGAI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"闪耀☆战斗之星！\n\n<size=45>四　圣地亚哥、向前进～！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
+			actor = 107060,
 			side = 2,
+			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = -1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107060,
-			nameColor = "#a9f548",
 			say = "嗯，下一场演习的时间是——嗯？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "企业大姐头~~！呀吼~~",
+			actor = 102080,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "企业大姐头~~！呀吼~~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -72,8 +72,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -322,11 +322,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "感觉干劲都涌上来了~！有种立刻就能“变身”的感觉！难道这就是“改造”的感觉吗！？",
 			typewriter = {
 				speed = 0.05,
@@ -338,8 +338,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,

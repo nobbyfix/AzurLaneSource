@@ -1,14 +1,14 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI01",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>在我们数千年的光鲜文明背后，战争一直作为影子伴随着每一次时代的变迁</size>",
@@ -35,8 +35,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -81,8 +81,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -105,10 +105,10 @@ return {
 			}
 		},
 		{
-			say = "“Méditerranée”，这里是世界上最大的陆间海，气候冬雨夏干，在世界各类气候中独树一帜",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "level03",
+			say = "“Méditerranée”，这里是世界上最大的陆间海，气候冬雨夏干，在世界各类气候中独树一帜",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -181,8 +181,8 @@ return {
 		{
 			actor = 204030,
 			side = 1,
-			say = "司令部自然有自己的想法，在她们的国土被铁血攻占之刻起，她们就已经不再是曾经并肩作战的盟友了",
 			dir = 1,
+			say = "司令部自然有自己的想法，在她们的国土被铁血攻占之刻起，她们就已经不再是曾经并肩作战的盟友了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -283,9 +283,9 @@ return {
 		{
 			actor = 202130,
 			side = 0,
-			say = "报告，前发海域发现塞壬单位的信号，判断为执行者系列新型机",
-			dir = 1,
 			soundeffect = "event:/ui/alarm",
+			dir = 1,
+			say = "报告，前发海域发现塞壬单位的信号，判断为执行者系列新型机",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

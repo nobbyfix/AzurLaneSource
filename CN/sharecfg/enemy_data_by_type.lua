@@ -68,6 +68,14 @@ pg.enemy_data_by_type = {
 		type_name = "旗舰",
 		type = 17
 	},
+	{
+		type_name = "超巡",
+		type = 18
+	},
+	{
+		type_name = "运输",
+		type = 19
+	},
 	all = {
 		1,
 		2,
@@ -85,8 +93,8 @@ pg.enemy_data_by_type = {
 		14,
 		15,
 		16,
-		17
+		17,
+		18,
+		19
 	}
 }
-
-return

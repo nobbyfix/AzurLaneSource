@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "WENSENSI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"妹妹的变化\n\n<size=45>二 妹妹的忧郁</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·白鹰宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·白鹰宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "又一次接受文森斯的邀请来到了文森斯的宿舍",
 			typewriter = {
 				speed = 0.05,
@@ -76,12 +76,12 @@ return {
 			}
 		},
 		{
-			say = "怎么连阿斯托利亚姐姐都变成这样了……",
+			actor = 103100,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "怎么连阿斯托利亚姐姐都变成这样了……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -128,9 +128,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "文森斯有些无奈地被阿斯托利亚一口一口喂着蛋糕。",
 			typewriter = {
 				speed = 0.05,
@@ -142,11 +142,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，help me…",
 			typewriter = {
 				speed = 0.05,
@@ -180,9 +180,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "在一边，阿斯托利亚看着文森斯露出了有些……幸福的笑容？",
 			typewriter = {
 				speed = 0.05,
@@ -194,9 +194,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "总觉得阿斯托利亚的角色都变了……？",
 			typewriter = {
 				speed = 0.05,
@@ -240,9 +240,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "阿斯托利亚说着一把把文森斯抱在怀里。",
 			typewriter = {
 				speed = 0.05,
@@ -270,9 +270,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "总觉得，阿斯托利亚莫非有变成波特兰的潜质……？",
 			typewriter = {
 				speed = 0.05,

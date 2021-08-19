@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA20",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "百慕大三角·第三舰队交战区",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "story-6",
+			say = "百慕大三角·第三舰队交战区",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -39,8 +39,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "单从数量对比上来说，我们此战处于十分不利的位置",
 			typewriter = {
 				speed = 0.05,
@@ -70,8 +70,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			say = "企业前辈所在的主攻方向不知道变成什么样子了……",
 			typewriter = {
 				speed = 0.05,
@@ -115,9 +115,9 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等、等等！你突然记些什么啊！",
 			typewriter = {
 				speed = 0.05,
@@ -129,8 +129,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -142,8 +142,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "不用在意，只是例行的航海记录而已。",
 			typewriter = {
 				speed = 0.05,
@@ -157,9 +157,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "“即便在身陷敌军重围之时，埃塞克斯心中依然挂念着企业前辈的安危”…？！！",
 			typewriter = {
 				speed = 0.05,
@@ -171,8 +171,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -184,8 +184,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			say = "咕唔……！",
 			typewriter = {
 				speed = 0.05,
@@ -199,9 +199,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我、我们的迎击战术也有好好考虑啦！",
 			typewriter = {
 				speed = 0.05,
@@ -213,8 +213,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -226,8 +226,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "我明白，一会儿埃塞克斯活跃的身姿我也会好好记录下来的。",
 			typewriter = {
 				speed = 0.05,
@@ -257,8 +257,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "舰艏迎风，让塞壬见识一下自由的重量吧！",
 			typewriter = {
 				speed = 0.05,
@@ -288,8 +288,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			say = "这一点，首先让塞壬切身体会一下！",
 			typewriter = {
 				speed = 0.05,

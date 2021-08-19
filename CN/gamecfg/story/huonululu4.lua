@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HUONULULU4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"有关火奴鲁鲁的二三事\n\n<size=45>四　关心人的火奴鲁鲁</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·广场",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "远远地看到了海伦娜和火奴鲁鲁在一起散步。",
 			typewriter = {
 				speed = 0.05,
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "海伦娜，怎么了？",
+			actor = 102120,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "海伦娜，怎么了？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -268,11 +268,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我真是个笨蛋……",
 			typewriter = {
 				speed = 0.05,
@@ -290,11 +290,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……？！",
 			typewriter = {
 				speed = 0.05,
@@ -306,8 +306,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -332,11 +332,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "火奴鲁鲁长长地叹了一口气。",
 			typewriter = {
@@ -349,11 +349,11 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就算你说这不怪我，但我连关心海伦娜都做不到，我不是个笨蛋还能是什么呢……",
 			typewriter = {
 				speed = 0.05,
@@ -387,11 +387,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "火奴鲁鲁下意识地把头偏到一边去，不过看起来并没有在生气。",
 			typewriter = {
@@ -420,12 +420,12 @@ return {
 			}
 		},
 		{
+			actor = 102120,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102120,
-			nameColor = "#a9f548",
 			say = "指挥官，能听我说两句吗？",
 			typewriter = {
 				speed = 0.05,

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			},
 			{
@@ -30,8 +30,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 400,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 400
 				}
 			}
 		}
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1120,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1120
 				}
 			},
 			{
@@ -56,8 +56,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1120,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1120
 				}
 			},
 			{
@@ -67,8 +67,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 460,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 460
 				}
 			}
 		}
@@ -82,8 +82,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1240,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1240
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1240,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1240
 				}
 			},
 			{
@@ -104,8 +104,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 520,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 520
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1400
 				}
 			},
 			{
@@ -130,8 +130,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1400,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1400
 				}
 			},
 			{
@@ -141,8 +141,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 600
 				}
 			}
 		}
@@ -156,8 +156,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1550
 				}
 			},
 			{
@@ -167,8 +167,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1550
 				}
 			},
 			{
@@ -178,8 +178,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 660
 				}
 			}
 		}
@@ -193,8 +193,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1700
 				}
 			},
 			{
@@ -204,8 +204,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1700
 				}
 			},
 			{
@@ -215,8 +215,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 720
 				}
 			}
 		}
@@ -230,8 +230,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1900,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1900
 				}
 			},
 			{
@@ -241,8 +241,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1900,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1900
 				}
 			},
 			{
@@ -252,8 +252,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 800,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 800
 				}
 			}
 		}
@@ -267,8 +267,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2080,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2080
 				}
 			},
 			{
@@ -278,8 +278,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2080,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2080
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 860,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 860
 				}
 			}
 		}
@@ -304,8 +304,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2260
 				}
 			},
 			{
@@ -315,8 +315,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2260
 				}
 			},
 			{
@@ -326,8 +326,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 920,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 920
 				}
 			}
 		}
@@ -341,8 +341,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			},
 			{
@@ -352,8 +352,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2500
 				}
 			},
 			{
@@ -363,15 +363,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "太原技能",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "属性变化",
 	stack = 1,
@@ -393,8 +393,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1000
 			}
 		},
 		{
@@ -404,8 +404,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		},
 		{
@@ -415,8 +415,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 400,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 400
 			}
 		}
 	}

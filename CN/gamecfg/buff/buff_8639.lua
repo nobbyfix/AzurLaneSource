@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "诺福克buff",
 	init_effect = "",
-	id = 8639,
+	name = "诺福克buff",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8639,
 	icon = 8639,
 	last_effect = "nuofukedanchuan_buff_01",
 	effect_list = {}

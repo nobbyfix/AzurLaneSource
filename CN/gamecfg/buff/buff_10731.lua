@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 3000
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3330,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 3330
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3660,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 3660
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3990,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 3990
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4320,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 4320
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4650,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 4650
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4980,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 4980
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5310,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 5310
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5640,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 5640
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 6000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 6000
 				}
 			}
 		}
 	},
+	time = 12,
 	name = "鬼神",
 	init_effect = "jinengchufared",
-	time = 12,
 	picture = "",
 	desc = "自身雷装上升",
 	stack = 1,
@@ -173,8 +173,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 3000,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 3000
 			}
 		}
 	}

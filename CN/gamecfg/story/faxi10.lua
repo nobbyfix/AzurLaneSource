@@ -1,19 +1,19 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI10",
+	once = true,
+	fadeType = 1,
 	continueBgm = true,
 	occlusion = 2,
 	scripts = {
 		{
-			soundeffect = "event:/battle/boom2",
-			side = 2,
-			dir = 1,
-			bgm = "story-french2",
 			actor = 107040,
+			side = 2,
+			bgm = "story-french2",
 			say = "无畏式，再次俯冲！",
+			dir = 1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -58,8 +58,8 @@ return {
 		{
 			actor = 105190,
 			side = 0,
-			say = "算了，她已经..失去反抗的能力了",
 			dir = 1,
+			say = "算了，她已经..失去反抗的能力了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -80,8 +80,8 @@ return {
 			say = "可恶…动起来啊！快动起来啊！！！",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.3,
 					x = 22.5,
 					number = 2
@@ -117,8 +117,8 @@ return {
 			say = "可恶，为什么，为什么就不能把我完整的造完！！",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.3,
 					x = 22.5,
 					number = 2
@@ -176,15 +176,15 @@ return {
 			}
 		},
 		{
+			actor = 900055,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
-			actor = 900055,
-			stopbgm = true,
 			say = "姐，司令部突然下令要把我们从造船厂转移到遥远的港口，这是真的吗？！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -344,15 +344,15 @@ return {
 			}
 		},
 		{
+			actor = 905010,
 			side = 2,
+			say = "…也许从一开始，司令部就没打算把我完整的造出来…",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-french2",
-			actor = 905010,
-			say = "…也许从一开始，司令部就没打算把我完整的造出来…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -433,8 +433,8 @@ return {
 			}
 		},
 		{
-			say = "……",
-			soundeffect = "event:/ui/noice"
+			soundeffect = "event:/ui/noice",
+			say = "……"
 		},
 		{
 			actor = 107040,
@@ -453,8 +453,8 @@ return {
 		{
 			actor = 105190,
 			side = 0,
-			say = "…铁血机动部队正在高速南下，登陆部队全员做好战斗准备…居然在这个时候？",
 			dir = 1,
+			say = "…铁血机动部队正在高速南下，登陆部队全员做好战斗准备…居然在这个时候？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -497,12 +497,12 @@ return {
 			}
 		},
 		{
-			say = "……",
-			soundeffect = "event:/ui/noice"
+			soundeffect = "event:/ui/noice",
+			say = "……"
 		},
 		{
-			say = "原教廷所属全部军舰听令，司令部紧急电报：司令部已经沦陷，司令部已经沦陷",
 			soundeffect = "event:/battle/boom2",
+			say = "教廷所属全部舰队全员听令，司令部紧急电报：铁血向圣座发动了进攻，司令部已经沦陷，重复，司令部已经沦陷",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -513,8 +513,8 @@ return {
 			}
 		},
 		{
-			say = "所有军舰立刻就近加入碧蓝航线同盟，维希教廷于今日起正式解散，立刻执行，不得有误",
 			soundeffect = "event:/battle/boom2",
+			say = "各地舰队立刻驶离港口就近加入碧蓝航线同盟。此命令为维希圣座最后的命令，所有舰队立刻执行，不得有误",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -525,8 +525,8 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom2",
 			say = "——愿天父的恩赐与你们同在，因父及子及圣神之名",
-			soundeffect = "event:/battle/boom2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -593,12 +593,12 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "原维希教廷第一旗舰——让·巴尔号通告陆间海全军舰队",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -630,8 +630,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "卡萨布兰卡已经失守，异教徒的獠牙已经伸向了祖国的内陆",
 			typewriter = {
 				speed = 0.05,
@@ -643,8 +643,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "铁血想要侵占我们的躯体、帝国想要分食我们的血液",
 			typewriter = {
 				speed = 0.05,
@@ -656,9 +656,9 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
-			say = "甚至连司令部的叛徒也想要我们卖国求荣——",
+			side = 1,
+			say = "甚至连司令部的叛徒也想要我们束手就擒——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -669,8 +669,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "不！",
 			typewriter = {
 				speed = 0.05,
@@ -682,8 +682,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "凯比尔港的惨案已经给予了我们答案",
 			typewriter = {
 				speed = 0.05,
@@ -695,8 +695,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "骄傲的圣教骑士不会和他们同流合污，骄傲的天之子民绝不会向淫威屈服",
 			typewriter = {
 				speed = 0.05,
@@ -708,8 +708,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "前有狼，后有虎，现在是存亡的最后时刻",
 			typewriter = {
 				speed = 0.05,
@@ -721,8 +721,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "勇敢的圣教骑士绝不低头，绝不成为任何人的傀儡！",
 			typewriter = {
 				speed = 0.05,
@@ -734,9 +734,9 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
-			say = "以自由之名，我命令，地间海全军舰队，就地自沉，就地自沉！",
+			side = 1,
+			say = "以自由之名，我命令，陆间海全军舰队，就地自沉，就地自沉！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -747,8 +747,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "生终将死，灵终将灭，然而，汝无需痛苦和哀伤，此为生命的循环，并无丝毫掩盖、虚伪和黑暗",
 			typewriter = {
 				speed = 0.05,
@@ -760,8 +760,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "在另一个黎明，我将醒来",
 			typewriter = {
 				speed = 0.05,
@@ -773,8 +773,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "我将感谢主，感谢又把这么强大的国家赐予了我",
 			typewriter = {
 				speed = 0.05,
@@ -786,8 +786,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "还使我能享受我们国家所有的一切祝福",
 			typewriter = {
 				speed = 0.05,
@@ -799,8 +799,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "使我也能享受天国里的一切丰盛",
 			typewriter = {
 				speed = 0.05,
@@ -812,8 +812,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "这是我们最后的荣耀，让我们的名字成为后辈们的荣光",
 			typewriter = {
 				speed = 0.05,
@@ -825,8 +825,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "自由万岁",
 			typewriter = {
 				speed = 0.05,
@@ -838,8 +838,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "因父及子及圣神之名",
 			typewriter = {
 				speed = 0.05,
@@ -851,8 +851,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "维…自由鸢尾第二旗舰——让·巴尔号",
 			typewriter = {
 				speed = 0.05,
@@ -866,9 +866,9 @@ return {
 		{
 			actor = 105190,
 			side = 2,
-			say = "…",
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
+			dir = 1,
+			say = "…",
 			effects = {
 				{
 					active = false,
@@ -901,8 +901,8 @@ return {
 		{
 			actor = 905010,
 			side = 1,
-			say = "这样也算…遵守了同盟时期许下的诺言吧…永世，不为铁血和帝国所用…不成为赤色中轴的獠牙",
 			dir = 1,
+			say = "这样也算…遵守了同盟时期许下的诺言吧…永世，不为铁血和帝国所用…不成为赤色中轴的獠牙",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -1072,15 +1072,15 @@ return {
 			}
 		},
 		{
+			actor = 900054,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
-			actor = 900054,
-			stopbgm = true,
 			say = "那么，你知道“名字”的含义吗？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

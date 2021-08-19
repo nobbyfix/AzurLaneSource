@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>“换句话说，要学会分享！”</size>",
@@ -25,8 +25,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港湾\n\n<size=45>二　偶遇</size>",
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			say = "港区",
 			side = 2,
+			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区",
 			effects = {
 				{
 					active = false,
@@ -48,8 +48,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -70,9 +70,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "微风舒爽，正是适合散步的天气。",
 			typewriter = {
 				speed = 0.05,
@@ -100,11 +100,11 @@ return {
 			}
 		},
 		{
+			actor = 403050,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我想做的事情？",
 			effects = {
 				{
@@ -122,9 +122,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "虽然在这里边吃着零食边散步让人非常安心，但是这应该不是我的“愿望”。",
 			effects = {
 				{
@@ -142,9 +142,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "嗯？这个新口味的鱼干意外的很好吃……",
 			typewriter = {
 				speed = 0.05,
@@ -156,8 +156,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "不是指挥喵，而是普通的猫。",
 			typewriter = {
 				speed = 0.05,
@@ -202,8 +202,8 @@ return {
 			}
 		},
 		{
-			actorName = "猫",
 			side = 2,
+			actorName = "猫",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -234,8 +234,8 @@ return {
 			}
 		},
 		{
-			actorName = "猫",
 			side = 2,
+			actorName = "猫",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -266,8 +266,8 @@ return {
 			}
 		},
 		{
-			actorName = "猫",
 			side = 2,
+			actorName = "猫",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -282,9 +282,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "猫先生慢慢地走了过来，吃起了我手中的鱼干。它看起来很高兴的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -328,11 +328,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actorName = "猫",
+			dir = 1,
 			say = "喵！",
 			dialogShake = {
 				speed = 0.09,
@@ -365,12 +365,12 @@ return {
 			}
 		},
 		{
-			say = "什么啊，原来是猫吗。",
+			actor = 403040,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "什么啊，原来是猫吗。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -406,7 +406,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那种下等生物有什么好在意的。",
+			say = "那种低等动物有什么好在意的。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -465,11 +465,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对了！斯佩，我和你说啊，昨天的演习，皇家的那帮家伙——",
 			typewriter = {
 				speed = 0.05,
@@ -481,8 +481,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -491,9 +491,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "结果最后一路听着姐姐的抱怨回到了宿舍。",
 			typewriter = {
 				speed = 0.05,

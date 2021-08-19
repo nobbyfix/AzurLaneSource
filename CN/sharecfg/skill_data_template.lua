@@ -1,68 +1,156 @@
 pg = pg or {}
 pg.skill_data_template = {
+	{
+		desc_get = "",
+		name = "战列底座用",
+		id = 1,
+		type = 0,
+		max_level = 0,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			0
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	{
+		desc_get = "",
+		name = "战列底座用",
+		id = 2,
+		type = 0,
+		max_level = 0,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			0
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[10] = {
 		desc_get = "",
 		name = "维修Lv1",
-		desc = "每5秒回复6点耐久，同类效果取最大值，不可叠加",
+		id = 10,
 		type = 0,
 		max_level = 0,
-		id = 10,
+		desc = "每5秒回复6点耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			0
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[11] = {
 		desc_get = "",
 		name = "维修Lv2",
-		desc = "每5秒回复10点耐久，同类效果取最大值，不可叠加",
+		desc_add = "[}",
 		type = 0,
 		max_level = 0,
-		desc_add = "[}",
 		id = 11,
+		desc = "每5秒回复10点耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			0
+		},
 		desc_get_add = {}
 	},
 	[12] = {
 		desc_get = "",
 		name = "维修Lv3",
-		desc = "每5秒回复15点耐久，同类效果取最大值，不可叠加",
+		id = 12,
 		type = 0,
 		max_level = 0,
-		id = 12,
+		desc = "每5秒回复15点耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			0
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[13] = {
+		desc_get = "",
+		name = "维修Lv4",
+		id = 13,
+		type = 0,
+		max_level = 0,
+		desc = "每5秒回复20点耐久，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			0
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[14] = {
 		desc_get = "",
 		name = "改造娘",
-		desc = "可替代紫色以下角色作为改造材料使用",
+		id = 14,
 		type = 3,
 		max_level = 1,
-		id = 14,
+		desc = "可替代紫色以下角色作为改造材料使用",
 		system_transform = {},
+		world_death_mark = {
+			0
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[15] = {
 		desc_get = "",
 		name = "改造娘MKII",
-		desc = "可替代金色角色作为改造材料使用",
+		id = 15,
 		type = 3,
 		max_level = 1,
-		id = 15,
+		desc = "可替代金色角色作为改造材料使用",
 		system_transform = {},
+		world_death_mark = {
+			0
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[16] = {
+		desc_get = "",
+		name = "改造娘MKIII",
+		id = 16,
+		type = 3,
+		max_level = 1,
+		desc = "可替代彩色角色作为改造材料使用",
+		system_transform = {},
+		world_death_mark = {
+			0
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[340] = {
+		desc_get = "",
+		name = "航母空袭降低隐蔽恢复速率",
+		id = 340,
+		type = 0,
+		max_level = 0,
+		desc = "空袭后12秒内，隐蔽速率恢复速度降低3点/秒",
+		system_transform = {},
+		world_death_mark = {
+			0
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[1001] = {
 		desc_get = "",
 		name = "炮术指挥·驱逐舰",
-		desc = "提高舰队中所有驱逐舰$1炮击属性，同类指挥技能无法同时生效",
+		id = 1001,
 		type = 3,
 		max_level = 10,
-		id = 1001,
+		desc = "提高舰队中所有驱逐舰$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -116,11 +204,14 @@ pg.skill_data_template = {
 	[1002] = {
 		desc_get = "",
 		name = "炮术指挥·巡洋舰",
-		desc = "提高舰队中所有巡洋舰$1炮击属性，同类指挥技能无法同时生效",
+		id = 1002,
 		type = 3,
 		max_level = 10,
-		id = 1002,
+		desc = "提高舰队中所有巡洋舰$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -174,11 +265,14 @@ pg.skill_data_template = {
 	[1003] = {
 		desc_get = "",
 		name = "炮术指挥·战列舰",
-		desc = "提高舰队中所有战列舰$1炮击属性，同类指挥技能无法同时生效",
+		id = 1003,
 		type = 3,
 		max_level = 10,
-		id = 1003,
+		desc = "提高舰队中所有战列舰$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -232,11 +326,14 @@ pg.skill_data_template = {
 	[1004] = {
 		desc_get = "",
 		name = "炮术指挥·先锋",
-		desc = "提高舰队中所有先锋$1炮击属性，同类指挥技能无法同时生效",
+		id = 1004,
 		type = 3,
 		max_level = 10,
-		id = 1004,
+		desc = "提高舰队中所有先锋$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -290,11 +387,14 @@ pg.skill_data_template = {
 	[1005] = {
 		desc_get = "",
 		name = "炮术指挥·主力",
-		desc = "提高舰队中所有主力$1炮击属性，同类指挥技能无法同时生效",
+		id = 1005,
 		type = 3,
 		max_level = 10,
-		id = 1005,
+		desc = "提高舰队中所有主力$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -348,11 +448,14 @@ pg.skill_data_template = {
 	[1006] = {
 		desc_get = "",
 		name = "炮术指挥·全员",
-		desc = "提高舰队中全员$1炮击属性，同类指挥技能无法同时生效",
+		id = 1006,
 		type = 3,
 		max_level = 10,
-		id = 1006,
+		desc = "提高舰队中全员$1炮击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -406,11 +509,14 @@ pg.skill_data_template = {
 	[1011] = {
 		desc_get = "",
 		name = "雷击指挥·驱逐舰",
-		desc = "提高舰队中所有驱逐舰$1雷击属性，同类指挥技能无法同时生效",
+		id = 1011,
 		type = 3,
 		max_level = 10,
-		id = 1011,
+		desc = "提高舰队中所有驱逐舰$1雷击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -464,11 +570,14 @@ pg.skill_data_template = {
 	[1012] = {
 		desc_get = "",
 		name = "雷击指挥·巡洋舰",
-		desc = "提高舰队中所有巡洋舰$1雷击属性，同类指挥技能无法同时生效",
+		id = 1012,
 		type = 3,
 		max_level = 10,
-		id = 1012,
+		desc = "提高舰队中所有巡洋舰$1雷击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -522,11 +631,14 @@ pg.skill_data_template = {
 	[1013] = {
 		desc_get = "",
 		name = "雷击指挥·先锋",
-		desc = "提高舰队中所有先锋$1雷击属性，同类指挥技能无法同时生效",
+		id = 1013,
 		type = 3,
 		max_level = 10,
-		id = 1013,
+		desc = "提高舰队中所有先锋$1雷击属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -580,11 +692,14 @@ pg.skill_data_template = {
 	[1021] = {
 		desc_get = "",
 		name = "航空指挥·全员",
-		desc = "提高舰队中全员$1航空属性，同类指挥技能无法同时生效",
+		id = 1021,
 		type = 3,
 		max_level = 10,
-		id = 1021,
+		desc = "提高舰队中全员$1航空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -638,11 +753,14 @@ pg.skill_data_template = {
 	[1031] = {
 		desc_get = "",
 		name = "装填指挥·驱逐舰",
-		desc = "提高舰队中所有驱逐舰$1装填属性，同类指挥技能无法同时生效",
+		id = 1031,
 		type = 3,
 		max_level = 10,
-		id = 1031,
+		desc = "提高舰队中所有驱逐舰$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -696,11 +814,14 @@ pg.skill_data_template = {
 	[1032] = {
 		desc_get = "",
 		name = "装填指挥·巡洋舰",
-		desc = "提高舰队中所有巡洋舰$1装填属性，同类指挥技能无法同时生效",
+		id = 1032,
 		type = 3,
 		max_level = 10,
-		id = 1032,
+		desc = "提高舰队中所有巡洋舰$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -754,11 +875,14 @@ pg.skill_data_template = {
 	[1033] = {
 		desc_get = "",
 		name = "装填指挥·战列舰",
-		desc = "提高舰队中所有战列舰$1装填属性，同类指挥技能无法同时生效",
+		id = 1033,
 		type = 3,
 		max_level = 10,
-		id = 1033,
+		desc = "提高舰队中所有战列舰$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -812,11 +936,14 @@ pg.skill_data_template = {
 	[1034] = {
 		desc_get = "",
 		name = "装填指挥·先锋",
-		desc = "提高舰队中所有先锋$1装填属性，同类指挥技能无法同时生效",
+		id = 1034,
 		type = 3,
 		max_level = 10,
-		id = 1034,
+		desc = "提高舰队中所有先锋$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -870,11 +997,14 @@ pg.skill_data_template = {
 	[1035] = {
 		desc_get = "",
 		name = "装填指挥·主力",
-		desc = "提高舰队中所有主力$1装填属性，同类指挥技能无法同时生效",
+		id = 1035,
 		type = 3,
 		max_level = 10,
-		id = 1035,
+		desc = "提高舰队中所有主力$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -928,11 +1058,14 @@ pg.skill_data_template = {
 	[1036] = {
 		desc_get = "",
 		name = "装填指挥·全员",
-		desc = "提高舰队中全员$1装填属性，同类指挥技能无法同时生效",
+		id = 1036,
 		type = 3,
 		max_level = 10,
-		id = 1036,
+		desc = "提高舰队中全员$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -986,11 +1119,14 @@ pg.skill_data_template = {
 	[1037] = {
 		desc_get = "",
 		name = "装填指挥·轻航",
-		desc = "提高舰队中轻航$1装填属性，同类指挥技能无法同时生效",
+		id = 1037,
 		type = 3,
 		max_level = 10,
-		id = 1037,
+		desc = "提高舰队中轻航$1装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1044,11 +1180,14 @@ pg.skill_data_template = {
 	[1041] = {
 		desc_get = "",
 		name = "防空指挥·驱逐舰",
-		desc = "提高舰队中所有驱逐舰$1防空属性，同类指挥技能无法同时生效",
+		id = 1041,
 		type = 3,
 		max_level = 10,
-		id = 1041,
+		desc = "提高舰队中所有驱逐舰$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1102,11 +1241,14 @@ pg.skill_data_template = {
 	[1042] = {
 		desc_get = "",
 		name = "防空指挥·巡洋舰",
-		desc = "提高舰队中所有巡洋舰$1防空属性，同类指挥技能无法同时生效",
+		id = 1042,
 		type = 3,
 		max_level = 10,
-		id = 1042,
+		desc = "提高舰队中所有巡洋舰$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1160,11 +1302,14 @@ pg.skill_data_template = {
 	[1043] = {
 		desc_get = "",
 		name = "防空指挥·战列舰",
-		desc = "提高舰队中所有战列舰$1防空属性，同类指挥技能无法同时生效",
+		id = 1043,
 		type = 3,
 		max_level = 10,
-		id = 1043,
+		desc = "提高舰队中所有战列舰$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1218,11 +1363,14 @@ pg.skill_data_template = {
 	[1044] = {
 		desc_get = "",
 		name = "防空指挥·先锋",
-		desc = "提高舰队中所有先锋$1防空属性，同类指挥技能无法同时生效",
+		id = 1044,
 		type = 3,
 		max_level = 10,
-		id = 1044,
+		desc = "提高舰队中所有先锋$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1276,11 +1424,14 @@ pg.skill_data_template = {
 	[1045] = {
 		desc_get = "",
 		name = "防空指挥·主力",
-		desc = "提高舰队中所有主力$1防空属性，同类指挥技能无法同时生效",
+		id = 1045,
 		type = 3,
 		max_level = 10,
-		id = 1045,
+		desc = "提高舰队中所有主力$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1334,11 +1485,14 @@ pg.skill_data_template = {
 	[1046] = {
 		desc_get = "",
 		name = "防空指挥·全员",
-		desc = "提高舰队中全员$1防空属性，同类指挥技能无法同时生效",
+		id = 1046,
 		type = 3,
 		max_level = 10,
-		id = 1046,
+		desc = "提高舰队中全员$1防空属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1392,11 +1546,14 @@ pg.skill_data_template = {
 	[1051] = {
 		desc_get = "",
 		name = "战术指挥·驱逐舰",
-		desc = "提高舰队中所有驱逐舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1051,
 		type = 3,
 		max_level = 10,
-		id = 1051,
+		desc = "提高舰队中所有驱逐舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1450,11 +1607,14 @@ pg.skill_data_template = {
 	[1052] = {
 		desc_get = "",
 		name = "战术指挥·巡洋舰",
-		desc = "提高舰队中所有巡洋舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1052,
 		type = 3,
 		max_level = 10,
-		id = 1052,
+		desc = "提高舰队中所有巡洋舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1508,11 +1668,14 @@ pg.skill_data_template = {
 	[1053] = {
 		desc_get = "",
 		name = "战术指挥·战列舰",
-		desc = "提高舰队中所有战列舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1053,
 		type = 3,
 		max_level = 10,
-		id = 1053,
+		desc = "提高舰队中所有战列舰$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1566,11 +1729,14 @@ pg.skill_data_template = {
 	[1054] = {
 		desc_get = "",
 		name = "战术指挥·先锋",
-		desc = "提高舰队中所有先锋$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1054,
 		type = 3,
 		max_level = 10,
-		id = 1054,
+		desc = "提高舰队中所有先锋$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1624,11 +1790,14 @@ pg.skill_data_template = {
 	[1055] = {
 		desc_get = "",
 		name = "战术指挥·主力",
-		desc = "提高舰队中所有主力$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1055,
 		type = 3,
 		max_level = 10,
-		id = 1055,
+		desc = "提高舰队中所有主力$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1682,11 +1851,14 @@ pg.skill_data_template = {
 	[1056] = {
 		desc_get = "",
 		name = "战术指挥·全员",
-		desc = "提高舰队中全员$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
+		id = 1056,
 		type = 3,
 		max_level = 10,
-		id = 1056,
+		desc = "提高舰队中全员$1炮击、雷击、装填属性，同类指挥技能无法同时生效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -1740,11 +1912,14 @@ pg.skill_data_template = {
 	[1061] = {
 		desc_get = "",
 		name = "侧翼掩护",
-		desc = "在队伍中(存活)时降低主力舰队受到的伤害$1，同技能效果不叠加",
+		id = 1061,
 		type = 2,
 		max_level = 10,
-		id = 1061,
+		desc = "在队伍中(存活)时降低主力舰队受到的伤害$1，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1798,11 +1973,14 @@ pg.skill_data_template = {
 	[1071] = {
 		desc_get = "",
 		name = "前线侦查",
-		desc = "在队伍中(存活)时增加战巡、战列、重炮攻击造成的伤害$1，同技能效果不叠加",
+		id = 1071,
 		type = 3,
 		max_level = 10,
-		id = 1071,
+		desc = "在队伍中(存活)时增加战巡、战列、重炮攻击造成的伤害$1，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1856,11 +2034,14 @@ pg.skill_data_template = {
 	[1081] = {
 		desc_get = "",
 		name = "空袭引导",
-		desc = "在队伍中(存活)时增加轻航、正航空袭造成的伤害$1，同技能效果不叠加",
+		id = 1081,
 		type = 3,
 		max_level = 10,
-		id = 1081,
+		desc = "在队伍中(存活)时增加轻航、正航空袭造成的伤害$1，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -1914,11 +2095,14 @@ pg.skill_data_template = {
 	[1091] = {
 		desc_get = "",
 		name = "水雷战队",
-		desc = "在队伍中(存活)时，队伍内所有驱逐、轻巡的雷击和装填属性提高$1",
+		id = 1091,
 		type = 3,
 		max_level = 10,
-		id = 1091,
+		desc = "在队伍中(存活)时，队伍内所有驱逐、轻巡的雷击和装填属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.0%",
@@ -1972,11 +2156,14 @@ pg.skill_data_template = {
 	[2001] = {
 		desc_get = "",
 		name = "快速装填",
-		desc = "每隔20秒，有$1的概率发动，提高自身$2装填，持续10秒",
+		id = 2001,
 		type = 1,
 		max_level = 10,
-		id = 2001,
+		desc = "每隔20秒，有$1的概率发动，提高自身$2装填，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -2075,11 +2262,14 @@ pg.skill_data_template = {
 	[2011] = {
 		desc_get = "",
 		name = "火力全开",
-		desc = "每隔20秒，有$1的概率发动，提高自身$2炮击，持续10秒",
+		id = 2011,
 		type = 1,
 		max_level = 10,
-		id = 2011,
+		desc = "每隔20秒，有$1的概率发动，提高自身$2炮击，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -2178,11 +2368,14 @@ pg.skill_data_template = {
 	[2021] = {
 		desc_get = "",
 		name = "装填号令",
-		desc = "每隔20秒，有25%的概率发动，提高全队$1装填，持续8秒，同技能效果不叠加",
+		id = 2021,
 		type = 3,
 		max_level = 10,
-		id = 2021,
+		desc = "每隔20秒，有25%的概率发动，提高全队$1装填，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -2236,11 +2429,14 @@ pg.skill_data_template = {
 	[2031] = {
 		desc_get = "",
 		name = "强袭号令",
-		desc = "每隔20秒，有25%的概率发动，提高全队$1伤害，持续8秒，同技能效果不叠加",
+		id = 2031,
 		type = 3,
 		max_level = 10,
-		id = 2031,
+		desc = "每隔20秒，有25%的概率发动，提高全队$1伤害，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -2294,11 +2490,14 @@ pg.skill_data_template = {
 	[2041] = {
 		desc_get = "",
 		name = "重点打击",
-		desc = "主炮射击时有$1概率造成2倍伤害",
+		id = 2041,
 		type = 1,
 		max_level = 10,
-		id = 2041,
+		desc = "主炮射击时有$1概率造成2倍伤害",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -2352,11 +2551,14 @@ pg.skill_data_template = {
 	[2051] = {
 		desc_get = "",
 		name = "鱼雷连射",
-		desc = "每次使用鱼雷时有$1的概率再次发射一轮",
+		id = 2051,
 		type = 1,
 		max_level = 10,
-		id = 2051,
+		desc = "每次使用鱼雷时有$1的概率再次发射一轮",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -2410,11 +2612,14 @@ pg.skill_data_template = {
 	[2061] = {
 		desc_get = "",
 		name = "主炮连射",
-		desc = "主炮攻击时有$1的概率额外发射1组炮弹",
+		id = 2061,
 		type = 1,
 		max_level = 10,
-		id = 2061,
+		desc = "主炮攻击时有$1的概率额外发射1组炮弹",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -2468,11 +2673,14 @@ pg.skill_data_template = {
 	[2071] = {
 		desc_get = "",
 		name = "火力覆盖",
-		desc = "自身炮击提高$1",
+		id = 2071,
 		type = 1,
 		max_level = 10,
-		id = 2071,
+		desc = "自身炮击提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -2526,11 +2734,14 @@ pg.skill_data_template = {
 	[2081] = {
 		desc_get = "",
 		name = "穿甲弹精通",
-		desc = "穿甲弹伤害提高$1",
+		id = 2081,
 		type = 1,
 		max_level = 10,
-		id = 2081,
+		desc = "穿甲弹伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -2584,11 +2795,14 @@ pg.skill_data_template = {
 	[2091] = {
 		desc_get = "每隔35秒(满级15秒)，朝前方发射4发带小范围追踪效果的磁性鱼雷(威力依据技能等级)",
 		name = "磁性鱼雷",
-		desc = "每隔$1秒，朝前方发射4发带小范围追踪效果的磁性鱼雷(威力依据技能等级)",
+		id = 2091,
 		type = 1,
 		max_level = 10,
-		id = 2091,
+		desc = "每隔$1秒，朝前方发射4发带小范围追踪效果的磁性鱼雷(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -2637,11 +2851,14 @@ pg.skill_data_template = {
 	[2101] = {
 		desc_get = "每隔35秒(满级20秒)，朝前方发射3发鱼雷(威力依据技能等级)",
 		name = "鱼雷发射",
-		desc = "每隔$1秒，朝前方发射3发鱼雷(威力依据技能等级)",
+		id = 2101,
 		type = 1,
 		max_level = 10,
-		id = 2101,
+		desc = "每隔$1秒，朝前方发射3发鱼雷(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -2690,11 +2907,14 @@ pg.skill_data_template = {
 	[2111] = {
 		desc_get = "对自爆船、鱼雷艇、运输舰伤害提升10%（满级25%）",
 		name = "袭扰战术",
-		desc = "对自爆船、鱼雷艇、运输舰伤害提升$1",
+		id = 2111,
 		type = 1,
 		max_level = 10,
-		id = 2111,
+		desc = "对自爆船、鱼雷艇、运输舰伤害提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -2748,11 +2968,14 @@ pg.skill_data_template = {
 	[2121] = {
 		desc_get = "",
 		name = "集火信号-鱼雷",
-		desc = "当鱼雷命中敌人时，有$1概率触发集火信号，持续8秒，将导致该敌舰受到鱼雷的伤害提高$2（不可叠加）",
+		id = 2121,
 		type = 1,
 		max_level = 10,
-		id = 2121,
+		desc = "当鱼雷命中敌人时，有$1概率触发集火信号，持续8秒，将导致该敌舰受到鱼雷的伤害提高$2（不可叠加）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"7.0%",
@@ -2851,11 +3074,14 @@ pg.skill_data_template = {
 	[2131] = {
 		desc_get = "",
 		name = "防空支援",
-		desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
+		id = 2131,
 		type = 1,
 		max_level = 10,
-		id = 2131,
+		desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -2909,11 +3135,14 @@ pg.skill_data_template = {
 	[2141] = {
 		desc_get = "",
 		name = "驱逐战强化",
-		desc = "对驱逐的命中率提高$1，受到鱼雷伤害降低$1",
+		id = 2141,
 		type = 2,
 		max_level = 10,
-		id = 2141,
+		desc = "对驱逐的命中率提高$1，受到鱼雷伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -2967,11 +3196,14 @@ pg.skill_data_template = {
 	[2151] = {
 		desc_get = "",
 		name = "均衡鱼雷",
-		desc = "自身鱼雷伤害不受装甲类型影响，鱼雷伤害随技能等级提高而提高",
+		id = 2151,
 		type = 3,
 		max_level = 10,
-		id = 2151,
+		desc = "自身鱼雷伤害不受装甲类型影响，鱼雷伤害随技能等级提高而提高",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"100.0%",
@@ -3025,11 +3257,14 @@ pg.skill_data_template = {
 	[2161] = {
 		desc_get = "",
 		name = "预备雷击",
-		desc = "战斗开始10秒后发射一轮鱼雷，随后每20秒有$1概率发射一轮鱼雷(与主动发射的鱼雷相同)",
+		id = 2161,
 		type = 1,
 		max_level = 10,
-		id = 2161,
+		desc = "战斗开始10秒后发射一轮鱼雷，随后每20秒有$1概率发射一轮鱼雷(与主动发射的鱼雷相同)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -3083,11 +3318,14 @@ pg.skill_data_template = {
 	[2171] = {
 		desc_get = "",
 		name = "防空警戒",
-		desc = "自身防空提高$1",
+		id = 2171,
 		type = 2,
 		max_level = 10,
-		id = 2171,
+		desc = "自身防空提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -3138,14 +3376,245 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[2181] = {
+		desc_get = "",
+		name = "全面戒备",
+		id = 2181,
+		type = 2,
+		max_level = 10,
+		desc = "开始战斗时触发，之后每30秒触发一次，20秒内提高自身防空、反潜$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5%",
+				"15%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[2191] = {
+		desc_get = "",
+		name = "备弹指令",
+		id = 2191,
+		type = 3,
+		max_level = 10,
+		desc = "我方水面舰队受到弹药匮乏状态的影响降低（弹药匮乏状态时造成的伤害提升$1）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5%",
+				"15%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[2201] = {
+		desc_get = "",
+		name = "空海切换",
+		id = 2201,
+		type = 2,
+		max_level = 10,
+		desc = "副炮装备【双联装127mm高平两用炮MK12】时，提高自身防空$1，降低自身炮击$2；未装备该装备时，提高自身炮击$1，降低自身防空$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5%",
+				"15%"
+			},
+			{
+				"15%",
+				"5%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"-1.2%"
+				},
+				{
+					"13.8%",
+					"-1.1%"
+				},
+				{
+					"12.7%",
+					"-1.1%"
+				},
+				{
+					"11.6%",
+					"-1.1%"
+				},
+				{
+					"10.5%",
+					"-1.1%"
+				},
+				{
+					"9.4%",
+					"-1.1%"
+				},
+				{
+					"8.3%",
+					"-1.1%"
+				},
+				{
+					"7.2%",
+					"-1.1%"
+				},
+				{
+					"6.1%",
+					"-1.1%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
 	[3001] = {
 		desc_get = "",
 		name = "快速起飞",
-		desc = "空中支援后有$1概率使自己的下一轮空中支援立即冷却",
+		id = 3001,
 		type = 1,
 		max_level = 10,
-		id = 3001,
+		desc = "空中支援后有$1概率使自己的下一轮空中支援立即冷却",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -3199,11 +3668,14 @@ pg.skill_data_template = {
 	[3011] = {
 		desc_get = "",
 		name = "强袭空母",
-		desc = "自身空中支援时有$1概率触发，接下来10秒内自身造成2倍伤害，不可叠加",
+		id = 3011,
 		type = 1,
 		max_level = 10,
-		id = 3011,
+		desc = "自身空中支援时有$1概率触发，接下来10秒内自身造成2倍伤害，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -3257,11 +3729,14 @@ pg.skill_data_template = {
 	[3021] = {
 		desc_get = "",
 		name = "舰队空母",
-		desc = "每次执行空袭后为先锋部队提高$1伤害，持续8秒，同技能效果不叠加",
+		id = 3021,
 		type = 3,
 		max_level = 10,
-		id = 3021,
+		desc = "每次执行空袭后为先锋部队提高$1伤害，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -3315,11 +3790,14 @@ pg.skill_data_template = {
 	[3031] = {
 		desc_get = "",
 		name = "支援空母",
-		desc = "每次执行空袭后为先锋部队回复$1耐久",
+		id = 3031,
 		type = 3,
 		max_level = 10,
-		id = 3031,
+		desc = "每次执行空袭后为先锋部队回复$1耐久",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -3373,11 +3851,14 @@ pg.skill_data_template = {
 	[3041] = {
 		desc_get = "",
 		name = "制空支援",
-		desc = "每次执行空袭后，提高己方其他航母$1航空，持续8秒",
+		id = 3041,
 		type = 3,
 		max_level = 10,
-		id = 3041,
+		desc = "每次执行空袭后，提高己方其他航母$1航空，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -3431,11 +3912,14 @@ pg.skill_data_template = {
 	[3051] = {
 		desc_get = "",
 		name = "航空掩护",
-		desc = "每次执行空袭后，降低己方先锋受到伤害$1，持续8秒",
+		id = 3051,
 		type = 2,
 		max_level = 10,
-		id = 3051,
+		desc = "每次执行空袭后，降低己方先锋受到伤害$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -3489,12 +3973,15 @@ pg.skill_data_template = {
 	[3511] = {
 		desc_get = "",
 		name = "额外供氧",
-		desc = "自身氧气存量额外提高$1点",
+		id = 3511,
 		type = 3,
 		max_level = 10,
-		id = 3511,
+		desc = "自身氧气存量额外提高$1点",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3549,12 +4036,15 @@ pg.skill_data_template = {
 	[3521] = {
 		desc_get = "",
 		name = "水面作战",
-		desc = "自身氧气不足浮上水面后，水面作战的持续时间增加$1秒",
+		id = 3521,
 		type = 2,
 		max_level = 10,
-		id = 3521,
+		desc = "自身氧气不足浮上水面后，水面作战的持续时间增加$1秒",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3609,12 +4099,15 @@ pg.skill_data_template = {
 	[3531] = {
 		desc_get = "",
 		name = "缓速鱼雷",
-		desc = "鱼雷移动速度降低1，伤害提高$1",
+		id = 3531,
 		type = 1,
 		max_level = 10,
-		id = 3531,
+		desc = "鱼雷移动速度降低1，伤害提高$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3669,12 +4162,15 @@ pg.skill_data_template = {
 	[3571] = {
 		desc_get = "",
 		name = "轻巡猎手",
-		desc = "对轻巡洋舰伤害提升$1",
+		id = 3571,
 		type = 1,
 		max_level = 10,
-		id = 3571,
+		desc = "对轻巡洋舰伤害提升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3729,12 +4225,15 @@ pg.skill_data_template = {
 	[3581] = {
 		desc_get = "",
 		name = "重巡猎手",
-		desc = "对重巡、超巡伤害提升$1",
+		id = 3581,
 		type = 1,
 		max_level = 10,
-		id = 3581,
+		desc = "对重巡、超巡伤害提升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3789,12 +4288,15 @@ pg.skill_data_template = {
 	[3591] = {
 		desc_get = "",
 		name = "航母猎手",
-		desc = "对航空母舰伤害提升$1",
+		id = 3591,
 		type = 1,
 		max_level = 10,
-		id = 3591,
+		desc = "对航空母舰伤害提升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3849,12 +4351,15 @@ pg.skill_data_template = {
 	[3611] = {
 		desc_get = "",
 		name = "狼群战术",
-		desc = "出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、装填属性上升$1",
+		id = 3611,
 		type = 1,
 		max_level = 10,
-		id = 3611,
+		desc = "出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、命中、装填属性上升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3909,12 +4414,15 @@ pg.skill_data_template = {
 	[3621] = {
 		desc_get = "",
 		name = "空域确认",
-		desc = "战斗中，若制空状态不为制空权劣势或制空权丧失，提升自身炮击、雷击、装填$1",
+		id = 3621,
 		type = 3,
 		max_level = 10,
-		id = 3621,
+		desc = "战斗中，若制空状态不为制空权劣势或制空权丧失，提升自身炮击、雷击、装填$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -3969,12 +4477,15 @@ pg.skill_data_template = {
 	[3631] = {
 		desc_get = "",
 		name = "远洋支援",
-		desc = "自身氧气存量额外提高$1点；在潜艇编队中时，在该编队的狩猎范围外，可以进行一次战斗内潜艇支援",
+		id = 3631,
 		type = 3,
 		max_level = 10,
-		id = 3631,
+		desc = "自身氧气存量额外提高$1点；在潜艇编队中时，在该编队的狩猎范围外，可以进行一次战斗内潜艇支援",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -4029,11 +4540,14 @@ pg.skill_data_template = {
 	[4001] = {
 		desc_get = "",
 		name = "防御姿态",
-		desc = "每隔20秒，有$1的概率发动，降低自身受到伤害的$2，持续8秒",
+		id = 4001,
 		type = 2,
 		max_level = 10,
-		id = 4001,
+		desc = "每隔20秒，有$1的概率发动，降低自身受到伤害的$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -4132,11 +4646,14 @@ pg.skill_data_template = {
 	[4011] = {
 		desc_get = "",
 		name = "防御号令",
-		desc = "每隔20秒，有25%的概率发动，降低全队受到伤害的$1，持续8秒，同技能效果不叠加",
+		id = 4011,
 		type = 3,
 		max_level = 10,
-		id = 4011,
+		desc = "每隔20秒，有25%的概率发动，降低全队受到伤害的$1，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -4190,11 +4707,14 @@ pg.skill_data_template = {
 	[4021] = {
 		desc_get = "",
 		name = "重点防护",
-		desc = "受到攻击时有$1的概率减少50%伤害",
+		id = 4021,
 		type = 2,
 		max_level = 10,
-		id = 4021,
+		desc = "受到伤害时有$1的概率减少50%伤害",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -4248,11 +4768,14 @@ pg.skill_data_template = {
 	[4031] = {
 		desc_get = "",
 		name = "损害管制",
-		desc = "每隔25秒，回复自身$1的耐久",
+		id = 4031,
 		type = 2,
 		max_level = 10,
-		id = 4031,
+		desc = "每隔25秒，回复自身$1的耐久",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -4306,11 +4829,14 @@ pg.skill_data_template = {
 	[4041] = {
 		desc_get = "",
 		name = "吸引火力",
-		desc = "每20秒，有$1的概率发动，承受先锋队伍受到的50%伤害，持续8秒，同技能效果不叠加",
+		id = 4041,
 		type = 2,
 		max_level = 10,
-		id = 4041,
+		desc = "每20秒，有$1的概率发动，承受先锋队伍受到的50%伤害，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -4364,11 +4890,14 @@ pg.skill_data_template = {
 	[4051] = {
 		desc_get = "受到伤害时有15%的概率发动，在角色正前方生成护盾，护盾可阻挡12发子弹，持续5秒(满级15秒)",
 		name = "正面装甲",
-		desc = "受到伤害时有15%的概率发动，在角色正前方生成护盾，护盾可阻挡12发子弹，持续$1秒",
+		id = 4051,
 		type = 2,
 		max_level = 10,
-		id = 4051,
+		desc = "受到伤害时有15%的概率发动，在角色正前方生成护盾，护盾可阻挡12发子弹，持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -4417,11 +4946,14 @@ pg.skill_data_template = {
 	[4061] = {
 		desc_get = "受到伤害时有15%的概率发动，在角色侧面生成2面护盾，护盾可阻挡6发子弹，持续5秒(满级15秒)",
 		name = "侧面装甲",
-		desc = "受到伤害时有15%的概率发动，在角色侧面生成2面护盾，护盾可阻挡6发子弹，持续$1秒",
+		id = 4061,
 		type = 2,
 		max_level = 10,
-		id = 4061,
+		desc = "受到伤害时有15%的概率发动，在角色侧面生成2面护盾，护盾可阻挡6发子弹，持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -4470,11 +5002,14 @@ pg.skill_data_template = {
 	[4071] = {
 		desc_get = "",
 		name = "紧急回避",
-		desc = "每隔20秒，有$1的概率发动，自体完全回避所有攻击，持续6秒",
+		id = 4071,
 		type = 2,
 		max_level = 10,
-		id = 4071,
+		desc = "每隔20秒，有$1的概率发动，自体完全回避所有攻击，持续6秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -4528,11 +5063,14 @@ pg.skill_data_template = {
 	[4081] = {
 		desc_get = "",
 		name = "烟雾弹",
-		desc = "战斗开始时使用烟雾弹，随后每15秒有$1的概率使用烟雾弹，处于烟幕中的角色回避率提高$2，持续5秒，同技能效果不叠加",
+		id = 4081,
 		type = 2,
 		max_level = 10,
-		id = 4081,
+		desc = "战斗开始时使用烟雾弹，随后每15秒有$1的概率使用烟雾弹，处于烟幕中的角色回避率提高$2，持续5秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -4631,11 +5169,14 @@ pg.skill_data_template = {
 	[4091] = {
 		desc_get = "",
 		name = "防空模式",
-		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
+		id = 4091,
 		type = 2,
 		max_level = 10,
-		id = 4091,
+		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -4734,11 +5275,14 @@ pg.skill_data_template = {
 	[4101] = {
 		desc_get = "",
 		name = "烟雾弹·轻巡",
-		desc = "战斗开始10秒后使用烟雾弹，随后每20秒有20.0%概率使用烟雾弹，处于烟幕中的角色回避率提高$1，受到航空伤害降低$2，持续10秒，同技能效果不叠加",
+		id = 4101,
 		type = 2,
 		max_level = 10,
-		id = 4101,
+		desc = "战斗开始10秒后使用烟雾弹，随后每20秒有20.0%概率使用烟雾弹，处于烟幕中的角色回避率提高$1，受到航空伤害降低$2，持续10秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -4837,11 +5381,14 @@ pg.skill_data_template = {
 	[4111] = {
 		desc_get = "",
 		name = "穿甲防护",
-		desc = "受到穿甲弹的伤害降低$1",
+		id = 4111,
 		type = 2,
 		max_level = 10,
-		id = 4111,
+		desc = "受到穿甲弹的伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -4895,11 +5442,14 @@ pg.skill_data_template = {
 	[4121] = {
 		desc_get = "",
 		name = "防护装甲",
-		desc = "受到来自驱逐、轻巡的炮击伤害降低$1",
+		id = 4121,
 		type = 2,
 		max_level = 10,
-		id = 4121,
+		desc = "受到来自驱逐、轻巡的炮击伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -4953,11 +5503,14 @@ pg.skill_data_template = {
 	[4131] = {
 		desc_get = "",
 		name = "冲突禁止",
-		desc = "先锋部队与敌方相撞时，我方受到的伤害降低$1。",
+		id = 4131,
 		type = 2,
 		max_level = 10,
-		id = 4131,
+		desc = "先锋部队与敌方相撞时，我方受到的伤害降低$1。",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -5011,11 +5564,14 @@ pg.skill_data_template = {
 	[4141] = {
 		desc_get = "",
 		name = "机动护卫",
-		desc = "在队伍中(存活)时，降低主力舰队受到的伤害$1；自身受到来自轻巡、驱逐的炮击和雷击伤害降低$2，同技能效果不叠加",
+		id = 4141,
 		type = 2,
 		max_level = 10,
-		id = 4141,
+		desc = "在队伍中(存活)时，降低主力舰队受到的伤害$1；自身受到来自轻巡、驱逐的炮击和雷击伤害降低$2，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -5111,14 +5667,335 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[4151] = {
+		desc_get = "",
+		name = "机动制压",
+		id = 4151,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中受到来自驱逐的炮击、雷击伤害降低$1；每隔20秒，自身航速提高5，自身炮击提高$2，持续10秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[4161] = {
+		desc_get = "",
+		name = "空域辅助",
+		id = 4161,
+		type = 3,
+		max_level = 10,
+		desc = "自身所在编队进入战斗时，若自身存活，提升队伍中所有正航、轻航的航空$1、装填$2，自身舰载机的第一轮空中支援加载时间缩短$3；关卡海域内其他编队进入战斗时，若自身存活，提升该队伍中所有正航、轻航的航空$4、装填$4，同名技能效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"10.0%",
+				"25.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.8%"
+				},
+				{
+					"5.3%",
+					"+0.8%"
+				},
+				{
+					"6.1%",
+					"+0.9%"
+				},
+				{
+					"7.0%",
+					"+0.8%"
+				},
+				{
+					"7.8%",
+					"+0.8%"
+				},
+				{
+					"8.6%",
+					"+0.9%"
+				},
+				{
+					"9.5%",
+					"+0.8%"
+				},
+				{
+					"10.3%",
+					"+0.8%"
+				},
+				{
+					"11.1%",
+					"+0.9%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.5%"
+				},
+				{
+					"11.5%",
+					"+1.5%"
+				},
+				{
+					"13%",
+					"+1.5%"
+				},
+				{
+					"14.5%",
+					"+1.6%"
+				},
+				{
+					"16.1%",
+					"+1.6%"
+				},
+				{
+					"17.7%",
+					"+1.7%"
+				},
+				{
+					"19.4%",
+					"+1.8%"
+				},
+				{
+					"21.2%",
+					"+1.8%"
+				},
+				{
+					"23%",
+					"+2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[4171] = {
+		desc_get = "",
+		name = "空域辅助-共通效果占用id",
+		id = 4171,
+		type = 3,
+		max_level = 10,
+		desc = "",
+		system_transform = {
+			[51.0] = 4176
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[5001] = {
 		desc_get = "每隔20秒，有25%的概率发动，降低敌方单个单位射速与伤害，持续5秒(满级10秒)，优先对精英目标（人形单位）生效，同技能效果不叠加",
 		name = "火力干扰",
-		desc = "每隔20秒，有25%的概率发动，降低敌方单个单位射速与伤害，持续$1秒，优先对精英目标（人形单位）生效，同技能效果不叠加",
+		id = 5001,
 		type = 3,
 		max_level = 10,
-		id = 5001,
+		desc = "每隔20秒，有25%的概率发动，降低敌方单个单位射速与伤害，持续$1秒，优先对精英目标（人形单位）生效，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -5167,11 +6044,14 @@ pg.skill_data_template = {
 	[5011] = {
 		desc_get = "每隔20秒，有25%的概率发动，敌方单个单位受到的伤害上升20%，持续5秒(满级15秒)，优先对精英目标（人形单位）生效，同技能效果不叠加",
 		name = "弱点侦测",
-		desc = "每隔20秒，有25%的概率发动，敌方单个单位受到的伤害上升20%，持续$1秒，优先对精英目标（人形单位）生效，同技能效果不叠加",
+		id = 5011,
 		type = 3,
 		max_level = 10,
-		id = 5011,
+		desc = "每隔20秒，有25%的概率发动，敌方单个单位受到的伤害上升20%，持续$1秒，优先对精英目标（人形单位）生效，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -5220,11 +6100,14 @@ pg.skill_data_template = {
 	[5021] = {
 		desc_get = "",
 		name = "空母护航",
-		desc = "在队伍中(存活)时降低轻母、航母受到的伤害$1，同技能效果不叠加",
+		id = 5021,
 		type = 2,
 		max_level = 10,
-		id = 5021,
+		desc = "在队伍中(存活)时降低轻母、航母受到的伤害$1，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -5278,11 +6161,14 @@ pg.skill_data_template = {
 	[5031] = {
 		desc_get = "",
 		name = "战舰护航",
-		desc = "在队伍中(存活)时降低战巡、战列受到的伤害$1，同技能效果不叠加",
+		id = 5031,
 		type = 2,
 		max_level = 10,
-		id = 5031,
+		desc = "在队伍中(存活)时降低战巡、战列受到的伤害$1，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -5336,11 +6222,14 @@ pg.skill_data_template = {
 	[5041] = {
 		desc_get = "",
 		name = "照明弹",
-		desc = "战斗开始10秒后使用照明弹，随后每20秒有$1概率使用照明弹，处于照明弹效果中的角色回避率降低25%，照明弹持续10秒，同技能效果不叠加（照明弹优先选择最近的目标）",
+		id = 5041,
 		type = 3,
 		max_level = 10,
-		id = 5041,
+		desc = "战斗开始10秒后使用照明弹，随后每20秒有$1概率使用照明弹，处于照明弹效果中的角色回避率降低25%，照明弹持续10秒，同技能效果不叠加（照明弹优先选择最近的目标）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -5394,11 +6283,14 @@ pg.skill_data_template = {
 	[5051] = {
 		desc_get = "",
 		name = "旗舰掩护",
-		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
+		id = 5051,
 		type = 3,
 		max_level = 10,
-		id = 5051,
+		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -5452,11 +6344,14 @@ pg.skill_data_template = {
 	[5061] = {
 		desc_get = "",
 		name = "驱逐编队",
-		desc = "出击时，若先锋编队仅由自己和驱逐舰组成（至少编入一名驱逐舰），则自身航速提高4，对驱逐舰和轻巡洋舰造成的伤害提高$1",
+		id = 5061,
 		type = 3,
 		max_level = 10,
-		id = 5061,
+		desc = "出击时，若先锋编队仅由自己和驱逐舰组成（至少编入一名驱逐舰），则自身航速提高4，对驱逐舰和轻巡洋舰造成的伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -5510,11 +6405,14 @@ pg.skill_data_template = {
 	[5071] = {
 		desc_get = "",
 		name = "骑士之盾",
-		desc = "当先锋舰队只有自由鸢尾、维希教廷阵营的角色时生效，每隔20秒，有50%的概率发动，我方所有单位受到的伤害降低$1，持续8秒，同技能效果不叠加",
+		id = 5071,
 		type = 2,
 		max_level = 10,
-		id = 5071,
+		desc = "当先锋舰队只有自由鸢尾、维希教廷阵营的角色时生效，每隔20秒，有50%的概率发动，我方所有单位受到的伤害降低$1，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -5568,11 +6466,14 @@ pg.skill_data_template = {
 	[5081] = {
 		desc_get = "",
 		name = "骑士之剑",
-		desc = "当先锋舰队只有自由鸢尾、维希教廷阵营的角色时生效，每隔20秒，有50%的概率发动，我方所有单位造成的伤害上升$1，持续8秒，同技能效果不叠加",
+		id = 5081,
 		type = 1,
 		max_level = 10,
-		id = 5081,
+		desc = "当先锋舰队只有自由鸢尾、维希教廷阵营的角色时生效，每隔20秒，有50%的概率发动，我方所有单位造成的伤害上升$1，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -5626,11 +6527,14 @@ pg.skill_data_template = {
 	[5101] = {
 		desc_get = "",
 		name = "应急战备",
-		desc = "出击时，自身炮击、雷击属性提高$1；每12秒，炮击、雷击属性降低$2，属性降低每场战斗触发3次",
+		id = 5101,
 		type = 3,
 		max_level = 10,
-		id = 5101,
+		desc = "出击时，自身炮击、雷击属性提高$1；每12秒，炮击、雷击属性降低$2，属性降低每场战斗触发3次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"9%",
@@ -5729,11 +6633,14 @@ pg.skill_data_template = {
 	[5111] = {
 		desc_get = "",
 		name = "航空辅助",
-		desc = "作为僚舰出击时，提升队伍中除自身外所有轻母、正航装填$1，提升主力舰队防空$2点",
+		id = 5111,
 		type = 3,
 		max_level = 10,
-		id = 5111,
+		desc = "作为僚舰出击时，提升队伍中除自身外所有轻母、正航装填$1，提升主力舰队防空$2点",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -5832,781 +6739,2174 @@ pg.skill_data_template = {
 	[6000] = {
 		desc_get = "",
 		name = "小海狸中队",
-		desc = "全队航速提高20%",
+		id = 6000,
 		type = 0,
 		max_level = 0,
-		id = 6000,
+		desc = "全队航速提高20%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6010] = {
 		desc_get = "",
 		name = "防鱼雷隔舱T1",
-		desc = "受到鱼雷伤害减少10%，同类效果取最大值，不可叠加",
+		id = 6010,
 		type = 0,
 		max_level = 0,
-		id = 6010,
+		desc = "受到鱼雷伤害减少10%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6020] = {
 		desc_get = "",
 		name = "防鱼雷隔舱T2",
-		desc = "受到鱼雷伤害减少20%，同类效果取最大值，不可叠加",
+		id = 6020,
 		type = 0,
 		max_level = 0,
-		id = 6020,
+		desc = "受到鱼雷伤害减少20%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6030] = {
 		desc_get = "",
 		name = "防鱼雷隔舱T3",
-		desc = "受到鱼雷伤害减少30%，同类效果取最大值，不可叠加",
+		id = 6030,
 		type = 0,
 		max_level = 0,
-		id = 6030,
+		desc = "受到鱼雷伤害减少30%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6040] = {
 		desc_get = "",
 		name = "SG雷达T1",
-		desc = "提供了极其优秀的侦查，受到伏击概率降低5%，规避伏击概率提高5%，效果不可叠加",
+		id = 6040,
 		type = 0,
 		max_level = 0,
-		id = 6040,
+		desc = "提供了极其优秀的侦查，受到伏击概率降低5%，规避伏击概率提高5%，效果不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6050] = {
 		desc_get = "",
 		name = "SG雷达T2",
-		desc = "提供了极其优秀的侦查，受到伏击概率降低8%，规避伏击概率提高8%，效果不可叠加",
+		id = 6050,
 		type = 0,
 		max_level = 0,
-		id = 6050,
+		desc = "提供了极其优秀的侦查，受到伏击概率降低8%，规避伏击概率提高8%，效果不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6060] = {
 		desc_get = "",
 		name = "SG雷达T3",
-		desc = "提供了极其优秀的侦查，受到伏击概率降低12%，规避伏击概率提高12%，效果不可叠加",
+		id = 6060,
 		type = 0,
 		max_level = 0,
-		id = 6060,
+		desc = "提供了极其优秀的侦查，受到伏击概率降低12%，规避伏击概率提高12%，效果不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6070] = {
 		desc_get = "",
 		name = "航空副油箱T1",
-		desc = "舰载机耐久增加50点，同类效果取最大值，不可叠加",
+		id = 6070,
 		type = 0,
 		max_level = 0,
-		id = 6070,
+		desc = "舰载机耐久增加50点，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6080] = {
 		desc_get = "",
 		name = "航空副油箱T2",
-		desc = "舰载机耐久增加80点，同类效果取最大值，不可叠加",
+		id = 6080,
 		type = 0,
 		max_level = 0,
-		id = 6080,
+		desc = "舰载机耐久增加80点，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6090] = {
 		desc_get = "",
 		name = "航空副油箱T3",
-		desc = "舰载机耐久增加120点，同类效果取最大值，不可叠加",
+		id = 6090,
 		type = 0,
 		max_level = 0,
-		id = 6090,
+		desc = "舰载机耐久增加120点，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6100] = {
 		desc_get = "",
 		name = "维修工具T1",
-		desc = "每15秒0.3%缓慢回复耐久，同类效果取最大值，不可叠加",
+		id = 6100,
 		type = 0,
 		max_level = 0,
-		id = 6100,
+		desc = "每15秒0.3%缓慢回复耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6110] = {
 		desc_get = "",
 		name = "维修工具T2",
-		desc = "每15秒0.6%缓慢回复耐久，同类效果取最大值，不可叠加",
+		id = 6110,
 		type = 0,
 		max_level = 0,
-		id = 6110,
+		desc = "每15秒0.6%缓慢回复耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6120] = {
 		desc_get = "",
 		name = "维修工具T3",
-		desc = "每15秒1.0%缓慢回复耐久，同类效果取最大值，不可叠加",
+		id = 6120,
 		type = 0,
 		max_level = 0,
-		id = 6120,
+		desc = "每15秒1.0%缓慢回复耐久，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6130] = {
 		desc_get = "",
 		name = "珍珠之泪",
-		desc = "被击沉时恢复全队其他角色耐久10%",
+		id = 6130,
 		type = 0,
 		max_level = 0,
-		id = 6130,
+		desc = "被击沉时恢复全队其他角色耐久10%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6140] = {
 		desc_get = "",
 		name = "灭火器T1",
-		desc = "起火概率降低10%，起火伤害降低10%，同类效果取最大值，不可叠加",
+		id = 6140,
 		type = 0,
 		max_level = 0,
-		id = 6140,
+		desc = "起火概率降低10%，起火伤害降低10%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6150] = {
 		desc_get = "",
 		name = "灭火器T2",
-		desc = "起火概率降低20%，持续时间缩短3秒，起火伤害降低15%，同类效果取最大值，不可叠加",
+		id = 6150,
 		type = 0,
 		max_level = 0,
-		id = 6150,
+		desc = "起火概率降低20%，持续时间缩短3秒，起火伤害降低15%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6160] = {
 		desc_get = "",
 		name = "灭火器T3",
-		desc = "起火概率降低30%，持续时间缩短6秒，起火伤害降低20%，同类效果取最大值，不可叠加",
+		id = 6160,
 		type = 0,
 		max_level = 0,
-		id = 6160,
+		desc = "起火概率降低30%，持续时间缩短6秒，起火伤害降低20%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6170] = {
 		desc_get = "",
 		name = "喵喵治愈",
-		desc = "({namecode:98}装备时生效)所有治疗效果提高20%，不可叠加",
+		id = 6170,
 		type = 0,
 		max_level = 0,
-		id = 6170,
+		desc = "({namecode:98}装备时生效)所有治疗效果提高20%，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6180] = {
 		desc_get = "",
 		name = "空中侦察",
-		desc = "放出宁海号进行侦察，受到伏击概率降低8%，规避伏击概率提高8%，效果不可叠加",
+		id = 6180,
 		type = 0,
 		max_level = 0,
-		id = 6180,
+		desc = "放出宁海号进行侦察，受到伏击概率降低8%，规避伏击概率提高8%，效果不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6190] = {
 		desc_get = "",
 		name = "九一式穿甲弹",
-		desc = "主炮炮击的暴击伤害提高15%",
+		id = 6190,
 		type = 0,
 		max_level = 0,
-		id = 6190,
+		desc = "主炮炮击的暴击伤害提高15%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6200] = {
 		desc_get = "",
 		name = "一式穿甲弹",
-		desc = "主炮炮击的暴击伤害提高25%",
+		id = 6200,
 		type = 0,
 		max_level = 0,
-		id = 6200,
+		desc = "主炮炮击的暴击伤害提高25%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6210] = {
 		desc_get = "",
 		name = "超重弹",
-		desc = "主炮炮击的暴击率提高8%",
+		id = 6210,
 		type = 0,
 		max_level = 0,
-		id = 6210,
+		desc = "主炮炮击的暴击率提高8%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6220] = {
 		desc_get = "",
 		name = "剑鱼(818中队)",
-		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		id = 6220,
 		type = 0,
 		max_level = 0,
-		id = 6220,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6230] = {
 		desc_get = "",
 		name = "Z字旗",
-		desc = "自身暴击率提高5%，特定角色装备时，获得额外效果",
+		id = 6230,
 		type = 0,
 		max_level = 0,
-		id = 6230,
+		desc = "自身暴击率提高5%，特定角色装备时，获得额外效果",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6240] = {
 		desc_get = "",
 		name = "密集轰炸",
-		desc = "空中支援时，自身舰载机对敌方轻母、航母伤害提高5.0%",
+		id = 6240,
 		type = 0,
 		max_level = 0,
-		id = 6240,
+		desc = "空中支援时，自身舰载机对敌方轻母、航母伤害提高5.0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6250] = {
 		desc_get = "",
 		name = "Jolly Rogers",
-		desc = "空中支援时，队伍全员防空提高5.0%，持续8秒",
+		id = 6250,
 		type = 0,
 		max_level = 0,
-		id = 6250,
+		desc = "空中支援时，队伍全员防空提高5.0%，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6260] = {
 		desc_get = "",
 		name = "精确锁定",
-		desc = "第一轮主炮准备时间缩短15%",
+		id = 6260,
 		type = 0,
 		max_level = 0,
-		id = 6260,
+		desc = "第一轮主炮准备时间缩短15%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6270] = {
 		desc_get = "",
 		name = "机动回避",
-		desc = "每20秒有30%概率触发，自身2秒内完全回避攻击伤害(无法回避碰撞、起火等状态造成的伤害)",
+		id = 6270,
 		type = 0,
 		max_level = 0,
-		id = 6270,
+		desc = "每20秒有30%概率触发，自身2秒内完全回避攻击伤害(无法回避碰撞、起火等状态造成的伤害)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6280] = {
 		desc_get = "",
 		name = "对空搜索",
-		desc = "提供了优秀的对空搜索，受到伏击概率降低12%，效果不可叠加",
+		id = 6280,
 		type = 0,
 		max_level = 0,
-		id = 6280,
+		desc = "提供了优秀的对空搜索，受到伏击概率降低12%，效果不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6290] = {
 		desc_get = "",
 		name = "远洋巡航I",
-		desc = "该角色的狩猎范围等级+1\n(该装备强化+10时，效果提升为狩猎范围等级+2)",
+		id = 6290,
 		type = 0,
 		max_level = 0,
-		id = 6290,
+		desc = "该角色的狩猎范围等级+1\n(该装备强化+10时，效果提升为狩猎范围等级+2)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6291] = {
 		desc_get = "",
 		name = "远洋巡航II",
-		desc = "该角色的狩猎范围等级+2",
+		id = 6291,
 		type = 0,
 		max_level = 0,
-		id = 6291,
+		desc = "该角色的狩猎范围等级+2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6300] = {
 		desc_get = "",
 		name = "高效燃油",
-		desc = "提高舰载机巡航速度，舰载机耐久增加140点。同类效果取最大值，不可叠加",
+		id = 6300,
 		type = 0,
 		max_level = 0,
-		id = 6300,
+		desc = "提高舰载机巡航速度，舰载机耐久增加140点。同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6310] = {
 		desc_get = "",
 		name = "归航引导",
-		desc = "空中支援加载时间缩短4% ",
+		id = 6310,
 		type = 0,
 		max_level = 0,
-		id = 6310,
+		desc = "空中支援加载时间缩短4% ",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6320] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6320,
 		type = 0,
 		max_level = 0,
-		id = 6320,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6321] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6321,
 		type = 0,
 		max_level = 0,
-		id = 6321,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6322] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6322,
 		type = 0,
 		max_level = 0,
-		id = 6322,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6323] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6323,
 		type = 0,
 		max_level = 0,
-		id = 6323,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6324] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6324,
 		type = 0,
 		max_level = 0,
-		id = 6324,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6325] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6325,
 		type = 0,
 		max_level = 0,
-		id = 6325,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6326] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6326,
 		type = 0,
 		max_level = 0,
-		id = 6326,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6327] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6327,
 		type = 0,
 		max_level = 0,
-		id = 6327,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6328] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6328,
 		type = 0,
 		max_level = 0,
-		id = 6328,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6329] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6329,
 		type = 0,
 		max_level = 0,
-		id = 6329,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6330] = {
 		desc_get = "",
 		name = "落幕与揭幕",
-		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		id = 6330,
 		type = 0,
 		max_level = 0,
-		id = 6330,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6331] = {
+		desc_get = "",
+		name = "落幕与揭幕",
+		id = 6331,
+		type = 0,
+		max_level = 0,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6332] = {
+		desc_get = "",
+		name = "落幕与揭幕",
+		id = 6332,
+		type = 0,
+		max_level = 0,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6333] = {
+		desc_get = "",
+		name = "落幕与揭幕",
+		id = 6333,
+		type = 0,
+		max_level = 0,
+		desc = "自身第二轮空袭开始，该舰载机由TBD蹂躏者(VT-8中队)更换为TBF复仇者(VT-8中队)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6360] = {
 		desc_get = "",
 		name = "延时射击",
-		desc = "自身装备的主炮散布范围降低2点",
+		id = 6360,
 		type = 0,
 		max_level = 0,
-		id = 6360,
+		desc = "自身装备的主炮散布范围降低2点",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6370] = {
 		desc_get = "",
 		name = "潜母特攻",
-		desc = "潜母装备时，造成的空袭伤害额外提升60%",
+		id = 6370,
 		type = 0,
 		max_level = 0,
-		id = 6370,
+		desc = "潜母装备时，造成的空袭伤害额外提升60%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6380] = {
 		desc_get = "",
 		name = "随机单词生成器",
-		desc = "任意KizunaAI装备时，战斗开始时，将改变主武器的装备外观",
+		id = 6380,
 		type = 0,
 		max_level = 0,
-		id = 6380,
+		desc = "任意KizunaAI装备时，战斗开始时，将改变主武器的装备外观",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6390] = {
 		desc_get = "",
 		name = "晃悠悠",
-		desc = "装备后，视作KizunaAI阵营（原阵营同样生效）",
+		id = 6390,
 		type = 0,
 		max_level = 0,
-		id = 6390,
+		desc = "装备后，视作KizunaAI阵营（原阵营同样生效）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6400] = {
 		desc_get = "",
 		name = "智慧模块",
-		desc = "<color=#a2a2a2>随着病毒危机的解除（KizunaAI联动活动结束），这件装备失去了特殊效果</color>",
+		id = 6400,
 		type = 0,
 		max_level = 0,
-		id = 6400,
+		desc = "<color=#a2a2a2>随着病毒危机的解除（KizunaAI联动活动结束），这件装备失去了特殊效果</color>",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6410] = {
 		desc_get = "",
 		name = "已抵达的承诺",
-		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
+		id = 6410,
 		type = 0,
 		max_level = 1,
-		id = 6410,
+		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6411] = {
 		desc_get = "",
 		name = "已抵达的承诺",
-		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
+		id = 6411,
 		type = 0,
 		max_level = 1,
-		id = 6411,
+		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6415] = {
 		desc_get = "",
 		name = "已抵达的承诺",
-		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
+		id = 6415,
 		type = 0,
 		max_level = 1,
-		id = 6415,
+		desc = "U556装备该设备时，自身水面作战的持续时间增加4秒，自身狩猎范围等级+1；俾斯麦装备该设备时，主力舰队受到弹药匮乏状态的影响降低",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6420] = {
 		desc_get = "",
 		name = "穿甲航弹",
-		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		id = 6420,
 		type = 0,
 		max_level = 0,
-		id = 6420,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6430] = {
 		desc_get = "",
 		name = "萨奇剪",
-		desc = "装备时提升队伍中所有战斗机4%武器效率，同类效果取最大值，不可叠加",
+		id = 6430,
 		type = 0,
 		max_level = 0,
-		id = 6430,
+		desc = "装备时提升队伍中所有战斗机4%武器效率，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6440] = {
 		desc_get = "",
 		name = "对塞壬防御战术I",
-		desc = "装备时，自身受到来自塞壬阵营敌人的伤害降低6%，同类效果取最大值，不可叠加",
+		id = 6440,
 		type = 0,
 		max_level = 0,
-		id = 6440,
+		desc = "装备时，自身受到来自塞壬阵营敌人的伤害降低6%，同类效果取最大值，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6450] = {
 		desc_get = "",
 		name = "狂暴炮击",
-		desc = "装备时，自身主炮造成的伤害提高10%；自身每两次主炮射击后，主炮的装填时间增加30%，下一次主炮射击后装填时间恢复原状，主炮射击计数重置",
+		id = 6450,
 		type = 0,
 		max_level = 0,
-		id = 6450,
+		desc = "装备时，自身主炮造成的伤害提高10%；自身每两次主炮射击后，主炮的装填时间增加30%，下一次主炮射击后装填时间恢复原状，主炮射击计数重置",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6460] = {
 		desc_get = "",
 		name = "VH装甲钢板",
-		desc = "重甲角色装备时，战斗中受到的穿甲弹伤害降低6%，高爆弹通常弹伤害降低3%；非重甲角色装备时，战斗开始后，自身护甲类型修改为重甲",
+		id = 6460,
 		type = 0,
 		max_level = 0,
-		id = 6460,
+		desc = "重甲角色装备时，战斗中受到的穿甲弹伤害降低6%，高爆弹通常弹伤害降低3%；非重甲角色装备时，战斗开始后，自身护甲类型修改为重甲",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6470] = {
 		desc_get = "",
 		name = "VC装甲钢板",
-		desc = "重甲角色装备时，战斗中受到的穿甲弹伤害降低4%，高爆弹通常弹伤害降低2%",
+		id = 6470,
 		type = 0,
 		max_level = 0,
-		id = 6470,
+		desc = "重甲角色装备时，战斗中受到的穿甲弹伤害降低4%，高爆弹通常弹伤害降低2%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6480] = {
 		desc_get = "",
 		name = "四神之力",
-		desc = "鞍山级驱逐舰装备时，战斗中自身主炮造成的伤害提高16%并强化自身全弹发射样式",
+		id = 6480,
 		type = 0,
 		max_level = 0,
-		id = 6480,
+		desc = "鞍山级驱逐舰装备时，战斗中自身主炮造成的伤害提高16%并强化自身全弹发射样式",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6490] = {
 		desc_get = "",
 		name = "组徽",
-		desc = "任意hololive联动角色装备时，提升自身在战斗中造成的伤害3%",
+		id = 6490,
 		type = 0,
 		max_level = 0,
-		id = 6490,
+		desc = "任意hololive联动角色装备时，提升自身在战斗中造成的伤害3%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6500] = {
 		desc_get = "",
 		name = "Gamers的证明",
-		desc = "装备后，视作hololive阵营（原阵营同样生效）",
+		id = 6500,
 		type = 0,
 		max_level = 0,
-		id = 6500,
+		desc = "装备后，视作hololive阵营（原阵营同样生效）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6510] = {
 		desc_get = "",
 		name = "玉米灯笼",
-		desc = "任意hololive联动角色装备时，降低自身在战斗中受到的伤害4%",
+		id = 6510,
 		type = 0,
 		max_level = 0,
-		id = 6510,
+		desc = "任意hololive联动角色装备时，降低自身在战斗中受到的伤害4%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[6520] = {
 		desc_get = "",
 		name = "鮟鱇肝",
-		desc = "带着这个的话，或许能改变战斗BGM？",
+		id = 6520,
 		type = 0,
 		max_level = 0,
-		id = 6520,
+		desc = "带着这个的话，或许能改变战斗BGM？",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6530] = {
+		desc_get = "",
+		name = "空中侦察",
+		id = 6530,
+		type = 0,
+		max_level = 0,
+		desc = "卡特琳娜水上机进行协助侦察，受到伏击概率降低10%，规避伏击概率提高10%，效果不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6540] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6540,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6550] = {
+		desc_get = "",
+		name = "！？",
+		id = 6550,
+		type = 0,
+		max_level = 1,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6560] = {
+		desc_get = "",
+		name = "改良型艇壳",
+		id = 6560,
+		type = 0,
+		max_level = 0,
+		desc = "通过改良艇壳外形，自身航速增加20%，战斗中的就位位置向前移动8",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6570] = {
+		desc_get = "",
+		name = "预装磁性鱼雷",
+		id = 6570,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，战斗中自身第一次鱼雷武器射击的弹药将更换为磁性鱼雷，并提高该轮鱼雷造成的伤害5%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6580] = {
+		desc_get = "",
+		name = "“主炮”...开火！",
+		id = 6580,
+		type = 0,
+		max_level = 1,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6590] = {
+		desc_get = "",
+		name = "“九四式40厘米炮”",
+		id = 6590,
+		type = 0,
+		max_level = 0,
+		desc = "由{namecode:188}装备时，提高队伍中主力舰队及超巡角色炮击10%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6620] = {
+		desc_get = "",
+		name = "基础声呐T3",
+		id = 6620,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，战斗中追加侦测效果：敌方潜艇暴露时，命中属性降低3%（同类侦测效果不叠加）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6650] = {
+		desc_get = "",
+		name = "改良声呐T3",
+		id = 6650,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，战斗中追加侦测效果：敌方潜艇暴露时，雷击属性降低5%（同类侦测效果不叠加）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6660] = {
+		desc_get = "",
+		name = "航空兵装补给",
+		id = 6660,
+		type = 0,
+		max_level = 0,
+		desc = "运输舰装备时，提高队伍中所有角色8%航空",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6670] = {
+		desc_get = "",
+		name = "中小口径兵装补给",
+		id = 6670,
+		type = 0,
+		max_level = 0,
+		desc = "运输舰装备时，提高先锋舰队角色8%炮击（超巡除外）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6680] = {
+		desc_get = "",
+		name = "鱼雷兵装补给",
+		id = 6680,
+		type = 0,
+		max_level = 0,
+		desc = "运输舰装备时，提高队伍中所有角色8%雷击",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6690] = {
+		desc_get = "",
+		name = "引力舞鞋",
+		id = 6690,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，战斗中该角色视作μ兵装舰船",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6700] = {
+		desc_get = "",
+		name = "星云舞裙",
+		id = 6700,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，战斗中该角色视作μ兵装舰船",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6710] = {
+		desc_get = "",
+		name = "炽烈之歌",
+		id = 6710,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，将战斗BGM更改为「舰上LOYALTY」（同时装备多个改变BGM的装备时，将随机播放其中一首BGM）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6711] = {
+		desc_get = "",
+		name = "活力之歌",
+		id = 6711,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，将战斗BGM更改为「祈愿之歌」（同时装备多个改变BGM的装备时，将随机播放其中一首BGM）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6712] = {
+		desc_get = "",
+		name = "闪耀之歌",
+		id = 6712,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，将战斗BGM更改为「Blue spirit」（同时装备多个改变BGM的装备时，将随机播放其中一首BGM）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6720] = {
+		desc_get = "",
+		name = "觉醒宝珠",
+		id = 6720,
+		type = 0,
+		max_level = 0,
+		desc = "任意DOA联动角色装备时，提升自身在战斗中造成的伤害3%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6730] = {
+		desc_get = "",
+		name = "心之钥匙",
+		id = 6730,
+		type = 0,
+		max_level = 0,
+		desc = "装备后，可以改变战斗的BGM（同时装备多个改变BGM的装备时，将随机播放其中一首BGM）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6740] = {
+		desc_get = "",
+		name = "开拓者奖章",
+		id = 6740,
+		type = 0,
+		max_level = 0,
+		desc = "【演习特效】旗舰角色装备时，提高双方航母、轻母10%的伤害，降低双方战列、战巡10%的伤害（带有演习特效的装备只能同时装备一种）",
+		system_transform = {
+			[3.0] = 6741
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6750] = {
+		desc_get = "",
+		name = "白鹰精英损管",
+		id = 6750,
+		type = 0,
+		max_level = 0,
+		desc = "白鹰阵营角色装备时，受到致命伤害时不会阵亡，8秒内回避所有伤害，8秒后阵亡",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6760] = {
+		desc_get = "",
+		name = "华盛顿海军条约",
+		id = 6760,
+		type = 0,
+		max_level = 0,
+		desc = "【演习特效】旗舰角色装备时，降低双方伤害15%（带有演习特效的装备只能同时装备一种）",
+		system_transform = {
+			[3.0] = 6761
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6770] = {
+		desc_get = "",
+		name = "纳尔逊的旗语",
+		id = 6770,
+		type = 0,
+		max_level = 0,
+		desc = "战斗开始时触发，6秒内，承受先锋舰队受到伤害的24%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6790] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6790,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6791] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6791,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6792] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6792,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6793] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6793,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6794] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6794,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6795] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6795,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6796] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6796,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6797] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6797,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6798] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6798,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6799] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6799,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6800] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6800,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6801] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6801,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6802] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6802,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6803] = {
+		desc_get = "",
+		name = "猎杀战列",
+		id = 6803,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对敌方战列、战巡伤害提高3.0%；该舰载机编队命中敌方战列、战巡、航战时，有60%概率造成进水，持续9秒(进水伤害依据航空属性)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6810] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6810,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6811] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6811,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6812] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6812,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6813] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6813,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6814] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6814,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6815] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6815,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6816] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6816,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6817] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6817,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6818] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6818,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6819] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6819,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6820] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6820,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6821] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6821,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6822] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6822,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6823] = {
+		desc_get = "",
+		name = "剑鱼(818中队)",
+		id = 6823,
+		type = 0,
+		max_level = 0,
+		desc = "空中支援时，使敌方所有受击单位减速60%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6830] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6830,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6831] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6831,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6832] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6832,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6833] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6833,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6834] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6834,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6835] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6835,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6836] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6836,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6837] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6837,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6838] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6838,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6839] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6839,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6840] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6840,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6841] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6841,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6842] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6842,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6843] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6843,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6850] = {
+		desc_get = "",
+		name = "对重樱作战战术I",
+		id = 6850,
+		type = 0,
+		max_level = 0,
+		desc = "装备时，自身对重樱群岛单位造成伤害提高6%，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6860] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6860,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6861] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6861,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6862] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6862,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6863] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6863,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6864] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6864,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6865] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6865,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6866] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6866,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6867] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6867,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6868] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6868,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6869] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6869,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6870] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6870,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6871] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6871,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6872] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6872,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6873] = {
+		desc_get = "",
+		name = "穿甲航弹",
+		id = 6873,
+		type = 0,
+		max_level = 0,
+		desc = "该舰载机的投弹命中时有24%几率造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6880] = {
+		desc_get = "",
+		name = "偶像手环",
+		id = 6880,
+		type = 0,
+		max_level = 0,
+		desc = "任意偶像大师联动角色装备时，战斗开始后76秒内，降低自身在战斗中受到的伤害5%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[7000] = {
 		desc_get = "",
 		name = "莱茵演习",
-		desc = "",
+		id = 7000,
 		type = 0,
 		max_level = 0,
-		id = 7000,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9010] = {
 		desc_get = "",
 		name = "东煌之绊",
-		desc = "",
+		id = 9010,
 		type = 0,
 		max_level = 0,
-		id = 9010,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9020] = {
 		desc_get = "",
 		name = "抗击重樱",
-		desc = "",
+		id = 9020,
 		type = 0,
 		max_level = 0,
-		id = 9020,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9030] = {
 		desc_get = "",
 		name = "布里发动了技能！ ",
-		desc = "",
+		id = 9030,
 		type = 0,
 		max_level = 0,
-		id = 9030,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9031] = {
 		desc_get = "",
 		name = "然而什么都没有发生 ",
-		desc = "",
+		id = 9031,
 		type = 0,
 		max_level = 0,
-		id = 9031,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9033] = {
 		desc_get = "",
 		name = "布里发动了技能！ ",
-		desc = "",
+		id = 9033,
 		type = 0,
 		max_level = 0,
-		id = 9033,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9034] = {
 		desc_get = "",
 		name = "然而什么都没有发生 ",
-		desc = "",
+		id = 9034,
 		type = 0,
 		max_level = 0,
-		id = 9034,
+		desc = "",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[9050] = {
 		desc_get = "",
 		name = "LuckyE",
-		desc = "空中支援时，有$1概率造成2倍伤害，并使自己进入隐身状态，回避所有伤害，持续8秒",
+		id = 9050,
 		type = 1,
 		max_level = 9,
-		id = 9050,
+		desc = "空中支援时，有$1概率造成2倍伤害，并使自己进入隐身状态，回避所有伤害，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -6660,11 +8960,14 @@ pg.skill_data_template = {
 	[9061] = {
 		desc_get = "",
 		name = "火力全开",
-		desc = "每隔20秒，有$1的概率发动，提高自身$2炮击，持续10秒",
+		id = 9061,
 		type = 1,
 		max_level = 8,
-		id = 9061,
+		desc = "每隔20秒，有$1的概率发动，提高自身$2炮击，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -6763,11 +9066,14 @@ pg.skill_data_template = {
 	[9071] = {
 		desc_get = "",
 		name = "防空模式",
-		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
+		id = 9071,
 		type = 2,
 		max_level = 8,
-		id = 9071,
+		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -6866,11 +9172,14 @@ pg.skill_data_template = {
 	[9081] = {
 		desc_get = "",
 		name = "旗舰掩护",
-		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
+		id = 9081,
 		type = 3,
 		max_level = 8,
-		id = 9081,
+		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -6924,11 +9233,14 @@ pg.skill_data_template = {
 	[9090] = {
 		desc_get = "",
 		name = "所罗门的传说",
-		desc = "每20秒，有$1的概率发动，我方巡洋舰炮击、命中提升$2，受到攻击时，受到伤害降低$3，持续8秒",
+		id = 9090,
 		type = 3,
 		max_level = 8,
-		id = 9090,
+		desc = "每20秒，有$1的概率发动，我方巡洋舰炮击、命中提升$2，受到攻击时，受到伤害降低$3，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -7072,11 +9384,14 @@ pg.skill_data_template = {
 	[9101] = {
 		desc_get = "",
 		name = "强袭号令",
-		desc = "每隔20秒，有25%的概率发动，提高全队$1伤害，持续8秒，同技能效果不叠加",
+		id = 9101,
 		type = 3,
 		max_level = 9,
-		id = 9101,
+		desc = "每隔20秒，有25%的概率发动，提高全队$1伤害，持续8秒，同技能效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -7130,11 +9445,14 @@ pg.skill_data_template = {
 	[9110] = {
 		desc_get = "",
 		name = "防空模式",
-		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
+		id = 9110,
 		type = 2,
 		max_level = 9,
-		id = 9110,
+		desc = "防空炮开火时有25%概率触发，自身防空提高$1但炮击降低$2，持续3秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -7230,14 +9548,31 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[9120] = {
+		desc_get = "",
+		name = "模拟战埃吉尔占用",
+		id = 9120,
+		type = 1,
+		max_level = 10,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[10010] = {
 		desc_get = "",
 		name = "浴火重生",
-		desc = "耐久低于20%时，恢复$1耐久，每场战斗只能触发1次",
+		id = 10010,
 		type = 2,
 		max_level = 10,
-		id = 10010,
+		desc = "在战斗中受到伤害，导致耐久低于20%时，恢复$1耐久，每场战斗只能触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -7291,11 +9626,14 @@ pg.skill_data_template = {
 	[10020] = {
 		desc_get = "",
 		name = "水上狂飙",
-		desc = "每10秒有$1概率触发，自身机动上升$2，持续8秒",
+		id = 10020,
 		type = 2,
 		max_level = 10,
-		id = 10020,
+		desc = "每10秒有$1概率触发，自身机动上升$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -7394,11 +9732,14 @@ pg.skill_data_template = {
 	[10030] = {
 		desc_get = "",
 		name = "姐姐气质",
-		desc = "出击时，提高全队弗莱彻级驱逐舰的炮击、机动$1",
+		id = 10030,
 		type = 3,
 		max_level = 10,
-		id = 10030,
+		desc = "出击时，提高全队弗莱彻级驱逐舰的炮击、机动$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -7452,11 +9793,14 @@ pg.skill_data_template = {
 	[10040] = {
 		desc_get = "",
 		name = "31节伯克",
-		desc = "开火时有4%概率触发，8秒内，提高队伍移动速度，先锋机动提升$1",
+		id = 10040,
 		type = 3,
 		max_level = 10,
-		id = 10040,
+		desc = "开火时有4%概率触发，8秒内，提高队伍移动速度，先锋机动提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -7508,13 +9852,16 @@ pg.skill_data_template = {
 		}
 	},
 	[10050] = {
-		desc_get = "受到攻击时，有15%的概率触发，5.0秒(满级10.0秒)内使全体先锋完全回避所有攻击",
+		desc_get = "受到伤害时，有15%的概率触发，5.0秒(满级10.0秒)内使全体先锋完全回避所有攻击",
 		name = "彩虹计划",
-		desc = "受到攻击时，有15%的概率触发，$1秒内使全体先锋完全回避所有攻击",
+		id = 10050,
 		type = 2,
 		max_level = 10,
-		id = 10050,
+		desc = "受到伤害时，有15%的概率触发，$1秒内使全体先锋完全回避所有攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -7563,11 +9910,14 @@ pg.skill_data_template = {
 	[10060] = {
 		desc_get = "",
 		name = "真红不死鸟",
-		desc = "耐久低于20%时，恢复总耐久度$1的耐久，15秒内炮击提高30%，每场战斗只能发动1次",
+		id = 10060,
 		type = 2,
 		max_level = 10,
-		id = 10060,
+		desc = "在战斗中受到伤害，导致耐久低于20%时，恢复总耐久度$1的耐久，15秒内炮击提高30%，每场战斗只能发动1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -7621,11 +9971,14 @@ pg.skill_data_template = {
 	[10070] = {
 		desc_get = "",
 		name = "雷达扫描",
-		desc = "每隔20秒，有$1的概率发动，敌方所有单位受到的伤害上升$2，持续10秒",
+		id = 10070,
 		type = 3,
 		max_level = 10,
-		id = 10070,
+		desc = "每隔20秒，有$1的概率发动，敌方所有单位受到的伤害上升$2，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -7724,11 +10077,14 @@ pg.skill_data_template = {
 	[10080] = {
 		desc_get = "",
 		name = "战争之殇",
-		desc = "被击沉时恢复全队其他角色耐久$1",
+		id = 10080,
 		type = 2,
 		max_level = 10,
-		id = 10080,
+		desc = "被击沉时恢复全队其他角色耐久$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -7782,11 +10138,14 @@ pg.skill_data_template = {
 	[10090] = {
 		desc_get = "",
 		name = "我是NO.1！",
-		desc = "防空炮开火时有15%概率触发，队伍防空属性提升$1，持续8秒",
+		id = 10090,
 		type = 3,
 		max_level = 10,
-		id = 10090,
+		desc = "防空炮开火时有15%概率触发，队伍防空属性提升$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -7840,11 +10199,14 @@ pg.skill_data_template = {
 	[10100] = {
 		desc_get = "",
 		name = "爪哇海岸的跳跳鬼",
-		desc = "主炮射击时有20%概率触发，自身机动属性提升$1，持续15秒",
+		id = 10100,
 		type = 2,
 		max_level = 10,
-		id = 10100,
+		desc = "主炮射击时有20%概率触发，自身机动属性提升$1，持续15秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"60%",
@@ -7898,11 +10260,14 @@ pg.skill_data_template = {
 	[10110] = {
 		desc_get = "",
 		name = "妹妹真是太棒了！",
-		desc = "与印第安纳波利斯同时出击时，炮击、防空、装填提升$1",
+		id = 10110,
 		type = 1,
 		max_level = 10,
-		id = 10110,
+		desc = "与印第安纳波利斯同时出击时，炮击、防空、装填提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -7956,11 +10321,14 @@ pg.skill_data_template = {
 	[10120] = {
 		desc_get = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡8发子弹，被击破时对周围敌方造成较小伤害，护盾持续5秒(满级15秒)",
 		name = "潘多拉的魔盒",
-		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡8发子弹，被击破时对周围敌方造成较小伤害，护盾持续$1秒",
+		id = 10120,
 		type = 2,
 		max_level = 10,
-		id = 10120,
+		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡8发子弹，被击破时对周围敌方造成较小伤害，护盾持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -8009,12 +10377,15 @@ pg.skill_data_template = {
 	[10130] = {
 		desc_get = "",
 		name = "崩姐",
-		desc = "每20秒，有$1概率触发专属技能弹幕(依据技能等级)",
+		id = 10130,
 		type = 1,
 		max_level = 10,
-		id = 10130,
+		desc = "每20秒，有$1概率触发专属技能弹幕(依据技能等级)",
 		system_transform = {
 			[3.0] = 10131
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -8069,11 +10440,14 @@ pg.skill_data_template = {
 	[10140] = {
 		desc_get = "",
 		name = "白鹰之泪",
-		desc = "主炮射击时有50%概率恢复先锋部队$1耐久——“这次，一定要保护好大家”",
+		id = 10140,
 		type = 3,
 		max_level = 10,
-		id = 10140,
+		desc = "主炮射击时有50%概率恢复先锋部队$1耐久——“这次，一定要保护好大家”",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4%",
@@ -8127,11 +10501,14 @@ pg.skill_data_template = {
 	[10150] = {
 		desc_get = "",
 		name = "威压",
-		desc = "每隔30秒，降低敌方造成的伤害$1，持续8秒",
+		id = 10150,
 		type = 3,
 		max_level = 10,
-		id = 10150,
+		desc = "每隔30秒，降低敌方造成的伤害$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -8185,15 +10562,22 @@ pg.skill_data_template = {
 	[10160] = {
 		desc_get = "",
 		name = "最强之盾",
-		desc = "每隔30秒，承受全体主力舰队受到的50%伤害，持续8秒，随后恢复承受伤害$1耐久",
+		id = 10160,
 		type = 2,
 		max_level = 10,
-		id = 10160,
+		desc = "开场后15秒触发，随后每25秒再次触发本技能，自身承受全体主力舰队受到的50%伤害，持续10秒，随后恢复承受伤害$1耐久，并额外提高自身炮击$2，属性提升效果最高叠加3层，持续至战斗结束",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
 				"50.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
 			}
 		},
 		desc_add = {
@@ -8237,17 +10621,61 @@ pg.skill_data_template = {
 				{
 					"50.0%"
 				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
 			}
 		}
 	},
 	[10170] = {
 		desc_get = "",
 		name = "航空先驱",
-		desc = "战斗后，队伍中航母获得经验值增加$1",
+		id = 10170,
 		type = 3,
 		max_level = 10,
-		id = 10170,
+		desc = "战斗后，队伍中航母获得经验值增加$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -8301,11 +10729,14 @@ pg.skill_data_template = {
 	[10180] = {
 		desc_get = "每20秒(满级10秒)发动一次掩护炮击，威力为重巡级(依据技能等级)",
 		name = "舰炮掩护",
-		desc = "每$1秒发动一次掩护炮击，威力为重巡级(依据技能等级)",
+		id = 10180,
 		type = 1,
 		max_level = 10,
-		id = 10180,
+		desc = "每$1秒发动一次掩护炮击，威力为重巡级(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -8323,7 +10754,7 @@ pg.skill_data_template = {
 				},
 				{
 					"17",
-					"1"
+					"-1"
 				},
 				{
 					"16",
@@ -8354,11 +10785,14 @@ pg.skill_data_template = {
 	[10190] = {
 		desc_get = "",
 		name = "复仇打击",
-		desc = "耐久低于20%时恢复$1耐久，每场战斗只能发动一次；受到伤害时，进行一轮航空弹幕攻击(威力依据技能等级)，触发后进入20秒冷却",
+		id = 10190,
 		type = 2,
 		max_level = 10,
-		id = 10190,
+		desc = "在战斗中受到伤害，导致耐久低于20%时恢复$1耐久，每场战斗只能发动一次；受到伤害时，进行一轮航空弹幕攻击(威力依据技能等级)，触发后进入20秒冷却",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -8448,11 +10882,14 @@ pg.skill_data_template = {
 	[10200] = {
 		desc_get = "",
 		name = "LuckyE",
-		desc = "空中支援时，有$1概率造成2倍伤害，并使自己进入隐身状态，回避所有伤害，持续8秒",
+		id = 10200,
 		type = 1,
 		max_level = 10,
-		id = 10200,
+		desc = "空中支援时，有$1概率造成2倍伤害，并使自己进入隐身状态，回避所有伤害，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -8506,11 +10943,14 @@ pg.skill_data_template = {
 	[10210] = {
 		desc_get = "",
 		name = "杜立特空袭",
-		desc = "空袭时有$1概率触发，使用B#25进行额外一轮航空弹幕攻击",
+		id = 10210,
 		type = 1,
 		max_level = 10,
-		id = 10210,
+		desc = "空袭时有$1概率触发，使用B#25进行额外一轮航空弹幕攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -8564,11 +11004,14 @@ pg.skill_data_template = {
 	[10220] = {
 		desc_get = "",
 		name = "损害管制",
-		desc = "当队友耐久低于20%时，回复其耐久的$1，若目标是企业，回复效果提高50%，每场战斗仅能触发1次",
+		id = 10220,
 		type = 2,
 		max_level = 10,
-		id = 10220,
+		desc = "当队友耐久低于20%时，回复其耐久的$1，若目标是企业，回复效果提高50%，每场战斗仅能触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -8622,11 +11065,14 @@ pg.skill_data_template = {
 	[10230] = {
 		desc_get = "",
 		name = "原型舰·驱逐",
-		desc = "战斗后，队伍中驱逐获得经验值增加$1",
+		id = 10230,
 		type = 3,
 		max_level = 10,
-		id = 10230,
+		desc = "战斗后，队伍中驱逐获得经验值增加$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"6%",
@@ -8680,11 +11126,14 @@ pg.skill_data_template = {
 	[10240] = {
 		desc_get = "",
 		name = "彗星头槌",
-		desc = "先锋部队与敌方相撞时，敌方受到伤害提高$1，我方受到伤害降低$2",
+		id = 10240,
 		type = 1,
 		max_level = 10,
-		id = 10240,
+		desc = "先锋部队与敌方相撞时，敌方受到伤害提高$1，我方受到伤害降低$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50%",
@@ -8783,11 +11232,14 @@ pg.skill_data_template = {
 	[10250] = {
 		desc_get = "",
 		name = "标枪突袭",
-		desc = "炮击有5%概率发动，8秒内自身机动提升$1",
+		id = 10250,
 		type = 2,
 		max_level = 10,
-		id = 10250,
+		desc = "炮击有5%概率发动，8秒内自身机动提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -8841,11 +11293,14 @@ pg.skill_data_template = {
 	[10260] = {
 		desc_get = "",
 		name = "魔炮-Armageddon！",
-		desc = "开火时，有20%概率触发，自身炮击提升$1，持续8秒",
+		id = 10260,
 		type = 1,
 		max_level = 10,
-		id = 10260,
+		desc = "开火时，有20%概率触发，自身炮击提升$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -8899,11 +11354,14 @@ pg.skill_data_template = {
 	[10270] = {
 		desc_get = "",
 		name = "最后的荣耀",
-		desc = "主炮开火后，提高下一轮主炮攻击(包括底座炮击)的伤害$1",
+		id = 10270,
 		type = 1,
 		max_level = 10,
-		id = 10270,
+		desc = "主炮开火后，提高下一轮主炮攻击(包括底座炮击)的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -8957,11 +11415,14 @@ pg.skill_data_template = {
 	[10280] = {
 		desc_get = "",
 		name = "“Z的反击”",
-		desc = "受到攻击后，自身装填提高$1，持续8秒，不可叠加",
+		id = 10280,
 		type = 3,
 		max_level = 10,
-		id = 10280,
+		desc = "受到伤害后，自身装填提高$1，持续8秒，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -9015,12 +11476,15 @@ pg.skill_data_template = {
 	[10290] = {
 		desc_get = "",
 		name = "皇家舰队的荣耀",
-		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)，所有主力舰队角色装填提高$2，持续8秒",
+		id = 10290,
 		type = 1,
 		max_level = 10,
-		id = 10290,
+		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)，所有主力舰队角色装填提高$2，持续8秒",
 		system_transform = {
 			[3.0] = 10291
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -9120,11 +11584,14 @@ pg.skill_data_template = {
 	[10300] = {
 		desc_get = "",
 		name = "女王号令",
-		desc = "出击时，皇家舰队全员炮击、雷装、航空、防空、装填、机动属性上升$1——“永远#11岁的女王！”",
+		id = 10300,
 		type = 3,
 		max_level = 10,
-		id = 10300,
+		desc = "出击时，皇家舰队全员炮击、雷击、航空、防空、装填、机动属性上升$1——“永远#11岁的女王！”",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -9178,11 +11645,14 @@ pg.skill_data_template = {
 	[10310] = {
 		desc_get = "每35秒(满级15秒)，对距离最远的敌人额外发动一轮必定暴击的专属炮击(威力、弹药依据技能等级)",
 		name = "神射手",
-		desc = "每$1秒，对距离最远的敌人额外发动一轮必定暴击的专属$2炮击(威力依据技能等级)",
+		id = 10310,
 		type = 1,
 		max_level = 10,
-		id = 10310,
+		desc = "每$1秒，对距离最远的敌人额外发动一轮必定暴击的专属$2炮击(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -9263,11 +11733,14 @@ pg.skill_data_template = {
 	[10320] = {
 		desc_get = "",
 		name = "BIG SEVEN",
-		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
+		id = 10320,
 		type = 1,
 		max_level = 10,
-		id = 10320,
+		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -9321,11 +11794,14 @@ pg.skill_data_template = {
 	[10330] = {
 		desc_get = "",
 		name = "剑鱼出击！",
-		desc = "空中支援使用剑鱼式进行一轮航空鱼雷攻击$1，使敌方全体造成减速$2，持续8秒",
+		id = 10330,
 		type = 1,
 		max_level = 10,
-		id = 10330,
+		desc = "空中支援使用剑鱼式进行一轮航空鱼雷攻击$1，使敌方全体造成减速$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"",
@@ -9415,11 +11891,14 @@ pg.skill_data_template = {
 	[10340] = {
 		desc_get = "",
 		name = "装甲空母",
-		desc = "每次执行空袭后为先锋部队增加一个护盾，抵消释放者自身耐久$1的伤害，持续8秒",
+		id = 10340,
 		type = 3,
 		max_level = 10,
-		id = 10340,
+		desc = "每次执行空袭后为先锋部队增加一个护盾，抵消释放者自身耐久$1的伤害，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -9473,11 +11952,14 @@ pg.skill_data_template = {
 	[10350] = {
 		desc_get = "",
 		name = "无限之darkness",
-		desc = "每隔20秒，有$1概率触发一次专属弹幕技能(依据技能等级)",
+		id = 10350,
 		type = 1,
 		max_level = 10,
-		id = 10350,
+		desc = "每隔20秒，有$1概率触发一次专属弹幕技能(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -9531,11 +12013,14 @@ pg.skill_data_template = {
 	[10360] = {
 		desc_get = "",
 		name = "所罗门的噩梦",
-		desc = "炮击时有6%概率发动，炮击、雷击、装填、机动属性上升$1，持续8秒",
+		id = 10360,
 		type = 1,
 		max_level = 10,
-		id = 10360,
+		desc = "炮击时有6%概率发动，炮击、雷击、装填、机动属性上升$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -9589,11 +12074,14 @@ pg.skill_data_template = {
 	[10370] = {
 		desc_get = "",
 		name = "佐世保{namecode:17}",
-		desc = "炮击时有5%概率发动，机动属性上升$1，持续8秒",
+		id = 10370,
 		type = 2,
 		max_level = 10,
-		id = 10370,
+		desc = "炮击时有5%概率发动，机动属性上升$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -9647,11 +12135,14 @@ pg.skill_data_template = {
 	[10380] = {
 		desc_get = "",
 		name = "Z系先驱",
-		desc = "出击时，队伍中Z系驱逐的炮击、机动提高$1",
+		id = 10380,
 		type = 3,
 		max_level = 10,
-		id = 10380,
+		desc = "出击时，队伍中Z系驱逐的炮击、机动提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -9705,11 +12196,14 @@ pg.skill_data_template = {
 	[10390] = {
 		desc_get = "",
 		name = "不破之盾",
-		desc = "每20秒，有$1概率触发护盾，每个护盾阻挡10发子弹，护盾持续10秒",
+		id = 10390,
 		type = 2,
 		max_level = 10,
-		id = 10390,
+		desc = "每20秒，有$1概率触发护盾，每个护盾阻挡10发子弹，护盾持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -9763,11 +12257,14 @@ pg.skill_data_template = {
 	[10400] = {
 		desc_get = "",
 		name = "旗舰掩护",
-		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
+		id = 10400,
 		type = 3,
 		max_level = 10,
-		id = 10400,
+		desc = "在队伍中(存活)时降低旗舰受到的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -9821,11 +12318,14 @@ pg.skill_data_template = {
 	[10410] = {
 		desc_get = "",
 		name = "所罗门的战神",
-		desc = "炮击有5%概率发动，8秒内自身炮击、装填、机动属性提升$1",
+		id = 10410,
 		type = 1,
 		max_level = 10,
-		id = 10410,
+		desc = "炮击有5%概率发动，8秒内自身炮击、装填、机动属性提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -9879,11 +12379,14 @@ pg.skill_data_template = {
 	[10420] = {
 		desc_get = "",
 		name = "先手必胜",
-		desc = "出击时自身舰载机的第一轮空中支援加载时间缩短$1",
+		id = 10420,
 		type = 1,
 		max_level = 10,
-		id = 10420,
+		desc = "出击时自身舰载机的第一轮空中支援加载时间缩短$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -9937,11 +12440,14 @@ pg.skill_data_template = {
 	[10430] = {
 		desc_get = "",
 		name = "一航战",
-		desc = "与{namecode:92}同在一个舰队时，自身航空性能提高$1",
+		id = 10430,
 		type = 3,
 		max_level = 10,
-		id = 10430,
+		desc = "与{namecode:92}同在一个舰队时，自身航空性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -9995,11 +12501,14 @@ pg.skill_data_template = {
 	[10440] = {
 		desc_get = "",
 		name = "一航战",
-		desc = "与{namecode:91}同在一个舰队时，自身航空性能提高$1",
+		id = 10440,
 		type = 3,
 		max_level = 10,
-		id = 10440,
+		desc = "与{namecode:91}同在一个舰队时，自身航空性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10053,11 +12562,14 @@ pg.skill_data_template = {
 	[10450] = {
 		desc_get = "受到致命伤害时不会阵亡，5秒(满级15秒)内回避所有伤害，同时立刻发动一轮空袭，每场战斗只能触发1次",
 		name = "最后的反击",
-		desc = "受到致命伤害时不会阵亡，$1秒内回避所有伤害，同时立刻发动一轮空袭，每场战斗只能触发1次",
+		id = 10450,
 		type = 2,
 		max_level = 10,
-		id = 10450,
+		desc = "受到致命伤害时不会阵亡，$1秒内回避所有伤害，同时立刻发动一轮空袭，每场战斗只能触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -10106,11 +12618,14 @@ pg.skill_data_template = {
 	[10460] = {
 		desc_get = "",
 		name = "二航战",
-		desc = "与{namecode:94}同在一个舰队时，航空性能提高$1",
+		id = 10460,
 		type = 3,
 		max_level = 10,
-		id = 10460,
+		desc = "与{namecode:94}同在一个舰队时，航空性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10164,11 +12679,14 @@ pg.skill_data_template = {
 	[10470] = {
 		desc_get = "",
 		name = "二航战",
-		desc = "与{namecode:93}同在一个舰队时，航空性能提高$1",
+		id = 10470,
 		type = 3,
 		max_level = 10,
-		id = 10470,
+		desc = "与{namecode:93}同在一个舰队时，航空性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10222,11 +12740,14 @@ pg.skill_data_template = {
 	[10480] = {
 		desc_get = "",
 		name = "姐妹同心",
-		desc = "与平海同在一个舰队时，炮击性能提高$1",
+		id = 10480,
 		type = 3,
 		max_level = 10,
-		id = 10480,
+		desc = "与平海同在一个舰队时，炮击性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10280,11 +12801,14 @@ pg.skill_data_template = {
 	[10490] = {
 		desc_get = "",
 		name = "姐妹同心",
-		desc = "与宁海同在一个舰队时，炮击性能提高$1",
+		id = 10490,
 		type = 3,
 		max_level = 10,
-		id = 10490,
+		desc = "与宁海同在一个舰队时，炮击性能提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10338,11 +12862,14 @@ pg.skill_data_template = {
 	[10500] = {
 		desc_get = "",
 		name = "抗击重樱",
-		desc = "对重樱群岛单位造成伤害提高$1",
+		id = 10500,
 		type = 1,
 		max_level = 10,
-		id = 10500,
+		desc = "对重樱群岛单位造成伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -10396,11 +12923,14 @@ pg.skill_data_template = {
 	[10510] = {
 		desc_get = "",
 		name = "改变时代的炮声",
-		desc = "队伍中所有先锋伤害提高$1",
+		id = 10510,
 		type = 3,
 		max_level = 10,
-		id = 10510,
+		desc = "队伍中所有先锋伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -10454,44 +12984,56 @@ pg.skill_data_template = {
 	[10520] = {
 		desc_get = "",
 		name = "定期维护",
-		desc = "出击时获得1次团队策略—紧急维修(不可升级)",
+		id = 10520,
 		type = 2,
 		max_level = 1,
-		id = 10520,
+		desc = "出击时获得1次团队策略—紧急维修(不可升级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[10521] = {
 		desc_get = "",
 		name = "定期维护",
-		desc = "出击时获得2次团队策略—紧急维修(不可升级)",
+		id = 10521,
 		type = 2,
 		max_level = 1,
-		id = 10521,
+		desc = "出击时获得2次团队策略—紧急维修(不可升级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[10522] = {
 		desc_get = "",
 		name = "定期维护",
-		desc = "出击时获得3次团队策略—紧急维修(不可升级)",
+		id = 10522,
 		type = 2,
 		max_level = 1,
-		id = 10522,
+		desc = "出击时获得3次团队策略—紧急维修(不可升级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[10530] = {
 		desc_get = "",
 		name = "铁血先锋",
-		desc = "炮击有5%概率发动，8秒内自身炮击提升$1",
+		id = 10530,
 		type = 1,
 		max_level = 10,
-		id = 10530,
+		desc = "炮击有5%概率发动，8秒内自身炮击提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -10545,57 +13087,150 @@ pg.skill_data_template = {
 	[10540] = {
 		desc_get = "",
 		name = "皇家同盟",
-		desc = "出击时，队友中每有一个白鹰联邦角色，自身炮击、防空、装填、机动属性上升$1",
+		id = 10540,
 		type = 1,
 		max_level = 10,
-		id = 10540,
+		desc = "出击时，队友中每有一个白鹰阵营角色，自身炮击、防空、装填、机动属性上升$1，最高叠加3层；队友中有三个或以上白鹰阵营角色时，自身首轮主炮装填所需时间降低85%，提升所有先锋舰队白鹰阵营成员炮击、防空$2，主力舰队白鹰阵营成员航空、防空$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
-				"1.0%",
-				"5.0%"
+				"2.0%",
+				"10.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
 			}
 		},
 		desc_add = {
 			{
 				{
-					"1.0%",
-					"+0.4%"
+					"2.0%",
+					"+0.8%"
 				},
 				{
-					"1.4%",
-					"+0.4%"
+					"2.8%",
+					"+0.8%"
 				},
 				{
-					"1.8%",
-					"+0.4%"
+					"3.6%",
+					"+0.8%"
 				},
 				{
-					"2.2%",
-					"+0.4%"
+					"4.4%",
+					"+0.8%"
 				},
 				{
-					"2.6%",
-					"+0.4%"
+					"5.2%",
+					"+0.8%"
 				},
 				{
-					"3.0%",
-					"+0.5%"
+					"6.0%",
+					"+1.0%"
 				},
 				{
-					"3.5%",
-					"+0.5%"
+					"7.0%",
+					"+1.0%"
 				},
 				{
-					"4.0%",
-					"+0.5%"
+					"8.0%",
+					"+1.0%"
 				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
 				{
 					"4.5%",
-					"+0.5%"
+					"+0.8%"
 				},
 				{
-					"5.0%"
+					"5.3%",
+					"+0.8%"
+				},
+				{
+					"6.1%",
+					"+0.9%"
+				},
+				{
+					"7.0%",
+					"+0.8%"
+				},
+				{
+					"7.8%",
+					"+0.8%"
+				},
+				{
+					"8.6%",
+					"+0.9%"
+				},
+				{
+					"9.5%",
+					"+0.8%"
+				},
+				{
+					"10.3%",
+					"+0.8%"
+				},
+				{
+					"11.1%",
+					"+0.9%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.8%"
+				},
+				{
+					"5.3%",
+					"+0.8%"
+				},
+				{
+					"6.1%",
+					"+0.9%"
+				},
+				{
+					"7.0%",
+					"+0.8%"
+				},
+				{
+					"7.8%",
+					"+0.8%"
+				},
+				{
+					"8.6%",
+					"+0.9%"
+				},
+				{
+					"9.5%",
+					"+0.8%"
+				},
+				{
+					"10.3%",
+					"+0.8%"
+				},
+				{
+					"11.1%",
+					"+0.9%"
+				},
+				{
+					"12.0%"
 				}
 			}
 		}
@@ -10603,11 +13238,14 @@ pg.skill_data_template = {
 	[10550] = {
 		desc_get = "",
 		name = "后勤维修",
-		desc = "每隔35秒，回复全队耐久，回复量为{namecode:98}耐久的$1",
+		id = 10550,
 		type = 2,
 		max_level = 10,
-		id = 10550,
+		desc = "每隔35秒，回复全队耐久，回复量为{namecode:98}耐久的$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1%",
@@ -10661,11 +13299,14 @@ pg.skill_data_template = {
 	[10560] = {
 		desc_get = "",
 		name = "终结旅程",
-		desc = "鱼雷暴击率提高$1，暴击伤害提高50.0%",
+		id = 10560,
 		type = 1,
 		max_level = 10,
-		id = 10560,
+		desc = "鱼雷暴击率提高$1，暴击伤害提高50.0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -10719,11 +13360,14 @@ pg.skill_data_template = {
 	[10570] = {
 		desc_get = "",
 		name = "纵火狂魔",
-		desc = "高爆弹武器伤害提高$3，造成起火概率提高$1，起火伤害提高$2",
+		id = 10570,
 		type = 1,
 		max_level = 10,
-		id = 10570,
+		desc = "高爆弹武器伤害提高$3，造成起火概率提高$1，起火伤害提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -10867,11 +13511,14 @@ pg.skill_data_template = {
 	[10580] = {
 		desc_get = "每隔35秒(满级25秒)发射一轮额外鱼雷(3发)，造成伤害的20.0%回复自身耐久",
 		name = "吸血鬼之吻",
-		desc = "每隔$1秒发射一轮额外鱼雷(3发)，造成伤害的20.0%回复自身耐久",
+		id = 10580,
 		type = 2,
 		max_level = 10,
-		id = 10580,
+		desc = "每隔$1秒发射一轮额外鱼雷(3发)，造成伤害的20.0%回复自身耐久",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -10920,11 +13567,14 @@ pg.skill_data_template = {
 	[10590] = {
 		desc_get = "",
 		name = "原型舰·巡洋",
-		desc = "战斗后，队伍中轻巡、重巡、超巡获得经验值增加$1",
+		id = 10590,
 		type = 3,
 		max_level = 10,
-		id = 10590,
+		desc = "战斗后，队伍中轻巡、重巡、超巡获得经验值增加$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -10978,11 +13628,14 @@ pg.skill_data_template = {
 	[10600] = {
 		desc_get = "",
 		name = "万夜·忉利天",
-		desc = "自身装填值提高$1，每次使用鱼雷时有$2的概率再次发射一轮",
+		id = 10600,
 		type = 1,
 		max_level = 10,
-		id = 10600,
+		desc = "自身装填值提高$1，每次使用鱼雷时有$2的概率再次发射一轮",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -11081,11 +13734,14 @@ pg.skill_data_template = {
 	[10610] = {
 		desc_get = "",
 		name = "燃烧号令",
-		desc = "高爆弹伤害提高$1，造成起火概率提高$2",
+		id = 10610,
 		type = 1,
 		max_level = 10,
-		id = 10610,
+		desc = "高爆弹伤害提高$1，造成起火概率提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -11184,11 +13840,14 @@ pg.skill_data_template = {
 	[10620] = {
 		desc_get = "",
 		name = "六驱精锐·{namecode:13}",
-		desc = "与任意第六驱逐舰队成员({namecode:11}、{namecode:12}、{namecode:14})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
+		id = 10620,
 		type = 1,
 		max_level = 10,
-		id = 10620,
+		desc = "与任意第六驱逐舰队成员({namecode:11}、{namecode:12}、{namecode:14})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -11242,11 +13901,14 @@ pg.skill_data_template = {
 	[10630] = {
 		desc_get = "",
 		name = "六驱精锐·{namecode:14}",
-		desc = "与任意第六驱逐舰队成员({namecode:11}、{namecode:12}、{namecode:13})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
+		id = 10630,
 		type = 1,
 		max_level = 10,
-		id = 10630,
+		desc = "与任意第六驱逐舰队成员({namecode:11}、{namecode:12}、{namecode:13})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -11300,11 +13962,14 @@ pg.skill_data_template = {
 	[10640] = {
 		desc_get = "",
 		name = "铁翼陨灭",
-		desc = "防空圈内，敌方飞机被击落时，自身炮击提高，提高量等于自身基础(面板+装备)防空值的$1，持续8秒，不可叠加",
+		id = 10640,
 		type = 1,
 		max_level = 10,
-		id = 10640,
+		desc = "防空圈内，敌方飞机被击落时，自身炮击提高，提高量等于自身基础(面板+装备)防空值的$1，持续8秒，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -11358,11 +14023,14 @@ pg.skill_data_template = {
 	[10650] = {
 		desc_get = "",
 		name = "袖珍战列舰",
-		desc = "提高对驱逐舰和轻巡洋舰的伤害$1",
+		id = 10650,
 		type = 1,
 		max_level = 10,
-		id = 10650,
+		desc = "提高对驱逐舰和轻巡洋舰的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -11416,11 +14084,14 @@ pg.skill_data_template = {
 	[10660] = {
 		desc_get = "每35秒(满级15秒)，对随机敌人额外发动一轮必定暴击的专属炮击(威力、弹药依据技能等级)",
 		name = "狙击手",
-		desc = "每$1秒，对随机敌人额外发动一轮必定暴击的专属$2炮击(威力依据技能等级)",
+		id = 10660,
 		type = 1,
 		max_level = 10,
-		id = 10660,
+		desc = "每$1秒，对随机敌人额外发动一轮必定暴击的专属$2炮击(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -11501,11 +14172,14 @@ pg.skill_data_template = {
 	[10670] = {
 		desc_get = "",
 		name = "北方的孤独女王",
-		desc = "主力舰队中战列、战巡只存在自己一艘时（可以有其他类型舰船）伤害提升$1",
+		id = 10670,
 		type = 1,
 		max_level = 10,
-		id = 10670,
+		desc = "主力舰队中战列、战巡只存在自己一艘时（可以有其他类型舰船）伤害提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -11559,15 +14233,22 @@ pg.skill_data_template = {
 	[10680] = {
 		desc_get = "",
 		name = "铁血之翼",
-		desc = "降低舰队中所有铁血阵营角色受到的伤害$1",
+		id = 10680,
 		type = 2,
 		max_level = 10,
-		id = 10680,
+		desc = "降低舰队中所有铁血阵营角色受到的伤害$1，队伍中每有一个铁血阵营角色，提升自身航空$2，最高叠加3层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
 				"15%"
+			},
+			{
+				"1.0%",
+				"5.0%"
 			}
 		},
 		desc_add = {
@@ -11611,17 +14292,61 @@ pg.skill_data_template = {
 				{
 					"15.0%"
 				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
 			}
 		}
 	},
 	[10690] = {
 		desc_get = "",
 		name = "铁血之鹰",
-		desc = "使用伯鲁克科技的舰载机（BF-#109T、ME-#155A、JU-#87C等）将额外获得$1的装备效率",
+		id = 10690,
 		type = 1,
 		max_level = 10,
-		id = 10690,
+		desc = "自身至少装备一架铁血阵营的舰载机时，所有舰载机位获得$1额外装备效率",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -11675,11 +14400,14 @@ pg.skill_data_template = {
 	[10700] = {
 		desc_get = "",
 		name = "破交作战",
-		desc = "经历了多次破交作战，累积了丰富的经验，自身炮击提升$1",
+		id = 10700,
 		type = 1,
 		max_level = 10,
-		id = 10700,
+		desc = "经历了多次破交作战，累积了丰富的经验，自身炮击提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -11733,15 +14461,30 @@ pg.skill_data_template = {
 	[10710] = {
 		desc_get = "",
 		name = "巨兽猎手",
-		desc = "参与了逼沉斯佩伯爵的战役，对重巡、超巡伤害提升$1",
+		id = 10710,
 		type = 1,
 		max_level = 10,
-		id = 10710,
+		desc = "参与了逼沉斯佩伯爵的战役，战斗开始后，自身机动、雷击提高$2，对中型护甲敌人造成的伤害提升$1；若自身为重巡洋舰，主炮武器发射的子弹命中同一敌人4颗后，使其在5秒内减速$3，减速效果结束后开始下一轮计数",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
 				"25%"
+			},
+			{
+				"5%",
+				"15%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
 			}
 		},
 		desc_add = {
@@ -11785,17 +14528,143 @@ pg.skill_data_template = {
 				{
 					"25.0%"
 				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
 			}
 		}
 	},
 	[10720] = {
 		desc_get = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续5秒(满级15秒)",
 		name = "守卫之盾",
-		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续$1秒",
+		id = 10720,
 		type = 2,
 		max_level = 10,
-		id = 10720,
+		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -11844,11 +14713,14 @@ pg.skill_data_template = {
 	[10730] = {
 		desc_get = "",
 		name = "鬼神",
-		desc = "炮击有5%概率发动，12秒内自身雷击提升$1",
+		id = 10730,
 		type = 1,
 		max_level = 10,
-		id = 10730,
+		desc = "炮击有5%概率发动，12秒内自身雷击提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -11902,11 +14774,14 @@ pg.skill_data_template = {
 	[10740] = {
 		desc_get = "",
 		name = "历战之躯",
-		desc = "炮击有4%概率发动，8秒内自身机动提升$1",
+		id = 10740,
 		type = 2,
 		max_level = 10,
-		id = 10740,
+		desc = "炮击有4%概率发动，8秒内自身机动提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -11960,11 +14835,14 @@ pg.skill_data_template = {
 	[10750] = {
 		desc_get = "",
 		name = "The Nick",
-		desc = "炮击有5%概率发动，8秒内自身机动提升$1，受到航空伤害降低$2",
+		id = 10750,
 		type = 2,
 		max_level = 10,
-		id = 10750,
+		desc = "炮击有5%概率发动，8秒内自身机动提升$1，受到航空伤害降低$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"16.0%",
@@ -12063,11 +14941,14 @@ pg.skill_data_template = {
 	[10760] = {
 		desc_get = "",
 		name = "东煌之绊",
-		desc = "与宁海、平海同时出击时，队伍中逸仙、宁海、平海受到伤害降低$1，回避率提高$2",
+		id = 10760,
 		type = 3,
 		max_level = 10,
-		id = 10760,
+		desc = "与宁海、平海同时出击时，队伍中逸仙、宁海、平海受到伤害降低$1，回避率提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"8.0%",
@@ -12166,11 +15047,14 @@ pg.skill_data_template = {
 	[10770] = {
 		desc_get = "",
 		name = "六驱精锐·{namecode:11}",
-		desc = "与任意第六驱逐舰队成员({namecode:12}、{namecode:13}、{namecode:14})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
+		id = 10770,
 		type = 1,
 		max_level = 10,
-		id = 10770,
+		desc = "与任意第六驱逐舰队成员({namecode:12}、{namecode:13}、{namecode:14})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -12224,11 +15108,14 @@ pg.skill_data_template = {
 	[10780] = {
 		desc_get = "每隔20秒，自身获得随机效果，持续5.0秒(满级10.0秒)",
 		name = "幸运舰？",
-		desc = "每隔20秒，自身获得随机效果，持续$1秒",
+		id = 10780,
 		type = 2,
 		max_level = 10,
-		id = 10780,
+		desc = "每隔20秒，自身获得随机效果，持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -12277,11 +15164,14 @@ pg.skill_data_template = {
 	[10790] = {
 		desc_get = "",
 		name = "五航战",
-		desc = "与{namecode:96}同在一个舰队时，自身航空性能提高$1，受到伤害提高5%",
+		id = 10790,
 		type = 3,
 		max_level = 10,
-		id = 10790,
+		desc = "与{namecode:96}同在一个舰队时，自身航空性能提高$1，受到伤害提高5%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"12.0%",
@@ -12335,11 +15225,14 @@ pg.skill_data_template = {
 	[10800] = {
 		desc_get = "",
 		name = "五航战",
-		desc = "与{namecode:95}同在一个舰队时，自身航空性能提高$1，受到伤害降低$2",
+		id = 10800,
 		type = 3,
 		max_level = 10,
-		id = 10800,
+		desc = "与{namecode:95}同在一个舰队时，自身航空性能提高$1，受到伤害降低$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"8.0%",
@@ -12438,11 +15331,14 @@ pg.skill_data_template = {
 	[10810] = {
 		desc_get = "",
 		name = "鹤之加护",
-		desc = "空中支援后，队伍中全员伤害提高$1，受到伤害降低$2，持续12秒",
+		id = 10810,
 		type = 2,
 		max_level = 10,
-		id = 10810,
+		desc = "空中支援时，队伍中全员伤害提高$1，受到伤害降低$2，持续12秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -12541,11 +15437,14 @@ pg.skill_data_template = {
 	[10820] = {
 		desc_get = "",
 		name = "鹤之奋进",
-		desc = "空中支援时，永久提高下一次空中支援伤害$1，可叠加3次",
+		id = 10820,
 		type = 1,
 		max_level = 10,
-		id = 10820,
+		desc = "战斗开始时，若队伍中含三个或以上重樱阵营角色，空中支援伤害提高$1，每次空中支援时，额外提高下一次空中支援伤害$1，空中支援伤害提高效果最高可叠加3次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"8.0%",
@@ -12599,11 +15498,14 @@ pg.skill_data_template = {
 	[10830] = {
 		desc_get = "第一次执行空中支援时，额外进行一轮航空弹幕攻击(威力随技能等级提升)，每场战斗只能触发1次",
 		name = "航空预备",
-		desc = "第一次执行空中支援时，额外进行一轮航空弹幕攻击$1，每场战斗只能触发1次",
+		id = 10830,
 		type = 1,
 		max_level = 10,
-		id = 10830,
+		desc = "第一次执行空中支援时，额外进行一轮航空弹幕攻击$1，每场战斗只能触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -12643,11 +15545,14 @@ pg.skill_data_template = {
 	[10840] = {
 		desc_get = "",
 		name = "决死突袭",
-		desc = "当由于战斗减员导致自身成为先锋仅存的角色时，自身伤害提高$1，受到伤害提高$2",
+		id = 10840,
 		type = 1,
 		max_level = 10,
-		id = 10840,
+		desc = "当由于战斗减员导致自身成为先锋仅存的角色时，自身伤害提高$1，受到伤害提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -12746,11 +15651,14 @@ pg.skill_data_template = {
 	[10850] = {
 		desc_get = "",
 		name = "命运的阴暗面",
-		desc = "与其他J系驱逐舰同时出击时，其他J系驱逐受到伤害降低$1，自身受到伤害提高$2",
+		id = 10850,
 		type = 3,
 		max_level = 10,
-		id = 10850,
+		desc = "与其他J系驱逐舰同时出击时，其他J系驱逐受到伤害降低$1，自身受到伤害提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"8.0%",
@@ -12847,13 +15755,16 @@ pg.skill_data_template = {
 		}
 	},
 	[10860] = {
-		desc_get = "每20秒，有40.0%(满级70.0%)概率开启强袭模式·EX，雷击属性提高30.0%，持续5秒，同时发射强力弹幕(威力随技能等级提升)",
+		desc_get = "每20秒，有40.0%(满级70.0%)概率开启强袭模式·EX，雷击属性提高30.0%，持续8秒，同时发射强力弹幕(威力随技能等级提升)",
 		name = "强袭模式·EX",
-		desc = "每20秒，有$1概率开启强袭模式·EX，雷击属性提高30.0%，持续5秒，同时发射强力弹幕",
+		id = 10860,
 		type = 1,
 		max_level = 10,
-		id = 10860,
+		desc = "每20秒，有$1概率开启强袭模式·EX，雷击属性提高30.0%，持续8秒，同时发射强力弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -12902,11 +15813,14 @@ pg.skill_data_template = {
 	[10870] = {
 		desc_get = "",
 		name = "华之二水战",
-		desc = "在队伍中(存活)时，队伍内所有驱逐、轻巡的雷击和装填属性提高$1",
+		id = 10870,
 		type = 3,
 		max_level = 10,
-		id = 10870,
+		desc = "在队伍中(存活)时，队伍内所有驱逐、轻巡的雷击和装填属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -12960,11 +15874,14 @@ pg.skill_data_template = {
 	[10880] = {
 		desc_get = "",
 		name = "LuckyLou",
-		desc = "每隔20秒，有$1概率发动，提高自身$2炮击、装填、机动属性，持续8秒",
+		id = 10880,
 		type = 1,
 		max_level = 10,
-		id = 10880,
+		desc = "每隔20秒，有$1概率发动，提高自身$2炮击、装填、机动属性，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -13063,11 +15980,14 @@ pg.skill_data_template = {
 	[10890] = {
 		desc_get = "自身受到伤害降低20.0%，在队伍中(存活)时，队伍内所有驱逐、轻巡鱼雷暴击率提高4.0%(满级10.0%，额外提高暴击伤害30.0%)",
 		name = "不屈之{namecode:39}",
-		desc = "自身受到伤害降低20.0%，在队伍中(存活)时，队伍内所有驱逐、轻巡鱼雷暴击率提高$1$2",
+		id = 10890,
 		type = 3,
 		max_level = 10,
-		id = 10890,
+		desc = "自身受到伤害降低20.0%，在队伍中(存活)时，队伍内所有驱逐、轻巡鱼雷暴击率提高$1$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -13153,11 +16073,14 @@ pg.skill_data_template = {
 	[10900] = {
 		desc_get = "",
 		name = "救援组",
-		desc = "队友阵亡时，$1概率触发，自身耐久回复$2，其他存活队友耐久回复$3",
+		id = 10900,
 		type = 2,
 		max_level = 10,
-		id = 10900,
+		desc = "队友阵亡时，$1概率触发，自身耐久回复$2，其他存活队友耐久回复$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -13301,11 +16224,14 @@ pg.skill_data_template = {
 	[10910] = {
 		desc_get = "",
 		name = "新生重樱联合",
-		desc = "自身受到伤害时，$1概率减少50.0%伤害，作为旗舰出击时，重樱群岛全员炮击、装填提高$2",
+		id = 10910,
 		type = 3,
 		max_level = 10,
-		id = 10910,
+		desc = "自身受到伤害时，$1概率减少50.0%伤害，作为旗舰出击时，重樱群岛全员炮击、装填提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -13404,11 +16330,14 @@ pg.skill_data_template = {
 	[10920] = {
 		desc_get = "主炮开火时，30.0%(满级60.0%)概率触发，队伍中战巡、战列伤害提高5.0%(满级20.0%)，持续8秒",
 		name = "T字战法",
-		desc = "主炮开火时，$1概率触发，队伍中战巡、战列伤害提高$2，持续8秒",
+		id = 10920,
 		type = 3,
 		max_level = 10,
-		id = 10920,
+		desc = "主炮开火时，$1概率触发，队伍中战巡、战列伤害提高$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -13507,11 +16436,14 @@ pg.skill_data_template = {
 	[10930] = {
 		desc_get = "",
 		name = "威光",
-		desc = "战斗开始10秒后使用探照灯，随后每20秒有20.0%概率使用探照灯，探照灯将导致{namecode:71}承受全体主力舰队受到的$1伤害，并使随机一个敌人受到伤害提高$2，持续8秒",
+		id = 10930,
 		type = 3,
 		max_level = 10,
-		id = 10930,
+		desc = "战斗开始10秒后使用探照灯，随后每20秒有20.0%概率使用探照灯，探照灯将导致{namecode:71}承受全体主力舰队受到的$1伤害，并使随机一个敌人受到伤害提高$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -13610,11 +16542,14 @@ pg.skill_data_template = {
 	[10940] = {
 		desc_get = "每20秒，有40.0%(满级70.0%)概率开启鬼神演舞，机动属性提高30.0%，持续5秒，同时发射强力弹幕(威力随技能等级提升)",
 		name = "鬼神演舞",
-		desc = "每20秒，有$1概率开启鬼神演舞，机动属性提高30.0%，持续5秒，同时发射强力弹幕",
+		id = 10940,
 		type = 2,
 		max_level = 10,
-		id = 10940,
+		desc = "每20秒，有$1概率开启鬼神演舞，机动属性提高30.0%，持续5秒，同时发射强力弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -13663,11 +16598,14 @@ pg.skill_data_template = {
 	[10950] = {
 		desc_get = "增加3点(满级8点)航速，炮击属性提高15.0%",
 		name = "尚武之魂",
-		desc = "增加$1点航速，炮击属性提高$2",
+		id = 10950,
 		type = 1,
 		max_level = 10,
-		id = 10950,
+		desc = "增加$1点航速，炮击属性提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -13757,11 +16695,14 @@ pg.skill_data_template = {
 	[10960] = {
 		desc_get = "出击时，队伍中特型驱逐舰的炮击、机动提高15.0%(满级30%)，雷击提高4%(满级10%)",
 		name = "特型领舰",
-		desc = "出击时，队伍中特型驱逐舰的炮击、机动提高$1，雷击提高$2",
+		id = 10960,
 		type = 3,
 		max_level = 10,
-		id = 10960,
+		desc = "出击时，队伍中特型驱逐舰的炮击、机动提高$1，雷击提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -13860,11 +16801,14 @@ pg.skill_data_template = {
 	[10970] = {
 		desc_get = "",
 		name = "好斗的玛丽",
-		desc = "自身耐久低于$1时触发，耐久越低，造成伤害越高，最多提高$2伤害",
+		id = 10970,
 		type = 1,
 		max_level = 10,
-		id = 10970,
+		desc = "自身耐久低于$1时触发，耐久越低，造成伤害越高，最多提高$2伤害",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -13963,11 +16907,14 @@ pg.skill_data_template = {
 	[10980] = {
 		desc_get = "",
 		name = "对空掩护",
-		desc = "在队伍中(存活)时，主力舰队受到航空伤害降低$1",
+		id = 10980,
 		type = 3,
 		max_level = 10,
-		id = 10980,
+		desc = "在队伍中(存活)时，主力舰队受到航空伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -14021,11 +16968,14 @@ pg.skill_data_template = {
 	[10990] = {
 		desc_get = "",
 		name = "防空火力",
-		desc = "出击时，自身炮击提高，提高量等于自身基础(面板+装备)防空值的$1",
+		id = 10990,
 		type = 1,
 		max_level = 10,
-		id = 10990,
+		desc = "出击时，自身炮击提高，提高量等于自身基础(面板+装备)防空值的$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -14079,12 +17029,15 @@ pg.skill_data_template = {
 	[11000] = {
 		desc_get = "每20秒，有40.0%(满级70.0%)概率发射强力弹幕(威力随技能等级提升)",
 		name = "英勇炮击",
-		desc = "每20秒，有$1概率发射强力弹幕",
+		id = 11000,
 		type = 1,
 		max_level = 10,
-		id = 11000,
+		desc = "每20秒，有$1概率发射强力弹幕",
 		system_transform = {
 			[3.0] = 11001
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {
@@ -14134,11 +17087,14 @@ pg.skill_data_template = {
 	[11010] = {
 		desc_get = "",
 		name = "铁底湾之夜",
-		desc = "南达科他耐久低于30%时触发，自身伤害提高$1，承受南达科他受到伤害的30%(无法转移最强之盾技能承受的伤害)；南达科他获得1次<color=#FFDE00FF>保护效果</color>(不会受到致命伤害，持续5秒)，每场战斗只触发1次",
+		id = 11010,
 		type = 2,
 		max_level = 10,
-		id = 11010,
+		desc = "南达科他在战斗中受到伤害，导致耐久低于30%时触发，自身伤害提高$1，承受南达科他受到伤害的30%(无法转移最强之盾技能承受的伤害)；南达科他获得1次<color=#FFDE00FF>保护效果</color>(不会受到致命伤害，持续5秒)，每场战斗只触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -14192,11 +17148,14 @@ pg.skill_data_template = {
 	[11020] = {
 		desc_get = "",
 		name = "胡蜂双螫",
-		desc = "当队伍后排有皇家阵营角色时，空袭时有$1概率触发，使用海喷火进行额外一轮航空攻击",
+		id = 11020,
 		type = 1,
 		max_level = 10,
-		id = 11020,
+		desc = "当队伍后排有皇家阵营角色时，空袭时有$1概率触发，使用海喷火进行额外一轮航空攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -14250,11 +17209,14 @@ pg.skill_data_template = {
 	[11030] = {
 		desc_get = "",
 		name = "奇迹之风",
-		desc = "当自身为先锋仅存的角色时，自身机动提高$1，受到航空伤害减低$2",
+		id = 11030,
 		type = 2,
 		max_level = 10,
-		id = 11030,
+		desc = "当自身为先锋仅存的角色时，自身机动提高$1，受到航空伤害减低$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -14353,11 +17315,14 @@ pg.skill_data_template = {
 	[11040] = {
 		desc_get = "",
 		name = "鞍山级领舰",
-		desc = "出击时，队伍中鞍山级的角色命中、炮击提高$1，机动提高$2",
+		id = 11040,
 		type = 3,
 		max_level = 10,
-		id = 11040,
+		desc = "出击时，队伍中鞍山级的角色命中、炮击提高$1，机动提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -14456,11 +17421,14 @@ pg.skill_data_template = {
 	[11050] = {
 		desc_get = "",
 		name = "尖锐突击",
-		desc = "主炮炮击的暴击率提高$1",
+		id = 11050,
 		type = 1,
 		max_level = 10,
-		id = 11050,
+		desc = "主炮炮击的暴击率提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -14514,11 +17482,14 @@ pg.skill_data_template = {
 	[11060] = {
 		desc_get = "",
 		name = "互助同盟",
-		desc = "出击时，队伍中北方联合、东煌阵营的先锋角色炮击、装填、命中属性提高$1",
+		id = 11060,
 		type = 3,
 		max_level = 10,
-		id = 11060,
+		desc = "出击时，队伍中北方联合、东煌阵营的先锋角色炮击、装填、命中属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -14572,11 +17543,14 @@ pg.skill_data_template = {
 	[11070] = {
 		desc_get = "",
 		name = "团结一致",
-		desc = "出击时，若队伍中角色编队为满员6人，自身炮击、装填提高$1，机动提高$2",
+		id = 11070,
 		type = 3,
 		max_level = 10,
-		id = 11070,
+		desc = "出击时，若队伍中角色编队为满员6人，自身炮击、装填提高$1，机动提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -14675,11 +17649,14 @@ pg.skill_data_template = {
 	[11080] = {
 		desc_get = "",
 		name = "Silver Phantom",
-		desc = "自身对驱逐舰、运输舰、鱼雷艇、自爆船的伤害提升$1",
+		id = 11080,
 		type = 1,
 		max_level = 10,
-		id = 11080,
+		desc = "自身对驱逐舰、运输舰、鱼雷艇、自爆船的伤害提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -14733,11 +17710,14 @@ pg.skill_data_template = {
 	[11090] = {
 		desc_get = "",
 		name = "曙光",
-		desc = "在队伍中(存活)时，敌方所有驱逐舰、轻巡洋舰的回避率降低$1",
+		id = 11090,
 		type = 3,
 		max_level = 10,
-		id = 11090,
+		desc = "在队伍中(存活)时，敌方所有驱逐舰、轻巡洋舰的回避率降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10%",
@@ -14791,11 +17771,14 @@ pg.skill_data_template = {
 	[11100] = {
 		desc_get = "每40秒（满级20秒），发射一组跨射炮弹，命中敌人造成减速40%，持续6秒",
 		name = "血雾之奏鸣",
-		desc = "每$1秒，发射一组跨射炮弹，命中敌人造成减速40%，持续6秒",
+		id = 11100,
 		type = 1,
 		max_level = 10,
-		id = 11100,
+		desc = "每$1秒，发射一组跨射炮弹，命中敌人造成减速40%，持续6秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -14844,11 +17827,14 @@ pg.skill_data_template = {
 	[11110] = {
 		desc_get = "",
 		name = "灭亡之悲叹",
-		desc = "战斗内，第一轮炮击伤害提高$1；主炮炮击命中敌人时，使目标受到伤害提高$2，持续8秒",
+		id = 11110,
 		type = 3,
 		max_level = 10,
-		id = 11110,
+		desc = "战斗内，第一轮炮击伤害提高$1；主炮炮击命中敌人时，使目标受到伤害提高$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -14947,15 +17933,22 @@ pg.skill_data_template = {
 	[11120] = {
 		desc_get = "",
 		name = "胜利之歌",
-		desc = "对战列舰伤害提高$1，受到跨射攻击的伤害减少$1",
+		id = 11120,
 		type = 1,
 		max_level = 10,
-		id = 11120,
+		desc = "对战列舰伤害提高$1，受到跨射攻击的伤害减少$1；队伍中其他正航、轻航角色对战列舰造成的伤害提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
-				"10%",
-				"20%"
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
 			}
 		},
 		desc_add = {
@@ -14999,17 +17992,61 @@ pg.skill_data_template = {
 				{
 					"20.0%"
 				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
 			}
 		}
 	},
 	[11130] = {
 		desc_get = "",
 		name = "第一驱逐舰",
-		desc = "受到鱼雷攻击时，有$1概率发动，自身受到鱼雷的伤害降低$2，自身雷击提高$2 持续4秒",
+		id = 11130,
 		type = 1,
 		max_level = 10,
-		id = 11130,
+		desc = "受到鱼雷攻击时，有$1概率发动，自身受到鱼雷的伤害降低$2，自身雷击提高$2 持续4秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -15108,11 +18145,14 @@ pg.skill_data_template = {
 	[11140] = {
 		desc_get = "",
 		name = "闪耀的谢菲",
-		desc = "出击时耐久低于自身的己方舰艇，受到攻击时，有$1概率使受到的伤害减少$2（战斗中受伤导致的耐久变化不会触发该技能）",
+		id = 11140,
 		type = 2,
 		max_level = 10,
-		id = 11140,
+		desc = "出击时耐久低于自身的己方舰艇，受到攻击时，有$1概率使受到的伤害减少$2（战斗中受伤导致的耐久变化不会触发该技能）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -15211,11 +18251,14 @@ pg.skill_data_template = {
 	[11150] = {
 		desc_get = "",
 		name = "巴伦支海的逆袭",
-		desc = "主炮炮击暴击率提高$1，暴击伤害提高30%",
+		id = 11150,
 		type = 1,
 		max_level = 10,
-		id = 11150,
+		desc = "主炮炮击暴击率提高$1，暴击伤害提高30%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -15269,11 +18312,14 @@ pg.skill_data_template = {
 	[11160] = {
 		desc_get = "",
 		name = "克里特岛战役",
-		desc = "每隔20秒，降低敌方造成的伤害$1，增加自身防空$2，持续6秒",
+		id = 11160,
 		type = 2,
 		max_level = 10,
-		id = 11160,
+		desc = "每隔20秒，降低敌方造成的伤害$1，增加自身防空$2，持续6秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -15372,11 +18418,14 @@ pg.skill_data_template = {
 	[11170] = {
 		desc_get = "",
 		name = "正义的伙伴",
-		desc = "与谢菲尔德同时出击时，自身炮击、雷击提高$1",
+		id = 11170,
 		type = 1,
 		max_level = 10,
-		id = 11170,
+		desc = "与谢菲尔德同时出击时，自身炮击、雷击提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -15430,11 +18479,14 @@ pg.skill_data_template = {
 	[11180] = {
 		desc_get = "",
 		name = "校准射击",
-		desc = "每20秒，增加自己$1鱼雷造成的伤害，可叠加，最高8层",
+		id = 11180,
 		type = 1,
 		max_level = 10,
-		id = 11180,
+		desc = "每20秒，增加自己$1鱼雷造成的伤害，可叠加，最高8层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -15488,11 +18540,14 @@ pg.skill_data_template = {
 	[11190] = {
 		desc_get = "",
 		name = "伴随之风",
-		desc = "与{namecode:128}在同一个小队时，炮击、雷击、装填、防空属性提高$1",
+		id = 11190,
 		type = 3,
 		max_level = 10,
-		id = 11190,
+		desc = "与{namecode:128}在同一个小队时，炮击、雷击、装填、防空属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -15546,11 +18601,14 @@ pg.skill_data_template = {
 	[11200] = {
 		desc_get = "",
 		name = "所罗门的传说",
-		desc = "每20秒，有$1的概率发动，我方巡洋舰炮击、命中提升$2，受到攻击时，受到伤害降低$3，持续8秒",
+		id = 11200,
 		type = 3,
 		max_level = 10,
-		id = 11200,
+		desc = "每20秒，有$1的概率发动，我方巡洋舰炮击、命中提升$2，受到攻击时，受到伤害降低$3，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -15694,11 +18752,14 @@ pg.skill_data_template = {
 	[11210] = {
 		desc_get = "",
 		name = "歼灭模式",
-		desc = "每20秒，有$1概率开启歼灭模式，装填提高200%，持续10秒，同时发射强力弹幕",
+		id = 11210,
 		type = 1,
 		max_level = 10,
-		id = 11210,
+		desc = "每20秒，有$1概率开启歼灭模式，装填提高200%，持续10秒，同时发射强力弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -15752,11 +18813,14 @@ pg.skill_data_template = {
 	[11220] = {
 		desc_get = "",
 		name = "持续打击",
-		desc = "鱼雷每击中5次敌人，增加自身$1炮击,最多叠加3层",
+		id = 11220,
 		type = 1,
 		max_level = 10,
-		id = 11220,
+		desc = "鱼雷每击中5次敌人，增加自身$1炮击,最多叠加3层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -15810,11 +18874,14 @@ pg.skill_data_template = {
 	[11230] = {
 		desc_get = "",
 		name = "吴港之{namecode:22}",
-		desc = "在队伍中(存活)时，减少主力舰队受到的伤害$1；当主力舰队成员受到伤害导致耐久低于20%时，回复其$2耐久，每场战斗限1次",
+		id = 11230,
 		type = 3,
 		max_level = 10,
-		id = 11230,
+		desc = "在队伍中(存活)时，减少主力舰队受到的伤害$1；当主力舰队成员受到伤害导致耐久低于20%时，回复其$2耐久，每场战斗限1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -15913,11 +18980,14 @@ pg.skill_data_template = {
 	[11240] = {
 		desc_get = "",
 		name = "不沉的幸运舰",
-		desc = "自身受到伤害时，有$1的概率将此次伤害降低至1",
+		id = 11240,
 		type = 2,
 		max_level = 10,
-		id = 11240,
+		desc = "自身受到伤害时，有$1的概率将此次伤害降低至1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -15971,11 +19041,14 @@ pg.skill_data_template = {
 	[11250] = {
 		desc_get = "",
 		name = "萨沃岛突袭",
-		desc = "自身炮击提高$3；每20秒，有$1的概率发动，我方巡洋舰炮击、雷击提高$2，持续10秒",
+		id = 11250,
 		type = 3,
 		max_level = 10,
-		id = 11250,
+		desc = "自身炮击提高$3；每20秒，有$1的概率发动，我方巡洋舰炮击、雷击提高$2，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -16119,11 +19192,14 @@ pg.skill_data_template = {
 	[11260] = {
 		desc_get = "每场战斗前两次执行空中支援时，将有额外的舰载机编队进行攻击(威力随技能等级提升)",
 		name = "鹰之顽抗",
-		desc = "每场战斗前两次执行空中支援时，将有额外的舰载机编队攻击$1",
+		id = 11260,
 		type = 1,
 		max_level = 10,
-		id = 11260,
+		desc = "每场战斗前两次执行空中支援时，将有额外的舰载机编队攻击$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -16163,12 +19239,15 @@ pg.skill_data_template = {
 	[11270] = {
 		desc_get = "",
 		name = "闪耀之星",
-		desc = "对战列舰伤害提高$1；主炮开火时，有$2概率发射一轮三式弹弹幕(弹幕样式、强度依据技能等级)",
+		id = 11270,
 		type = 1,
 		max_level = 10,
-		id = 11270,
+		desc = "对战列舰伤害提高$1；主炮开火时，有$2概率发射一轮三式弹弹幕(弹幕样式、强度依据技能等级)",
 		system_transform = {
 			[3.0] = 11271
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -16268,11 +19347,14 @@ pg.skill_data_template = {
 	[11280] = {
 		desc_get = "娇小的身体更加灵巧，被弹面积也更小了呢，提升自身航速3点(满级8点)，提升自身机动13%(满级25%)",
 		name = "完美的娇小女仆",
-		desc = "娇小的身体更加灵巧，被弹面积也更小了呢，提升自身航速$1，提升自身机动$2",
+		id = 11280,
 		type = 2,
 		max_level = 10,
-		id = 11280,
+		desc = "娇小的身体更加灵巧，被弹面积也更小了呢，提升自身航速$1，提升自身机动$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -16362,11 +19444,14 @@ pg.skill_data_template = {
 	[11290] = {
 		desc_get = "",
 		name = "淑女们的下午茶",
-		desc = "作战前当然是一起享受淑女们的下午茶了，战斗开始时全员恢复耐久，回复量为小贝法最大耐久的$1",
+		id = 11290,
 		type = 2,
 		max_level = 10,
-		id = 11290,
+		desc = "作战前当然是一起享受淑女们的下午茶了，战斗开始时全员恢复耐久，回复量为小贝法最大耐久的$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -16420,11 +19505,14 @@ pg.skill_data_template = {
 	[11300] = {
 		desc_get = "",
 		name = "压制炮击",
-		desc = "战斗开始15秒后，有$1概率触发专属弹幕技能，之后每隔20秒，有$1概率触发专属弹幕技能(专属弹幕样式、强度依据技能等级)",
+		id = 11300,
 		type = 1,
 		max_level = 10,
-		id = 11300,
+		desc = "战斗开始15秒后，有$1概率触发专属弹幕技能，之后每隔20秒，有$1概率触发专属弹幕技能(专属弹幕样式、强度依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -16478,11 +19566,14 @@ pg.skill_data_template = {
 	[11310] = {
 		desc_get = "",
 		name = "重樱舰队旗舰-{namecode:74}",
-		desc = "作为旗舰出击时，队伍中的重樱角色炮击提高$2，装填、命中提高$1，重樱航母造成的伤害提高$1",
+		id = 11310,
 		type = 3,
 		max_level = 10,
-		id = 11310,
+		desc = "作为旗舰出击时，队伍中的重樱角色炮击提高$2，装填、命中提高$1，重樱航母造成的伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -16581,11 +19672,14 @@ pg.skill_data_template = {
 	[11320] = {
 		desc_get = "",
 		name = "毁灭模式",
-		desc = "每20秒，有$1概率开启毁灭模式，生成2面旋转的护盾，每个护盾阻挡5发子弹，主炮暴击率提高至100%，持续10秒，同时发射强力弹幕",
+		id = 11320,
 		type = 1,
 		max_level = 10,
-		id = 11320,
+		desc = "每20秒，有$1概率开启毁灭模式，生成2面旋转的护盾，每个护盾阻挡5发子弹，主炮暴击率提高至100%，持续10秒，同时发射强力弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -16639,11 +19733,14 @@ pg.skill_data_template = {
 	[11330] = {
 		desc_get = "",
 		name = "荣光的一番舰",
-		desc = "在队伍中(存活)时，队伍中{namecode:70}级的角色炮击、命中属性提高$1，机动属性提高$2",
+		id = 11330,
 		type = 3,
 		max_level = 10,
-		id = 11330,
+		desc = "在队伍中(存活)时，队伍中{namecode:70}级的角色炮击、命中属性提高$1，机动属性提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -16742,11 +19839,14 @@ pg.skill_data_template = {
 	[11340] = {
 		desc_get = "",
 		name = "烈光的武勋舰",
-		desc = "主炮开火时，提高自身炮击、防空属性$1，可叠加4次",
+		id = 11340,
 		type = 1,
 		max_level = 10,
-		id = 11340,
+		desc = "主炮开火时，提高自身炮击、防空属性$1，可叠加4次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -16800,11 +19900,14 @@ pg.skill_data_template = {
 	[11350] = {
 		desc_get = "",
 		name = "第八驱逐舰队",
-		desc = "出击时，队伍中{namecode:145}、{namecode:146}、{namecode:147}、{namecode:148}的炮击、装填属性提高$1，雷击属性提高$2",
+		id = 11350,
 		type = 3,
 		max_level = 10,
-		id = 11350,
+		desc = "出击时，队伍中{namecode:145}、{namecode:146}、{namecode:147}、{namecode:148}的炮击、装填属性提高$1，雷击属性提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -16903,11 +20006,14 @@ pg.skill_data_template = {
 	[11360] = {
 		desc_get = "",
 		name = "塔萨法隆格逆袭",
-		desc = "出击时，队伍中重樱阵营的驱逐对巡洋舰的伤害提高$1",
+		id = 11360,
 		type = 3,
 		max_level = 10,
-		id = 11360,
+		desc = "出击时，队伍中重樱阵营的驱逐对巡洋舰的伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -16961,12 +20067,15 @@ pg.skill_data_template = {
 	[11370] = {
 		desc_get = "进入战斗8秒后，发射一轮穿透鱼雷(威力和样式依据技能等级)，穿透鱼雷可以对一名敌方造成伤害后，穿透并继续前进，仍可对第二个敌方造成伤害",
 		name = "致命穿透",
-		desc = "进入战斗8秒后，发射一轮穿透鱼雷$1(威力和样式依据技能等级)，穿透鱼雷可以对一名敌方造成伤害后，穿透并继续前进，仍可对第二个敌方造成伤害",
+		id = 11370,
 		type = 1,
 		max_level = 10,
-		id = 11370,
+		desc = "进入战斗8秒后，发射一轮穿透鱼雷$1(威力和样式依据技能等级)，穿透鱼雷可以对一名敌方造成伤害后，穿透并继续前进，仍可对第二个敌方造成伤害",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {
@@ -17016,12 +20125,15 @@ pg.skill_data_template = {
 	[11380] = {
 		desc_get = "",
 		name = "谢幕演出",
-		desc = "对重巡、超巡伤害提高$1；从战场撤离时，发射一轮鱼雷攻击(威力和样式依据技能等级)",
+		id = 11380,
 		type = 1,
 		max_level = 10,
-		id = 11380,
+		desc = "对重巡、超巡伤害提高$1；从战场撤离时，发射一轮鱼雷攻击(威力和样式依据技能等级)",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17076,12 +20188,15 @@ pg.skill_data_template = {
 	[11390] = {
 		desc_get = "",
 		name = "潜行猎杀",
-		desc = "对航母造成的伤害提高$2；鱼雷击中敌方时，有$1概率使其在24秒内进水，每3秒受到一次伤害(伤害依据雷击属性)，不可叠加，持续时间内触发将刷新时间",
+		id = 11390,
 		type = 1,
 		max_level = 10,
-		id = 11390,
+		desc = "对航母造成的伤害提高$2；鱼雷击中敌方时，有$1概率使其在24秒内进水，每3秒受到一次伤害(伤害依据雷击属性)，不可叠加，持续时间内触发将刷新时间",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17181,11 +20296,14 @@ pg.skill_data_template = {
 	[11400] = {
 		desc_get = "",
 		name = "魔女的恶作剧",
-		desc = "空中支援时，有$1概率触发额外的舰载机编队进行攻击，额外编队将对命中的敌方造成点燃和进水持续伤害(伤害依据航空属性和技能等级)",
+		id = 11400,
 		type = 1,
 		max_level = 10,
-		id = 11400,
+		desc = "空中支援时，有$1概率触发额外的舰载机编队进行攻击，额外编队将对命中的敌方造成点燃和进水持续伤害(伤害依据航空属性和技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -17239,12 +20357,15 @@ pg.skill_data_template = {
 	[11410] = {
 		desc_get = "",
 		name = "狼群战术-U81",
-		desc = "自身机动提高$2；出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、装填、命中属性上升$1",
+		id = 11410,
 		type = 1,
 		max_level = 10,
-		id = 11410,
+		desc = "自身机动提高$2；出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、装填、命中属性上升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17344,11 +20465,14 @@ pg.skill_data_template = {
 	[11420] = {
 		desc_get = "",
 		name = "BIG SEVEN-樱",
-		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
+		id = 11420,
 		type = 1,
 		max_level = 10,
-		id = 11420,
+		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -17402,11 +20526,14 @@ pg.skill_data_template = {
 	[11430] = {
 		desc_get = "",
 		name = "BIG SEVEN-樱",
-		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
+		id = 11430,
 		type = 1,
 		max_level = 10,
-		id = 11430,
+		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -17460,12 +20587,15 @@ pg.skill_data_template = {
 	[11440] = {
 		desc_get = "",
 		name = "斯卡帕湾之牛",
-		desc = "鱼雷命中敌人后，若在5秒内自身鱼雷再次对该敌人造成伤害，造成的伤害提高$1",
+		id = 11440,
 		type = 1,
 		max_level = 10,
-		id = 11440,
+		desc = "鱼雷命中敌人后，若在5秒内自身鱼雷再次对该敌人造成伤害，造成的伤害提高$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17520,11 +20650,14 @@ pg.skill_data_template = {
 	[11450] = {
 		desc_get = "",
 		name = "过载炮击",
-		desc = "每20秒有$1概率触发，触发后提升自身炮击$2、装填$3，持续10秒；当炮击、装填提升结束后，降低自身装填100%，持续3秒 ",
+		id = 11450,
 		type = 1,
 		max_level = 10,
-		id = 11450,
+		desc = "每20秒有$1概率触发，触发后提升自身炮击$2、装填$3，持续10秒；当炮击、装填提升结束后，降低自身装填100%，持续3秒 ",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -17668,12 +20801,15 @@ pg.skill_data_template = {
 	[11460] = {
 		desc_get = "",
 		name = "独狼",
-		desc = "进入关卡时，若潜艇编队仅有自身一名角色，自身对战列舰(不包括战巡、航战)造成的伤害提高$1、狩猎范围等级+1、携带弹药量+2",
+		id = 11460,
 		type = 3,
 		max_level = 10,
-		id = 11460,
+		desc = "进入关卡时，若潜艇编队仅有自身一名角色，自身对战列舰(不包括战巡、航战)造成的伤害提高$1、狩猎范围等级+1、携带弹药量+2",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17728,12 +20864,15 @@ pg.skill_data_template = {
 	[11461] = {
 		desc_get = "",
 		name = "独狼",
-		desc = "进入关卡时，若潜艇编队仅有自身一名角色，自身对战列舰(不包括战巡、航战)造成的伤害提高$1、狩猎范围等级+1、携带弹药量+2",
+		id = 11461,
 		type = 3,
 		max_level = 10,
-		id = 11461,
+		desc = "进入关卡时，若潜艇编队仅有自身一名角色，自身对战列舰(不包括战巡、航战)造成的伤害提高$1、狩猎范围等级+1、携带弹药量+2",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -17788,11 +20927,14 @@ pg.skill_data_template = {
 	[11470] = {
 		desc_get = "",
 		name = "Nasty Asty",
-		desc = "与任意新奥尔良级的角色同时出击时，队伍中新奥尔良级的角色炮击属性提高$1，防空、命中属性提高$2",
+		id = 11470,
 		type = 3,
 		max_level = 10,
-		id = 11470,
+		desc = "与任意新奥尔良级的角色同时出击时，队伍中新奥尔良级的角色炮击属性提高$1，防空、命中属性提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -17891,11 +21033,14 @@ pg.skill_data_template = {
 	[11480] = {
 		desc_get = "",
 		name = "库拉湾之战",
-		desc = "每20秒，$1概率提升自身炮击、雷击、装填$2，持续10秒；其他前排角色受到伤害耐久低于20%后，使其受到的伤害降低$3，每场战斗1次，若该角色为海伦娜，额外回复其耐久的8%",
+		id = 11480,
 		type = 2,
 		max_level = 10,
-		id = 11480,
+		desc = "每20秒，$1概率提升自身炮击、雷击、装填$2，持续10秒；其他前排角色受到伤害耐久低于20%后，使其受到的伤害降低$3，每场战斗1次，若该角色为海伦娜，额外回复其耐久的8%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40%",
@@ -18039,11 +21184,14 @@ pg.skill_data_template = {
 	[11490] = {
 		desc_get = "",
 		name = "正面火力",
-		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
+		id = 11490,
 		type = 1,
 		max_level = 10,
-		id = 11490,
+		desc = "主炮开火时，有$1的概率朝自己前方直线发射一轮专属弹幕(依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -18097,11 +21245,14 @@ pg.skill_data_template = {
 	[11500] = {
 		desc_get = "",
 		name = "鸢尾之光",
-		desc = "主炮连续命中同一个目标时（同一子弹命中复数目标时，均可作为判定对象），提升自身装填属性$1，最高叠加4层，每秒最多触发一次；装填提升效果生效期间，若命中非判定目标，则生效层数清零",
+		id = 11500,
 		type = 1,
 		max_level = 10,
-		id = 11500,
+		desc = "主炮连续命中同一个目标时（同一子弹命中复数目标时，均可作为判定对象），提升自身装填属性$1，最高叠加4层，每秒最多触发一次；装填提升效果生效期间，若命中非判定目标，则生效层数清零",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -18155,11 +21306,14 @@ pg.skill_data_template = {
 	[11510] = {
 		desc_get = "",
 		name = "攻防转换",
-		desc = "作为先锋领舰出击时，主炮效率提高$1，防空炮效率降低30%",
+		id = 11510,
 		type = 3,
 		max_level = 10,
-		id = 11510,
+		desc = "作为先锋领舰出击时，主炮效率提高$1，防空炮效率降低30%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -18213,11 +21367,14 @@ pg.skill_data_template = {
 	[11520] = {
 		desc_get = "",
 		name = "爱丽丝之心",
-		desc = "出击时，队伍中自由鸢尾、维希教廷阵营的驱逐舰角色炮击、雷击、命中属性提高$1",
+		id = 11520,
 		type = 3,
 		max_level = 10,
-		id = 11520,
+		desc = "出击时，队伍中自由鸢尾、维希教廷阵营的驱逐舰角色炮击、雷击、命中属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -18271,11 +21428,14 @@ pg.skill_data_template = {
 	[11530] = {
 		desc_get = "",
 		name = "海盗之魂",
-		desc = "每次进行炮击的第一轮跨射伤害提高$1；手动进行瞄准时，手动发射带来的跨射伤害增幅效果提高到$1",
+		id = 11530,
 		type = 1,
 		max_level = 10,
-		id = 11530,
+		desc = "每次进行炮击的第一轮跨射伤害提高$1；手动进行瞄准时，手动发射带来的跨射伤害增幅效果提高到$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -18329,11 +21489,14 @@ pg.skill_data_template = {
 	[11540] = {
 		desc_get = "",
 		name = "最后的炮火",
-		desc = "装备【四联装380mm主炮Mle1935】主炮时，主炮的暴击率提高$2，主炮暴击造成的伤害提高$1",
+		id = 11540,
 		type = 1,
 		max_level = 10,
-		id = 11540,
+		desc = "装备【四联装380mm主炮Mle1935】主炮时，主炮的暴击率提高$2，主炮暴击造成的伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -18432,43 +21595,22 @@ pg.skill_data_template = {
 	[11550] = {
 		desc_get = "",
 		name = "Big Mamie",
-		desc = "出击时，队友中每有一个白鹰联邦重巡或战列舰角色，自身炮击、防空、机动属性上升$1，效果最多叠加3层",
+		id = 11550,
 		type = 1,
 		max_level = 10,
-		id = 11550,
+		desc = "出击时，队伍中每有一个白鹰联邦重巡或战列舰角色，自身炮击、防空、机动属性上升$1，效果最多叠加3层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
-				"1.0%",
-				"5.0%"
+				"3.5%",
+				"8.0%"
 			}
 		},
 		desc_add = {
 			{
-				{
-					"1.0%",
-					"+0.4%"
-				},
-				{
-					"1.4%",
-					"+0.4%"
-				},
-				{
-					"1.8%",
-					"+0.4%"
-				},
-				{
-					"2.2%",
-					"+0.4%"
-				},
-				{
-					"2.6%",
-					"+0.4%"
-				},
-				{
-					"3.0%",
-					"+0.5%"
-				},
 				{
 					"3.5%",
 					"+0.5%"
@@ -18482,7 +21624,31 @@ pg.skill_data_template = {
 					"+0.5%"
 				},
 				{
-					"5.0%"
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
 				}
 			}
 		}
@@ -18490,18 +21656,66 @@ pg.skill_data_template = {
 	[11560] = {
 		desc_get = "",
 		name = "2700磅的正义",
-		desc = "主炮的弹药种类改为穿甲超重弹，命中目标时，根据飞行距离提高炮弹伤害，最高提高$1",
+		id = 11560,
 		type = 1,
 		max_level = 10,
-		id = 11560,
+		desc = "自身装备的主炮武器命中目标时，根据飞行距离提高炮弹伤害，最高提高$1；副炮栏位装备白鹰阵营武器时，主炮武器根据飞行距离提高伤害的最大增幅值提高为$2，并将主炮的弹药种类改为穿甲超重弹",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
 			{
 				"15.0%",
 				"30.0%"
 			}
 		},
 		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
 			{
 				{
 					"15.0%",
@@ -18548,11 +21762,14 @@ pg.skill_data_template = {
 	[11570] = {
 		desc_get = "",
 		name = "侦查支援",
-		desc = "进入战斗时，提高己方所有先锋角色$1命中属性，持续20秒",
+		id = 11570,
 		type = 3,
 		max_level = 10,
-		id = 11570,
+		desc = "进入战斗时，提高己方所有先锋角色$1命中属性，持续20秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -18606,11 +21823,14 @@ pg.skill_data_template = {
 	[11580] = {
 		desc_get = "空中支援时，额外使用剑鱼编队进行一轮航空鱼雷攻击(威力随技能等级提升)，使被命中的敌方减速40%，持续6秒；自身对战列舰(不包括战巡、航战)伤害提高4%(满级10%)",
 		name = "剑鱼出击·改",
-		desc = "空中支援时，额外使用剑鱼编队进行一轮航空鱼雷攻击$2，使被命中的敌方减速40%，持续6秒；自身对战列舰(不包括战巡、航战)伤害提高$1",
+		id = 11580,
 		type = 1,
 		max_level = 10,
-		id = 11580,
+		desc = "空中支援时，额外使用剑鱼编队进行一轮航空鱼雷攻击$2，使被命中的敌方减速40%，持续6秒；自身对战列舰(不包括战巡、航战)伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4%",
@@ -18700,11 +21920,14 @@ pg.skill_data_template = {
 	[11590] = {
 		desc_get = "",
 		name = "空域控制",
-		desc = "每次执行空袭后，己方后排航空属性提高$1、炮击属性提高$2，持续8秒",
+		id = 11590,
 		type = 3,
 		max_level = 10,
-		id = 11590,
+		desc = "每次执行空袭后，己方后排航空属性提高$1、炮击属性提高$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -18803,11 +22026,14 @@ pg.skill_data_template = {
 	[11600] = {
 		desc_get = "开场10秒以后，当敌方进入防卫射程时，触发一轮弹幕(威力随技能等级提升)，触发后进入10秒冷却",
 		name = "格斗炮术",
-		desc = "开场10秒以后，当敌方进入防卫射程时，触发一轮弹幕$1，触发后进入10秒冷却",
+		id = 11600,
 		type = 1,
 		max_level = 10,
-		id = 11600,
+		desc = "开场10秒以后，当敌方进入防卫射程时，触发一轮弹幕$1，触发后进入10秒冷却",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -18856,11 +22082,14 @@ pg.skill_data_template = {
 	[11610] = {
 		desc_get = "每场战斗前两次执行空中支援加载时间缩短5%(满级25%)，并且额外使用彗星(威力随技能等级提升)进行攻击；与任意航母或轻航一起出击时，该技能效果不再有次数限制",
 		name = "航空战队",
-		desc = "每场战斗前两次执行空中支援加载时间缩短$1，并且额外使用彗星$2进行攻击；与任意航母或轻航一起出击时，该技能效果不再有次数限制",
+		id = 11610,
 		type = 1,
 		max_level = 10,
-		id = 11610,
+		desc = "每场战斗前两次执行空中支援加载时间缩短$1，并且额外使用彗星$2进行攻击；与任意航母或轻航一起出击时，该技能效果不再有次数限制",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -18950,57 +22179,60 @@ pg.skill_data_template = {
 	[11620] = {
 		desc_get = "",
 		name = "命运之骰",
-		desc = "自身空袭整备完毕时，有$1概率触发额外的流星、彗星、彩云编队进行攻击，三种编队独立概率可同时触发（彩云编队不携带弹药，触发时提高己方主力舰队成员造成的伤害10%，持续8秒）",
+		id = 11620,
 		type = 1,
 		max_level = 10,
-		id = 11620,
+		desc = "自身空袭整备完毕时，随机在流星、彗星、彩云舰载机编队中随机触发一种攻击，其余的两种编队各有$1独立概率触发攻击（彩云编队不携带弹药，触发时提高己方主力舰队成员造成的伤害10%，持续8秒）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
-				"20.0%",
-				"40.0%"
+				"10.0%",
+				"25.0%"
 			}
 		},
 		desc_add = {
 			{
 				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
 					"20.0%",
-					"+2.2%"
+					"+1.6%"
 				},
 				{
-					"22.2%",
-					"+2.2%"
+					"21.6%",
+					"+1.6%"
 				},
 				{
-					"24.4%",
-					"+2.2%"
+					"23.2%",
+					"+1.8%"
 				},
 				{
-					"26.6%",
-					"+2.2%"
-				},
-				{
-					"28.8%",
-					"+2.2%"
-				},
-				{
-					"31.0%",
-					"+2.2%"
-				},
-				{
-					"33.2%",
-					"+2.2%"
-				},
-				{
-					"35.4%",
-					"+2.2%"
-				},
-				{
-					"37.6%",
-					"+2.4%"
-				},
-				{
-					"40.0%"
+					"25.0%"
 				}
 			}
 		}
@@ -19008,11 +22240,14 @@ pg.skill_data_template = {
 	[11630] = {
 		desc_get = "",
 		name = "重樱装母",
-		desc = "自身受到的高爆弹伤害降低$1，自身受到的航空伤害降低$1",
+		id = 11630,
 		type = 2,
 		max_level = 10,
-		id = 11630,
+		desc = "自身受到的高爆弹伤害降低$1，自身受到的航空伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -19066,11 +22301,14 @@ pg.skill_data_template = {
 	[11640] = {
 		desc_get = "",
 		name = "善战之舰",
-		desc = "自身发动空袭时，额外使用TBF复仇者编队进行一轮攻击$2，该编队的鱼雷将对命中的敌方造成进水持续伤害(伤害依据航空属性和技能等级)；自身对战列舰(不包括战巡、航战)伤害提高$1",
+		id = 11640,
 		type = 1,
 		max_level = 10,
-		id = 11640,
+		desc = "自身发动空袭时，额外使用TBF复仇者编队进行一轮攻击$2，该编队的鱼雷将对命中的敌方造成进水持续伤害(伤害依据航空属性和技能等级)；自身对战列舰(不包括战巡、航战)伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4%",
@@ -19160,11 +22398,14 @@ pg.skill_data_template = {
 	[11650] = {
 		desc_get = "",
 		name = "航空阵列",
-		desc = "出击时，队伍中每有一个白鹰联邦航母或轻航角色，自身航空，防空提升$1；自身舰载机击落敌方飞机时，自身航空提高$2（该效果最高叠加5层）",
+		id = 11650,
 		type = 3,
 		max_level = 10,
-		id = 11650,
+		desc = "出击时，队伍中每有一个白鹰联邦航母或轻航角色，自身航空，防空提升$1；自身舰载机击落敌方飞机时，自身航空提高$2（该效果最高叠加5层）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -19263,11 +22504,14 @@ pg.skill_data_template = {
 	[11660] = {
 		desc_get = "",
 		name = "绝对回避",
-		desc = "出击时，若队伍中至少有4名白鹰角色，则全队成员受到航空鱼雷或轰炸攻击时，有$1的概率将此次伤害降低至1",
+		id = 11660,
 		type = 2,
 		max_level = 10,
-		id = 11660,
+		desc = "出击时，若队伍中至少有4名白鹰角色，则全队成员受到航空鱼雷或轰炸攻击时，有$1的概率将此次伤害降低至1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -19321,12 +22565,15 @@ pg.skill_data_template = {
 	[11670] = {
 		desc_get = "潜艇氧气不足上浮及从战场撤离时，各发射一组的技能鱼雷(威力随技能等级提升)，技能鱼雷有70%概率对命中的敌人造成点燃(点燃伤害依据雷击属性)",
 		name = "意外赠礼",
-		desc = "潜艇氧气不足上浮及从战场撤离时，各发射一组的技能鱼雷$1(威力随技能等级提升)，技能鱼雷有70%概率对命中的敌人造成点燃(点燃伤害依据雷击属性)",
+		id = 11670,
 		type = 1,
 		max_level = 10,
-		id = 11670,
+		desc = "潜艇氧气不足上浮及从战场撤离时，各发射一组的技能鱼雷$1(威力随技能等级提升)，技能鱼雷有70%概率对命中的敌人造成点燃(点燃伤害依据雷击属性)",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {
@@ -19367,12 +22614,15 @@ pg.skill_data_template = {
 	[11680] = {
 		desc_get = "",
 		name = "熟练的猎手",
-		desc = "对驱逐舰、轻巡洋舰、航空母舰的伤害提升$1",
+		id = 11680,
 		type = 1,
 		max_level = 10,
-		id = 11680,
+		desc = "对驱逐舰、轻巡洋舰、航空母舰的伤害提升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -19427,11 +22677,14 @@ pg.skill_data_template = {
 	[11690] = {
 		desc_get = "",
 		name = "湖之都的蛮牛",
-		desc = "自身在战斗中击破敌舰时，自身炮击属性提高$1、装填属性提高$2，持续12秒，每秒最多触发一次，不可叠加，持续时间内触发将刷新时间",
+		id = 11690,
 		type = 1,
 		max_level = 10,
-		id = 11690,
+		desc = "自身在战斗中击破敌舰时，自身炮击属性提高$1、装填属性提高$2，持续12秒，每秒最多触发一次，不可叠加，持续时间内触发将刷新时间",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -19530,11 +22783,14 @@ pg.skill_data_template = {
 	[11700] = {
 		desc_get = "",
 		name = "猛进射击",
-		desc = "作为先锋领舰出击时，自身防空降低40%，命中降低$1，机动提高$2，炮击提升$3，航速提升3",
+		id = 11700,
 		type = 3,
 		max_level = 10,
-		id = 11700,
+		desc = "作为先锋领舰出击时，自身防空降低40%，命中降低$1，机动提高$2，炮击提升$3，航速提升3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20%",
@@ -19678,11 +22934,14 @@ pg.skill_data_template = {
 	[11710] = {
 		desc_get = "",
 		name = "杜尔拉汗",
-		desc = "在战斗中受到伤害，导致血量低于30%后，自身受到的伤害降低$2，触发后的16秒内，航速降低2，每3秒恢复总耐久度$1的耐久，该技能每场战斗只能发动1次",
+		id = 11710,
 		type = 2,
 		max_level = 10,
-		id = 11710,
+		desc = "在战斗中受到伤害，导致血量低于30%后，自身受到的伤害降低$2，触发后的16秒内，航速降低2，每3秒恢复总耐久度$1的耐久，该技能每场战斗只能发动1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -19781,11 +23040,14 @@ pg.skill_data_template = {
 	[11720] = {
 		desc_get = "",
 		name = "星之歌",
-		desc = "自身防空属性提高$2；每20秒，有$1概率发射强力弹幕",
+		id = 11720,
 		type = 1,
 		max_level = 10,
-		id = 11720,
+		desc = "自身防空属性提高$2；每20秒，有$1概率发射强力弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50%",
@@ -19884,11 +23146,14 @@ pg.skill_data_template = {
 	[11730] = {
 		desc_get = "",
 		name = "LittleStar",
-		desc = "战斗开始后15秒发动，提高全队$1炮击、装填、机动属性，持续20秒",
+		id = 11730,
 		type = 3,
 		max_level = 10,
-		id = 11730,
+		desc = "战斗开始后15秒发动，提高全队$1炮击、装填、机动属性，持续20秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -19942,11 +23207,14 @@ pg.skill_data_template = {
 	[11740] = {
 		desc_get = "",
 		name = "风之加护",
-		desc = "使用鱼雷时，有$1的概率触发，5秒内自身完全回避所有攻击",
+		id = 11740,
 		type = 2,
 		max_level = 10,
-		id = 11740,
+		desc = "使用鱼雷时，有$1的概率触发，5秒内自身完全回避所有攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -20000,11 +23268,14 @@ pg.skill_data_template = {
 	[11750] = {
 		desc_get = "",
 		name = "蛮啾,猫猫,小枭!",
-		desc = "每次释放空袭时，有$1的概率触发，激发联组之力，8s内提升自身航空与队伍中轻航装填$2，降低$2轻航、正航受到的伤害",
+		id = 11750,
 		type = 1,
 		max_level = 10,
-		id = 11750,
+		desc = "每次释放空袭时，有$1的概率触发，激发联组之力，8秒内提升自身航空与队伍中轻航装填$2，降低$2轻航、正航受到的伤害",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -20103,11 +23374,14 @@ pg.skill_data_template = {
 	[11760] = {
 		desc_get = "",
 		name = "空袭信号",
-		desc = "自身空袭整备完毕后5秒，触发额外的舰爆编队($1)进行攻击，每场战斗最多发动2次",
+		id = 11760,
 		type = 1,
 		max_level = 10,
-		id = 11760,
+		desc = "自身空袭整备完毕后5秒，触发额外的舰爆编队($1)进行攻击，每场战斗最多发动2次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -20161,11 +23435,14 @@ pg.skill_data_template = {
 	[11770] = {
 		desc_get = "",
 		name = "Terror Field",
-		desc = "受到的点燃、自爆船自爆的伤害降低$2，受到高爆弹的伤害降低$3；副炮暴击率提高$1，副炮弹药不受装甲类型影响，副炮弹药伤害随技能等级提高而提高",
+		id = 11770,
 		type = 3,
 		max_level = 10,
-		id = 11770,
+		desc = "受到的点燃、自爆船自爆的伤害降低$2，受到高爆弹的伤害降低$3；副炮暴击率提高$1，副炮弹药不受装甲类型影响，副炮弹药伤害随技能等级提高而提高",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40%",
@@ -20309,11 +23586,14 @@ pg.skill_data_template = {
 	[11780] = {
 		desc_get = "",
 		name = "千年之凤",
-		desc = "在队伍中(存活)时，所有敌方的炮击、雷击、航空属性降低$1",
+		id = 11780,
 		type = 3,
 		max_level = 10,
-		id = 11780,
+		desc = "在队伍中(存活)时，所有敌方的炮击、雷击、航空属性降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.0%",
@@ -20367,11 +23647,14 @@ pg.skill_data_template = {
 	[11790] = {
 		desc_get = "",
 		name = "运筹千里",
-		desc = "在队伍中(存活)时，我方主力舰队受到的点燃伤害降低$1，回避率提高$2",
+		id = 11790,
 		type = 2,
 		max_level = 10,
-		id = 11790,
+		desc = "在队伍中(存活)时，我方主力舰队受到的点燃伤害降低$1，回避率提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -20470,11 +23753,14 @@ pg.skill_data_template = {
 	[11800] = {
 		desc_get = "",
 		name = "克敌机先",
-		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)；队伍中重樱阵营的角色至少4个时，自身第一轮主炮加载时间缩短$2",
+		id = 11800,
 		type = 1,
 		max_level = 10,
-		id = 11800,
+		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)；队伍中重樱阵营的角色至少4个时，自身第一轮主炮加载时间缩短$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -20573,12 +23859,15 @@ pg.skill_data_template = {
 	[11810] = {
 		desc_get = "",
 		name = "战无不胜",
-		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)",
+		id = 11810,
 		type = 1,
 		max_level = 10,
-		id = 11810,
+		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力依据技能等级)",
 		system_transform = {
 			[3.0] = 11811
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -20633,11 +23922,14 @@ pg.skill_data_template = {
 	[11820] = {
 		desc_get = "战斗开始10秒后发射一轮鱼雷弹幕，随后每40秒(满级20秒)发射一轮鱼雷弹幕(威力依据技能等级)",
 		name = "攻无不取",
-		desc = "战斗开始10秒后发射一轮鱼雷弹幕，随后每$1秒发射一轮鱼雷弹幕(威力依据技能等级)",
+		id = 11820,
 		type = 1,
 		max_level = 10,
-		id = 11820,
+		desc = "战斗开始10秒后发射一轮鱼雷弹幕，随后每$1秒发射一轮鱼雷弹幕(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -20686,11 +23978,14 @@ pg.skill_data_template = {
 	[11830] = {
 		desc_get = "战斗开始15秒后发射一轮航空弹幕，随后每20秒发射一轮航空弹幕；发射弹幕时，从(五光、猪鹿蝶、月见酒、种)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升",
 		name = "花之牌",
-		desc = "战斗开始15秒后释放一轮航空弹幕，随后每20秒发射一轮航空弹幕；释放弹幕时，从(五光、猪鹿蝶、月见酒、种)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升$1",
+		id = 11830,
 		type = 1,
 		max_level = 10,
-		id = 11830,
+		desc = "战斗开始15秒后释放一轮航空弹幕，随后每20秒发射一轮航空弹幕；释放弹幕时，从(五光、猪鹿蝶、月见酒、种)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -20740,11 +24035,14 @@ pg.skill_data_template = {
 	[11840] = {
 		desc_get = "战斗开始10秒后发射一轮航空弹幕，随后每20秒发射一轮航空弹幕；发射弹幕时，从(五光、青短、花见酒、滓)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升",
 		name = "花之牌",
-		desc = "战斗开始10秒后释放一轮航空弹幕，随后每20秒发射一轮航空弹幕；释放弹幕时，从(五光、青短、花见酒、滓)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升$1",
+		id = 11840,
 		type = 1,
 		max_level = 10,
-		id = 11840,
+		desc = "战斗开始10秒后释放一轮航空弹幕，随后每20秒发射一轮航空弹幕；释放弹幕时，从(五光、青短、花见酒、滓)中抽取一种牌型(概率非均等)，弹幕威力根据花札的牌型及技能等级提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -20794,11 +24092,14 @@ pg.skill_data_template = {
 	[11850] = {
 		desc_get = "",
 		name = "苏腊巴亚的刃光",
-		desc = "每20秒有$1概率触发，发射一轮弹幕，10秒内炮击上升$2、对轻巡、重巡、超巡的伤害上升$2",
+		id = 11850,
 		type = 1,
 		max_level = 10,
-		id = 11850,
+		desc = "每20秒有$1概率触发，发射一轮弹幕，10秒内炮击上升$2、对轻巡、重巡、超巡的伤害上升$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -20897,11 +24198,14 @@ pg.skill_data_template = {
 	[11860] = {
 		desc_get = "",
 		name = "苍狼之印",
-		desc = "出击时，队伍中轻母、正航的航空提高$1，对驱逐、轻巡、重巡、超巡的命中率提高$1；出击时，队伍中每有一艘轻母、正航，自身炮击、雷击、装填属性提高$2，效果最多叠加3层",
+		id = 11860,
 		type = 3,
 		max_level = 10,
-		id = 11860,
+		desc = "出击时，队伍中轻母、正航的航空提高$1，对驱逐、轻巡、重巡、超巡的命中率提高$1；出击时，队伍中每有一艘轻母、正航，自身炮击、雷击、装填属性提高$2，效果最多叠加3层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -21000,11 +24304,14 @@ pg.skill_data_template = {
 	[11870] = {
 		desc_get = "开场10秒触发神射手·改弹幕，随后每35秒(满级15秒)触发该弹幕；每场战斗第一轮该弹幕伤害提高80%(满级130%)；该弹幕必定暴击，选择最远目标，我方皇家主力编队自动跨射瞄准其目标单位概率提高(弹幕威力样式依据技能等级)",
 		name = "神射手·改",
-		desc = "开场10秒触发神射手·改弹幕，随后每$1秒触发该弹幕；每场战斗第一轮该弹幕伤害提高$3；该弹幕必定暴击，选择最远目标，我方皇家主力编队自动跨射瞄准其目标单位概率提高(弹幕$2威力依据技能等级)",
+		id = 11870,
 		type = 1,
 		max_level = 10,
-		id = 11870,
+		desc = "开场10秒触发神射手·改弹幕，随后每$1秒触发该弹幕；每场战斗第一轮该弹幕伤害提高$3；该弹幕必定暴击，选择最远目标，我方皇家主力编队自动跨射瞄准其目标单位概率提高(弹幕$2威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -21126,11 +24433,14 @@ pg.skill_data_template = {
 	[11880] = {
 		desc_get = "自身装备的主炮散布范围降低0.5点(满级5点)，炮击提高3%(满级15%)，对驱逐舰命中率提高3%(满级15%)",
 		name = "皇家传奇",
-		desc = "自身装备的主炮散布范围降低$1点，炮击提高$2，对驱逐舰命中率提高$2",
+		id = 11880,
 		type = 3,
 		max_level = 10,
-		id = 11880,
+		desc = "自身装备的主炮散布范围降低$1点，炮击提高$2，对驱逐舰命中率提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -21220,11 +24530,14 @@ pg.skill_data_template = {
 	[11890] = {
 		desc_get = "自身受到的点燃伤害降低5%(满级15%)，被点燃时间减少3秒；若在战斗中受到伤害，导致血量低于25%后，接下来的10秒内，自身回避率上升10%(满级30%)，该效果每场战斗只能发动1次。",
 		name = "光焰中的奇迹",
-		desc = "自身受到的点燃伤害降低$1，被点燃时间减少3秒；若在战斗中受到伤害，导致血量低于25%后，接下来的10秒内，自身回避率上升$2，该效果每场战斗只能发动1次",
+		id = 11890,
 		type = 2,
 		max_level = 10,
-		id = 11890,
+		desc = "自身受到的点燃伤害降低$1，被点燃时间减少3秒；若在战斗中受到伤害，导致血量低于25%后，接下来的10秒内，自身回避率上升$2，该效果每场战斗只能发动1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5%",
@@ -21323,11 +24636,14 @@ pg.skill_data_template = {
 	[11900] = {
 		desc_get = "",
 		name = "816中队",
-		desc = "自身每次释放空袭时，触发一次反潜搜索，暴露敌方在场潜艇持续$1秒，并释放剑鱼816中队进行反潜及鱼雷攻击(威力依据技能等级)",
+		id = 11900,
 		type = 1,
 		max_level = 10,
-		id = 11900,
+		desc = "自身每次释放空袭时，触发一次反潜搜索，暴露敌方在场潜艇$1秒，并释放剑鱼816中队进行反潜及鱼雷攻击，$1秒内所有在场的敌方潜艇减速40%(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5",
@@ -21381,11 +24697,14 @@ pg.skill_data_template = {
 	[11910] = {
 		desc_get = "",
 		name = "鹰击长空",
-		desc = "使用克洛希德的舰载机将额外获得$1的装备效率",
+		id = 11910,
 		type = 1,
 		max_level = 10,
-		id = 11910,
+		desc = "使用克洛希德的舰载机将额外获得$1的装备效率",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -21439,11 +24758,14 @@ pg.skill_data_template = {
 	[11920] = {
 		desc_get = "",
 		name = "天之骑士",
-		desc = "自身发动空袭时，额外使用TBF复仇者编队进行一轮攻击$1(威力随技能等级提升)；出击时，若队伍中含有克利夫兰级角色，提升其炮击属性$3，提升自身航空、命中$2，并强化TBF复仇者编队弹幕样式",
+		id = 11920,
 		type = 3,
 		max_level = 10,
-		id = 11920,
+		desc = "自身发动空袭时，额外使用TBF复仇者编队进行一轮攻击$1(威力随技能等级提升)；出击时，若队伍中含有克利夫兰级角色，提升其炮击属性$3，提升自身航空、命中$2，并强化TBF复仇者编队弹幕样式",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -21587,11 +24909,14 @@ pg.skill_data_template = {
 	[11930] = {
 		desc_get = "",
 		name = "杜立特空袭.改",
-		desc = "空袭时有$1概率触发，使用B#25进行额外一轮航空弹幕攻击",
+		id = 11930,
 		type = 1,
 		max_level = 10,
-		id = 11930,
+		desc = "空袭时有$1概率触发，使用B#25进行额外一轮航空弹幕攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50.0%",
@@ -21645,11 +24970,14 @@ pg.skill_data_template = {
 	[11940] = {
 		desc_get = "",
 		name = "天与海的观测者",
-		desc = "开场10秒放飞一架F6F遥控战机，若战机被击落，触发一轮航空弹幕(威力依据技能等级)；放飞战机后每8秒提高自身命中$2，提高自身伤害$1，最高叠加5层",
+		id = 11940,
 		type = 3,
 		max_level = 10,
-		id = 11940,
+		desc = "开场10秒放飞一架F6F遥控战机，若战机被击落，触发一轮航空弹幕(威力依据技能等级)；放飞战机后每8秒提高自身命中$2，提高自身伤害$1，最高叠加5层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"2.5%",
@@ -21748,11 +25076,14 @@ pg.skill_data_template = {
 	[11950] = {
 		desc_get = "",
 		name = "不冻港的协奏曲",
-		desc = "出击时，自身鱼雷暴击率提升$1，对驱逐舰伤害提升$2，提升队伍中皇家阵营驱逐舰雷击属性$3",
+		id = 11950,
 		type = 1,
 		max_level = 10,
-		id = 11950,
+		desc = "出击时，自身鱼雷暴击率提升$1，对驱逐舰伤害提升$2，提升队伍中皇家阵营驱逐舰雷击属性$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -21896,11 +25227,14 @@ pg.skill_data_template = {
 	[11960] = {
 		desc_get = "",
 		name = "峡湾之星",
-		desc = "每场战斗中，第一次释放鱼雷时发射一轮特殊弹幕$1(威力依据技能等级)",
+		id = 11960,
 		type = 1,
 		max_level = 10,
-		id = 11960,
+		desc = "每场战斗中，第一次释放鱼雷时发射一轮特殊弹幕$1(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -21954,11 +25288,14 @@ pg.skill_data_template = {
 	[11970] = {
 		desc_get = "",
 		name = "战意提升",
-		desc = "主炮每进行10次攻击，自身装填提高$1，全弹发射伤害提高$2，最多叠加4层",
+		id = 11970,
 		type = 1,
 		max_level = 10,
-		id = 11970,
+		desc = "主炮每进行10次攻击，自身装填提高$1，全弹发射伤害提高$2，最多叠加4层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -22057,11 +25394,14 @@ pg.skill_data_template = {
 	[11980] = {
 		desc_get = "",
 		name = "特混分队旗舰",
-		desc = "自身航空提升$1；作为旗舰出击时，队伍中的白鹰阵营战列舰炮击提高$1；作为僚舰出击时，队伍中的白鹰驱逐炮击、防空提升$1",
+		id = 11980,
 		type = 3,
 		max_level = 10,
-		id = 11980,
+		desc = "自身航空提升$1；作为旗舰出击时，队伍中的白鹰阵营战列舰炮击提高$1；作为僚舰出击时，队伍中的白鹰驱逐炮击、防空提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -22115,11 +25455,14 @@ pg.skill_data_template = {
 	[11990] = {
 		desc_get = "",
 		name = "恪尽职守",
-		desc = "当队伍中没有其他轻母、正航时，提高主力编队防空$2；空袭时，释放一轮航空弹幕$1(航空弹幕类型根据编队中的轻母、正航数量总数变化，威力依据技能等级)",
+		id = 11990,
 		type = 1,
 		max_level = 10,
-		id = 11990,
+		desc = "当队伍中没有其他轻母、正航时，提高主力编队防空$2；空袭时，释放一轮航空弹幕$1(航空弹幕类型根据编队中的轻母、正航数量总数变化，威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -22218,11 +25561,14 @@ pg.skill_data_template = {
 	[12000] = {
 		desc_get = "",
 		name = "远东的羁绊",
-		desc = "在队伍中(存活)时降低轻母、正航受到的伤害$1；与格里德利同时出击时，提高自身炮击$2，提高格里德利炮击、装填$2",
+		id = 12000,
 		type = 3,
 		max_level = 10,
-		id = 12000,
+		desc = "在队伍中(存活)时降低轻母、正航受到的伤害$1；与格里德利同时出击时，提高自身炮击$2，提高格里德利炮击、装填$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -22321,12 +25667,15 @@ pg.skill_data_template = {
 	[12010] = {
 		desc_get = "",
 		name = "Code:Hikari",
-		desc = "自身进场时，放飞一架彩云舰载机。接下来的10秒内，主力舰队造成的伤害提升$1",
+		id = 12010,
 		type = 3,
 		max_level = 10,
-		id = 12010,
+		desc = "自身进场时，放飞一架彩云舰载机。接下来的10秒内，主力舰队造成的伤害提升$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -22378,14 +25727,31 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[12020] = {
+		desc_get = "",
+		name = "潜母飞机用",
+		id = 12020,
+		type = 0,
+		max_level = 0,
+		desc = "",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[12030] = {
 		desc_get = "",
 		name = "划破夜空之火",
-		desc = "主炮每击中8次敌人，增加自身炮击$1、装填$2，最多叠加3层；效果达到3层后，强化全弹发射弹幕样式",
+		id = 12030,
 		type = 1,
 		max_level = 10,
-		id = 12030,
+		desc = "主炮每击中8次敌人，增加自身炮击$1、装填$2，最多叠加3层；效果达到3层后，强化全弹发射弹幕样式",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -22484,11 +25850,14 @@ pg.skill_data_template = {
 	[12040] = {
 		desc_get = "",
 		name = "不安定的发明家",
-		desc = "战斗中，每12秒触发一种研发中的特殊装备$1，特殊装备的效果随技能等级提高",
+		id = 12040,
 		type = 3,
 		max_level = 10,
-		id = 12040,
+		desc = "战斗中，每12秒触发一种研发中的特殊装备$1，特殊装备的效果随技能等级提高",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -22542,11 +25911,14 @@ pg.skill_data_template = {
 	[12050] = {
 		desc_get = "每隔35秒(满级20秒)，朝前方发射一轮鱼雷弹幕(威力依据技能等级)",
 		name = "鱼雷、发射！",
-		desc = "每隔$1秒，朝前方发射一轮鱼雷弹幕(威力依据技能等级)",
+		id = 12050,
 		type = 1,
 		max_level = 10,
-		id = 12050,
+		desc = "每隔$1秒，朝前方发射一轮鱼雷弹幕(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"35.0",
@@ -22600,11 +25972,14 @@ pg.skill_data_template = {
 	[12060] = {
 		desc_get = "",
 		name = "圣山的小巫女",
-		desc = "战斗中，每20秒触发，我方主力受到的点燃伤害降低$1，持续8秒",
+		id = 12060,
 		type = 2,
 		max_level = 10,
-		id = 12060,
+		desc = "战斗中，每20秒触发，我方主力受到的点燃伤害降低$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30%",
@@ -22658,11 +26033,14 @@ pg.skill_data_template = {
 	[12070] = {
 		desc_get = "",
 		name = "先发制人",
-		desc = "出击时，若队伍中重樱阵营角色数量大于3，开场12秒时触发一轮航空弹幕攻击$1",
+		id = 12070,
 		type = 1,
 		max_level = 10,
-		id = 12070,
+		desc = "出击时，若队伍中重樱阵营角色数量大于3，开场12秒时触发一轮航空弹幕攻击$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -22716,11 +26094,14 @@ pg.skill_data_template = {
 	[12080] = {
 		desc_get = "",
 		name = "赤红的加护",
-		desc = "自身空袭时，使先锋部队当前血量百分比最低的角色$1秒内完全回避所有攻击",
+		id = 12080,
 		type = 3,
 		max_level = 10,
-		id = 12080,
+		desc = "自身空袭时，使先锋部队当前血量百分比最低的角色$1秒内完全回避所有攻击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"2.0",
@@ -22774,11 +26155,14 @@ pg.skill_data_template = {
 	[12090] = {
 		desc_get = "",
 		name = "吃我一炮！",
-		desc = "战斗中，每隔8秒，提高自身炮击$1点，每当该效果叠加3层时，触发一轮特殊弹幕，清除该增益效果；装备副炮时，特殊弹幕强化",
+		id = 12090,
 		type = 1,
 		max_level = 10,
-		id = 12090,
+		desc = "战斗中，每隔8秒，提高自身炮击$1点，每当该效果叠加3层时，触发一轮特殊弹幕，清除该增益效果；装备副炮时，特殊弹幕强化",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20",
@@ -22832,11 +26216,14 @@ pg.skill_data_template = {
 	[12100] = {
 		desc_get = "",
 		name = "铁血第一航母！",
-		desc = "出击时，队友中每有一个铁血阵营角色，自身航空、防空、装填属性上升$1",
+		id = 12100,
 		type = 3,
 		max_level = 10,
-		id = 12100,
+		desc = "出击时，队友中每有一个铁血阵营角色，自身航空、防空、装填属性上升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -22890,11 +26277,14 @@ pg.skill_data_template = {
 	[12110] = {
 		desc_get = "",
 		name = "Destiny Draw！",
-		desc = "战斗中，每20秒随机触发一种特殊效果($1)(特殊效果威力依据技能等级)；在战斗中受到伤害，导致血量低于30%时，自身幸运提高7点",
+		id = 12110,
 		type = 1,
 		max_level = 10,
-		id = 12110,
+		desc = "战斗中，每20秒随机触发一种特殊效果($1)(特殊效果威力依据技能等级)；在战斗中受到伤害，导致血量低于30%时，自身幸运提高7点",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -22948,11 +26338,14 @@ pg.skill_data_template = {
 	[12120] = {
 		desc_get = "",
 		name = "Wahrheit",
-		desc = "自身每次炮击的首轮跨射必定暴击；副炮栏位装备轻巡主炮时，提升自身副炮索敌范围和射程至$1，副炮造成的伤害降低35%",
+		id = 12120,
 		type = 1,
 		max_level = 10,
-		id = 12120,
+		desc = "自身每次炮击的首轮跨射必定暴击；副炮栏位装备轻巡主炮时，提升自身副炮索敌范围和射程至$1，副炮造成的伤害降低35%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"65",
@@ -23051,12 +26444,15 @@ pg.skill_data_template = {
 	[12130] = {
 		desc_get = "",
 		name = "不屈的力量",
-		desc = "作为旗舰出击时，自身主炮射击有$1概率触发一轮弹幕，铁血航母造成的伤害提升$2",
+		id = 12130,
 		type = 1,
 		max_level = 10,
-		id = 12130,
+		desc = "作为旗舰出击时，自身主炮射击有$1概率触发一轮弹幕，铁血航母造成的伤害提升$2",
 		system_transform = {
 			[3.0] = 12135
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -23156,11 +26552,14 @@ pg.skill_data_template = {
 	[12140] = {
 		desc_get = "",
 		name = "铁血的意志",
-		desc = "出击时，队伍中的铁血阵营角色炮击、雷击、航空武器暴击率提高$2，装填提高$1；提尔比茨造成的伤害提高$3",
+		id = 12140,
 		type = 3,
 		max_level = 10,
-		id = 12140,
+		desc = "出击时，队伍中的铁血阵营角色炮击、雷击、航空武器暴击率提高$2，装填提高$1；提尔比茨造成的伤害提高$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -23304,12 +26703,15 @@ pg.skill_data_template = {
 	[12150] = {
 		desc_get = "",
 		name = "最适化武装",
-		desc = "战斗中，每24秒有$3概率触发弹幕；装备四联装356mm主炮时，自身首轮主炮装填时间减少$1，主炮暴击率提升$2，主炮散布减少2点并强化弹幕样式",
+		id = 12150,
 		type = 1,
 		max_level = 10,
-		id = 12150,
+		desc = "战斗中，每24秒有$3概率触发弹幕；装备四联装356mm主炮时，自身首轮主炮装填时间减少$1，主炮暴击率提升$2，主炮散布减少2点并强化弹幕样式",
 		system_transform = {
 			[3.0] = 12170
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -23454,11 +26856,14 @@ pg.skill_data_template = {
 	[12160] = {
 		desc_get = "",
 		name = "日不落的辉光",
-		desc = "自身对重樱群岛、铁血公国、撒丁帝国及塞壬阵营舰船造成的伤害提升$1；队友中存在3个以上皇家舰队阵营角色时，自身炮击、装填、机动、防空属性上升$2",
+		id = 12160,
 		type = 3,
 		max_level = 10,
-		id = 12160,
+		desc = "自身对重樱群岛、铁血公国、撒丁帝国及塞壬阵营舰船造成的伤害提升$1；队友中存在3个以上皇家舰队阵营角色时，自身炮击、装填、机动、防空属性上升$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -23557,12 +26962,15 @@ pg.skill_data_template = {
 	[12180] = {
 		desc_get = "",
 		name = "誓言之光",
-		desc = "自身在场时，若有队友受到伤害导致耐久低于20%，立即触发一轮鱼雷弹幕(每场战斗只能触发1次)；若此时队友中有俾斯麦，弹幕样式强化",
+		id = 12180,
 		type = 1,
 		max_level = 10,
-		id = 12180,
+		desc = "自身在场时，若有队友受到伤害导致耐久低于20%，立即触发一轮鱼雷弹幕(每场战斗只能触发1次)；若此时队友中有俾斯麦，弹幕样式强化",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {}
@@ -23570,11 +26978,14 @@ pg.skill_data_template = {
 	[12190] = {
 		desc_get = "",
 		name = "魔力猛击",
-		desc = "开始战斗时触发，之后每20秒触发一次，自身炮击、雷击属性提高$1并发射一轮弹幕；该增益在20秒内持续减少至0%",
+		id = 12190,
 		type = 1,
 		max_level = 10,
-		id = 12190,
+		desc = "开始战斗时触发，之后每20秒触发一次，自身炮击、雷击属性提高$1并发射一轮弹幕；该增益在20秒内持续减少至0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"9.0%",
@@ -23628,11 +27039,14 @@ pg.skill_data_template = {
 	[12210] = {
 		desc_get = "",
 		name = "蜂鸟侵扰",
-		desc = "自身装备Fl-282时，开始10秒放飞一架Fl-282直升机，之后每30秒放飞一次该直升机，放飞该直升机后点亮敌方潜艇单位10秒，10秒内提升全队对潜伤害$1",
+		id = 12210,
 		type = 1,
 		max_level = 10,
-		id = 12210,
+		desc = "自身装备Fl-282时，开始10秒放飞一架Fl-282直升机，之后每30秒放飞一次该直升机，放飞该直升机后点亮敌方潜艇单位10秒，10秒内降低在场敌方潜艇单位机动$1，提升全队对潜伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -23686,11 +27100,14 @@ pg.skill_data_template = {
 	[12220] = {
 		desc_get = "",
 		name = "纯洁之光",
-		desc = "每20秒有$1概率触发，降低敌方炮击、雷击、航空属性$2，持续10秒",
+		id = 12220,
 		type = 3,
 		max_level = 10,
-		id = 12220,
+		desc = "每20秒有$1概率触发，降低敌方炮击、雷击、航空属性$2，持续10秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -23789,11 +27206,14 @@ pg.skill_data_template = {
 	[12230] = {
 		desc_get = "",
 		name = "天真烂漫的少女",
-		desc = "防空炮开火时有30%概率触发，自身防空提高$1，持续5秒；战斗中小圣地亚哥、小克利夫兰受到伤害导致血量低于40%时触发，自身炮击、命中提高$1持续15秒，每场战斗只能发动一次",
+		id = 12230,
 		type = 2,
 		max_level = 10,
-		id = 12230,
+		desc = "防空炮开火时有30%概率触发，自身防空提高$1，持续5秒；战斗中小圣地亚哥、小克利夫兰受到伤害导致血量低于40%时触发，自身炮击、命中提高$1持续15秒，每场战斗只能发动一次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -23847,11 +27267,14 @@ pg.skill_data_template = {
 	[12240] = {
 		desc_get = "",
 		name = "骑士之心",
-		desc = "与任意克利夫兰级的角色同时出击时，自身防空属性提高$1，命中属性提高$2",
+		id = 12240,
 		type = 3,
 		max_level = 10,
-		id = 12240,
+		desc = "与任意克利夫兰级的角色同时出击时，自身防空属性提高$1，命中属性提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -23950,11 +27373,14 @@ pg.skill_data_template = {
 	[12250] = {
 		desc_get = "",
 		name = "未经磨练的骑士",
-		desc = "作为先锋领舰出击时，自身受到的伤害降低$1；战斗中小海伦娜、小圣地亚哥受到的炮击伤害降低$2",
+		id = 12250,
 		type = 2,
 		max_level = 10,
-		id = 12250,
+		desc = "作为先锋领舰出击时，自身受到的伤害降低$1；战斗中小海伦娜、小圣地亚哥受到的炮击伤害降低$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -24053,11 +27479,14 @@ pg.skill_data_template = {
 	[12260] = {
 		desc_get = "",
 		name = "闪耀登场",
-		desc = "战斗开始1秒后触发，自身炮击、雷击、反潜属性提高$1、全队受到的航空伤害降低$2，持续30秒",
+		id = 12260,
 		type = 3,
 		max_level = 10,
-		id = 12260,
+		desc = "战斗开始1秒后触发，自身炮击、雷击、反潜属性提高$1、全队受到的航空伤害降低$2，持续30秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -24156,11 +27585,14 @@ pg.skill_data_template = {
 	[12270] = {
 		desc_get = "",
 		name = "Star Spark！",
-		desc = "战斗中，每14秒触发一次星型弹幕攻击$1(威力依据技能等级)",
+		id = 12270,
 		type = 1,
 		max_level = 10,
-		id = 12270,
+		desc = "战斗中，每14秒触发一次星型弹幕攻击$1(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -24214,11 +27646,14 @@ pg.skill_data_template = {
 	[12280] = {
 		desc_get = "",
 		name = "毁灭模式·原型",
-		desc = "每20秒，有$1概率开启毁灭模式·原型，自身造成的暴击伤害提升$2，先锋部队受到的航空伤害降低$3，持续10秒，同时发射一轮弹幕",
+		id = 12280,
 		type = 1,
 		max_level = 10,
-		id = 12280,
+		desc = "每20秒，有$1概率开启毁灭模式·原型，自身造成的暴击伤害提升$2，先锋部队受到的航空伤害降低$3，持续10秒，同时发射一轮弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50.0%",
@@ -24362,11 +27797,14 @@ pg.skill_data_template = {
 	[12290] = {
 		desc_get = "",
 		name = "安全第一!",
-		desc = "在场时，先锋部队的航速提高3，先锋部队与敌方相撞时，我方受到的伤害降低$1；战斗中自身受到伤害，导致血量低于30%时触发效果，接下来的$3秒内，自身完全回避所有攻击，自身造成的伤害提升$2，直至战斗结束(每场战斗仅能触发一次)",
+		id = 12290,
 		type = 2,
 		max_level = 10,
-		id = 12290,
+		desc = "在场时，先锋部队的航速提高3，先锋部队与敌方相撞时，我方受到的伤害降低$1；战斗中自身受到伤害，导致血量低于30%时触发效果，接下来的$3秒内，自身完全回避所有攻击，自身造成的伤害提升$2，直至战斗结束(每场战斗仅能触发一次)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -24510,11 +27948,14 @@ pg.skill_data_template = {
 	[12300] = {
 		desc_get = "",
 		name = "对空指令",
-		desc = "防空炮开火时，$1概率触发，我方先锋防空属性提升$1，持续10秒；防空圈内，敌方飞机每被击落5架，提高自身炮击属性1%，降低主力编队受到的航空伤害1%，最多叠加$2层",
+		id = 12300,
 		type = 2,
 		max_level = 10,
-		id = 12300,
+		desc = "防空炮开火时，$1概率触发，我方先锋防空属性提升$1，持续10秒；防空圈内，敌方飞机每被击落5架，提高自身炮击属性1%，降低主力编队受到的航空伤害1%，最多叠加$2层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -24609,11 +28050,14 @@ pg.skill_data_template = {
 	[12310] = {
 		desc_get = "",
 		name = "先进火控系统",
-		desc = "战斗中，自身暴击率提高$1，自身对驱逐、轻巡的命中率提高$2；被自身主炮命中的角色有10%概率回避率降低$2，持续6秒",
+		id = 12310,
 		type = 1,
 		max_level = 10,
-		id = 12310,
+		desc = "战斗中，自身暴击率提高$1，自身对驱逐、轻巡的命中率提高$2；被自身主炮命中的角色有10%概率回避率降低$2，持续6秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -24712,11 +28156,14 @@ pg.skill_data_template = {
 	[12320] = {
 		desc_get = "",
 		name = "Gassing Breath",
-		desc = "主炮命中同一敌人10次时，使其受到来自驱逐的炮击雷击伤害提高$1，持续5秒；每次自身在战斗中击破敌舰时，自身炮击属性提高$2，最多叠加10层",
+		id = 12320,
 		type = 1,
 		max_level = 10,
-		id = 12320,
+		desc = "主炮命中同一敌人10次时，使其受到来自驱逐的炮击雷击伤害提高$1，持续5秒；每次自身在战斗中击破敌舰时，自身炮击属性提高$2，最多叠加10层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -24815,11 +28262,14 @@ pg.skill_data_template = {
 	[12330] = {
 		desc_get = "",
 		name = "兴奋之毒",
-		desc = "战斗开始时，机动、雷击属性提高$1，战斗开始30秒后，该增益在20秒内持续减少至0%",
+		id = 12330,
 		type = 2,
 		max_level = 10,
-		id = 12330,
+		desc = "战斗开始时，机动、雷击属性提高$1，战斗开始30秒后，该增益在20秒内持续减少至0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -24873,11 +28323,14 @@ pg.skill_data_template = {
 	[12350] = {
 		desc_get = "",
 		name = "不服输的小魔女",
-		desc = "耐久低于80%时后，依据当前损失耐久百分比，提升自身炮击、雷击，最高提升$2点；耐久低于30%时触发，自身防空提高$1，持续至战斗结束",
+		id = 12350,
 		type = 1,
 		max_level = 10,
-		id = 12350,
+		desc = "耐久低于80%时后，依据当前损失耐久百分比，提升自身炮击、雷击，最高提升$2点；耐久低于30%时触发，自身防空提高$1，持续至战斗结束",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"6%",
@@ -24976,11 +28429,14 @@ pg.skill_data_template = {
 	[12360] = {
 		desc_get = "",
 		name = "爱的使者",
-		desc = "与其他驱逐舰同时出击时，提升自身防空、炮击、命中$1；队伍中驱逐舰在战斗中受到伤害，导致血量低于50%时，触发一轮特殊弹幕（每场战斗仅触发一次)",
+		id = 12360,
 		type = 1,
 		max_level = 10,
-		id = 12360,
+		desc = "与其他驱逐舰同时出击时，提升自身防空、炮击、命中$1；队伍中驱逐舰在战斗中受到伤害，导致血量低于50%时，触发一轮特殊弹幕（每场战斗仅触发一次)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -25034,12 +28490,15 @@ pg.skill_data_template = {
 	[12370] = {
 		desc_get = "",
 		name = "格伦的问候",
-		desc = "自身进场时，放飞一架零式小型水上侦察机进行攻击(威力依据雷击属性和技能等级)，本场战斗中队伍中所有潜艇、潜母的命中提高$1",
+		id = 12370,
 		type = 1,
 		max_level = 10,
-		id = 12370,
+		desc = "自身进场时，放飞一架零式小型水上侦察机进行攻击(威力依据雷击属性和技能等级)，本场战斗中队伍中所有潜艇、潜母的命中提高$1",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25094,12 +28553,15 @@ pg.skill_data_template = {
 	[12380] = {
 		desc_get = "",
 		name = "临别之礼",
-		desc = "自身氧气不足上浮时，发射一轮炮击弹幕(威力依据技能等级)；该弹幕及自身炮击命中时有$1概率降低被命中敌人的装填、命中$2，持续15秒",
+		id = 12380,
 		type = 1,
 		max_level = 10,
-		id = 12380,
+		desc = "自身氧气不足上浮时，发射一轮炮击弹幕(威力依据技能等级)；该弹幕及自身炮击命中时有$1概率降低被命中敌人的装填、命中$2，持续15秒",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25199,12 +28661,15 @@ pg.skill_data_template = {
 	[12390] = {
 		desc_get = "",
 		name = "复仇之刃",
-		desc = "对航母造成的伤害提高$1；战斗中，自身氧气不足上浮时，发射一轮必定暴击的鱼雷弹幕(威力和样式依据技能等级)",
+		id = 12390,
 		type = 1,
 		max_level = 10,
-		id = 12390,
+		desc = "对航母造成的伤害提高$1；战斗中，自身氧气不足上浮时，发射一轮必定暴击的鱼雷弹幕(威力和样式依据技能等级)",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25259,12 +28724,15 @@ pg.skill_data_template = {
 	[12400] = {
 		desc_get = "",
 		name = "大鱼突击！",
-		desc = "战斗中，自身命中属性提高$1；位于潜艇编队僚舰位时，开始战斗后向前移动，18秒后，开始撤退回原位",
+		id = 12400,
 		type = 3,
 		max_level = 10,
-		id = 12400,
+		desc = "战斗中，自身命中属性提高$1；位于潜艇编队僚舰位时，开始战斗后向前移动，18秒后，开始撤退回原位",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25319,12 +28787,15 @@ pg.skill_data_template = {
 	[12410] = {
 		desc_get = "",
 		name = "狼群战术-U101",
-		desc = "出击时，编队中铁血阵营潜艇角色回避率提高$1，对驱逐、轻巡伤害提高$1；出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、装填属性上升$2",
+		id = 12410,
 		type = 2,
 		max_level = 10,
-		id = 12410,
+		desc = "出击时，编队中铁血阵营潜艇角色回避率提高$1，对驱逐、轻巡伤害提高$1；出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、装填属性上升$2",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25424,11 +28895,14 @@ pg.skill_data_template = {
 	[12420] = {
 		desc_get = "",
 		name = "Londinium",
-		desc = "主炮射击时有$1概率造成2倍伤害；自身在战斗中击破敌舰时，自身命中属性提高$2，最高叠加8层",
+		id = 12420,
 		type = 1,
 		max_level = 10,
-		id = 12420,
+		desc = "主炮射击时有$1概率造成2倍伤害；自身在战斗中击破敌舰时，自身命中属性提高$2，最高叠加8层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -25528,12 +29002,15 @@ pg.skill_data_template = {
 	[12430] = {
 		desc_get = "",
 		name = "Lucky A",
-		desc = "战斗中，自身机动提高$1点，自身受到来自雷击属性的伤害降低$2；每20秒，有$3概率触发一轮强力弹幕(威力和样式依据技能等级)",
+		id = 12430,
 		type = 1,
 		max_level = 10,
-		id = 12430,
+		desc = "战斗中，自身机动提高$1点，自身受到来自雷击属性的伤害降低$2；每20秒，有$3概率触发一轮强力弹幕(威力和样式依据技能等级)",
 		system_transform = {
 			[3.0] = 12435
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25678,11 +29155,14 @@ pg.skill_data_template = {
 	[12440] = {
 		desc_get = "",
 		name = "驶向和平的战士",
-		desc = "在一次关卡出击中，自身所在编队每击破一个敌方编队，战斗中自身炮击提高$1，击破5个敌方编队后，战斗中我方主力编队受到的伤害降低$2；战斗中，自身每击破一个敌舰，自身炮击提高$1（该技能炮击加成最高叠加7层）",
+		id = 12440,
 		type = 1,
 		max_level = 10,
-		id = 12440,
+		desc = "在一次关卡出击中，自身所在编队每击破一个敌方编队，战斗中自身炮击提高$1，击破5个敌方编队后，战斗中我方主力编队受到的伤害降低$2；战斗中，自身每击破一个敌舰，自身炮击提高$1（该技能炮击加成最高叠加7层）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -25781,12 +29261,15 @@ pg.skill_data_template = {
 	[12460] = {
 		desc_get = "",
 		name = "鱼群守护",
-		desc = "我方潜艇、潜母在战斗中受到的伤害降低$1，从战场撤离时回复$2自身血量",
+		id = 12460,
 		type = 2,
 		max_level = 10,
-		id = 12460,
+		desc = "我方潜艇、潜母在战斗中受到的伤害降低$1，从战场撤离时回复$2自身血量",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -25886,12 +29369,15 @@ pg.skill_data_template = {
 	[12470] = {
 		desc_get = "",
 		name = "陨翼双鲨",
-		desc = "对航母造成的伤害提高$1；战斗中，自身氧气不足上浮及从战场撤离时，发射一轮鱼雷弹幕$2(威力和样式依据技能等级)，与大青花鱼在同一编队时，技能鱼雷伤害提高$3",
+		id = 12470,
 		type = 1,
 		max_level = 10,
-		id = 12470,
+		desc = "对航母造成的伤害提高$1；战斗中，自身氧气不足上浮及从战场撤离时，发射一轮鱼雷弹幕$2(威力和样式依据技能等级)，与大青花鱼在同一编队时，技能鱼雷伤害提高$3",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -26036,11 +29522,14 @@ pg.skill_data_template = {
 	[12480] = {
 		desc_get = "",
 		name = "Final-AP-Ride",
-		desc = "主炮的弹药种类更换为专属穿甲弹$1，对护甲伤害比例随技能等级提高而提高",
+		id = 12480,
 		type = 1,
 		max_level = 10,
-		id = 12480,
+		desc = "主炮的弹药种类更换为专属穿甲弹$1，对护甲伤害比例随技能等级提高而提高",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -26094,11 +29583,14 @@ pg.skill_data_template = {
 	[12490] = {
 		desc_get = "",
 		name = "多面手",
-		desc = "与白鹰阵营轻母、正航同时出击时，提高全队防空$1，提高队伍中白鹰阵营轻母、正航航空$2；队伍中没有白鹰阵营轻母及正航时，提升自身炮击$3、机动$2",
+		id = 12490,
 		type = 3,
 		max_level = 10,
-		id = 12490,
+		desc = "与白鹰阵营轻母、正航同时出击时，提高全队防空$1，提高队伍中白鹰阵营轻母、正航航空$2；队伍中没有白鹰阵营轻母及正航时，提升自身炮击$3、机动$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"2.5%",
@@ -26242,11 +29734,14 @@ pg.skill_data_template = {
 	[12500] = {
 		desc_get = "",
 		name = "咆哮的挑战者",
-		desc = "自身装备F6F地狱猫时，战斗机效率提升$1，空袭时有$2概率额外使用F6F地狱猫进行一次轰炸$3",
+		id = 12500,
 		type = 1,
 		max_level = 10,
-		id = 12500,
+		desc = "自身装备F6F地狱猫时，战斗机效率提升$1，空袭时有$2概率额外使用F6F地狱猫进行一次轰炸$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -26390,11 +29885,14 @@ pg.skill_data_template = {
 	[12520] = {
 		desc_get = "",
 		name = "奋战的守护者",
-		desc = "自身在场时，降低旗舰及自身的被点燃时间3秒；防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
+		id = 12520,
 		type = 1,
 		max_level = 10,
-		id = 12520,
+		desc = "自身在场时，降低旗舰及自身的被点燃时间3秒；防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -26448,11 +29946,14 @@ pg.skill_data_template = {
 	[12530] = {
 		desc_get = "",
 		name = "海上骑士的觉悟",
-		desc = "自身受到伤害时，有$1的概率触发，提升自身机动$2，持续5秒，触发后进入8秒冷却；在战斗中受到伤害导致血量低于30%后，5秒内自身完全回避所有攻击，完全回避效果每场战斗仅触发一次",
+		id = 12530,
 		type = 2,
 		max_level = 10,
-		id = 12530,
+		desc = "自身受到攻击时，有$1的概率触发，提升自身机动$2，持续5秒，触发后进入8秒冷却；在战斗中受到伤害导致血量低于30%后，5秒内自身完全回避所有攻击，完全回避效果每场战斗仅触发一次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -26551,11 +30052,14 @@ pg.skill_data_template = {
 	[12540] = {
 		desc_get = "",
 		name = "禁航警告",
-		desc = "防空炮开火时有25%概率触发，队伍中白鹰阵营角色防空提高$1，持续5秒；主炮每命中敌人13次，提升自身炮击$2，最高3层",
+		id = 12540,
 		type = 3,
 		max_level = 10,
-		id = 12540,
+		desc = "防空炮开火时有25%概率触发，队伍中白鹰阵营角色防空提高$1，持续5秒；主炮每命中敌人13次，提升自身炮击$2，最高3层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -26654,11 +30158,14 @@ pg.skill_data_template = {
 	[12550] = {
 		desc_get = "",
 		name = "伍德斯托克的长弓",
-		desc = "与白鹰联邦角色一同出击时，自身主炮暴击率提升$1，自身炮击、雷击提高$2",
+		id = 12550,
 		type = 1,
 		max_level = 10,
-		id = 12550,
+		desc = "与白鹰联邦角色一同出击时，自身主炮暴击率提升$1，自身炮击、雷击提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -26757,11 +30264,14 @@ pg.skill_data_template = {
 	[12560] = {
 		desc_get = "",
 		name = "乘风的贝奇",
-		desc = "自身受到的航空伤害降低$1，防空炮开火时有25%概率发动，8秒内自身防空提升$2",
+		id = 12560,
 		type = 2,
 		max_level = 10,
-		id = 12560,
+		desc = "自身受到的航空伤害降低$1，防空炮开火时有25%概率发动，8秒内自身防空提升$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -26860,11 +30370,14 @@ pg.skill_data_template = {
 	[12570] = {
 		desc_get = "",
 		name = "随伴之翼",
-		desc = "自身航空提升$2；自身搭载青花鱼式鱼雷机时，提升对应武器栏位的武器效率$1，并在自身发动空袭时，有$3概率额外使用青花鱼编队进行一轮攻击，该编队的攻击有80%的概率使命中的敌方在接下来的9秒内造成进水持续伤害(伤害依据航空属性和技能等级)",
+		id = 12570,
 		type = 1,
 		max_level = 10,
-		id = 12570,
+		desc = "自身航空提升$2；自身搭载青花鱼式鱼雷机时，提升对应武器栏位的武器效率$1，并在自身发动空袭时，有$3概率额外使用青花鱼编队进行一轮攻击，该编队的攻击有80%的概率使命中的敌方在接下来的9秒内造成进水持续伤害(伤害依据航空属性和技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -27008,11 +30521,14 @@ pg.skill_data_template = {
 	[12580] = {
 		desc_get = "",
 		name = "机关禁止",
-		desc = "空袭时有$1概率触发(每场战斗首次空袭必定触发)，所有敌方在$2秒内航速变为0，随后的2.5秒内逐渐减少该技能的效果直至无效",
+		id = 12580,
 		type = 3,
 		max_level = 10,
-		id = 12580,
+		desc = "空袭时有$1概率触发(每场战斗首次空袭必定触发)，所有敌方在$2秒内航速变为0，随后的2.5秒内逐渐减少该技能的效果直至无效",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50.0%",
@@ -27111,11 +30627,14 @@ pg.skill_data_template = {
 	[12590] = {
 		desc_get = "",
 		name = "盒式装甲",
-		desc = "降低自身受到的伤害$1；自身发动空袭时触发，接下来的10秒内，降低除自身外的主力舰队成员受到的伤害$2",
+		id = 12590,
 		type = 2,
 		max_level = 10,
-		id = 12590,
+		desc = "降低自身受到的伤害$1；自身发动空袭时触发，接下来的10秒内，降低除自身外的主力舰队成员受到的伤害$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -27214,12 +30733,15 @@ pg.skill_data_template = {
 	[12600] = {
 		desc_get = "",
 		name = "Rose Bombardamento",
-		desc = "主炮开火时，有$1概率触发一轮专属弹幕(威力依据技能等级)；自身装备【三联装381mm主炮Model1934】时，增强弹幕样式并提升弹幕触发概率10%",
+		id = 12600,
 		type = 1,
 		max_level = 10,
-		id = 12600,
+		desc = "主炮开火时，有$1概率触发一轮专属弹幕(威力依据技能等级)；自身装备【三联装381mm主炮Model1934】时，增强弹幕样式并提升弹幕触发概率10%",
 		system_transform = {
 			[3.0] = 12605
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -27274,11 +30796,14 @@ pg.skill_data_template = {
 	[12610] = {
 		desc_get = "",
 		name = "撒丁的矜持",
-		desc = "开场时为自身及先锋领舰生成2枚护盾，每枚护盾可阻挡$1次鱼雷攻击；在一次关卡出击中，自身所在编队的前三次战斗自身炮击提升$2",
+		id = 12610,
 		type = 3,
 		max_level = 10,
-		id = 12610,
+		desc = "开场时为自身及先锋领舰生成2枚护盾，每枚护盾可阻挡$1次鱼雷攻击；在一次关卡出击中，自身所在编队的前三次战斗自身炮击提升$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1",
@@ -27368,11 +30893,14 @@ pg.skill_data_template = {
 	[12620] = {
 		desc_get = "",
 		name = "特尔尼之盾",
-		desc = "自身受到伤害时，有$1的概率生成2枚护盾，每个护盾阻挡10发子弹，持续12秒",
+		id = 12620,
 		type = 2,
 		max_level = 10,
-		id = 12620,
+		desc = "自身受到攻击时，有$1的概率生成2枚护盾，每个护盾阻挡10发子弹，持续12秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"8.0%",
@@ -27426,11 +30954,14 @@ pg.skill_data_template = {
 	[12630] = {
 		desc_get = "",
 		name = "弹药特性增强",
-		desc = "自身装备高爆弹及半穿甲弹主炮时，提高主炮造成的伤害$1并将炮弹点火概率置零；装备穿甲弹主炮时，主炮命中敌人有$2的概率触发，在接下来的10秒内，自身对其造成的伤害提高$3",
+		id = 12630,
 		type = 1,
 		max_level = 10,
-		id = 12630,
+		desc = "自身装备高爆弹及半穿甲弹主炮时，提高主炮造成的伤害$1并将炮弹点火概率置零；装备穿甲弹主炮时，主炮命中敌人有$2的概率触发，在接下来的10秒内，自身对其造成的伤害提高$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -27574,11 +31105,14 @@ pg.skill_data_template = {
 	[12640] = {
 		desc_get = "",
 		name = "撒丁的威压",
-		desc = "主炮开火时，有$1概率触发一轮弹幕(威力依据技能等级)",
+		id = 12640,
 		type = 1,
 		max_level = 10,
-		id = 12640,
+		desc = "主炮开火时，有$1概率触发一轮弹幕(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -27632,11 +31166,14 @@ pg.skill_data_template = {
 	[12650] = {
 		desc_get = "",
 		name = "变迁的记忆",
-		desc = "开场10秒后发射一轮鱼雷弹幕$3(威力依据雷击属性和技能等级)；第一轮主炮射击5秒后，提升自身炮击$1及自身对轻巡造成的伤害$2，鱼雷属性归0，持续至战斗结束",
+		id = 12650,
 		type = 1,
 		max_level = 10,
-		id = 12650,
+		desc = "开场10秒后发射一轮鱼雷弹幕$3(威力依据雷击属性和技能等级)；第一轮主炮射击5秒后，提升自身炮击$1及自身对轻巡造成的伤害$2，鱼雷属性归0，持续至战斗结束",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -27780,11 +31317,14 @@ pg.skill_data_template = {
 	[12660] = {
 		desc_get = "",
 		name = "特殊装弹",
-		desc = "战斗中，自身前三次鱼雷攻击造成的伤害提高$1",
+		id = 12660,
 		type = 1,
 		max_level = 10,
-		id = 12660,
+		desc = "战斗中，自身前三次鱼雷攻击造成的伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -27838,11 +31378,14 @@ pg.skill_data_template = {
 	[12670] = {
 		desc_get = "",
 		name = "巨龙之链",
-		desc = "进入战斗时，若自身处于先锋舰队尾部，且先锋舰队人数不为1，战斗中每20秒有$1概率触发，接下来的10秒内，自身造成的伤害提升$2，先锋领舰的造成的伤害提升$3",
+		id = 12670,
 		type = 3,
 		max_level = 10,
-		id = 12670,
+		desc = "进入战斗时，若自身处于先锋舰队尾部，且先锋舰队人数不为1，战斗中每20秒有$1概率触发，接下来的10秒内，自身造成的伤害提升$2，先锋领舰的造成的伤害提升$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -27986,11 +31529,14 @@ pg.skill_data_template = {
 	[12680] = {
 		desc_get = "",
 		name = "风雨舞踏",
-		desc = "战斗开始时，若队伍中存在{namecode:22}，自身雷击属性提高$1，本场战斗中每20秒有$2概率发射一轮强力弹幕；若队伍中不存在{namecode:22}，本场战斗自身存活时，减少除自身外所有舰队成员受到的伤害$3，除自身外的舰队成员受到伤害导致耐久低于20%时，回复其$4耐久，回复效果每场战斗限1次",
+		id = 12680,
 		type = 3,
 		max_level = 10,
-		id = 12680,
+		desc = "战斗开始时，若队伍中存在{namecode:22}，自身雷击属性提高$1，本场战斗中每20秒有$2概率发射一轮强力弹幕；若队伍中不存在{namecode:22}，本场战斗自身存活时，减少除自身外所有舰队成员受到的伤害$3，除自身外的舰队成员受到伤害导致耐久低于20%时，回复其$4耐久，回复效果每场战斗限1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -28179,11 +31725,14 @@ pg.skill_data_template = {
 	[12690] = {
 		desc_get = "",
 		name = "Enigma",
-		desc = "进入战斗时，随机为我方在场的所有铁血阵营角色提供一种增益$1，持续至战斗结束",
+		id = 12690,
 		type = 3,
 		max_level = 10,
-		id = 12690,
+		desc = "进入战斗时，随机为我方在场的所有铁血阵营角色提供一种增益$1，持续至战斗结束",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -28228,11 +31777,14 @@ pg.skill_data_template = {
 	[12700] = {
 		desc_get = "",
 		name = "追随的Spiritual",
-		desc = "战斗中每15秒触发一次，在8秒内，替换自身主炮弹药为紫色音符$1",
+		id = 12700,
 		type = 1,
 		max_level = 10,
-		id = 12700,
+		desc = "战斗中每15秒触发一次，在8秒内，替换自身主炮弹药为紫色音符$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -28277,11 +31829,14 @@ pg.skill_data_template = {
 	[12710] = {
 		desc_get = "",
 		name = "降星的Passion",
-		desc = "防空圈内，敌方飞机被击落时，自身防空提高$1，持续8秒，最多叠加4层",
+		id = 12710,
 		type = 2,
 		max_level = 10,
-		id = 12710,
+		desc = "防空圈内，敌方飞机被击落时，自身防空提高$1，持续8秒，最多叠加4层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -28335,11 +31890,14 @@ pg.skill_data_template = {
 	[12720] = {
 		desc_get = "",
 		name = "精准直击Arrow",
-		desc = "战斗中，自身主炮每开火3次，下一轮主炮炮击时将自身主炮弹药替换为蓝色音符$1",
+		id = 12720,
 		type = 1,
 		max_level = 10,
-		id = 12720,
+		desc = "战斗中，自身主炮每开火3次，下一轮主炮炮击时将自身主炮弹药替换为蓝色音符$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -28384,11 +31942,14 @@ pg.skill_data_template = {
 	[12730] = {
 		desc_get = "",
 		name = "闪耀共舞",
-		desc = "进入战斗时，若自身处于先锋舰队尾部，且先锋舰队人数不为1，队伍中的先锋舰艇受到攻击时，有$1概率使受到的伤害减少$2",
+		id = 12730,
 		type = 2,
 		max_level = 10,
-		id = 12730,
+		desc = "进入战斗时，若自身处于先锋舰队尾部，且先锋舰队人数不为1，队伍中的先锋舰艇受到攻击时，有$1概率使受到的伤害减少$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"9.0%",
@@ -28487,11 +32048,14 @@ pg.skill_data_template = {
 	[12740] = {
 		desc_get = "",
 		name = "Dualism",
-		desc = "进入战斗时，若队伍中μ兵装舰船数量为奇数，自身第一轮空中支援后10秒将额外触发一轮轰炸机空袭$1；若队伍中μ兵装舰船数量为偶数，自身第一轮空中支援后10秒将额外触发一轮鱼雷机空袭$1",
+		id = 12740,
 		type = 1,
 		max_level = 10,
-		id = 12740,
+		desc = "进入战斗时，若队伍中μ兵装舰船数量为奇数，自身第一轮空中支援后10秒将额外触发一轮轰炸机空袭$1；若队伍中μ兵装舰船数量为偶数，自身第一轮空中支援后10秒将额外触发一轮鱼雷机空袭$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -28536,11 +32100,14 @@ pg.skill_data_template = {
 	[12750] = {
 		desc_get = "",
 		name = "Overture",
-		desc = "出击时自身舰载机的第一轮空中支援加载时间缩短$1；战斗开始时，根据队伍中μ兵装舰船数量提升自身$2航空，最多叠加4层",
+		id = 12750,
 		type = 3,
 		max_level = 10,
-		id = 12750,
+		desc = "出击时自身舰载机的第一轮空中支援加载时间缩短$1；战斗开始时，根据队伍中μ兵装舰船数量提升自身$2航空，最多叠加4层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -28639,11 +32206,14 @@ pg.skill_data_template = {
 	[12760] = {
 		desc_get = "",
 		name = "热情火炎Fever",
-		desc = "每隔20秒，有$1的概率将自身的主炮弹药更换为红色音符$2，持续12秒；战斗开始时，立即触发一次该效果",
+		id = 12760,
 		type = 1,
 		max_level = 10,
-		id = 12760,
+		desc = "每隔20秒，有$1的概率将自身的主炮弹药更换为红色音符$2，持续12秒；战斗开始时，立即触发一次该效果",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -28733,11 +32303,14 @@ pg.skill_data_template = {
 	[12770] = {
 		desc_get = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续<color=#92fc63FF>5</color>秒(满级<color=#92fc63FF>15</color>秒)；战斗开始时，若自身位于先锋领舰，则立刻触发一次该护盾",
 		name = "沉着冷静Shield",
-		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续$1秒；战斗开始时，若自身位于先锋领舰，则立刻触发一次该护盾",
+		id = 12770,
 		type = 2,
 		max_level = 10,
-		id = 12770,
+		desc = "每隔30秒，生成2面旋转的护盾，每个护盾阻挡10发子弹，护盾持续$1秒；战斗开始时，若自身位于先锋领舰，则立刻触发一次该护盾",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0",
@@ -28791,11 +32364,14 @@ pg.skill_data_template = {
 	[12780] = {
 		desc_get = "",
 		name = "Cœur Battant",
-		desc = "战斗中，主炮弹药更换为音符炮弹$1，主炮每进行1轮炮击后，会切换主炮的弹药种类（弹药在红色音符与蓝色音符间切换，弹药伤害随技能等级提高而提高）；自身首轮主炮装填时间减少$2",
+		id = 12780,
 		type = 1,
 		max_level = 10,
-		id = 12780,
+		desc = "战斗中，主炮弹药更换为音符炮弹$1，主炮每进行1轮炮击后，会切换主炮的弹药种类（弹药在红色音符与蓝色音符间切换，弹药伤害随技能等级提高而提高）；自身首轮主炮装填时间减少$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -28885,11 +32461,14 @@ pg.skill_data_template = {
 	[12790] = {
 		desc_get = "",
 		name = "乐队领袖",
-		desc = "战斗开始时，若队伍中μ兵装舰船数量为奇数，战斗中自身造成的伤害提高$1，否则，战斗中自身受到的伤害降低$2；自身主炮开火时，在接下来的10秒内，队伍中μ兵装舰船炮击、雷击、航空属性提高$3，最高叠加2层",
+		id = 12790,
 		type = 3,
 		max_level = 10,
-		id = 12790,
+		desc = "战斗开始时，若队伍中μ兵装舰船数量为奇数，战斗中自身造成的伤害提高$1，否则，战斗中自身受到的伤害降低$2；自身主炮开火时，在接下来的10秒内，队伍中μ兵装舰船炮击、雷击、航空属性提高$3，最高叠加2层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -29030,14 +32609,19739 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[12810] = {
+		desc_get = "",
+		name = "战术解放",
+		id = 12810,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中每20秒，有$1概率触发一轮弹幕(威力依据技能等级)；演习战斗时，强化该弹幕样式",
+		system_transform = {
+			[3.0] = 12800
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[12820] = {
+		desc_get = "",
+		name = "不灭之盾",
+		id = 12820,
+		type = 2,
+		max_level = 10,
+		desc = "自身在场时，主力舰队角色受到伤害时有$1概率触发，15秒内，主力舰队角色受到的伤害降低$2，触发后进入20秒冷却；自身耐久低于20%时，回复自身耐久10%，回复效果每场战斗仅触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[12830] = {
+		desc_get = "",
+		name = "从容指顾",
+		id = 12830,
+		type = 2,
+		max_level = 10,
+		desc = "在队伍中(存活)时，自身回避率上升$1，先锋舰队受到来自雷击属性的伤害降低$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[12840] = {
+		desc_get = "自身对轻母、正航造成的伤害提升<color=#92fc63FF>5.0%</color>(满级<color=#92fc63FF>20.0</color>%)；在队伍中(存活)时，提高所有先锋舰队成员<color=#92fc63FF>5.0%</color>雷击属性(满级<color=#92fc63FF>20.0%</color>，额外提高暴击率<color=#92fc63FF>5.0%</color>)",
+		name = "新锐之刃",
+		id = 12840,
+		type = 3,
+		max_level = 10,
+		desc = "自身对轻母、正航造成的伤害提升$1；在队伍中(存活)时，所有先锋舰队成员雷击属性提高$2$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					"",
+					"暴击率提高3.0%"
+				},
+				{
+					"，暴击率提高3.0%",
+					"+3.0%"
+				},
+				{
+					"，暴击率提高6.0%",
+					"+3.0%"
+				},
+				{
+					"，暴击率提高9.0%",
+					"+3.0%"
+				},
+				{
+					"，暴击率提高12.0%"
+				}
+			}
+		}
+	},
+	[12850] = {
+		desc_get = "",
+		name = "恶鬼怒刀",
+		id = 12850,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，自身炮击、防空、反潜属性提高$1；在队伍中(存活)时，潜艇、潜母受到的伤害降低$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12860] = {
+		desc_get = "",
+		name = "樱绽凤华",
+		id = 12860,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中自身前三次发动空袭时，三秒内进行三次回复，每次回复目标为当前我方水面舰队耐久百分比最低的角色，单次回复量为{namecode:179}总耐久的$1，若进入战斗时主力舰队成员数量为3，该技能回复量提高100%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.2%",
+				"3.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.2%"
+				},
+				{
+					"2.6%",
+					"+0.2%"
+				},
+				{
+					"2.8%",
+					"+0.2%"
+				},
+				{
+					"3.0%"
+				}
+			}
+		}
+	},
+	[12870] = {
+		desc_get = "",
+		name = "缘结舞鲸",
+		id = 12870,
+		type = 2,
+		max_level = 10,
+		desc = "自身在场时，先锋舰队受到来自潜艇的雷击伤害降低$2；潜艇进入战斗时，回复潜艇编队角色血量$1；潜艇编队在战斗中击破敌舰时，{namecode:179}自身造成伤害提高$3，最高叠加6层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"3.5%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.3%"
+				},
+				{
+					"2.1%",
+					"+0.3%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.4%"
+				},
+				{
+					"3.1%",
+					"+0.4%"
+				},
+				{
+					"3.5%"
+				}
+			}
+		}
+	},
+	[12880] = {
+		desc_get = "",
+		name = "恶鬼之愿",
+		id = 12880,
+		type = 1,
+		max_level = 10,
+		desc = "自身造成的鱼雷伤害提升$1；每次使用鱼雷时有$2的概率再次发射一轮",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[12890] = {
+		desc_get = "",
+		name = "霞光之绊",
+		id = 12890,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，若先锋舰队中自身以外的的伙伴数量不少于2，我方先锋舰队重樱阵营角色的雷击属性提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12900] = {
+		desc_get = "",
+		name = "不死鸟之羽",
+		id = 12900,
+		type = 1,
+		max_level = 10,
+		desc = "每次使用鱼雷时有$1的概率再次发射一轮；战斗中受到伤害，导致耐久低于20%后，恢复总耐久度$2的耐久，回复效果每场战斗仅触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[12910] = {
+		desc_get = "",
+		name = "六驱精锐·{namecode:12}",
+		id = 12910,
+		type = 1,
+		max_level = 10,
+		desc = "与任意第六驱逐舰队成员({namecode:11}、{namecode:13}、{namecode:14})同时出击时，炮击、雷击、装填提升$1，效果不叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12930] = {
+		desc_get = "",
+		name = "Arias of Dido",
+		id = 12930,
+		type = 3,
+		max_level = 10,
+		desc = "提升队伍中所有黛朵级巡洋舰炮击、雷击、防空$1；进入战斗后30秒内，自身防空、机动、命中提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12940] = {
+		desc_get = "",
+		name = "For The Queen",
+		id = 12940,
+		type = 3,
+		max_level = 10,
+		desc = "出击时，队伍中每有一个皇家阵营角色，自身炮击、防空、装填属性上升$1,最高叠加4层；与伊丽莎白女王共同出击时，提升伊丽莎白女王炮击、命中、装填、机动$2，主炮暴击率$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.5%",
+				"6.0%"
+			},
+			{
+				"2.5%",
+				"7.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			},
+			{
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[12950] = {
+		desc_get = "",
+		name = "The Fighting G",
+		id = 12950,
+		type = 1,
+		max_level = 10,
+		desc = "自身炮击、命中提升5%，自身在战斗中每击破一艘敌舰，额外提升自身炮击、命中$1，每场战斗最多触发五次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"2.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.09%"
+				},
+				{
+					"1.09%",
+					"+0.09%"
+				},
+				{
+					"1.18%",
+					"+0.12%"
+				},
+				{
+					"1.3%",
+					"+0.09%"
+				},
+				{
+					"1.39%",
+					"+0.09%"
+				},
+				{
+					"1.48%",
+					"+0.12%"
+				},
+				{
+					"1.6%",
+					"+0.12%"
+				},
+				{
+					"1.72%",
+					"+0.12%"
+				},
+				{
+					"1.84%",
+					"+0.16%"
+				},
+				{
+					"2.0%"
+				}
+			}
+		}
+	},
+	[12960] = {
+		desc_get = "",
+		name = "守护之焰",
+		id = 12960,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中，队伍中任一角色受到伤害，导致血量低于50%时，接下来的12秒内，提升自身防空$1并降低该角色受到的伤害$1，每场战斗仅触发1次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12970] = {
+		desc_get = "",
+		name = "实战教导",
+		id = 12970,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后，自身受到的伤害降低$1，自身造成的伤害提高$2，队友中驱逐舰受到的伤害降低$3，持续80秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[12980] = {
+		desc_get = "",
+		name = "天蓝色的巡洋舰",
+		id = 12980,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，自身炮击提高$1，召唤一个能够发射减速弹幕的【特殊能量兵装：冰之妖精】进行战斗，【冰之妖精】持续存在$2秒（弹幕伤害和持续时间依据技能等级）；自身在战斗中击破敌舰时，自身炮击属性提高$3，最多5层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"20",
+				"50"
+			},
+			{
+				"0.5%",
+				"2.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"20",
+					"+2"
+				},
+				{
+					"22",
+					"+2"
+				},
+				{
+					"24",
+					"+2"
+				},
+				{
+					"26",
+					"+4"
+				},
+				{
+					"30",
+					"+4"
+				},
+				{
+					"34",
+					"+4"
+				},
+				{
+					"38",
+					"+4"
+				},
+				{
+					"42",
+					"+4"
+				},
+				{
+					"46",
+					"+4"
+				},
+				{
+					"50"
+				}
+			},
+			{
+				{
+					"0.5%",
+					"+0.1%"
+				},
+				{
+					"0.6%",
+					"+0.1%"
+				},
+				{
+					"0.7%",
+					"+0.1%"
+				},
+				{
+					"0.8%",
+					"+0.15%"
+				},
+				{
+					"0.95%",
+					"+0.15%"
+				},
+				{
+					"1.1%",
+					"+0.15%"
+				},
+				{
+					"1.25%",
+					"+0.2%"
+				},
+				{
+					"1.45%",
+					"+0.25%"
+				},
+				{
+					"1.7%",
+					"+0.3%"
+				},
+				{
+					"2.0%"
+				}
+			}
+		}
+	},
+	[12990] = {
+		desc_get = "",
+		name = "火力向导",
+		id = 12990,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，队伍中装备北方联合阵营主炮的北方联合阵营驱逐舰主炮效率额外提高$1，命中提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13000] = {
+		desc_get = "",
+		name = "虚空的白骑兵",
+		id = 13000,
+		type = 1,
+		max_level = 10,
+		desc = "每15秒，有$1概率触发一次特殊弹幕，特殊弹幕可造成特殊点燃效果，持续6秒(特殊弹幕威力与样式依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[13010] = {
+		desc_get = "",
+		name = "精准诱导",
+		id = 13010,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身暴击率提高$1，自身对驱逐的伤害提高$2；主炮炮弹的飞行速度提高15%，敌方驱逐舰回避率降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13020] = {
+		desc_get = "",
+		name = "冰结锋芒",
+		id = 13020,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，有$1概率触发一轮专属弹幕(威力依据技能等级)",
+		system_transform = {
+			[3.0] = 13025
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[13030] = {
+		desc_get = "",
+		name = "北联的狂放",
+		id = 13030,
+		type = 1,
+		max_level = 10,
+		desc = "自身所在编队中每有一个北方联合或东煌阵营角色，自身炮击、命中属性提高$1，最高叠加4层(技能效果仅在一次关卡出击中自身所在编队的前两次战斗生效)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[13040] = {
+		desc_get = "",
+		name = "Mercury Memorial",
+		id = 13040,
+		type = 1,
+		max_level = 10,
+		desc = "自身对战列舰、重巡洋舰的伤害提高$1；自身受到伤害时，有15%的概率触发，$2秒内使自身完全回避所有攻击，完全回避效果每20秒最多触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"5.0",
+				"10.0"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"5.0",
+					"+0.5"
+				},
+				{
+					"5.5",
+					"+0.5"
+				},
+				{
+					"6.0",
+					"+0.5"
+				},
+				{
+					"6.5",
+					"+0.5"
+				},
+				{
+					"7.0",
+					"+0.5"
+				},
+				{
+					"7.5",
+					"+0.5"
+				},
+				{
+					"8.0",
+					"+0.5"
+				},
+				{
+					"8.5",
+					"+0.5"
+				},
+				{
+					"9.0",
+					"+1"
+				},
+				{
+					"10.0"
+				}
+			}
+		}
+	},
+	[13050] = {
+		desc_get = "",
+		name = "为革命献上祝福",
+		id = 13050,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，提升编队中北方联合全员炮击、雷击、防空、装填属性$1，持续10秒；装备【三联装305mm主炮Model1907】主炮时，自身主炮效率提高$2，每场战斗的前4轮主炮装填时间减少$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"8.0%",
+				"18.0%"
+			},
+			{
+				"50.0%",
+				"80.0%"
+			},
+			{
+				"20.0%",
+				"35.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"8.0%",
+					"+1.1%"
+				},
+				{
+					"9.1%",
+					"+1.1%"
+				},
+				{
+					"10.2%",
+					"+1.1%"
+				},
+				{
+					"11.3%",
+					"+1.1%"
+				},
+				{
+					"12.4%",
+					"+1.1%"
+				},
+				{
+					"13.5%",
+					"+1.1%"
+				},
+				{
+					"14.6%",
+					"+1.1%"
+				},
+				{
+					"15.7%",
+					"+1.1%"
+				},
+				{
+					"16.8%",
+					"+1.2%"
+				},
+				{
+					"18.0%"
+				}
+			},
+			{
+				{
+					"50.0%",
+					"+3.0%"
+				},
+				{
+					"53.0%",
+					"+3.0%"
+				},
+				{
+					"56.0%",
+					"+4.0%"
+				},
+				{
+					"60.0%",
+					"+3.0%"
+				},
+				{
+					"63.0%",
+					"+3.0%"
+				},
+				{
+					"66.0%",
+					"+4.0%"
+				},
+				{
+					"70.0%",
+					"+3.0%"
+				},
+				{
+					"73.0%",
+					"+3.0%"
+				},
+				{
+					"76.0%",
+					"+4.0%"
+				},
+				{
+					"80.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+1.6%"
+				},
+				{
+					"21.6%",
+					"+1.6%"
+				},
+				{
+					"23.2%",
+					"+1.6%"
+				},
+				{
+					"24.8%",
+					"+1.6%"
+				},
+				{
+					"26.4%",
+					"+1.6%"
+				},
+				{
+					"28.0%",
+					"+1.6%"
+				},
+				{
+					"29.6%",
+					"+1.8%"
+				},
+				{
+					"31.4%",
+					"+1.8%"
+				},
+				{
+					"33.2%",
+					"+1.8%"
+				},
+				{
+					"35.0%"
+				}
+			}
+		}
+	},
+	[13060] = {
+		desc_get = "",
+		name = "破冰移转",
+		id = 13060,
+		type = 2,
+		max_level = 10,
+		desc = "在战斗中受到伤害，导致血量低于30%后，自身受到的伤害降低$1，队伍中驱逐舰受到的伤害降低$2，每场战斗最多发动1次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13070] = {
+		desc_get = "",
+		name = "翱翔的战斗者",
+		id = 13070,
+		type = 1,
+		max_level = 10,
+		desc = "自身空袭整备完毕时，使用SB2C地狱俯冲者编队进行一轮航空攻击$1(威力依据技能等级)，该编队携带的航弹将对其命中的敌方战舰、战巡、航战造成破甲效果，同类效果取最大值，不可叠加",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13080] = {
+		desc_get = "",
+		name = "双重战斗模式",
+		id = 13080,
+		type = 3,
+		max_level = 10,
+		desc = "在一次关卡出击中，自身所在编队的第1、3、5次战斗自身航空提升$1；第2、4、6次战斗自身受到的伤害降低$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13090] = {
+		desc_get = "",
+		name = "英勇无畏",
+		id = 13090,
+		type = 2,
+		max_level = 10,
+		desc = "在战斗中受到伤害，导致血量低于20%后，自身受到的伤害降低$1，持续20秒；自身受到的点燃伤害降低至0，持续30秒，该效果每场战斗仅能触发1次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			}
+		}
+	},
+	[13100] = {
+		desc_get = "",
+		name = "火翼燎原",
+		id = 13100,
+		type = 1,
+		max_level = 10,
+		desc = "主炮射击时有$1概率触发，3秒内自身主炮造成1.3倍伤害，触发后进入5秒冷却；主炮射击时有$2概率触发一轮特殊弹幕(威力与样式依据技能等级)，触发后进入10秒冷却",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[13110] = {
+		desc_get = "",
+		name = "Stand by Me",
+		id = 13110,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若自身为先锋领舰，受到的伤害降低$1，持续30秒；若不为先锋领舰，提升自身防空$2，持续至战斗结束",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"15.0%",
+				"25.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			}
+		}
+	},
+	[13120] = {
+		desc_get = "",
+		name = "锐目的支援者",
+		id = 13120,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中存在轻航或正航，自身暴击率提高$1；主力舰队中每有一艘轻航或正航，提升自身对驱逐、轻巡造成的伤害$2，最高叠加三层；一次关卡出击中自身所在编队的前四次战斗，自身及队伍中的轻航、正航受到的伤害降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"35.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+1.6%"
+				},
+				{
+					"21.6%",
+					"+1.6%"
+				},
+				{
+					"23.2%",
+					"+1.6%"
+				},
+				{
+					"24.8%",
+					"+1.6%"
+				},
+				{
+					"26.4%",
+					"+1.6%"
+				},
+				{
+					"28.0%",
+					"+1.6%"
+				},
+				{
+					"29.6%",
+					"+1.8%"
+				},
+				{
+					"31.4%",
+					"+1.8%"
+				},
+				{
+					"33.2%",
+					"+1.8%"
+				},
+				{
+					"35.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13130] = {
+		desc_get = "",
+		name = "CHANGE NEKO!",
+		id = 13130,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中每20秒触发一次，10秒内提升自身炮击$2并召唤一架PBY卡特琳娜水上飞机，该水上飞机入场后点亮敌方潜艇单位10秒并进行一次反潜投弹$1，10秒内，在场的所有敌方潜艇受到的伤害上升$3；自身装备【PBY-5A卡特琳娜】时，在战斗中受到伤害，导致血量低于40%时，立刻召唤PBY卡特琳娜进行一次航空轰炸$1，航空轰炸每场战斗最多发动1次(反潜投弹及航空轰炸威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13140] = {
+		desc_get = "",
+		name = "I AM RENO！",
+		id = 13140,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提升自身防空属性$1，炮击属性$2；战斗中除自身外的舰队成员累计每受伤2次，提升自身防空、炮击$3，该效果每场战斗最多叠加两层，持续至战斗结束",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[13150] = {
+		desc_get = "",
+		name = "无情的猎食者",
+		id = 13150,
+		type = 3,
+		max_level = 10,
+		desc = "自身对驱逐舰、轻巡洋舰的伤害提高$1",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13160] = {
+		desc_get = "",
+		name = "勇无不克",
+		id = 13160,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，有$1概率发射一轮覆盖范围不受站位影响的特殊弹幕$2(威力依据技能等级)",
+		system_transform = {
+			[3.0] = 13165
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13170] = {
+		desc_get = "",
+		name = "敌无不击",
+		id = 13170,
+		type = 3,
+		max_level = 10,
+		desc = "当自身受到伤害，或敌方进入防卫射程时，触发一轮特殊弹幕$1(威力依据技能等级)，触发后进入15秒冷却；关卡海域内其他旗舰为战列舰的编队进入该编队的第3、4、5场战斗时，若自身存活，战斗开始后20秒发动一轮支援弹幕$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13180] = {
+		desc_get = "",
+		name = "隆加角之宴",
+		id = 13180,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若先锋舰队有3名角色且自身处于先锋舰队中间位置，提升先锋舰队所有轻巡洋舰、驱逐舰的雷击$1、鱼雷暴击率$2，提升所有驱逐舰机动$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13190] = {
+		desc_get = "",
+		name = "攻守自如",
+		id = 13190,
+		type = 1,
+		max_level = 10,
+		desc = "自身装备重樱阵营主炮时，降低自身在战斗中受到的伤害$1；装备非重樱阵营主炮时，战斗开始时降低自身防空炮效率50%，提高主炮效率$2、鱼雷效率$3，全弹发射时额外发射一轮鱼雷弹幕$4(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.3%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13200] = {
+		desc_get = "",
+		name = "小骑士的射击训练",
+		id = 13200,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中自身前三轮主炮加载时间缩短40%，自身前三轮主炮射击分别造成40%、$1、$2伤害，第四轮开始的主炮射击造成$2伤害",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"60.0%",
+				"80.0%"
+			},
+			{
+				"100.0%",
+				"120.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"60.0%",
+					"+2.2%"
+				},
+				{
+					"62.2%",
+					"+2.2%"
+				},
+				{
+					"64.4%",
+					"+2.2%"
+				},
+				{
+					"66.6%",
+					"+2.2%"
+				},
+				{
+					"68.8%",
+					"+2.2%"
+				},
+				{
+					"71.0%",
+					"+2.2%"
+				},
+				{
+					"73.2%",
+					"+2.2%"
+				},
+				{
+					"75.4%",
+					"+2.2%"
+				},
+				{
+					"77.6%",
+					"+2.4%"
+				},
+				{
+					"80.0%"
+				}
+			},
+			{
+				{
+					"100.0%",
+					"+2.2%"
+				},
+				{
+					"102.2%",
+					"+2.2%"
+				},
+				{
+					"104.4%",
+					"+2.2%"
+				},
+				{
+					"106.6%",
+					"+2.2%"
+				},
+				{
+					"108.8%",
+					"+2.2%"
+				},
+				{
+					"111.0%",
+					"+2.2%"
+				},
+				{
+					"113.2%",
+					"+2.2%"
+				},
+				{
+					"115.4%",
+					"+2.2%"
+				},
+				{
+					"117.6%",
+					"+2.4%"
+				},
+				{
+					"120.0%"
+				}
+			}
+		}
+	},
+	[13210] = {
+		desc_get = "",
+		name = "小骑士的团队演练",
+		id = 13210,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，队伍中每有一个皇家阵营角色，自身炮击、命中、装填属性上升$1,最高叠加4层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[13220] = {
+		desc_get = "",
+		name = "敌无不击",
+		id = 13220,
+		type = 1,
+		max_level = 10,
+		desc = "13220支援效果占位",
+		system_transform = {
+			[51.0] = 13225
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[13230] = {
+		desc_get = "",
+		name = "圣裁之Z",
+		id = 13230,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中含有自由鸢尾、维希教廷阵营的轻巡洋舰或重巡洋舰，自身炮击、机动提高$1，提高队伍中的自由鸢尾、维希教廷阵营轻巡洋舰、重巡洋舰的炮击、防空$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[13240] = {
+		desc_get = "",
+		name = "爱丽丝之帜",
+		id = 13240,
+		type = 3,
+		max_level = 10,
+		desc = "作为旗舰出击时，队伍中的自由鸢尾阵营角色炮击、雷击、命中、装填提高$1，战斗中造成的伤害提高$2；队伍中的维希教廷阵营角色炮击、雷击、命中、装填提高$1，战斗中受到的伤害减少$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[13250] = {
+		desc_get = "",
+		name = "爱丽丝之焰",
+		id = 13250,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，有$1概率触发一轮专属弹幕$2(威力依据技能等级)，专属弹幕命中敌方单位时，有70%概率造成特殊点燃效果（每次结算造成119点伤害）,并在特殊点燃持续期间降低其炮击、雷击、航空属性5%，持续30秒",
+		system_transform = {
+			[3.0] = 13255
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13260] = {
+		desc_get = "",
+		name = "爱丽丝之怒",
+		id = 13260,
+		type = 1,
+		max_level = 10,
+		desc = "自身装备高爆弹主炮时，战斗中主炮造成的伤害提高$1；每场战斗中自身首次进行手动炮击时，该轮主炮必定暴击",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13270] = {
+		desc_get = "",
+		name = "热风之炽焰",
+		id = 13270,
+		type = 1,
+		max_level = 10,
+		desc = "自身对处于被点燃状态下的敌方角色造成的伤害上升$1；进入战斗后20秒，触发一轮有概率造成点燃效果的特殊弹幕$2(威力与样式依据技能等级)，主炮射击时，有$3概率触发该弹幕（主炮射击每10秒最多触发1次该弹幕）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[13280] = {
+		desc_get = "",
+		name = "神穹之盾",
+		id = 13280,
+		type = 2,
+		max_level = 10,
+		desc = "开场时为自身生成1枚持续20秒的护盾，之后每30秒再次生成该护盾，护盾可阻挡5次鱼雷攻击，该护盾存续时，自身炮击提高$1、对驱逐舰、战列舰的造成的伤害提高$2；战斗中进入非自律状态五秒后，自身机动提升$3，航速提升8，回到自律模式时本效果失效",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13290] = {
+		desc_get = "",
+		name = "La Pucelle",
+		id = 13290,
+		type = 1,
+		max_level = 10,
+		desc = "自身对皇家海军阵营角色造成的伤害提升$1；进入战斗时，自身进入特殊的被点燃状态，该状态下每3秒对自身造成8点伤害，持续30秒，自身受到伤害时，有10%概率再次获得该状态；当自身处于被点燃状态时，自身炮击、雷击、防空、机动提升$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[13300] = {
+		desc_get = "",
+		name = "圣女的祷告 ",
+		id = 13300,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后10秒，为所有先锋舰队成员增加一个护盾，之后每20秒再次产生该护盾；护盾可抵消相当于圣女贞德自身耐久$1的伤害，持续8秒，若护盾在持续时间内被击破，该角色接下来的2秒内将回避所有伤害，若护盾因超时而消失，立刻回复该角色70点血量",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[13310] = {
+		desc_get = "",
+		name = "间隙装甲",
+		id = 13310,
+		type = 3,
+		max_level = 10,
+		desc = "自身受到来自轻巡、驱逐的炮击伤害降低$1；出击时，若先锋舰队中没有除轻巡洋舰、重巡洋舰以外的其他舰种角色，自身航速提高4，机动提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13320] = {
+		desc_get = "",
+		name = "审判之弹",
+		id = 13320,
+		type = 1,
+		max_level = 10,
+		desc = "进入战斗时，自身炮击、雷击属性提高$1；自身每进行$2次主炮射击，额外对距离自身最近的敌方角色进行一次特殊弹幕射击(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"15",
+				"5"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"15",
+					"-1"
+				},
+				{
+					"14",
+					-1
+				},
+				{
+					"13",
+					-1
+				},
+				{
+					"12",
+					-1
+				},
+				{
+					"11",
+					-1
+				},
+				{
+					"10",
+					-1
+				},
+				{
+					"9",
+					-1
+				},
+				{
+					"8",
+					-1
+				},
+				{
+					"7",
+					"-2"
+				},
+				{
+					"5"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13330] = {
+		desc_get = "",
+		name = "Sonnez la charge!",
+		id = 13330,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提升队伍中所有沃克兰级驱逐舰雷击、机动$1；进入战斗后30秒内，自身炮击、防空、命中提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13340] = {
+		desc_get = "",
+		name = "变迁之秘",
+		id = 13340,
+		type = 1,
+		max_level = 10,
+		desc = "副武器栏位装备主炮武器时，提升副武器栏位武器效率$1，提升该主炮武器的索敌范围和射程至80，战斗中每24秒发动一次弹幕攻击；副武器栏位装备轰炸机时，自身舰载机的第一轮空中支援加载时间缩短$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"25.0%",
+				"45.0%"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"25.0%",
+					"+2.2%"
+				},
+				{
+					"27.2%",
+					"+2.2%"
+				},
+				{
+					"29.4%",
+					"+2.2%"
+				},
+				{
+					"31.6%",
+					"+2.2%"
+				},
+				{
+					"33.8%",
+					"+2.2%"
+				},
+				{
+					"36.0%",
+					"+2.2%"
+				},
+				{
+					"38.2%",
+					"+2.2%"
+				},
+				{
+					"40.4%",
+					"+2.2%"
+				},
+				{
+					"42.6%",
+					"+2.4%"
+				},
+				{
+					"45.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50%"
+				}
+			}
+		}
+	},
+	[13350] = {
+		desc_get = "",
+		name = "后备武装",
+		id = 13350,
+		type = 1,
+		max_level = 10,
+		desc = "自身空袭整备完毕后5秒，触发额外的鱼雷弹幕及舰载机编队$1进行攻击(威力依据技能等级)，每场战斗最多发动3次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13360] = {
+		desc_get = "",
+		name = "舰载机，出击！",
+		id = 13360,
+		type = 1,
+		max_level = 10,
+		desc = "自身空袭时有$1概率触发，使用剑鱼进行额外一轮航空弹幕攻击$2(威力和样式依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13370] = {
+		desc_get = "",
+		name = "圣光之愿",
+		id = 13370,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始后12秒，使用圣光之力进行一次攻击$1(威力依据技能等级)，之后每20秒有$2概率再次进行该攻击。被圣光命中的敌人命中率降低30%，技能效果将在随后的4秒内逐渐减少直至无效",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[13380] = {
+		desc_get = "",
+		name = "库拉湾之梦",
+		id = 13380,
+		type = 3,
+		max_level = 10,
+		desc = "自身在战斗中受到的鱼雷伤害降低$1；战斗开始时，若先锋舰队满编且尾舰为自身以外的白鹰阵营角色，提升该角色机动$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13390] = {
+		desc_get = "",
+		name = "尝尝这个！",
+		id = 13390,
+		type = 1,
+		max_level = 10,
+		desc = "每30秒，有$1概率触发一轮特殊弹幕（威力和样式根据技能等级）；在战斗中受到伤害，导致血量低于30%时，回复自身10%血量并立即触发一次该弹幕（该效果每场战斗仅触发1次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			}
+		}
+	},
+	[13400] = {
+		desc_get = "",
+		name = "雷达扫描·改",
+		id = 13400,
+		type = 3,
+		max_level = 10,
+		desc = "每隔20秒，有$1的概率发动，敌方所有单位受到的伤害上升$2，持续10秒；自身携带SG雷达时，自身机动上升$3，每场战斗第一次雷达扫描的判定时间提前至16秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"30.0%",
+				"60.0%"
+			},
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30.0%",
+					"+3.3%"
+				},
+				{
+					"33.3%",
+					"+3.3%"
+				},
+				{
+					"36.6%",
+					"+3.3%"
+				},
+				{
+					"39.9%",
+					"+3.3%"
+				},
+				{
+					"43.2%",
+					"+3.3%"
+				},
+				{
+					"46.5%",
+					"+3.3%"
+				},
+				{
+					"49.8%",
+					"+3.3%"
+				},
+				{
+					"53.1%",
+					"+3.3%"
+				},
+				{
+					"56.4%",
+					"+3.6%"
+				},
+				{
+					"60.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13410] = {
+		desc_get = "",
+		name = "翔翼的Talaria",
+		id = 13410,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，将直接完成$1次空中支援加载，自身舰载机的空中支援加载所需时间增加90%；自身每次执行空袭后，为先锋部队回复$2耐久，为主力部队回复$3耐久",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1",
+				"2"
+			},
+			{
+				"1.5%",
+				"7.0%"
+			},
+			{
+				"1.0%",
+				"3.5%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1"
+				},
+				{
+					"1"
+				},
+				{
+					"1"
+				},
+				{
+					"1"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.6%"
+				},
+				{
+					"2.1%",
+					"+0.6%"
+				},
+				{
+					"2.7%",
+					"+0.6%"
+				},
+				{
+					"3.3%",
+					"+0.6%"
+				},
+				{
+					"3.9%",
+					"+0.6%"
+				},
+				{
+					"4.5%",
+					"+0.6%"
+				},
+				{
+					"5.1%",
+					"+0.6%"
+				},
+				{
+					"5.7%",
+					"+0.6%"
+				},
+				{
+					"6.3%",
+					"+0.7%"
+				},
+				{
+					"7.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.3%"
+				},
+				{
+					"2.1%",
+					"+0.3%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.4%"
+				},
+				{
+					"3.1%",
+					"+0.4%"
+				},
+				{
+					"3.5%"
+				}
+			}
+		}
+	},
+	[13420] = {
+		desc_get = "",
+		name = "弹射起飞试行",
+		id = 13420,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每12秒，随机从海大黄蜂、TBF、萤火虫三种机队中派出一种机队进行攻击$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13430] = {
+		desc_get = "",
+		name = "广域舰船维护",
+		id = 13430,
+		type = 3,
+		max_level = 10,
+		desc = "自身机库总容量扩充为3，战斗中自身所在编队的所有角色每$2秒回复1.0%耐久；关卡海域内其他编队进入战斗时，若自身存活，战斗开始20秒后，恢复该编队先锋舰队角色$1耐久",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"3.0%"
+			},
+			{
+				"40",
+				"20"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.3%"
+				},
+				{
+					"3.0%"
+				}
+			},
+			{
+				{
+					"40",
+					"-2"
+				},
+				{
+					"38",
+					"-2"
+				},
+				{
+					"36",
+					"-2"
+				},
+				{
+					"34",
+					"-2"
+				},
+				{
+					"32",
+					"-2"
+				},
+				{
+					"30",
+					"-2"
+				},
+				{
+					"28",
+					"-2"
+				},
+				{
+					"26",
+					"-3"
+				},
+				{
+					"23",
+					"-3"
+				},
+				{
+					"20"
+				}
+			}
+		}
+	},
+	[13440] = {
+		desc_get = "",
+		name = "射击Synchronize",
+		id = 13440,
+		type = 1,
+		max_level = 10,
+		desc = "每$1秒，随机瞄准一名敌人进行一次弹幕射击$2(威力依据技能等级)，弹幕触发后主力舰队所有战列、战巡、航战角色装填、命中提高$3，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"35",
+				"15"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"35",
+					"-2"
+				},
+				{
+					"33",
+					"-2"
+				},
+				{
+					"31",
+					"-2"
+				},
+				{
+					"29",
+					"-2"
+				},
+				{
+					"27",
+					"-2"
+				},
+				{
+					"25",
+					"-2"
+				},
+				{
+					"23",
+					"-2"
+				},
+				{
+					"21",
+					"-3"
+				},
+				{
+					"18",
+					"-3"
+				},
+				{
+					"15"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[13450] = {
+		desc_get = "",
+		name = "骑士不朽之约",
+		id = 13450,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，自身炮击、装填提升$1；与英王乔治五世、威尔士亲王、约克公爵、君主一同出击、或队伍中存在3个以上皇家阵营角色时，自身炮击、防空额外提升$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13460] = {
+		desc_get = "",
+		name = "Blast Geminio",
+		id = 13460,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，触发一次弹幕射击$1，该弹幕触发时，若自身30距离内没有其他敌人，额外触发一轮定点弹幕射击$1(弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13470] = {
+		desc_get = "",
+		name = "砥柱下的应援 ",
+		id = 13470,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若自身不为先锋领舰，提升自身炮击、雷击、防空、装填$1，队伍中含有其他皇家阵营角色时，提升自身造成的伤害$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[13480] = {
+		desc_get = "",
+		name = "全弹压制射击",
+		id = 13480,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后5秒，触发一轮特殊弹幕$1(威力和样式依据技能等级)，战斗开始后每30秒，有$2概率再次触发该弹幕",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[13490] = {
+		desc_get = "",
+		name = "雷击集中模式",
+		id = 13490,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时及战斗开始后每20秒触发，接下来的10秒内，降低自身受到的鱼雷伤害$1并修改自身装备的鱼雷武器的发射形态",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"6.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"6.0%",
+					"+1.2%"
+				},
+				{
+					"7.2%",
+					"+1.2%"
+				},
+				{
+					"8.4%",
+					"+1.6%"
+				},
+				{
+					"10.0%",
+					"+1.2%"
+				},
+				{
+					"11.2%",
+					"+1.2%"
+				},
+				{
+					"12.4%",
+					"+1.6%"
+				},
+				{
+					"14.0%",
+					"+1.8%"
+				},
+				{
+					"15.8%",
+					"+1.8%"
+				},
+				{
+					"17.6%",
+					"+2.4%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[13500] = {
+		desc_get = "",
+		name = "气魄一击",
+		id = 13500,
+		type = 3,
+		max_level = 10,
+		desc = "自身主炮开火10秒后，进行一次特殊弹幕射击$1，对被特殊弹幕命中的角色附加20秒特殊破甲效果(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13510] = {
+		desc_get = "",
+		name = "正面突袭",
+		id = 13510,
+		type = 1,
+		max_level = 10,
+		desc = "自身主炮开火时，有$1的概率朝前方发射一轮专属弹幕(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50%"
+				}
+			}
+		}
+	},
+	[13520] = {
+		desc_get = "",
+		name = "变迁之秘",
+		id = 13520,
+		type = 1,
+		max_level = 10,
+		desc = "副武器栏位装备主炮武器时，提升副武器栏位武器效率$1，提升该主炮武器的索敌范围和射程至80，战斗中每24秒发动一次弹幕攻击；副武器栏位装备轰炸机时，自身舰载机的第一轮空中支援加载时间缩短$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"25.0%",
+				"45.0%"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"25.0%",
+					"+2.2%"
+				},
+				{
+					"27.2%",
+					"+2.2%"
+				},
+				{
+					"29.4%",
+					"+2.2%"
+				},
+				{
+					"31.6%",
+					"+2.2%"
+				},
+				{
+					"33.8%",
+					"+2.2%"
+				},
+				{
+					"36.0%",
+					"+2.2%"
+				},
+				{
+					"38.2%",
+					"+2.2%"
+				},
+				{
+					"40.4%",
+					"+2.2%"
+				},
+				{
+					"42.6%",
+					"+2.4%"
+				},
+				{
+					"45.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50%"
+				}
+			}
+		}
+	},
+	[13530] = {
+		desc_get = "",
+		name = "翔鹰之剑",
+		id = 13530,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空中支援时，额外使用专属剑鱼编队进行一轮航空鱼雷攻击$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13540] = {
+		desc_get = "",
+		name = "广域舰船维护",
+		id = 13540,
+		type = 2,
+		max_level = 10,
+		desc = "支援效果ID占位",
+		system_transform = {
+			[51.0] = 13545
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[13550] = {
+		desc_get = "",
+		name = "微笑猎手",
+		id = 13550,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，自身发射的鱼雷暴击率提高$1；进入战斗时，发射一轮技能鱼雷弹幕$2（威力和弹幕样式依据技能等级）",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13560] = {
+		desc_get = "",
+		name = "狼群战术-U96",
+		id = 13560,
+		type = 1,
+		max_level = 10,
+		desc = "出击时，编队中铁血阵营潜艇角色命中提高$1、暴击伤害提高$2；出击时，编队中每有一个铁血阵营潜艇角色，自身命中、装填、机动提高$3",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[13570] = {
+		desc_get = "",
+		name = "AntiTorpedoField",
+		id = 13570,
+		type = 2,
+		max_level = 10,
+		desc = "开场10秒后，为自身生成1枚持续20秒的护盾，护盾可阻挡3次鱼雷攻击，护盾被击破或因超时消失时，触发一轮鱼雷弹幕$1，弹幕触发后30秒再次生成该护盾",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13580] = {
+		desc_get = "",
+		name = "星夜之云",
+		id = 13580,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后3秒，使用彩云舰载机进行一次侦查；自身发动空袭时，使用试制型紫电改二、流星、彩云组成的编队进行一次额外攻击$1(彩云舰载机将降低敌方一个单位的火力、雷击、防空属性3%，并使其受到的伤害提高3%，效果优先对精英目标（人形单位）生效，最高叠加三层，持续至战斗结束)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13590] = {
+		desc_get = "",
+		name = "幽蝶之梦",
+		id = 13590,
+		type = 3,
+		max_level = 10,
+		desc = "在一次关卡出击中，自身所在编队进入前2场战斗时，自身航空提升$1；战斗中每15秒，发动特殊弹幕进行一次攻击$2；关卡海域内其他编队进入该编队的第3、4、5场战斗时，若自身存活，战斗开始后15秒发动一轮支援弹幕$2（弹幕威力依据航空属性及技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13600] = {
+		desc_get = "",
+		name = "守护之樱",
+		id = 13600,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若自身存活，队伍中所有驱逐的炮击、机动、反潜提高$1；战斗开始时，若队伍中存在至少3个重樱阵营角色，自身受到的炮击、航空伤害降低$2，同时提高队伍中重樱阵营轻航、正航的航空、命中属性$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"8.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"8.0%",
+					"+1.2%"
+				},
+				{
+					"9.2%",
+					"+1.2%"
+				},
+				{
+					"10.4%",
+					"+1.6%"
+				},
+				{
+					"12.0%",
+					"+1.2%"
+				},
+				{
+					"13.2%",
+					"+1.2%"
+				},
+				{
+					"14.4%",
+					"+1.6%"
+				},
+				{
+					"16.0%",
+					"+1.2%"
+				},
+				{
+					"17.2%",
+					"+1.2%"
+				},
+				{
+					"18.4%",
+					"+1.6%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[13610] = {
+		desc_get = "",
+		name = "战术解放·{namecode:80}",
+		id = 13610,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每20秒，有$1概率发射一轮特殊弹幕$2(弹幕威力及样式依据技能等级)",
+		system_transform = {
+			[3.0] = 13615
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13620] = {
+		desc_get = "",
+		name = "英勇奋进",
+		id = 13620,
+		type = 3,
+		max_level = 10,
+		desc = "自身在场时，提升主力舰队中重樱阵营角色的防空属性$1；战斗开始时，若队伍中存在至少3个重樱阵营的角色，自身炮击提高$2，先锋舰队角色的雷击属性提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13630] = {
+		desc_get = "",
+		name = "突击之{namecode:27}",
+		id = 13630,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，队伍中每有一名重樱阵营角色，自身炮击、防空提高$1，防空圈内敌方飞机每被击落2架，额外叠加一层相同的属性提升效果，本技能效果最多叠加6层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[13640] = {
+		desc_get = "",
+		name = "守卫之{namecode:27}",
+		id = 13640,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后3秒使用烟雾弹并触发一轮特殊弹幕，处于烟幕中的角色回避率提高$1，持续5秒；战斗开始后每15秒再次触发该弹幕，并有$2的概率再次发动烟雾弹；在战斗中受到伤害，导致血量低于20%时，立即回复自身$3血量，每场战斗最多触发1次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13650] = {
+		desc_get = "",
+		name = "损伤警备",
+		id = 13650,
+		type = 2,
+		max_level = 10,
+		desc = "所在编队在关卡出击的前3场战斗中，自身受到的炮击伤害降低$1；战斗开始时，若队伍中存在至少2个重樱阵营角色，提高自身航速10",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13660] = {
+		desc_get = "",
+		name = "小心火焰！",
+		id = 13660,
+		type = 2,
+		max_level = 10,
+		desc = "装备货物时，自身受到的点燃伤害降低$1，被点燃时间减少$2秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"3",
+				"6"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"6"
+				},
+				{
+					"6"
+				},
+				{
+					"6"
+				},
+				{
+					"6"
+				}
+			}
+		}
+	},
+	[13670] = {
+		desc_get = "",
+		name = "事不过三！",
+		id = 13670,
+		type = 2,
+		max_level = 10,
+		desc = "一场战斗中自身受到3次伤害后触发，自身受到的伤害降低$1，持续至战斗结束；战斗开始时，若队伍中存在至少2个重樱阵营角色，本场战斗强化全弹发射样式；在自身所在编队的第2、4、6场战斗中，战斗开始60秒后回复自身$2耐久",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13680] = {
+		desc_get = "",
+		name = "千之羽",
+		id = 13680,
+		type = 1,
+		max_level = 10,
+		desc = "每场战斗自身第一次执行空中支援时，使用额外的水上机编队进行一次攻击$1，自身的第二次空中支援开始，有$2的概率额外使用鱼雷机编队进行攻击$1（威力依据技能等级，与其他重樱轻航一同出击时，各编队形态强化）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[13690] = {
+		desc_get = "",
+		name = "千之羽",
+		id = 13690,
+		type = 1,
+		max_level = 10,
+		desc = "每场战斗自身第一次执行空中支援时，使用额外的水上机编队进行一次攻击$1，自身的第二次空中支援开始，有$2的概率额外使用鱼雷机编队进行攻击$1（威力依据技能等级，与其他重樱轻航一同出击时，各编队形态强化）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[13700] = {
+		desc_get = "",
+		name = "守护之樱",
+		id = 13700,
+		type = 2,
+		max_level = 10,
+		desc = "守护之樱全图支援效果",
+		system_transform = {
+			[51.0] = 13705
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[13710] = {
+		desc_get = "",
+		name = "遁入雨云",
+		id = 13710,
+		type = 2,
+		max_level = 10,
+		desc = "每次执行空袭后使自己受到的航空伤害降低$1，持续8秒，航空减伤效果结束后有$1的概率使用TBF复仇者进行一轮攻击$2（威力和样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13720] = {
+		desc_get = "",
+		name = "燃烧禁令",
+		id = 13720,
+		type = 3,
+		max_level = 10,
+		desc = "与伯明翰一同出击或队伍中存在3个以上白鹰阵营角色时，先锋部队受到的点燃伤害降低$1，自身被点燃时间减少$2秒，若此时自身为旗舰，先锋部队的被点燃时间减少$2秒。",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1",
+				"3"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.9%"
+				},
+				{
+					"5.9%",
+					"+0.9%"
+				},
+				{
+					"6.8%",
+					"+1.2%"
+				},
+				{
+					"8.0%",
+					"+0.9%"
+				},
+				{
+					"8.9%",
+					"+0.9%"
+				},
+				{
+					"9.8%",
+					"+1.2%"
+				},
+				{
+					"11.0%",
+					"+1.2%"
+				},
+				{
+					"12.2%",
+					"+1.2%"
+				},
+				{
+					"13.4%",
+					"+1.6%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1"
+				},
+				{
+					"1"
+				},
+				{
+					"1"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				}
+			}
+		}
+	},
+	[13730] = {
+		desc_get = "",
+		name = "破灭的Encore",
+		id = 13730,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，发动一次音符弹幕$1，被弹幕命中的敌方单位6秒内受到的伤害上升10%；若弹幕只命中一个敌方单位，三秒内降低该单位的航速至0并向其追加发射一轮鱼雷弹幕（弹幕威力和样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13740] = {
+		desc_get = "",
+		name = "环绕的Melody",
+		id = 13740,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，生成两种旋转的护盾，每个蓝色护盾可阻挡8发子弹，每个红色护盾可以通过碰撞造成最多8次伤害，护盾持续$1秒，每隔30秒再次生成该护盾",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5",
+				"15"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5",
+					"+1"
+				},
+				{
+					"6",
+					"+1"
+				},
+				{
+					"7",
+					"+1"
+				},
+				{
+					"8",
+					"+1"
+				},
+				{
+					"9",
+					"+1"
+				},
+				{
+					"10",
+					"+1"
+				},
+				{
+					"11",
+					"+1"
+				},
+				{
+					"12",
+					"+1"
+				},
+				{
+					"13",
+					"+2"
+				},
+				{
+					"15"
+				}
+			}
+		}
+	},
+	[13750] = {
+		desc_get = "",
+		name = "鲜红的Waltz",
+		id = 13750,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空中支援时，额外发动一轮航空弹幕$1，若发动时自身血量高于45%，扣减自身200点血量并强化航空弹幕形态（弹幕威力和样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13760] = {
+		desc_get = "",
+		name = "破灭的Opening",
+		id = 13760,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中有其他μ兵装角色，根据μ兵装角色数量提升自身$1航空，最多叠加4层；在战斗中受伤，导致血量低于35%时，触发一轮特殊弹幕$2，特殊弹幕造成伤害的8.0%回复自身耐久(弹幕威力依据技能等级，每场战斗仅触发一次)，特殊弹幕触发后，自身空中支援加载所需时间减少$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.5%",
+				"6.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[13770] = {
+		desc_get = "",
+		name = "Lumière des Anges",
+		id = 13770,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每20秒，自身停止移动3秒，召唤神圣天使啾空袭$1（空袭弹幕威力依据雷击属性和技能等级），同时有50%概率使自身回复3%血量",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13780] = {
+		desc_get = "",
+		name = "怠惰天使",
+		id = 13780,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后，自身炮击提升$1，自身在战斗中击破敌舰时，额外提高自身炮击属性3%，最多叠加3层；战斗中自身受到的伤害降低5%，战斗中每25秒，回复队伍中所有驱逐舰$2血量",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"1.0%",
+				"3.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.3%"
+				},
+				{
+					"3.0%"
+				}
+			}
+		}
+	},
+	[13790] = {
+		desc_get = "",
+		name = "星占之歌",
+		id = 13790,
+		type = 3,
+		max_level = 10,
+		desc = "自身空中支援整备完毕时，使在场的敌方单位在4秒内减速$1，并随机发动以下三种效果中的一种：①在场的敌方单位10秒内机动降低$2。②10秒内先锋舰队造成伤害提高$4、主力舰队受到伤害降低$3。③10秒内主力舰队造成伤害提高$3、先锋舰队受到伤害降低$3。",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13800] = {
+		desc_get = "",
+		name = "星落之辉",
+		id = 13800,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空中支援时有$1概率额外发动一轮特殊航空弹幕（空袭弹幕威力和样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			}
+		}
+	},
+	[13810] = {
+		desc_get = "",
+		name = "合奏的叙事歌",
+		id = 13810,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若先锋舰队仅由自身组成，提高旗舰的防空属性$1，战斗中每20秒，触发一轮特殊弹幕$2；战斗开始时，若先锋舰队有其他角色存活，提高所有先锋舰队成员航速3，命中、防空$3，战斗中每20秒，触发一轮强化型特殊弹幕$2（弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13820] = {
+		desc_get = "",
+		name = "闪光的练习曲",
+		id = 13820,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始后60秒内，自身机动提高$1；自身在战斗中每击破2艘敌舰，自身防空提升$2，最多叠加3层，持续至战斗结束",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13830] = {
+		desc_get = "",
+		name = "冰晶印记",
+		id = 13830,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，召唤一个能够发射特殊弹幕的【特殊能量兵装：冰之妖精·μ】进行战斗，【冰之妖精·μ】持续存在$1秒，被其命中10次的敌方单位将受到特殊破甲效果，受到的航空伤害提高5%，持续至战斗结束（弹幕伤害和持续时间依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20",
+				"50"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20",
+					"+2"
+				},
+				{
+					"22",
+					"+2"
+				},
+				{
+					"24",
+					"+2"
+				},
+				{
+					"26",
+					"+4"
+				},
+				{
+					"30",
+					"+4"
+				},
+				{
+					"34",
+					"+4"
+				},
+				{
+					"38",
+					"+4"
+				},
+				{
+					"42",
+					"+4"
+				},
+				{
+					"46",
+					"+4"
+				},
+				{
+					"50"
+				}
+			}
+		}
+	},
+	[13840] = {
+		desc_get = "",
+		name = "γpa！",
+		id = 13840,
+		type = 3,
+		max_level = 10,
+		desc = "在一次关卡出击中，自身所在编队的前三次战斗自身炮击提升$1，第四场战斗起自身防空提升$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[13850] = {
+		desc_get = "",
+		name = "寰宇的赠礼",
+		id = 13850,
+		type = 1,
+		max_level = 10,
+		desc = "自身氧气存量额外提高$1点；自身氧气不足上浮时，发射一组有70%概率对命中的敌人造成破甲的技能鱼雷$2；自身从战场撤离时，发射一组有70%概率对命中的敌人造成点燃的技能鱼雷$2(威力随技能等级提升)",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"2",
+				"20"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"2",
+					"+2"
+				},
+				{
+					"4",
+					"+2"
+				},
+				{
+					"6",
+					"+2"
+				},
+				{
+					"8",
+					"+2"
+				},
+				{
+					"10",
+					"+2"
+				},
+				{
+					"12",
+					"+2"
+				},
+				{
+					"14",
+					"+2"
+				},
+				{
+					"16",
+					"+2"
+				},
+				{
+					"18",
+					"+2"
+				},
+				{
+					"20"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13860] = {
+		desc_get = "",
+		name = "超限充能",
+		id = 13860,
+		type = 1,
+		max_level = 10,
+		desc = "每隔20秒，有$1的概率将自身的主炮弹药更换为特殊弹药$2，持续10秒；战斗开始时，立即触发一次该效果",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13870] = {
+		desc_get = "",
+		name = "星辰的振付师",
+		id = 13870,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中有除自身外的其他μ兵装角色或轻航、正航角色，自身机动提高$1，先锋舰队所有成员防空提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13880] = {
+		desc_get = "",
+		name = "迅击铁翼",
+		id = 13880,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空中支援时有$1概率额外发动一轮专属鱼雷机空袭（空袭弹幕威力和样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			}
+		}
+	},
+	[13890] = {
+		desc_get = "",
+		name = "侵攻之时",
+		id = 13890,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，使所有敌人减速8%；战斗中每秒判定一次，有$1概率使所有敌人在3秒内航速变为0，触发后进入7秒冷却",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13900] = {
+		desc_get = "",
+		name = "血翼之盟",
+		id = 13900,
+		type = 3,
+		max_level = 10,
+		desc = "队伍中每有一个铁血阵营角色，提升自身航空属性$1，最高叠加3层；队伍中含4个以上铁血阵营角色时，队伍中所有铁血阵营正航、轻航前三次空中支援加载所需时间减少$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13910] = {
+		desc_get = "",
+		name = "Eisen Bite",
+		id = 13910,
+		type = 1,
+		max_level = 10,
+		desc = "主炮射击时有$1概率触发，3秒内自身主炮造成伤害提高25%，触发后进入7秒冷却；战斗开始时，若队伍中有其他铁血阵营角色，自身装填、机动提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.3%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13920] = {
+		desc_get = "",
+		name = "直感之拳",
+		id = 13920,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后每20秒，发射一轮特殊弹幕$1(弹幕威力依据技能等级)，并随机在正前方生成一枚可以防护2枚鱼雷或10枚子弹的护盾，持续$2秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5",
+				"10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5",
+					"+0.5"
+				},
+				{
+					"5.5",
+					"+0.5"
+				},
+				{
+					"6",
+					"+0.5"
+				},
+				{
+					"6.5",
+					"+0.5"
+				},
+				{
+					"7",
+					"+0.5"
+				},
+				{
+					"7.5",
+					"+0.5"
+				},
+				{
+					"8",
+					"+0.5"
+				},
+				{
+					"8.5",
+					"+0.5"
+				},
+				{
+					"9",
+					"+1"
+				},
+				{
+					"10"
+				}
+			}
+		}
+	},
+	[13930] = {
+		desc_get = "",
+		name = "西进之戟",
+		id = 13930,
+		type = 1,
+		max_level = 10,
+		desc = "自身氧气存量额外提高$1点；自身对轻型护甲敌人造成的伤害提高$2，自身氧气不足上浮时，发射一组特殊弹幕$3(弹幕威力依据技能等级)",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"2",
+				"20"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"2",
+					"+2"
+				},
+				{
+					"4",
+					"+2"
+				},
+				{
+					"6",
+					"+2"
+				},
+				{
+					"8",
+					"+2"
+				},
+				{
+					"10",
+					"+2"
+				},
+				{
+					"12",
+					"+2"
+				},
+				{
+					"14",
+					"+2"
+				},
+				{
+					"16",
+					"+2"
+				},
+				{
+					"18",
+					"+2"
+				},
+				{
+					"20"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[13940] = {
+		desc_get = "",
+		name = "狼群战术-U37",
+		id = 13940,
+		type = 1,
+		max_level = 10,
+		desc = "自身航速提升3，装填提高$1；出击时，编队中每有一个铁血阵营潜艇角色，自身雷击、命中、机动提高$2",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"8.0%",
+				"18.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"8.0%",
+					"+1.1%"
+				},
+				{
+					"9.1%",
+					"+1.1%"
+				},
+				{
+					"10.2%",
+					"+1.1%"
+				},
+				{
+					"11.3%",
+					"+1.1%"
+				},
+				{
+					"12.4%",
+					"+1.1%"
+				},
+				{
+					"13.5%",
+					"+1.1%"
+				},
+				{
+					"14.6%",
+					"+1.1%"
+				},
+				{
+					"15.7%",
+					"+1.1%"
+				},
+				{
+					"16.8%",
+					"+1.2%"
+				},
+				{
+					"18.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[13950] = {
+		desc_get = "",
+		name = "孤城的瞭望者",
+		id = 13950,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，自身发动空中支援后有$1的概率触发一轮航空轰炸弹幕；战斗开始时，若队伍中存在三个以上铁血阵营角色，提升自身暴击伤害$2；战斗开始时，若主力编队仅有自身一名铁血阵营角色，自身装填提高$3、航空提高$4，航空弹幕样式强化并增加30%触发概率（弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.2%"
+				},
+				{
+					"6.2%",
+					"+1.2%"
+				},
+				{
+					"7.4%",
+					"+1.6%"
+				},
+				{
+					"9.0%",
+					"+1.5%"
+				},
+				{
+					"10.5%",
+					"+1.5%"
+				},
+				{
+					"12.0%",
+					"+2.0%"
+				},
+				{
+					"14.0%",
+					"+1.8%"
+				},
+				{
+					"15.8%",
+					"+1.8%"
+				},
+				{
+					"17.6%",
+					"+2.4%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[13960] = {
+		desc_get = "",
+		name = "铁血之盾",
+		id = 13960,
+		type = 2,
+		max_level = 10,
+		desc = "进入战斗后每20秒，为随机一名先锋部队增加两面旋转的护盾，每个护盾阻挡6发子弹，持续$1秒；若获得护盾的角色属于铁血阵营，恢复自身$3耐久并提升该角色$2炮击，持续8秒。",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"6",
+				"8"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"6"
+				},
+				{
+					"6"
+				},
+				{
+					"6"
+				},
+				{
+					"7"
+				},
+				{
+					"7"
+				},
+				{
+					"7"
+				},
+				{
+					"8"
+				},
+				{
+					"8"
+				},
+				{
+					"8"
+				},
+				{
+					"8"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[13970] = {
+		desc_get = "",
+		name = "训练有素",
+		id = 13970,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始后每15秒触发一次弹幕射击$1（弹幕威力依据技能等级）；战斗后，队伍中潜艇、潜母获得经验值增加$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[13980] = {
+		desc_get = "",
+		name = "空之戍卫",
+		id = 13980,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时提升自身雷击$1，提升队伍中铁血阵营角色防空$2；防空圈内，每击落3架敌机，额外提升自身防空$3，最多叠加三层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[13990] = {
+		desc_get = "",
+		name = "魔王之庇护",
+		id = 13990,
+		type = 2,
+		max_level = 10,
+		desc = "自身对驱逐舰、轻巡洋舰的伤害提高$1；战斗中，队伍中其他Z系驱逐受到伤害，导致耐久低于30%时触发，降低其受到的伤害30%，同时提高自身炮击、雷击、装填$2，属性提升效果每场战斗仅触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14000] = {
+		desc_get = "",
+		name = "魔王之愤怒",
+		id = 14000,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时触发一轮弹幕$1（弹幕威力依据技能等级），之后每20秒再次触发该弹幕；战斗中，自身每击破一艘敌舰提升自身炮击、雷击$2，最高叠加5层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"4.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.3%"
+				},
+				{
+					"1.3%",
+					"+0.3%"
+				},
+				{
+					"1.6%",
+					"+0.4%"
+				},
+				{
+					"2.0%",
+					"+0.3%"
+				},
+				{
+					"2.3%",
+					"+0.3%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.3%"
+				},
+				{
+					"3.3%",
+					"+0.3%"
+				},
+				{
+					"3.6%",
+					"+0.4%"
+				},
+				{
+					"4.0%"
+				}
+			}
+		}
+	},
+	[14010] = {
+		desc_get = "",
+		name = "Z系领航",
+		id = 14010,
+		type = 3,
+		max_level = 10,
+		desc = "出击时，队伍中Z系驱逐炮击提升$1，命中提升$1、防空提升$2；若队伍中有除自身以外的Z系驱逐存在，自身炮击提升$1，自身雷击提升$1，反潜提升$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14020] = {
+		desc_get = "",
+		name = "护航精英",
+		id = 14020,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，使用烟雾弹并触发一轮特殊弹幕，随后每隔15秒有$1概率使用烟雾弹，处于烟幕中的角色回避率提高$2，持续5秒(回避率提升效果与【烟雾弹】技能不叠加)；每次旗舰角色受到伤害时，有$3概率再次触发一轮特殊弹幕，该效果每20秒最多触发一次（弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[14030] = {
+		desc_get = "",
+		name = "回转的Ontology",
+		id = 14030,
+		type = 1,
+		max_level = 10,
+		desc = "受到伤害时提升自身炮击属性$1、机动属性$1,最多叠加5次,效果达到五层后获得5点航速并触发一轮特殊弹幕，触发后每隔30秒再次触发该弹幕（弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"3.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.3%"
+				},
+				{
+					"3.0%"
+				}
+			}
+		}
+	},
+	[14040] = {
+		desc_get = "",
+		name = "闪耀的Protorogia",
+		id = 14040,
+		type = 3,
+		max_level = 10,
+		desc = "每隔15秒，有$1的概率发动，提高先锋舰队$2命中，持续10秒 ",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[14050] = {
+		desc_get = "",
+		name = "怒放之紫",
+		id = 14050,
+		type = 1,
+		max_level = 10,
+		desc = "主炮射击时有$1概率触发一轮特殊弹幕(威力与样式依据技能等级)，触发后进入10秒冷却；队伍中有两名及以上撒丁帝国角色时，特殊弹幕触发概率提高20%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50.0%"
+				}
+			}
+		}
+	},
+	[14060] = {
+		desc_get = "",
+		name = "无惧挑战",
+		id = 14060,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始前45秒，自身的机动属性上升$2；自身在队伍中(存活)时，提高先锋舰队的撒丁帝国阵营角色炮击$1，防空$2，队伍中扎拉级角色在战斗中受到的伤害降低6%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14070] = {
+		desc_get = "",
+		name = "除恶务尽",
+		id = 14070,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，自身炮击、防空提升$1；战斗中每20秒，发动一轮弹幕射击$2(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14080] = {
+		desc_get = "",
+		name = "丹青不渝",
+		id = 14080,
+		type = 2,
+		max_level = 10,
+		desc = "进入战斗时，自身机动提高$1，自身在战斗中受到的伤害降低$1；若队伍中含有其他东煌阵营角色，战斗开始时回复自身血量8%，自身航速增加5，50秒内，舰队所有成员防空属性提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"6.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"6.0%",
+					"+1.2%"
+				},
+				{
+					"7.2%",
+					"+1.2%"
+				},
+				{
+					"8.4%",
+					"+1.6%"
+				},
+				{
+					"10.0%",
+					"+1.2%"
+				},
+				{
+					"11.2%",
+					"+1.2%"
+				},
+				{
+					"12.4%",
+					"+1.6%"
+				},
+				{
+					"14.0%",
+					"+1.8%"
+				},
+				{
+					"15.8%",
+					"+1.8%"
+				},
+				{
+					"17.6%",
+					"+2.4%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[14090] = {
+		desc_get = "",
+		name = "除恶务尽",
+		id = 14090,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，自身炮击、防空提升$1；战斗中每20秒，发动一轮弹幕射击$2(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14100] = {
+		desc_get = "",
+		name = "舞衫歌扇",
+		id = 14100,
+		type = 2,
+		max_level = 10,
+		desc = "进入战斗时，自身机动提高$1，自身在战斗中受到的伤害降低$1；若队伍中含有其他东煌阵营角色，战斗开始时回复自身血量5%，自身航速增加8，50秒内，舰队所有成员反潜属性提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"6.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"6.0%",
+					"+1.2%"
+				},
+				{
+					"7.2%",
+					"+1.2%"
+				},
+				{
+					"8.4%",
+					"+1.6%"
+				},
+				{
+					"10.0%",
+					"+1.2%"
+				},
+				{
+					"11.2%",
+					"+1.2%"
+				},
+				{
+					"12.4%",
+					"+1.6%"
+				},
+				{
+					"14.0%",
+					"+1.8%"
+				},
+				{
+					"15.8%",
+					"+1.8%"
+				},
+				{
+					"17.6%",
+					"+2.4%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[14110] = {
+		desc_get = "",
+		name = "马耳他的英雄",
+		id = 14110,
+		type = 1,
+		max_level = 10,
+		desc = "自身对驱逐舰、轻巡洋舰的伤害提高$1；自身在战斗中击破敌舰时，自身机动、防空属性提高$2，最多叠加3层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"0.5%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"0.5%",
+					"+0.5%"
+				},
+				{
+					"1.0%",
+					"+0.5%"
+				},
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[14120] = {
+		desc_get = "",
+		name = "Pepperpot",
+		id = 14120,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中受到伤害，导致血量低于30%时触发，5秒内自身受到的伤害降低50%，5秒后回复自身$1血量，每场战斗最多触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14130] = {
+		desc_get = "",
+		name = "奇袭战术",
+		id = 14130,
+		type = 1,
+		max_level = 10,
+		desc = "对轻巡造成的伤害提高$1；战斗中，自身氧气不足上浮时，发射一轮鱼雷弹幕$2(威力依据技能等级)",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14140] = {
+		desc_get = "",
+		name = "调皮的小雪球",
+		id = 14140,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，自身受到攻击时，有$1的概率触发一轮带有减速效果的特殊弹幕$2（威力与样式依据技能等级，触发后进入10秒冷却）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14150] = {
+		desc_get = "",
+		name = "陨落冰耀",
+		id = 14150,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，有$1概率触发一轮专属弹幕$2(威力依据技能等级)，弹幕触发失败时，自身防空提升50%，增益效果持续至下一次自身主炮齐射为止",
+		system_transform = {
+			[3.0] = 14155
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14160] = {
+		desc_get = "",
+		name = "战况把握",
+		id = 14160,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中，自身剩余耐久高于60%时，自身炮击提升$1，被点燃时间减少3秒；在战斗中受到伤害，导致血量低于50%时，8秒内回复自身9%耐久，每场战斗最多触发2次；在一次关卡出击中，自身所在编队的第三次战斗起，降低先锋舰队成员受到的伤害8%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[14170] = {
+		desc_get = "",
+		name = "Kirov Reporting!",
+		id = 14170,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中每15秒，有$1概率触发一轮特殊弹幕$2（威力与样式依据技能等级）；每场战斗首次触发该弹幕时，特殊弹幕将对命中的敌方角色造成特殊点燃效果，特殊点燃效果持续期间受到的伤害提高15%，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14180] = {
+		desc_get = "",
+		name = "重击冰魄",
+		id = 14180,
+		type = 3,
+		max_level = 10,
+		desc = "提升自身装备的主炮的索敌范围和射程至75，自身对轻型护甲敌人造成的伤害提高$1；战斗开始时，若队伍中含有其他北方联合阵营角色，队伍中北方联合阵营角色对敌方轻巡洋舰造成的炮击属性伤害提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[14190] = {
+		desc_get = "",
+		name = "冰击之盾",
+		id = 14190,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中每18秒，在角色正前方生成一枚护盾，护盾可阻挡8发子弹，持续8秒，若护盾在持续时间内被击破，立即触发一轮特殊弹幕$1（威力依据技能等级），并生成一枚可抵消自身耐久5%的伤害的护盾，持续4秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14200] = {
+		desc_get = "",
+		name = "冰与血之忆",
+		id = 14200,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备北方联合或铁血阵营主炮时，提高自身造成的伤害$1；自身装备穿甲弹主炮时，主炮弹药飞行速度提高10%；自身在战斗中击破2艘敌舰后，额外提升自身炮击、防空$2，每场战斗仅能触发1次（属性提升效果持续至战斗结束）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[14210] = {
+		desc_get = "",
+		name = "骁勇近卫",
+		id = 14210,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始前30秒，提高自身航速5，炮击属性提高$1；30秒后，自身机动属性提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14220] = {
+		desc_get = "",
+		name = "隐匿雷鸣",
+		id = 14220,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后每20秒，有$1概率进行一轮鱼雷攻击（与主动发射的鱼雷相同），并在3秒内回避所有攻击",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			}
+		}
+	},
+	[14230] = {
+		desc_get = "",
+		name = "不冻港之炎",
+		id = 14230,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始前45秒，自身的炮击、雷击属性提高$1；自身装备高爆弹主炮武器时，自身对战列、战巡造成的伤害提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14240] = {
+		desc_get = "",
+		name = "英雄城之姿",
+		id = 14240,
+		type = 2,
+		max_level = 10,
+		desc = "自身受到穿甲弹伤害降低$1，战斗中每20秒，有$2概率触发一轮弹幕射击$3（威力与样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"30.0%",
+				"60.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"30.0%",
+					"+3.3%"
+				},
+				{
+					"33.3%",
+					"+3.3%"
+				},
+				{
+					"36.6%",
+					"+3.3%"
+				},
+				{
+					"39.9%",
+					"+3.3%"
+				},
+				{
+					"43.2%",
+					"+3.3%"
+				},
+				{
+					"46.5%",
+					"+3.3%"
+				},
+				{
+					"49.8%",
+					"+3.3%"
+				},
+				{
+					"53.1%",
+					"+3.3%"
+				},
+				{
+					"56.4%",
+					"+3.6%"
+				},
+				{
+					"60.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14250] = {
+		desc_get = "",
+		name = "舍身救援",
+		id = 14250,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若先锋舰队有其他角色存活，自身暴击率提高$1；舰队中其他成员在战斗中受到伤害，导致耐久低于20%时，扣除自身5%耐久，回复该舰$2耐久，5秒后，回复自身8%耐久（回复效果每场战斗仅能触发一次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14260] = {
+		desc_get = "",
+		name = "满怀爱意！",
+		id = 14260,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后，自身防空、命中属性提高$1，每15秒，有$2概率触发一轮特殊弹幕$3，被特殊弹幕命中的敌方单位5秒内减速20%（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14270] = {
+		desc_get = "",
+		name = "星火之光",
+		id = 14270,
+		type = 1,
+		max_level = 10,
+		desc = "自身被点燃时间减少3秒，对轻型护甲敌人造成的伤害提高$1；战斗中每20秒，有70%概率触发，8秒内提高全队防空$2，并触发一轮特殊弹幕$3（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14280] = {
+		desc_get = "",
+		name = "喧闹之焰",
+		id = 14280,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中存在其他白鹰阵营角色，或自身在战斗中击破2艘敌舰后触发，自身雷击、防空属性提升$1，持续至战斗结束；进入战斗时，若自身装备了白鹰阵营武器或设备，额外装备一座特殊防空炮武器$2（防空炮武器威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14290] = {
+		desc_get = "",
+		name = "轻飘飘的守卫者",
+		id = 14290,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始前60秒，自身防空、机动属性提高$1；战斗开始时，若先锋舰队满编且自身处于先锋舰队中间位置，本场战斗前50秒，降低先锋舰队领舰受到的伤害$2，提高尾舰造成的伤害$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14300] = {
+		desc_get = "",
+		name = "掩护救援",
+		id = 14300,
+		type = 2,
+		max_level = 10,
+		desc = "在队伍中（存活）时，先锋舰队受到雷击伤害降低$1，主力舰队受到的航空伤害降低$2；战斗开始时，提升自身雷击属性$3，若队伍中存在{namecode:49}，额外提升自身雷击属性$4",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14310] = {
+		desc_get = "",
+		name = "引导未来的重击",
+		id = 14310,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，有$1概率触发一次弹幕射击$2（弹幕威力依据技能等级），触发失败时，随机使场上一名敌方单位在接下来的8秒内受到的伤害提高$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14320] = {
+		desc_get = "",
+		name = "撒丁帝国的威光",
+		id = 14320,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，队伍中的撒丁帝国先锋舰队角色炮击、雷击、机动属性提高$1，撒丁帝国主力舰队角色炮击、航空、命中属性提高$2；队伍中除自身外每有一个撒丁阵营角色，自身第一轮主炮加载时间缩短40%，最高叠加2层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[14330] = {
+		desc_get = "",
+		name = "驱逐永夜的晨光",
+		id = 14330,
+		type = 1,
+		max_level = 10,
+		desc = "进入战斗时，若队伍中存在其他撒丁帝国阵营角色，或自身装备穿甲弹主炮时触发，提高自身炮击属性$1；在一次关卡出击中，自身所在编队的前三次战斗，舰队成员受到的鱼雷伤害降低$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[14340] = {
+		desc_get = "",
+		name = "荣光的紫焰",
+		id = 14340,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始前60秒，自身防空、机动、命中属性提高$1；战斗中每次使用鱼雷时，有$2的概率触发一轮特殊弹幕射击（弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			}
+		}
+	},
+	[14350] = {
+		desc_get = "",
+		name = "缓慢而热烈",
+		id = 14350,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身发射的鱼雷移动速度降低1，鱼雷暴击率提高$1，暴击伤害提高$2，首轮鱼雷装填所需时间降低50%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"20.0%",
+				"40.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			}
+		}
+	},
+	[14360] = {
+		desc_get = "",
+		name = "仅仅只是轻伤！",
+		id = 14360,
+		type = 2,
+		max_level = 10,
+		desc = "自身受到的穿甲弹伤害降低$1，先锋领舰受到的鱼雷伤害降低$2；自身在战斗中受到伤害，导致血量低于30%时，为自身生成一枚护盾，并在接下来的10秒内每3秒回复自身总耐久$3的血量，护盾可阻挡5次鱼雷攻击，持续10秒（每场战斗仅能触发1次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"1.0%",
+				"3.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.3%"
+				},
+				{
+					"3.0%"
+				}
+			}
+		}
+	},
+	[14370] = {
+		desc_get = "",
+		name = "领航之箭",
+		id = 14370,
+		type = 1,
+		max_level = 10,
+		desc = "发动空袭时，有$1概率使用额外编队进行一次航空弹幕攻击（航空弹幕威力与样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[14380] = {
+		desc_get = "",
+		name = "星辰之光",
+		id = 14380,
+		type = 3,
+		max_level = 10,
+		desc = "自身2号武器栏位装备战斗机时，自身发动空袭时，分别为先锋舰队及主力舰队中当前血量百分比最低的角色回复$1耐久，并生成一枚可以抵消被回复单位$2自身耐久的护盾，持续5秒；2号武器栏位装备轰炸机时，战斗开始时将直接完成1次空中支援加载，战斗中自身空中支援加载所需时间减少10%，自身造成的伤害提高$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[14390] = {
+		desc_get = "",
+		name = "精巧防御",
+		id = 14390,
+		type = 2,
+		max_level = 10,
+		desc = "自身在战斗中受到的伤害降低$1，自身舰载机每击落3架敌机时，所有舰队成员防空属性提高$2，最高叠加3层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[14400] = {
+		desc_get = "",
+		name = "陆间海的西北风",
+		id = 14400,
+		type = 2,
+		max_level = 10,
+		desc = "舰队中其他成员在战斗中受到伤害时有30%概率使用烟雾弹并提升队伍中撒丁帝国阵营角色机动$1，持续5秒，处于烟幕中的角色回避率提高$2，持续5秒（回避率提升效果与【烟雾弹】技能不叠加）该效果每15秒最多触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"20.0%",
+				"40.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			}
+		}
+	},
+	[14410] = {
+		desc_get = "",
+		name = "乘风破浪西北风",
+		id = 14410,
+		type = 1,
+		max_level = 10,
+		desc = "航速提高5，若队伍中含有其他撒丁帝国阵营角色，自身炮击、雷击提升$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14420] = {
+		desc_get = "",
+		name = "陆间海的西南风",
+		id = 14420,
+		type = 1,
+		max_level = 10,
+		desc = "舰队中其他成员在战斗中受到伤害时有30%概率发射一轮特殊弹幕$1(威力和弹幕样式根据技能等级)；该效果每15秒最多触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14430] = {
+		desc_get = "",
+		name = "迎风踏浪西南风",
+		id = 14430,
+		type = 2,
+		max_level = 10,
+		desc = "航速提高5，若队伍中含有其他撒丁帝国阵营角色，自身防空、机动提升$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14440] = {
+		desc_get = "",
+		name = "扬帆起航",
+		id = 14440,
+		type = 2,
+		max_level = 10,
+		desc = "自身所在编队的前三次战斗中，自身防空、机动提高$1，自身航速提高5；在一次关卡出击中，自身所在编队每击破一个敌方编队，战斗中自身炮击、雷击、装填提高$2，最高叠加3层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"0.5%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"0.5%",
+					"+0.5%"
+				},
+				{
+					"1.0%",
+					"+0.5%"
+				},
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[14450] = {
+		desc_get = "",
+		name = "勇往直前",
+		id = 14450,
+		type = 3,
+		max_level = 10,
+		desc = "自身受到伤害提高1.0%，在队伍中（存活）时，敌方所有轻巡洋舰受到的伤害提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[14460] = {
+		desc_get = "",
+		name = "背水一战",
+		id = 14460,
+		type = 1,
+		max_level = 10,
+		desc = "对驱逐舰造成的伤害提高$1；自身氧气不足浮上水面时，自身受到伤害降低$2，并发射一组特殊弹幕$3(威力依据技能等级)",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14470] = {
+		desc_get = "",
+		name = "随机应变",
+		id = 14470,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，若先锋舰队中所有存活角色自身剩余耐久高于50%，则触发一轮弹幕$1(威力依据技能等级)，否则为先锋领舰生成一枚可阻挡6枚子弹的护盾，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14480] = {
+		desc_get = "",
+		name = "未雨绸缪",
+		id = 14480,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备高爆弹主炮时，自身攻击造成的起火伤害提高$1；自身装备穿甲弹主炮时，战斗开始后每20秒发射一轮鱼雷弹幕$2(威力和样式依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14490] = {
+		desc_get = "",
+		name = "小熊的庇护",
+		id = 14490,
+		type = 2,
+		max_level = 10,
+		desc = "降低自身的被点燃时间3秒；战斗中，自身每击破一艘敌舰提升自身防空$1和炮击$2并提升全队反潜$3，最高叠加5层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.5%",
+				"6.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"1.0%",
+				"4.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.3%"
+				},
+				{
+					"1.3%",
+					"+0.3%"
+				},
+				{
+					"1.6%",
+					"+0.4%"
+				},
+				{
+					"2.0%",
+					"+0.3%"
+				},
+				{
+					"2.3%",
+					"+0.3%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.3%"
+				},
+				{
+					"3.3%",
+					"+0.3%"
+				},
+				{
+					"3.6%",
+					"+0.4%"
+				},
+				{
+					"4.0%"
+				}
+			}
+		}
+	},
+	[14500] = {
+		desc_get = "",
+		name = "Little Luckye",
+		id = 14500,
+		type = 1,
+		max_level = 10,
+		desc = [[
+自身空中支援准备完毕时有$1的概率随机发动以下三种效果中的一种：
+①接下来的6秒内造成双倍伤害
+②自身回避所有伤害持续5秒
+③在场敌方单位在4秒内减速$2]],
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"70.0%",
+				"100.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"70.0%",
+					"+3.3%"
+				},
+				{
+					"73.3%",
+					"+3.3%"
+				},
+				{
+					"76.6%",
+					"+3.3%"
+				},
+				{
+					"79.9%",
+					"+3.3%"
+				},
+				{
+					"83.2%",
+					"+3.3%"
+				},
+				{
+					"86.5%",
+					"+3.3%"
+				},
+				{
+					"89.8%",
+					"+3.3%"
+				},
+				{
+					"93.1%",
+					"+3.3%"
+				},
+				{
+					"96.4%",
+					"+3.6%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[14510] = {
+		desc_get = "",
+		name = "吐息之焰",
+		id = 14510,
+		type = 1,
+		max_level = 10,
+		desc = "自身主炮开火时，有$1概率触发一轮特殊弹幕$2（该弹幕必定暴击，不受站位影响，威力依据技能等级），战斗开始后10秒额外触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14520] = {
+		desc_get = "",
+		name = "领向自由的炮火",
+		id = 14520,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备的主炮散布范围降低$1点；关卡海域内其他编队进入战斗时，若自身存活，战斗开始后20秒发动一轮支援弹幕$2（弹幕威力依据技能等级），若该编队旗舰为白鹰阵营角色，提高该队伍中所有白鹰阵营正航、轻航的航空属性$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"0.5",
+				"5"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"0.5",
+					"+0.5"
+				},
+				{
+					"1",
+					"+0.5"
+				},
+				{
+					"1.5",
+					"+0.5"
+				},
+				{
+					"2",
+					"+0.5"
+				},
+				{
+					"2.5",
+					"+0.5"
+				},
+				{
+					"3",
+					"+0.5"
+				},
+				{
+					"3.5",
+					"+0.5"
+				},
+				{
+					"4",
+					"+0.5"
+				},
+				{
+					"4.5",
+					"+0.5"
+				},
+				{
+					"5"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14530] = {
+		desc_get = "",
+		name = "Big J",
+		id = 14530,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时提升自身炮击$1、装填$2；若队伍中存在其他白鹰阵营角色，队伍中白鹰阵营角色防空属性提高$3，受到的伤害降低5%，队伍中白鹰阵营战列、战巡的炮击属性提高$4",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14540] = {
+		desc_get = "",
+		name = "流火之翼",
+		id = 14540,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空袭时，额外发动一轮特殊航空弹幕$1（威力和样式依据技能等级），该弹幕有概率对命中的敌方角色造成特殊点燃效果（伤害依据航空属性）；",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14550] = {
+		desc_get = "",
+		name = "航空装甲",
+		id = 14550,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中前$1次受到的伤害降低$2；战斗开始后，为先锋领舰生成一枚可以阻挡6发子弹的护盾，持续8秒，每隔20秒再次生成该护盾",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"2",
+				"4"
+			},
+			{
+				"30.0%",
+				"60.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"4"
+				},
+				{
+					"4"
+				}
+			},
+			{
+				{
+					"30.0%",
+					"+3.3%"
+				},
+				{
+					"33.3%",
+					"+3.3%"
+				},
+				{
+					"36.6%",
+					"+3.3%"
+				},
+				{
+					"39.9%",
+					"+3.3%"
+				},
+				{
+					"43.2%",
+					"+3.3%"
+				},
+				{
+					"46.5%",
+					"+3.3%"
+				},
+				{
+					"49.8%",
+					"+3.3%"
+				},
+				{
+					"53.1%",
+					"+3.3%"
+				},
+				{
+					"56.4%",
+					"+3.6%"
+				},
+				{
+					"60.0%"
+				}
+			}
+		}
+	},
+	[14560] = {
+		desc_get = "",
+		name = "编队掩护",
+		id = 14560,
+		type = 3,
+		max_level = 10,
+		desc = "自身航空提高$1；队伍中有两名及以上的航母或轻航角色，降低旗舰受到的伤害$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14570] = {
+		desc_get = "",
+		name = "星光连打",
+		id = 14570,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每10秒，有$1概率触发一轮特殊弹幕$2（威力依据技能等级），触发失败时，5秒内提升自身防空、命中属性$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14580] = {
+		desc_get = "",
+		name = "久经沙场",
+		id = 14580,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提升自身机动、防空$1；进入战斗时，若自身为先锋领舰，额外提升自身机动、防空属性$2，自身在战斗中受到的伤害降低$3；\n若先锋舰队有3名角色且自身处于先锋舰队中间位置，战斗开始后20秒，回复所有先锋舰队角色$4耐久；\n若自身处于先锋舰队尾部，且先锋舰队多于1人时，提高自身炮击$3、防空$1，先锋舰队成员造成的伤害提高5%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14590] = {
+		desc_get = "",
+		name = "鱼群之光",
+		id = 14590,
+		type = 3,
+		max_level = 10,
+		desc = "自身对重型护甲敌人造成的伤害提高$1，与其他白鹰潜艇共同出击时，队伍中白鹰阵营潜艇暴击伤害提高$2，雷击、命中属性提高$3",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[14600] = {
+		desc_get = "",
+		name = "射手的赠礼",
+		id = 14600,
+		type = 1,
+		max_level = 10,
+		desc = "自身氧气存量额外提高$1；战斗中，自身氧气不足上浮及从战场撤离时，发射一轮鱼雷弹幕$2(威力和样式依据技能等级)",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"2",
+				"20"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"2",
+					"+2"
+				},
+				{
+					"4",
+					"+2"
+				},
+				{
+					"6",
+					"+2"
+				},
+				{
+					"8",
+					"+2"
+				},
+				{
+					"10",
+					"+2"
+				},
+				{
+					"12",
+					"+2"
+				},
+				{
+					"14",
+					"+2"
+				},
+				{
+					"16",
+					"+2"
+				},
+				{
+					"18",
+					"+2"
+				},
+				{
+					"20"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14610] = {
+		desc_get = "",
+		name = "瞄准最大的！",
+		id = 14610,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，触发一轮特殊弹幕$1（威力依据技能等级）；自身暴击率提高$2，对重型护甲敌人的伤害提高$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14620] = {
+		desc_get = "",
+		name = "沉稳抉择",
+		id = 14620,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身血量高于45%时，提高自身炮击、防空属性$1，血量低于45%时，自身受到点燃伤害降低$2；在战斗中受到伤害，导致血量低于30%时，恢复自身$3的耐久，恢复耐久效果每场战斗最多触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14630] = {
+		desc_get = "",
+		name = "空域辅助·独立",
+		id = 14630,
+		type = 3,
+		max_level = 10,
+		desc = "本场战斗中由【天之骑士】技能触发的弹幕获得额外强化，并触发【空域辅助】技能效果：自身所在编队进入战斗时，若自身存活，提升队伍中所有正航、轻航的航空$1、装填$2，自身舰载机的第一轮空中支援加载时间缩短$3；关卡海域内其他编队进入战斗时，若自身存活，提升该队伍中所有正航、轻航的航空$4、装填$4（技能效果与【空域辅助】技能不叠加）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"10.0%",
+				"25.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.8%"
+				},
+				{
+					"5.3%",
+					"+0.8%"
+				},
+				{
+					"6.1%",
+					"+0.9%"
+				},
+				{
+					"7.0%",
+					"+0.8%"
+				},
+				{
+					"7.8%",
+					"+0.8%"
+				},
+				{
+					"8.6%",
+					"+0.9%"
+				},
+				{
+					"9.5%",
+					"+0.8%"
+				},
+				{
+					"10.3%",
+					"+0.8%"
+				},
+				{
+					"11.1%",
+					"+0.9%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.5%"
+				},
+				{
+					"11.5%",
+					"+1.5%"
+				},
+				{
+					"13%",
+					"+1.5%"
+				},
+				{
+					"14.5%",
+					"+1.6%"
+				},
+				{
+					"16.1%",
+					"+1.6%"
+				},
+				{
+					"17.7%",
+					"+1.7%"
+				},
+				{
+					"19.4%",
+					"+1.8%"
+				},
+				{
+					"21.2%",
+					"+1.8%"
+				},
+				{
+					"23%",
+					"+2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[14640] = {
+		desc_get = "",
+		name = "新泽西跨队BUFFID占用",
+		id = 14640,
+		type = 3,
+		max_level = 10,
+		desc = "新泽西跨队BUFFID占用-14520-14640",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[14650] = {
+		desc_get = "",
+		name = "协同作战",
+		id = 14650,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提高自身雷击$1，若先锋舰队有其他角色存活，提升所有先锋舰队成员炮击、命中$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14660] = {
+		desc_get = "",
+		name = "水雷先锋",
+		id = 14660,
+		type = 1,
+		max_level = 10,
+		desc = "自身对驱逐舰伤害提高$1；每次使用鱼雷时有$2的概率再次发射一轮",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[14670] = {
+		desc_get = "",
+		name = "鱼雷！蓄势待发",
+		id = 14670,
+		type = 1,
+		max_level = 10,
+		desc = "出击时，自身雷击提升$1、装填提升$2；每次触发【专属弹幕-枟】会使自身当前鱼雷装填时间减少$3秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0",
+				"3.0"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0",
+					"+0.2"
+				},
+				{
+					"1.2",
+					"+0.2"
+				},
+				{
+					"1.4",
+					"+0.2"
+				},
+				{
+					"1.6",
+					"+0.2"
+				},
+				{
+					"1.8",
+					"+0.2"
+				},
+				{
+					"2.0",
+					"+0.2"
+				},
+				{
+					"2.2",
+					"+0.2"
+				},
+				{
+					"2.4",
+					"+0.3"
+				},
+				{
+					"2.7",
+					"+0.3"
+				},
+				{
+					"3.0"
+				}
+			}
+		}
+	},
+	[14680] = {
+		desc_get = "",
+		name = "空袭引导-{namecode:203}",
+		id = 14680,
+		type = 3,
+		max_level = 10,
+		desc = "在队伍中(存活)时增加轻航、正航空袭造成的伤害$1，该增伤效果与【空袭引导】效果不叠加；当自身第4次使用鱼雷时，使场上存活的耐久百分比最低的我方正航或轻航角色回复$2耐久，若此时旗舰为正航，同时为该航母回复其耐久$3。耐久回复效果每场战斗仅可触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[14700] = {
+		desc_get = "",
+		name = "霞光之绊·改",
+		id = 14700,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，若先锋舰队中自身以外的的伙伴数量不少于2，我方先锋舰队重樱阵营角色的雷击属性提高$1，战斗中自身受到的伤害降低5%，战斗开始后每20秒，有$2概率触发一轮特殊弹幕$3(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[14710] = {
+		desc_get = "",
+		name = "破灭枪弹",
+		id = 14710,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始后每20秒，发动一轮由特殊子弹及剑鱼鱼雷机组成的特殊弹幕$1（威力及样式依据技能等级），弹幕中的特殊子弹会使命中的敌人在5秒内防空属性降低8%，并使其在8秒内受到驱逐舰及先锋舰队中皇家阵营角色造成的伤害提高$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[14720] = {
+		desc_get = "",
+		name = "Assist Robot",
+		id = 14720,
+		type = 1,
+		max_level = 10,
+		desc = [[
+战斗开始后每20秒召唤特殊兵装，持续10秒，战斗开始后3秒额外召唤一次，并获得以下效果：
+①生成两面可阻挡10枚子弹的屏障，持续5秒，并发射一轮弹幕$1(技能弹幕威力依据技能等级)
+②召唤时先锋舰队中血量百分比最低的角色在未来的10秒内，每3秒恢复自身0.5%的耐久
+③特殊兵装存在期间，全队防空提高$2]],
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14730] = {
+		desc_get = "",
+		name = "战场技师",
+		id = 14730,
+		type = 2,
+		max_level = 10,
+		desc = "自身防空提高，提高量为自身基础(面板+装备)雷击值的$1，自身受到的点燃伤害降低$2，每15秒缓慢恢复自身耐久1.0%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[14740] = {
+		desc_get = "",
+		name = "莽撞的鹦鹉螺",
+		id = 14740,
+		type = 2,
+		max_level = 10,
+		desc = "开始战斗后鹦鹉螺向前移动一段距离，然后上浮一段时间并发射一轮特殊弹幕Ⅰ$1(威力根据技能等级)，期间受到的伤害减少$2，之后下潜撤退回原位，并触发一轮特殊弹幕Ⅱ$1(威力根据技能等级)。",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"20%",
+				"60%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+4.4%"
+				},
+				{
+					"24.4%",
+					"+4.4%"
+				},
+				{
+					"28.8%",
+					"+4.4%"
+				},
+				{
+					"33.2%",
+					"+4.4%"
+				},
+				{
+					"37.6%",
+					"+4.4%"
+				},
+				{
+					"42.0%",
+					"+4.4%"
+				},
+				{
+					"46.4%",
+					"+4.4%"
+				},
+				{
+					"50.8%",
+					"+4.4%"
+				},
+				{
+					"55.2%",
+					"+4.8%"
+				},
+				{
+					"60.0%"
+				}
+			}
+		}
+	},
+	[14750] = {
+		desc_get = "",
+		name = "以身诱敌",
+		id = 14750,
+		type = 3,
+		max_level = 10,
+		desc = "对鹦鹉螺号造成伤害的敌方单位受到的伤害上升$1，持续3秒；若该敌方单位为驱逐舰，则额外减速该敌方单位$2，持续5秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
 	[18010] = {
 		desc_get = "",
 		name = "MKV型穿甲弹 +",
-		desc = "穿甲弹伤害提高$1",
+		id = 18010,
 		type = 1,
 		max_level = 10,
-		id = 18010,
+		desc = "穿甲弹伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -29091,11 +52395,14 @@ pg.skill_data_template = {
 	[18040] = {
 		desc_get = "",
 		name = "底力爆发 +",
-		desc = "每损失1%耐久提升装填$1点；耐久低于20%时，10秒内恢复自身最大耐久的15%，该效果每场战斗仅触发一次",
+		id = 18040,
 		type = 2,
 		max_level = 10,
-		id = 18040,
+		desc = "每损失1%耐久提升装填$1点；耐久低于20%时，10秒内恢复自身最大耐久的15%，该效果每场战斗仅触发一次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"0.6",
@@ -29149,11 +52456,14 @@ pg.skill_data_template = {
 	[18050] = {
 		desc_get = "",
 		name = "心神合一 +",
-		desc = "鱼雷暴击率提高$1，暴击伤害提高65.0%；发射鱼雷时提高自身机动$2，持续6秒",
+		id = 18050,
 		type = 1,
 		max_level = 10,
-		id = 18050,
+		desc = "鱼雷暴击率提高$1，暴击伤害提高65.0%；发射鱼雷时提高自身机动$2，持续6秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -29252,12 +52562,15 @@ pg.skill_data_template = {
 	[18070] = {
 		desc_get = "",
 		name = "神话之传承 +",
-		desc = "主炮开火时，有$1的概率朝自己前方发射一轮专属弹幕.改(威力和弹幕样式依据技能等级)",
+		id = 18070,
 		type = 1,
 		max_level = 10,
-		id = 18070,
+		desc = "主炮开火时，有$1的概率朝自己前方发射一轮专属弹幕.改(威力和弹幕样式依据技能等级)",
 		system_transform = {
 			[3.0] = 18071
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -29312,11 +52625,14 @@ pg.skill_data_template = {
 	[18100] = {
 		desc_get = "战斗开始时，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续<color=#92fc63FF>5</color>秒(满级<color=#92fc63FF>15</color>秒)，每隔30秒再次生成该护盾",
 		name = "全方位装甲 +",
-		desc = "战斗开始时，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续$1秒，每隔30秒再次生成该护盾",
+		id = 18100,
 		type = 2,
 		max_level = 10,
-		id = 18100,
+		desc = "战斗开始时，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续$1秒，每隔30秒再次生成该护盾",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -29365,11 +52681,14 @@ pg.skill_data_template = {
 	[18120] = {
 		desc_get = "增加<color=#92fc63FF>3</color>点(满级<color=#92fc63FF>8</color>点)航速，战斗开始时，机动属性提高<color=#92fc63FF>15%</color>(满级<color=#92fc63FF>35%</color>)，持续50秒",
 		name = "Engine boost +",
-		desc = "增加$1点航速；战斗开始时，机动属性提高$2，持续50秒",
+		id = 18120,
 		type = 2,
 		max_level = 10,
-		id = 18120,
+		desc = "增加$1点航速；战斗开始时，机动属性提高$2，持续50秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -29456,47 +52775,979 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[18130] = {
+		desc_get = "",
+		name = "飞行NG! +",
+		id = 18130,
+		type = 2,
+		max_level = 10,
+		desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加，若制空状态不为制空权劣势或制空权丧失，本效果战斗开始时直接触发并常驻；总计击落敌方15架飞机时，额外提升自身炮击、装填$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.9%"
+				},
+				{
+					"5.9%",
+					"+0.9%"
+				},
+				{
+					"6.8%",
+					"+1.2%"
+				},
+				{
+					"8.0%",
+					"+0.9%"
+				},
+				{
+					"8.9%",
+					"+0.9%"
+				},
+				{
+					"9.8%",
+					"+1.2%"
+				},
+				{
+					"11.0%",
+					"+1.2%"
+				},
+				{
+					"12.2%",
+					"+1.2%"
+				},
+				{
+					"13.4%",
+					"+1.6%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[18150] = {
+		desc_get = "",
+		name = "Iron Sight Caliber +",
+		id = 18150,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备的主炮散布范围降低3点，对重巡、超巡、战巡、战列、航战伤害额外提升$1，对轻航、正航伤害额外提升$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[18180] = {
+		desc_get = "",
+		name = "{namecode:164}流·六莲雷 +",
+		id = 18180,
+		type = 1,
+		max_level = 10,
+		desc = "开场10秒后，降低自身受到的伤害$2，持续50秒，并触发一轮增强型特殊弹幕($1)，自身装备的鱼雷武器每命中8颗，额外触发一轮该弹幕",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[18250] = {
+		desc_get = "",
+		name = "感知抑制模块 +",
+		id = 18250,
+		type = 2,
+		max_level = 10,
+		desc = "进入战斗时，若自身剩余血量大于50%，自身防空提升$2并强化本场战斗中由【精密操作协议】技能触发的弹幕；在战斗中受伤，导致血量低于50%，提升自身机动$1，并在8秒内回复8%血量，最多触发两次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[18270] = {
+		desc_get = "",
+		name = "柴郡PowerUp！ +",
+		id = 18270,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身前两轮鱼雷装填所需时间降低$1；自身受到攻击时，有15%的概率触发，提升自身炮击、机动、防空$2（属性提升效果最高叠加3次）;自身血量高于80%时，提高自身造成的鱼雷伤害$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.4%"
+				},
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.4%"
+				},
+				{
+					"60.0%",
+					"+3.3%"
+				},
+				{
+					"63.3%",
+					"+3.3%"
+				},
+				{
+					"66.6%",
+					"+3.4%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[18320] = {
+		desc_get = "",
+		name = "「Ausgewogen」 +",
+		id = 18320,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，自身航速提高5，机动提升$1，60秒内自身受到的伤害降低$2，战斗中自身暴击伤害上升$3，每15秒，有$4的概率触发一轮弹幕攻击(弹幕形态强化，威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"25.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.4%"
+				},
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.4%"
+				},
+				{
+					"60.0%",
+					"+3.3%"
+				},
+				{
+					"63.3%",
+					"+3.3%"
+				},
+				{
+					"66.6%",
+					"+3.4%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[18340] = {
+		desc_get = "",
+		name = "贯穿之轰雷 +",
+		id = 18340,
+		type = 1,
+		max_level = 10,
+		desc = "优化自身发射的鱼雷散布形态；战斗开始后每18秒，有$1概率触发一轮特殊弹幕(弹幕形态强化，弹幕中的所有子弹无视盾牌阻挡，弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[18350] = {
+		desc_get = "",
+		name = "辅助机构「S.P.」 +",
+		id = 18350,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中主炮装填所需时间减少$1，主炮开火时，追加一轮伴随射击弹幕$2（威力增强，形态不受站位影响）；战斗中每20秒，触发一次特殊弹幕射击.改$2(技能弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
 	[19000] = {
 		desc_get = "",
 		name = "塞壬之敌I",
-		desc = "对塞壬阵营敌人的伤害提高5%",
+		id = 19000,
 		type = 1,
 		max_level = 1,
-		id = 19000,
+		desc = "对塞壬阵营敌人的伤害提高5%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[19001] = {
 		desc_get = "",
 		name = "塞壬之敌II",
-		desc = "对塞壬阵营敌人的伤害提高10%",
+		id = 19001,
 		type = 1,
 		max_level = 1,
-		id = 19001,
+		desc = "对塞壬阵营敌人的伤害提高10%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[19002] = {
 		desc_get = "",
 		name = "塞壬之敌III",
-		desc = "对塞壬阵营敌人的伤害提高15%",
+		id = 19002,
 		type = 1,
 		max_level = 1,
-		id = 19002,
+		desc = "对塞壬阵营敌人的伤害提高15%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[19010] = {
 		desc_get = "",
 		name = "MKV型穿甲弹",
-		desc = "穿甲弹伤害提高$1",
+		id = 19010,
 		type = 1,
 		max_level = 10,
-		id = 19010,
+		desc = "穿甲弹伤害提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -29550,11 +53801,14 @@ pg.skill_data_template = {
 	[19020] = {
 		desc_get = "",
 		name = "海之女神",
-		desc = "耐久低于20%时，恢复总耐久度$1的耐久，技能触发后装填提高30%，持续至战斗结束，每场战斗只能发动1次",
+		id = 19020,
 		type = 2,
 		max_level = 10,
-		id = 19020,
+		desc = "在战斗中受到伤害，导致耐久低于20%时，恢复总耐久度$1的耐久，技能触发后装填提高30%，持续至战斗结束，每场战斗只能发动1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -29608,12 +53862,15 @@ pg.skill_data_template = {
 	[19030] = {
 		desc_get = "",
 		name = "君王之睥睨 ",
-		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力和弹幕样式依据技能等级)，命中敌人造成减速$2，持续6秒",
+		id = 19030,
 		type = 1,
 		max_level = 10,
-		id = 19030,
+		desc = "主炮开火时，有$1概率朝自己前方发射一轮专属弹幕(威力和弹幕样式依据技能等级)，命中敌人造成减速$2，持续6秒",
 		system_transform = {
 			[3.0] = 19031
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -29713,11 +53970,14 @@ pg.skill_data_template = {
 	[19040] = {
 		desc_get = "",
 		name = "底力爆发",
-		desc = "每损失1%耐久提升装填$1点；耐久低于20%时，8秒内恢复自身最大耐久的12%，该效果每场战斗仅触发一次",
+		id = 19040,
 		type = 2,
 		max_level = 10,
-		id = 19040,
+		desc = "每损失1%耐久提升装填$1点；耐久低于20%时，8秒内恢复自身最大耐久的12%，该效果每场战斗仅触发一次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"0.6",
@@ -29771,11 +54031,14 @@ pg.skill_data_template = {
 	[19050] = {
 		desc_get = "",
 		name = "心神合一",
-		desc = "鱼雷暴击率提高$1，暴击伤害提高65.0%",
+		id = 19050,
 		type = 1,
 		max_level = 10,
-		id = 19050,
+		desc = "鱼雷暴击率提高$1，暴击伤害提高65.0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20.0%",
@@ -29829,11 +54092,14 @@ pg.skill_data_template = {
 	[19060] = {
 		desc_get = "",
 		name = "一闪",
-		desc = "每次使用鱼雷时有$1的概率发射一轮特殊鱼雷弹幕(威力和弹幕样式依据技能等级)",
+		id = 19060,
 		type = 1,
 		max_level = 10,
-		id = 19060,
+		desc = "每次使用鱼雷时有$1的概率发射一轮特殊鱼雷弹幕(威力和弹幕样式依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -29887,11 +54153,14 @@ pg.skill_data_template = {
 	[19070] = {
 		desc_get = "",
 		name = "神话之传承",
-		desc = "主炮开火时，有$1的概率朝自己前方发射一轮专属弹幕(威力和弹幕样式依据技能等级)",
+		id = 19070,
 		type = 1,
 		max_level = 10,
-		id = 19070,
+		desc = "主炮开火时，有$1的概率朝自己前方发射一轮专属弹幕(威力和弹幕样式依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -29945,11 +54214,14 @@ pg.skill_data_template = {
 	[19080] = {
 		desc_get = "",
 		name = "特殊护甲",
-		desc = "被攻击时，自身被点燃几率略微提高(根据被弹口径不同，最高6%)，被点燃时间延长3秒，受到穿甲弹的伤害降低$1",
+		id = 19080,
 		type = 2,
 		max_level = 10,
-		id = 19080,
+		desc = "被攻击时，自身被点燃几率略微提高(根据被弹口径不同，最高6%)，被点燃时间延长3秒，受到穿甲弹的伤害降低$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15%",
@@ -30003,11 +54275,14 @@ pg.skill_data_template = {
 	[19090] = {
 		desc_get = "",
 		name = "专业装填手",
-		desc = "主炮每进行一轮炮击，装填提升$1，最多叠加12层；主炮每进行2轮炮击后，会切换当前主武器的弹药种类(第一轮炮弹为高爆弹，之后在高爆和穿甲间切换)",
+		id = 19090,
 		type = 1,
 		max_level = 10,
-		id = 19090,
+		desc = "主炮每进行一轮炮击，装填提升$1，最多叠加12层；主炮每进行2轮炮击后，会切换当前主武器的弹药种类(第一轮炮弹为高爆弹，之后在高爆和穿甲间切换)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.0%",
@@ -30061,11 +54336,14 @@ pg.skill_data_template = {
 	[19100] = {
 		desc_get = "每隔30秒，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续5秒(满级15秒)",
 		name = "全方位装甲",
-		desc = "每隔30秒，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续$1秒",
+		id = 19100,
 		type = 2,
 		max_level = 10,
-		id = 19100,
+		desc = "每隔30秒，生成4面旋转的护盾，每个护盾阻挡8发子弹，护盾持续$1秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -30114,11 +54392,14 @@ pg.skill_data_template = {
 	[19110] = {
 		desc_get = "",
 		name = "高爆穿甲弹",
-		desc = "提高高爆弹造成的伤害$1，高爆弹造成起火概率降低3%",
+		id = 19110,
 		type = 1,
 		max_level = 10,
-		id = 19110,
+		desc = "提高高爆弹造成的伤害$1，高爆弹造成起火概率降低3%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -30172,11 +54453,14 @@ pg.skill_data_template = {
 	[19120] = {
 		desc_get = "增加3点(满级8点)航速，战斗开始时，机动属性提高15%(满级35%)，持续40秒",
 		name = "Engine boost",
-		desc = "增加$1点航速；战斗开始时，机动属性提高$2，持续40秒",
+		id = 19120,
 		type = 2,
 		max_level = 10,
-		id = 19120,
+		desc = "增加$1点航速；战斗开始时，机动属性提高$2，持续40秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -30266,11 +54550,14 @@ pg.skill_data_template = {
 	[19130] = {
 		desc_get = "",
 		name = "飞行NG!",
-		desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加。总计击落敌方15架飞机时，额外提升自身炮击$1、装填$2",
+		id = 19130,
 		type = 2,
 		max_level = 10,
-		id = 19130,
+		desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加。总计击落敌方15架飞机时，额外提升自身炮击$1、装填$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -30369,11 +54656,14 @@ pg.skill_data_template = {
 	[19140] = {
 		desc_get = "",
 		name = "两手准备",
-		desc = "副武器栏装备主炮时，提升自身防空炮效率$1；副武器栏装备防空炮时，提升自身主炮效率$2；处于先锋舰队尾部时，自身受到的伤害减少$3",
+		id = 19140,
 		type = 3,
 		max_level = 10,
-		id = 19140,
+		desc = "副武器栏装备主炮时，提升自身防空炮效率$1；副武器栏装备防空炮时，提升自身主炮效率$2；处于先锋舰队尾部时，自身受到的伤害减少$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -30517,11 +54807,14 @@ pg.skill_data_template = {
 	[19150] = {
 		desc_get = "",
 		name = "Iron Sight Caliber",
-		desc = "自身装备的主炮散布范围降低3点，对重巡、超巡、战巡、战列、航战伤害额外提升$1",
+		id = 19150,
 		type = 3,
 		max_level = 10,
-		id = 19150,
+		desc = "自身装备的主炮散布范围降低3点，对重巡、超巡、战巡、战列、航战伤害额外提升$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -30575,12 +54868,15 @@ pg.skill_data_template = {
 	[19160] = {
 		desc_get = "",
 		name = "Heavy Barrel Blaster",
-		desc = "主炮开火时，有$1的概率触发一轮特殊弹幕(该弹幕必定暴击，威力依据技能等级)",
+		id = 19160,
 		type = 1,
 		max_level = 10,
-		id = 19160,
+		desc = "主炮开火时，有$1的概率触发一轮特殊弹幕(该弹幕必定暴击，威力依据技能等级)",
 		system_transform = {
 			[3.0] = 19161
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -30635,11 +54931,14 @@ pg.skill_data_template = {
 	[19170] = {
 		desc_get = "",
 		name = "{namecode:164}流·一致斩",
-		desc = "所有主炮弹药不受装甲类型影响(仅对主炮生效)，主炮所有弹药伤害随技能等级提高而提高($1)，装备重樱驱逐主炮时，额外提升主炮效率$2",
+		id = 19170,
 		type = 3,
 		max_level = 10,
-		id = 19170,
+		desc = "所有主炮弹药不受装甲类型影响(仅对主炮生效)，主炮所有弹药伤害随技能等级提高而提高($1)，装备重樱驱逐主炮时，额外提升主炮效率$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -30729,11 +55028,14 @@ pg.skill_data_template = {
 	[19180] = {
 		desc_get = "",
 		name = "{namecode:164}流·六莲雷",
-		desc = "作为先锋领舰出击时，开场10秒后触发一轮特殊鱼雷弹幕($1)；自身装备的鱼雷武器每命中10颗，额外触发一轮该弹幕",
+		id = 19180,
 		type = 1,
 		max_level = 10,
-		id = 19180,
+		desc = "作为先锋领舰出击时，开场10秒后触发一轮特殊鱼雷弹幕($1)；自身装备的鱼雷武器每命中10颗，额外触发一轮该弹幕",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -30778,11 +55080,14 @@ pg.skill_data_template = {
 	[19190] = {
 		desc_get = "",
 		name = "怒火连峰",
-		desc = "自身装备的大口径重巡主炮炮弹命中目标时，根据飞行距离提高炮弹伤害，最高提高$1；起火伤害提高$2 ",
+		id = 19190,
 		type = 1,
 		max_level = 10,
-		id = 19190,
+		desc = "自身装备的大口径重巡主炮炮弹命中目标时，根据飞行距离提高炮弹伤害，最高提高$1；起火伤害提高$2 ",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -30881,11 +55186,14 @@ pg.skill_data_template = {
 	[19200] = {
 		desc_get = "",
 		name = "战场嗅觉",
-		desc = "每20秒，有$1概率触发，12秒内提升自身机动$2、命中$3",
+		id = 19200,
 		type = 2,
 		max_level = 10,
-		id = 19200,
+		desc = "每20秒，有$1概率触发，12秒内提升自身机动$2、命中$3",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -31029,11 +55337,14 @@ pg.skill_data_template = {
 	[19210] = {
 		desc_get = "",
 		name = "特殊炮击训练",
-		desc = "主炮每进行8次射击，触发一轮特殊弹幕；使用【试作型三联装310mm主炮】时，增加$1主炮效率，触发弹幕所需射击次数降低为4次，并强化特殊弹幕样式",
+		id = 19210,
 		type = 1,
 		max_level = 10,
-		id = 19210,
+		desc = "主炮每进行8次射击，触发一轮特殊弹幕；使用【试作型三联装310mm主炮】时，增加$1主炮效率，触发弹幕所需射击次数降低为4次，并强化特殊弹幕样式",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -31087,12 +55398,15 @@ pg.skill_data_template = {
 	[19220] = {
 		desc_get = "",
 		name = "破坏的交响曲",
-		desc = "当自身受到伤害，或敌方进入防卫射程时，触发一轮无视装甲类型的副炮弹幕$1(威力随技能等级提升)，触发后进入15秒冷却",
+		id = 19220,
 		type = 1,
 		max_level = 10,
-		id = 19220,
+		desc = "当自身受到伤害，或敌方进入防卫射程时，触发一轮无视装甲类型的副炮弹幕$1(威力随技能等级提升)，触发后进入15秒冷却",
 		system_transform = {
 			[3.0] = 19221
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -31138,11 +55452,14 @@ pg.skill_data_template = {
 	[19230] = {
 		desc_get = "",
 		name = "混沌的奏鸣曲",
-		desc = "战斗中，奇数次主炮齐射时提升自身装填$1及伤害$2，偶数次主炮齐射时提升自身暴击率$2、暴击伤害$1；各增益效果均持续至下一次自身主炮齐射为止",
+		id = 19230,
 		type = 1,
 		max_level = 10,
-		id = 19230,
+		desc = "战斗中，奇数次主炮齐射时提升自身装填$1及伤害$2，偶数次主炮齐射时提升自身暴击率$2、暴击伤害$1；各增益效果均持续至下一次自身主炮齐射为止",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -31239,26 +55556,25 @@ pg.skill_data_template = {
 		}
 	},
 	[19240] = {
-		{
-			{
-				"4.0%",
-				"10.0%"
-			}
+		desc_get = "",
+		name = "暗黑的狂想曲",
+		id = 19240,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身剩余血量在70~100%之间时，自身炮击提升$1；血量在30~70%之间时，自身炮击提升$2，受到的伤害降低$2；血量低于30%时，自身受到的伤害降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
 		},
-		{
+		desc_get_add = {
 			{
 				"10.0%",
 				"20.0%"
-			}
-		},
-		desc_get = "",
-		name = "暗黑的狂想曲",
-		desc = "战斗中，自身剩余血量在70~100%之间时，自身炮击提升$1；血量在30~70%之间时，自身炮击提升$2，受到的伤害降低$2；血量低于30%时，自身受到的伤害降低$3",
-		type = 3,
-		max_level = 10,
-		id = 19240,
-		system_transform = {},
-		desc_get_add = {
+			},
+			{
+				"4.0%",
+				"10.0%"
+			},
 			{
 				"10.0%",
 				"20.0%"
@@ -31393,11 +55709,14 @@ pg.skill_data_template = {
 	[19250] = {
 		desc_get = "",
 		name = "感知抑制模块",
-		desc = "战斗中受伤导致血量低于50%,提升自身机动$1，并在8秒内回复8%血量，最多触发两次",
+		id = 19250,
 		type = 2,
 		max_level = 10,
-		id = 19250,
+		desc = "战斗中受伤导致血量低于50%,提升自身机动$1，并在8秒内回复8%血量，最多触发两次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -31451,12 +55770,15 @@ pg.skill_data_template = {
 	[19260] = {
 		desc_get = "",
 		name = "精密操作协议",
-		desc = "每次主炮射击均可独立瞄准，手动进行瞄准时，手动发射带来的跨射伤害增幅效果提高到$2；战斗开始后每20秒，有$1概率发射强力弹幕(威力随技能等级提升)",
+		id = 19260,
 		type = 1,
 		max_level = 10,
-		id = 19260,
+		desc = "每次主炮射击均可独立瞄准，手动进行瞄准时，手动发射带来的跨射伤害增幅效果提高到$2；战斗开始后每20秒，有$1概率发射强力弹幕(威力随技能等级提升)",
 		system_transform = {
 			[3.0] = 19261
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -31553,2556 +55875,6583 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[19270] = {
+		desc_get = "",
+		name = "柴郡PowerUp！",
+		id = 19270,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，首轮鱼雷装填所需时间降低$1；自身受到攻击时，有15%的概率触发，提升自身炮击、机动、防空$2（属性提升效果最高叠加3次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.4%"
+				},
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.4%"
+				},
+				{
+					"60.0%",
+					"+3.3%"
+				},
+				{
+					"63.3%",
+					"+3.3%"
+				},
+				{
+					"66.6%",
+					"+3.4%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[19280] = {
+		desc_get = "",
+		name = "Grin and fire！",
+		id = 19280,
+		type = 1,
+		max_level = 10,
+		desc = "自身在战斗中受到的伤害降低$1，战斗开始后每12秒，有$2概率触发一次特殊弹幕(威力与样式依据技能等级) ",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"50.0%",
+				"100.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			}
+		}
+	},
+	[19290] = {
+		desc_get = "",
+		name = "勇斗的Privateer",
+		id = 19290,
+		type = 1,
+		max_level = 10,
+		desc = "自带副炮暴击率提高$2并换用强化型副炮弹药；自身装备通常弹或高爆弹主炮时，主炮的弹药种类更换为专属高爆弹$1，专属高爆弹命中时有概率造成特殊点燃效果，对护甲伤害比例随技能等级提高而提高",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50.0%"
+				}
+			}
+		}
+	},
+	[19300] = {
+		desc_get = "",
+		name = "断罪之炎",
+		id = 19300,
+		type = 3,
+		max_level = 10,
+		desc = "每$1秒触发一次无视护盾阻挡的特殊弹幕，特殊弹幕造成伤害的15.0%回复自身耐久(弹幕威力依据技能等级)；自身在战斗中击破敌舰时，自身炮击、机动属性提高$2、装填提高$3，持续至战斗结束（属性提升效果最高叠加3次，进入战斗时，若自身为先锋领舰，属性提升效果战斗开始时直接叠加三层并常驻）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"30",
+				"20"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"1.5%",
+				"7.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30",
+					"-1"
+				},
+				{
+					"29",
+					"-1"
+				},
+				{
+					"28",
+					"-1"
+				},
+				{
+					"27",
+					"-1"
+				},
+				{
+					"26",
+					"-1"
+				},
+				{
+					"25",
+					"-1"
+				},
+				{
+					"24",
+					"-1"
+				},
+				{
+					"23",
+					"-1"
+				},
+				{
+					"22",
+					"-2"
+				},
+				{
+					"20"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.6%"
+				},
+				{
+					"2.1%",
+					"+0.6%"
+				},
+				{
+					"2.7%",
+					"+0.6%"
+				},
+				{
+					"3.3%",
+					"+0.6%"
+				},
+				{
+					"3.9%",
+					"+0.6%"
+				},
+				{
+					"4.5%",
+					"+0.6%"
+				},
+				{
+					"5.1%",
+					"+0.6%"
+				},
+				{
+					"5.7%",
+					"+0.6%"
+				},
+				{
+					"6.3%",
+					"+0.7%"
+				},
+				{
+					"7.0%"
+				}
+			}
+		}
+	},
+	[19310] = {
+		desc_get = "",
+		name = "反击之盾",
+		id = 19310,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中每15秒，在角色正前方生成一枚护盾，护盾可阻挡6发子弹，持续8秒，若护盾在持续时间内被击破，立即触发一轮反击弹幕并提升自身炮击、命中$1（属性提升效果最高叠加2次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[19320] = {
+		desc_get = "",
+		name = "「Ausgewogen」",
+		id = 19320,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，若自身为先锋领舰，自身航速提高5，机动提升$1，30秒内自身受到的伤害降低$2；若不为先锋领舰，战斗中自身暴击伤害上升$3，每15秒，有$4的概率触发一轮弹幕(弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"25.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.4%"
+				},
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.4%"
+				},
+				{
+					"60.0%",
+					"+3.3%"
+				},
+				{
+					"63.3%",
+					"+3.3%"
+				},
+				{
+					"66.6%",
+					"+3.4%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[19330] = {
+		desc_get = "",
+		name = "求知之贤眼",
+		id = 19330,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中将部署在特殊战斗位置，自身受到的伤害降低$1；每15秒，触发一轮可以点亮敌方潜艇单位的声呐扫描，持续$2秒，持续时间内己方先锋舰队角色受到的雷击伤害降低$3，敌方潜艇的命中属性下降$4",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"5",
+				"10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"25.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"5",
+					"+0.5"
+				},
+				{
+					"5.5",
+					"+0.5"
+				},
+				{
+					"6",
+					"+0.5"
+				},
+				{
+					"6.5",
+					"+0.5"
+				},
+				{
+					"7",
+					"+0.5"
+				},
+				{
+					"7.5",
+					"+0.5"
+				},
+				{
+					"8",
+					"+0.5"
+				},
+				{
+					"8.5",
+					"+0.5"
+				},
+				{
+					"9",
+					"+1"
+				},
+				{
+					"10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			}
+		}
+	},
+	[19340] = {
+		desc_get = "",
+		name = "贯穿之轰雷",
+		id = 19340,
+		type = 1,
+		max_level = 10,
+		desc = "优化自身发射的鱼雷散布形态；战斗开始后每18秒，有$1概率触发一轮特殊弹幕(弹幕中的雷电子弹无视盾牌阻挡，弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[19350] = {
+		desc_get = "",
+		name = "辅助机构「S.P.」",
+		id = 19350,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中主炮装填所需时间减少$1，主炮开火时，追加一轮伴随射击弹幕$2；战斗中每20秒，触发一次特殊弹幕射击$2(技能弹幕威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19360] = {
+		desc_get = "",
+		name = "代行机构「E.E.」",
+		id = 19360,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备高爆弹主炮时，提高自身炮击$4、防空$1，高爆弹主炮对重型护甲的伤害比例提升$1，自身装备穿甲弹主炮时，提高自身炮击$4、装填$1，暴击率$2；战斗中，自身血量大于75%时，承受旗舰受到的50%伤害，自身血量低于75%时，自身机动、命中提升$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[19370] = {
+		desc_get = "",
+		name = "奥丁更换鱼雷弹幕形态效果ID占位",
+		id = 19370,
+		type = 1,
+		max_level = 1,
+		desc = "奥丁更换鱼雷弹幕形态用占位",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[19380] = {
+		desc_get = "",
+		name = "天雷罪灭",
+		id = 19380,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空袭时有$1概率触发，使用额外编队进行一次特殊航空攻击$2（威力及样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19390] = {
+		desc_get = "",
+		name = "锋焰显征",
+		id = 19390,
+		type = 1,
+		max_level = 10,
+		desc = "自身装备战斗机武器时，战斗中每12秒额外发动一轮弹幕攻击$1，未装备战斗机武器时，自身发动空袭时额外发动一轮斩击$2（威力及样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19400] = {
+		desc_get = "",
+		name = "白龙云影",
+		id = 19400,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，若自身装备有任意重樱阵营舰载机武器，提高自身航空、命中属性$1；若未装备任何重樱阵营舰载机武器，提高自身防空、命中属性$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[19410] = {
+		desc_get = "",
+		name = "吞噬之漩",
+		id = 19410,
+		type = 3,
+		max_level = 10,
+		desc = "战斗中，自身装备的鱼雷武器命中敌方单位时，5秒内使其移动速度降低$1，自身不处于弹药匮乏状态下时，提高自身机动属性$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"30.0%",
+				"60.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30.0%",
+					"+3.3%"
+				},
+				{
+					"33.3%",
+					"+3.3%"
+				},
+				{
+					"36.6%",
+					"+3.3%"
+				},
+				{
+					"39.9%",
+					"+3.3%"
+				},
+				{
+					"43.2%",
+					"+3.3%"
+				},
+				{
+					"46.5%",
+					"+3.3%"
+				},
+				{
+					"49.8%",
+					"+3.3%"
+				},
+				{
+					"53.1%",
+					"+3.3%"
+				},
+				{
+					"56.4%",
+					"+3.6%"
+				},
+				{
+					"60.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[19420] = {
+		desc_get = "",
+		name = "映照之渊",
+		id = 19420,
+		type = 2,
+		max_level = 10,
+		desc = "自身主炮栏位装备穿甲弹或通常弹主炮时，降低自身受到的伤害$1，提升自身暴击率$2；自身主炮栏位装备高爆弹主炮时，提高主炮造成的伤害$3并将炮弹点火概率置零；自身主炮栏位装备大型舰炮时，主炮栏位武器效率提高$4",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[19430] = {
+		desc_get = "",
+		name = "噬啮之颚",
+		id = 19430,
+		type = 1,
+		max_level = 10,
+		desc = "主炮开火时，若自身周围35距离内没有其他敌人，主炮射击将对命中的敌人附加破甲效果；主炮每进行8次攻击，触发一轮特殊弹幕$2（威力依据技能等级），自身装备大型舰炮时，特殊弹幕触发所需的主炮开火次数降低为4",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19440] = {
+		desc_get = "",
+		name = "Riddle a riddle",
+		id = 19440,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，自身机动提高$1；自身装备的鱼雷武器攻击时有$2概率触发一轮特殊弹幕攻击$3（威力依据技能等级），弹幕触发失败时，自身当前鱼雷装填所需时间减少3秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19450] = {
+		desc_get = "",
+		name = "Hide and seek",
+		id = 19450,
+		type = 2,
+		max_level = 10,
+		desc = "自身装备的鱼雷武器攻击时，发射烟雾弹并获得一枚护盾，处于烟幕中的角色回避率提高$1，烟雾区域持续5秒(回避率提升效果与【烟雾弹】技能不叠加)，护盾可抵消相当于自身耐久$2的伤害，持续5秒，若护盾在持续时间内被击破，接下来的2秒内自身回避所有伤害。",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"40.0%"
+			},
+			{
+				"1.5%",
+				"6.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+2.2%"
+				},
+				{
+					"22.2%",
+					"+2.2%"
+				},
+				{
+					"24.4%",
+					"+2.2%"
+				},
+				{
+					"26.6%",
+					"+2.2%"
+				},
+				{
+					"28.8%",
+					"+2.2%"
+				},
+				{
+					"31.0%",
+					"+2.2%"
+				},
+				{
+					"33.2%",
+					"+2.2%"
+				},
+				{
+					"35.4%",
+					"+2.2%"
+				},
+				{
+					"37.6%",
+					"+2.4%"
+				},
+				{
+					"40.0%"
+				}
+			},
+			{
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%"
+				}
+			}
+		}
+	},
+	[19460] = {
+		desc_get = "",
+		name = "洞察技术-思想掌握",
+		id = 19460,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空袭时有$1概率触发，对此时在场的所有敌方单位造成234点伤害，并使其在2.5秒内缓慢减速至航速为0，1秒后恢复原航速",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[19470] = {
+		desc_get = "",
+		name = "攻击技术-本我轰击",
+		id = 19470,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空袭时，额外发动一轮特殊航空弹幕$1（威力和样式依据技能等级），航空弹幕将对命中的敌方轻型护甲、中型护甲角色附加特殊破甲效果，持续5秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19480] = {
+		desc_get = "",
+		name = "特殊技术-铁血翅翼",
+		id = 19480,
+		type = 3,
+		max_level = 10,
+		desc = "自身对敌方轻巡、重巡敌人造成的伤害提高$1；自身装备任意铁血阵营舰载机武器时，自身航空、装填属性提升$2，战斗机武器效率提高$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[19490] = {
+		desc_get = "",
+		name = "跃动与回复之勇",
+		id = 19490,
+		type = 1,
+		max_level = 10,
+		desc = "自身受到弹药匮乏状态的影响降低（弹药匮乏状态时造成的伤害提升$1）；自身主炮开火时，有$2概率朝自己前方发射一轮特殊弹幕(威力和弹幕样式依据技能等级)，弹幕触发失败时，回复自身耐久5%",
+		system_transform = {
+			[3.0] = 19495
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"45.0%",
+				"75.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			}
+		}
+	},
+	[19500] = {
+		desc_get = "",
+		name = "野心与恩泽之威",
+		id = 19500,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若队伍中含有其他撒丁帝国角色，降低战斗中自身受到的伤害$1。若先锋领舰为撒丁帝国角色，额外提高自身$2主炮武器效率、50%防空炮效率，若先锋领舰不为撒丁帝国角色，开场时为先锋领舰生成2枚可阻挡3次鱼雷攻击的护盾",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"6.0%",
+				"20.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"6.0%",
+					"+1.2%"
+				},
+				{
+					"7.2%",
+					"+1.2%"
+				},
+				{
+					"8.4%",
+					"+1.6%"
+				},
+				{
+					"10.0%",
+					"+1.2%"
+				},
+				{
+					"11.2%",
+					"+1.2%"
+				},
+				{
+					"12.4%",
+					"+1.6%"
+				},
+				{
+					"14.0%",
+					"+1.8%"
+				},
+				{
+					"15.8%",
+					"+1.8%"
+				},
+				{
+					"17.6%",
+					"+2.4%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[19510] = {
+		desc_get = "",
+		name = "开拓与探险之途",
+		id = 19510,
+		type = 3,
+		max_level = 10,
+		desc = "关卡出击中，自身所在编队每击破一个敌方舰队，自身防空、机动属性提高$1（最高叠加三层）；关卡海域内其他编队进入该编队的第1、2场战斗时，若自身存活，战斗开始后20秒发动一轮支援弹幕$2(威力依据技能等级)，进入该编队的第3、4场战斗时，若自身存活，战斗中撒丁帝国阵营角色受伤降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"0.5%",
+				"5.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"0.5%",
+					"+0.5%"
+				},
+				{
+					"1.0%",
+					"+0.5%"
+				},
+				{
+					"1.5%",
+					"+0.5%"
+				},
+				{
+					"2.0%",
+					"+0.5%"
+				},
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[19520] = {
+		desc_get = "",
+		name = "开拓与探险之途-跨队效果ID占位",
+		id = 19520,
+		type = 3,
+		max_level = 10,
+		desc = "开拓与探险之途-跨队效果ID占位",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[20011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-法拉格特级I",
+		id = 20011,
 		type = 1,
 		max_level = 1,
-		id = 20011,
+		desc = "主炮每进行15次攻击，触发全弹发射-法拉格特级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-法拉格特级II",
+		id = 20012,
 		type = 1,
 		max_level = 1,
-		id = 20012,
+		desc = "主炮每进行10次攻击，触发全弹发射-法拉格特级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20021] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-马汉级I",
+		id = 20021,
 		type = 1,
 		max_level = 1,
-		id = 20021,
+		desc = "主炮每进行15次攻击，触发全弹发射-马汉级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20022] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-马汉级II",
+		id = 20022,
 		type = 1,
 		max_level = 1,
-		id = 20022,
+		desc = "主炮每进行10次攻击，触发全弹发射-马汉级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20031] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-格里德利级I",
+		id = 20031,
 		type = 1,
 		max_level = 1,
-		id = 20031,
+		desc = "主炮每进行15次攻击，触发全弹发射-格里德利级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20032] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-格里德利级II",
+		id = 20032,
 		type = 1,
 		max_level = 1,
-		id = 20032,
+		desc = "主炮每进行10次攻击，触发全弹发射-格里德利级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20041] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-弗莱彻级I",
+		id = 20041,
 		type = 1,
 		max_level = 1,
-		id = 20041,
+		desc = "主炮每进行15次攻击，触发全弹发射-弗莱彻级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20042] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-弗莱彻级II",
+		id = 20042,
 		type = 1,
 		max_level = 1,
-		id = 20042,
+		desc = "主炮每进行10次攻击，触发全弹发射-弗莱彻级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20051] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-西姆斯级I",
+		id = 20051,
 		type = 1,
 		max_level = 1,
-		id = 20051,
+		desc = "主炮每进行15次攻击，触发全弹发射-西姆斯级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20052] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-西姆斯级II",
+		id = 20052,
 		type = 1,
 		max_level = 1,
-		id = 20052,
+		desc = "主炮每进行10次攻击，触发全弹发射-西姆斯级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20061] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-本森级I",
+		id = 20061,
 		type = 1,
 		max_level = 1,
-		id = 20061,
+		desc = "主炮每进行15次攻击，触发全弹发射-本森级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20062] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-本森级II",
+		id = 20062,
 		type = 1,
 		max_level = 1,
-		id = 20062,
+		desc = "主炮每进行10次攻击，触发全弹发射-本森级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20071] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-基林级I",
+		id = 20071,
 		type = 1,
 		max_level = 1,
-		id = 20071,
+		desc = "主炮每进行15次攻击，触发全弹发射-基林级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20072] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-基林级II",
+		id = 20072,
 		type = 1,
 		max_level = 1,
-		id = 20072,
+		desc = "主炮每进行10次攻击，触发全弹发射-基林级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[20081] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 20081,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-艾伦·萨姆纳级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[20082] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 20082,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-艾伦·萨姆纳级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-奥马哈级I",
+		id = 20111,
 		type = 1,
 		max_level = 1,
-		id = 20111,
+		desc = "主炮每进行12次攻击，触发全弹发射-奥马哈级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-奥马哈级II",
+		id = 20112,
 		type = 1,
 		max_level = 1,
-		id = 20112,
+		desc = "主炮每进行8次攻击，触发全弹发射-奥马哈级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20121] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-布鲁克林级I",
+		id = 20121,
 		type = 1,
 		max_level = 1,
-		id = 20121,
+		desc = "主炮每进行15次攻击，触发全弹发射-布鲁克林级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20122] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-布鲁克林级II",
+		id = 20122,
 		type = 1,
 		max_level = 1,
-		id = 20122,
+		desc = "主炮每进行10次攻击，触发全弹发射-布鲁克林级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20131] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-亚特兰大级I",
+		id = 20131,
 		type = 1,
 		max_level = 1,
-		id = 20131,
+		desc = "主炮每进行12次攻击，触发全弹发射-亚特兰大级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20132] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-亚特兰大级II",
+		id = 20132,
 		type = 1,
 		max_level = 1,
-		id = 20132,
+		desc = "主炮每进行8次攻击，触发全弹发射-亚特兰大级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20141] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-克利夫兰级I",
+		id = 20141,
 		type = 1,
 		max_level = 1,
-		id = 20141,
+		desc = "主炮每进行15次攻击，触发全弹发射-克利夫兰级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20142] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-克利夫兰级II",
+		id = 20142,
 		type = 1,
 		max_level = 1,
-		id = 20142,
+		desc = "主炮每进行10次攻击，触发全弹发射-克利夫兰级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20211] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-彭萨科拉级I",
+		id = 20211,
 		type = 1,
 		max_level = 1,
-		id = 20211,
+		desc = "主炮每进行12次攻击，触发全弹发射-彭萨科拉级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20212] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-彭萨科拉级II",
+		id = 20212,
 		type = 1,
 		max_level = 1,
-		id = 20212,
+		desc = "主炮每进行8次攻击，触发全弹发射-彭萨科拉级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20221] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-北安普顿级I",
+		id = 20221,
 		type = 1,
 		max_level = 1,
-		id = 20221,
+		desc = "主炮每进行12次攻击，触发全弹发射-北安普顿级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20222] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-北安普顿级II",
+		id = 20222,
 		type = 1,
 		max_level = 1,
-		id = 20222,
+		desc = "主炮每进行8次攻击，触发全弹发射-北安普顿级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20231] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-波特兰级I",
+		id = 20231,
 		type = 1,
 		max_level = 1,
-		id = 20231,
+		desc = "主炮每进行12次攻击，触发全弹发射-波特兰级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20232] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-波特兰级II",
+		id = 20232,
 		type = 1,
 		max_level = 1,
-		id = 20232,
+		desc = "主炮每进行8次攻击，触发全弹发射-波特兰级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20241] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-新奥尔良级I",
+		id = 20241,
 		type = 1,
 		max_level = 1,
-		id = 20241,
+		desc = "主炮每进行12次攻击，触发全弹发射-新奥尔良级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20242] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-新奥尔良级II",
+		id = 20242,
 		type = 1,
 		max_level = 1,
-		id = 20242,
+		desc = "主炮每进行8次攻击，触发全弹发射-新奥尔良级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20251] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-威奇塔I",
+		id = 20251,
 		type = 1,
 		max_level = 1,
-		id = 20251,
+		desc = "主炮每进行12次攻击，触发全弹发射-威奇塔I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20252] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-威奇塔II",
+		id = 20252,
 		type = 1,
 		max_level = 1,
-		id = 20252,
+		desc = "主炮每进行8次攻击，触发全弹发射-威奇塔II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20261] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-巴尔的摩级I",
+		id = 20261,
 		type = 1,
 		max_level = 1,
-		id = 20261,
+		desc = "主炮每进行12次攻击，触发全弹发射-巴尔的摩级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20262] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-巴尔的摩级II",
+		id = 20262,
 		type = 1,
 		max_level = 1,
-		id = 20262,
+		desc = "主炮每进行8次攻击，触发全弹发射-巴尔的摩级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20271] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-得梅因级I",
+		id = 20271,
 		type = 1,
 		max_level = 1,
-		id = 20271,
+		desc = "主炮每进行12次攻击，触发全弹发射-得梅因级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20272] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-得梅因级II",
+		id = 20272,
 		type = 1,
 		max_level = 1,
-		id = 20272,
+		desc = "主炮每进行8次攻击，触发全弹发射-得梅因级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20311] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-猫鲨级I",
+		id = 20311,
 		type = 1,
 		max_level = 1,
-		id = 20311,
+		desc = "进入战斗时，触发全弹发射-猫鲨级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[20312] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-猫鲨级II",
+		id = 20312,
 		type = 1,
 		max_level = 1,
-		id = 20312,
+		desc = "进入战斗时，触发全弹发射-猫鲨级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[20321] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 20321,
+		type = 1,
+		max_level = 1,
+		desc = "从战场撤退时，触发全弹发射-独角鲸级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[20322] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 20322,
+		type = 1,
+		max_level = 1,
+		desc = "从战场撤退时，触发全弹发射-独角鲸级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-A级I",
+		id = 21011,
 		type = 1,
 		max_level = 1,
-		id = 21011,
+		desc = "主炮每进行15次攻击，触发全弹发射-A级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-A级II",
+		id = 21012,
 		type = 1,
 		max_level = 1,
-		id = 21012,
+		desc = "主炮每进行10次攻击，触发全弹发射-A级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21016] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 21016,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行24次攻击，触发全弹发射-部族级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21017] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 21017,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行16次攻击，触发全弹发射-部族级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21021] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-B级I",
+		id = 21021,
 		type = 1,
 		max_level = 1,
-		id = 21021,
+		desc = "主炮每进行15次攻击，触发全弹发射-B级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21022] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-B级II",
+		id = 21022,
 		type = 1,
 		max_level = 1,
-		id = 21022,
+		desc = "主炮每进行10次攻击，触发全弹发射-B级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21026] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 21026,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-I级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21027] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 21027,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-I级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21031] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-C级I",
+		id = 21031,
 		type = 1,
 		max_level = 1,
-		id = 21031,
+		desc = "主炮每进行15次攻击，触发全弹发射-C级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21032] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-C级II",
+		id = 21032,
 		type = 1,
 		max_level = 1,
-		id = 21032,
+		desc = "主炮每进行10次攻击，触发全弹发射-C级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21041] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-F级I",
+		id = 21041,
 		type = 1,
 		max_level = 1,
-		id = 21041,
+		desc = "主炮每进行15次攻击，触发全弹发射-F级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21042] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-F级II",
+		id = 21042,
 		type = 1,
 		max_level = 1,
-		id = 21042,
+		desc = "主炮每进行10次攻击，触发全弹发射-F级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21051] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-G级I",
+		id = 21051,
 		type = 1,
 		max_level = 1,
-		id = 21051,
+		desc = "主炮每进行15次攻击，触发全弹发射-G级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21052] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-G级II",
+		id = 21052,
 		type = 1,
 		max_level = 1,
-		id = 21052,
+		desc = "主炮每进行10次攻击，触发全弹发射-G级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21061] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-H级I",
+		id = 21061,
 		type = 1,
 		max_level = 1,
-		id = 21061,
+		desc = "主炮每进行15次攻击，触发全弹发射-H级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21062] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-H级II",
+		id = 21062,
 		type = 1,
 		max_level = 1,
-		id = 21062,
+		desc = "主炮每进行10次攻击，触发全弹发射-H级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21071] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-J级I",
+		id = 21071,
 		type = 1,
 		max_level = 1,
-		id = 21071,
+		desc = "主炮每进行15次攻击，触发全弹发射-J级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21072] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-J级II",
+		id = 21072,
 		type = 1,
 		max_level = 1,
-		id = 21072,
+		desc = "主炮每进行10次攻击，触发全弹发射-J级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21081] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-M级I",
+		id = 21081,
 		type = 1,
 		max_level = 1,
-		id = 21081,
+		desc = "主炮每进行15次攻击，触发全弹发射-M级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21082] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-M级II",
+		id = 21082,
 		type = 1,
 		max_level = 1,
-		id = 21082,
+		desc = "主炮每进行10次攻击，触发全弹发射-M级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21091] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-E级I",
+		id = 21091,
 		type = 1,
 		max_level = 1,
-		id = 21091,
+		desc = "主炮每进行15次攻击，触发全弹发射-E级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21092] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-E级II",
+		id = 21092,
 		type = 1,
 		max_level = 1,
-		id = 21092,
+		desc = "主炮每进行10次攻击，触发全弹发射-E级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-利安得级I",
+		id = 21111,
 		type = 1,
 		max_level = 1,
-		id = 21111,
+		desc = "主炮每进行12次攻击，触发全弹发射-利安得级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-利安得级II",
+		id = 21112,
 		type = 1,
 		max_level = 1,
-		id = 21112,
+		desc = "主炮每进行8次攻击，触发全弹发射-利安得级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21121] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-黛朵级I",
+		id = 21121,
 		type = 1,
 		max_level = 1,
-		id = 21121,
+		desc = "主炮每进行15次攻击，触发全弹发射-黛朵级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21122] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-黛朵级II",
+		id = 21122,
 		type = 1,
 		max_level = 1,
-		id = 21122,
+		desc = "主炮每进行10次攻击，触发全弹发射-黛朵级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21131] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-阿瑞托莎级I",
+		id = 21131,
 		type = 1,
 		max_level = 1,
-		id = 21131,
+		desc = "主炮每进行12次攻击，触发全弹发射-阿瑞托莎级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21132] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-阿瑞托莎级II",
+		id = 21132,
 		type = 1,
 		max_level = 1,
-		id = 21132,
+		desc = "主炮每进行8次攻击，触发全弹发射-阿瑞托莎级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21141] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-爱丁堡级I",
+		id = 21141,
 		type = 1,
 		max_level = 1,
-		id = 21141,
+		desc = "主炮每进行12次攻击，触发全弹发射-爱丁堡级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21142] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-爱丁堡级II",
+		id = 21142,
 		type = 1,
 		max_level = 1,
-		id = 21142,
+		desc = "主炮每进行8次攻击，触发全弹发射-爱丁堡级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21151] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-南安普顿级I",
+		id = 21151,
 		type = 1,
 		max_level = 1,
-		id = 21151,
+		desc = "主炮每进行12次攻击，触发全弹发射-南安普顿级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21152] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-南安普顿级II",
+		id = 21152,
 		type = 1,
 		max_level = 1,
-		id = 21152,
+		desc = "主炮每进行8次攻击，触发全弹发射-南安普顿级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21161] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-斐济级I",
+		id = 21161,
 		type = 1,
 		max_level = 1,
-		id = 21161,
+		desc = "主炮每进行12次攻击，触发全弹发射-斐济级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21162] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-斐济级II",
+		id = 21162,
 		type = 1,
 		max_level = 1,
-		id = 21162,
+		desc = "主炮每进行8次攻击，触发全弹发射-斐济级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21171] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行24次攻击，触发全弹发射-谷物女神级I",
+		id = 21171,
 		type = 1,
 		max_level = 1,
-		id = 21171,
+		desc = "主炮每进行24次攻击，触发全弹发射-谷物女神级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21172] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行16次攻击，触发全弹发射-谷物女神级II",
+		id = 21172,
 		type = 1,
 		max_level = 1,
-		id = 21172,
+		desc = "主炮每进行16次攻击，触发全弹发射-谷物女神级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21181] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 21181,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发全弹发射-格罗斯特级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[21182] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 21182,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发全弹发射-格罗斯特级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21211] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-伦敦级I",
+		id = 21211,
 		type = 1,
 		max_level = 1,
-		id = 21211,
+		desc = "主炮每进行9次攻击，触发全弹发射-伦敦级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21212] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-伦敦级II",
+		id = 21212,
 		type = 1,
 		max_level = 1,
-		id = 21212,
+		desc = "主炮每进行6次攻击，触发全弹发射-伦敦级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21221] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-肯特级I",
+		id = 21221,
 		type = 1,
 		max_level = 1,
-		id = 21221,
+		desc = "主炮每进行9次攻击，触发全弹发射-肯特级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21222] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-肯特级II",
+		id = 21222,
 		type = 1,
 		max_level = 1,
-		id = 21222,
+		desc = "主炮每进行6次攻击，触发全弹发射-肯特级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21231] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-诺福克级I",
+		id = 21231,
 		type = 1,
 		max_level = 1,
-		id = 21231,
+		desc = "主炮每进行9次攻击，触发全弹发射-诺福克级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21232] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-诺福克级II",
+		id = 21232,
 		type = 1,
 		max_level = 1,
-		id = 21232,
+		desc = "主炮每进行6次攻击，触发全弹发射-诺福克级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21241] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-约克级I",
+		id = 21241,
 		type = 1,
 		max_level = 1,
-		id = 21241,
+		desc = "主炮每进行9次攻击，触发全弹发射-约克级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[21242] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-约克级II",
+		id = 21242,
 		type = 1,
 		max_level = 1,
-		id = 21242,
+		desc = "主炮每进行6次攻击，触发全弹发射-约克级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:33}级I",
+		id = 22011,
 		type = 1,
 		max_level = 1,
-		id = 22011,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:33}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:33}级II",
+		id = 22012,
 		type = 1,
 		max_level = 1,
-		id = 22012,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:33}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22021] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:2}级I",
+		id = 22021,
 		type = 1,
 		max_level = 1,
-		id = 22021,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:2}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22022] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:2}级II",
+		id = 22022,
 		type = 1,
 		max_level = 1,
-		id = 22022,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:2}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22031] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:15}级I",
+		id = 22031,
 		type = 1,
 		max_level = 1,
-		id = 22031,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:15}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22032] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:15}级II",
+		id = 22032,
 		type = 1,
 		max_level = 1,
-		id = 22032,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:15}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22041] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:30}级I",
+		id = 22041,
 		type = 1,
 		max_level = 1,
-		id = 22041,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:30}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22042] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:30}级II",
+		id = 22042,
 		type = 1,
 		max_level = 1,
-		id = 22042,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:30}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22051] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:19}级I",
+		id = 22051,
 		type = 1,
 		max_level = 1,
-		id = 22051,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:19}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22052] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:19}级II",
+		id = 22052,
 		type = 1,
 		max_level = 1,
-		id = 22052,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:19}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22056] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:35}级I",
+		id = 22056,
 		type = 1,
 		max_level = 1,
-		id = 22056,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:35}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22057] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:35}级II",
+		id = 22057,
 		type = 1,
 		max_level = 1,
-		id = 22057,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:35}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22061] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行24次攻击，触发全弹发射-{namecode:26}级I",
+		id = 22061,
 		type = 1,
 		max_level = 1,
-		id = 22061,
+		desc = "主炮每进行24次攻击，触发全弹发射-{namecode:26}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22062] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行16次攻击，触发全弹发射-{namecode:26}级II",
+		id = 22062,
 		type = 1,
 		max_level = 1,
-		id = 22062,
+		desc = "主炮每进行16次攻击，触发全弹发射-{namecode:26}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22071] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:11}级I",
+		id = 22071,
 		type = 1,
 		max_level = 1,
-		id = 22071,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:11}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22072] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:11}级II",
+		id = 22072,
 		type = 1,
 		max_level = 1,
-		id = 22072,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:11}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22081] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:124}级I",
+		id = 22081,
 		type = 1,
 		max_level = 1,
-		id = 22081,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:124}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22082] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:124}级II",
+		id = 22082,
 		type = 1,
 		max_level = 1,
-		id = 22082,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:124}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22091] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:145}级I",
+		id = 22091,
 		type = 1,
 		max_level = 1,
-		id = 22091,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:145}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22092] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:145}级II",
+		id = 22092,
 		type = 1,
 		max_level = 1,
-		id = 22092,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:145}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:41}级I",
+		id = 22111,
 		type = 1,
 		max_level = 1,
-		id = 22111,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:41}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:41}级II",
+		id = 22112,
 		type = 1,
 		max_level = 1,
-		id = 22112,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:41}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22121] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:43}级I",
+		id = 22121,
 		type = 1,
 		max_level = 1,
-		id = 22121,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:43}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22122] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:43}级II",
+		id = 22122,
 		type = 1,
 		max_level = 1,
-		id = 22122,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:43}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22131] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:38}级I",
+		id = 22131,
 		type = 1,
 		max_level = 1,
-		id = 22131,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:38}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22132] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:38}级II",
+		id = 22132,
 		type = 1,
 		max_level = 1,
-		id = 22132,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:38}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22141] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:46}级I",
+		id = 22141,
 		type = 1,
 		max_level = 1,
-		id = 22141,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:46}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22142] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:46}级II",
+		id = 22142,
 		type = 1,
 		max_level = 1,
-		id = 22142,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:46}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22151] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:49}级I",
+		id = 22151,
 		type = 1,
 		max_level = 1,
-		id = 22151,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:49}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22152] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:49}级II",
+		id = 22152,
 		type = 1,
 		max_level = 1,
-		id = 22152,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:49}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22161] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:37}I",
+		id = 22161,
 		type = 1,
 		max_level = 1,
-		id = 22161,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:37}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22162] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:37}II",
+		id = 22162,
 		type = 1,
 		max_level = 1,
-		id = 22162,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:37}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22211] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:53}级I",
+		id = 22211,
 		type = 1,
 		max_level = 1,
-		id = 22211,
+		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:53}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22212] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:53}级II",
+		id = 22212,
 		type = 1,
 		max_level = 1,
-		id = 22212,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:53}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22221] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:55}级I",
+		id = 22221,
 		type = 1,
 		max_level = 1,
-		id = 22221,
+		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:55}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22222] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:55}级II",
+		id = 22222,
 		type = 1,
 		max_level = 1,
-		id = 22222,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:55}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22231] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:63}级I",
+		id = 22231,
 		type = 1,
 		max_level = 1,
-		id = 22231,
+		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:63}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22232] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:63}级II",
+		id = 22232,
 		type = 1,
 		max_level = 1,
-		id = 22232,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:63}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22241] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:61}级I",
+		id = 22241,
 		type = 1,
 		max_level = 1,
-		id = 22241,
+		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:61}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22242] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:61}级II",
+		id = 22242,
 		type = 1,
 		max_level = 1,
-		id = 22242,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:61}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22251] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:57}级I",
+		id = 22251,
 		type = 1,
 		max_level = 1,
-		id = 22251,
+		desc = "主炮每进行12次攻击，触发全弹发射-{namecode:57}级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22252] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:57}级II",
+		id = 22252,
 		type = 1,
 		max_level = 1,
-		id = 22252,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:57}级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22253] = {
 		desc_get = "",
 		name = "全弹发射改",
-		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:57}级改",
+		id = 22253,
 		type = 1,
 		max_level = 1,
-		id = 22253,
+		desc = "主炮每进行8次攻击，触发全弹发射-{namecode:57}级改",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22254] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:57}级{namecode:59}型I",
+		id = 22254,
 		type = 1,
 		max_level = 1,
-		id = 22254,
+		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:57}级{namecode:59}型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22255] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:57}级{namecode:59}型II",
+		id = 22255,
 		type = 1,
 		max_level = 1,
-		id = 22255,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:57}级{namecode:59}型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22261] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-{namecode:66}级I",
+		id = 22261,
 		type = 1,
 		max_level = 1,
-		id = 22261,
+		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:66}级I，战斗中第一次触发全弹发射后，自身回避率上升10%，仅限1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22262] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-{namecode:66}级II",
+		id = 22262,
 		type = 1,
 		max_level = 1,
-		id = 22262,
+		desc = "主炮每进行4次攻击，触发全弹发射-{namecode:66}级II，战斗中第一次触发全弹发射后，自身回避率上升10%，仅限1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22311] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-伊型I",
+		id = 22311,
 		type = 1,
 		max_level = 1,
-		id = 22311,
+		desc = "进入战斗时，触发全弹发射-{namecode:285}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[22312] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-伊型II",
+		id = 22312,
 		type = 1,
 		max_level = 1,
-		id = 22312,
+		desc = "进入战斗时，触发全弹发射-{namecode:285}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[22411] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 22411,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-{namecode:188}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[22412] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 22412,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-{namecode:188}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-1934型I",
+		id = 23011,
 		type = 1,
 		max_level = 1,
-		id = 23011,
+		desc = "主炮每进行15次攻击，触发全弹发射-1934型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-1934型II",
+		id = 23012,
 		type = 1,
 		max_level = 1,
-		id = 23012,
+		desc = "主炮每进行10次攻击，触发全弹发射-1934型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23031] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-1936型I",
+		id = 23031,
 		type = 1,
 		max_level = 1,
-		id = 23031,
+		desc = "主炮每进行15次攻击，触发全弹发射-1936型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23032] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-1936型II",
+		id = 23032,
 		type = 1,
 		max_level = 1,
-		id = 23032,
+		desc = "主炮每进行10次攻击，触发全弹发射-1936型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23041] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-1936A型I",
+		id = 23041,
 		type = 1,
 		max_level = 1,
-		id = 23041,
+		desc = "主炮每进行15次攻击，触发全弹发射-1936A型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23042] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-1936A型II",
+		id = 23042,
 		type = 1,
 		max_level = 1,
-		id = 23042,
+		desc = "主炮每进行10次攻击，触发全弹发射-1936A型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23051] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-1936B型I",
+		id = 23051,
 		type = 1,
 		max_level = 1,
-		id = 23051,
+		desc = "主炮每进行15次攻击，触发全弹发射-1936B型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23052] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-1936B型II",
+		id = 23052,
 		type = 1,
 		max_level = 1,
-		id = 23052,
+		desc = "主炮每进行10次攻击，触发全弹发射-1936B型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-柯尼斯堡级I",
+		id = 23111,
 		type = 1,
 		max_level = 1,
-		id = 23111,
+		desc = "主炮每进行12次攻击，触发全弹发射-柯尼斯堡级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-柯尼斯堡级II",
+		id = 23112,
 		type = 1,
 		max_level = 1,
-		id = 23112,
+		desc = "主炮每进行8次攻击，触发全弹发射-柯尼斯堡级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23121] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-莱比锡I",
+		id = 23121,
 		type = 1,
 		max_level = 1,
-		id = 23121,
+		desc = "主炮每进行12次攻击，触发全弹发射-莱比锡I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23122] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-莱比锡II",
+		id = 23122,
 		type = 1,
 		max_level = 1,
-		id = 23122,
+		desc = "主炮每进行8次攻击，触发全弹发射-莱比锡II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23211] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-希佩尔海军上将级I",
+		id = 23211,
 		type = 1,
 		max_level = 1,
-		id = 23211,
+		desc = "主炮每进行9次攻击，触发全弹发射-希佩尔海军上将级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23212] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-希佩尔海军上将级II",
+		id = 23212,
 		type = 1,
 		max_level = 1,
-		id = 23212,
+		desc = "主炮每进行6次攻击，触发全弹发射-希佩尔海军上将级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23221] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-德意志级I",
+		id = 23221,
 		type = 1,
 		max_level = 1,
-		id = 23221,
+		desc = "主炮每进行9次攻击，触发全弹发射-德意志级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23222] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-德意志级II",
+		id = 23222,
 		type = 1,
 		max_level = 1,
-		id = 23222,
+		desc = "主炮每进行6次攻击，触发全弹发射-德意志级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[23231] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 23231,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行9次攻击，触发全弹发射-P级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[23232] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 23232,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行6次攻击，触发全弹发射-P级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23311] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-Type VIIC型I",
+		id = 23311,
 		type = 1,
 		max_level = 1,
-		id = 23311,
+		desc = "进入战斗时，触发全弹发射-Type VIIC型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23312] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-Type VIIC型II",
+		id = 23312,
 		type = 1,
 		max_level = 1,
-		id = 23312,
+		desc = "进入战斗时，触发全弹发射-Type VIIC型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23321] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-Type IXB型I",
+		id = 23321,
 		type = 1,
 		max_level = 1,
-		id = 23321,
+		desc = "进入战斗时，触发全弹发射-Type IXB型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23322] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-Type IXB型II",
+		id = 23322,
 		type = 1,
 		max_level = 1,
-		id = 23322,
+		desc = "进入战斗时，触发全弹发射-Type IXB型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23411] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-Type VIIB型I",
+		id = 23411,
 		type = 1,
 		max_level = 1,
-		id = 23411,
+		desc = "进入战斗时，触发全弹发射-Type VIIB型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23412] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-Type VIIB型II",
+		id = 23412,
 		type = 1,
 		max_level = 1,
-		id = 23412,
+		desc = "进入战斗时，触发全弹发射-Type VIIB型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23511] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "进入战斗时，触发全弹发射-Type IXC型I",
+		id = 23511,
 		type = 1,
 		max_level = 1,
-		id = 23511,
+		desc = "进入战斗时，触发全弹发射-Type IXC型I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[23512] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "进入战斗时，触发全弹发射-Type IXC型II",
+		id = 23512,
 		type = 1,
 		max_level = 1,
-		id = 23512,
+		desc = "进入战斗时，触发全弹发射-Type IXC型II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-鞍山级I",
+		id = 24011,
 		type = 1,
 		max_level = 1,
-		id = 24011,
+		desc = "主炮每进行15次攻击，触发全弹发射-鞍山级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-鞍山级II",
+		id = 24012,
 		type = 1,
 		max_level = 1,
-		id = 24012,
+		desc = "主炮每进行10次攻击，触发全弹发射-鞍山级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-宁海级I",
+		id = 24111,
 		type = 1,
 		max_level = 1,
-		id = 24111,
+		desc = "主炮每进行12次攻击，触发全弹发射-宁海级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-宁海级II",
+		id = 24112,
 		type = 1,
 		max_level = 1,
-		id = 24112,
+		desc = "主炮每进行8次攻击，触发全弹发射-宁海级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24121] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行18次攻击，触发全弹发射-逸仙I",
+		id = 24121,
 		type = 1,
 		max_level = 1,
-		id = 24121,
+		desc = "主炮每进行18次攻击，触发全弹发射-逸仙I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[24122] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行12次攻击，触发全弹发射-逸仙II",
+		id = 24122,
 		type = 1,
 		max_level = 1,
-		id = 24122,
+		desc = "主炮每进行12次攻击，触发全弹发射-逸仙II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[24131] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 24131,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行18次攻击，触发全弹发射-肇和级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[24132] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 24132,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发全弹发射-肇和级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-索尔达蒂级I",
+		id = 25011,
 		type = 1,
 		max_level = 1,
-		id = 25011,
+		desc = "主炮每进行15次攻击，触发全弹发射-索尔达蒂级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-索尔达蒂级II",
+		id = 25012,
 		type = 1,
 		max_level = 1,
-		id = 25012,
+		desc = "主炮每进行10次攻击，触发全弹发射-索尔达蒂级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25021] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 25021,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-诗人级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25022] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 25022,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-诗人级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25031] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 25031,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-西北风级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25032] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 25032,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-西北风级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25041] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 25041,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-航海家级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25042] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 25042,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-航海家级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25211] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行9次攻击，触发全弹发射-特伦托级I",
+		id = 25211,
 		type = 1,
 		max_level = 1,
-		id = 25211,
+		desc = "主炮每进行9次攻击，触发全弹发射-特伦托级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25212] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行6次攻击，触发全弹发射-特伦托级II",
+		id = 25212,
 		type = 1,
 		max_level = 1,
-		id = 25212,
+		desc = "主炮每进行6次攻击，触发全弹发射-特伦托级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25221] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-扎拉级I",
+		id = 25221,
 		type = 1,
 		max_level = 1,
-		id = 25221,
+		desc = "主炮每进行12次攻击，触发全弹发射-扎拉级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[25222] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-扎拉级II",
+		id = 25222,
 		type = 1,
 		max_level = 1,
-		id = 25222,
+		desc = "主炮每进行8次攻击，触发全弹发射-扎拉级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25511] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 25511,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发全弹发射-布林级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[25512] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 25512,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发全弹发射-布林级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26011] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 26011,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-愤怒级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26012] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 26012,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-愤怒级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26021] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 26021,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-列宁格勒级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26022] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 26022,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-列宁格勒级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26111] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 26111,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发全弹发射-博加特里级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26112] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 26112,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发全弹发射-博加特里级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26211] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 26211,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行9次攻击，触发全弹发射-塔林I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[26212] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 26212,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行6次攻击，触发全弹发射-塔林II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28011] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-机敏级I",
+		id = 28011,
 		type = 1,
 		max_level = 1,
-		id = 28011,
+		desc = "主炮每进行15次攻击，触发全弹发射-机敏级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28012] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-机敏级II",
+		id = 28012,
 		type = 1,
 		max_level = 1,
-		id = 28012,
+		desc = "主炮每进行10次攻击，触发全弹发射-机敏级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28021] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行15次攻击，触发全弹发射-大胆级I",
+		id = 28021,
 		type = 1,
 		max_level = 1,
-		id = 28021,
+		desc = "主炮每进行15次攻击，触发全弹发射-大胆级I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28022] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行10次攻击，触发全弹发射-大胆级II",
+		id = 28022,
 		type = 1,
 		max_level = 1,
-		id = 28022,
+		desc = "主炮每进行10次攻击，触发全弹发射-大胆级II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28031] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 28031,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发全弹发射-沃克兰级I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28032] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 28032,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发全弹发射-沃克兰级II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28111] = {
 		desc_get = "",
 		name = "全弹发射I",
-		desc = "主炮每进行12次攻击，触发全弹发射-埃米尔·贝尔汀I",
+		id = 28111,
 		type = 1,
 		max_level = 1,
-		id = 28111,
+		desc = "主炮每进行12次攻击，触发全弹发射-埃米尔·贝尔汀I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[28112] = {
 		desc_get = "",
 		name = "全弹发射II",
-		desc = "主炮每进行8次攻击，触发全弹发射-埃米尔·贝尔汀II",
+		id = 28112,
 		type = 1,
 		max_level = 1,
-		id = 28112,
+		desc = "主炮每进行8次攻击，触发全弹发射-埃米尔·贝尔汀II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28121] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 28121,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发全弹发射-拉·加利索尼埃I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28122] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 28122,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发全弹发射-拉·加利索尼埃II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28211] = {
+		desc_get = "",
+		name = "全弹发射I",
+		id = 28211,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行9次攻击，触发全弹发射-阿尔及利亚I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[28212] = {
+		desc_get = "",
+		name = "全弹发射II",
+		id = 28212,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行6次攻击，触发全弹发射-阿尔及利亚II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29011] = {
 		desc_get = "",
 		name = "专属弹幕-英格兰I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-英格兰I",
+		id = 29011,
 		type = 1,
 		max_level = 1,
-		id = 29011,
+		desc = "主炮每进行15次攻击，触发专属弹幕-英格兰I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29012] = {
 		desc_get = "",
 		name = "专属弹幕-英格兰II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-英格兰II",
+		id = 29012,
 		type = 1,
 		max_level = 1,
-		id = 29012,
+		desc = "主炮每进行10次攻击，触发专属弹幕-英格兰II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29021] = {
 		desc_get = "",
 		name = "专属弹幕-埃尔德里奇I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-埃尔德里奇I",
+		id = 29021,
 		type = 1,
 		max_level = 1,
-		id = 29021,
+		desc = "主炮每进行15次攻击，触发专属弹幕-埃尔德里奇I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29022] = {
 		desc_get = "",
 		name = "专属弹幕-埃尔德里奇II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-埃尔德里奇II",
+		id = 29022,
 		type = 1,
 		max_level = 1,
-		id = 29022,
+		desc = "主炮每进行10次攻击，触发专属弹幕-埃尔德里奇II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29031] = {
 		desc_get = "",
 		name = "专属弹幕-威廉·D·波特I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-威廉·D·波特I",
+		id = 29031,
 		type = 1,
 		max_level = 1,
-		id = 29031,
+		desc = "主炮每进行15次攻击，触发专属弹幕-威廉·D·波特I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29032] = {
 		desc_get = "",
 		name = "专属弹幕-威廉·D·波特II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-威廉·D·波特II",
+		id = 29032,
 		type = 1,
 		max_level = 1,
-		id = 29032,
+		desc = "主炮每进行10次攻击，触发专属弹幕-威廉·D·波特II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29041] = {
 		desc_get = "",
 		name = "专属弹幕-约翰斯顿I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-约翰斯顿I",
+		id = 29041,
 		type = 1,
 		max_level = 1,
-		id = 29041,
+		desc = "主炮每进行15次攻击，触发专属弹幕-约翰斯顿I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29042] = {
 		desc_get = "",
 		name = "专属弹幕-约翰斯顿II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-约翰斯顿II",
+		id = 29042,
 		type = 1,
 		max_level = 1,
-		id = 29042,
+		desc = "主炮每进行10次攻击，触发专属弹幕-约翰斯顿II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29051] = {
 		desc_get = "",
 		name = "专属弹幕-拉菲I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-拉菲I",
+		id = 29051,
 		type = 1,
 		max_level = 1,
-		id = 29051,
+		desc = "主炮每进行15次攻击，触发专属弹幕-拉菲I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29052] = {
 		desc_get = "",
 		name = "专属弹幕-拉菲II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-拉菲II",
+		id = 29052,
 		type = 1,
 		max_level = 1,
-		id = 29052,
+		desc = "主炮每进行10次攻击，触发专属弹幕-拉菲II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29061] = {
 		desc_get = "",
 		name = "专属弹幕-萤火虫I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-萤火虫I",
+		id = 29061,
 		type = 1,
 		max_level = 1,
-		id = 29061,
+		desc = "主炮每进行15次攻击，触发专属弹幕-萤火虫I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29062] = {
 		desc_get = "",
 		name = "专属弹幕-萤火虫II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-萤火虫II",
+		id = 29062,
 		type = 1,
 		max_level = 1,
-		id = 29062,
+		desc = "主炮每进行10次攻击，触发专属弹幕-萤火虫II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29071] = {
 		desc_get = "",
 		name = "专属弹幕-勇敢I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-勇敢I",
+		id = 29071,
 		type = 1,
 		max_level = 1,
-		id = 29071,
+		desc = "主炮每进行15次攻击，触发专属弹幕-勇敢I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29072] = {
 		desc_get = "",
 		name = "专属弹幕-勇敢II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-勇敢II",
+		id = 29072,
 		type = 1,
 		max_level = 1,
-		id = 29072,
+		desc = "主炮每进行10次攻击，触发专属弹幕-勇敢II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29081] = {
 		desc_get = "",
 		name = "专属弹幕-标枪I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-标枪I",
+		id = 29081,
 		type = 1,
 		max_level = 1,
-		id = 29081,
+		desc = "主炮每进行15次攻击，触发专属弹幕-标枪I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29082] = {
 		desc_get = "",
 		name = "专属弹幕-标枪II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-标枪II",
+		id = 29082,
 		type = 1,
 		max_level = 1,
-		id = 29082,
+		desc = "主炮每进行10次攻击，触发专属弹幕-标枪II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29091] = {
 		desc_get = "",
 		name = "专属弹幕-吸血鬼I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-吸血鬼I",
+		id = 29091,
 		type = 1,
 		max_level = 1,
-		id = 29091,
+		desc = "主炮每进行15次攻击，触发专属弹幕-吸血鬼I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29092] = {
 		desc_get = "",
 		name = "专属弹幕-吸血鬼II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-吸血鬼II",
+		id = 29092,
 		type = 1,
 		max_level = 1,
-		id = 29092,
+		desc = "主炮每进行10次攻击，触发专属弹幕-吸血鬼II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29101] = {
 		desc_get = "",
 		name = "专属弹幕-贝尔法斯特I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-贝尔法斯特I",
+		id = 29101,
 		type = 1,
 		max_level = 1,
-		id = 29101,
+		desc = "主炮每进行12次攻击，触发专属弹幕-贝尔法斯特I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29102] = {
 		desc_get = "",
 		name = "专属弹幕-贝尔法斯特II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-贝尔法斯特II",
+		id = 29102,
 		type = 1,
 		max_level = 1,
-		id = 29102,
+		desc = "主炮每进行8次攻击，触发专属弹幕-贝尔法斯特II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29111] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:6}I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:6}I",
+		id = 29111,
 		type = 1,
 		max_level = 1,
-		id = 29111,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:6}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29112] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:6}II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:6}II",
+		id = 29112,
 		type = 1,
 		max_level = 1,
-		id = 29112,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:6}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29121] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:16}I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:16}I",
+		id = 29121,
 		type = 1,
 		max_level = 1,
-		id = 29121,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:16}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29122] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:16}II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:16}II",
+		id = 29122,
 		type = 1,
 		max_level = 1,
-		id = 29122,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:16}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29131] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:22}I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:22}I",
+		id = 29131,
 		type = 1,
 		max_level = 1,
-		id = 29131,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:22}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29132] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:22}II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:22}II",
+		id = 29132,
 		type = 1,
 		max_level = 1,
-		id = 29132,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:22}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29141] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:18}I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:18}I",
+		id = 29141,
 		type = 1,
 		max_level = 1,
-		id = 29141,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:18}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29142] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:18}II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:18}II",
+		id = 29142,
 		type = 1,
 		max_level = 1,
-		id = 29142,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:18}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29151] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:44}I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:44}I",
+		id = 29151,
 		type = 1,
 		max_level = 1,
-		id = 29151,
+		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:44}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29152] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:44}II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:44}II",
+		id = 29152,
 		type = 1,
 		max_level = 1,
-		id = 29152,
+		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:44}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29161] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:45}I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:45}I",
+		id = 29161,
 		type = 1,
 		max_level = 1,
-		id = 29161,
+		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:45}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29162] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:45}II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:45}II",
+		id = 29162,
 		type = 1,
 		max_level = 1,
-		id = 29162,
+		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:45}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29171] = {
 		desc_get = "",
 		name = "专属弹幕-Z1I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-Z1I",
+		id = 29171,
 		type = 1,
 		max_level = 1,
-		id = 29171,
+		desc = "主炮每进行15次攻击，触发专属弹幕-Z1I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29172] = {
 		desc_get = "",
 		name = "专属弹幕-Z1II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-Z1II",
+		id = 29172,
 		type = 1,
 		max_level = 1,
-		id = 29172,
+		desc = "主炮每进行10次攻击，触发专属弹幕-Z1II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29181] = {
 		desc_get = "",
 		name = "专属弹幕-鞍山I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-鞍山I",
+		id = 29181,
 		type = 1,
 		max_level = 1,
-		id = 29181,
+		desc = "主炮每进行15次攻击，触发专属弹幕-鞍山I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29182] = {
 		desc_get = "",
 		name = "专属弹幕-鞍山II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-鞍山II",
+		id = 29182,
 		type = 1,
 		max_level = 1,
-		id = 29182,
+		desc = "主炮每进行10次攻击，触发专属弹幕-鞍山II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29191] = {
 		desc_get = "",
 		name = "专属弹幕-阿芙乐尔I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-阿芙乐尔I",
+		id = 29191,
 		type = 1,
 		max_level = 1,
-		id = 29191,
+		desc = "主炮每进行12次攻击，触发专属弹幕-阿芙乐尔I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29192] = {
 		desc_get = "",
 		name = "专属弹幕-阿芙乐尔II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-阿芙乐尔II",
+		id = 29192,
 		type = 1,
 		max_level = 1,
-		id = 29192,
+		desc = "主炮每进行8次攻击，触发专属弹幕-阿芙乐尔II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29201] = {
 		desc_get = "",
 		name = "专属弹幕-Z23I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-Z23I",
+		id = 29201,
 		type = 1,
 		max_level = 1,
-		id = 29201,
+		desc = "主炮每进行15次攻击，触发专属弹幕-Z23I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29202] = {
 		desc_get = "",
 		name = "专属弹幕-Z23II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-Z23II",
+		id = 29202,
 		type = 1,
 		max_level = 1,
-		id = 29202,
+		desc = "主炮每进行10次攻击，触发专属弹幕-Z23II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29211] = {
 		desc_get = "",
 		name = "专属弹幕-Z46I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-Z46I",
+		id = 29211,
 		type = 1,
 		max_level = 1,
-		id = 29211,
+		desc = "主炮每进行15次攻击，触发专属弹幕-Z46I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29212] = {
 		desc_get = "",
 		name = "专属弹幕-Z46II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-Z46II",
+		id = 29212,
 		type = 1,
 		max_level = 1,
-		id = 29212,
+		desc = "主炮每进行10次攻击，触发专属弹幕-Z46II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29221] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:152}I",
-		desc = "主炮每进行9次攻击，触发专属弹幕-{namecode:152}I",
+		id = 29221,
 		type = 1,
 		max_level = 1,
-		id = 29221,
+		desc = "主炮每进行9次攻击，触发专属弹幕-{namecode:152}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29222] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:152}II",
-		desc = "主炮每进行6次攻击，触发专属弹幕-{namecode:152}II",
+		id = 29222,
 		type = 1,
 		max_level = 1,
-		id = 29222,
+		desc = "主炮每进行6次攻击，触发专属弹幕-{namecode:152}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29231] = {
 		desc_get = "",
 		name = "专属弹幕-海王星I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-海王星I",
+		id = 29231,
 		type = 1,
 		max_level = 1,
-		id = 29231,
+		desc = "主炮每进行12次攻击，触发专属弹幕-海王星I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29232] = {
 		desc_get = "",
 		name = "专属弹幕-海王星II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-海王星II",
+		id = 29232,
 		type = 1,
 		max_level = 1,
-		id = 29232,
+		desc = "主炮每进行8次攻击，触发专属弹幕-海王星II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29241] = {
 		desc_get = "",
 		name = "专属弹幕-罗恩I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-罗恩I",
+		id = 29241,
 		type = 1,
 		max_level = 1,
-		id = 29241,
+		desc = "主炮每进行12次攻击，触发专属弹幕-罗恩I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29242] = {
 		desc_get = "",
 		name = "专属弹幕-罗恩II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-罗恩II",
+		id = 29242,
 		type = 1,
 		max_level = 1,
-		id = 29242,
+		desc = "主炮每进行8次攻击，触发专属弹幕-罗恩II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29251] = {
 		desc_get = "",
 		name = "专属弹幕-路易九世I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-路易九世I",
+		id = 29251,
 		type = 1,
 		max_level = 1,
-		id = 29251,
+		desc = "主炮每进行12次攻击，触发专属弹幕-路易九世I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29252] = {
 		desc_get = "",
 		name = "专属弹幕-路易九世II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-路易九世II",
+		id = 29252,
 		type = 1,
 		max_level = 1,
-		id = 29252,
+		desc = "主炮每进行8次攻击，触发专属弹幕-路易九世II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29261] = {
 		desc_get = "",
-		name = "专属弹幕-I19I",
-		desc = "进入战斗时，触发专属弹幕-I19I",
+		name = "专属弹幕-{namecode:154}I",
+		id = 29261,
 		type = 1,
 		max_level = 1,
-		id = 29261,
+		desc = "进入战斗时，触发专属弹幕-{namecode:154}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29262] = {
 		desc_get = "",
-		name = "专属弹幕-I19II",
-		desc = "进入战斗时，触发专属弹幕-I19II",
+		name = "专属弹幕-{namecode:154}II",
+		id = 29262,
 		type = 1,
 		max_level = 1,
-		id = 29262,
+		desc = "进入战斗时，触发专属弹幕-{namecode:154}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29271] = {
 		desc_get = "",
 		name = "专属弹幕-U81I",
-		desc = "进入战斗时，触发专属弹幕-U81I",
+		id = 29271,
 		type = 1,
 		max_level = 1,
-		id = 29271,
+		desc = "进入战斗时，触发专属弹幕-U81I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29272] = {
 		desc_get = "",
 		name = "专属弹幕-U81II",
-		desc = "进入战斗时，触发专属弹幕-U81II",
+		id = 29272,
 		type = 1,
 		max_level = 1,
-		id = 29272,
+		desc = "进入战斗时，触发专属弹幕-U81II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29281] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:158}I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:158}I",
+		id = 29281,
 		type = 1,
 		max_level = 1,
-		id = 29281,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:158}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29282] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:158}II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:158}II",
+		id = 29282,
 		type = 1,
 		max_level = 1,
-		id = 29282,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:158}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29291] = {
 		desc_get = "",
 		name = "专属弹幕-22I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-22I",
+		id = 29291,
 		type = 1,
 		max_level = 1,
-		id = 29291,
+		desc = "主炮每进行15次攻击，触发专属弹幕-22I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29292] = {
 		desc_get = "",
 		name = "专属弹幕-22II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-22II",
+		id = 29292,
 		type = 1,
 		max_level = 1,
-		id = 29292,
+		desc = "主炮每进行10次攻击，触发专属弹幕-22II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29301] = {
 		desc_get = "",
 		name = "专属弹幕-33I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-33I",
+		id = 29301,
 		type = 1,
 		max_level = 1,
-		id = 29301,
+		desc = "主炮每进行15次攻击，触发专属弹幕-33I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29302] = {
 		desc_get = "",
 		name = "专属弹幕-33II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-33II",
+		id = 29302,
 		type = 1,
 		max_level = 1,
-		id = 29302,
+		desc = "主炮每进行10次攻击，触发专属弹幕-33II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29311] = {
 		desc_get = "",
 		name = "专属弹幕-U47I",
-		desc = "进入战斗时，触发专属弹幕-U47I",
+		id = 29311,
 		type = 1,
 		max_level = 1,
-		id = 29311,
+		desc = "进入战斗时，触发专属弹幕-U47I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29312] = {
 		desc_get = "",
 		name = "专属弹幕-U47II",
-		desc = "进入战斗时，触发专属弹幕-U47II",
+		id = 29312,
 		type = 1,
 		max_level = 1,
-		id = 29312,
+		desc = "进入战斗时，触发专属弹幕-U47II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29321] = {
 		desc_get = "",
 		name = "专属弹幕-絮库夫I",
-		desc = "氧气不足浮上水面时，触发专属弹幕-絮库夫I",
+		id = 29321,
 		type = 1,
 		max_level = 1,
-		id = 29321,
+		desc = "氧气不足浮上水面时，触发专属弹幕-絮库夫I",
 		system_transform = {
 			[11.0] = 29323
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {}
@@ -34110,12 +62459,15 @@ pg.skill_data_template = {
 	[29322] = {
 		desc_get = "",
 		name = "专属弹幕-絮库夫II",
-		desc = "氧气不足浮上水面时，触发专属弹幕-絮库夫II",
+		id = 29322,
 		type = 1,
 		max_level = 1,
-		id = 29322,
+		desc = "氧气不足浮上水面时，触发专属弹幕-絮库夫II",
 		system_transform = {
 			[11.0] = 29324
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {},
 		desc_add = {}
@@ -34123,330 +62475,1180 @@ pg.skill_data_template = {
 	[29331] = {
 		desc_get = "",
 		name = "专属弹幕-凯旋I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-凯旋I",
+		id = 29331,
 		type = 1,
 		max_level = 1,
-		id = 29331,
+		desc = "主炮每进行15次攻击，触发专属弹幕-凯旋I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29332] = {
 		desc_get = "",
 		name = "专属弹幕-凯旋II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-凯旋II",
+		id = 29332,
 		type = 1,
 		max_level = 1,
-		id = 29332,
+		desc = "主炮每进行10次攻击，触发专属弹幕-凯旋II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29341] = {
 		desc_get = "",
 		name = "专属弹幕-大青花鱼I",
-		desc = "进入战斗时，触发专属弹幕-大青花鱼I",
+		id = 29341,
 		type = 1,
 		max_level = 1,
-		id = 29341,
+		desc = "进入战斗时，触发专属弹幕-大青花鱼I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29342] = {
 		desc_get = "",
 		name = "专属弹幕-大青花鱼II",
-		desc = "进入战斗时，触发专属弹幕-大青花鱼II",
+		id = 29342,
 		type = 1,
 		max_level = 1,
-		id = 29342,
+		desc = "进入战斗时，触发专属弹幕-大青花鱼II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29351] = {
 		desc_get = "",
 		name = "专属弹幕-圣地亚哥I",
-		desc = "主炮每进行16次攻击，触发专属弹幕-圣地亚哥I",
+		id = 29351,
 		type = 1,
 		max_level = 1,
-		id = 29351,
+		desc = "主炮每进行16次攻击，触发专属弹幕-圣地亚哥I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29361] = {
 		desc_get = "",
 		name = "专属弹幕-天狼星I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-天狼星I",
+		id = 29361,
 		type = 1,
 		max_level = 1,
-		id = 29361,
+		desc = "主炮每进行15次攻击，触发专属弹幕-天狼星I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29362] = {
 		desc_get = "",
 		name = "专属弹幕-天狼星II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-天狼星II",
+		id = 29362,
 		type = 1,
 		max_level = 1,
-		id = 29362,
+		desc = "主炮每进行10次攻击，触发专属弹幕-天狼星II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29371] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:163}I",
-		desc = "进入战斗时，触发专属弹幕-I13I",
+		id = 29371,
 		type = 1,
 		max_level = 1,
-		id = 29371,
+		desc = "进入战斗时，触发专属弹幕-{namecode:163}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29372] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:163}II",
-		desc = "进入战斗时，触发专属弹幕-I13II",
+		id = 29372,
 		type = 1,
 		max_level = 1,
-		id = 29372,
+		desc = "进入战斗时，触发专属弹幕-{namecode:163}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29381] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:164}I",
-		desc = "主炮每进行24次攻击，触发专属弹幕-{namecode:164}I",
+		id = 29381,
 		type = 1,
 		max_level = 1,
-		id = 29381,
+		desc = "主炮每进行24次攻击，触发专属弹幕-{namecode:164}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29382] = {
 		desc_get = "",
 		name = "专属弹幕-{namecode:164}II",
-		desc = "主炮每进行16次攻击，触发专属弹幕-{namecode:164}II",
+		id = 29382,
 		type = 1,
 		max_level = 1,
-		id = 29382,
+		desc = "主炮每进行16次攻击，触发专属弹幕-{namecode:164}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29391] = {
 		desc_get = "",
 		name = "专属弹幕-西雅图I",
-		desc = "主武器每进行15次攻击，触发专属弹幕-西雅图I",
+		id = 29391,
 		type = 1,
 		max_level = 1,
-		id = 29391,
+		desc = "主武器每进行15次攻击，触发专属弹幕-西雅图I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29392] = {
 		desc_get = "",
 		name = "专属弹幕-西雅图II",
-		desc = "主武器每进行10次攻击，触发专属弹幕-西雅图II",
+		id = 29392,
 		type = 1,
 		max_level = 1,
-		id = 29392,
+		desc = "主武器每进行10次攻击，触发专属弹幕-西雅图II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29401] = {
 		desc_get = "",
 		name = "专属弹幕-确捷I",
-		desc = "主炮每进行12次攻击，触发专属弹幕-确捷I",
+		id = 29401,
 		type = 1,
 		max_level = 1,
-		id = 29401,
+		desc = "主炮每进行12次攻击，触发专属弹幕-确捷I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29402] = {
 		desc_get = "",
 		name = "专属弹幕-确捷II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-确捷II",
+		id = 29402,
 		type = 1,
 		max_level = 1,
-		id = 29402,
+		desc = "主炮每进行8次攻击，触发专属弹幕-确捷II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29411] = {
 		desc_get = "",
 		name = "专属弹幕-恶毒I",
-		desc = "主炮每进行15次攻击，触发专属弹幕-恶毒I",
+		id = 29411,
 		type = 1,
 		max_level = 1,
-		id = 29411,
+		desc = "主炮每进行15次攻击，触发专属弹幕-恶毒I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29412] = {
 		desc_get = "",
 		name = "专属弹幕-恶毒II",
-		desc = "主炮每进行10次攻击，触发专属弹幕-恶毒II",
+		id = 29412,
 		type = 1,
 		max_level = 1,
-		id = 29412,
+		desc = "主炮每进行10次攻击，触发专属弹幕-恶毒II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29421] = {
 		desc_get = "",
-		name = "专属弹幕-伊168I",
-		desc = "进入战斗时，触发专属弹幕-伊168I",
+		name = "专属弹幕-{namecode:256}I",
+		id = 29421,
 		type = 1,
 		max_level = 1,
-		id = 29421,
+		desc = "进入战斗时，触发专属弹幕-{namecode:256}I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29422] = {
 		desc_get = "",
-		name = "专属弹幕-伊168II",
-		desc = "进入战斗时，触发专属弹幕-伊168II",
+		name = "专属弹幕-{namecode:256}II",
+		id = 29422,
 		type = 1,
 		max_level = 1,
-		id = 29422,
+		desc = "进入战斗时，触发专属弹幕-{namecode:256}II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29431] = {
 		desc_get = "",
 		name = "专属弹幕-U101I",
-		desc = "进入战斗时，触发专属弹幕-U101I",
+		id = 29431,
 		type = 1,
 		max_level = 1,
-		id = 29431,
+		desc = "进入战斗时，触发专属弹幕-U101I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29432] = {
 		desc_get = "",
 		name = "专属弹幕-U101II",
-		desc = "进入战斗时，触发专属弹幕-U101II",
+		id = 29432,
 		type = 1,
 		max_level = 1,
-		id = 29432,
+		desc = "进入战斗时，触发专属弹幕-U101II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29441] = {
 		desc_get = "",
 		name = "专属弹幕-棘鳍I",
-		desc = "进入战斗时，触发专属弹幕-棘鳍I",
+		id = 29441,
 		type = 1,
 		max_level = 1,
-		id = 29441,
+		desc = "进入战斗时，触发专属弹幕-棘鳍I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29442] = {
 		desc_get = "",
 		name = "专属弹幕-棘鳍II",
-		desc = "进入战斗时，触发专属弹幕-棘鳍II",
+		id = 29442,
 		type = 1,
 		max_level = 1,
-		id = 29442,
+		desc = "进入战斗时，触发专属弹幕-棘鳍II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29451] = {
 		desc_get = "",
 		name = "专属弹幕-克利夫兰(μ兵装)I",
-		desc = "主炮每进行15次攻击，触发全弹发射-克利夫兰(μ兵装)I",
+		id = 29451,
 		type = 1,
 		max_level = 1,
-		id = 29451,
+		desc = "主炮每进行15次攻击，触发全弹发射-克利夫兰(μ兵装)I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29452] = {
 		desc_get = "",
 		name = "专属弹幕-克利夫兰(μ兵装)II",
-		desc = "主炮每进行10次攻击，触发全弹发射-克利夫兰(μ兵装)II",
+		id = 29452,
 		type = 1,
 		max_level = 1,
-		id = 29452,
+		desc = "主炮每进行10次攻击，触发全弹发射-克利夫兰(μ兵装)II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29461] = {
 		desc_get = "",
 		name = "专属弹幕-谢菲尔德(μ兵装)I",
-		desc = "主炮每进行12次攻击，触发专属弹幕—谢菲尔德(μ兵装)I",
+		id = 29461,
 		type = 1,
 		max_level = 1,
-		id = 29461,
+		desc = "主炮每进行12次攻击，触发专属弹幕—谢菲尔德(μ兵装)I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29462] = {
 		desc_get = "",
 		name = "专属弹幕-谢菲尔德(μ兵装)II",
-		desc = "主炮每进行8次攻击，触发专属弹幕-谢菲尔德(μ兵装)II",
+		id = 29462,
 		type = 1,
 		max_level = 1,
-		id = 29462,
+		desc = "主炮每进行8次攻击，触发专属弹幕-谢菲尔德(μ兵装)II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29471] = {
 		desc_get = "",
 		name = "专属弹幕-希佩尔海军上将(μ兵装)I",
-		desc = "主炮每进行9次攻击，触发专属弹幕-希佩尔海军上将(μ兵装)I",
+		id = 29471,
 		type = 1,
 		max_level = 1,
-		id = 29471,
+		desc = "主炮每进行9次攻击，触发专属弹幕-希佩尔海军上将(μ兵装)I",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[29472] = {
 		desc_get = "",
 		name = "专属弹幕-希佩尔海军上将(μ兵装)II",
-		desc = "主炮每进行6次攻击，触发专属弹幕-希佩尔海军上将(μ兵装)II",
+		id = 29472,
 		type = 1,
 		max_level = 1,
-		id = 29472,
+		desc = "主炮每进行6次攻击，触发专属弹幕-希佩尔海军上将(μ兵装)II",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29481] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:50}I",
+		id = 29481,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:50}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29482] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:50}II",
+		id = 29482,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:50}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29491] = {
+		desc_get = "",
+		name = "专属弹幕-黛朵I",
+		id = 29491,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-黛朵I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29492] = {
+		desc_get = "",
+		name = "专属弹幕-黛朵II",
+		id = 29492,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-黛朵II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29501] = {
+		desc_get = "",
+		name = "专属弹幕-塔什干I",
+		id = 29501,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-塔什干I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29502] = {
+		desc_get = "",
+		name = "专属弹幕-塔什干II",
+		id = 29502,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-塔什干II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29511] = {
+		desc_get = "",
+		name = "专属弹幕-恰巴耶夫I",
+		id = 29511,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-恰巴耶夫I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29512] = {
+		desc_get = "",
+		name = "专属弹幕-恰巴耶夫II",
+		id = 29512,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-恰巴耶夫II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29521] = {
+		desc_get = "",
+		name = "专属弹幕-里诺I",
+		id = 29521,
+		type = 1,
+		max_level = 1,
+		desc = "使用驱逐主炮时，提升自身主炮效率10%，主炮每进行15次攻击，触发专属弹幕-里诺I；使用轻巡主炮时，专属弹幕触发所需主炮攻击次数降低为12",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29531] = {
+		desc_get = "",
+		name = "专属弹幕-里诺II",
+		id = 29531,
+		type = 1,
+		max_level = 1,
+		desc = "使用驱逐主炮时，提升自身主炮效率10%，主炮每进行10次攻击，触发专属弹幕-里诺II；使用轻巡主炮时，专属弹幕触发所需主炮攻击次数降低为8",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29541] = {
+		desc_get = "",
+		name = "专属弹幕-圣女贞德I",
+		id = 29541,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-圣女贞德I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29542] = {
+		desc_get = "",
+		name = "专属弹幕-圣女贞德II",
+		id = 29542,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-圣女贞德II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29551] = {
+		desc_get = "",
+		name = "专属弹幕-柴郡I",
+		id = 29551,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行9次攻击，触发专属弹幕-柴郡I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29552] = {
+		desc_get = "",
+		name = "专属弹幕-柴郡II",
+		id = 29552,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行6次攻击，触发专属弹幕-柴郡II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29561] = {
+		desc_get = "",
+		name = "专属弹幕-德雷克I",
+		id = 29561,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-德雷克I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29562] = {
+		desc_get = "",
+		name = "专属弹幕-德雷克II",
+		id = 29562,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-德雷克II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29571] = {
+		desc_get = "",
+		name = "专属弹幕-美因茨I",
+		id = 29571,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-美因茨I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29572] = {
+		desc_get = "",
+		name = "专属弹幕-美因茨II",
+		id = 29572,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-美因茨II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29581] = {
+		desc_get = "",
+		name = "专属弹幕-赫敏I",
+		id = 29581,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-赫敏I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29582] = {
+		desc_get = "",
+		name = "专属弹幕-赫敏II",
+		id = 29582,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-赫敏II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29591] = {
+		desc_get = "",
+		name = "专属弹幕-U96I",
+		id = 29591,
+		type = 1,
+		max_level = 1,
+		desc = "氧气不足浮上水面时，触发专属弹幕-U96I",
+		system_transform = {
+			[11.0] = 29593
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29592] = {
+		desc_get = "",
+		name = "专属弹幕-U96II",
+		id = 29592,
+		type = 1,
+		max_level = 1,
+		desc = "氧气不足浮上水面时，触发专属弹幕-U96II",
+		system_transform = {
+			[11.0] = 29594
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29601] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:27}I",
+		id = 29601,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行24次攻击，触发专属弹幕-{namecode:27}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29602] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:27}II",
+		id = 29602,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行16次攻击，触发专属弹幕-{namecode:27}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29611] = {
+		desc_get = "",
+		name = "专属弹幕-罗恩(μ兵装)I",
+		id = 29611,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-罗恩(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29612] = {
+		desc_get = "",
+		name = "专属弹幕-罗恩(μ兵装)II",
+		id = 29612,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-罗恩(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29621] = {
+		desc_get = "",
+		name = "专属弹幕-恶毒(μ兵装)I",
+		id = 29621,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-恶毒(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29622] = {
+		desc_get = "",
+		name = "专属弹幕-恶毒(μ兵装)II",
+		id = 29622,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-恶毒(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29631] = {
+		desc_get = "",
+		name = "专属弹幕-黛朵(μ兵装)I",
+		id = 29631,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-黛朵(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29632] = {
+		desc_get = "",
+		name = "专属弹幕-黛朵(μ兵装)II",
+		id = 29632,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-黛朵(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29641] = {
+		desc_get = "",
+		name = "专属弹幕-塔什干(μ兵装)I",
+		id = 29641,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-塔什干(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29642] = {
+		desc_get = "",
+		name = "专属弹幕-塔什干(μ兵装)II",
+		id = 29642,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-塔什干(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29651] = {
+		desc_get = "",
+		name = "专属弹幕-大青花鱼(μ兵装)I",
+		id = 29651,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-大青花鱼(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29652] = {
+		desc_get = "",
+		name = "专属弹幕-大青花鱼(μ兵装)II",
+		id = 29652,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-大青花鱼(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29661] = {
+		desc_get = "",
+		name = "专属弹幕-巴尔的摩(μ兵装)I",
+		id = 29661,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-巴尔的摩(μ兵装)I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29662] = {
+		desc_get = "",
+		name = "专属弹幕-巴尔的摩(μ兵装)II",
+		id = 29662,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-巴尔的摩(μ兵装)II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29671] = {
+		desc_get = "",
+		name = "专属弹幕-U37I",
+		id = 29671,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-U37I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29672] = {
+		desc_get = "",
+		name = "专属弹幕-U37II",
+		id = 29672,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-U37II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29681] = {
+		desc_get = "",
+		name = "专属弹幕-基洛夫I",
+		id = 29681,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-基洛夫I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29682] = {
+		desc_get = "",
+		name = "专属弹幕-基洛夫II",
+		id = 29682,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-基洛夫II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29691] = {
+		desc_get = "",
+		name = "专属弹幕-艾伦·萨姆纳I",
+		id = 29691,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-艾伦·萨姆纳I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29692] = {
+		desc_get = "",
+		name = "专属弹幕-艾伦·萨姆纳II",
+		id = 29692,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-艾伦·萨姆纳II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29701] = {
+		desc_get = "",
+		name = "专属弹幕-阿布鲁齐公爵I",
+		id = 29701,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-阿布鲁齐公爵I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29702] = {
+		desc_get = "",
+		name = "专属弹幕-阿布鲁齐公爵II",
+		id = 29702,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-阿布鲁齐公爵II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29711] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:195}I",
+		id = 29711,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-{namecode:195}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29712] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:195}II",
+		id = 29712,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-{namecode:195}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29721] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:196}I",
+		id = 29721,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-{namecode:196}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29722] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:196}II",
+		id = 29722,
+		type = 1,
+		max_level = 1,
+		desc = "进入战斗时，触发专属弹幕-{namecode:196}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29731] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:203}I",
+		id = 29731,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-{namecode:203}I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29732] = {
+		desc_get = "",
+		name = "专属弹幕-{namecode:203}II",
+		id = 29732,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-{namecode:203}II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29741] = {
+		desc_get = "",
+		name = "专属弹幕-安克雷奇I",
+		id = 29741,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行12次攻击，触发专属弹幕-安克雷奇I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29742] = {
+		desc_get = "",
+		name = "专属弹幕-安克雷奇II",
+		id = 29742,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行8次攻击，触发专属弹幕-安克雷奇II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29751] = {
+		desc_get = "",
+		name = "专属弹幕-英格拉罕I",
+		id = 29751,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发专属弹幕-英格拉罕I",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29752] = {
+		desc_get = "",
+		name = "专属弹幕-英格拉罕II",
+		id = 29752,
+		type = 1,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发专属弹幕-英格拉罕II",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[101010] = {
 		desc_get = "",
 		name = "主人公补正",
-		desc = "出击时，若队伍中有其他超次元海王星阵营角色，自身伤害提高$1，受到伤害降低6.0%，每有1位其他超次元海王星阵营角色，自身伤害额外提高$2，受到伤害额外降低1.0%",
+		id = 101010,
 		type = 3,
 		max_level = 10,
-		id = 101010,
+		desc = "出击时，若队伍中有其他超次元海王星阵营角色，自身伤害提高$1，受到伤害降低6.0%，每有1位其他超次元海王星阵营角色，自身伤害额外提高$2，受到伤害额外降低1.0%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.0%",
@@ -34545,11 +63747,14 @@ pg.skill_data_template = {
 	[101020] = {
 		desc_get = "",
 		name = "冥想·S",
-		desc = "受到伤害后有$1概率触发，伤害提高$2，持续8秒",
+		id = 101020,
 		type = 1,
 		max_level = 10,
-		id = 101020,
+		desc = "受到伤害后有$1概率触发，伤害提高$2，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -34648,11 +63853,14 @@ pg.skill_data_template = {
 	[101030] = {
 		desc_get = "",
 		name = "限阻破坏",
-		desc = "队伍中存在贝露&翡绿之心时，自身伤害提高$1，受到伤害提高$2，队伍中不存在贝露&翡绿之心时，自身受到伤害降低$3，伤害降低$4",
+		id = 101030,
 		type = 3,
 		max_level = 10,
-		id = 101030,
+		desc = "队伍中存在贝露&翡绿之心时，自身伤害提高$1，受到伤害提高$2，队伍中不存在贝露&翡绿之心时，自身受到伤害降低$3，伤害降低$4",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -34841,11 +64049,14 @@ pg.skill_data_template = {
 	[101040] = {
 		desc_get = "",
 		name = "联结·阿萨姆",
-		desc = "队伍中每有1艘驱逐舰，受到炮击伤害降低$1，装填提高$2",
+		id = 101040,
 		type = 2,
 		max_level = 10,
-		id = 101040,
+		desc = "队伍中每有1艘驱逐舰，受到炮击伤害降低$1，装填提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -34944,11 +64155,14 @@ pg.skill_data_template = {
 	[101050] = {
 		desc_get = "",
 		name = "十字缔结",
-		desc = "主炮开火$1次触发，下一次主炮射击必定暴击",
+		id = 101050,
 		type = 1,
 		max_level = 10,
-		id = 101050,
+		desc = "主炮开火$1次触发，下一次主炮射击必定暴击",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15",
@@ -35002,11 +64216,14 @@ pg.skill_data_template = {
 	[101060] = {
 		desc_get = "战斗开始115秒后触发，发射超强弹幕(威力依据技能等级)，每场战斗只能触发1次",
 		name = "胜利刺穿",
-		desc = "战斗开始115秒后触发，发射超强弹幕($1)，每场战斗只能触发1次",
+		id = 101060,
 		type = 1,
 		max_level = 10,
-		id = 101060,
+		desc = "战斗开始115秒后触发，发射超强弹幕($1)，每场战斗只能触发1次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -35055,11 +64272,14 @@ pg.skill_data_template = {
 	[101070] = {
 		desc_get = "每隔20秒，有20.0%(满级40.0%)的概率触发，发射强力弹幕(威力依据技能等级)，命中敌人概率造成起火，持续12秒",
 		name = "烈焰崩袭",
-		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)，命中敌人概率造成起火，持续12秒",
+		id = 101070,
 		type = 1,
 		max_level = 10,
-		id = 101070,
+		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)，命中敌人概率造成起火，持续12秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -35149,22 +64369,28 @@ pg.skill_data_template = {
 	[101080] = {
 		desc_get = "",
 		name = "三色秩序",
-		desc = "所有主炮弹药不受装甲类型影响（仅对主炮生效），主炮所有弹药伤害随技能等级提高而提高",
+		id = 101080,
 		type = 3,
 		max_level = 10,
-		id = 101080,
+		desc = "所有主炮弹药不受装甲类型影响（仅对主炮生效），主炮所有弹药伤害随技能等级提高而提高",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {}
 	},
 	[101090] = {
 		desc_get = "每隔20秒，有20.0%(满级40.0%)的概率触发，发射强力弹幕(威力依据技能等级)",
 		name = "蕾丝狂舞",
-		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)",
+		id = 101090,
 		type = 1,
 		max_level = 10,
-		id = 101090,
+		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -35254,11 +64480,14 @@ pg.skill_data_template = {
 	[101100] = {
 		desc_get = "",
 		name = "幻影刃舞·风暴",
-		desc = "每次炮击为自身叠加1层刃舞buff，最多可叠加20层，每层刃舞buff提高鱼雷暴击率$1，发射鱼雷后buff重置为0层",
+		id = 101100,
 		type = 1,
 		max_level = 10,
-		id = 101100,
+		desc = "每次炮击为自身叠加1层刃舞buff，最多可叠加20层，每层刃舞buff提高鱼雷暴击率$1，发射鱼雷后buff重置为0层",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"0.6%",
@@ -35312,11 +64541,14 @@ pg.skill_data_template = {
 	[101110] = {
 		desc_get = "每隔20秒，有20.0%(满级40.0%)的概率触发，发射强力弹幕(威力依据技能等级)，命中敌人概率造成减速效果，持续8秒",
 		name = "众神之怒·雪崩雷震",
-		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)，命中敌人概率造成减速效果，持续8秒",
+		id = 101110,
 		type = 1,
 		max_level = 10,
-		id = 101110,
+		desc = "每隔20秒，有$1的概率触发，发射强力弹幕($2)，命中敌人概率造成减速效果，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -35406,11 +64638,14 @@ pg.skill_data_template = {
 	[101120] = {
 		desc_get = "",
 		name = "怒旋·大吉岭",
-		desc = "每15秒按顺序切换一次buff，依次为①自身受到伤害降低$1。②自身伤害提高$2。③每3秒回复自身耐久$3点",
+		id = 101120,
 		type = 3,
 		max_level = 10,
-		id = 101120,
+		desc = "每15秒按顺序切换一次buff，依次为①自身受到伤害降低$1。②自身伤害提高$2。③每3秒回复自身耐久$3点",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"6.0%",
@@ -35554,11 +64789,14 @@ pg.skill_data_template = {
 	[101130] = {
 		desc_get = "每隔20秒，有20.0%(满级40.0%)概率释放特殊航空弹幕(威力依据技能等级)",
 		name = "宝石枪雨",
-		desc = "每隔20秒，有$1概率释放特殊航空弹幕($2)",
+		id = 101130,
 		type = 1,
 		max_level = 10,
-		id = 101130,
+		desc = "每隔20秒，有$1概率释放特殊航空弹幕($2)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -35648,11 +64886,14 @@ pg.skill_data_template = {
 	[102010] = {
 		desc_get = "",
 		name = "bili看板娘",
-		desc = "作为先锋领队，与22在同一个队伍中出击时，队伍中22与33的雷击提高$1",
+		id = 102010,
 		type = 3,
 		max_level = 10,
-		id = 102010,
+		desc = "作为先锋领队，与22在同一个队伍中出击时，队伍中22与33的雷击提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -35706,11 +64947,14 @@ pg.skill_data_template = {
 	[102020] = {
 		desc_get = "",
 		name = "bili看板娘",
-		desc = "作为先锋领队，与33在同一个队伍中出击时，队伍中22与33的炮击、装填提高$1，机动提高$2",
+		id = 102020,
 		type = 3,
 		max_level = 10,
-		id = 102020,
+		desc = "作为先锋领队，与33在同一个队伍中出击时，队伍中22与33的炮击、装填提高$1，机动提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -35809,11 +65053,14 @@ pg.skill_data_template = {
 	[103010] = {
 		desc_get = "",
 		name = "四神变幻",
-		desc = "根据自身装备的主炮弹药类型，加强同类型弹药的伤害$1，减少受到同类型弹药的伤害$1",
+		id = 103010,
 		type = 3,
 		max_level = 10,
-		id = 103010,
+		desc = "根据自身装备的主炮弹药类型，加强同类型弹药的伤害$1，减少受到同类型弹药的伤害$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -35867,11 +65114,14 @@ pg.skill_data_template = {
 	[103020] = {
 		desc_get = "",
 		name = "十姊妹",
-		desc = "受到攻击时，有$1概率触发特殊弹幕，触发后进入5秒冷却，每场战斗最多触发6次特殊弹幕(特殊弹幕威力与样式依据技能等级)",
+		id = 103020,
 		type = 1,
 		max_level = 10,
-		id = 103020,
+		desc = "受到伤害时，有$1概率触发特殊弹幕，触发后进入5秒冷却，每场战斗最多触发6次特殊弹幕(特殊弹幕威力与样式依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -35925,11 +65175,14 @@ pg.skill_data_template = {
 	[103030] = {
 		desc_get = "",
 		name = "白虹",
-		desc = "战斗开始100秒后触发，先锋部队的机动提高$1，全体先锋部队回复耐久，恢复量为猫音最大耐久的$2，每场战斗最多触发一次",
+		id = 103030,
 		type = 2,
 		max_level = 10,
-		id = 103030,
+		desc = "战斗开始100秒后触发，先锋部队的机动提高$1，全体先锋部队回复耐久，恢复量为猫音最大耐久的$2，每场战斗最多触发一次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -36028,11 +65281,14 @@ pg.skill_data_template = {
 	[103040] = {
 		desc_get = "",
 		name = "夕星",
-		desc = "每10秒，有$1概率触发一次特殊弹幕，特殊弹幕可造成点燃效果(特殊弹幕威力与样式依据技能等级)",
+		id = 103040,
 		type = 1,
 		max_level = 10,
-		id = 103040,
+		desc = "每10秒，有$1概率触发一次特殊弹幕，特殊弹幕可造成点燃效果(特殊弹幕威力与样式依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"50.0%",
@@ -36086,11 +65342,14 @@ pg.skill_data_template = {
 	[103050] = {
 		desc_get = "",
 		name = "生命的鼓动",
-		desc = "每10秒，有$1概率发动，回复自身2%耐久，每场战斗最多触发6次",
+		id = 103050,
 		type = 2,
 		max_level = 10,
-		id = 103050,
+		desc = "每10秒，有$1概率发动，回复自身2%耐久，每场战斗最多触发6次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -36144,11 +65403,14 @@ pg.skill_data_template = {
 	[103060] = {
 		desc_get = "",
 		name = "百合根",
-		desc = "战斗开始后每隔22秒，触发一次特殊弹幕($1)，一场战斗内随着触发次数的增加，弹幕效果变强。每场战斗最多触发4次特殊弹幕(特殊弹幕威力依据技能等级)",
+		id = 103060,
 		type = 1,
 		max_level = 10,
-		id = 103060,
+		desc = "战斗开始后每隔22秒，触发一次特殊弹幕($1)，一场战斗内随着触发次数的增加，弹幕效果变强。每场战斗最多触发4次特殊弹幕(特殊弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -36188,11 +65450,14 @@ pg.skill_data_template = {
 	[103070] = {
 		desc_get = "",
 		name = "锁之巫女",
-		desc = "与萨拉娜同在一个舰队时，自身航空提高$1，装填、命中提高$2",
+		id = 103070,
 		type = 3,
 		max_level = 10,
-		id = 103070,
+		desc = "与萨拉娜同在一个舰队时，自身航空提高$1，装填、命中提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -36291,11 +65556,14 @@ pg.skill_data_template = {
 	[103080] = {
 		desc_get = "",
 		name = "双影无双",
-		desc = "与萨拉娜同在一个舰队时，战斗开始后每隔55秒，触发特殊弹幕($1)，每场战斗最多触发2次(特殊弹幕威力依据技能等级)",
+		id = 103080,
 		type = 1,
 		max_level = 10,
-		id = 103080,
+		desc = "与萨拉娜同在一个舰队时，战斗开始后每隔55秒，触发特殊弹幕($1)，每场战斗最多触发2次(特殊弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -36335,11 +65603,14 @@ pg.skill_data_template = {
 	[103090] = {
 		desc_get = "",
 		name = "锁之巫女",
-		desc = "与乌璐露同在一个舰队时，自身航空提高$1，装填、命中提高$2",
+		id = 103090,
 		type = 3,
 		max_level = 10,
-		id = 103090,
+		desc = "与乌璐露同在一个舰队时，自身航空提高$1，装填、命中提高$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -36438,11 +65709,14 @@ pg.skill_data_template = {
 	[103100] = {
 		desc_get = "",
 		name = "双影无双",
-		desc = "与乌璐露同在一个舰队时，战斗开始后每隔55秒，触发特殊弹幕($1)，每场战斗最多触发2次(特殊弹幕威力依据技能等级)",
+		id = 103100,
 		type = 1,
 		max_level = 10,
-		id = 103100,
+		desc = "与乌璐露同在一个舰队时，战斗开始后每隔55秒，触发特殊弹幕($1)，每场战斗最多触发2次(特殊弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {},
 		desc_add = {
 			{
@@ -36482,11 +65756,14 @@ pg.skill_data_template = {
 	[103110] = {
 		desc_get = "",
 		name = "百华蜜",
-		desc = "自身发动空袭时，有$1的概率触发，使场上存活的耐久最低的友方角色回复$2耐久",
+		id = 103110,
 		type = 2,
 		max_level = 10,
-		id = 103110,
+		desc = "自身发动空袭时，有$1的概率触发，使场上存活的耐久最低的友方角色回复$2耐久",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"30.0%",
@@ -36585,11 +65862,14 @@ pg.skill_data_template = {
 	[103120] = {
 		desc_get = "战斗开始20秒(满级10秒)后触发一次特殊弹幕，之后每30秒(满级20秒)触发一次特殊弹幕(特殊弹幕威力依据技能等级)",
 		name = "蜜月",
-		desc = "战斗开始$1秒后触发一次特殊弹幕，之后每$2秒触发一次特殊弹幕(特殊弹幕威力依据技能等级)",
+		id = 103120,
 		type = 1,
 		max_level = 10,
-		id = 103120,
+		desc = "战斗开始$1秒后触发一次特殊弹幕，之后每$2秒触发一次特殊弹幕(特殊弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20",
@@ -36688,11 +65968,14 @@ pg.skill_data_template = {
 	[104010] = {
 		desc_get = "",
 		name = "爱碳光线！",
-		desc = "战斗开始后每20秒，运用超级人工智能的能力入侵敌方电子系统，依据侵入成果，随机降低在场的敌人炮击、雷击、航空属性(最高降低$1)，持续8秒；入侵有小概率略微提高敌方属性",
+		id = 104010,
 		type = 3,
 		max_level = 10,
-		id = 104010,
+		desc = "战斗开始后每20秒，运用超级人工智能的能力入侵敌方电子系统，依据侵入成果，随机降低在场的敌人炮击、雷击、航空属性(最高降低$1)，持续8秒；入侵有小概率略微提高敌方属性",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.0%",
@@ -36737,11 +66020,14 @@ pg.skill_data_template = {
 	[104020] = {
 		desc_get = "",
 		name = "危机规避！",
-		desc = "自身受到伤害时，有$1的概率触发，使自身完全回避所有攻击3秒并发射一轮鱼雷弹幕，完全回避效果结束后3秒内自身机动上升$2。（鱼雷弹幕每场战斗最多触发3次）",
+		id = 104020,
 		type = 2,
 		max_level = 10,
-		id = 104020,
+		desc = "自身受到伤害时，有$1的概率触发，使自身完全回避所有攻击3秒并发射一轮鱼雷弹幕，完全回避效果结束后3秒内自身机动上升$2。（鱼雷弹幕每场战斗最多触发3次）",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -36840,11 +66126,14 @@ pg.skill_data_template = {
 	[104030] = {
 		desc_get = "",
 		name = "链接着的羁绊",
-		desc = "战斗开始时，若队伍中有其他KizunaAI阵营角色，根据KizunaAI阵营角色数量提升自身$1炮击，最多叠加4层；若队伍中没有其他KizunaAI阵营角色，开场时，自身受到的伤害降低$2，持续30秒",
+		id = 104030,
 		type = 3,
 		max_level = 10,
-		id = 104030,
+		desc = "战斗开始时，若队伍中有其他KizunaAI阵营角色，根据KizunaAI阵营角色数量提升自身$1炮击，最多叠加4层；若队伍中没有其他KizunaAI阵营角色，开场时，自身受到的伤害降低$2，持续30秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"1.5%",
@@ -36943,11 +66232,14 @@ pg.skill_data_template = {
 	[104040] = {
 		desc_get = "",
 		name = "绝对清楚宣言",
-		desc = "自身被点燃时间减少3秒，受到的高爆弹伤害减少$1",
+		id = 104040,
 		type = 2,
 		max_level = 10,
-		id = 104040,
+		desc = "自身被点燃时间减少3秒，受到的高爆弹伤害减少$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -37001,11 +66293,14 @@ pg.skill_data_template = {
 	[104050] = {
 		desc_get = "",
 		name = "Future Base",
-		desc = "战斗开始后30秒、45秒、60秒各触发一轮航空弹幕($1)(弹幕威力依据技能等级)",
+		id = 104050,
 		type = 1,
 		max_level = 10,
-		id = 104050,
+		desc = "战斗开始后30秒、45秒、60秒各触发一轮航空弹幕($1)(弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -37050,11 +66345,14 @@ pg.skill_data_template = {
 	[104060] = {
 		desc_get = "",
 		name = "Melty World",
-		desc = "与任意KizunaAI阵营角色同时出击时，自身空袭时有$1概率触发，8秒内自身造成的空袭伤害提高100%",
+		id = 104060,
 		type = 1,
 		max_level = 10,
-		id = 104060,
+		desc = "与任意KizunaAI阵营角色同时出击时，自身空袭时有$1概率触发，8秒内自身造成的空袭伤害提高100%",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -37108,11 +66406,14 @@ pg.skill_data_template = {
 	[104070] = {
 		desc_get = "",
 		name = "描边大师",
-		desc = "自身装备的主炮散布范围增加1点，主炮暴击率上升$1；战斗开始后每16秒，有$2的几率触发一轮弹幕(弹幕威力依据技能等级)",
+		id = 104070,
 		type = 1,
 		max_level = 10,
-		id = 104070,
+		desc = "自身装备的主炮散布范围增加1点，主炮暴击率上升$1；战斗开始后每16秒，有$2的几率触发一轮弹幕(弹幕威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"15.0%",
@@ -37211,11 +66512,14 @@ pg.skill_data_template = {
 	[104080] = {
 		desc_get = "",
 		name = "智能寻路系统",
-		desc = "运用超级人工智能优异的寻路能力，自身命中、机动属性提高$1",
+		id = 104080,
 		type = 2,
 		max_level = 10,
-		id = 104080,
+		desc = "运用超级人工智能优异的寻路能力，自身命中、机动属性提高$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"10.0%",
@@ -37269,11 +66573,14 @@ pg.skill_data_template = {
 	[105010] = {
 		desc_get = "",
 		name = "2.25马赫之华",
-		desc = "三号武器栏位变更为轰炸机栏位并统一将其武器外观替换为「2.25马赫狐笋」，由于不熟悉召唤方法，空袭需要的整备时间增加了100%；战斗中，每20秒额外召唤一轮场外航空支援$1(支援威力依据雷击属性和技能等级)",
+		id = 105010,
 		type = 1,
 		max_level = 10,
-		id = 105010,
+		desc = "三号武器栏位变更为轰炸机栏位并统一将其武器外观替换为「2.25马赫狐笋」，由于不熟悉召唤方法，空袭需要的整备时间增加了100%；战斗中，每20秒额外召唤一轮场外航空支援$1(支援威力依据雷击属性和技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -37318,11 +66625,14 @@ pg.skill_data_template = {
 	[105020] = {
 		desc_get = "",
 		name = "二重存在之狐",
-		desc = "战斗开始时，提升自身炮击属性$1；在一次关卡出击中，自身所在编队击破3个敌方编队后，额外提升自身雷击属性$2",
+		id = 105020,
 		type = 3,
 		max_level = 10,
-		id = 105020,
+		desc = "战斗开始时，提升自身炮击属性$1；在一次关卡出击中，自身所在编队击破3个敌方编队后，额外提升自身雷击属性$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -37421,11 +66731,14 @@ pg.skill_data_template = {
 	[105030] = {
 		desc_get = "",
 		name = "Dream☆Story",
-		desc = "自身发动空袭时，有$1概率触发一轮特殊弹幕$2，特殊弹幕可造成点燃效果(威力与样式依据技能等级)",
+		id = 105030,
 		type = 1,
 		max_level = 10,
-		id = 105030,
+		desc = "自身发动空袭时，有$1概率触发一轮特殊弹幕$2，特殊弹幕可造成点燃效果(威力与样式依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"70.0%",
@@ -37515,11 +66828,14 @@ pg.skill_data_template = {
 	[105040] = {
 		desc_get = "",
 		name = "比大海更深邃的天空下",
-		desc = "战斗开始时，降低所有hololive阵营角色受到的伤害$2；战斗开始后每20秒，降低在场的敌方单位航速$1，提升我方所有角色命中$1，提升我方hololive阵营角色航速$1，持续8秒",
+		id = 105040,
 		type = 2,
 		max_level = 10,
-		id = 105040,
+		desc = "战斗开始时，降低所有hololive阵营角色受到的伤害$2；战斗开始后每20秒，降低在场的敌方单位航速$1，提升我方所有角色命中$1，提升我方hololive阵营角色航速$1，持续8秒",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"5.0%",
@@ -37618,12 +66934,15 @@ pg.skill_data_template = {
 	[105050] = {
 		desc_get = "",
 		name = "室内系女仆",
-		desc = "自身氧气存量降低$1，进入战斗后20秒内，自身造成伤害提高$2；撤退时，航速提升100%",
+		id = 105050,
 		type = 1,
 		max_level = 10,
-		id = 105050,
+		desc = "自身氧气存量降低$1，进入战斗后20秒内，自身造成伤害提高$2；撤退时，航速提升100%",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -37723,12 +67042,15 @@ pg.skill_data_template = {
 	[105060] = {
 		desc_get = "",
 		name = "废柴天使",
-		desc = "进入战斗时，为在场所有我方角色提供一个随机增益$1；队伍中的hololive阵营角色获得1.5倍增益效果",
+		id = 105060,
 		type = 3,
 		max_level = 10,
-		id = 105060,
+		desc = "进入战斗时，为在场所有我方角色提供一个随机增益$1；队伍中的hololive阵营角色获得1.5倍增益效果",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -37774,12 +67096,15 @@ pg.skill_data_template = {
 	[105070] = {
 		desc_get = "",
 		name = "向日葵的约定 ",
-		desc = "进入战斗时，触发一轮必定暴击的特殊弹幕$1；若队伍中hololive阵营角色大于2，增强该弹幕样式",
+		id = 105070,
 		type = 1,
 		max_level = 10,
-		id = 105070,
+		desc = "进入战斗时，触发一轮必定暴击的特殊弹幕$1；若队伍中hololive阵营角色大于2，增强该弹幕样式",
 		system_transform = {
 			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
 		},
 		desc_get_add = {
 			{
@@ -37825,11 +67150,14 @@ pg.skill_data_template = {
 	[105080] = {
 		desc_get = "",
 		name = "与你眺望的夏日之花",
-		desc = "每25秒，有$1概率触发一轮特殊弹幕$2",
+		id = 105080,
 		type = 1,
 		max_level = 10,
-		id = 105080,
+		desc = "每25秒，有$1概率触发一轮特殊弹幕$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"40.0%",
@@ -37919,11 +67247,14 @@ pg.skill_data_template = {
 	[105090] = {
 		desc_get = "",
 		name = "第三日的见异思迁",
-		desc = "进入战斗时，若队伍中hololive阵营舰船数量为奇数，提升自身装备的主炮造成的伤害$1，否则降低自身受到的炮击伤害$2；开场后每20秒，随机使队伍中一名角色在接下来的10秒钟受到的伤害减少$2",
+		id = 105090,
 		type = 3,
 		max_level = 10,
-		id = 105090,
+		desc = "进入战斗时，若队伍中hololive阵营舰船数量为奇数，提升自身装备的主炮造成的伤害$1，否则降低自身受到的炮击伤害$2；开场后每20秒，随机使队伍中一名角色在接下来的10秒钟受到的伤害减少$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"4.5%",
@@ -38022,11 +67353,14 @@ pg.skill_data_template = {
 	[105100] = {
 		desc_get = "",
 		name = "鬼神☆百鬼",
-		desc = "每隔20秒，利用式神进行一次自身强化，成功率$2；强化成功后提升自身本场战斗伤害$1，强化效果每场战斗最多叠加3次",
+		id = 105100,
 		type = 3,
 		max_level = 10,
-		id = 105100,
+		desc = "每隔20秒，利用式神进行一次自身强化，成功率$2；强化成功后提升自身本场战斗伤害$1，强化效果每场战斗最多叠加3次",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"3.5%",
@@ -38125,11 +67459,14 @@ pg.skill_data_template = {
 	[105110] = {
 		desc_get = "",
 		name = "阿修罗修罗刹鬼神斩",
-		desc = "每隔$1秒，使用一次阿修罗修罗刹鬼神斩$2，有50%概率对斩击命中的敌方单位造成破甲效果，持续6秒(斩击威力依据技能等级)",
+		id = 105110,
 		type = 1,
 		max_level = 10,
-		id = 105110,
+		desc = "每隔$1秒，使用一次阿修罗修罗刹鬼神斩$2，有50%概率对斩击命中的敌方单位造成破甲效果，持续6秒(斩击威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"20",
@@ -38219,11 +67556,14 @@ pg.skill_data_template = {
 	[105120] = {
 		desc_get = "",
 		name = "梦见好梦的「WAVE」",
-		desc = "自身发动空袭时，有$1概率触发，使先锋领舰发出光波，8秒内降低在场的所有敌人造成的伤害$2",
+		id = 105120,
 		type = 3,
 		max_level = 10,
-		id = 105120,
+		desc = "自身发动空袭时，有$1概率触发，使先锋领舰发出光波，8秒内降低在场的所有敌人造成的伤害$2",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"70.0%",
@@ -38322,11 +67662,14 @@ pg.skill_data_template = {
 	[105130] = {
 		desc_get = "",
 		name = "MP清零的「EXPLOSION」",
-		desc = "战斗中，每隔8秒，回复自身1点MP，当MP值填充至3时，清零自身MP触发一轮特殊弹幕$1",
+		id = 105130,
 		type = 1,
 		max_level = 10,
-		id = 105130,
+		desc = "战斗中，每隔8秒，回复自身1点MP，当MP值填充至3时，清零自身MP触发一轮特殊弹幕$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -38371,11 +67714,14 @@ pg.skill_data_template = {
 	[105140] = {
 		desc_get = "",
 		name = "野性的二元论",
-		desc = "战斗中，自身第奇数次空袭额外使用鱼雷机进行攻击$1，第偶数次空袭额外使用轰炸机进行攻击$1(威力依据技能等级)",
+		id = 105140,
 		type = 1,
 		max_level = 10,
-		id = 105140,
+		desc = "战斗中，自身第奇数次空袭额外使用鱼雷机进行攻击$1，第偶数次空袭额外使用轰炸机进行攻击$1(威力依据技能等级)",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -38420,11 +67766,14 @@ pg.skill_data_template = {
 	[105150] = {
 		desc_get = "",
 		name = "塔罗占卜师",
-		desc = "战斗开始时，进行一次占卜，根据占卜结果为自身提供一种增益$1",
+		id = 105150,
 		type = 3,
 		max_level = 10,
-		id = 105150,
+		desc = "战斗开始时，进行一次占卜，根据占卜结果为自身提供一种增益$1",
 		system_transform = {},
+		world_death_mark = {
+			1
+		},
 		desc_get_add = {
 			{
 				"Lv.1",
@@ -38466,12 +67815,4261 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[106010] = {
+		desc_get = "",
+		name = "玫瑰边刺",
+		id = 106010,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，自身受到攻击时，有$1概率触发一轮必定暴击的特殊弹幕$2(威力依据技能等级，触发后进入10秒冷却)；进入战斗后60秒内，自身炮击、雷击属性提高$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[106020] = {
+		desc_get = "",
+		name = "活泼的小步舞曲",
+		id = 106020,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中，自身装备的鱼雷武器前三次攻击造成的伤害提高$1；自身装备的鱼雷武器发射时，8秒内提升先锋舰队成员航速3，先锋领舰机动$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"30.0%",
+				"50.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30.0%",
+					"+2.2%"
+				},
+				{
+					"32.2%",
+					"+2.2%"
+				},
+				{
+					"34.4%",
+					"+2.2%"
+				},
+				{
+					"36.6%",
+					"+2.2%"
+				},
+				{
+					"38.8%",
+					"+2.2%"
+				},
+				{
+					"41.0%",
+					"+2.2%"
+				},
+				{
+					"43.2%",
+					"+2.2%"
+				},
+				{
+					"45.4%",
+					"+2.2%"
+				},
+				{
+					"47.6%",
+					"+2.4%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[106030] = {
+		desc_get = "",
+		name = "必杀☆猜拳",
+		id = 106030,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始时，自身炮击属性提高$1，对轻型装甲敌人造成的伤害提高$3；战斗中自身主炮开火后5秒，进行一次随机弹幕攻击$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[106040] = {
+		desc_get = "",
+		name = "必杀☆大爆发",
+		id = 106040,
+		type = 2,
+		max_level = 10,
+		desc = "自身主炮武器开火时，使随机2名舰队成员回复5%血量，并有$1概率触发一次特殊弹幕$2（弹幕威力依据技能等级）",
+		system_transform = {
+			[3.0] = 106045
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"45.0%",
+				"75.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"45.0%",
+					"+3.3%"
+				},
+				{
+					"48.3%",
+					"+3.3%"
+				},
+				{
+					"51.6%",
+					"+3.3%"
+				},
+				{
+					"54.9%",
+					"+3.3%"
+				},
+				{
+					"58.2%",
+					"+3.3%"
+				},
+				{
+					"61.5%",
+					"+3.3%"
+				},
+				{
+					"64.8%",
+					"+3.3%"
+				},
+				{
+					"68.1%",
+					"+3.3%"
+				},
+				{
+					"71.4%",
+					"+3.6%"
+				},
+				{
+					"75.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[106050] = {
+		desc_get = "",
+		name = "樱花天舞袭",
+		id = 106050,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，触发一次樱花弹幕$1；自身装备的鱼雷武器每命中敌人6次，追加一轮樱花弹幕射击（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[106060] = {
+		desc_get = "",
+		name = "霞镜花",
+		id = 106060,
+		type = 3,
+		max_level = 10,
+		desc = "自身在战斗中击破敌舰时，自身炮击、装填属性提高$1，最高叠加3层；自身在战斗中击破3艘敌舰后，额外提升自身命中$2，每场战斗仅能触发1次（属性提升效果持续至战斗结束）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[106070] = {
+		desc_get = "",
+		name = "害羞的助理少女",
+		id = 106070,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗后60秒内，提高自身炮击及对轻型装甲敌人造成的伤害$1；进入战斗时，若队伍中存在其他维纳斯假期阵营舰船，自身防空属性提高$2，受到炮击属性造成的伤害降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[106080] = {
+		desc_get = "",
+		name = "维纳斯之友",
+		id = 106080,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每20秒，触发一轮特殊弹幕$1，被特殊弹幕命中的敌方单位8秒内受到维纳斯假期阵营舰船造成的伤害提高$2（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[106090] = {
+		desc_get = "",
+		name = "温柔？的姐姐",
+		id = 106090,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每18秒，有$1概率触发一轮弹幕$2，被特殊弹幕命中的敌方单位8秒内受到海咲、凪咲造成的伤害提高$3（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[106100] = {
+		desc_get = "",
+		name = "神秘的维纳斯",
+		id = 106100,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中，自身受到的伤害降低$1，主炮开火时，随机使一名敌方单位速度降低$2，持续8秒",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[106110] = {
+		desc_get = "",
+		name = "鬼牌游戏",
+		id = 106110,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，发射由扑克牌子弹和特殊子弹组成的特殊弹幕$1（特殊弹幕威力依据技能等级），弹幕中的特殊子弹将使被其命中的敌方单位6秒内受伤增加10%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[106120] = {
+		desc_get = "",
+		name = "皇家同花顺",
+		id = 106120,
+		type = 3,
+		max_level = 10,
+		desc = "自身装备的主炮炮弹的飞行速度提高10%；防空圈内，敌方飞机被击落5架后，自身雷击、防空提高$1，持续至战斗结束",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[106130] = {
+		desc_get = "",
+		name = "飞天之舞",
+		id = 106130,
+		type = 1,
+		max_level = 10,
+		desc = "自身空袭整备完毕后5秒，额外进行一次航空弹幕攻击$1（航空弹幕威力与样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[106140] = {
+		desc_get = "",
+		name = "花神乐",
+		id = 106140,
+		type = 3,
+		max_level = 10,
+		desc = "自身对战列舰造成的伤害提升$1，自身发动空袭时，有$2概率使1名先锋舰队成员在未来的8秒内受伤降低$3",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.0%",
+				"10.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[107010] = {
+		desc_get = "",
+		name = "冒失娘？",
+		id = 107010,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每秒判定1次，有10%的概率对自身造成43点伤害，三秒后恢复自身及当前队伍中血量百分比最低的角色$1耐久（技能效果每场战斗最多触发2次）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.5%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.5%",
+					"+0.3%"
+				},
+				{
+					"1.8%",
+					"+0.3%"
+				},
+				{
+					"2.1%",
+					"+0.4%"
+				},
+				{
+					"2.5%",
+					"+0.3%"
+				},
+				{
+					"2.8%",
+					"+0.3%"
+				},
+				{
+					"3.1%",
+					"+0.4%"
+				},
+				{
+					"3.5%",
+					"+0.4%"
+				},
+				{
+					"3.9%",
+					"+0.4%"
+				},
+				{
+					"4.3%",
+					"+0.7%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[107020] = {
+		desc_get = "",
+		name = "idol的向上心",
+		id = 107020,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始后，自身第$1次使用装备的鱼雷武器时，使当前在场的所有敌人在5秒内受到的伤害提高$2；效果触发后再次使用鱼雷武器时，自身受到的伤害减少$3，伤害减免效果持续至本场战斗结束，最多叠加2层",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3",
+				"2"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[107030] = {
+		desc_get = "",
+		name = "PositiveBurst！",
+		id = 107030,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每15秒，发射一轮特殊弹幕$1（特殊弹幕威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[107040] = {
+		desc_get = "",
+		name = "响彻天空的碧蓝之歌",
+		id = 107040,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后自身第一次发动空袭时，有$1概率触发一轮特殊弹幕$2（弹幕威力及样式根据技能等级），第二次空袭起特殊弹幕触发概率提高为100%，与其他偶像大师联动角色共同出击时，特殊弹幕必定触发",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"80.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.3%"
+				},
+				{
+					"59.9%",
+					"+3.3%"
+				},
+				{
+					"63.2%",
+					"+3.3%"
+				},
+				{
+					"66.5%",
+					"+3.3%"
+				},
+				{
+					"69.8%",
+					"+3.3%"
+				},
+				{
+					"73.1%",
+					"+3.3%"
+				},
+				{
+					"76.4%",
+					"+3.6%"
+				},
+				{
+					"80%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[107050] = {
+		desc_get = "",
+		name = "努力成就之景",
+		id = 107050,
+		type = 3,
+		max_level = 10,
+		desc = "自身在战斗中击破敌舰时，自身航空、装填属性提高$1，最高叠加3层，与其他偶像大师联动角色共同出击时，属性增益直接叠加至最高（属性提升效果持续至战斗结束）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[107060] = {
+		desc_get = "",
+		name = "协行的海之翼",
+		id = 107060,
+		type = 2,
+		max_level = 10,
+		desc = "战斗中，自身首轮空袭整备所需时间减少$1，队伍中偶像大师联动角色受到的伤害降低$2",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"10.0%",
+				"30.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+2.2%"
+				},
+				{
+					"12.2%",
+					"+2.2%"
+				},
+				{
+					"14.4%",
+					"+2.2%"
+				},
+				{
+					"16.6%",
+					"+2.2%"
+				},
+				{
+					"18.8%",
+					"+2.2%"
+				},
+				{
+					"21.0%",
+					"+2.2%"
+				},
+				{
+					"23.2%",
+					"+2.2%"
+				},
+				{
+					"25.4%",
+					"+2.2%"
+				},
+				{
+					"27.6%",
+					"+2.4%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[107070] = {
+		desc_get = "",
+		name = "伊织Strike!",
+		id = 107070,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中，自身对重型护甲敌人造成的伤害额外提高$1，自身主炮武器开火时，有$2概率触发一轮特殊弹幕$3（威力根据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"50.0%",
+				"100.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[107080] = {
+		desc_get = "",
+		name = "伊织Defence!",
+		id = 107080,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始后，使自身及队伍中随机一名其他成员在30秒内受到的伤害降低$1，30秒后，恢复该成员$2耐久",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"10.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+1.0%"
+				},
+				{
+					"2.0%",
+					"+1.0%"
+				},
+				{
+					"3.0%",
+					"+1.0%"
+				},
+				{
+					"4.0%",
+					"+1.0%"
+				},
+				{
+					"5.0%",
+					"+1.0%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+1.0%"
+				},
+				{
+					"8.0%",
+					"+1.0%"
+				},
+				{
+					"9.0%",
+					"+1.0%"
+				},
+				{
+					"10.0%"
+				}
+			}
+		}
+	},
+	[107090] = {
+		desc_get = "",
+		name = "天然系？招牌姿势",
+		id = 107090,
+		type = 1,
+		max_level = 10,
+		desc = "自身主炮射击时有$1概率触发，3秒内自身主炮造成1.5倍伤害，5秒内自身防空提高$2，触发后进入5秒冷却",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[107100] = {
+		desc_get = "",
+		name = "治愈系占卜",
+		id = 107100,
+		type = 2,
+		max_level = 10,
+		desc = "自身存活时使主力舰队受到的伤害减少$1；战斗开始时，进行一次占卜，使自身获得以下增益中的一种：①自身机动属性提高$2；②命中属性提高$3；③炮击属性提高$4；④回复自身$5耐久",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"1.0%",
+				"5.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[107110] = {
+		desc_get = "",
+		name = "迷路的偶像",
+		id = 107110,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始后每20秒，触发一轮特殊弹幕$1（威力及样式根据技能等级），若弹幕触发时先锋舰队仅由自身组成，自身进入2秒迷路状态（航速变为0）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[107120] = {
+		desc_get = "",
+		name = "前行航路Management",
+		id = 107120,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始每20秒，触发一轮特殊弹幕$1（弹幕威力根据技能等级，战斗开始后5秒额外触发一次），被特殊弹幕命中的敌方舰船在5秒内受到偶像大师阵营舰船造成的伤害提高$2；进入战斗时，若队伍中偶像大师阵营舰船的数量小于等于3，提高自身炮击属性100%并强化特殊弹幕样式",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[107130] = {
+		desc_get = "",
+		name = "运输的好伙伴",
+		id = 107130,
+		type = 2,
+		max_level = 10,
+		desc = "装备货物时，自身航速降低3，自身的被点燃时间减少3秒，旗舰受到的点燃伤害降低$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[107140] = {
+		desc_get = "",
+		name = "恶作剧Cheering·亚美",
+		id = 107140,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，随机使一名先锋舰队成员在一秒内航速降低1，一秒后，回复该角色100点血量并提高该角色机动$1，持续20秒",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[107150] = {
+		desc_get = "",
+		name = "双子共舞·亚美",
+		id = 107150,
+		type = 1,
+		max_level = 10,
+		desc = "进入战斗时，触发一轮特殊弹幕$1（威力及样式根据技能等级）",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[107160] = {
+		desc_get = "",
+		name = "恶作剧Cheering·真美",
+		id = 107160,
+		type = 3,
+		max_level = 10,
+		desc = "进入战斗时，随机使一名主力舰队成员在一秒内航速降低1，一秒后，回复该角色100点血量并提高该角色命中$1，持续20秒",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			}
+		}
+	},
+	[107170] = {
+		desc_get = "",
+		name = "双子共舞·真美",
+		id = 107170,
+		type = 1,
+		max_level = 10,
+		desc = "进入战斗时，触发一轮特殊弹幕$1（威力及样式根据技能等级）",
+		system_transform = {
+			[11.0] = 3500
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1",
+					"+1"
+				},
+				{
+					"Lv.2",
+					"+1"
+				},
+				{
+					"Lv.3",
+					"+1"
+				},
+				{
+					"Lv.4",
+					"+1"
+				},
+				{
+					"Lv.5",
+					"+1"
+				},
+				{
+					"Lv.6",
+					"+1"
+				},
+				{
+					"Lv.7",
+					"+1"
+				},
+				{
+					"Lv.8",
+					"+1"
+				},
+				{
+					"Lv.9",
+					"+1"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[800010] = {
+		desc_get = "",
+		name = "烬火枪焰",
+		id = 800010,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中每20秒，触发一轮特殊弹幕$1，被特殊弹幕命中的角色减速20%，持续5秒(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[800020] = {
+		desc_get = "",
+		name = "幻影强袭",
+		id = 800020,
+		type = 1,
+		max_level = 10,
+		desc = "自身发动空袭时，有$1概率触发，8秒内自身造成的所有伤害提高50%，触发失败时，发射一轮特殊弹幕$2(威力依据技能等级)",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"20.0%",
+				"50.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.6%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[800030] = {
+		desc_get = "",
+		name = "荣光之锋",
+		id = 800030,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提升自身命中属性$1，若自身装备有任意皇家阵营舰载机武器，自身发动空袭时，释放一轮航空弹幕$2（威力及样式依据技能等级）；若未装备任何皇家阵营舰载机武器，本场战斗前60秒，自身及先锋舰队领舰角色防空属性提高$1",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[800040] = {
+		desc_get = "",
+		name = "烬火之刃",
+		id = 800040,
+		type = 1,
+		max_level = 10,
+		desc = "战斗开始10秒及随后每20秒，向身前发动多次斩击$1，被斩击命中的敌方单位受到自身造成的伤害提高$2，持续15秒（弹幕威力及样式依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[800050] = {
+		desc_get = "",
+		name = "光暗花札",
+		id = 800050,
+		type = 3,
+		max_level = 10,
+		desc = "战斗开始时，提升自身航空属性$2，战斗中每20秒，使用花牌进行一次弹幕射击$1（花牌攻击的样式随机，威力依据技能等级）",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[800060] = {
+		desc_get = "",
+		name = "战忆之樱",
+		id = 800060,
+		type = 2,
+		max_level = 10,
+		desc = "战斗开始时，若自身装备有任意重樱阵营舰载机武器，战斗中每15秒，释放一轮航空弹幕$1（弹幕威力及样式依据技能等级）；若未装备任何重樱阵营舰载机武器，本场战斗自身前$2次受到的伤害降低$3，受伤达到$2次后，自身受到的伤害降低$4，机动提高$5，持续至战斗结束",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"2",
+				"4"
+			},
+			{
+				"15.0%",
+				"35.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"2"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"3"
+				},
+				{
+					"4"
+				},
+				{
+					"4"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.5%"
+				},
+				{
+					"16.5%",
+					"+1.5%"
+				},
+				{
+					"18.0%",
+					"+1.5%"
+				},
+				{
+					"19.5%",
+					"+2.0%"
+				},
+				{
+					"21.5%",
+					"+2.0%"
+				},
+				{
+					"23.5%",
+					"+2.5%"
+				},
+				{
+					"26.0%",
+					"+2.5%"
+				},
+				{
+					"28.5%",
+					"+3.0%"
+				},
+				{
+					"31.5%",
+					"+3.5%"
+				},
+				{
+					"35.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[800071] = {
+		desc_get = "",
+		name = "破敌之炬·{namecode:94}I",
+		id = 800071,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，自身造成的所有伤害提高3%",
+		system_transform = {
+			[51.0] = 800075
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800072] = {
+		desc_get = "",
+		name = "破敌之炬·{namecode:94}II",
+		id = 800072,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，自身造成的所有伤害提高8%",
+		system_transform = {
+			[51.0] = 800077
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800075] = {
+		desc_get = "",
+		name = "破敌之炬·{namecode:94}I",
+		id = 800075,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，自身造成的所有伤害提高3%",
+		system_transform = {
+			[51.0] = 800075
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800077] = {
+		desc_get = "",
+		name = "破敌之炬·{namecode:94}II",
+		id = 800077,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，自身造成的所有伤害提高8%",
+		system_transform = {
+			[51.0] = 800077
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800081] = {
+		desc_get = "",
+		name = "破敌之炬·皇家方舟I",
+		id = 800081,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，先锋舰队受到的伤害降低3%",
+		system_transform = {
+			[51.0] = 800085
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800082] = {
+		desc_get = "",
+		name = "破敌之炬·皇家方舟II",
+		id = 800082,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，先锋舰队受到的伤害降低8%",
+		system_transform = {
+			[51.0] = 800087
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800085] = {
+		desc_get = "",
+		name = "破敌之炬·皇家方舟I",
+		id = 800085,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，先锋舰队受到的伤害降低3%",
+		system_transform = {
+			[51.0] = 800085
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800087] = {
+		desc_get = "",
+		name = "破敌之炬·皇家方舟II",
+		id = 800087,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n与精英舰队或BOSS舰队交战时，先锋舰队受到的伤害降低8%",
+		system_transform = {
+			[51.0] = 800087
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800090] = {
+		desc_get = "",
+		name = "烬火鹰翼",
+		id = 800090,
+		type = 1,
+		max_level = 10,
+		desc = "战斗中每20秒，触发一轮特殊弹幕$1(弹幕子弹有30%概率使被命中单位在未来5秒内受到伤害提高10%，弹幕威力依据技能等级)，自身装备任意白鹰阵营装备时，弹幕变更为每15秒触发一次",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[800100] = {
+		desc_get = "",
+		name = "雷达扫描·Hacking",
+		id = 800100,
+		type = 3,
+		max_level = 10,
+		desc = "自身炮击、命中属性提升$1，战斗中每隔15秒，有$2概率发动，生成一个雷达扫描区域，区域中的敌方单位在3秒内航速变为0",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"50.0%",
+				"100.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"50.0%",
+					"+5.5%"
+				},
+				{
+					"55.5%",
+					"+5.5%"
+				},
+				{
+					"61%",
+					"+5.5%"
+				},
+				{
+					"66.5%",
+					"+5.5%"
+				},
+				{
+					"72.0%",
+					"+5.5%"
+				},
+				{
+					"77.5%",
+					"+5.5%"
+				},
+				{
+					"83.0%",
+					"+5.5%"
+				},
+				{
+					"88.5%",
+					"+5.5%"
+				},
+				{
+					"94.0%",
+					"+6.0%"
+				},
+				{
+					"100.0%"
+				}
+			}
+		}
+	},
+	[800110] = {
+		desc_get = "",
+		name = "情报掌握",
+		id = 800110,
+		type = 2,
+		max_level = 10,
+		desc = "自身对轻型护甲敌人造成的伤害提高$1；与海伦娜共同出击时，战斗中自身受到的伤害降低$2，不与海伦娜共同出击时，自身机动提高$3，降低先锋领舰受到的伤害5%",
+		system_transform = {},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"8.0%",
+				"18.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"8.0%",
+					"+1.1%"
+				},
+				{
+					"9.1%",
+					"+1.1%"
+				},
+				{
+					"10.2%",
+					"+1.1%"
+				},
+				{
+					"11.3%",
+					"+1.1%"
+				},
+				{
+					"12.4%",
+					"+1.1%"
+				},
+				{
+					"13.5%",
+					"+1.1%"
+				},
+				{
+					"14.6%",
+					"+1.1%"
+				},
+				{
+					"15.7%",
+					"+1.1%"
+				},
+				{
+					"16.8%",
+					"+1.2%"
+				},
+				{
+					"18.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[800121] = {
+		desc_get = "",
+		name = "破敌之炬·海伦娜I",
+		id = 800121,
+		type = 3,
+		max_level = 1,
+		desc = "主炮每进行15次攻击，触发一轮特殊弹幕I",
+		system_transform = {
+			[51.0] = 800125
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800122] = {
+		desc_get = "",
+		name = "破敌之炬·海伦娜II",
+		id = 800122,
+		type = 3,
+		max_level = 1,
+		desc = "主炮每进行10次攻击，触发一轮特殊弹幕II",
+		system_transform = {
+			[51.0] = 800127
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800125] = {
+		desc_get = "",
+		name = "破敌之炬·海伦娜I",
+		id = 800125,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n主炮每进行15次攻击，触发一轮特殊弹幕I，与精英舰队或BOSS舰队交战时，先锋舰队成员造成的所有伤害提高3%",
+		system_transform = {
+			[51.0] = 800125
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[800127] = {
+		desc_get = "",
+		name = "破敌之炬·海伦娜II",
+		id = 800127,
+		type = 3,
+		max_level = 1,
+		desc = "【大型作战效果】\n主炮每进行10次攻击，触发一轮特殊弹幕II，与精英舰队或BOSS舰队交战时，先锋舰队成员造成的所有伤害提高5%",
+		system_transform = {
+			[51.0] = 800127
+		},
+		world_death_mark = {
+			1
+		},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	all = {
+		1,
+		2,
 		10,
 		11,
 		12,
+		13,
 		14,
 		15,
+		16,
+		340,
 		1001,
 		1002,
 		1003,
@@ -38523,6 +72121,9 @@ pg.skill_data_template = {
 		2151,
 		2161,
 		2171,
+		2181,
+		2191,
+		2201,
 		3001,
 		3011,
 		3021,
@@ -38553,6 +72154,9 @@ pg.skill_data_template = {
 		4121,
 		4131,
 		4141,
+		4151,
+		4161,
+		4171,
 		5001,
 		5011,
 		5021,
@@ -38608,6 +72212,9 @@ pg.skill_data_template = {
 		6328,
 		6329,
 		6330,
+		6331,
+		6332,
+		6333,
 		6360,
 		6370,
 		6380,
@@ -38627,6 +72234,87 @@ pg.skill_data_template = {
 		6500,
 		6510,
 		6520,
+		6530,
+		6540,
+		6550,
+		6560,
+		6570,
+		6580,
+		6590,
+		6620,
+		6650,
+		6660,
+		6670,
+		6680,
+		6690,
+		6700,
+		6710,
+		6711,
+		6712,
+		6720,
+		6730,
+		6740,
+		6750,
+		6760,
+		6770,
+		6790,
+		6791,
+		6792,
+		6793,
+		6794,
+		6795,
+		6796,
+		6797,
+		6798,
+		6799,
+		6800,
+		6801,
+		6802,
+		6803,
+		6810,
+		6811,
+		6812,
+		6813,
+		6814,
+		6815,
+		6816,
+		6817,
+		6818,
+		6819,
+		6820,
+		6821,
+		6822,
+		6823,
+		6830,
+		6831,
+		6832,
+		6833,
+		6834,
+		6835,
+		6836,
+		6837,
+		6838,
+		6839,
+		6840,
+		6841,
+		6842,
+		6843,
+		6850,
+		6860,
+		6861,
+		6862,
+		6863,
+		6864,
+		6865,
+		6866,
+		6867,
+		6868,
+		6869,
+		6870,
+		6871,
+		6872,
+		6873,
+		6880,
 		7000,
 		9010,
 		9020,
@@ -38641,6 +72329,7 @@ pg.skill_data_template = {
 		9090,
 		9101,
 		9110,
+		9120,
 		10010,
 		10020,
 		10030,
@@ -38845,6 +72534,7 @@ pg.skill_data_template = {
 		11990,
 		12000,
 		12010,
+		12020,
 		12030,
 		12040,
 		12050,
@@ -38917,12 +72607,213 @@ pg.skill_data_template = {
 		12770,
 		12780,
 		12790,
+		12810,
+		12820,
+		12830,
+		12840,
+		12850,
+		12860,
+		12870,
+		12880,
+		12890,
+		12900,
+		12910,
+		12930,
+		12940,
+		12950,
+		12960,
+		12970,
+		12980,
+		12990,
+		13000,
+		13010,
+		13020,
+		13030,
+		13040,
+		13050,
+		13060,
+		13070,
+		13080,
+		13090,
+		13100,
+		13110,
+		13120,
+		13130,
+		13140,
+		13150,
+		13160,
+		13170,
+		13180,
+		13190,
+		13200,
+		13210,
+		13220,
+		13230,
+		13240,
+		13250,
+		13260,
+		13270,
+		13280,
+		13290,
+		13300,
+		13310,
+		13320,
+		13330,
+		13340,
+		13350,
+		13360,
+		13370,
+		13380,
+		13390,
+		13400,
+		13410,
+		13420,
+		13430,
+		13440,
+		13450,
+		13460,
+		13470,
+		13480,
+		13490,
+		13500,
+		13510,
+		13520,
+		13530,
+		13540,
+		13550,
+		13560,
+		13570,
+		13580,
+		13590,
+		13600,
+		13610,
+		13620,
+		13630,
+		13640,
+		13650,
+		13660,
+		13670,
+		13680,
+		13690,
+		13700,
+		13710,
+		13720,
+		13730,
+		13740,
+		13750,
+		13760,
+		13770,
+		13780,
+		13790,
+		13800,
+		13810,
+		13820,
+		13830,
+		13840,
+		13850,
+		13860,
+		13870,
+		13880,
+		13890,
+		13900,
+		13910,
+		13920,
+		13930,
+		13940,
+		13950,
+		13960,
+		13970,
+		13980,
+		13990,
+		14000,
+		14010,
+		14020,
+		14030,
+		14040,
+		14050,
+		14060,
+		14070,
+		14080,
+		14090,
+		14100,
+		14110,
+		14120,
+		14130,
+		14140,
+		14150,
+		14160,
+		14170,
+		14180,
+		14190,
+		14200,
+		14210,
+		14220,
+		14230,
+		14240,
+		14250,
+		14260,
+		14270,
+		14280,
+		14290,
+		14300,
+		14310,
+		14320,
+		14330,
+		14340,
+		14350,
+		14360,
+		14370,
+		14380,
+		14390,
+		14400,
+		14410,
+		14420,
+		14430,
+		14440,
+		14450,
+		14460,
+		14470,
+		14480,
+		14490,
+		14500,
+		14510,
+		14520,
+		14530,
+		14540,
+		14550,
+		14560,
+		14570,
+		14580,
+		14590,
+		14600,
+		14610,
+		14620,
+		14630,
+		14640,
+		14650,
+		14660,
+		14670,
+		14680,
+		14700,
+		14710,
+		14720,
+		14730,
+		14740,
+		14750,
 		18010,
 		18040,
 		18050,
 		18070,
 		18100,
 		18120,
+		18130,
+		18150,
+		18180,
+		18250,
+		18270,
+		18320,
+		18340,
+		18350,
 		19000,
 		19001,
 		19002,
@@ -38952,6 +72843,32 @@ pg.skill_data_template = {
 		19240,
 		19250,
 		19260,
+		19270,
+		19280,
+		19290,
+		19300,
+		19310,
+		19320,
+		19330,
+		19340,
+		19350,
+		19360,
+		19370,
+		19380,
+		19390,
+		19400,
+		19410,
+		19420,
+		19430,
+		19440,
+		19450,
+		19460,
+		19470,
+		19480,
+		19490,
+		19500,
+		19510,
+		19520,
 		20011,
 		20012,
 		20021,
@@ -38966,6 +72883,8 @@ pg.skill_data_template = {
 		20062,
 		20071,
 		20072,
+		20081,
+		20082,
 		20111,
 		20112,
 		20121,
@@ -38990,10 +72909,16 @@ pg.skill_data_template = {
 		20272,
 		20311,
 		20312,
+		20321,
+		20322,
 		21011,
 		21012,
+		21016,
+		21017,
 		21021,
 		21022,
+		21026,
+		21027,
 		21031,
 		21032,
 		21041,
@@ -39022,6 +72947,8 @@ pg.skill_data_template = {
 		21162,
 		21171,
 		21172,
+		21181,
+		21182,
 		21211,
 		21212,
 		21221,
@@ -39079,6 +73006,8 @@ pg.skill_data_template = {
 		22262,
 		22311,
 		22312,
+		22411,
+		22412,
 		23011,
 		23012,
 		23031,
@@ -39095,6 +73024,8 @@ pg.skill_data_template = {
 		23212,
 		23221,
 		23222,
+		23231,
+		23232,
 		23311,
 		23312,
 		23321,
@@ -39109,18 +73040,42 @@ pg.skill_data_template = {
 		24112,
 		24121,
 		24122,
+		24131,
+		24132,
 		25011,
 		25012,
+		25021,
+		25022,
+		25031,
+		25032,
+		25041,
+		25042,
 		25211,
 		25212,
 		25221,
 		25222,
+		25511,
+		25512,
+		26011,
+		26012,
+		26021,
+		26022,
+		26111,
+		26112,
+		26211,
+		26212,
 		28011,
 		28012,
 		28021,
 		28022,
+		28031,
+		28032,
 		28111,
 		28112,
+		28121,
+		28122,
+		28211,
+		28212,
 		29011,
 		29012,
 		29021,
@@ -39214,6 +73169,60 @@ pg.skill_data_template = {
 		29462,
 		29471,
 		29472,
+		29481,
+		29482,
+		29491,
+		29492,
+		29501,
+		29502,
+		29511,
+		29512,
+		29521,
+		29531,
+		29541,
+		29542,
+		29551,
+		29552,
+		29561,
+		29562,
+		29571,
+		29572,
+		29581,
+		29582,
+		29591,
+		29592,
+		29601,
+		29602,
+		29611,
+		29612,
+		29621,
+		29622,
+		29631,
+		29632,
+		29641,
+		29642,
+		29651,
+		29652,
+		29661,
+		29662,
+		29671,
+		29672,
+		29681,
+		29682,
+		29691,
+		29692,
+		29701,
+		29702,
+		29711,
+		29712,
+		29721,
+		29722,
+		29731,
+		29732,
+		29741,
+		29742,
+		29751,
+		29752,
 		101010,
 		101020,
 		101030,
@@ -39263,8 +73272,58 @@ pg.skill_data_template = {
 		105120,
 		105130,
 		105140,
-		105150
+		105150,
+		106010,
+		106020,
+		106030,
+		106040,
+		106050,
+		106060,
+		106070,
+		106080,
+		106090,
+		106100,
+		106110,
+		106120,
+		106130,
+		106140,
+		107010,
+		107020,
+		107030,
+		107040,
+		107050,
+		107060,
+		107070,
+		107080,
+		107090,
+		107100,
+		107110,
+		107120,
+		107130,
+		107140,
+		107150,
+		107160,
+		107170,
+		800010,
+		800020,
+		800030,
+		800040,
+		800050,
+		800060,
+		800071,
+		800072,
+		800075,
+		800077,
+		800081,
+		800082,
+		800085,
+		800087,
+		800090,
+		800100,
+		800110,
+		800121,
+		800122,
+		800125,
+		800127
 	}
 }
-
-return

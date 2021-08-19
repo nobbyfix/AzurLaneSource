@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KAIXUAN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"骑士公主的忧郁\n\n<size=45>六 “对立”的姐妹</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -95,9 +95,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "正好，问问福尔班和勒马尔的情况吧",
 			typewriter = {
 				speed = 0.05,
@@ -120,11 +120,11 @@ return {
 			}
 		},
 		{
-			say = "诶，指、指挥官？",
+			actor = 801010,
 			side = 0,
 			bgName = "bg_story_task",
 			dir = 1,
-			actor = 801010,
+			say = "诶，指、指挥官？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -190,14 +190,14 @@ return {
 			}
 		},
 		{
+			actor = 901010,
 			side = 1,
 			bgName = "bg_story_task",
 			dir = -1,
-			actor = 901010,
 			say = "指挥官，福尔班说你找我们？哎？凯旋小姐也在呀，呀吼～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -349,10 +349,10 @@ return {
 			say = "谁、谁是笨蛋了啦",
 			action = {
 				{
-					y = 22.5,
-					dur = 0.15,
 					number = 1,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 22.5
 				}
 			},
 			typewriter = {

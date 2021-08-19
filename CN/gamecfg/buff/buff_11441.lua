@@ -149,14 +149,14 @@ return {
 			}
 		}
 	},
-	time = 5,
-	name = "斯卡帕湾之牛",
 	init_effect = "",
-	id = 11441,
+	name = "斯卡帕湾之牛",
+	time = 5,
+	color = "red",
 	picture = "",
 	desc = "斯卡帕湾之牛",
 	stack = 1,
-	color = "red",
+	id = 11441,
 	icon = 11440,
 	last_effect = "Darkness",
 	effect_list = {

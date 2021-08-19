@@ -1,18 +1,18 @@
 return {
-	fadeType = 1,
+	id = "HOLOGUANQIA11",
 	mode = 2,
 	once = true,
-	id = "HOLOGUANQIA11",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			bgm = "holo-tokiwa",
 			actor = 10500040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "看这个在阳光下闪闪发光的黑曜石建筑，这里就是反抗军基地了。",
+			bgm = "holo-tokiwa",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

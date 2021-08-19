@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIRUI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:71}的宴会\n\n<size=45>五 宴会·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·海军食堂",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·海军食堂",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -98,9 +98,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "伴随着柔和的音乐旋律，{namecode:71}的宴会正式开始了…",
 			typewriter = {
 				speed = 0.05,
@@ -108,15 +108,15 @@ return {
 			}
 		},
 		{
+			actor = 301140,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301140,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "肉！嘿嘿嘿，最喜欢{namecode:71}的宴会了~",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -141,12 +141,12 @@ return {
 			}
 		},
 		{
-			say = "喂，多少注意点形象啦，{namecode:16}！{namecode:70}她们都在看你了啊",
+			actor = 301150,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "喂，多少注意点形象啦，{namecode:16}！{namecode:70}她们都在看你了啊",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -177,11 +177,11 @@ return {
 			}
 		},
 		{
+			actor = 301150,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "你…",
 			typewriter = {
 				speed = 0.05,
@@ -193,8 +193,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -203,15 +203,15 @@ return {
 			}
 		},
 		{
+			actor = 304040,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "一起跳舞？呵呵，可以哦，我非常乐意~",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -268,11 +268,11 @@ return {
 			}
 		},
 		{
+			actor = 304040,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘻嘻，大家一起来干杯吧？",
 			typewriter = {
 				speed = 0.05,
@@ -284,8 +284,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -294,13 +294,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_night",
 			say = "宴会一隅，宴会的主办者却在一个人独自旁观着整个的情况",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -337,9 +337,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "{namecode:71}带着温柔的微笑看着大家",
 			typewriter = {
 				speed = 0.05,

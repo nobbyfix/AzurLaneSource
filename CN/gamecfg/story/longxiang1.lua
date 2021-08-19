@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "LONGXIANG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"轻型航母{namecode:90}参上！\n\n<size=45>一 登场！日出之国的轻航母</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "她们是拥有人类之型，钢铁之躯的战斗少女 ",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -44,8 +44,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "曾在那次大战中大显身手，如今以心智魔方的力量变成人形，",
 			typewriter = {
@@ -54,8 +54,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "活跃在与全人类的敌人——塞壬的战斗之中",
 			typewriter = {
@@ -64,15 +64,15 @@ return {
 			}
 		},
 		{
+			say = "港区・仓库",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区・仓库",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -93,9 +93,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "灰头土脸的指挥官正拼命翻找着收在仓库深处的某个稀有装备。",
 			typewriter = {
 				speed = 0.05,
@@ -103,9 +103,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "咚！当！咣咣！",
 			typewriter = {
 				speed = 0.05,
@@ -113,9 +113,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……找东西的过程好像并不怎么顺利。",
 			typewriter = {
 				speed = 0.05,
@@ -123,9 +123,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "面对着垒的如同小山一样高资源材料和装备，指挥官已经精疲力尽并且摇摇欲坠了。",
 			typewriter = {
 				speed = 0.05,
@@ -133,8 +133,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "???",
+			nameColor = "#a9f548",
 			bgName = "bg_story_task",
 			side = 2,
 			dir = 1,
@@ -150,9 +150,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "光芒一闪。从某处放出的式神劈开浑浊的空气，然后——",
 			flashN = {
 				color = {
@@ -180,9 +180,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "在指挥官被砸中之前，式神便完美接住了从高处掉下的材料。",
 			typewriter = {
 				speed = 0.05,
@@ -190,11 +190,11 @@ return {
 			}
 		},
 		{
+			side = 2,
 			nameColor = "#a9f548",
 			bgName = "bg_story_task",
-			side = 2,
-			dir = 1,
 			actorName = "???",
+			dir = 1,
 			say = "天在呼唤！地在呼唤！人在呼唤！千钧一发需要帮助的主公也在呼唤！",
 			effects = {
 				{
@@ -208,8 +208,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -220,8 +220,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "如同白昼一般的出场效果闪光。",
 			flashN = {
 				color = {
@@ -262,9 +262,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（爆炸效果……果然还是算了吧）",
 			typewriter = {
 				speed = 0.05,
@@ -272,11 +272,11 @@ return {
 			}
 		},
 		{
+			actor = 306060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 306060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "主公！您没事吗？吾也来帮忙！",
 			typewriter = {
 				speed = 0.05,
@@ -288,8 +288,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,

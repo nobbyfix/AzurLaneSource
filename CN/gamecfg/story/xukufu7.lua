@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>七 指挥官的絮库夫</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 808010,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 808010,
-			nameColor = "#a9f548",
 			say = "唔……指挥官，早上好。",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -110,9 +110,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "絮库夫罕见地焦急了起来。",
 			typewriter = {
 				speed = 0.05,
@@ -158,11 +158,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "但是，指挥官没有我帮忙也这么能干，这样我不就没有做秘书舰的价值了吗……",
 			typewriter = {
 				speed = 0.05,
@@ -259,9 +259,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "刚才还急得要哭出来了的絮库夫，现在又露出了平常的笑容。",
 			typewriter = {
 				speed = 0.05,

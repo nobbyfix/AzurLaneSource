@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "照明弹",
 	init_effect = "",
-	id = 5040,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "回避率降低",
 	stack = 1,
-	color = "yellow",
+	id = 5040,
 	icon = 5040,
 	last_effect = "EVDdowm",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.25,
-				attr = "dodgeRateExtra"
+				attr = "dodgeRateExtra",
+				number = -0.25
 			}
 		}
 	}

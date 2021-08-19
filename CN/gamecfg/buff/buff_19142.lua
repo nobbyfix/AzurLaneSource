@@ -189,14 +189,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "西雅图2",
 	init_effect = "",
-	id = 19142,
+	name = "西雅图2",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "装备效率提高",
 	stack = 1,
-	color = "red",
+	id = 19142,
 	icon = 19140,
 	last_effect = "",
 	effect_list = {

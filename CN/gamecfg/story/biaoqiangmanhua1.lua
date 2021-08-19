@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIAOQIANGMANHUA1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"月刊漫画Javelin\n\n<size=45>一　标枪，早安！</size>",
@@ -17,12 +17,12 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			}
 		},
 		{
-			actorName = "标枪",
 			side = 2,
+			actorName = "标枪",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -65,8 +65,8 @@ return {
 			}
 		},
 		{
-			actorName = "朱诺",
 			side = 2,
+			actorName = "朱诺",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -81,14 +81,14 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
+			actor = 201210,
 			side = 2,
+			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 1,
-			bgm = "story-1",
-			actor = 201210,
-			nameColor = "#a9f548",
 			say = "…………朱诺…？",
+			bgm = "story-1",
 			flashout = {
 				dur = 0.5,
 				alpha = {
@@ -130,11 +130,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "学校……啊哇哇哇！要迟到了！",
 			typewriter = {
 				speed = 0.05,
@@ -146,8 +146,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -156,15 +156,15 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "（我的名字叫标枪，是一名在港区就任的再普通不过的J级驱逐舰！）",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -221,11 +221,11 @@ return {
 			}
 		},
 		{
+			actor = 900183,
 			actorName = "？？？",
+			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			bgName = "bg_story_school",
-			actor = 900183,
 			nameColor = "#a9f548",
 			say = "「我正在寻找像你这样的女孩子喵」",
 			flashout = {
@@ -253,11 +253,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喵喵…说话了！？",
 			typewriter = {
 				speed = 0.05,
@@ -269,8 +269,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -279,11 +279,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 900183,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			actorName = "？？？",
 			say = "「这是预言喵，标枪，你将会——」",
 			typewriter = {
@@ -296,11 +296,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 900183,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			actorName = "？？？",
 			say = "「在今天遇到命运之人！喵」",
 			typewriter = {
@@ -313,11 +313,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "——！！！",
 			typewriter = {
 				speed = 0.05,
@@ -329,8 +329,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -387,11 +387,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊啊不行不行！下午还要给指挥官提交报告，不好好整理发型一下可不行——！",
 			typewriter = {
 				speed = 0.05,
@@ -403,8 +403,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

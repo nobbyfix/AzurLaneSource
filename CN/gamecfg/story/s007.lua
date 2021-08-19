@@ -5,7 +5,7 @@ return {
 		{
 			expression = "14",
 			side = 0,
-			actor = 900004,
+			actor = 900312,
 			nameColor = "#a9f548",
 			say = "大姐头！你们终于来了",
 			shake = {
@@ -41,9 +41,10 @@ return {
 		},
 		{
 			actor = 900009,
-			actorName = "俾斯麦 ??",
 			side = 1,
+			actorName = "俾斯麦 ??",
 			nameColor = "#ff0000",
+			actorAlpha = 0,
 			say = "“皇家舰队的荣耀”…吗？这样才有意思嘛~倒要看看你们的实力能够满足得了我吗？",
 			shake = {
 				speed = 1,

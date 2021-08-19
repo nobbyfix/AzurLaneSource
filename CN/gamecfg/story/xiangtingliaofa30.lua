@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA30",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 207040,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "battle-boss-4",
 			dir = 1,
 			say = "强到犯规了吧！！",
-			bgm = "battle-boss-4",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,8 +26,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "果然我们的判断是对的，这个被安蒂克丝刻意隐藏的时间奇点…",
 			typewriter = {
 				speed = 0.05,
@@ -42,8 +42,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "这里的你们，确实与我们曾经见过的有所不同。",
 			typewriter = {
 				speed = 0.05,
@@ -58,8 +58,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "归根究底，还是因为有这个人的存在吧。",
 			typewriter = {
 				speed = 0.05,
@@ -104,8 +104,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "蠢材！纽约港袭击只不过是安蒂克丝把你们诱骗到这里的阴谋罢了，你们根本是被一帮机器脑袋利用了！",
 			typewriter = {
 				speed = 0.05,
@@ -120,8 +120,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "至于我们，不过是一群于灰烬中苟且的残渣罢了，除此之外没有任何值得报出的名号。",
 			typewriter = {
 				speed = 0.05,
@@ -136,8 +136,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "至于她的话，你们根本不知道她正背负着怎样沉重的宿命。",
 			typewriter = {
 				speed = 0.05,
@@ -152,8 +152,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "所以，不要再来干扰我们了。",
 			typewriter = {
 				speed = 0.05,
@@ -165,13 +165,13 @@ return {
 			}
 		},
 		{
+			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 900192,
 			actorName = "？？？",
+			dir = 1,
 			say = "！！！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -225,8 +225,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（“不计一切后果，消灭自称为“烬”的舰队”…指挥部的指令确实是这么说的。）",
 			typewriter = {
 				speed = 0.05,
@@ -238,8 +238,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（不过…）",
 			typewriter = {
 				speed = 0.05,
@@ -266,10 +266,10 @@ return {
 			}
 		},
 		{
-			say = "轰————",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -332,10 +332,10 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			side = 2,
 			say = "轰————",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -412,8 +412,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "哼，只要是人类下的命令，无论是非就完全遵从的傀儡么…真是碍眼。",
 			typewriter = {
 				speed = 0.05,
@@ -425,11 +425,11 @@ return {
 			}
 		},
 		{
+			say = "轰————",
 			side = 2,
 			dir = 1,
 			optionFlag = 2,
 			soundeffect = "event:/battle/boom2",
-			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -480,8 +480,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "一群被愚弄的孩子啊，我们一定会拯救你们的…",
 			typewriter = {
 				speed = 0.05,
@@ -496,8 +496,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "…（闭上双眼",
 			typewriter = {
 				speed = 0.05,
@@ -512,8 +512,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "恶即斩·断钢！！！",
 			typewriter = {
 				speed = 0.05,
@@ -525,10 +525,10 @@ return {
 			}
 		},
 		{
-			say = "轰————",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -591,10 +591,10 @@ return {
 			}
 		},
 		{
-			say = "轰————",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -642,10 +642,10 @@ return {
 			}
 		},
 		{
-			say = "轰————",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "轰————",
 			flashN = {
 				color = {
 					1,
@@ -711,8 +711,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "这一切都是因你而起，要不是你…她就可以不用这么痛苦了！",
 			typewriter = {
 				speed = 0.05,
@@ -724,8 +724,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "…诶？",
 			typewriter = {
 				speed = 0.05,
@@ -740,8 +740,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "恶即…",
 			typewriter = {
 				speed = 0.05,
@@ -768,8 +768,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -778,13 +778,13 @@ return {
 			}
 		},
 		{
+			actor = 900072,
 			actorName = "？？？",
 			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 900072,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			say = "够了，目的已经达成，可以撤退了。",
+			soundeffect = "event:/battle/boom2",
 			flashout = {
 				dur = 0.15,
 				alpha = {
@@ -813,8 +813,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -829,8 +829,8 @@ return {
 			actor = 900192,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "……你的手。",
 			typewriter = {
 				speed = 0.05,
@@ -845,8 +845,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "不要紧。",
 			typewriter = {
 				speed = 0.05,
@@ -861,8 +861,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "信标已经设置完毕，这样和“它们”对抗的战力可以加入了。",
 			typewriter = {
 				speed = 0.05,
@@ -877,8 +877,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "今天就到此为止。",
 			typewriter = {
 				speed = 0.05,
@@ -923,8 +923,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -939,8 +939,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "别误会了，我只是…",
 			typewriter = {
 				speed = 0.05,
@@ -955,8 +955,8 @@ return {
 			actor = 900072,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "不想再看到自己流泪罢了。",
 			typewriter = {
 				speed = 0.05,
@@ -998,11 +998,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 900072,
 			side = 2,
 			withoutActorName = true,
-			actor = 900072,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -1020,8 +1020,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "——在那个“既视感”中反复出现的人类……",
 			typewriter = {
 				speed = 0.05,
@@ -1033,8 +1033,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "“神秘人”停了下来，犹豫了片刻，没有回答，反而转身向光芒中走去。",
 			typewriter = {
 				speed = 0.05,
@@ -1046,8 +1046,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "在两人进入“奇异点”后，光芒便消失了。",
 			typewriter = {
 				speed = 0.05,
@@ -1059,8 +1059,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "风暴开始平静下来，电磁干扰也在逐渐消退。",
 			typewriter = {
 				speed = 0.05,
@@ -1117,8 +1117,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（选择了沉默的离开么……）",
 			typewriter = {
 				speed = 0.05,
@@ -1130,8 +1130,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（指挥部为什么在最开始就知道会有自称为“烬”的舰队存在……）",
 			typewriter = {
 				speed = 0.05,
@@ -1143,8 +1143,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（“安蒂克丝”和“烬”究竟是……）",
 			typewriter = {
 				speed = 0.05,

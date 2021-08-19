@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"神秘的兔兔星人？！\n\n<size=45>七 真正的兔兔星人</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 101270,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-2",
-			actor = 101270,
-			nameColor = "#a9f548",
 			say = "唔……指挥官，贝利觉得你对贝利有一些误解哦？",
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -90,9 +90,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "…………？！",
 			typewriter = {
 				speed = 0.05,
@@ -148,9 +148,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "……总觉得贝利说了十分成熟的话。",
 			typewriter = {
 				speed = 0.05,
@@ -174,11 +174,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "确实喵，从科学上来说，宇宙还很广阔喵！",
 			typewriter = {
 				speed = 0.05,
@@ -190,8 +190,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "这是何等阳光的想法……",
 			typewriter = {
 				speed = 0.05,
@@ -242,9 +242,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "不过，看到贝利脸上的笑容，又让人觉得，说不定其实真的是这么一回事。",
 			typewriter = {
 				speed = 0.05,
@@ -252,11 +252,11 @@ return {
 			}
 		},
 		{
+			actor = 101360,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101360,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "贝利，流星雨好像开始了哦！",
 			typewriter = {
 				speed = 0.05,
@@ -268,8 +268,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.1,
 					dur = 0.2,
 					x = 0,

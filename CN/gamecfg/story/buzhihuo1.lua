@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>一　冷静的{namecode:20}</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "自从让{namecode:20}担任秘书舰后，总觉得精神力得到了巨大的锻炼。",
 			typewriter = {
 				speed = 0.05,
@@ -120,13 +120,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "……诸如此类，再加上冰山一样从不变化的表情，让人感觉好像在她身边呼吸都是一种错误一样。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -147,9 +147,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "而且不只是在指挥室，即使来到了店里……",
 			typewriter = {
 				speed = 0.05,
@@ -157,13 +157,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "港区·军火商店",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -216,11 +216,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，运气不好就要用数量来弥补，相信自己，你可以的。",
 			typewriter = {
 				speed = 0.05,
@@ -242,9 +242,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……不对，重点不在这里。",
 			typewriter = {
 				speed = 0.05,
@@ -252,9 +252,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "重点是即使在顾客是上帝的商店里，受到的也是同样的对待……",
 			typewriter = {
 				speed = 0.05,
@@ -262,9 +262,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "让人忍不住好奇，难道{namecode:20}真的永远都是这样一副表情吗？",
 			typewriter = {
 				speed = 0.05,
@@ -272,9 +272,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "而且为什么这样的{namecode:20}会成为店长呢？",
 			typewriter = {
 				speed = 0.05,

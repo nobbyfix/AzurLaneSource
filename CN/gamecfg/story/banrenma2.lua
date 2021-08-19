@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"半人马与港区的“前辈”们\n\n<size=45>二　过于认真的半人马</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·广场",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "和担任秘书舰的半人马在港区巡逻中。",
 			typewriter = {
 				speed = 0.05,
@@ -75,10 +75,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "胡德前辈，您好！是的，我们正在巡逻途中。",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "胡德前辈，您好！是的，我们正在巡逻途中。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -160,8 +160,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "好的，胡德前辈！我一定准时参加！",
 			typewriter = {
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -184,9 +184,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "半人马看起来和皇家的前辈们相处得不错。",
 			typewriter = {
 				speed = 0.05,
@@ -194,15 +194,15 @@ return {
 			}
 		},
 		{
+			actor = 301320,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，还有，那个，唔……给你们糖~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -227,12 +227,12 @@ return {
 			}
 		},
 		{
-			say = "{namecode:33}，是刚加入舰队的半人马啦。",
+			actor = 301330,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "{namecode:33}，是刚加入舰队的半人马啦。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -263,9 +263,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "半人马非常标准地向两人鞠了个躬。",
 			typewriter = {
 				speed = 0.05,
@@ -279,11 +279,11 @@ return {
 			}
 		},
 		{
+			actor = 301330,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸欸欸，前、前辈吗……",
 			typewriter = {
 				speed = 0.05,
@@ -295,8 +295,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -305,12 +305,12 @@ return {
 			}
 		},
 		{
-			say = "是的，对我来说，两位也是值得尊敬的前辈呢。",
+			actor = 206040,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 206040,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "是的，对我来说，两位也是值得尊敬的前辈呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -376,8 +376,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "是的，请不用太在意。",
 			typewriter = {
@@ -390,12 +390,12 @@ return {
 			}
 		},
 		{
-			say = "呜，但还是觉得怪怪的啦……",
+			actor = 301330,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜，但还是觉得怪怪的啦……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

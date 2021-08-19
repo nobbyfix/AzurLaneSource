@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESIBOSS3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"特别演习·埃塞克斯级\n\n<size=45>三　幕间的倾听者</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 107070,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107070,
-			nameColor = "#a9f548",
 			say = "哈喽！欢迎回来！",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -71,8 +71,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "啊，谢谢前辈们——",
 			typewriter = {
@@ -88,8 +88,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "谢谢了。",
 			typewriter = {
@@ -153,8 +153,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "抱歉，我没有想这么多……",
 			typewriter = {
@@ -170,8 +170,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "这是一次重要的演习，也是展示我实力的舞台，所以我会全力以赴……感想大概就这些吧？",
 			typewriter = {
@@ -203,8 +203,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "认真的埃塞克斯可不像某位牛仔小姐那样八卦。",
 			typewriter = {
@@ -313,15 +313,15 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对了，牛仔小姐？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -365,8 +365,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咳，咳……关于你刚刚说的，企业前辈的一些秘密，我稍微有一些记录的兴趣……",
 			typewriter = {
@@ -400,7 +400,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "咳咳…这是指为了帮到埃塞克斯而已…",
+			say = "咳咳…这只是为了帮到埃塞克斯而已…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -459,11 +459,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咳咳，咳咳！！没，没，没什么……我先回去休息了！",
 			typewriter = {
 				speed = 0.05,
@@ -475,16 +475,16 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
 					number = 3
 				},
 				{
-					y = 45,
 					type = "move",
+					y = 45,
 					delay = 0.6,
 					dur = 1,
 					x = 3750
@@ -495,8 +495,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我们……我们刚刚在讨论一些关于今天演习的事情。",
 			typewriter = {
@@ -637,12 +637,12 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107380,
-			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -655,8 +655,8 @@ return {
 		},
 		action = {
 			{
-				y = 45,
 				type = "shake",
+				y = 45,
 				delay = 0,
 				dur = 0.15,
 				x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DEYIZHI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"德意志的忧郁\n\n<size=45>二　高贵</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "和德意志出外勤的时候，看到了这样的一幕。",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "和德意志出外勤的时候，看到了这样的一幕。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "那是因为您同时也是舰队里的一员，陛下。",
+			actor = 202120,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "那是因为您同时也是舰队里的一员，陛下。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -82,11 +82,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "我不想去，交给厌战去吧！",
 			typewriter = {
 				speed = 0.05,
@@ -98,8 +98,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -124,15 +124,15 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，皇家的女王居然还会受仆人的意见左右，在我们铁血，这种事是绝对不会发生的！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -173,11 +173,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喂，格奈森瑙。",
 			typewriter = {
 				speed = 0.05,
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -199,12 +199,12 @@ return {
 			}
 		},
 		{
-			say = "这不是德意志吗，怎么了？",
+			actor = 404020,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 404020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这不是德意志吗，怎么了？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -251,12 +251,12 @@ return {
 			}
 		},
 		{
-			say = "那么，我先告辞了。",
+			actor = 404020,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 404020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "那么，我先告辞了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -271,9 +271,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "格奈森瑙说完就离开了。",
 			typewriter = {
 				speed = 0.05,
@@ -281,11 +281,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，看到了吧，仆人！",
 			typewriter = {
 				speed = 0.05,
@@ -297,8 +297,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -307,9 +307,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "……格奈森瑙的态度，与其说是顺从，不如说是无所谓呢。",
 			typewriter = {
 				speed = 0.05,
@@ -317,9 +317,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "感觉像是早就习惯了这样的要求。",
 			typewriter = {
 				speed = 0.05,
@@ -327,11 +327,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼，我才是铁血的精神领袖呢！",
 			typewriter = {
 				speed = 0.05,
@@ -343,8 +343,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,

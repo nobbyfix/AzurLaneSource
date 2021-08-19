@@ -2,12 +2,12 @@ return {
 	desc_get = "",
 	name = "骑士之盾",
 	init_effect = "",
-	id = 5083,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 5083,
 	icon = 5080,
 	last_effect = "",
 	effect_list = {
@@ -18,8 +18,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 5080,
-				time = 20,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 20
 			}
 		}
 	}

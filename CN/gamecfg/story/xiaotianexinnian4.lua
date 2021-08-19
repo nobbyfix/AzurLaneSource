@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAOTIANEXINNIAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"新年的祝福\n\n<size=45>四 樱花色的新年</size>",
@@ -19,15 +19,15 @@ return {
 		{
 			actor = 205060,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_outdoor",
-			bgm = "main-newyear",
-			nameColor = "#a9f548",
 			say = "早就听说重樱的新年格外热闹，听你们刚才讲的食物和活动，似乎…真的挺有趣的？",
+			bgm = "main-newyear",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -59,12 +59,12 @@ return {
 			}
 		},
 		{
-			say = "刚才听到{namecode:16}说的“荞麦面”和“年糕”也很让人感兴趣啊！而且剧烈运动之后，肚子的确有些饿了呢……",
+			actor = 102090,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "刚才听到{namecode:16}说的“荞麦面”和“年糕”也很让人感兴趣啊！而且剧烈运动之后，肚子的确有些饿了呢……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -159,11 +159,11 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "那个……就是，欧根小姐的醉相……之类的。哇哇哇，有点难以想象……",
 			typewriter = {
 				speed = 0.05,
@@ -175,8 +175,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -265,12 +265,12 @@ return {
 			}
 		},
 		{
-			say = "衣服上的雪……开始融化了的样子，既然已经达成共识，那我们就快回去吧……",
+			actor = 399010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 399010,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "衣服上的雪……开始融化了的样子，既然已经达成共识，那我们就快回去吧……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -317,15 +317,15 @@ return {
 			}
 		},
 		{
+			actor = 312011,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 312011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呼喵~年糕终于煮好咯！大家可以来吃了哦喵！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -350,8 +350,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -360,12 +360,12 @@ return {
 			}
 		},
 		{
+			actor = 312011,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 312011,
-			nameColor = "#a9f548",
 			say = "啊嘞？大家人都去哪里了喵？",
 			typewriter = {
 				speed = 0.05,

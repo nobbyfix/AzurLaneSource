@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "指挥喵天赋-不动如山",
 	init_effect = "jinengchufared",
+	name = "指挥喵天赋-不动如山",
+	time = 0,
 	picture = "",
 	desc = "舰队成员受到伤害降低3%",
 	stack = 2,
@@ -12,29 +12,12 @@ return {
 		{
 			type = "BattleBuffAddBuff",
 			trigger = {
-				"onFlagShip",
+				"onAttach",
 				"onStack"
 			},
 			arg_list = {
 				buff_id = 45031,
-				target = "TargetAllHelp"
-			}
-		},
-		{
-			type = "BattleBuffAddBuff",
-			trigger = {
-				"onSubLeader ",
-				"onStack"
-			},
-			arg_list = {
-				buff_id = 45031,
-				target = {
-					"TargetAllHelp",
-					"TargetShipType"
-				},
-				ship_type_list = {
-					8
-				}
+				CMDBuff_id = 45030
 			}
 		}
 	}

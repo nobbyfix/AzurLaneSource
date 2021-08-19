@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA6",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 201210,
@@ -38,8 +38,8 @@ return {
 			actor = 10400010,
 			side = 1,
 			expression = 4,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "大家都没事，真是太好了~！",
 			typewriter = {
 				speed = 0.05,
@@ -54,8 +54,8 @@ return {
 			expression = 5,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "但是……嗯，果然自己打倒自己还是感觉有点奇怪啊",
 			typewriter = {
 				speed = 0.05,
@@ -115,8 +115,8 @@ return {
 			expression = 6,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "啊！总觉得力量涌上来了呢！现在的话感觉应该能变身了！",
 			typewriter = {
 				speed = 0.05,
@@ -131,8 +131,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "大家看好咯~变…身！",
 			typewriter = {
 				speed = 0.05,
@@ -226,8 +226,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "轰隆隆隆隆隆隆隆隆……！",
 			typewriter = {
 				speed = 0.05,
@@ -287,8 +287,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "哼哼～哼♪好了，各位！兵贵神速，让我们尽快出发吧～",
 			typewriter = {

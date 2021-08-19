@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAQINGHUAYU2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"大青花鱼的“陷阱”\n\n<size=45>二　潜水体操！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-1",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "潜水艇们集合到了演习海域进行训练。",
 			typewriter = {
 				speed = 0.05,
@@ -56,11 +56,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "一，二——！",
 			typewriter = {
 				speed = 0.05,
@@ -72,15 +72,15 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "move",
+					y = -30,
 					delay = 0,
 					dur = 0.2,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0
@@ -88,13 +88,13 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			actor = 308020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			hideOther = true,
-			actorName = "伊26&鲦鱼",
+			actorName = "{namecode:155}&鲦鱼",
 			say = "一，二——！",
 			subActors = {
 				{
@@ -114,15 +114,15 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "move",
+					y = -30,
 					delay = 0,
 					dur = 0.5,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.5,
 					x = 0
@@ -130,11 +130,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "三，四——！",
 			typewriter = {
 				speed = 0.05,
@@ -146,15 +146,15 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "move",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0
@@ -162,13 +162,13 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			actor = 408010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			hideOther = true,
-			actorName = "U81&伊19",
+			actorName = "U81&{namecode:154}",
 			say = "三，四~",
 			subActors = {
 				{
@@ -188,15 +188,15 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "move",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0
@@ -204,11 +204,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "五，六——！",
 			typewriter = {
 				speed = 0.05,
@@ -220,15 +220,15 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "move",
+					y = -30,
 					delay = 0,
 					dur = 0.2,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0
@@ -236,13 +236,13 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			actor = 308030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			hideOther = true,
-			actorName = "伊58&U557",
+			actorName = "{namecode:156}&U557",
 			say = "五，六……",
 			subActors = {
 				{
@@ -262,15 +262,15 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "move",
+					y = -30,
 					delay = 0,
 					dur = 0.2,
 					x = 0
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0
@@ -278,9 +278,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "在大青花鱼的带领下，大家正做着热身运动。",
 			typewriter = {
 				speed = 0.05,
@@ -304,11 +304,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "先这样，再像这样……",
 			typewriter = {
 				speed = 0.05,
@@ -320,8 +320,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -330,17 +330,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 108020,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 108020,
-			nameColor = "#a9f548",
 			say = "好的！这样一来“潜水前热身体操”就全部完成了呢！",
+			bgm = "story-1",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -365,12 +365,12 @@ return {
 			}
 		},
 		{
-			say = "哦哦，感觉身体都热起来了呢！",
+			actor = 308020,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 308020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哦哦，感觉身体都热起来了呢！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -449,11 +449,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那下次就让我说服她一起来吧！",
 			typewriter = {
 				speed = 0.05,
@@ -465,8 +465,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -494,8 +494,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，放心吧！我的话一定没问题的！",
 			typewriter = {
@@ -508,9 +508,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "大青花鱼看起来很自信的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -518,9 +518,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "说起来，刚刚那谜一般的热身运动一直是大青花鱼带领着大家在做。",
 			typewriter = {
 				speed = 0.05,

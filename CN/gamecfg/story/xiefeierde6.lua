@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIEFEIERDE6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"这个女仆不太冷\n\n<size=45>六 谢菲尔德的心意·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·卧室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·卧室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "早上好，主人。早饭已经准备好了，请洗漱吧。",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "在逐渐习惯了谢菲的打扫服务之后，每到休息日甚至开始有些期待起睁开眼能够见到谢菲了",
 			typewriter = {
 				speed = 0.05,
@@ -150,9 +150,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（要是这样的生活能持续下去就好了……）",
 			typewriter = {
 				speed = 0.05,
@@ -164,14 +164,14 @@ return {
 			}
 		},
 		{
+			stopbgm = true,
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			stopbgm = true,
 			say = "数日后，港区·卧室",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -196,8 +196,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "早晨醒得早了些，时间…似乎还很早，应该还能睡会……",
 			typewriter = {
@@ -210,8 +210,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "朦胧中听到房门外似乎有谈话声——",
 			typewriter = {
@@ -224,8 +224,8 @@ return {
 			}
 		},
 		{
-			actorName = "纽卡斯尔",
 			side = 1,
+			actorName = "纽卡斯尔",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -240,8 +240,8 @@ return {
 			}
 		},
 		{
-			actorName = "谢菲尔德",
 			side = 0,
+			actorName = "谢菲尔德",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -256,8 +256,8 @@ return {
 			}
 		},
 		{
-			actorName = "纽卡斯尔",
 			side = 1,
+			actorName = "纽卡斯尔",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -272,8 +272,8 @@ return {
 			}
 		},
 		{
-			actorName = "谢菲尔德",
 			side = 0,
+			actorName = "谢菲尔德",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -288,8 +288,8 @@ return {
 			}
 		},
 		{
-			actorName = "纽卡斯尔",
 			side = 1,
+			actorName = "纽卡斯尔",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -304,8 +304,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "似乎听到了一些很难懂的对话……",
 			typewriter = {

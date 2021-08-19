@@ -1,7 +1,7 @@
 return {
+	time = 8,
 	name = "LuckyE",
 	init_effect = "jinengchufared",
-	time = 8,
 	picture = "",
 	desc = "伤害提高，闪避",
 	stack = 1,
@@ -23,8 +23,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 1
 			}
 		},
 		{
@@ -34,8 +34,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "perfectDodge"
+				group = 10201,
+				attr = "perfectDodge",
+				number = 1
 			}
 		},
 		{
@@ -45,8 +46,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "immuneDirectHit"
+				group = 10201,
+				attr = "immuneDirectHit",
+				number = 1
 			}
 		}
 	}

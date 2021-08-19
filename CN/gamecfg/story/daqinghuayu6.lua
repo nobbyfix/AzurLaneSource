@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAQINGHUAYU6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"大青花鱼的“陷阱”\n\n<size=45>六　两人的海滩·下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "不知不觉，太阳已经变成了红色。",
 			side = 2,
 			bgName = "star_level_bg_106",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "不知不觉，太阳已经变成了红色。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "结果是10:0呢。指挥官，想战胜我的话还早了100年呢~",
 			typewriter = {
 				speed = 0.05,
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -75,8 +75,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈啊……我也有点累了。",
 			typewriter = {
@@ -89,9 +89,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			say = "坐在沙滩边上休息，这时大青花鱼在旁边坐了下来。",
 			typewriter = {
 				speed = 0.05,
@@ -118,8 +118,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "上次是什么时候呢？",
 			typewriter = {
@@ -135,8 +135,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "唔……想不起来了呢。",
 			typewriter = {
@@ -152,8 +152,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -169,8 +169,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "今天和指挥官一起，我非常开心哦！这第二个条件就算达成了吧！",
 			typewriter = {
@@ -192,8 +192,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸？",
 			typewriter = {
@@ -206,11 +206,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼、哼哼，那是当然！毕竟有我一直陪着你嘛——",
 			typewriter = {
 				speed = 0.05,
@@ -222,8 +222,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.2,
 					x = 22.5,
@@ -235,8 +235,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -252,8 +252,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊啊，真是的，我说的这都是什么话啊！",
 			typewriter = {
@@ -266,8 +266,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -279,8 +279,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "都怪指挥官，让我变得奇怪啦！",
 			typewriter = {
@@ -293,8 +293,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -303,9 +303,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			say = "大青花鱼突然站了起来，不停地朝这边泼水。",
 			typewriter = {
 				speed = 0.05,
@@ -332,8 +332,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嘿嘿，躲不开了吧？",
 			typewriter = {

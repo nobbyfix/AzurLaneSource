@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/boom2",
-			side = 2,
-			dir = 1,
-			bgm = "story-6",
 			actor = 103160,
+			side = 2,
+			bgm = "story-6",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这样就全部结束了！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -76,16 +76,16 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.1,
 					x = 15,
 					number = 3
 				},
 				{
-					y = -2000,
 					type = "move",
+					y = -2000,
 					delay = 0.5,
 					dur = 0.7,
 					x = 0
@@ -108,8 +108,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -148,8 +148,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "命令驱逐舰护送着受伤的大黄蜂离开了",
 			typewriter = {
 				speed = 0.05,
@@ -161,8 +161,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "失去了指挥系统的塞壬舰队开始溃败，战斗虽然还在继续，彻底解决也只是时间问题。",
 			typewriter = {
 				speed = 0.05,
@@ -174,8 +174,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "因为本次袭击，纽波特港及周边地区遭受了严重破坏。",
 			typewriter = {
 				speed = 0.05,
@@ -238,8 +238,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			bgName = "bg_xiangting_1",
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -252,8 +252,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			bgName = "bg_xiangting_1",
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -266,8 +266,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			bgName = "bg_xiangting_1",
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -280,8 +280,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			bgName = "bg_xiangting_1",
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -294,8 +294,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			bgName = "bg_xiangting_1",
+			mode = 1,
 			sequence = {
 				{
 					"",

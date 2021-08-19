@@ -1,20 +1,20 @@
 slot0 = class("TechnologyTreeNationMediator", import("..base.ContextMediator"))
 
-slot0.register = function (slot0)
+function slot0.register(slot0)
 	slot0:bind(TechnologyConst.CLICK_UP_TEC_BTN, function (slot0, slot1, slot2)
-		slot0:sendNotification(GAME.START_CAMP_TEC, {
+		uv0:sendNotification(GAME.START_CAMP_TEC, {
 			tecID = slot1,
 			levelID = slot2
 		})
 	end)
 	slot0:bind(TechnologyConst.FINISH_UP_TEC, function (slot0, slot1, slot2)
-		slot0:sendNotification(GAME.FINISH_CAMP_TEC, {
+		uv0:sendNotification(GAME.FINISH_CAMP_TEC, {
 			tecID = slot1,
 			levelID = slot2
 		})
 	end)
 	slot0:bind(TechnologyConst.OPEN_ALL_BUFF_DETAIL, function ()
-		slot0:addSubLayers(Context.New({
+		uv0:addSubLayers(Context.New({
 			mediator = AllBuffDetailMediator,
 			viewComponent = AllBuffDetailLayer,
 			data = {}
@@ -22,7 +22,7 @@ slot0.register = function (slot0)
 	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		TechnologyConst.START_TEC_BTN_SUCCESS,
 		TechnologyConst.FINISH_TEC_SUCCESS,
@@ -30,12 +30,10 @@ slot0.listNotificationInterests = function (slot0)
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
-	slot3 = slot1:getBody()
-
+function slot0.handleNotification(slot0, slot1)
 	if slot1:getName() == TechnologyConst.START_TEC_BTN_SUCCESS then
 		slot0.viewComponent:updateTecListData()
-		slot0.viewComponent:updateTecItem(slot3)
+		slot0.viewComponent:updateTecItem(slot1:getBody())
 	elseif slot2 == TechnologyConst.FINISH_TEC_SUCCESS then
 		slot0.viewComponent:updateTecListData()
 		slot0.viewComponent:updateTecItem(slot3)

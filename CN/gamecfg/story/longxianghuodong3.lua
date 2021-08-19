@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 103060,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level",
 			dir = 1,
 			say = "亚特兰大，我跟你说哦，我家印第啊——",
-			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -38,14 +38,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 304020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "果然来了吗。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -115,14 +115,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 102060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对方看起来战意昂扬呢。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -162,8 +162,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

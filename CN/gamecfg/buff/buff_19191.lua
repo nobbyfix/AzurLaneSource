@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 2000
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2330,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 2330
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2660,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 2660
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2990,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 2990
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3320,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 3320
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3650,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 3650
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3980,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 3980
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 4310,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 4310
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 4640,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 4640
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5000,
-					attr = "igniteEnhance"
+					attr = "igniteEnhance",
+					number = 5000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "纵火狂魔·吾妻",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "igniteEnhance"
+				attr = "igniteEnhance",
+				number = 2000
 			}
 		}
 	}

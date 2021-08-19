@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"小小的勇气\n\n<size=45>二  LIVE「平行四界」</size>",
@@ -18,23 +18,23 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			mode = 2,
+			blackBg = true,
 			say = "星尘演唱会现场"
 		},
 		{
+			nameColor = "#a9f548",
 			side = 0,
 			bgName = "bg_story_star1",
-			mode = 2,
-			nameColor = "#a9f548",
+			actorName = "观众A",
+			withoutPainting = true,
 			bgm = "star",
 			actor = 0,
-			actorName = "观众A",
+			mode = 2,
 			say = "唔噢噢噢噢！星尘酱最棒了啊啊啊啊啊！！",
-			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -65,14 +65,14 @@ return {
 			}
 		},
 		{
-			say = "星尘酱我们爱你啊啊啊啊！！！",
+			actor = 0,
 			side = 1,
 			bgName = "bg_story_star1",
+			mode = 2,
 			actorName = "观众B",
-			mode = 2,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "星尘酱我们爱你啊啊啊啊！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,14 +83,14 @@ return {
 			}
 		},
 		{
-			say = "哈啊……哈啊……",
+			actor = 0,
 			side = 0,
 			bgName = "bg_story_star1",
+			mode = 2,
 			actorName = "观众C",
-			mode = 2,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "哈啊……哈啊……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -101,28 +101,28 @@ return {
 			}
 		},
 		{
-			actorName = "星尘",
+			nameColor = "#a9f548",
 			side = 0,
 			bgName = "bg_story_star1",
-			withoutPainting = true,
+			say = "谢谢大家的应援～我已经感受到你们的感情了～让我们更加燃起来吧～！",
 			bgspeed = 2,
 			blackBg = true,
 			actor = 0,
-			nameColor = "#a9f548",
-			say = "谢谢大家的应援～我已经感受到你们的感情了～让我们更加燃起来吧～！",
+			actorName = "星尘",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			say = "哦噢噢噢噢！L！！O！！V！！E！！星•尘•酱！L！！O！！V！！E！！星•尘•酱！",
+			actor = 0,
 			side = 1,
 			actorName = "台下众人",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "哦噢噢噢噢！L！！O！！V！！E！！星•尘•酱！L！！O！！V！！E！！星•尘•酱！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -150,10 +150,10 @@ return {
 		{
 			actor = 0,
 			nameColor = "#a9f548",
-			say = "（！！！！！）",
 			side = 1,
-			blackBg = true,
 			withoutPainting = true,
+			blackBg = true,
+			say = "（！！！！！）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,16 +194,16 @@ return {
 			}
 		},
 		{
+			actor = 0,
 			actorName = "星尘",
 			side = 0,
-			say = "谢谢大家～星尘的歌～有没有传达到大家的心中呢～？让我们期待下一次再会吧！",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "谢谢大家～星尘的歌～有没有传达到大家的心中呢～？让我们期待下一次再会吧！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -228,13 +228,13 @@ return {
 			}
 		},
 		{
-			say = "哦噢噢噢噢哦噢噢噢噢！",
+			actor = 0,
 			side = 1,
 			actorName = "台下众人",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "哦噢噢噢噢哦噢噢噢噢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -245,13 +245,13 @@ return {
 			}
 		},
 		{
-			say = "哈啊～～果然星尘酱是最棒的～",
+			actor = 0,
 			side = 1,
 			actorName = "观众A",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "哈啊～～果然星尘酱是最棒的～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -262,13 +262,13 @@ return {
 			}
 		},
 		{
-			say = "感觉……此生无憾了……",
+			actor = 0,
 			side = 1,
 			actorName = "观众B",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "感觉……此生无憾了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -279,13 +279,13 @@ return {
 			}
 		},
 		{
-			say = "不行，我还要活着等到下次星尘酱的演唱会呢！",
+			actor = 0,
 			side = 1,
 			actorName = "观众C",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "不行，我还要活着等到下次星尘酱的演唱会呢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -302,15 +302,15 @@ return {
 			}
 		},
 		{
+			actor = 206030,
 			side = 2,
 			mode = 2,
-			blackBg = true,
-			actor = 206030,
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "这就是……歌唱的力量吗……好厉害……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -339,11 +339,11 @@ return {
 			}
 		},
 		{
+			actor = 206030,
 			side = 2,
 			mode = 2,
-			blackBg = true,
-			actor = 206030,
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "感觉独角兽……都被感染了一样……",
 			typewriter = {
 				speed = 0.05,
@@ -359,11 +359,11 @@ return {
 			}
 		},
 		{
+			actor = 206030,
 			side = 2,
 			mode = 2,
-			blackBg = true,
-			actor = 206030,
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "独角兽也想……让哥哥那么开心……",
 			typewriter = {
 				speed = 0.05,

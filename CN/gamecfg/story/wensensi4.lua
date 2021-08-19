@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "WENSENSI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"妹妹的变化\n\n<size=45>四 妹妹的失落</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "最近的舰队事务稍微变得有些繁重，港区的成员都忙碌了起来——",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "最近的舰队事务稍微变得有些繁重，港区的成员都忙碌了起来——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -110,9 +110,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "前些天参与了周边海域清扫战场的阿斯托利亚比较合适吧",
 			typewriter = {
 				speed = 0.05,
@@ -156,11 +156,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，有什么我能帮忙的吗？",
 			typewriter = {
 				speed = 0.05,
@@ -194,9 +194,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "确实，文森斯的战斗能力是值得信赖的，既然阿斯托利亚这么说，那就交给她吧。",
 			typewriter = {
 				speed = 0.05,
@@ -240,9 +240,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -254,11 +254,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，来一起睡一会儿吗，已经工作很久了呢。",
 			typewriter = {
 				speed = 0.05,
@@ -276,11 +276,11 @@ return {
 			}
 		},
 		{
+			actor = 103100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 103100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "唔……那好吧……",
 			typewriter = {
 				speed = 0.05,
@@ -292,8 +292,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -302,9 +302,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "文森斯看起来有些失落地坐回到了沙发上，应该是觉得没人陪她比较寂寞吧。",
 			typewriter = {
 				speed = 0.05,

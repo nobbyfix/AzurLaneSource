@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMA4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"半人马与港区的“前辈”们\n\n<size=45>四　意外的发展</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "嗯，虽然我不喜欢飞机，但我喜欢半人马……来一起玩吧。",
+			actor = 301330,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯，虽然我不喜欢飞机，但我喜欢半人马……来一起玩吧。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -85,8 +85,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "啊，两位前辈，当然没问题~",
 			typewriter = {
@@ -99,15 +99,15 @@ return {
 			}
 		},
 		{
+			actor = 101240,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101240,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "半人马，没忘了和我们约好玩捉迷藏吧？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -135,10 +135,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_task",
-			say = "当然没有，西姆斯前辈，我也很期待呢。",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "当然没有，西姆斯前辈，我也很期待呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -169,15 +169,15 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那、那个，指挥官，我是来找半人马一起排练live的……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -205,10 +205,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_task",
-			say = "嗯，小天鹅前辈，你先过去吧，我等会儿就到。",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "嗯，小天鹅前辈，你先过去吧，我等会儿就到。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -239,9 +239,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……不知为何，上次的谈话过后，半人马反而在驱逐舰之间获得了巨大的人气。",
 			typewriter = {
 				speed = 0.05,
@@ -287,8 +287,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -299,9 +299,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不知道什么地方传来了充满怨念与不甘的声音。",
 			typewriter = {
 				speed = 0.05,
@@ -309,9 +309,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…不过和驱逐有关的话，也只有那个人了",
 			typewriter = {
 				speed = 0.05,
@@ -322,8 +322,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，皇家方舟前辈，你好~",
 			typewriter = {

@@ -2,19 +2,19 @@ return {
 	desc_get = "无敌撤退",
 	name = "无敌撤退",
 	init_effect = "",
-	id = 8523,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 8523,
 	icon = 8523,
 	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffAddBuff",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				buff_id = 8524,

@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "MP清零的「EXPLOSION」",
 	init_effect = "",
-	id = 105131,
+	name = "MP清零的「EXPLOSION」",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 105131,
 	icon = 105130,
 	last_effect = "",
 	effect_list = {
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 105131,
-				time = 8
+				time = 8,
+				skill_id = 105131
 			}
 		}
 	}

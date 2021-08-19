@@ -3,11 +3,11 @@ return {
 	mode = 2,
 	scripts = {
 		{
+			actor = 900313,
 			side = 2,
+			nameColor = "#ff0000",
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			nameColor = "#ff0000",
 			say = "…人类真是有趣的生物，只不过施舍了他们冰山一角的力量，历史就要开始重演了",
 			shake = {
 				speed = 1,

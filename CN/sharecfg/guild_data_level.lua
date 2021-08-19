@@ -2,63 +2,63 @@ pg = pg or {}
 pg.guild_data_level = {
 	{
 		exp = 1000,
-		assistant_commander = 4,
+		level = 1,
 		member_num = 20,
-		level = 1
+		assistant_commander = 4
 	},
 	{
 		exp = 3000,
-		assistant_commander = 4,
+		level = 2,
 		member_num = 22,
-		level = 2
+		assistant_commander = 4
 	},
 	{
 		exp = 5000,
-		assistant_commander = 4,
+		level = 3,
 		member_num = 24,
-		level = 3
+		assistant_commander = 4
 	},
 	{
 		exp = 8000,
-		assistant_commander = 4,
+		level = 4,
 		member_num = 26,
-		level = 4
+		assistant_commander = 4
 	},
 	{
 		exp = 12000,
-		assistant_commander = 4,
+		level = 5,
 		member_num = 28,
-		level = 5
+		assistant_commander = 4
 	},
 	{
 		exp = 18000,
-		assistant_commander = 4,
+		level = 6,
 		member_num = 30,
-		level = 6
+		assistant_commander = 4
 	},
 	{
 		exp = 26000,
-		assistant_commander = 4,
+		level = 7,
 		member_num = 32,
-		level = 7
+		assistant_commander = 4
 	},
 	{
 		exp = 36000,
-		assistant_commander = 4,
+		level = 8,
 		member_num = 34,
-		level = 8
+		assistant_commander = 4
 	},
 	{
 		exp = 48000,
-		assistant_commander = 4,
-		member_num = 36,
-		level = 9
+		level = 9,
+		member_num = 37,
+		assistant_commander = 4
 	},
 	{
 		exp = 60000,
-		assistant_commander = 4,
-		member_num = 38,
-		level = 10
+		level = 10,
+		member_num = 40,
+		assistant_commander = 4
 	},
 	all = {
 		1,
@@ -73,5 +73,3 @@ pg.guild_data_level = {
 		10
 	}
 }
-
-return

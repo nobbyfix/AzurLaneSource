@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>一 清晨的絮库夫</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgmDelay = 2,
-			side = 2,
-			dir = 1,
 			blackBg = true,
-			bgm = "story-1",
+			side = 2,
 			say = "港区·卧室",
+			dir = 1,
+			bgmDelay = 2,
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,8 +46,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "朦胧之中，感觉鼻子痒痒的…",
 			typewriter = {
@@ -56,8 +56,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "忍不住打了一个大喷嚏，顿时睡意全消…",
 			flashN = {
 				color = {
@@ -114,9 +114,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "眼前是拿着不知哪里找来的麦秆的絮库夫。",
 			typewriter = {
 				speed = 0.05,
@@ -220,11 +220,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那指挥官梦到和我干什么了呀？",
 			typewriter = {
 				speed = 0.05,
@@ -258,13 +258,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "几分钟后…",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

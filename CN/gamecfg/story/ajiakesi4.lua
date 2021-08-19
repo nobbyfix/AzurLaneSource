@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "AJIAKESI4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"我的美好回忆\n\n<size=45>四 是敌是友？</size>",
@@ -17,24 +17,24 @@ return {
 			}
 		},
 		{
-			say = "港区·通道",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			bgm = "story-1",
+			say = "港区·通道",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			bgm = "story-1",
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我经常在想…像这样巡逻的时候，还是要有点“事件”发生才好呢…",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -61,9 +61,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "手臂被阿贾克斯挽住了",
 			flashN = {
 				color = {
@@ -101,9 +101,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "感觉到柔软中带着坚硬的触感",
 			typewriter = {
 				speed = 0.05,
@@ -115,9 +115,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -125,9 +125,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "？在那里的是……",
 			typewriter = {
 				speed = 0.05,
@@ -135,15 +135,15 @@ return {
 			}
 		},
 		{
+			actor = 403050,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "阿贾克斯……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -168,12 +168,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀，这不是斯佩吗。一个人散步吗？",
+			actor = 202030,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀，这不是斯佩吗。一个人散步吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -252,9 +252,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "剑拔弩张的两人之间，仿佛空气中都能见到擦出的火花——并没有",
 			typewriter = {
 				speed = 0.05,
@@ -282,12 +282,12 @@ return {
 			}
 		},
 		{
-			say = "好啊，那家店我也挺喜欢的。不过男性禁止入内所以……小猪仔是没法进去的呢♪",
+			actor = 202030,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "好啊，那家店我也挺喜欢的。不过男性禁止入内所以……小猪仔是没法进去的呢♪",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -366,8 +366,8 @@ return {
 			}
 		},
 		{
-			side = 0,
 			dir = 1,
+			side = 0,
 			blackBg = true,
 			say = "不知不觉中被阿贾克斯放置play了……",
 			typewriter = {

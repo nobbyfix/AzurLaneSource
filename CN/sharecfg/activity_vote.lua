@@ -1,16 +1,16 @@
 pg = pg or {}
 pg.activity_vote = {
 	[5] = {
+		same_rank_by_id = 0,
 		name = "预选赛",
 		help_text = "",
 		type = 1,
-		banner = 0,
-		same_rank_by_id = 0,
-		desc = "预选赛仅显示得票排名，排名前150名的角色晋级小组赛，未晋级小组赛的角色将参与网络复活赛",
 		is_in_game = 1,
-		is_on_web = 0,
-		id = 5,
+		banner = 0,
 		activity_bg = 0,
+		desc = "预选赛仅显示得票排名，排名前150名的角色晋级小组赛，未晋级小组赛的角色将参与网络复活赛",
+		id = 5,
+		is_on_web = 0,
 		time_vote = {
 			{
 				{
@@ -603,16 +603,16 @@ pg.activity_vote = {
 		}
 	},
 	[6] = {
+		same_rank_by_id = 5,
 		name = "网络复活",
 		help_text = "",
 		type = 2,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "",
 		is_in_game = 0,
-		is_on_web = 1,
-		id = 6,
+		banner = 0,
 		activity_bg = 0,
+		desc = "",
+		id = 6,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -661,16 +661,16 @@ pg.activity_vote = {
 		}
 	},
 	[7] = {
+		same_rank_by_id = 5,
 		name = "小组赛A",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 7,
+		banner = 0,
 		activity_bg = 0,
+		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
+		id = 7,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -774,16 +774,16 @@ pg.activity_vote = {
 		}
 	},
 	[8] = {
+		same_rank_by_id = 5,
 		name = "小组赛B",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 8,
+		banner = 0,
 		activity_bg = 0,
+		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
+		id = 8,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -887,16 +887,16 @@ pg.activity_vote = {
 		}
 	},
 	[9] = {
+		same_rank_by_id = 5,
 		name = "小组赛C",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 9,
+		banner = 0,
 		activity_bg = 0,
+		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
+		id = 9,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1000,16 +1000,16 @@ pg.activity_vote = {
 		}
 	},
 	[10] = {
+		same_rank_by_id = 5,
 		name = "小组赛D",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 10,
+		banner = 0,
 		activity_bg = 0,
+		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
+		id = 10,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1113,16 +1113,16 @@ pg.activity_vote = {
 		}
 	},
 	[11] = {
+		same_rank_by_id = 5,
 		name = "小组赛E",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 11,
+		banner = 0,
 		activity_bg = 0,
+		desc = "小组赛排名前三的角色直接晋级决赛，第4至10名将进入决胜复活赛",
+		id = 11,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1226,16 +1226,16 @@ pg.activity_vote = {
 		}
 	},
 	[12] = {
+		same_rank_by_id = 5,
 		name = "决胜复活赛",
 		help_text = "",
 		type = 4,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "决胜复活赛排名前9的角色将晋级决赛",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 12,
+		banner = 0,
 		activity_bg = 0,
+		desc = "决胜复活赛排名前9的角色将晋级决赛",
+		id = 12,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1333,16 +1333,16 @@ pg.activity_vote = {
 		}
 	},
 	[13] = {
+		same_rank_by_id = 5,
 		name = "决赛",
 		help_text = "",
 		type = 5,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "晋级决赛的24名角色，将进行为期7天的决赛投票",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 13,
+		banner = 0,
 		activity_bg = 0,
+		desc = "晋级决赛的24名角色，将进行为期7天的决赛投票",
+		id = 13,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1466,5 +1466,3 @@ pg.activity_vote = {
 		13
 	}
 }
-
-return

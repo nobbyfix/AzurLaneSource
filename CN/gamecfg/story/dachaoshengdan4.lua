@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"圣诞礼物大作战！\n\n<size=45>四　圣诞节的阴影（下）</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "在萨拉托加的带领之下，二人来到了某个房间的门前",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "在萨拉托加的带领之下，二人来到了某个房间的门前",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,11 +66,11 @@ return {
 			}
 		},
 		{
+			actor = 102123,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 102123,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇！不……不要随便进人家房间啊！",
 			typewriter = {
 				speed = 0.05,
@@ -82,8 +82,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -92,12 +92,12 @@ return {
 			}
 		},
 		{
-			say = "这……这难道就是鲁鲁酱要给指挥官的惊喜嘛？！",
+			actor = 107030,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这……这难道就是鲁鲁酱要给指挥官的惊喜嘛？！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -115,8 +115,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 102123,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "才……才不是！这……这个只是，最近很流行的……那个，COSPLAY！对对，COSPLAY啦！",
 			typewriter = {
@@ -129,11 +129,11 @@ return {
 			}
 		},
 		{
+			actor = 102123,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 102123,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "变……变装成驯鹿，站在指挥官的指挥室装作玩偶，然后突然对指挥官说“哈！我是圣诞礼物哦！”之类的奇怪的事情完全是萨拉托加你脑补出来的罢了！",
 			typewriter = {
 				speed = 0.05,
@@ -145,8 +145,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.15,
 					x = 0,
@@ -174,8 +174,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 102123,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "喂！刚才的话绝对不允许告诉任何人啊！",
 			typewriter = {
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "还没等火奴鲁鲁说完，萨拉托加便一把拉住旁边僵住的皇家二人逃出了房间。",
 			typewriter = {
 				speed = 0.05,
@@ -198,15 +198,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯……变装成驯鹿，把自己打包成玩偶送给指挥官……吗？也算是比较新奇的点子吧……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -231,12 +231,12 @@ return {
 			}
 		},
 		{
-			say = "前……前辈！请不要做那样奇怪的事情啦！",
+			actor = 201100,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "前……前辈！请不要做那样奇怪的事情啦！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -251,8 +251,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -293,9 +293,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "砰地一声，大门打开了。",
 			typewriter = {
 				speed = 0.05,
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
+			actor = 107061,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107061,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Merry Christmas! 圣诞老人为大家带回了礼物哦！",
 			effects = {
 				{
@@ -325,11 +325,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "出现了！是姐姐！该来的总是要来的！",
 			effects = {
 				{
@@ -347,8 +347,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -405,12 +405,12 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "在选择的矛盾中出现的救星！企业，我们需要你的帮助！",
 			typewriter = {
 				speed = 0.05,

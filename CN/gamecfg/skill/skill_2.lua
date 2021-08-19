@@ -2,27 +2,27 @@ return {
 	uiEffect = "",
 	name = "全弹发射LV2",
 	cd = 10,
+	painting = 0,
+	id = 2,
 	picture = "0",
 	aniEffect = "",
 	desc = "主炮额外二轮攻击",
-	painting = 0,
-	id = 2,
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillWeaponFire",
+			casterAniEffect = "",
 			target_choise = "TargetHarmRandom",
+			targetAniEffect = "",
 			arg_list = {
 				delay = 1,
 				weaponType = "ChargeWeapon"
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillWeaponFire",
+			casterAniEffect = "",
 			target_choise = "TargetHarmRandom",
+			targetAniEffect = "",
 			arg_list = {
 				delay = 2,
 				weaponType = "ChargeWeapon"

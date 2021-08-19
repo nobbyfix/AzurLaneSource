@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 500
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 610,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 610
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 720
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 830,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 830
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 940,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 940
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 1050
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 1160
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 1270
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 1380
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 1500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "光焰中的奇迹",
 	init_effect = "jinengchufablue",
-	id = 11891,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11891,
 	icon = 11890,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 3,
-				attr = "igniteShorten"
+				attr = "igniteShorten",
+				number = 3
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "igniteReduce"
+				attr = "igniteReduce",
+				number = 1500
 			}
 		}
 	}

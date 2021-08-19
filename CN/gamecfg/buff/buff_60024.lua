@@ -1,7 +1,7 @@
 return {
-	time = 7,
-	name = "南达科他伤害减免",
 	init_effect = "",
+	name = "南达科他伤害减免",
+	time = 7,
 	picture = "",
 	desc = "测试-伤害减免",
 	stack = 3,
@@ -18,8 +18,8 @@ return {
 			},
 			arg_list = {
 				group = 60024,
-				number = -0.15,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.15
 			}
 		}
 	}

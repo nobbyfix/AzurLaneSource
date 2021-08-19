@@ -2,14 +2,14 @@ return {
 	{
 		desc = "主炮每进行10次攻击，触发全弹发射-法拉格特级II"
 	},
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 20012,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行10次攻击，触发全弹发射-法拉格特级II",
 	stack = 1,
-	color = "red",
+	id = 20012,
 	icon = 20000,
 	last_effect = "",
 	effect_list = {
@@ -32,8 +32,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 20012,
 				target = "TargetSelf",
+				skill_id = 20012,
 				countType = 20010
 			}
 		}

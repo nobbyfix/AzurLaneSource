@@ -15,13 +15,13 @@ return {
 		{
 			actor = 103090,
 			nameColor = "#a9f548",
-			say = "阿斯托利亚姐姐！",
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "阿斯托利亚姐姐！",
 			flash = {
-				wait = 0.2,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.2,
 				number = 1,
 				alpha = {
 					0,
@@ -40,8 +40,8 @@ return {
 		{
 			actor = 103080,
 			side = 1,
-			say = "没事，我还坚持得住！",
 			nameColor = "#a9f548",
+			say = "没事，我还坚持得住！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

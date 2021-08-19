@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "驱逐-指挥-雷击III",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 40150,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetPlayerVanguardFleet",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 40151
 			}

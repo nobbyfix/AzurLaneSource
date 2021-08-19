@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 50,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 50
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 60,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 60
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 70,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 70
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 80,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 80
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 90,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 90
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 100,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 100
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 110,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 110
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 120,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 120
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 130,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 130
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 150,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 150
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "伦敦改",
 	init_effect = "",
+	name = "伦敦改",
+	time = 0,
 	picture = "",
 	desc = "命中属性提升",
 	stack = 8,

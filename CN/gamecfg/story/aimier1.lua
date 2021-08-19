@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>一 人见人爱的埃米尔</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·港口",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·港口",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "和新担任秘书舰的埃米尔一起准备迎接委托组的归来…",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "埃米尔说着跳上了一根系船柱，轻快地转了一个圈。",
 			typewriter = {
 				speed = 0.05,
@@ -146,11 +146,11 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 802010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "能当上指挥官的果然都是厉害的人呢~",
 			typewriter = {
 				speed = 0.05,
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "大家都去凑到埃米尔面前，愉快地聊着委托的趣闻和礼物等女孩子间的话题",
 			typewriter = {
 				speed = 0.05,
@@ -198,9 +198,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -224,9 +224,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -250,9 +250,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -276,9 +276,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,

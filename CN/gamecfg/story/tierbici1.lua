@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"融冰\n\n<size=45>一　秘书舰</size>",
@@ -17,16 +17,16 @@ return {
 			}
 		},
 		{
+			actor = 900010,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "俾斯麦",
 			dir = 1,
 			blackBg = true,
-			actor = 900010,
-			actorName = "俾斯麦",
 			say = "妹妹……对不起……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -51,12 +51,12 @@ return {
 			}
 		},
 		{
+			actor = 900010,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "俾斯麦",
 			dir = 1,
 			blackBg = true,
-			actor = 900010,
-			actorName = "俾斯麦",
 			say = "请原谅，我所做的一切……",
 			typewriter = {
 				speed = 0.05,
@@ -68,17 +68,17 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 1,
-			bgm = "story-2",
-			actor = 405020,
-			nameColor = "#a9f548",
 			say = "呼……又是这个梦吗？这是第几次了呢……",
+			bgm = "story-2",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -135,15 +135,15 @@ return {
 			}
 		},
 		{
+			say = "一早来到指挥室，担当秘书舰的提尔比茨已经开始工作了。",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-1",
-			say = "一早来到指挥室，担当秘书舰的提尔比茨已经开始工作了。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -180,11 +180,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "正好，这份是今天的工作安排，过目一下吧，有什么问题我再调整。",
 			typewriter = {
 				speed = 0.05,
@@ -218,9 +218,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "桌面上整齐地码放着一叠文件。",
 			typewriter = {
 				speed = 0.05,
@@ -250,9 +250,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "提尔比茨继续利索地处理起公文来。",
 			typewriter = {
 				speed = 0.05,
@@ -260,9 +260,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不愧是铁血的精英，作为秘书舰也是毫不含糊。",
 			typewriter = {
 				speed = 0.05,

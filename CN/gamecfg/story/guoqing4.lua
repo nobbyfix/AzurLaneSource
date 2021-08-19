@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1,
 	mode = 2,
-	id = "GUOQING4",
-	once = true,
 	fadeType = 1,
+	once = true,
+	id = "GUOQING4",
 	scripts = {
 		{
 			actor = 307060,
@@ -28,8 +28,8 @@ return {
 			actor = 301090,
 			actorName = "？？？",
 			nameColor = "#ff0000",
-			say = "…",
 			side = 1,
+			say = "…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -98,12 +98,12 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			actorName = "{namecode:96}",
-			soundeffect = "event:/battle/boom2",
-			actor = 307060,
 			nameColor = "#a9f548",
 			say = "！！！你这是做什么，差一点就要击中我了，小心…",
+			soundeffect = "event:/battle/boom2",
 			shake = {
 				speed = 1,
 				number = 3
@@ -157,7 +157,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "看来…还是晚了一步，那么，就让我来把你从诅咒解放出来吧",
+			say = "棋子么...明明才进入“圣域”没多久，好快的速度。",
 			shake = {
 				speed = 1,
 				number = 3
@@ -176,7 +176,26 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "“灵”式战机，全员起飞！",
+			say = "可怜又可憎的人偶...就让我来把你从诅咒解放出来吧。",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			actorName = "{namecode:96}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "“灵”式战机，全数起飞！",
 			shake = {
 				speed = 1,
 				number = 3

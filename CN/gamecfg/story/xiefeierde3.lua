@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIEFEIERDE3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"这个女仆不太冷\n\n<size=45>三 女仆的兴趣</size>",
@@ -19,13 +19,13 @@ return {
 		{
 			actor = 202080,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "主人对我们女仆队平时的生活状态有兴趣？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -73,15 +73,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			say = "如此这般，在休息日敲响了谢菲尔德宿舍的门",
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "如此这般，在休息日敲响了谢菲尔德宿舍的门",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -128,11 +128,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 202080,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -161,13 +161,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "不愧是谢菲尔德的房间，整洁无比，看不到一丝污垢",
 			flashout = {
-				dur = 0.25,
 				black = true,
+				dur = 0.25,
 				alpha = {
 					0,
 					1
@@ -208,9 +208,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……不愧是皇家女仆，泡出来的红茶水平都有水准以上",
 			typewriter = {
 				speed = 0.05,
@@ -238,9 +238,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "总觉得自己完全没被当成主人看待？",
 			typewriter = {
 				speed = 0.05,
@@ -268,9 +268,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…也就是说是其他人就会直接送客吗，不愧是谢菲尔德。",
 			typewriter = {
 				speed = 0.05,
@@ -282,9 +282,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "桌上似乎放着什么，这是…拆卸到一半的手枪？",
 			typewriter = {
 				speed = 0.05,
@@ -312,9 +312,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…还是一如既往地不客气啊……不过，这手枪和谢菲尔德的舰装有点像呢",
 			typewriter = {
 				speed = 0.05,
@@ -358,9 +358,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲尔德的教学吗…似乎还挺有趣的…",
 			typewriter = {
 				speed = 0.05,
@@ -388,9 +388,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "感觉到谢菲尔德背后有火焰在静静地燃烧…",
 			typewriter = {
 				speed = 0.05,

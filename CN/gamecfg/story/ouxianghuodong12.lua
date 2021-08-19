@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 403040,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "啊哈哈哈哈哈！上吧我的妹妹！让全世界都知道你的魅力！",
+			dir = 1,
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -23,8 +23,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -36,8 +36,8 @@ return {
 			expression = 5,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			say = "姐……",
 			typewriter = {
 				speed = 0.05,
@@ -82,8 +82,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			say = "太羞耻了这个偶像名就不要提啦。而且这个也不是对战而是兵装实验",
 			typewriter = {
 				speed = 0.05,
@@ -98,8 +98,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			say = "你姐那边确实麻烦啊…",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			say = "德意志姐姐跟我说希望我参加的…希佩尔那边不是么？",
 			typewriter = {
 				speed = 0.05,
@@ -145,8 +145,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			say = "啊哈哈哈…但是这个活动参加了感觉挺有意思的。希佩尔之前不也笑的很开心吗？",
 			typewriter = {
 				speed = 0.05,
@@ -173,8 +173,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -186,8 +186,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			say = "还是有点傲娇啊……我是你们下一个对手，做好心理准备哦？",
 			typewriter = {
 				speed = 0.05,

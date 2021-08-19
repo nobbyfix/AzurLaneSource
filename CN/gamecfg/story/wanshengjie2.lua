@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "WANSHENGJIE2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,14 +16,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 107030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那还用说！那个“恶作剧之日”快到了呀！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -48,14 +48,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 107070,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哈哈，重樱的少女们啊，你们就好好期待那天吧！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -80,15 +80,15 @@ return {
 			}
 		},
 		{
+			actor = 306051,
 			actorName = "{namecode:87}",
 			side = 2,
-			dir = 1,
-			actor = 306051,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "气氛好像更紧张了……{namecode:6}，你怎么看？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -113,12 +113,12 @@ return {
 			}
 		},
 		{
-			say = "总不会是和白鹰开战……",
+			actor = 301050,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301050,
 			actorName = "{namecode:6}",
+			dir = 1,
+			say = "总不会是和白鹰开战……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -136,8 +136,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:87}",
+			dir = 1,
 			say = "哎哎哎——！",
 			typewriter = {
 				speed = 0.05,
@@ -152,8 +152,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:87}",
+			dir = 1,
 			say = "没错！储蓄食物，准备“捣乱”，这是再明显不过的战争讯号！",
 			typewriter = {
 				speed = 0.05,
@@ -168,8 +168,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "如果要开战，她们不会隐瞒我",
 			typewriter = {
 				speed = 0.05,
@@ -184,8 +184,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:87}",
+			dir = 1,
 			say = "那、那是为了防止走漏风声……对了，去找“她”商量一下吧",
 			typewriter = {
 				speed = 0.05,
@@ -197,15 +197,15 @@ return {
 			}
 		},
 		{
+			actor = 306051,
 			actorName = "{namecode:87}",
 			side = 2,
-			dir = -1,
-			actor = 306051,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "海~伦娜，吾来啦",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -252,8 +252,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:87}",
+			dir = -1,
 			say = "吾们这次带来了大情报——要开战了！",
 			typewriter = {
 				speed = 0.05,
@@ -280,15 +280,15 @@ return {
 			}
 		},
 		{
+			actor = 306051,
 			actorName = "{namecode:87}",
 			side = 2,
-			dir = -1,
-			actor = 306051,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "原来如此，恶作剧和南瓜灯都是万圣节的习俗吗……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -350,8 +350,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:87}",
+			dir = -1,
 			say = "海伦娜，你手中的“那个”是？",
 			typewriter = {
 				speed = 0.05,
@@ -381,8 +381,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:87}",
+			dir = -1,
 			say = "克利夫兰也能参加“Trick or treat！”？",
 			typewriter = {
 				speed = 0.05,
@@ -412,8 +412,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:87}",
+			dir = -1,
 			say = "……你只做了这一件衣服吗？",
 			typewriter = {
 				speed = 0.05,
@@ -443,8 +443,8 @@ return {
 			actor = 306051,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:87}",
+			dir = -1,
 			say = "实际上，吾前几天收到了一件类似的服装……",
 			typewriter = {
 				speed = 0.05,
@@ -456,17 +456,17 @@ return {
 			}
 		},
 		{
-			say = "喂，这次决斗如果我赢了，就帮我个忙！",
+			actor = 307060,
 			side = 2,
+			actorName = "？？？",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actorName = "？？？",
-			actor = 307060,
-			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "喂，这次决斗如果我赢了，就帮我个忙！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

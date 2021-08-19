@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 205070,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level03",
 			dir = 1,
 			say = "虽然是负隅顽抗，但也算是战斗到了最后一刻呢",
-			bgm = "level03",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,16 +87,16 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			actorName = "测试者",
 			side = 2,
+			nameColor = "#ff0000",
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			nameColor = "#ff0000",
 			say = "沙恩霍斯特的信号在北海消失了",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -121,13 +121,13 @@ return {
 			}
 		},
 		{
-			say = "嗯，依然和过去一样，就算给予了更强的力量也不足以改变既定的结果",
+			actor = 900012,
 			side = 1,
 			nameColor = "#ff0000",
+			actorName = "观察者",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者",
+			say = "嗯，依然和过去一样，就算给予了更强的力量也不足以改变既定的结果",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -142,12 +142,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 0,
+			actorName = "测试者",
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者",
 			say = "除此之外，这一次出现了一个很令人在意的分歧奇点...",
 			typewriter = {
 				speed = 0.05,
@@ -159,12 +159,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 0,
+			actorName = "测试者",
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者",
 			say = "——皇家送往北方联合的第二批物资船队在护航舰队追击沙恩霍斯特时，被舰载机击沉了",
 			typewriter = {
 				speed = 0.05,
@@ -176,12 +176,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 0,
+			actorName = "测试者",
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者",
 			say = "现在局势下的铁血并没有在北海执行大规模空袭的能力，究竟是...",
 			typewriter = {
 				speed = 0.05,
@@ -193,12 +193,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#ff0000",
 			side = 1,
+			actorName = "观察者",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者",
 			say = "按照原定的剧本...皇家的孩子们现在应该正在筹备着下一个更大的空袭作战吧",
 			typewriter = {
 				speed = 0.05,
@@ -210,12 +210,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#ff0000",
 			side = 1,
+			actorName = "观察者",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者",
 			say = "你发现的这个情报，确实也有必要详细观察一下...",
 			typewriter = {
 				speed = 0.05,
@@ -227,12 +227,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#ff0000",
 			side = 1,
+			actorName = "观察者",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者",
 			say = "那么，北海区域就交给你负责了——「净化者」",
 			typewriter = {
 				speed = 0.05,
@@ -244,12 +244,12 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "净化者",
 			dir = 1,
 			blackBg = true,
-			actor = 900021,
-			actorName = "净化者",
 			say = "哎呀呀，终于轮到我出场了吗！~",
 			typewriter = {
 				speed = 0.05,
@@ -261,13 +261,13 @@ return {
 			}
 		},
 		{
-			say = "如果是那个家伙在捣蛋的话，你知道该如何处理...",
+			actor = 900012,
 			side = 2,
 			nameColor = "#ff0000",
+			actorName = "观察者",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者",
+			say = "如果是那个家伙在捣蛋的话，你知道该如何处理...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -282,12 +282,12 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "净化者",
 			dir = 1,
 			blackBg = true,
-			actor = 900021,
-			actorName = "净化者",
 			say = "好呀好呀！我一定会陪她们好好玩玩的！呵呵呵呵~",
 			typewriter = {
 				speed = 0.05,

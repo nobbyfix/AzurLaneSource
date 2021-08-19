@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 301790,
 			nameColor = "#ff0000",
 			side = 1,
+			bgm = "battle-boss-tiancheng",
 			dir = -1,
 			say = "身为红方旗舰，没想到【王将】居然会亲自走上前线啊，{namecode:161}。",
-			bgm = "battle-boss-tiancheng",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -56,8 +56,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "虽然大家都知道我喜欢智取，但我从来也没说过不擅长正面作战哦~",
 			typewriter = {
 				speed = 0.05,
@@ -72,8 +72,8 @@ return {
 			expression = 3,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = -1,
 			actor = 301790,
+			dir = -1,
 			say = "……你真是，幸好你不是我真正的敌人。",
 			typewriter = {
 				speed = 0.05,
@@ -103,8 +103,8 @@ return {
 			expression = 1,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = -1,
 			actor = 301790,
+			dir = -1,
 			say = "{namecode:161}，想要过去的话，就先过我这一关吧！",
 			typewriter = {
 				speed = 0.05,

@@ -19,9 +19,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -46,9 +46,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -73,9 +73,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -100,9 +100,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -127,9 +127,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -154,9 +154,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -181,9 +181,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -208,9 +208,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -235,9 +235,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
@@ -262,21 +262,21 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
+					attr = "luck",
 					target = "TargetSelf",
-					attr = "luck"
+					number = 5
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "祥瑞御免",
 	init_effect = "jinengchufablue",
-	id = 11241,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 11241,
 	icon = 11240,
 	last_effect = "",
 	blink = {
@@ -305,9 +305,9 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 5,
+				attr = "luck",
 				target = "TargetSelf",
-				attr = "luck"
+				number = 5
 			}
 		}
 	}

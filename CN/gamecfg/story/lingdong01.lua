@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG01",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -103,14 +103,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 203050,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜...这样一来就算完成物资船队的护航任务了，终于可以回家咯~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIER5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"讴歌平稳的日常\n\n<size=45>五　外出日</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "和谢菲尔德、纽卡斯尔一起外出购物",
 			side = 2,
 			bgName = "star_level_bg_105",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "和谢菲尔德、纽卡斯尔一起外出购物",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -94,9 +94,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "有种被谢菲尔德当作小孩拜托给纽卡斯尔的感觉……",
 			typewriter = {
 				speed = 0.05,
@@ -161,8 +161,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "保险……？",
 			typewriter = {
 				speed = 0.05,
@@ -254,9 +254,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "纽卡斯尔一边说着，一边打开了平时随身携带的伞。",
 			typewriter = {
 				speed = 0.05,
@@ -283,8 +283,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "逐渐靠近这边，用雨伞挡住了我和她头顶的太阳",
 			typewriter = {
 				speed = 0.05,
@@ -296,12 +296,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "——因为大家都是守护平稳日常的最重要的伙伴呢",
 			typewriter = {
 				speed = 0.05,

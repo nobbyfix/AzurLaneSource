@@ -8,8 +8,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.15,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.15
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.172,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.172
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.194,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.194
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.216,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.216
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.238,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.238
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.26,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.26
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.282,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.282
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.304,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.304
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.326,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.326
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 				},
 				arg_list = {
 					group = 19010,
-					number = 0.35,
-					attr = "damageRatioByAmmoType_2"
+					attr = "damageRatioByAmmoType_2",
+					number = 0.35
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "MkV型穿甲弹",
 	init_effect = "jinengchufared",
-	id = 19011,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "穿甲弹伤害提高",
 	stack = 1,
-	color = "red",
+	id = 19011,
 	icon = 19010,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 			},
 			arg_list = {
 				group = 19010,
-				number = 0.15,
-				attr = "damageRatioByAmmoType_2"
+				attr = "damageRatioByAmmoType_2",
+				number = 0.15
 			}
 		}
 	}

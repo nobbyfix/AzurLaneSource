@@ -1,7 +1,7 @@
 return {
+	time = 5,
 	name = "铁底湾之夜",
 	init_effect = "jinengchufablue",
-	time = 5,
 	picture = "",
 	desc = "无敌",
 	stack = 1,
@@ -33,8 +33,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "isInvincible"
+				group = 11015,
+				attr = "isInvincible",
+				number = 1
 			}
 		}
 	}

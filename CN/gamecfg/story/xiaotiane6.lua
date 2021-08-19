@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春风的十字星\n\n<size=45>六  证人</size>",
@@ -18,13 +18,13 @@ return {
 			}
 		},
 		{
+			actor = 207020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 207020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所、以、说！我也是刚回来，看到有衣服散在那里，才打算捡起来收拾一下的啊！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			say = "毕竟平时的皇家方舟小姐…",
+			actor = 201090,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 201090,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "毕竟平时的皇家方舟小姐…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -119,12 +119,12 @@ return {
 			}
 		},
 		{
-			say = "吸、吸血鬼？",
+			actor = 201101,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201101,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "吸、吸血鬼？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -267,10 +267,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 201101,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "皇家方舟&小天鹅",

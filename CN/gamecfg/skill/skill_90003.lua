@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "BOSS每20秒获得吸血buff所有攻击伤害都会转为自身血量持续10秒",
 	cd = 0,
-	picture = "0",
-	desc = "BOSS每20秒获得吸血buff所有攻击伤害都会转为自身血量持续10秒",
 	painting = 1,
 	id = 90003,
+	picture = "0",
 	castCV = "skill",
+	desc = "BOSS每20秒获得吸血buff所有攻击伤害都会转为自身血量持续10秒",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,19 +17,19 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 700024
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 8512
 			}

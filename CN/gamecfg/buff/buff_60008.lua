@@ -1,7 +1,7 @@
 return {
-	time = 5,
-	name = "测试-不死鸟-DOT和HOT",
 	init_effect = "",
+	name = "测试-不死鸟-DOT和HOT",
+	time = 5,
 	picture = "",
 	desc = "600081DOT,600082HOT",
 	stack = 1,

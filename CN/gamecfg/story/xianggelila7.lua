@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纪行的藏红花\n\n<size=45>七　最后的战斗总结</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "次日·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "次日·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "昨天的模拟战之后，香格里拉她——",
 			typewriter = {
 				speed = 0.05,
@@ -95,8 +95,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……在意我的事？",
 			typewriter = {
@@ -141,12 +141,12 @@ return {
 			}
 		},
 		{
-			say = "早安，大黄蜂。既然人到齐了，就让我们开始吧",
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "早安，大黄蜂。既然人到齐了，就让我们开始吧",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -161,11 +161,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "等下——！先让我说下谢谢！",
 			typewriter = {
 				speed = 0.05,
@@ -177,8 +177,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -190,8 +190,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "？？",
 			typewriter = {
@@ -223,8 +223,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我这边才是，不应该完全依赖过去的记录呢",
 			typewriter = {
@@ -253,11 +253,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "说着香格里拉掏出了一大摞照片",
 			typewriter = {
@@ -270,11 +270,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "哇？！这些照片是什么时候拍的？",
 			typewriter = {
 				speed = 0.05,
@@ -286,8 +286,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -315,8 +315,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "因为之后肯定是要收藏起来的，在那之前我想给大家看一下",
 			typewriter = {
@@ -329,9 +329,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "香格里拉一边说着，一边把相片递给大家传阅。",
 			typewriter = {
 				speed = 0.05,
@@ -359,11 +359,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "啊！这张照片！是昨天结束之后大家一起拍的那张啊",
 			typewriter = {
 				speed = 0.05,
@@ -375,8 +375,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -385,9 +385,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "照片中的是有些倦意的大黄蜂和香格里拉，站在企业旁边显得有些紧张的埃塞克斯和{namecode:96}，以及露出温和微笑的约克城……",
 			typewriter = {
 				speed = 0.05,
@@ -402,8 +402,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "名字叫做“伙伴”。反面要写上些什么可以和大家商量下吗……？",
 			typewriter = {

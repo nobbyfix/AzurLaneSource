@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIRUI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:71}的宴会\n\n<size=45>七 心声</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "宴会结束后……",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "宴会结束后……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -130,17 +130,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 304020,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-2",
-			actor = 304020,
-			nameColor = "#a9f548",
 			say = "呼…结束了呢",
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -197,11 +197,11 @@ return {
 			}
 		},
 		{
+			actor = 304020,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呵呵，不过即使如此，我还是喜欢这样热闹的宴会呢",
 			typewriter = {
 				speed = 0.05,
@@ -315,9 +315,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "银色的月光洒落在港区，今夜是个晴朗的夜晚…",
 			typewriter = {
 				speed = 0.05,
@@ -325,9 +325,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "不由得想起刚才在宴会上的{namecode:71}的舞姿。",
 			typewriter = {
 				speed = 0.05,
@@ -335,15 +335,15 @@ return {
 			}
 		},
 		{
+			actor = 304020,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 304020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "跳舞…现在吗？宴会已经结束了哟？也没有音乐呢…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -368,9 +368,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "——没关系，夜晚还很长。",
 			typewriter = {
 				speed = 0.05,

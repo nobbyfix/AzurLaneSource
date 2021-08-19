@@ -21,8 +21,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "此刻的北方舰队，三名同为新奥尔良级的重巡姐妹正在快乐地交流着。",
 			typewriter = {
@@ -103,8 +103,8 @@ return {
 		{
 			actor = 103100,
 			side = 1,
-			say = "而且巡逻好累好无聊……为什么要巡逻，不是有企业姐姐他们？",
 			nameColor = "#a9f548",
+			say = "而且巡逻好累好无聊……为什么要巡逻，不是有企业姐姐他们？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -287,12 +287,12 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "这时，一阵突然的强光忽然将三姐妹笼罩其中。",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -329,8 +329,8 @@ return {
 		{
 			actor = 103080,
 			side = 0,
-			say = "不对！这是……敌袭！昆西，文森斯，准备战斗！",
 			nameColor = "#a9f548",
+			say = "不对！这是……敌袭！昆西，文森斯，准备战斗！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

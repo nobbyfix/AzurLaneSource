@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIANLANGXING6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"天狼星改造计划\n\n<size=45>六 意外事件</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "宴会当天——",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "宴会当天——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真，真的假的！",
 			typewriter = {
 				speed = 0.05,
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -92,11 +92,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那是女仆队的天狼星……！？",
 			typewriter = {
 				speed = 0.05,
@@ -108,8 +108,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -118,9 +118,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "伊丽莎白会惊讶也可以理解。穿上礼裙的天狼星和平常的女仆打扮时优雅十足，宛若他人一般。",
 			typewriter = {
 				speed = 0.05,
@@ -132,9 +132,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "这既要感谢女仆队、纳尔逊、罗德尼以及欧若拉她们的指导——",
 			typewriter = {
 				speed = 0.05,
@@ -146,9 +146,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "能够完美的融入宴会气氛……甚至比宴会上的任何人都要闪耀，无疑更多是她刻苦努力的成果。",
 			typewriter = {
 				speed = 0.05,
@@ -179,8 +179,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 202201,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "请尽管观阅欣赏天狼星努力的成果",
 			typewriter = {
@@ -196,8 +196,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 202201,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我骄傲的主人啊——邀请您，与我共舞一曲",
 			typewriter = {
@@ -216,17 +216,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_107",
+			actor = 205020,
 			side = 2,
+			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 1,
-			bgm = "story-6",
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "警报！陛下！塞壬的舰载机正在接近周边海域！",
+			bgm = "story-6",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -251,11 +251,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼！竟敢打扰本王参加的宴会，胆子真大！召集一下待机中的女仆队，赶紧把那些塞壬赶出去！",
 			typewriter = {
 				speed = 0.05,
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.2,
 					x = 0,
@@ -280,8 +280,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 202201,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……从这里直接出发应该能最先到达",
 			typewriter = {
@@ -310,9 +310,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "当时之所以决定参加宴会，就是想回报她平时的努力，让她能够有表现自己的机会。",
 			typewriter = {
 				speed = 0.05,
@@ -324,9 +324,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "既然她身负警卫工作，还拥有女仆队屈指可数的战斗能力，那么对她而言最耀眼的地方就是——",
 			typewriter = {
 				speed = 0.05,
@@ -357,9 +357,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
+			actor = 202201,
 			dir = 1,
 			blackBg = true,
-			actor = 202201,
 			nameColor = "#a9f548",
 			say = "——如果这是您的愿望，天狼星将全力绽放光芒",
 			typewriter = {

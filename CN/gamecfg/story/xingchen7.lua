@@ -19,10 +19,10 @@ return {
 		{
 			actor = 206030,
 			side = 2,
+			nameColor = "#a9f548",
+			withoutPainting = true,
+			blackBg = true,
 			say = "哥、哥哥……在独角兽说可以之前，不可以睁开眼睛哦……",
-			nameColor = "#a9f548",
-			blackBg = true,
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,10 +35,10 @@ return {
 		{
 			actor = 206030,
 			side = 2,
+			nameColor = "#a9f548",
+			withoutPainting = true,
+			blackBg = true,
 			say = "呜…果然还是……",
-			nameColor = "#a9f548",
-			blackBg = true,
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -51,10 +51,10 @@ return {
 		{
 			actor = 206030,
 			side = 2,
-			say = "星尘姐姐……给我勇气……",
 			nameColor = "#a9f548",
-			blackBg = true,
 			withoutPainting = true,
+			blackBg = true,
+			say = "星尘姐姐……给我勇气……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,8 +70,8 @@ return {
 			nameColor = "#a9f548",
 			say = "（唱歌）……",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -157,8 +157,8 @@ return {
 			nameColor = "#a9f548",
 			say = "呼…还好……哥哥没什么事…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

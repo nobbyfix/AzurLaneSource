@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"另一个领导者？\n\n<size=45>五　领导者课程</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_107",
+			actor = 204030,
 			side = 2,
+			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "是的，乔治你总是太耀眼了，导致会连陛下的光芒盖过",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,12 +68,12 @@ return {
 			}
 		},
 		{
-			say = "有个性还是很好的。嗯",
+			actor = 205050,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "有个性还是很好的。嗯",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -107,8 +107,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "也就是说……",
 			typewriter = {
@@ -153,8 +153,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			say = "一瞬间，气氛似乎变得肃杀（？）了起来。",
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "（原、原来是这么严重的问题吗……）",
 			typewriter = {
 				speed = 0.05,
@@ -246,13 +246,13 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			bgm = "story-1",
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呵呵，当然是开玩笑了。只不过，为了要解决我们指挥官的疑虑，这里只能——",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -263,9 +263,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "胡德从座位上站起来，侧身到一旁，朝着厨房的威尔士和这边分别优雅的行了一个礼",
 			typewriter = {
 				speed = 0.05,
@@ -293,11 +293,11 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这种了解，不应该是旁观，也不应该仅从指挥官与秘书舰的关系来进行",
 			typewriter = {
 				speed = 0.05,
@@ -363,9 +363,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "乔治五世的弱点——",
 			typewriter = {
 				speed = 0.05,
@@ -377,12 +377,12 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "指挥官，能拜托你为乔治做饭吗？",
 			typewriter = {
 				speed = 0.05,

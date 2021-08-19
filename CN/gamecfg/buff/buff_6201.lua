@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "一式穿甲弹",
 	init_effect = "",
-	id = 6200,
+	name = "一式穿甲弹",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "主炮暴击伤害提高25%",
 	stack = 1,
-	color = "yellow",
+	id = 6200,
 	icon = 6200,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 0.25,
 				attr = "criDamage",
+				number = 0.25,
 				index = {
 					1
 				}

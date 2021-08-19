@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U73HUOYUE2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"理科实验时间！\n\n<size=45>二　伟大的实验？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "数分钟后，学院·科学教室",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "数分钟后，学院·科学教室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,11 +62,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咳、咳咳…这烟是怎么回事——",
 			typewriter = {
 				speed = 0.05,
@@ -78,16 +78,16 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
 					number = 1
 				},
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0.3,
 					dur = 0.15,
 					x = 0,
@@ -99,8 +99,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咳咳咳…啊哈哈哈，失败了呢…",
 			typewriter = {
@@ -113,8 +113,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -126,8 +126,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过，失败乃是成功之母，下一次一定会成功的！嗯嗯！",
 			typewriter = {
@@ -172,11 +172,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来是U73啊…不对，U73！你趁着中午的时候在教室做什么呢！？咳、咳咳…",
 			typewriter = {
 				speed = 0.05,
@@ -188,8 +188,8 @@ return {
 			},
 			action = {
 				{
-					y = -45,
 					type = "shake",
+					y = -45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -265,8 +265,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊，吵到你们午休了吗，抱歉抱歉～",
 			typewriter = {
@@ -298,8 +298,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼，听了可别吓一跳，我正在进行一个“伟大的实验”呢！",
 			typewriter = {
@@ -315,8 +315,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "实验的内容就是——",
 			typewriter = {
@@ -329,16 +329,16 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
-			blackBg = true,
+			nameColor = "#a9f548",
 			bgName = "star_level_bg_103",
 			actorName = "众人",
+			dir = 1,
+			blackBg = true,
 			say = "诶诶诶诶？！！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

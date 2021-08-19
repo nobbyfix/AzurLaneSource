@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "爱丽丝",
 	init_effect = "",
-	id = 12360,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12360,
 	icon = 12360,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				skill_id = 12360,
+				target = "TargetSelf",
 				check_target = {
 					"TargetPlayerVanguardFleet",
 					"TargetShipTypeFriendly"

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANCHENGLIFU4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区的特别宴会\n\n<size=45>四　宴会上的女王殿下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·宴会会场",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·宴会会场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "是光辉啊，我当然是在看这场宴会。",
+			actor = 205011,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205011,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是光辉啊，我当然是在看这场宴会。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -85,8 +85,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呵呵，看来陛下对这场宴会十分满意呢。",
 			typewriter = {
@@ -102,8 +102,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那是当然，这场宴会，从建筑风格到各种装饰，从食材到食谱，全都是以我们皇家的标准来操办的",
 			typewriter = {
@@ -119,8 +119,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "虽然来到这里后也基本习惯了没有品位的建筑和饮食……",
 			typewriter = {
@@ -149,11 +149,11 @@ return {
 			}
 		},
 		{
+			actor = 205011,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇哈哈哈哈哈哈！！！",
 			typewriter = {
 				speed = 0.05,
@@ -165,8 +165,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -194,8 +194,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼，那是理所当然的事！",
 			typewriter = {
@@ -211,8 +211,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咦，贝尔法斯特和谢菲尔德没有随陛下前来吗？",
 			typewriter = {
@@ -228,8 +228,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我派她们两个去厨房了，既然要做，当然要做到最好！",
 			typewriter = {
@@ -245,8 +245,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "反正这里就像我的寝宫一样安全，完全没有担心的必要！",
 			typewriter = {
@@ -310,8 +310,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "——也没什么特别的，毕竟庆典本身就很开心了呢～",
 			typewriter = {
@@ -343,8 +343,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205011,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你这个巨乳，哼，长这么大干什么，碍眼！",
 			typewriter = {
@@ -357,10 +357,10 @@ return {
 			},
 			action = {
 				{
-					y = 0,
+					type = "move",
 					dur = 0.2,
 					x = -150,
-					type = "move"
+					y = 0
 				}
 			}
 		},
@@ -368,8 +368,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呀！陛、陛下，大家看着呢，不要突然戳过来……",
 			typewriter = {
@@ -382,8 +382,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -395,8 +395,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "而且我真的没有去，还是…不太习惯那种场合呢…",
 			typewriter = {
@@ -409,11 +409,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 305110,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:82}",
 			say = "喂，伊丽莎白~别在那欺负属下了，要不要过来喝一杯？",
 			typewriter = {
@@ -426,12 +426,12 @@ return {
 			}
 		},
 		{
-			say = "说了多少次，重樱的{namecode:82}，要叫我伊丽莎白女王！而且这才不是欺负，这叫教育！",
+			actor = 205011,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205011,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "说了多少次，重樱的{namecode:82}，要叫我伊丽莎白女王！而且这才不是欺负，这叫教育！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -446,8 +446,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -456,11 +456,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 305110,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 0,
+			dir = 1,
 			actorName = "{namecode:82}",
 			say = "啊哈哈…那就…尊敬的伊丽莎白女王陛下，可愿意屈尊前来小酌一杯呢？",
 			typewriter = {
@@ -489,12 +489,12 @@ return {
 			}
 		},
 		{
-			say = "光辉，不用陪着我了，你做自己的事去吧。",
+			actor = 205011,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205011,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "光辉，不用陪着我了，你做自己的事去吧。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -528,8 +528,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……不管怎么说，陛下看起来也找到了自己的乐趣呢。",
 			typewriter = {
@@ -542,12 +542,12 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 1,
+			actorName = "???",
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘻嘻，就算是“那样的”的殿下，毕竟还是想要交朋友的呢~",
+			say = "嘻嘻，就算是“那样”的殿下，毕竟还是想要交朋友的呢~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -561,8 +561,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…阿贾克斯，对陛下要更尊敬一点哦。",
 			typewriter = {
@@ -578,8 +578,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "陛下毕竟是陛下，稍微任性一些也是没关系的。",
 			typewriter = {
@@ -608,12 +608,12 @@ return {
 			}
 		},
 		{
-			say = "真是符合阿贾克斯的风格呢…",
+			actor = 207032,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 207032,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "真是符合阿贾克斯的风格呢…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -631,8 +631,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那么，庆典过得如何呢？",
 			typewriter = {
@@ -648,8 +648,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 202031,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "虽然小猪仔在埋头工作少了些乐趣，不过还算有趣。",
 			typewriter = {
@@ -681,8 +681,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 207032,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "卡牌游戏…吗？似乎很有趣的样子呢——",
 			typewriter = {
@@ -695,13 +695,13 @@ return {
 			}
 		},
 		{
-			say = "咦，这个声音是……钢琴？",
+			actor = 207032,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 207032,
-			nameColor = "#a9f548",
+			say = "咦，这个声音是……钢琴？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2

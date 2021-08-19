@@ -1,30 +1,30 @@
 slot0 = class("GatewayNoticeLayer", import("..base.BaseUI"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "GatewayNoticeUI"
 end
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0.trFrame = slot0:findTF("frame")
 	slot0.txtTitle = slot0:findTF("frame/title"):GetComponent("Text")
 	slot0.txtContent = slot0:findTF("frame/content"):GetComponent("RichText")
 	slot0.btnBack = slot0:findTF("frame/title_pop/btnBack")
 end
 
-slot0.didEnter = function (slot0)
+function slot0.didEnter(slot0)
 	onButton(slot0, slot0.btnBack, function ()
-		slot0:showNext()
+		uv0:showNext()
 	end)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false)
 end
 
-slot0.updateNotices = function (slot0, slot1)
+function slot0.updateNotices(slot0, slot1)
 	slot0.notices = slot1
 
 	slot0:showNext()
 end
 
-slot0.showNext = function (slot0)
+function slot0.showNext(slot0)
 	if slot0.notice then
 		slot0.notice:markAsRead()
 	end
@@ -37,19 +37,19 @@ slot0.showNext = function (slot0)
 
 		LeanTween.cancel(go(slot0.trFrame))
 		LeanTween.value(go(slot0.trFrame), 0, 1, 0.3):setEase(LeanTweenType.easeOutBack):setOnUpdate(System.Action_float(function (slot0)
-			slot0.alpha = slot0
-			slot0.trFrame.localScale = Vector3(0.8, 0.8, 1) + Vector3(0.2, 0.2, 0) * slot0
+			uv0.alpha = slot0
+			uv1.trFrame.localScale = Vector3(0.8, 0.8, 1) + Vector3(0.2, 0.2, 0) * slot0
 		end))
-		playSoundEffect(SFX_PANEL)
+		pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_PANEL)
 
 		return
 	end
 
 	slot0:emit(BaseUI.ON_CLOSE)
-	playSoundEffect(SFX_CANCEL)
+	pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 end
 
-slot0.willExit = function (slot0)
+function slot0.willExit(slot0)
 	LeanTween.cancel(go(slot0.trFrame))
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 end

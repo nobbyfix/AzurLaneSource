@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIEFEIERDE7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"这个女仆不太冷\n\n<size=45>七 谢菲尔德的心意·下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·卧室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·卧室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……其实是没有睡着。",
 			typewriter = {
 				speed = 0.05,
@@ -80,9 +80,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "想起刚才朦胧中听到的对话",
 			typewriter = {
 				speed = 0.05,
@@ -100,9 +100,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不知为何，谢菲原本流畅的动作忽然停住了。",
 			typewriter = {
 				speed = 0.05,
@@ -114,9 +114,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…回想起来，自己确实在不知不觉中太过依赖谢菲尔德了，却一直没有关注过“她真正想要做的事情”，所以——",
 			typewriter = {
 				speed = 0.05,
@@ -144,11 +144,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 202080,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "谢菲忽然走到自己身边，并用手搭上自己的额头",
 			typewriter = {
@@ -177,11 +177,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 202080,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "似乎被很失礼地担心了。",
 			typewriter = {
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲不知为何叹了一口气。",
 			typewriter = {
 				speed = 0.05,
@@ -262,9 +262,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……！！？？恋爱方面？",
 			typewriter = {
 				speed = 0.05,
@@ -308,9 +308,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲突然直视着自己的双眼。",
 			typewriter = {
 				speed = 0.05,

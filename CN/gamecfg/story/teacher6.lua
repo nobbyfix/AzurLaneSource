@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"36年Z组 Z23老师\n\n<size=45>六 奔跑吧，Z23</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对方的世界吗……好！首先是——",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "长岛！来一决胜负吧！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -67,12 +67,12 @@ return {
 			}
 		},
 		{
-			say = "诶？",
+			actor = 106011,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "诶？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -151,15 +151,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "输、输了……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -184,12 +184,12 @@ return {
 			}
 		},
 		{
-			say = "嘿嘿，说话要算话哦～",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嘿嘿，说话要算话哦～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -236,15 +236,15 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "什么～？有好玩的～？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -269,12 +269,12 @@ return {
 			}
 		},
 		{
-			say = "嗯～之前是我太急了～圣地亚哥的话…就从简单的内容开始学起吧～",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "嗯～之前是我太急了～圣地亚哥的话…就从简单的内容开始学起吧～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -321,15 +321,15 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对不起啦Z23，刚才的恶作剧只是跟你开开玩笑而已～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -354,12 +354,12 @@ return {
 			}
 		},
 		{
-			say = "没关系啦…不过，双重恶作剧吗，萨拉小姐还真是有趣呢…",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "没关系啦…不过，双重恶作剧吗，萨拉小姐还真是有趣呢…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -502,15 +502,15 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好！这次一定能顺利进行！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

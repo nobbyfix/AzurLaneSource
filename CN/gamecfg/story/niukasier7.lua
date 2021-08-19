@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIER7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"讴歌平稳的日常\n\n<size=45>七　愿望</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_105",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_105",
 			say = "伊丽莎白说，纽卡斯尔应该有自己的愿望。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -44,9 +44,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "但是对她来说，现在的日常就是足以令她满足的“安稳”",
 			typewriter = {
 				speed = 0.05,
@@ -54,14 +54,14 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 0.2,
-			bgm = "story-2",
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "至于我自己的愿望如何，都不过是一点小事而已",
+			bgm = "story-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "既然如此——",
 			typewriter = {
 				speed = 0.05,
@@ -133,8 +133,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "纽卡斯尔对伙伴十分重视，正如伙伴们重视她一样",
 			typewriter = {
 				speed = 0.05,
@@ -146,11 +146,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
 			withoutActorName = true,
-			actor = 202190,
+			dir = 1,
 			say = "所以，若她珍爱着自己的“平稳”的话，想必对于守护同伴们的“平稳”也是不会拒绝的吧",
 			typewriter = {
 				speed = 0.05,
@@ -216,9 +216,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "纽卡斯尔静静的合上书本。",
 			typewriter = {
 				speed = 0.05,
@@ -261,8 +261,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "与平常不同，纽卡斯尔的声音因为紧张而微微颤抖着",
 			typewriter = {
 				speed = 0.05,
@@ -277,8 +277,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "她将身体倚靠过来，向这边投来专注的目光",
 			typewriter = {
 				speed = 0.05,
@@ -293,8 +293,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "静静地，说出了心中的愿望——",
 			typewriter = {
 				speed = 0.05,
@@ -306,12 +306,12 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202190,
-			nameColor = "#a9f548",
 			say = "指挥官能...好好的守护我...一直陪在我的身边么？",
 			typewriter = {
 				speed = 0.05,

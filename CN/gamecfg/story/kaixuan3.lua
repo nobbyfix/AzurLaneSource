@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "KAIXUAN3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"骑士公主的忧郁\n\n<size=45>三 出击的凯旋小姐</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "任务海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-1",
-			say = "任务海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -95,14 +95,14 @@ return {
 			}
 		},
 		{
+			actor = 801010,
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
-			actor = 801010,
 			say = "这里需要主力舰队的伙伴们配合了!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -142,14 +142,14 @@ return {
 			}
 		},
 		{
+			actor = 801010,
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
-			actor = 801010,
 			say = "哼哼～想要跟上空想级的速度，可没有那么容易哟～",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -189,9 +189,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "在凯旋的活跃下，出击任务很顺利地完成了",
 			typewriter = {
 				speed = 0.05,
@@ -203,15 +203,15 @@ return {
 			}
 		},
 		{
+			say = "港区·港口",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·港口",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z466",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纯白之诗\n\n<size=45>六 羁绊</size>",
@@ -17,8 +17,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "出击结束了。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -29,8 +29,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "十余艘量产型敌舰。几枚“棋子”。不过是中等规模的舰队，然而对于弹药已尽的己方而言，已是难以应付的强敌了。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,8 +41,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "我全力战斗了。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -53,20 +53,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "发射了数十次主炮。不停地击出炮弹、直到炮身过热停止，满身疮痍。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			blackBg = true,
-			say = "舰装，还有裹在这一时之躯上的布，全都——失去了原本的色彩，染上了硝烟的灰色。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -77,13 +65,25 @@ return {
 			}
 		},
 		{
-			say = "港区·指挥室",
-			bgName = "bg_story_task",
-			bgmDelay = 2,
+			say = "舰装，还有裹在这一时之躯上的布，全都——失去了原本的色彩，染上了硝烟的灰色。",
+			blackBg = true,
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			bgm = "story-1",
+			bgmDelay = 2,
+			bgName = "bg_story_task",
+			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -214,8 +214,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			blackBg = true,
+			stopbgm = true,
 			say = "我的内心在呼喊着。如果不是这样的话，请你赐予我意义。",
 			typewriter = {
 				speed = 0.05,
@@ -227,8 +227,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "赐予我，不是兵器而是你所期望的我，战斗的理由。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -239,8 +239,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "赐予我，留在挚爱的你身边的我，可被呼唤的姓名。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,8 +251,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "请给我，属于我的颜色。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

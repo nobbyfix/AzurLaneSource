@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 205070,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "battle-boss-4",
 			dir = 1,
 			say = "“报告司令部，特攻舰队在30分钟前遭到塞壬和不明武器的攻击…阵型被打散”",
-			bgm = "battle-boss-4",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -177,17 +177,17 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			actorName = "净化者",
+			stopbgm = true,
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			stopbgm = true,
-			actor = 900021,
 			nameColor = "#ff0000",
 			say = "真是奇怪啊，这么大个的奇异点，却没有出现任何目标…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -212,12 +212,12 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "净化者",
 			dir = 1,
 			blackBg = true,
-			actor = 900021,
-			actorName = "净化者",
 			say = "还以为能和传说中的她见上一面呢…",
 			typewriter = {
 				speed = 0.05,
@@ -229,12 +229,12 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "净化者",
 			dir = 1,
 			blackBg = true,
-			actor = 900021,
-			actorName = "净化者",
 			say = "嘛，还是跟观察者同步一下信息吧~",
 			typewriter = {
 				speed = 0.05,

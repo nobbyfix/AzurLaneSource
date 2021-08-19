@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>“有能够理解你全部的人”</size>",
@@ -29,8 +29,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港湾\n\n<size=45>四　同伴</size>",
@@ -39,15 +39,15 @@ return {
 			}
 		},
 		{
+			say = "港区",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			say = "欧根小姐在这里做什么呢？",
+			actor = 403050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 403050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "欧根小姐在这里做什么呢？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -136,11 +136,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 403050,
 			side = 1,
 			bgName = "bg_story_school",
 			withoutActorName = true,
-			actor = 403050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "借着这个机会，问问欧根小姐的想法？",
 			typewriter = {
@@ -255,11 +255,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 403030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
+			dir = 1,
 			stopbgm = true,
 			say = "“我没有特别想做的事情，只要和大家待在一起我就满足了。”",
 			typewriter = {
@@ -272,11 +272,11 @@ return {
 			}
 		},
 		{
+			actor = 403050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 403050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "！！",
 			dialogShake = {
 				speed = 0.09,
@@ -293,11 +293,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 403050,
 			side = 1,
 			bgName = "bg_story_school",
 			withoutActorName = true,
-			actor = 403050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欧根小姐说出了原本我要说的话语。",
 			typewriter = {
@@ -326,13 +326,13 @@ return {
 			}
 		},
 		{
+			actor = 403030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-2",
-			actor = 403030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嘻嘻，看你的表情就知道了。",
+			bgm = "story-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -391,11 +391,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 403050,
 			side = 1,
 			bgName = "bg_story_school",
 			withoutActorName = true,
-			actor = 403050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不知道该做些什么，该怎么做……",
 			typewriter = {
@@ -456,15 +456,15 @@ return {
 			}
 		},
 		{
+			actor = 403030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 403030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哎呀，这病情看起来可不轻呢。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -505,12 +505,12 @@ return {
 			}
 		},
 		{
+			actor = 403030,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 403030,
-			nameColor = "#a9f548",
 			say = "毕竟，那家伙可是连我都…对吧？",
 			typewriter = {
 				speed = 0.05,

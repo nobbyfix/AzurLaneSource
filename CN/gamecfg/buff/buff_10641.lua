@@ -8,9 +8,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 500
 				}
 			}
 		}
@@ -24,9 +24,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 600,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 600
 				}
 			}
 		}
@@ -40,9 +40,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 700,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 700
 				}
 			}
 		}
@@ -56,9 +56,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 800,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 800
 				}
 			}
 		}
@@ -72,9 +72,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 900,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 900
 				}
 			}
 		}
@@ -88,9 +88,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1000
 				}
 			}
 		}
@@ -104,9 +104,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1100,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1100
 				}
 			}
 		}
@@ -120,9 +120,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1200,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1200
 				}
 			}
 		}
@@ -136,9 +136,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1300,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1300
 				}
 			}
 		}
@@ -152,16 +152,16 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
+					attr = "cannonPower",
 					convertAttr = "antiAirPower",
-					attr = "cannonPower"
+					number = 1500
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "铁翼陨灭",
 	init_effect = "jinengchufared",
-	time = 8,
 	picture = "",
 	desc = "自身炮击上升",
 	stack = 1,
@@ -183,9 +183,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
+				attr = "cannonPower",
 				convertAttr = "antiAirPower",
-				attr = "cannonPower"
+				number = 500
 			}
 		}
 	}

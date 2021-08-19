@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "HOLOGUANQIA2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>通向真实的努力</size>",
@@ -49,8 +49,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			blackBg = true,
 			effects = {
 				{
@@ -59,8 +59,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -84,15 +84,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "正午时分，商路护航舰队",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level02",
-			say = "正午时分，商路护航舰队",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
-			say = "……",
+			actor = 301490,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301490,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -255,11 +255,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哎呀，别这么……咦，怎么回事。",
 			effects = {
 				{
@@ -309,11 +309,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "毫无疑问是镜面海域啊…专挑人心情好的时候来！真是…塞壬只会迟到，永远不会缺席！",
 			typewriter = {
 				speed = 0.05,
@@ -325,8 +325,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"第一乐章\n\n<size=45>「来世之人～Von den Hinterweltlern～」</size>",
@@ -17,14 +17,14 @@ return {
 			}
 		},
 		{
+			say = "清晨，海域坐标：？？？，？？？",
 			side = 2,
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "bsm-1",
-			say = "清晨，海域坐标：？？？，？？？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -96,10 +96,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			say = "不要轻敌！皇家的舰队不会就此善罢甘休的",
-			dir = -1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
+			say = "不要轻敌！皇家的舰队不会就此善罢甘休的",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -177,8 +177,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "欧根，听从命令。",
 			typewriter = {
 				speed = 0.05,
@@ -208,8 +208,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "你……",
 			typewriter = {
 				speed = 0.05,
@@ -239,8 +239,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "唯独在辩歪理上，我是无法赢过你的，欧根。",
 			typewriter = {
 				speed = 0.05,

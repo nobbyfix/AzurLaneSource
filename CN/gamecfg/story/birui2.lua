@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIRUI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:71}的宴会\n\n<size=45>二 邀请函</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 304020,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 304020,
-			nameColor = "#a9f548",
 			say = "今天{namecode:71}的心情很好？呵呵~指挥官要不要猜猜看是为什么呢？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			say = "哎呀，多谢{namecode:70}姐，帮大忙了呢~",
+			actor = 304020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 304020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哎呀，多谢{namecode:70}姐，帮大忙了呢~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -152,9 +152,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "{namecode:70}递过来一个镶着金边的白色信封。似乎是邀请函的样子",
 			typewriter = {
 				speed = 0.05,
@@ -178,9 +178,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "打开信封，里面是一个小卡片。",
 			typewriter = {
 				speed = 0.05,
@@ -188,9 +188,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "卡片上以工整的字体写着几行字——",
 			typewriter = {
 				speed = 0.05,
@@ -198,9 +198,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "拜启 尊敬的指挥官",
 			typewriter = {
 				speed = 0.05,
@@ -208,9 +208,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "本周末晚上19:00将要举办宴会",
 			typewriter = {
 				speed = 0.05,
@@ -218,9 +218,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "希望您能前来参加",
 			typewriter = {
 				speed = 0.05,
@@ -228,9 +228,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "期待在宴会上看到您的出现",
 			typewriter = {
 				speed = 0.05,

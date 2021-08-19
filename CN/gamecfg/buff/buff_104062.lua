@@ -9,13 +9,13 @@ return {
 	{},
 	{},
 	{},
+	time = 8,
 	name = "MeltyWorld",
 	init_effect = "",
-	id = 104061,
-	time = 8,
+	color = "red",
 	desc = "MeltyWorld",
 	stack = 1,
-	color = "red",
+	id = 104061,
 	icon = 104060,
 	last_effect = "",
 	blink = {
@@ -33,8 +33,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
 				attr = "damageRatioBullet",
+				number = 1,
 				index = {
 					1,
 					2,

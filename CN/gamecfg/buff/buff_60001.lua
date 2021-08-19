@@ -1,7 +1,7 @@
 return {
-	time = 5,
-	name = "测试1号-航速",
 	init_effect = "jiasuBUFF",
+	name = "测试1号-航速",
+	time = 5,
 	picture = "",
 	desc = "测试航速",
 	stack = 2,
@@ -18,8 +18,8 @@ return {
 			},
 			arg_list = {
 				group = 101,
-				add = 100,
-				mul = 0
+				mul = 0,
+				add = 100
 			}
 		}
 	}

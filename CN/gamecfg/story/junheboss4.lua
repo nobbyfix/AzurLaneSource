@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JUNHEBOSS4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"穿越彼方的水线\n\n<size=45>四　交错的水线</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu2",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "cw-story",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -53,8 +53,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "好，就这样把对方引诱至最终防卫线被突破前的临界位置——",
 			typewriter = {
@@ -67,11 +67,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:175}，还没好吗！就算是无敌的{namecode:22}大人，也快撑不下去了～",
 			typewriter = {
 				speed = 0.05,
@@ -83,8 +83,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -96,8 +96,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "拜托再坚持一下就好！——{namecode:97}，时间不多了！",
 			typewriter = {
@@ -110,13 +110,13 @@ return {
 			}
 		},
 		{
+			actor = 307070,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 307070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "找到了！是指挥官大人的味道…嘻嘻❤",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -167,8 +167,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "太好了！{namecode:22}，到达指定地点后，以最大航速调头，进行夹击！",
 			typewriter = {
@@ -200,8 +200,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我已经与对方接触了！……啊啊，真讨厌，明明打心底里不想接这种差事的……！",
 			typewriter = {
@@ -265,8 +265,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "跟说好的不一样啊！这时候不是该让我扑倒指挥官的怀里吗！？",
 			typewriter = {
@@ -279,8 +279,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -292,8 +292,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你是航母啊！给我专心索敌！要是看丢了指挥官，作战可就打水漂了！",
 			typewriter = {
@@ -306,11 +306,11 @@ return {
 			}
 		},
 		{
+			actor = 307070,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 307070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就只限这一次啊！？",
 			dialogShake = {
 				speed = 0.09,
@@ -327,11 +327,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:97}、{namecode:97}居然妥协了！？",
 			typewriter = {
 				speed = 0.05,
@@ -343,8 +343,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -356,8 +356,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "槽点在这里吗！？",
 			typewriter = {
@@ -370,8 +370,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -380,9 +380,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			say = "————",
 			typewriter = {
 				speed = 0.05,
@@ -397,8 +397,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:22}、{namecode:97}，感谢二位信任我的指挥！",
 			typewriter = {
@@ -411,12 +411,12 @@ return {
 			}
 		},
 		{
+			actor = 900200,
 			side = 2,
 			bgName = "bg_story_nepu2",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900200,
-			nameColor = "#a9f548",
 			say = "总之按照作战方案行动吧！见识一下{namecode:80}级战列舰的全力吧啊啊啊啊啊啊！",
 			typewriter = {
 				speed = 0.05,

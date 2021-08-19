@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU15",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 2,
 			side = 0,
-			dir = -1,
-			bgm = "battle-boss-italy",
 			actor = 207050,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "这一路的“夹道欢迎”可真是热闹啊，帝国的军舰们",
+			bgm = "battle-boss-italy",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -57,8 +57,8 @@ return {
 			expression = 5,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 207050,
+			dir = -1,
 			say = "呜，实在是不想弄脏这套最喜欢的衣服呀——",
 			typewriter = {
 				speed = 0.05,

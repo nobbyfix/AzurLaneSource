@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"36年Z组 Z23老师\n\n<size=45>五 Z23的烦恼</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜呜呜…为什么就是不能顺利进行呢…",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -50,12 +50,12 @@ return {
 			}
 		},
 		{
-			say = "啊啦…我好像听到需要光辉照耀的孩子的声音了呢～",
+			actor = 207030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊啦…我好像听到需要光辉照耀的孩子的声音了呢～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -118,15 +118,15 @@ return {
 			}
 		},
 		{
+			actor = 207030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来如此，呵呵，大家都是有精神的孩子呢～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -151,12 +151,12 @@ return {
 			}
 		},
 		{
-			say = "有精神……吗……",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "有精神……吗……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

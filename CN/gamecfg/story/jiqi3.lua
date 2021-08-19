@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"才不是小孩子！\n\n<size=45>三 突击！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "对潜/反对潜演习作战中，“猫鲨”小分队——",
 			typewriter = {
 				speed = 0.05,
@@ -63,8 +63,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "唔唔……没有什么好的目标吗……",
 			typewriter = {
@@ -96,8 +96,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "要是空着手回去的话，一定会被铁血和重樱的潜艇嘲笑的！",
 			typewriter = {
@@ -113,10 +113,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "没有护卫的模拟货船已经被U81她们给抢了，伊26她们也不知道在哪里得到了击破点数，这下可不太好办啊……",
+			say = "没有护卫的模拟货船已经被U81她们给抢了，{namecode:155}她们也不知道在哪里得到了击破点数，这下可不太好办啊……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -130,8 +130,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯？",
 			typewriter = {
@@ -179,8 +179,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你们看，是拉菲！她好像还没睡醒的样子，我们就趁机偷袭她吧！",
 			typewriter = {
@@ -193,11 +193,11 @@ return {
 			}
 		},
 		{
+			actor = 108010,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸？认真的吗？对手可是驱逐舰啊！",
 			typewriter = {
 				speed = 0.05,
@@ -209,8 +209,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -222,8 +222,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没问题，我已经有办法了！",
 			typewriter = {
@@ -252,11 +252,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "交给我吧！",
 			typewriter = {
 				speed = 0.05,
@@ -268,8 +268,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -294,15 +294,15 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好困……为什么要这么早举行演习……拉菲好想回去睡觉……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -327,11 +327,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "？！",
 			typewriter = {
 				speed = 0.05,
@@ -343,8 +343,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -388,8 +388,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（欸？）",
 			typewriter = {
@@ -418,11 +418,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "潜艇，居然直接出水了……拉菲被小看了……",
 			typewriter = {
 				speed = 0.05,
@@ -434,15 +434,15 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.15,
 					x = 300
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.1,
 					dur = 0.15,
 					x = -300
@@ -453,8 +453,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啧，被躲过了吗",
 			typewriter = {
@@ -470,8 +470,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（那家伙，在干什么啊！）",
 			typewriter = {
@@ -484,11 +484,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "自我限制解除……",
 			typewriter = {
 				speed = 0.05,
@@ -500,8 +500,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 0.3,
 					x = -1500
@@ -512,8 +512,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这种程度的攻击我才不怕——欸，欸，欸！？呜哇——",
 			typewriter = {
@@ -526,8 +526,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -584,11 +584,11 @@ return {
 			}
 		},
 		{
-			say = "哔——",
+			soundeffect = "event:/battle/boom2",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			say = "哔——",
 			dialogShake = {
 				speed = 0.09,
 				x = 8.5,
@@ -620,11 +620,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "太好了！作战成功！",
 			typewriter = {
 				speed = 0.05,
@@ -636,8 +636,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -649,8 +649,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "真是的..我只是让你做诱饵，没说要做到这种地步呀",
 			typewriter = {
@@ -682,9 +682,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			actor = 108030,
 			dir = 1,
 			blackBg = true,
-			actor = 108030,
 			nameColor = "#a9f548",
 			say = "哎嘿嘿~",
 			typewriter = {

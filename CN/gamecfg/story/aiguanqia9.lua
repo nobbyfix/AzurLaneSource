@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA9",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 201210,
@@ -22,11 +22,11 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			withoutActorName = true,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 10400010,
+			withoutActorName = true,
 			say = "咚！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -69,8 +69,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -111,8 +111,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "绊爱",
 			say = "………",
 			typewriter = {
@@ -143,8 +143,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "这样下去也许意外地能够轻松取胜啊～♪我一个人大概也没什么问题吧～？",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "我、我不会再勉强了啦！刚才那种事情绝对不会发生第二次的！",
 			typewriter = {
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -202,8 +202,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "…为了保证万无一失，还是大家一起上吧！",
 			typewriter = {
@@ -234,8 +234,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "绊爱",
 			say = "那是当然！好～大家，以最短路线往BOSS方向前进吧！",
 			typewriter = {

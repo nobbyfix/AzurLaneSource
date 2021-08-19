@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHUCHUN3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:30}的烦恼\n\n<size=45>三 {namecode:30}，勇敢一点！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "不久之后，重樱宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "不久之后，重樱宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "呜…我只是想变得更自信一点，能派上更多用场而已…一定是哪里弄错了…",
+			actor = 301210,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "呜…我只是想变得更自信一点，能派上更多用场而已…一定是哪里弄错了…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -98,11 +98,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊呜…",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0.2,
 					dur = 0.1,
 					x = 45,
@@ -188,11 +188,11 @@ return {
 			}
 		},
 		{
+			actor = 301230,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，好漂亮的蝴蝶！",
 			typewriter = {
 				speed = 0.05,
@@ -204,8 +204,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 1,
 					x = -3750
@@ -213,11 +213,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等等，那样跑的话很危险的！",
 			typewriter = {
 				speed = 0.05,
@@ -229,8 +229,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -239,11 +239,11 @@ return {
 			}
 		},
 		{
+			actor = 301230,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "抓到…了！哎呀——",
 			typewriter = {
 				speed = 0.05,
@@ -255,8 +255,8 @@ return {
 			},
 			action = {
 				{
-					y = -3000,
 					type = "move",
+					y = -3000,
 					delay = 0.5,
 					dur = 1,
 					x = 0
@@ -376,11 +376,11 @@ return {
 			}
 		},
 		{
+			actor = 301240,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301240,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对了，秘书舰呀！最近正好秘书舰的安排有空缺呢！{namecode:30}姐，这或许是个机会哦。",
 			typewriter = {
 				speed = 0.05,
@@ -392,8 +392,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -418,11 +418,11 @@ return {
 			}
 		},
 		{
+			actor = 306010,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 306010,
-			nameColor = "#a9f548",
 			say = "在这里犹豫，停滞不前的话是没法变得自信的！",
 			effects = {
 				{
@@ -440,11 +440,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…我，我想试试！",
 			effects = {
 				{
@@ -462,8 +462,8 @@ return {
 			},
 			action = {
 				{
-					y = 67.5,
 					type = "shake",
+					y = 67.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -472,14 +472,14 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			hideOther = true,
 			side = 0,
 			bgName = "bg_story_room",
-			actor = 301230,
+			actorName = "{namecode:141}&{namecode:129}",
 			dir = 1,
 			blackBg = true,
-			hideOther = true,
-			actorName = "{namecode:141}&{namecode:129}",
+			actor = 301230,
+			nameColor = "#a9f548",
 			say = "哦哦哦…姐姐加油！",
 			subActors = {
 				{

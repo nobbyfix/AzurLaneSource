@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO07",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "Log_AtX15.00252.5.142——开始记录",
 			effects = {
@@ -23,12 +23,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "观察者α",
 			say = "恭喜你又消灭了所有对手，获得了本轮胜利~",
 			typewriter = {
 				speed = 0.05,
@@ -56,12 +56,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "观察者α",
 			say = "不愧是“关键点G”呀，这次又是如此干净利落的“拯救了世界”呢~呵呵呵呵",
 			typewriter = {
 				speed = 0.05,
@@ -89,12 +89,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "观察者α",
 			say = "不敢不敢，您可是【造物主】大人钦定的“关键点”",
 			typewriter = {
 				speed = 0.05,
@@ -106,12 +106,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "观察者α",
 			say = "我们或多或少可是由你的【模因】里诞生出来的呢呵呵呵",
 			typewriter = {
 				speed = 0.05,
@@ -139,12 +139,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "观察者α",
 			say = "那么，按照约定，我们将允许你再进行一轮“游戏”，请问你的选择是？",
 			typewriter = {
 				speed = 0.05,

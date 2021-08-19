@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "boss mio",
 	init_effect = "jinengchufablue",
-	id = 8653,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "伤害降低",
 	stack = 1,
-	color = "yellow",
+	id = 8653,
 	icon = 8653,
 	last_effect = "",
 	blink = {
@@ -33,8 +33,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = -0.1
 			}
 		}
 	}

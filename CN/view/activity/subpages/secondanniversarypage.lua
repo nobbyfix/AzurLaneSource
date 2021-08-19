@@ -1,6 +1,6 @@
 slot0 = class("SecondAnniversaryPage", import("...base.BaseActivityPage"))
 
-slot0.OnInit = function (slot0)
+function slot0.OnInit(slot0)
 	slot0.bg = slot0:findTF("AD")
 	slot0.btnShop = slot0:findTF("BtnShop")
 	slot0.btnContainer = slot0:findTF("BtnList/Viewport/Content")
@@ -46,50 +46,49 @@ slot0.OnInit = function (slot0)
 	}
 end
 
-slot0.OnFirstFlush = function (slot0)
-	LoadImageSpriteAsync(slot0:GetBgImg(), slot0.bg)
+function slot0.OnFirstFlush(slot0)
 	onButton(slot0, slot0.btnShop, function ()
-		slot0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.SKINSHOP)
+		uv0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.SKINSHOP)
 	end, SFX_PANEL)
 	slot0:initBtn(slot0.btnList1)
 	slot0:initBtn(slot0.btnList2)
 end
 
-slot0.initBtn = function (slot0, slot1)
+function slot0.initBtn(slot0, slot1)
 	onButton(slot0, slot1[1], function ()
-		slot0:emit(ActivityMediator.GO_PRAY_POOL)
+		uv0:emit(ActivityMediator.GO_PRAY_POOL)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[2], function ()
-		slot0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.SUMMARY)
+		uv0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.SUMMARY)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[3], function ()
-		slot0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.ACTIVITY_TYPE_RETURN_AWARD_ID)
+		uv0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.ACTIVITY_TYPE_RETURN_AWARD_ID)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[4], function ()
-		slot0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.XIMU_LOGIN_ID)
+		uv0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.XIMU_LOGIN_ID)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[5], function ()
-		slot0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.CHARGE, {
+		uv0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.CHARGE, {
 			wrap = ChargeScene.TYPE_DIAMOND
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot1[6], function ()
-		slot0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.GETBOAT, {
+		uv0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.GETBOAT, {
 			projectName = "light"
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot1[7], function ()
-		slot0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.SANDIEGO_PT_ID)
+		uv0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.SANDIEGO_PT_ID)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[8], function ()
-		slot0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.SKIN_U73)
+		uv0:emit(ActivityMediator.SELECT_ACTIVITY, ActivityConst.SKIN_U73)
 	end, SFX_PANEL)
 	onButton(slot0, slot1[9], function ()
 		pg.TipsMgr.GetInstance():ShowTips("即将开放，敬请期待！")
 	end, SFX_PANEL)
 end
 
-slot0.srollAnimation = function (slot0)
+function slot0.srollAnimation(slot0)
 	slot1 = slot0.Content.localPosition.x
 	slot2 = slot0.Content.localPosition.y
 	slot3 = slot0.Content.localPosition.z

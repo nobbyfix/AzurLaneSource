@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NAERWEIKE6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 201200,
 			nameColor = "#a9f548",
 			side = 0,
+			bgm = "level02",
 			dir = 1,
 			say = "风雪真大，只能隐约看到海岸那边有一些火光……",
-			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,8 +41,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "对了，勇敢，你知道吗？",
 			typewriter = {
 				speed = 0.05,
@@ -57,8 +57,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 201160,
+			dir = -1,
 			say = "知道什么？",
 			typewriter = {
 				speed = 0.05,
@@ -73,8 +73,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "纳尔维克……",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 		{
 			expression = 2,
 			side = 1,
-			dir = -1,
 			actor = 201160,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "？！难道有什么重要的情报吗！",
 			typewriter = {
 				speed = 0.05,
@@ -102,8 +102,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -115,8 +115,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "据说在1月到3月的时候，可以看到极光。",
 			typewriter = {
 				speed = 0.05,
@@ -146,8 +146,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "但是现在已经是4月了，所以已经看不到了，遗憾……",
 			typewriter = {
 				speed = 0.05,
@@ -162,8 +162,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 201160,
+			dir = -1,
 			say = "猎人……我们的前方可是敌人。",
 			typewriter = {
 				speed = 0.05,
@@ -178,8 +178,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "只是正好想到……勇敢对极光没有兴趣吗？",
 			typewriter = {
 				speed = 0.05,
@@ -209,8 +209,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "我也没有。但是我听说极光很美，很梦幻，所以听说要来北极执行任务，我其实还是有些期待的。",
 			typewriter = {
 				speed = 0.05,
@@ -225,8 +225,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "不过，能看到这么大的雪，也挺好的……在我们的故乡，可看不到这么大的雪。",
 			typewriter = {
 				speed = 0.05,
@@ -241,8 +241,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 201160,
+			dir = -1,
 			say = "是吗？我只觉得这大雪很碍事。",
 			typewriter = {
 				speed = 0.05,
@@ -302,8 +302,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "对了，勇敢，这次任务结束后，一起来看雪吗？",
 			typewriter = {
 				speed = 0.05,
@@ -318,8 +318,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 201160,
+			dir = -1,
 			say = "这可不是现在应有的想法，我们要进攻纳尔维克，然后……",
 			typewriter = {
 				speed = 0.05,
@@ -349,8 +349,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			say = "就一会儿，不行吗？",
 			typewriter = {
 				speed = 0.05,

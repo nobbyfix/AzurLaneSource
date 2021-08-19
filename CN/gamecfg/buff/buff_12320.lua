@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "恶毒1",
 	init_effect = "",
-	id = 12320,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12320,
 	icon = 12320,
 	last_effect = "",
 	effect_list = {
@@ -51,8 +51,8 @@ return {
 			},
 			arg_list = {
 				quota = 10,
-				killer = "self",
 				target = "TargetSelf",
+				killer = "self",
 				skill_id = 12321
 			}
 		}

@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "WEIJIAO09",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -118,13 +118,13 @@ return {
 		{
 			actor = 202030,
 			side = 2,
-			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "抱歉呢，我们的后方只有坎伯兰在赶过来，皇家方舟和声望都是假的哦？",
 			flashout = {
-				black = true,
 				dur = 1.2,
+				black = true,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"融冰\n\n<size=45>四　出击</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "某海域",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-1",
-			say = "某海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "今天的巡逻分队由提尔比茨担当旗舰",
 			typewriter = {
 				speed = 0.05,
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "集中注意力！要是这种时候敌人出现了怎么办！",
+			actor = 401190,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 401190,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "集中注意力！要是这种时候敌人出现了怎么办！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -140,15 +140,15 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我们差不多到达巡逻折返点了，做好返航的准备吧。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -173,10 +173,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			actor = 401190,
 			actorName = "z19&z20&z21",
@@ -221,12 +221,12 @@ return {
 			}
 		},
 		{
-			say = "雷达发现敌人！是塞壬的驱逐舰部队！",
+			actor = 401190,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 401190,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "雷达发现敌人！是塞壬的驱逐舰部队！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -273,9 +273,9 @@ return {
 			}
 		},
 		{
-			say = "连续的猛烈炮击从后方响起",
-			bgName = "bg_story_nepu1",
 			soundeffect = "event:/battle/boom2",
+			bgName = "bg_story_nepu1",
+			say = "连续的猛烈炮击从后方响起",
 			flashN = {
 				color = {
 					1,
@@ -326,12 +326,12 @@ return {
 			}
 		},
 		{
-			say = "是提尔比茨的支援炮击…敌方部队，全灭",
+			actor = 401190,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 401190,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "是提尔比茨的支援炮击…敌方部队，全灭",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -410,16 +410,16 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			stopbgm = true,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 405020,
-			nameColor = "#a9f548",
 			say = "（我这是怎么了？）",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

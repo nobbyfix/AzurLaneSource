@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIXUEGUI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"白衣天使or恶魔？\n\n<size=45>三　新进护士吸血鬼？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·走廊",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·走廊",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼，什么嘛，人家明明是看他平时工作那么辛苦，才想要用护士装来好好让他放松一下的。",
 			typewriter = {
@@ -66,8 +66,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指挥官这个大笨蛋，大傻瓜，大木头，人家再也不理你了！",
 			typewriter = {
@@ -80,8 +80,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -93,8 +93,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "人家还特意去学习了护理的知识呢，哼，看人家把大家照顾得好好的，让那个大傻瓜说不出话！",
 			typewriter = {
@@ -107,8 +107,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -119,14 +119,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_school",
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "标枪，你有没有什么不舒服的地方？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -151,12 +151,12 @@ return {
 			}
 		},
 		{
-			say = "啊，吸血鬼姐姐~",
+			actor = 201210,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊，吸血鬼姐姐~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -190,8 +190,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
@@ -206,14 +206,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_school",
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "萤火虫，不要整天用你的头撞来撞去，过来躺下，让人家来照顾你。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -238,12 +238,12 @@ return {
 			}
 		},
 		{
-			say = "不要不要，我完全没问题的！",
+			actor = 201140,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 201140,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "不要不要，我完全没问题的！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -261,8 +261,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
@@ -277,14 +277,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_school",
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "拉菲，在这种地方睡觉会感冒的，盖上这条被子吧。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -309,12 +309,12 @@ return {
 			}
 		},
 		{
-			say = "唔，好热，好重……",
+			actor = 101170,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "唔，好热，好重……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -332,8 +332,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
@@ -362,11 +362,11 @@ return {
 			}
 		},
 		{
+			actor = 201232,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201232,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯？怎么啦，伦敦，意识到自己的错误想要向人家道歉了吗~",
 			typewriter = {
 				speed = 0.05,
@@ -378,8 +378,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -404,11 +404,11 @@ return {
 			}
 		},
 		{
+			actor = 201232,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201232,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那个笨蛋终于也意识到自己对人家的冷落了吗~人家就勉为其难地原谅他好了~",
 			typewriter = {
 				speed = 0.05,
@@ -420,8 +420,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -430,12 +430,12 @@ return {
 			}
 		},
 		{
+			actor = 203010,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 203010,
-			nameColor = "#a9f548",
 			say = "哈啊……",
 			typewriter = {
 				speed = 0.05,

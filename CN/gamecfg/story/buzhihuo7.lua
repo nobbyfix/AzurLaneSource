@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>七　看板娘的真心·下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·医务室",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·医务室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -110,12 +110,12 @@ return {
 			}
 		},
 		{
-			say = "你话太多了，蠢猫。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "你话太多了，蠢猫。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -194,11 +194,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "喵哈哈，{namecode:98}就说到这里了喵，接下来就交给指挥官了喵！",
 			typewriter = {
 				speed = 0.05,
@@ -210,16 +210,16 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
 					number = 2
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 1.2,
 					dur = 0.5,
 					x = -2250
@@ -227,8 +227,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			bgName = "bg_story_room",
 			dir = 1,
 			say = "房间里顿时陷入了一阵尴尬的沉默。",
@@ -238,13 +238,13 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			bgm = "story-2",
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……指挥官，蠢猫的话你不用想太多，我自己处理得好。",
+			bgm = "story-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -277,11 +277,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……我只是做了我应该做的事而已。",
 			typewriter = {
 				speed = 0.05,
@@ -293,8 +293,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -341,9 +341,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "坐在病床上的{namecode:20}叹了口气，不过她的嘴角，似乎微微勾了起来。",
 			typewriter = {
 				speed = 0.05,

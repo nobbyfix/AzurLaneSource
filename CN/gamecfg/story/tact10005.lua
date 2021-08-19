@@ -42,11 +42,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "恩，这个时间点，大洋的另一头，一航战、二航战和五航战的姐妹们也应该已经开始行动了",
-			actorName = "{namecode:70}",
 			actor = 900017,
+			side = 1,
+			actorName = "{namecode:70}",
 			nameColor = "#ff0000",
+			say = "恩，这个时间点，大洋的另一头，一航战、二航战和五航战的姐妹们也应该已经开始行动了",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

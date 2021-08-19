@@ -1,16 +1,16 @@
 return {
+	id = "UI20101",
 	mode = 3,
 	noWaitFade = true,
 	once = true,
-	id = "UI20101",
 	scripts = {
 		{
+			actor = 107020,
 			nameColor = "#a9f548",
 			bgName = "bg_story_6",
-			actor = 107020,
+			side = 0,
 			bgspeed = 2,
 			blackBg = true,
-			side = 0,
 			say = "<size=42>Stand your ground. Don't fire unless fired upon</size>\n<size=33>坚守阵地。在敌人没有开枪射击以前，不要先开枪</size>",
 			effects = {
 				{
@@ -34,8 +34,8 @@ return {
 			say = "<size=42>Let it begin here! </size>\n<size=33>那么，就让战争从这儿开始吧！</size>"
 		},
 		{
-			mode = 1,
 			sequenceSpd = 2,
+			mode = 1,
 			bgFade = true,
 			effects = {
 				{

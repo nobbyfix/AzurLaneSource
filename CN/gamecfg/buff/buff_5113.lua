@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 20,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 20
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 23,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 23
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 26,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 26
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 30,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 30
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 33,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 33
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 36,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 36
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 40,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 40
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 43,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 43
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 46,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 46
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 50,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 50
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "航空辅助",
 	init_effect = "jinengchufared",
-	id = 5113,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高防空属性",
 	stack = 1,
-	color = "yellow",
+	id = 5113,
 	icon = 5110,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 20,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = 20
 			}
 		}
 	}

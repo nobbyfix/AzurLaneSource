@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 450
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 450
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 450
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 520
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 520
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 520
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 600
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 600
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 700
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 700
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 770,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 770
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 770,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 770
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 770,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 770
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 850
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 850
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 850
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 950,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 950
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 950,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 950
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 950,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 950
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1020
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1020
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1020
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1100
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1100
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1100
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1200
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1200
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1200
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "属性变更",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -362,8 +362,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 450,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 450
 			}
 		},
 		{
@@ -372,8 +372,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 450,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 450
 			}
 		},
 		{
@@ -382,8 +382,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 450,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 450
 			}
 		}
 	}

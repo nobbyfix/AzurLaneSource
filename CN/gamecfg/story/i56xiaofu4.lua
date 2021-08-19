@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "I56XIAOFU4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"角落的向日葵\n\n<size=45>四 lasst uns gehen！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			actor = 408070,
 			side = 2,
+			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 408070,
-			nameColor = "#a9f548",
 			say = "哇？！U101，你去哪儿啊，这么急？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -71,8 +71,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "是啊，我们正在聊有趣的事情呢，你要不要一起来？",
 			typewriter = {
@@ -88,8 +88,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "喔喔！！…哦…抱歉，我赶时间，还是下次吧！",
 			typewriter = {
@@ -121,8 +121,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嘿嘿，我准备出海一趟～有一片鱼群顺着暖流迁移，按估算差不多正好要经过港区附近的海域了",
 			typewriter = {
@@ -138,8 +138,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那场景可是非常漂亮的哦，要是去晚了可就看不到了！",
 			typewriter = {
@@ -171,8 +171,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸，听起来超有意思的。我也要一起去！",
 			typewriter = {
@@ -188,8 +188,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308041,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "似乎很有意思呢！56，我们也一起去吧？",
 			typewriter = {
@@ -202,11 +202,11 @@ return {
 			}
 		},
 		{
+			actor = 308051,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 308051,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我、我就……",
 			typewriter = {
 				speed = 0.05,
@@ -218,8 +218,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -263,10 +263,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308041,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "其实我很想和伊56一起看呢……",
+			say = "其实我很想和{namecode:254}一起看呢……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -280,8 +280,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……（！）",
 			typewriter = {
@@ -297,8 +297,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（这个展开——好像可以……！）",
 			typewriter = {
@@ -346,8 +346,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 408060,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼，可别小看了我经过特别改装的大鱼！",
 			typewriter = {
@@ -395,8 +395,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（好、好像我没答应说要去…？）",
 			typewriter = {
@@ -412,8 +412,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（怎么会变成这样——！？）",
 			typewriter = {
@@ -429,9 +429,9 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_103",
+			actor = 408060,
 			dir = 1,
 			blackBg = true,
-			actor = 408060,
 			nameColor = "#a9f548",
 			say = "那么，我们就出发吧！lasst uns gehen！",
 			typewriter = {
@@ -444,8 +444,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

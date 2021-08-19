@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"圣诞礼物大作战！\n\n<size=45>三　圣诞节的阴影（上）</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·白鹰生活区",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·白鹰生活区",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -126,11 +126,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "总……总之，我已经不想像去年那样尴尬的从姐姐那边收礼物了！趁姐姐现在不在港区，我们赶快……",
 			typewriter = {
 				speed = 0.05,
@@ -142,8 +142,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -152,9 +152,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "咚咚咚的敲门声",
 			typewriter = {
 				speed = 0.05,
@@ -162,11 +162,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜哇！不会是姐姐回来了吧！",
 			typewriter = {
 				speed = 0.05,
@@ -178,8 +178,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -284,11 +284,11 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "直……直接去女孩子的房间……真的好嘛……",
 			typewriter = {
 				speed = 0.05,
@@ -300,8 +300,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -310,12 +310,12 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107030,
-			nameColor = "#a9f548",
 			say = "不用那么害羞啦！我们白鹰可是主张OPEN&FREE的啦！跟我来吧！",
 			typewriter = {
 				speed = 0.05,

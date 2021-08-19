@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 605060,
 			nameColor = "#ffde38",
 			side = 1,
+			bgm = "battle-italy",
 			dir = 1,
 			say = "这些塞壬到底是怎么穿过皇家的封锁线闯进来的啊",
-			bgm = "battle-italy",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,8 +41,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 1,
-			dir = 1,
 			actor = 605060,
+			dir = 1,
 			say = "啊啊，加富尔的消极发言又开始了！真是的，先把眼前的敌人消灭了，再来进行你的哲学思考如何啊？",
 			typewriter = {
 				speed = 0.05,
@@ -57,8 +57,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = 1,
 			actor = 605050,
+			dir = 1,
 			say = "…我只是冷静地分析了一下现状而已，敌人…自然是要消灭的",
 			typewriter = {
 				speed = 0.05,
@@ -125,8 +125,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 605060,
+			dir = 1,
 			say = "全员，各自开火！将可恶的塞壬舰队悉数消灭！",
 			typewriter = {
 				speed = 0.05,

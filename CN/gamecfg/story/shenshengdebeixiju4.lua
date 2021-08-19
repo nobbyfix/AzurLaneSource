@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "皇家三岛",
+			bgm = "battle-boss-5",
 			side = 2,
 			bgName = "star_level_bg_115",
 			dir = 1,
-			bgm = "battle-boss-5",
+			say = "皇家三岛",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -22,11 +22,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 205029,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_115",
+			side = 2,
+			dir = 1,
 			actorName = "厌战",
 			say = "帝国的舰队，似乎开始蠢蠢欲动了",
 			typewriter = {
@@ -89,11 +89,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 205029,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_115",
+			side = 2,
+			dir = 1,
 			actorName = "厌战",
 			say = "…拉斯佩齐亚港外围",
 			typewriter = {
@@ -240,11 +240,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 205029,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_115",
+			side = 2,
+			dir = 1,
 			actorName = "厌战",
 			say = "嗯…看来也只能这么办了。我去向陛下报告",
 			typewriter = {
@@ -257,15 +257,15 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "嗯哼，先交涉再做进一步的决策，你们考虑得还算挺周到的，不错！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -307,11 +307,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205029,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 2,
+			dir = 1,
 			actorName = "厌战",
 			say = "请陛下放心吧！",
 			typewriter = {
@@ -358,9 +358,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "贝尔法斯特一边为女王沏茶一边悠然的说到",
 			typewriter = {
 				speed = 0.05,
@@ -372,11 +372,11 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "陛下吩咐过我，如果厌战大人提到维希教廷的话，就这么回答她",
 			typewriter = {
 				speed = 0.05,
@@ -388,8 +388,8 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -398,11 +398,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205029,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 2,
+			dir = 1,
 			actorName = "厌战",
 			say = "陛下...那么，我们即刻启航，God bless the queen!",
 			typewriter = {
@@ -415,8 +415,8 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -425,9 +425,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "厌战朝贝尔法斯特点了个头，抛了一个眼神便信步离开了",
 			typewriter = {
 				speed = 0.05,
@@ -455,9 +455,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "「——如果一切都能顺利就好了」，贝尔法斯特看着窗外说到",
 			typewriter = {
 				speed = 0.05,

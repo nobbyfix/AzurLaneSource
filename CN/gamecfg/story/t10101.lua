@@ -4,10 +4,10 @@ return {
 	once = true,
 	scripts = {
 		{
-			side = 2,
 			actorName = "大黄蜂",
-			dir = -1,
+			side = 2,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "你就是新来的指挥官么，这么快就能发现我的坐标，真是让人大吃一惊呀。",
 			shake = {
 				speed = 1,
@@ -23,10 +23,10 @@ return {
 			}
 		},
 		{
-			side = 2,
 			actorName = "大黄蜂",
-			dir = -1,
+			side = 2,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "不过，如果演习就这样结束的话那可就太没劲了~",
 			shake = {
 				speed = 1,
@@ -42,10 +42,10 @@ return {
 			}
 		},
 		{
-			side = 2,
 			actorName = "大黄蜂",
-			dir = -1,
+			side = 2,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "来吧，就让我大黄蜂大人来好好测试一下你们的实力，放心吧，这次演习用的都是空包弹",
 			shake = {
 				speed = 1,
@@ -61,10 +61,10 @@ return {
 			}
 		},
 		{
-			side = 2,
 			actorName = "大黄蜂",
-			dir = -1,
+			side = 2,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "不会弄疼你们的嘿嘿嘿~",
 			shake = {
 				speed = 1,

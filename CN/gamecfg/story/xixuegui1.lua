@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIXUEGUI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"白衣天使or恶魔？\n\n<size=45>一　补给中的“惊喜”</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·广场",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "这不是理所当然的事情吗，我们这可是最前线，要是我们都得不到充足的补给可怎么办……",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这不是理所当然的事情吗，我们这可是最前线，要是我们都得不到充足的补给可怎么办……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -114,11 +114,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "喵？！竟然被{namecode:20}夸奖了喵！不得了喵，等会儿说不定要来台风了喵！~",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -220,11 +220,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "呼喵！？…吸血鬼你从哪里窜出来的喵，吓喵一跳！",
 			typewriter = {
 				speed = 0.05,
@@ -236,8 +236,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.05,
 					x = 0,
@@ -262,12 +262,12 @@ return {
 			}
 		},
 		{
-			say = "……能不能不要一边说一边就把衣服拿起来比自己的身材。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "……能不能不要一边说一边就把衣服拿起来比自己的身材。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -314,11 +314,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "喵？！{namecode:98}才不想穿这个喵！",
 			typewriter = {
 				speed = 0.05,
@@ -330,8 +330,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -372,11 +372,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "真的喵？！",
 			typewriter = {
 				speed = 0.05,
@@ -388,8 +388,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -414,15 +414,15 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "……就这么让她走掉了喵。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -447,13 +447,13 @@ return {
 			}
 		},
 		{
-			say = "只是一件衣服的话，向指挥官报告一下从她的工资里扣就好了。总之，继续清点吧。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301180,
-			nameColor = "#a9f548",
+			say = "只是一件衣服的话，向指挥官报告一下从她的工资里扣就好了。总之，继续清点吧。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

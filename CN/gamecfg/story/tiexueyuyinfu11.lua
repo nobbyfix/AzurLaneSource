@@ -1,16 +1,16 @@
 return {
-	fadeType = 1,
+	id = "TIEXUEYUYINFU11",
 	mode = 2,
 	once = true,
-	id = "TIEXUEYUYINFU11",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "————",
-			side = 2,
-			dir = -1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
 			bgm = "bsm-1",
+			dir = -1,
+			say = "————",
 			flashN = {
 				color = {
 					1,
@@ -71,8 +71,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "以女王的名义，请你立刻解除武装，与我们返回皇家，接受应有的审判——",
 			typewriter = {
 				speed = 0.05,
@@ -86,10 +86,10 @@ return {
 		{
 			expression = 3,
 			side = 1,
-			say = "这就是皇家舰队的做事风格吗？——“水手国王”陛下",
-			dir = 1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = 1,
+			say = "这就是皇家舰队的做事风格吗？——“水手国王”陛下",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -107,8 +107,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 1,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "面对有着血海深仇的敌人，还要抑制自己的战斗本能，摆弄这些虚伪的外交辞令",
 			typewriter = {
 				speed = 0.05,
@@ -123,8 +123,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 1,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "作为新锐战舰的你们，内心其实也期待着一场真正的战斗吧！？",
 			typewriter = {
 				speed = 0.05,
@@ -139,8 +139,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "哈哈哈，真是令人怀念的称谓啊——",
 			typewriter = {
 				speed = 0.05,
@@ -185,8 +185,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "我最后再问一次…",
 			typewriter = {
 				speed = 0.05,
@@ -213,15 +213,9 @@ return {
 			}
 		},
 		{
-			seDelay = 1.3,
 			say = "轰————",
 			soundeffect = "event:/battle/boom2",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
+			seDelay = 1.3,
 			flashN = {
 				color = {
 					1,
@@ -262,18 +256,11 @@ return {
 		},
 		{
 			expression = 1,
-			side = 0,
-			dir = -1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			side = 0,
+			actor = 205050,
+			dir = -1,
 			say = "近失弹，不用担心，敌舰正在负隅顽抗！",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -287,8 +274,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "看来答案已经很明确了——",
 			typewriter = {
 				speed = 0.05,
@@ -301,18 +288,11 @@ return {
 		},
 		{
 			expression = 3,
-			side = 0,
-			dir = -1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			side = 0,
+			actor = 205050,
+			dir = -1,
 			say = "全舰队自由射击！为了皇家舰队的荣耀，开火！",
-			effects = {
-				{
-					name = "paoji_qiaozhiwushi",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -323,15 +303,9 @@ return {
 			}
 		},
 		{
-			seDelay = 1.3,
 			say = "轰————",
 			soundeffect = "event:/battle/boom2",
-			effects = {
-				{
-					active = true,
-					name = "paoji_qiaozhiwushi"
-				}
-			},
+			seDelay = 1.3,
 			flashN = {
 				color = {
 					1,

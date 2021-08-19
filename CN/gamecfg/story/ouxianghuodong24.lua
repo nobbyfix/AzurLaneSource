@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG24",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			nameColor = "#ff5c5c",
 			side = 2,
+			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
-			stopbgm = true,
 			say = "“俄尔普斯奏响竖琴，塞壬被其美妙的旋律折服而忘掉了歌唱”",
 			typewriter = {
 				speed = 0.05,
@@ -24,8 +24,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -40,8 +40,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -56,8 +56,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -72,8 +72,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -88,8 +88,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -104,8 +104,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -120,8 +120,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			nameColor = "#ff5c5c",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,

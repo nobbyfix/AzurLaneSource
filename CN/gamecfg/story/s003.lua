@@ -24,6 +24,7 @@ return {
 			actor = 900009,
 			nameColor = "#ff0000",
 			side = 1,
+			actorAlpha = 0,
 			say = "哎呀哎呀，被发现了=w=不愧是英王乔治五世呢",
 			shake = {
 				speed = 1,
@@ -34,7 +35,7 @@ return {
 				speedUp = 0.01
 			},
 			painting = {
-				alpha = 0.3,
+				alpha = 0,
 				time = 0.5
 			}
 		},
@@ -60,6 +61,7 @@ return {
 			actor = 900009,
 			nameColor = "#ff0000",
 			side = 1,
+			actorAlpha = 0,
 			say = "哎呀呀不管啦，波斯猫酱，人家都替你抗了那么久了，你也该发挥一下实力了吧！",
 			shake = {
 				speed = 1,

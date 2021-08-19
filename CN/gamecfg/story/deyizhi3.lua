@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DEYIZHI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"德意志的忧郁\n\n<size=45>三　不协调音</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			actor = 203010,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 203010,
-			nameColor = "#a9f548",
 			say = "那么现在公布本次演习炮击组的前二十名……",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "仆人，看着吧，我可是天下闻名的装甲舰，一定会名列前茅的！",
+			actor = 403040,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "仆人，看着吧，我可是天下闻名的装甲舰，一定会名列前茅的！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -152,11 +152,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等等，我呢？！",
 			typewriter = {
 				speed = 0.05,
@@ -168,8 +168,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -194,12 +194,12 @@ return {
 			}
 		},
 		{
-			say = "虽然速度上接近一线水平，不过你的火力还有精准度都差了其他人不少呢。",
+			actor = 203010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 203010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "虽然速度上接近一线水平，不过你的火力还有精准度都差了其他人不少呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -230,9 +230,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "伦敦说完就走开了。",
 			typewriter = {
 				speed = 0.05,
@@ -245,15 +245,15 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "什么，练习？！那是低等生物才做的事，我可是……",
+			say = "什么，练习？！那是低等动物才做的事，我可是……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -262,11 +262,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我可是……",
 			typewriter = {
 				speed = 0.05,
@@ -278,8 +278,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -288,11 +288,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "仆人，我其实很强对吧，我只是失手了对吧？！",
 			typewriter = {
 				speed = 0.05,
@@ -304,8 +304,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.4,
 					dur = 0.2,
 					x = 0,
@@ -317,8 +317,8 @@ return {
 			actor = 403040,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "德意志的眼中闪着泪花，但是，应该在这里欺骗她吗？",
 			typewriter = {
 				speed = 0.05,
@@ -368,11 +368,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呵呵……",
 			typewriter = {
 				speed = 0.05,
@@ -384,8 +384,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.3,
 					dur = 1.5,
 					x = -2250

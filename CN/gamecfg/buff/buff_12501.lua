@@ -159,14 +159,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "巴丹地狱猫",
 	init_effect = "",
-	id = 12501,
+	name = "巴丹地狱猫",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "装备效率提高",
 	stack = 1,
-	color = "red",
+	id = 12501,
 	icon = 12500,
 	last_effect = "",
 	effect_list = {

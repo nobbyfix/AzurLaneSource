@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KAIXUAN1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"骑士公主的忧郁\n\n<size=45>一 皇家茶会的客人</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "某日港区的午后…",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日港区的午后…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -65,9 +65,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "和凯旋一起受邀参加了皇家不定时举办的茶会",
 			typewriter = {
 				speed = 0.05,
@@ -94,9 +94,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "凯旋边说边行了个礼",
 			typewriter = {
 				speed = 0.05,
@@ -159,9 +159,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "看来女王殿下对凯旋印象不错…",
 			typewriter = {
 				speed = 0.05,
@@ -173,9 +173,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "毕竟从各种意义上来说，确实都算是同伴呢",
 			typewriter = {
 				speed = 0.05,
@@ -202,13 +202,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "贝尔法斯特为大家倒了茶",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -251,8 +251,8 @@ return {
 			actor = 202120,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "是的，而且是新运来的春茶，这是伊丽莎白殿下也相当喜欢的品种",
 			dir = 1,
+			say = "是的，而且是新运来的春茶，这是伊丽莎白殿下也相当喜欢的品种",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -297,13 +297,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -343,9 +343,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "凯旋露出混杂着眷恋与寂寞的神情",
 			typewriter = {
 				speed = 0.05,

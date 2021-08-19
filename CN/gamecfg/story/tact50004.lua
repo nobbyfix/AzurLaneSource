@@ -37,8 +37,8 @@ return {
 		{
 			actor = 103090,
 			side = 0,
-			say = "可能是因为澳大利亚号过来开会时比较匆忙，没有安排好指挥权的代管……吧？",
 			nameColor = "#a9f548",
+			say = "可能是因为澳大利亚号过来开会时比较匆忙，没有安排好指挥权的代管……吧？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -137,11 +137,11 @@ return {
 			}
 		},
 		{
+			actor = 103090,
 			actorName = "昆西&文森斯",
 			side = 0,
-			actor = 103090,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "是！",
 			subActors = {

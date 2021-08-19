@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "白鹰近海 警戒海域外边界 Risk 3",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-boss-4",
+			say = "白鹰近海 警戒海域外边界 Risk 3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -96,8 +96,8 @@ return {
 			}
 		},
 		{
-			actorName = "通讯器",
 			side = 2,
+			actorName = "通讯器",
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "滋-----滋-------滋-----",
@@ -156,8 +156,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

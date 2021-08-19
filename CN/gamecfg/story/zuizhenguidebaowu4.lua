@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZUIZHENGUIDEBAOWU4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 2,
 			side = 2,
-			bgm = "level02",
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			actor = 408080,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "第二艘补给舰，击沉。U110，天生的猎手。嘎哦—",
+			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -85,8 +85,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -102,8 +102,8 @@ return {
 			say = "……咕噜咕噜（开始下潜）",
 			action = {
 				{
-					y = -1000,
 					type = "move",
+					y = -1000,
 					delay = 0.5,
 					dur = 2,
 					x = 0
@@ -134,8 +134,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -146,19 +146,19 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			say = "一轮机炮子弹在水面掀起水花，U110不情不愿地从水里露出头来。",
-			withoutActorName = true,
 			dir = 1,
 			actor = 408080,
+			withoutActorName = true,
 			nameColor = "#a9f548",
+			say = "一轮机炮子弹在水面掀起水花，U110不情不愿地从水里露出头来。",
 			actorPosition = {
 				x = 0,
 				y = -1000
 			},
 			action = {
 				{
-					y = 1000,
 					type = "move",
+					y = 1000,
 					delay = 2,
 					dur = 1,
 					x = 0
@@ -177,8 +177,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "好凶的皇家小姑娘…",
 			typewriter = {
 				speed = 0.05,
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -237,8 +237,8 @@ return {
 			say = "U110，是大鲨鱼，超凶的。",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -257,9 +257,9 @@ return {
 		{
 			actor = 408080,
 			nameColor = "#a9f548",
-			dir = 1,
 			withoutActorName = true,
 			side = 2,
+			dir = 1,
 			say = "U110抖动着背鳍(?)，做出威胁的样子",
 			typewriter = {
 				speed = 0.05,
@@ -338,8 +338,8 @@ return {
 			say = "……你们到底在说什么……",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -388,9 +388,9 @@ return {
 		{
 			actor = 408080,
 			nameColor = "#a9f548",
-			dir = 1,
 			withoutActorName = true,
 			side = 2,
+			dir = 1,
 			say = "U110对着大斗犬发出了威胁的咆哮(?)",
 			typewriter = {
 				speed = 0.05,
@@ -420,8 +420,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "U110不是蒜头脑袋，是鲨鱼—",
 			typewriter = {
 				speed = 0.05,
@@ -470,8 +470,8 @@ return {
 			say = "欸？",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,

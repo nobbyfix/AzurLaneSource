@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>二 上午的絮库夫</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,11 +78,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来早上去叫指挥官起床是做梦吗，那我再睡会儿好了……",
 			typewriter = {
 				speed = 0.05,
@@ -100,9 +100,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "结果花了十分钟才让絮库夫彻底清醒过来。",
 			typewriter = {
 				speed = 0.05,
@@ -174,9 +174,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "絮库夫说完就高举双手一副等着人去抱她的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -302,9 +302,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "絮库夫一脸发现了难以相信的事实的表情。",
 			typewriter = {
 				speed = 0.05,
@@ -312,9 +312,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -322,9 +322,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "工作时间到了",
 			typewriter = {
 				speed = 0.05,

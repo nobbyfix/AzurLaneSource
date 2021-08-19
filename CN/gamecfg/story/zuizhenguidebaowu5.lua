@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZUIZHENGUIDEBAOWU5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			bgm = "battle-boss-1",
 			actor = 408080,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			say = "带了这么多深水炸弹，魔鬼",
+			bgm = "battle-boss-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -42,8 +42,8 @@ return {
 			expression = 1,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "…唔…U556还没来——",
 			typewriter = {
 				speed = 0.05,
@@ -102,8 +102,8 @@ return {
 		{
 			actor = 201010,
 			nameColor = "#a9f548",
-			dir = 1,
 			side = 2,
+			dir = 1,
 			say = "等——！？",
 			dialogShake = {
 				speed = 0.09,
@@ -123,8 +123,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "嗯嗯。感谢分享有趣的情报",
 			typewriter = {
 				speed = 0.05,
@@ -196,8 +196,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -228,8 +228,8 @@ return {
 			say = "明明你自己也是半斤八两！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -291,8 +291,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "大斗犬伸出食指，指着半个脑袋已经潜入水中的U110。",
 			typewriter = {
 				speed = 0.05,
@@ -337,8 +337,8 @@ return {
 			expression = 1,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "话说完了，U110可以回去了吗？",
 			typewriter = {
 				speed = 0.05,
@@ -357,8 +357,8 @@ return {
 			say = "怎么可能放你回去啊？！！！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -378,8 +378,8 @@ return {
 			expression = 1,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "不行么？",
 			typewriter = {
 				speed = 0.05,
@@ -398,8 +398,8 @@ return {
 			say = "…不行！真是的，这家伙怎么一点紧张感都没有啊！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

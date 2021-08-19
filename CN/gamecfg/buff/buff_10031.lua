@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1000
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1220
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1220
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1440
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1440
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1660
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1660
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1880
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1880
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2100
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2100
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2320,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2320
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2320,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2320
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2540,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2540
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2540,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2540
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2760,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2760
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2760,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2760
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3000
 				}
 			},
 			{
@@ -233,15 +233,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "姐姐气质",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "炮击、机动提升",
 	stack = 1,
@@ -262,8 +262,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1000
 			}
 		},
 		{
@@ -272,8 +272,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1000
 			}
 		}
 	}

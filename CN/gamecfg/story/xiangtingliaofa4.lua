@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/plane",
-			side = 2,
-			dir = 1,
-			bgm = "story-6",
 			actor = 107070,
+			side = 2,
+			bgm = "story-6",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊啊啊啊啊啊---不会让你们继续轰炸下去了！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,12 +24,12 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 107070,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "快给我乖乖上路吧————！！",
+			dir = 1,
+			soundeffect = "event:/battle/boom2",
 			dialogShake = {
 				speed = 0.09,
 				x = 8.5,
@@ -67,8 +67,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 103160,
+			dir = 1,
 			say = "这里看起来陷入苦战了啊，需要帮助吗牛仔？",
 			typewriter = {
 				speed = 0.05,
@@ -95,8 +95,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,

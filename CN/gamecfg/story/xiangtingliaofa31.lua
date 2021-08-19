@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA31",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 102090,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level02",
 			dir = 1,
 			say = "返航咯，返航~",
-			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,8 +83,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -171,8 +171,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "如果能依据这一存在性早日研究出瓦解奇异点的具体方法就好了……",
 			typewriter = {
 				speed = 0.05,
@@ -262,8 +262,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "说起来，出发前碰到孟菲斯的时候，她好像阴沉着脸说了些什么“呼呼呼，真是一场愉快的旅行啊”之类的意义不明的话呢……",
 			typewriter = {
 				speed = 0.05,
@@ -338,8 +338,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			say = "我的话...想去世界各地看看呢。去追寻一下真正的香格里拉也不错？",
 			typewriter = {
 				speed = 0.05,
@@ -354,8 +354,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			say = "企业前辈呢？",
 			typewriter = {
 				speed = 0.05,
@@ -397,8 +397,9 @@ return {
 			},
 			options = {
 				{
+					flag = 1,
 					content = "我————",
-					flag = 1
+					autochoice = 1
 				}
 			}
 		}

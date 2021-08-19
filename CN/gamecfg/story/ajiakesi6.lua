@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AJIAKESI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"我的美好回忆\n\n<size=45>六 逞强和真心・上</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			bgm = "story-2",
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "阿嚏！……",
+			bgm = "story-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,9 +34,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "盖着被子的阿贾克斯脸上泛红，体温计的温度表明她正在发烧",
 			typewriter = {
 				speed = 0.05,
@@ -48,9 +48,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "虽说身体构造和人类不同，看来还是会感冒的。",
 			typewriter = {
 				speed = 0.05,
@@ -126,9 +126,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "看来主动权不在自己手里就不大乐意……",
 			typewriter = {
 				speed = 0.05,
@@ -220,9 +220,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "轻轻给阿贾克斯的额头敷上湿毛巾。",
 			typewriter = {
 				speed = 0.05,
@@ -250,11 +250,11 @@ return {
 			}
 		},
 		{
+			actor = 202030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 202030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "你…为什么…",
 			typewriter = {
 				speed = 0.05,

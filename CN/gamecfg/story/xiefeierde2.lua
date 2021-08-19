@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIEFEIERDE2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"这个女仆不太冷\n\n<size=45>二 一切为了“清扫”</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·商店",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·商店",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,9 +50,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "因为补给确认方面的事务来到了{namecode:98}的商店，不过似乎有人先来了的样子",
 			typewriter = {
 				speed = 0.05,
@@ -80,11 +80,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "将将——这就是“{namecode:98}特制清洁弹“喵！",
 			effects = {
 				{
@@ -102,11 +102,11 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…{namecode:98}小姐，了不起",
 			effects = {
 				{
@@ -124,9 +124,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "似乎能感觉到谢菲尔德淡漠的眼神中闪耀着一丝兴奋的光芒，不过…",
 			typewriter = {
 				speed = 0.05,
@@ -176,9 +176,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（砰——！）",
 			dialogShake = {
 				speed = 0.09,
@@ -216,9 +216,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲尔德直接往墙角开了一枪",
 			typewriter = {
 				speed = 0.05,
@@ -230,11 +230,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "喵！？吓了一跳喵！谢菲尔德你也太直接了喵！",
 			typewriter = {
 				speed = 0.05,
@@ -246,8 +246,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.1,
 					x = 0,
@@ -272,9 +272,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "谢菲尔德射击的地方出现了些许蓝色的泡沫，难道说……",
 			typewriter = {
 				speed = 0.05,
@@ -334,9 +334,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "感觉又是好像很厉害，又好像没什么所谓的道具…",
 			typewriter = {
 				speed = 0.05,

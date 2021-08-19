@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 350,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 350
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 450
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 550
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 650,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 650
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 750,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 750
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "圣胡安",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "防空提高",
 	stack = 3,
@@ -173,8 +173,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 350,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 350
 			}
 		}
 	}

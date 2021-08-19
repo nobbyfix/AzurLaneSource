@@ -1,12 +1,12 @@
 return {
+	time = 8,
 	name = "所罗门的传说-LV8",
 	init_effect = "jinengchufared",
-	id = 9092,
-	time = 8,
+	color = "yellow",
 	picture = "",
 	desc = "炮击、命中提高，受到伤害降低",
 	stack = 1,
-	color = "yellow",
+	id = 9092,
 	icon = 9090,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 2080,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 2080
 			}
 		},
 		{
@@ -35,8 +35,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 2080,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 2080
 			}
 		},
 		{
@@ -46,8 +46,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.127,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.127
 			}
 		}
 	}

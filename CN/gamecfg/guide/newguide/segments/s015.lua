@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "前往<color=#ff7d36>仓库</color>界面",
 				mode = 2,
-				dir = -1,
 				posY = -102.56,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/equipButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -27,13 +27,13 @@ return {
 			style = {
 				text = "去看看现有的<color=#ff7d36>设计图纸</color>吧",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/topItems/bottom_back/types/design",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -49,13 +49,13 @@ return {
 			style = {
 				text = "点击制作按钮<color=#ff7d36>制作装备</color>吧！",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 210.07
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/EquipmentDesignUI(Clone)/equipment_scrollview/equipment_grid/0/info/make_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -70,13 +70,13 @@ return {
 			style = {
 				text = "就决定是你啦！点击确定按钮",
 				mode = 2,
-				dir = -1,
 				posY = -2.69,
+				dir = -1,
 				posX = 202.1
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/msg_panel/bg/confirm_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

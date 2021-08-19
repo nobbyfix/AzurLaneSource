@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIER6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"讴歌平稳的日常\n\n<size=45>六　黄昏的景色</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "转了一圈，大家需要的东西都差不多买齐了。",
 			side = 2,
 			bgName = "star_level_bg_105",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "转了一圈，大家需要的东西都差不多买齐了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,9 +78,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			say = "接受了纽卡斯尔的提案，两人在街角的一条长椅上坐下",
 			typewriter = {
 				speed = 0.05,
@@ -161,8 +161,8 @@ return {
 			actor = 202190,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			say = "她从不知道什么地方掏出一本小小的书本，在腿上翻开。",
 			typewriter = {
 				speed = 0.05,
@@ -225,9 +225,9 @@ return {
 			blackBgtrue,
 			actor = 202190,
 			nameColor = "#a9f548",
+			bgName = "star_level_bg_105",
 			side = 2,
 			dir = 1,
-			bgName = "star_level_bg_105",
 			say = "“你也应该有自己的愿望哦”，陛下是这么说的——",
 			typewriter = {
 				speed = 0.05,

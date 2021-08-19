@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_STAGE402",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -71,13 +71,13 @@ return {
 			}
 		},
 		{
-			say = "对，大家辛苦了",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "伊斯特瓦尔",
+			dir = 1,
 			withoutPainting = true,
+			say = "对，大家辛苦了",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,13 +103,13 @@ return {
 			}
 		},
 		{
-			say = "是的。镜面海域的数据，还有复制女神的数据……都收集完了。",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "伊斯特瓦尔",
+			dir = 1,
 			withoutPainting = true,
+			say = "是的。镜面海域的数据，还有复制女神的数据……都收集完了。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -120,13 +120,13 @@ return {
 			}
 		},
 		{
-			say = "这样就能打开连接游戏业界和那边的次元之间的虫洞了。随时都可以回来哦",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "伊斯特瓦尔",
+			dir = 1,
 			withoutPainting = true,
+			say = "这样就能打开连接游戏业界和那边的次元之间的虫洞了。随时都可以回来哦",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -219,8 +219,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "不用那么急着……再在学园待一阵也挺好的……",
 			typewriter = {
 				speed = 0.05,
@@ -337,13 +337,13 @@ return {
 			}
 		},
 		{
+			actor = 0,
+			side = 2,
+			nameColor = "#a9f548",
+			actorName = "伊斯特瓦尔",
+			dir = 1,
+			withoutPainting = true,
 			say = "嗯，麻烦尽快回来。",
-			side = 2,
-			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
-			actorName = "伊斯特瓦尔",
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -354,13 +354,13 @@ return {
 			}
 		},
 		{
+			actor = 0,
+			side = 2,
+			nameColor = "#a9f548",
+			actorName = "伊斯特瓦尔",
+			dir = 1,
+			withoutPainting = true,
 			say = "但是这个次元——如果想来的话随时都可以来哦？",
-			side = 2,
-			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
-			actorName = "伊斯特瓦尔",
-			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -371,10 +371,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			nameColor = "#a9f548",
 			actor = 10100010,
+			actorShadow = true,
+			nameColor = "#a9f548",
+			side = 0,
 			dir = -1,
 			hideOther = true,
 			actorName = "涅普顿&诺瓦露",
@@ -398,10 +398,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			nameColor = "#a9f548",
 			actor = 10100030,
+			actorShadow = true,
+			nameColor = "#a9f548",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "布兰&贝露",
@@ -434,13 +434,13 @@ return {
 			}
 		},
 		{
-			say = "通过这次事件，我发现这个世界和我们所在的游戏业界是有亲和性的，连接两个次元的虫洞随时都可以打开。",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "伊斯特瓦尔",
+			dir = 1,
 			withoutPainting = true,
+			say = "通过这次事件，我发现这个世界和我们所在的游戏业界是有亲和性的，连接两个次元的虫洞随时都可以打开。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -451,13 +451,13 @@ return {
 			}
 		},
 		{
-			say = "所以即使现在回去了也不过是一时之事。大家想来的话明天就能再来。不用太担心见不了面。",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "伊斯特瓦尔",
+			dir = 1,
 			withoutPainting = true,
+			say = "所以即使现在回去了也不过是一时之事。大家想来的话明天就能再来。不用太担心见不了面。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -580,8 +580,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "……嗯，等大家来玩。",
 			typewriter = {
 				speed = 0.05,
@@ -623,16 +623,16 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			actorName = "测试者α",
 			side = 2,
+			nameColor = "#ff0000",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			nameColor = "#ff0000",
 			say = "只顾着观察了……没想到又出现了预想外的状况呢",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -657,12 +657,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "测试者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者α",
 			say = "完全没想到这些来自异次元的来访者，居然可能会就此定居在这个世界……？而且会成为她们的战力……",
 			typewriter = {
 				speed = 0.05,
@@ -674,12 +674,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "测试者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者α",
 			say = "这也是我们追求的另一个未来的可能性……其中的一角吗？",
 			typewriter = {
 				speed = 0.05,
@@ -691,12 +691,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "测试者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者α",
 			say = "……哼，这样也不坏呢。",
 			typewriter = {
 				speed = 0.05,
@@ -708,12 +708,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "测试者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者α",
 			say = "……就让我继续这样……耐心的……",
 			typewriter = {
 				speed = 0.05,
@@ -725,12 +725,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "测试者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "测试者α",
 			say = "观察下去吧。",
 			typewriter = {
 				speed = 0.05,

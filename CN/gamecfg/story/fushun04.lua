@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FUSHUN04",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"抚顺的大冒险\n\n<size=45>四　然后，世界恢复了和平</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那里那里！快攻击！",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "我知道！看我的！超必杀！",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "我知道！看我的！超必杀！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -58,11 +58,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			actorShadow = true,
-			side = 0,
 			bgName = "bg_story_school",
 			actorName = "抚顺&长春",
-			actor = 501020,
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "哦哦哦…",
@@ -180,11 +180,11 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "抚~~~顺！！你又捣乱了对不对！",
 			shake = {
 				speed = 1,
@@ -200,12 +200,12 @@ return {
 			}
 		},
 		{
-			say = "唔哇啊啊啊啊啊，是鞍山姐姐！！",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "唔哇啊啊啊啊啊，是鞍山姐姐！！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -236,17 +236,17 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呜——",
 			shake = {
 				speed = 8,
-				y = 0,
+				number = 3,
 				x = 10,
-				number = 3
+				y = 0
 			},
 			typewriter = {
 				speed = 0.05,
@@ -274,17 +274,17 @@ return {
 			}
 		},
 		{
+			actor = 501030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "呜——",
 			shake = {
 				speed = 8,
-				y = 0,
+				number = 3,
 				x = 10,
-				number = 3
+				y = 0
 			},
 			typewriter = {
 				speed = 0.05,
@@ -456,11 +456,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			actorShadow = true,
-			side = 0,
 			bgName = "bg_story_school",
 			actorName = "抚顺&长春",
-			actor = 501020,
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "呜——",
@@ -482,15 +482,15 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 501010,
-			nameColor = "#a9f548",
 			say = "真是让人怀念的东西啊…没想到竟然还能找出来…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -531,12 +531,12 @@ return {
 			}
 		},
 		{
-			say = "那个果然是鞍山姐姐的东西呢",
+			actor = 501030,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 501030,
-			nameColor = "#a9f548",
+			say = "那个果然是鞍山姐姐的东西呢",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -551,11 +551,11 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 501010,
-			nameColor = "#a9f548",
 			say = "哇啊！！长、长春？",
 			shake = {
 				speed = 5,
@@ -700,11 +700,11 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 501010,
-			nameColor = "#a9f548",
 			say = "别擅自做这种奇怪的总结啦！",
 			shake = {
 				speed = 8,
@@ -720,12 +720,12 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 0,
-			actorName = "太原&长春&抚顺",
 			actor = 501040,
-			blackBg = true,
+			actorShadow = true,
+			actorName = "太原&长春&抚顺",
+			side = 0,
 			hideOther = true,
+			blackBg = true,
 			nameColor = "#a9f548",
 			say = "哈哈哈……",
 			subActors = {

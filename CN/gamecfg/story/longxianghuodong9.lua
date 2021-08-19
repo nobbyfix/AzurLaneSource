@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "LONGXIANGHUODONG9",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 306060,
 			nameColor = "#a9f548",
 			side = 1,
+			bgm = "battle-boss-2",
 			dir = 1,
 			say = "终于来了吗。",
-			bgm = "battle-boss-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,8 +71,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			say = "如果牺牲我一个，能够为大家带来胜利的话……哪怕刀山火海，我{namecode:90}也在所不辞！",
 			typewriter = {
 				speed = 0.05,
@@ -162,8 +162,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			say = "但！是！",
 			typewriter = {
 				speed = 0.05,
@@ -175,11 +175,11 @@ return {
 			}
 		},
 		{
+			side = 2,
 			nameColor = "#a9f548",
 			bgName = "bg_story_rj",
-			side = 2,
-			dir = 1,
 			actorName = "枭",
+			dir = 1,
 			say = "即使是弃子，也不会那么轻易地任人宰割的！",
 			effects = {
 				{
@@ -193,8 +193,8 @@ return {
 			}
 		},
 		{
-			actorName = "枭",
 			side = 2,
+			actorName = "枭",
 			bgName = "bg_story_rj",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -205,8 +205,8 @@ return {
 			}
 		},
 		{
-			actorName = "枭",
 			side = 2,
+			actorName = "枭",
 			bgName = "bg_story_rj",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -217,8 +217,8 @@ return {
 			}
 		},
 		{
-			actorName = "枭",
 			nameColor = "#a9f548",
+			actorName = "枭",
 			bgName = "bg_story_rj",
 			side = 2,
 			dir = 1,

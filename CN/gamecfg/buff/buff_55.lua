@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "竞技场BUFF触发器",
 	init_effect = "",
+	name = "竞技场BUFF触发器",
+	time = 0,
 	picture = "",
 	desc = "竞技场BUFF",
 	stack = 1,

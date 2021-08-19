@@ -1,17 +1,17 @@
 return {
+	id = "UI10201",
 	mode = 3,
 	noWaitFade = true,
 	once = true,
-	id = "UI10201",
 	scripts = {
 		{
-			withoutPainting = true,
+			actor = 105040,
 			nameColor = "#a9f548",
 			stopbgm = true,
-			blackBg = true,
-			actor = 105040,
 			mode = 2,
 			say = "姐姐…",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,10 +24,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "姐姐…你在哪里",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,10 +40,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "姐姐…海…燃烧起来了",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -56,10 +56,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "姐姐…对不起…没能守护好他们…",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -73,11 +73,11 @@ return {
 			actor = 105030,
 			side = 0,
 			bgName = "bg_story_4",
+			nameColor = "#a9f548",
 			bgspeed = 2,
 			blackBg = true,
-			bgm = "story-5",
-			nameColor = "#a9f548",
 			say = "主啊，如果这个世界真的有炼狱存在…那么我们现在一定身陷其中…",
+			bgm = "story-5",
 			effects = {
 				{
 					active = true,
@@ -123,8 +123,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			sequenceSpd = 2,
+			mode = 1,
 			bgFade = true,
 			effects = {
 				{

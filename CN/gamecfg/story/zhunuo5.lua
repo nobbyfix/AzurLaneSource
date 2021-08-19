@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHUNUO5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 404020,
 			side = 2,
+			nameColor = "#D6341D",
 			dir = 1,
 			blackBg = true,
-			actor = 404020,
-			nameColor = "#D6341D",
 			stopBGM = true,
 			say = "希佩尔，“区区皇家杂鱼，我一个人就能轻松解决掉”，这句话不是从你口里说出来的吗？",
 			typewriter = {
@@ -24,12 +24,12 @@ return {
 			}
 		},
 		{
-			say = "咕……嘁，谁知道对面会跑得那么干脆啦…任务失败就是失败了，要惩罚还是什么的，随你吧！",
+			actor = 403010,
 			side = 1,
+			nameColor = "#D6341D",
 			dir = 1,
 			blackBg = true,
-			actor = 403010,
-			nameColor = "#D6341D",
+			say = "咕……嘁，谁知道对面会跑得那么干脆啦…任务失败就是失败了，要惩罚还是什么的，随你吧！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -108,11 +108,11 @@ return {
 			}
 		},
 		{
+			actor = 403010,
 			side = 2,
+			nameColor = "#D6341D",
 			dir = 1,
 			blackBg = true,
-			actor = 403010,
-			nameColor = "#D6341D",
 			say = "别说的我好像死了一样！而且谁要你们帮我报仇了！喂，听我说话啊！",
 			shake = {
 				speed = 8,

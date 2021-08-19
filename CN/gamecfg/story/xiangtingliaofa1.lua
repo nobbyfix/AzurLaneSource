@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA1",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>再快一些</size>",
@@ -45,8 +45,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			blackBg = true,
 			effects = {
 				{
@@ -55,8 +55,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -80,17 +80,17 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			side = 2,
+			bgName = "bg_xiangting_1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 1,
-			bgName = "bg_xiangting_1",
-			bgm = "airRaidAlarm",
-			actor = 207040,
-			nameColor = "#a9f548",
 			say = "注意回避！可恶...！",
+			bgm = "airRaidAlarm",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -125,13 +125,13 @@ return {
 			}
 		},
 		{
+			actor = 103160,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 103160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "东北方，又来了一波敌机！防空火力不要停，优先保证指挥官的安全！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -179,11 +179,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不管来多少都一样，尽管放马过来吧！！！",
 			typewriter = {
 				speed = 0.05,
@@ -195,8 +195,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -205,9 +205,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "白鹰·纽波特港 ",
 			typewriter = {
 				speed = 0.05,
@@ -219,9 +219,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "混乱与火海",
 			typewriter = {
 				speed = 0.05,
@@ -233,9 +233,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "宿舍在燃烧，船坞在燃烧，机库在燃烧",
 			typewriter = {
 				speed = 0.05,
@@ -247,9 +247,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "惶恐，急迫，悲伤，愤怒",
 			typewriter = {
 				speed = 0.05,
@@ -261,9 +261,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "仅过了短短数分钟，昔日的度假胜地已然不复存在",
 			typewriter = {
 				speed = 0.05,
@@ -275,9 +275,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "留存下来的只有，混乱与...火海",
 			typewriter = {
 				speed = 0.05,
@@ -321,11 +321,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "放心，保护好大家，我去去就回！！",
 			typewriter = {
 				speed = 0.05,
@@ -337,8 +337,8 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -347,9 +347,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -361,15 +361,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "不久之前",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level02",
-			say = "不久之前",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -432,9 +432,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "几日前，突然收到了指挥部即将召开重要军事会议的电函。",
 			typewriter = {
 				speed = 0.05,
@@ -446,9 +446,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "现在舰队正在驶向白鹰本土的途中。",
 			typewriter = {
 				speed = 0.05,
@@ -476,11 +476,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "快点快点，迎接我们的人已经在招手了~",
 			typewriter = {
 				speed = 0.05,
@@ -492,8 +492,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -502,12 +502,12 @@ return {
 			}
 		},
 		{
-			say = "大黄蜂，沉稳一些。就算再着急也不能忘记淑女风度哦。",
+			actor = 207040,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "大黄蜂，沉稳一些。就算再着急也不能忘记淑女风度哦。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -570,9 +570,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "（还是先不要告诉她企业临时调去侦查任务的事吧...）",
 			typewriter = {
 				speed = 0.05,
@@ -587,8 +587,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 103160,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "大老远就听到吵闹声了，还是这么精力充沛啊，大黄蜂。",
 			typewriter = {
@@ -652,8 +652,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 103160,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈哈，开个玩笑。我是本处防卫舰队的旗舰，诸位在此停留期间的招待就由我来负责。",
 			typewriter = {
@@ -698,15 +698,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_xiangting_1",
+			say = "难忘的回忆啊...",
 			side = 2,
+			bgName = "bg_xiangting_1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "airRaidAlarm",
-			say = "难忘的回忆啊...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -737,9 +737,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_xiangting_1",
-			dir = 1,
 			say = "...............",
 			typewriter = {
 				speed = 0.05,
@@ -751,11 +751,11 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

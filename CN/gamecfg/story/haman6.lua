@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HAMAN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"哈曼观察日志\n\n<size=45>六 喂喂是海军部吗！？</size>",
@@ -20,9 +20,9 @@ return {
 			actor = 101240,
 			side = 2,
 			bgName = "bg_story_room",
-			say = "嗯…偶然碰到指挥官然后说起哈曼怎么了…然后就…",
-			dir = 1,
 			bgm = "story-1",
+			dir = 1,
+			say = "嗯…偶然碰到指挥官然后说起哈曼怎么了…然后就…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -62,10 +62,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 3,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -82,10 +82,10 @@ return {
 			},
 			action = {
 				{
-					y = 45,
-					dur = 0.2,
 					number = 1,
-					type = "shake"
+					dur = 0.2,
+					type = "shake",
+					y = 45
 				}
 			}
 		},
@@ -112,17 +112,17 @@ return {
 			},
 			action = {
 				{
-					y = 45,
-					dur = 0.15,
 					number = 3,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 45
 				}
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "哈曼泪目着摸出拨盘电话要打给海军部。",
 			typewriter = {
 				speed = 0.05,
@@ -165,8 +165,8 @@ return {
 			actor = 107050,
 			side = 0,
 			bgName = "bg_story_room",
-			say = "…你看，指挥官这不是因为担心哈曼才找过来的吗？",
 			dir = 1,
+			say = "…你看，指挥官这不是因为担心哈曼才找过来的吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -222,17 +222,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			actor = 101250,
+			side = 2,
+			bgName = "bg_story_room",
+			hideOther = true,
 			dir = 1,
 			blackBg = true,
-			hideOther = true,
 			say = "……呜呜……",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.3,
 					x = 30,
 					number = 3

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"纪行的藏红花\n\n<size=45>四　战术准备·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "演习前两日",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "演习前两日",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = -1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			say = "白鹰宿舍",
 			typewriter = {
 				speed = 0.05,
@@ -63,8 +63,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "诶、这是…要直接找前辈吗？",
 			typewriter = {
@@ -109,15 +109,15 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "各位前辈，打扰了。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,15 +174,15 @@ return {
 			}
 		},
 		{
+			actor = 107060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "原来如此，单刀直入。用最直接的方式调查对手的情报么，不错的想法",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -335,15 +335,15 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "阿，阿，阿嚏！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -368,8 +368,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -378,12 +378,12 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107070,
-			nameColor = "#a9f548",
 			say = "（总，总觉得有背后有一股凉意……）",
 			typewriter = {
 				speed = 0.05,

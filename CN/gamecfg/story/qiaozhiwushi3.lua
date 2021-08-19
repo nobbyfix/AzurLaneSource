@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"另一个领导者？\n\n<size=45>三　女王陛下</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·皇家宿舍",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·皇家宿舍",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "某日，路过皇家宿舍的时候，忽然听到里面传来怒吼。",
 			typewriter = {
 				speed = 0.05,
@@ -60,11 +60,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "这是什么啊，乔治！",
 			dialogShake = {
 				speed = 0.09,
@@ -81,9 +81,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "似乎是伊丽莎白正在大发雷霆的样子，而对象似乎是……乔治五世？",
 			typewriter = {
 				speed = 0.05,
@@ -95,9 +95,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "过去看看吧。",
 			typewriter = {
 				speed = 0.05,
@@ -109,13 +109,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_107",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_107",
 			say = "餐厅中，伊丽莎白正在对着一盘鲜红的料理不停地吐着舌头。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -140,11 +140,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这这这、这是什么东西啊，怎么会这么辣！你不是说不辣的吗！",
 			typewriter = {
 				speed = 0.05,
@@ -156,8 +156,8 @@ return {
 			},
 			action = {
 				{
-					y = 35,
 					type = "shake",
+					y = 35,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -166,11 +166,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "水，贝尔法斯特，快给本王水！",
 			typewriter = {
 				speed = 0.05,
@@ -182,8 +182,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -192,11 +192,11 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "遵命。",
 			typewriter = {
 				speed = 0.05,
@@ -208,8 +208,8 @@ return {
 			},
 			action = {
 				{
-					y = -40,
 					type = "shake",
+					y = -40,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -221,8 +221,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "陛下，这道菜是我问东煌的同僚们学来的，叫做麻婆豆腐。",
 			typewriter = {
@@ -251,9 +251,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "虽然好像是这么回事……",
 			typewriter = {
 				speed = 0.05,
@@ -281,12 +281,12 @@ return {
 			}
 		},
 		{
-			say = "陛下，水。",
+			actor = 202120,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "陛下，水。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -301,11 +301,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 205010,
 			side = 0,
 			bgName = "star_level_bg_107",
 			withoutActorName = true,
-			actor = 205010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "伊丽莎白接过水后，一口喝下，然后继续与面前的麻婆豆腐奋战起来。",
 			typewriter = {
@@ -353,8 +353,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没问题~",
 			typewriter = {
@@ -370,8 +370,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦？指挥官，你也来了……你看到刚才了吗？",
 			typewriter = {
@@ -393,8 +393,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呵呵，不过是一点兴趣而已。“人是铁饭是钢”——我听说东洋有这么一句谚语",
 			typewriter = {
@@ -412,7 +412,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不过，即使是普通的原来填饱肚子料理……做的美味一点也无妨吧？",
+			say = "不过，即使是普通的用来填饱肚子料理……做的美味一点也无妨吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

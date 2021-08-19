@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIA6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Best Pictures!\n\n<size=45>六 取材秘辛系列・下</size>",
@@ -17,9 +17,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "第三十六张照片上是——晚上在厨房做着什么的萨拉托加。",
 			typewriter = {
 				speed = 0.05,
@@ -27,17 +27,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_night",
+			actor = 107030,
 			side = 2,
+			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107030,
-			nameColor = "#a9f548",
 			say = "格里德利，帮我拿一下那个——",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "抱歉小加加，那个我也够不着……麻烦你用舰载机了！",
+			actor = 101050,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "抱歉小加加，那个我也够不着……麻烦你用舰载机了！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -146,11 +146,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇！怎么啦？",
 			typewriter = {
 				speed = 0.05,
@@ -162,8 +162,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -251,11 +251,11 @@ return {
 			}
 		},
 		{
+			actor = 101050,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 101050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官快跑——！",
 			typewriter = {
 				speed = 0.05,
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 2
@@ -276,13 +276,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "剩下的，就是最后一张了……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -319,9 +319,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "抬起头就看到，萨拉托加凑过来的脸，很近。",
 			typewriter = {
 				speed = 0.05,

@@ -11,9 +11,9 @@ return {
 			nameColor = "#a9f548",
 			bgName = "bg_story_1",
 			side = 0,
+			bgm = "story-5",
 			bgSpeed = 1.5,
 			say = "胡德！！！",
-			bgm = "story-5",
 			effects = {
 				{
 					active = true,
@@ -62,6 +62,7 @@ return {
 			actor = 900009,
 			side = 1,
 			nameColor = "#ff0000",
+			actorAlpha = 0,
 			say = "诶？~战况这么有利，为什么不继续玩下去呢",
 			typewriter = {
 				speed = 0.05,
@@ -83,6 +84,7 @@ return {
 			actorName = "欧根亲王",
 			nameColor = "#ff0000",
 			side = 1,
+			actorAlpha = 0,
 			say = "哎呀——真是没办法，对面的小绵羊们~我们以后再见咯",
 			typewriter = {
 				speed = 0.05,
@@ -103,10 +105,10 @@ return {
 			actor = 900010,
 			nameColor = "#ff0000",
 			bgName = "bg_story_3",
-			say = "吾之荣誉即忠诚——唯有强大的力量，才能拯救更多的人类，我们…只不过是选择了一条不同的道路罢了。",
 			side = 1,
-			blackBg = true,
 			bgFade = true,
+			blackBg = true,
+			say = "吾之荣誉即忠诚——唯有强大的力量，才能拯救更多的人类，我们…只不过是选择了一条不同的道路罢了。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -145,12 +147,12 @@ return {
 			}
 		},
 		{
+			actor = 900313,
 			side = 2,
 			nameColor = "#ff0000",
+			mode = 2,
 			dir = -1,
 			blackBg = true,
-			actor = 900011,
-			mode = 2,
 			say = "…人类真是有趣的生物，只不过施舍了他们冰山一角的力量，历史就要开始重演了",
 			shake = {
 				speed = 1,
@@ -166,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			side = 2,
 			nameColor = "#ff0000",
-			blackBg = true,
-			actor = 900012,
 			mode = 2,
+			blackBg = true,
 			say = "先继续观察一段时间吧，我对他们的未来发展可是很期待的哟~",
 			shake = {
 				speed = 1,
@@ -186,11 +188,11 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			side = 2,
 			nameColor = "#ff0000",
-			blackBg = true,
-			actor = 900012,
 			mode = 2,
+			blackBg = true,
 			say = "毕竟如果不这么做的话，我们回到这个时代不就没有意义了吗？呵呵呵~",
 			shake = {
 				speed = 1,
@@ -206,8 +208,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

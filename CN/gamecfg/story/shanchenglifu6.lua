@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANCHENGLIFU6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区的特别宴会\n\n<size=45>六　准备、奏乐！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·宴会会场",
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·宴会会场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -80,12 +80,12 @@ return {
 			}
 		},
 		{
-			say = "毕竟陛下难得很有干劲呢，而且我们也想让大家享受到最好的宴会，所以没什么辛苦的~",
+			actor = 201011,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
-			actor = 201011,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "毕竟陛下难得很有干劲呢，而且我们也想让大家享受到最好的宴会，所以没什么辛苦的~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -100,11 +100,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "不过女将你看起来好像不是很开心欸？",
 			typewriter = {
@@ -117,11 +117,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "而且我们排练的管弦乐曲什么时候才用呀？",
 			typewriter = {
@@ -137,8 +137,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "被你看出来了吗……",
 			typewriter = {
@@ -154,8 +154,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "哈……",
 			typewriter = {
@@ -171,8 +171,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "那当然是因为，最重要的那个家伙还没有来啊，乐曲当然也是要等那家伙来了再用。",
 			typewriter = {
@@ -206,8 +206,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "真是的，这场宴会其实有一半是专门为那个笨蛋准备的，结果那个笨蛋却到现在还没现身……",
 			typewriter = {
@@ -241,8 +241,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "是啊……虽然也不是特意这么做的。",
 			typewriter = {
@@ -258,8 +258,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "……那个笨蛋虽然平时不那么可靠，但能够把舰队运营到今天，大家嘴上不说，心里都是清楚的。",
 			typewriter = {
@@ -275,8 +275,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "付出了怎样的努力，每天要处理多少的公务，还要分出时间来和我们相处。",
 			typewriter = {
@@ -292,8 +292,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "如果没有那个笨蛋的话，我们一定不会能够像今天一样举办庆典……",
 			typewriter = {
@@ -327,8 +327,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "……哼，才没有，普通关心而已。",
 			typewriter = {
@@ -359,11 +359,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "所以才专门为了这一天召集了大家排练管弦乐曲吗？",
 			typewriter = {
@@ -379,8 +379,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "嗯，要说庆典，果然还是少不了这种节目呢。",
 			typewriter = {
@@ -441,11 +441,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "所以至少今晚，想要让指挥官能够好好放松一下，是这样吧？",
 			typewriter = {
@@ -477,8 +477,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "明明答应了今晚一定会出席的，还想弄个惊喜的……",
 			typewriter = {
@@ -494,8 +494,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "再不来的话，干脆直接去喊……",
 			typewriter = {
@@ -526,8 +526,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.8,
 					dur = 0.1,
 					x = 0,
@@ -539,8 +539,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "呜哇！！你不要吓人啊{namecode:2}，怎么了？",
 			typewriter = {
@@ -553,8 +553,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.8,
 					dur = 0.1,
 					x = 0,
@@ -563,11 +563,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "我看到指挥官了，一起的还有{namecode:97}和{namecode:79}……",
 			typewriter = {
@@ -601,8 +601,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_107",
-			dir = -1,
 			actor = 201011,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "哈？总之往会场这边来了对吧？",
 			typewriter = {
@@ -615,11 +615,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "对！",
 			typewriter = {
@@ -632,8 +632,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -658,11 +658,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 301013,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_107",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:2}",
 			say = "交给我吧！",
 			typewriter = {
@@ -691,12 +691,12 @@ return {
 			}
 		},
 		{
+			actor = 201011,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 201011,
-			nameColor = "#a9f548",
 			say = "那么，各就各位，准备奏乐！",
 			typewriter = {
 				speed = 0.05,

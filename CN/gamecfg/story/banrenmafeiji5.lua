@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMAFEIJI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"盛夏的半人马座\n\n<size=45>五　铁血之盟</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_106",
+			actor = 206040,
 			side = 2,
+			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 206040,
-			nameColor = "#a9f548",
 			say = "咦，标枪前辈，铁血的各位前辈们也来了。",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
+			actor = 201212,
+			side = 0,
+			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，真的欸。",
-			side = 0,
-			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
-			nameColor = "#a9f548",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
+			actor = 201212,
+			side = 0,
+			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "果然铁血的各位也都换上了泳装呢。",
-			side = 0,
-			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
-			nameColor = "#a9f548",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -92,12 +92,12 @@ return {
 			}
 		},
 		{
+			actor = 201212,
+			side = 0,
+			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "我跟你说哦，去年夏天铁血虽然已经加入了不少人，不过只有欧根一个人来过海边玩，今年就好多了呢~",
-			side = 0,
-			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
-			nameColor = "#a9f548",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -112,12 +112,12 @@ return {
 			}
 		},
 		{
-			say = "啊，她们往这边来了呢。",
+			actor = 201212,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啊，她们往这边来了呢。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -135,8 +135,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Z25前辈，Z46前辈，你们好。",
 			typewriter = {
@@ -149,11 +149,11 @@ return {
 			}
 		},
 		{
+			actor = 401251,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = -1,
-			actor = 401251,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "欸欸欸？？你、你好……",
 			typewriter = {
 				speed = 0.05,
@@ -165,8 +165,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.08,
 					x = 0,
@@ -255,11 +255,11 @@ return {
 			}
 		},
 		{
+			actor = 201212,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Z25，Z46，来坐这边~",
 			typewriter = {
 				speed = 0.05,
@@ -271,8 +271,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -313,12 +313,12 @@ return {
 			}
 		},
 		{
-			say = "我对团体活动没有兴趣——",
+			actor = 407011,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = -1,
-			actor = 407011,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "我对团体活动没有兴趣——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -365,11 +365,11 @@ return {
 			}
 		},
 		{
+			actor = 407011,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = -1,
-			actor = 407011,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "唔…这直达味蕾的美味…！",
 			typewriter = {
 				speed = 0.05,
@@ -381,8 +381,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -423,12 +423,12 @@ return {
 			}
 		},
 		{
-			say = "你就是传闻中那个“对谁都会喊前辈的新人”吗…",
+			actor = 405021,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 405021,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "你就是传闻中那个“对谁都会喊前辈的新人”吗…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -478,8 +478,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 206040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（小声）标枪前辈，铁血的前辈们意外地好相处呢。",
 			typewriter = {
@@ -492,12 +492,12 @@ return {
 			}
 		},
 		{
-			say = "（小声）啊哈哈，虽然一开始确实会让人有种想退却的感觉，不过大家其实都是好人哦",
+			actor = 201212,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "（小声）啊哈哈，虽然一开始确实会让人有种想退却的感觉，不过大家其实都是好人哦",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -528,12 +528,12 @@ return {
 			}
 		},
 		{
-			say = "她啊，好像是被欧根灌输了什么奇怪的知识，整天在研究怎么样才能用泳装诱惑指挥官，刚到沙滩就跑去欧根那边了。",
+			actor = 405021,
 			side = 0,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 405021,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "她啊，好像是被欧根灌输了什么奇怪的知识，整天在研究怎么样才能用泳装诱惑指挥官，刚到沙滩就跑去欧根那边了。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -612,11 +612,11 @@ return {
 			}
 		},
 		{
+			actor = 201212,
 			side = 1,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 201212,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咦，提尔比茨小姐是喜欢这种运动的类型吗？",
 			typewriter = {
 				speed = 0.05,
@@ -628,8 +628,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -654,12 +654,12 @@ return {
 			}
 		},
 		{
+			actor = 201212,
 			side = 1,
 			bgName = "star_level_bg_106",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 201212,
-			nameColor = "#a9f548",
 			say = "唔，既然如此，那么等大家都吃得差不多了，我们就来分组打沙滩排球吧！",
 			typewriter = {
 				speed = 0.05,
@@ -671,8 +671,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 1,
 					dur = 0.2,
 					x = 0,

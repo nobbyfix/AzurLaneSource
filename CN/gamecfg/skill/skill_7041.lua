@@ -8,10 +8,10 @@ return {
 	desc = "水雷自爆",
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 300013
 			}

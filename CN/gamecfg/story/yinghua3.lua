@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -37,8 +37,8 @@ return {
 		{
 			actor = 307050,
 			side = 1,
-			say = "看到重樱的御神木了吗？这几年来，它正一直以飞快的速度枯萎，我们这次来，就是希望能够找到拯救它的方法",
 			dir = 1,
+			say = "看到重樱的御神木了吗？这几年来，它正一直以飞快的速度枯萎，我们这次来，就是希望能够找到拯救它的方法",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -123,15 +123,15 @@ return {
 			}
 		},
 		{
+			actor = 307020,
 			side = 2,
+			stopbgm = true,
 			dir = 1,
 			blackBg = true,
-			actor = 307020,
-			stopbgm = true,
 			say = "新生重樱联合那班家伙们冲着御神木去了——这样下去，她们也许会相见的",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -158,9 +158,9 @@ return {
 		{
 			actor = 307010,
 			side = 0,
-			say = "碍事的家伙总是清理不完，真是让人头疼…",
 			dir = 1,
 			blackBg = true,
+			say = "碍事的家伙总是清理不完，真是让人头疼…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

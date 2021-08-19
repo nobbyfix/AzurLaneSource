@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>五　看板娘的异状</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "这个休息日，一如既往地来到商店外的灌木里，打算观察{namecode:20}。",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "这个休息日，一如既往地来到商店外的灌木里，打算观察{namecode:20}。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……咦，一如既往？这么一想，观察{namecode:20}以来也过了不少时间。",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "虽然{namecode:20}日常和工作时都是表里如一的冷淡，但是通过一些细节，还是能发现她不是冷酷的人。",
 			typewriter = {
 				speed = 0.05,
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过……",
 			typewriter = {
 				speed = 0.05,
@@ -92,11 +92,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 301180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "看起来，被{namecode:20}发现了的样子，那就放弃伪装吧。",
 			typewriter = {
@@ -147,9 +147,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "换位思考一下的话，确实是这样呢！",
 			typewriter = {
 				speed = 0.05,
@@ -157,11 +157,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所以指挥官，你躲在那里是想看什么呢？",
 			typewriter = {
 				speed = 0.05,
@@ -195,11 +195,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 301180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "总觉得那样也会被当做笨蛋！不过比起这个……",
 			typewriter = {
@@ -234,9 +234,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "没错，{namecode:20}总是能够一个人将事情处理得好。",
 			typewriter = {
 				speed = 0.05,
@@ -244,9 +244,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "让人觉得她好像不需要依靠，让人觉得她一个人管理商店似乎是理所当然的事，但是…",
 			typewriter = {
 				speed = 0.05,
@@ -270,11 +270,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 301180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:20}说到这里，身体微微晃动了一下，似乎就要倒下。",
 			typewriter = {
@@ -287,8 +287,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没事的，这只是一点头晕而已……",
 			typewriter = {
 				speed = 0.05,
@@ -319,8 +319,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,

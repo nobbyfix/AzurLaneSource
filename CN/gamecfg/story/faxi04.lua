@@ -1,9 +1,9 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI04",
+	once = true,
+	fadeType = 1,
 	continueBgm = true,
 	occlusion = 2,
 	scripts = {
@@ -279,14 +279,14 @@ return {
 			}
 		},
 		{
+			mode = 2,
 			side = 2,
+			say = "———梦碎了",
 			bgmDelay = 3,
 			bgm = "story-french",
-			mode = 2,
-			say = "———梦碎了",
 			flashout = {
-				dur = 1.5,
 				black = true,
+				dur = 1.5,
 				alpha = {
 					0,
 					1
@@ -318,8 +318,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "在那一刻起，国家分崩离析，我们在一夜之间成为了赤色中轴手里的傀儡…",
 			typewriter = {
 				speed = 0.05,
@@ -331,8 +331,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "“——放下武器吧，不许抵抗”，我们被司令部这样命令到",
 			typewriter = {
 				speed = 0.05,
@@ -344,8 +344,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "身为天之正统、骄傲的圣教骑士…连为信仰献身、争取自由的机会都没有得到就被宣告了失败",
 			typewriter = {
 				speed = 0.05,
@@ -357,8 +357,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "二十年前，先驱者们用无数牺牲夺回了属于我们的阿尔萨斯、洛林，一洗普法战争时的耻辱",
 			typewriter = {
 				speed = 0.05,
@@ -370,8 +370,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "然而，二十年后的今天，国土却被一群可耻的叛教者们作为苟全性命的筹码出卖给了侵略者！",
 			typewriter = {
 				speed = 0.05,
@@ -383,8 +383,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "他们在恐惧的驱使下投降了，忘记了尊严，使我们的国家受到奴役",
 			typewriter = {
 				speed = 0.05,
@@ -396,8 +396,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "看着铁血的铁骑肆无忌惮的踏过凯旋门，踏过战神广场…",
 			typewriter = {
 				speed = 0.05,
@@ -409,8 +409,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "这是莫大的耻辱，这是千百年来都未曾遭遇的耻辱！",
 			typewriter = {
 				speed = 0.05,
@@ -422,8 +422,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "“人可不朽，救赎可待来日；国家不得永生，救赎唯有当下”",
 			typewriter = {
 				speed = 0.05,
@@ -435,8 +435,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			mode = 2,
+			side = 2,
 			blackBg = true,
 			say = "我宣布，自由鸢尾在此刻正式成立，我们将是教廷所赋予的天之正统",
 			typewriter = {
@@ -449,14 +449,14 @@ return {
 			}
 		},
 		{
+			mode = 2,
 			side = 2,
 			bgName = "bg_story_faxi1",
 			blackBg = true,
-			mode = 2,
 			say = "这面旗帜，曾经是百年战争期间那位圣少女所使用的标志，代表着牺牲与自由的标志",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -487,8 +487,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			bgName = "bg_story_faxi1",
 			say = "我向所有的国民们发出呼唤，不论你们身在何地，团结起来，带着牺牲精神和对未来的向往",
 			typewriter = {
@@ -501,8 +501,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			bgName = "bg_story_faxi1",
 			say = "与我一道再次凝聚在这面旗帜之下！",
 			typewriter = {
@@ -515,8 +515,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			bgName = "bg_story_faxi1",
 			say = "我们的祖国危在旦夕，但我们不是孤独战斗，不是没有援助！",
 			typewriter = {
@@ -529,8 +529,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			mode = 2,
+			side = 2,
 			bgName = "bg_story_faxi1",
 			blackBg = true,
 			say = "在自由的世界里，巨大的力量还在等待觉醒",
@@ -544,14 +544,14 @@ return {
 			}
 		},
 		{
+			mode = 2,
 			side = 2,
+			say = "总有一天，这些力量会把敌人彻底粉碎！到那时，我们必须也必将以胜利者的姿态出现！",
 			blackBg = true,
 			BgFade = true,
-			mode = 2,
-			say = "总有一天，这些力量会把敌人彻底粉碎！到那时，我们必须也必将以胜利者的姿态出现！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -583,8 +583,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "那时，它将重新恢复昔日的自由与辉煌",
 			typewriter = {
 				speed = 0.05,
@@ -596,8 +596,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "自由终将引导人民",
 			typewriter = {
 				speed = 0.05,
@@ -609,8 +609,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "无论发生任何事，自由的火焰不能熄灭，也绝不会熄灭！",
 			typewriter = {
 				speed = 0.05,
@@ -622,8 +622,8 @@ return {
 			}
 		},
 		{
-			mode = 2,
 			side = 2,
+			mode = 2,
 			say = "因父及子及圣神之名",
 			typewriter = {
 				speed = 0.05,
@@ -635,8 +635,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			mode = 2,
+			side = 2,
 			blackBg = true,
 			say = "自由鸢尾第一旗舰——黎塞留",
 			typewriter = {
@@ -660,8 +660,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -688,8 +688,8 @@ return {
 		{
 			actor = 207020,
 			side = 0,
-			say = "真是充满激情的演讲，不愧是继承了红衣主教之名的新锐战舰啊",
 			dir = 1,
+			say = "真是充满激情的演讲，不愧是继承了红衣主教之名的新锐战舰啊",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

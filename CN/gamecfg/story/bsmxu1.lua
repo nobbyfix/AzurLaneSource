@@ -1,18 +1,18 @@
 return {
-	mode = 2,
-	once = true,
 	id = "BSMXU1",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
-			bgm = "echo-loop",
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "唔，已经出海这么多天了也没有发现任何目标…",
+			bgm = "echo-loop",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,10 +25,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "除了偶尔飘来的浮冰，连个大只点的鲸鱼都没见到，是不是情报有误呀",
 			typewriter = {
 				speed = 0.05,
@@ -40,12 +40,12 @@ return {
 			}
 		},
 		{
-			say = "就算是王牌潜艇出海有时也会空手而归，能不能捕到猎物也是要看运气的",
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
+			say = "就算是王牌潜艇出海有时也会空手而归，能不能捕到猎物也是要看运气的",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -62,10 +62,10 @@ return {
 		{
 			expression = 1,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "难道556的运气不好吗？在港区的时候大家都说556一定是个幸运的孩子",
 			typewriter = {
 				speed = 0.05,
@@ -79,10 +79,10 @@ return {
 		{
 			expression = 3,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "如果初战只是空手而归那可就没脸见俾斯麦姐姐了…呜",
 			typewriter = {
 				speed = 0.05,
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "哪里哪里！？",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -168,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "这是…水下骑士U556的华丽首战就要来了！",
 			effects = {
 				{
@@ -190,8 +190,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -202,10 +202,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "哦哦哦！这种感觉是...感觉全身都兴奋起来了！！",
 			typewriter = {
 				speed = 0.05,
@@ -217,11 +217,11 @@ return {
 			}
 		},
 		{
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
 			say = "嘘——你的话太多了…再不下潜就要被目标发现了",
 			effects = {
 				{
@@ -241,10 +241,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "┗|｀O′|┛ 嗷~~水下骑士U556，出击（小声",
 			typewriter = {
 				speed = 0.05,
@@ -256,8 +256,8 @@ return {
 			},
 			action = {
 				{
-					y = -1000,
 					type = "move",
+					y = -1000,
 					delay = 0,
 					dur = 2.5,
 					x = 0

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>五 午后的絮库夫·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,11 +62,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "吃饱喝足，是时候午睡了呢。",
 			typewriter = {
 				speed = 0.05,
@@ -116,11 +116,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "所以指挥官去午睡吧，我会在午休结束时喊你起来的！",
 			typewriter = {
 				speed = 0.05,
@@ -153,9 +153,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……稍微睡会儿吧。",
 			typewriter = {
 				speed = 0.05,
@@ -163,13 +163,13 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "…………",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -190,13 +190,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "朦胧中似乎听到了什么……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -249,9 +249,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "头上似乎被轻轻摸了一下。",
 			typewriter = {
 				speed = 0.05,
@@ -350,9 +350,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "脸上传来了柔软的触感和熟悉的香气……是什么呢……",
 			typewriter = {
 				speed = 0.05,
@@ -375,9 +375,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "絮库夫好像说了什么很重要的话。不过，已经撑不住困意了……",
 			typewriter = {
 				speed = 0.05,

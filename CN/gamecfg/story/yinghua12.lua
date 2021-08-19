@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 307060,
 			side = 2,
 			stopbgm = true,
+			bgm = "nagato-boss",
 			dir = 1,
 			say = "原来当时真的只要上去说不定就能把她拍醒么，真是踏破铁鞋无觅处...",
-			bgm = "nagato-boss",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -172,8 +172,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -210,8 +210,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -234,8 +234,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -369,8 +369,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -486,8 +486,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"记住，不要轻易去接触那些凡人，这样会有失你的神格",
@@ -549,16 +549,16 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 305050,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_nagato4",
 			bgm = "nagato-boss",
-			actor = 305050,
+			dir = 1,
 			say = "来吧！就算没有实战经验，这一次我也会全力以赴！",
+			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -586,9 +586,9 @@ return {
 			actor = 305050,
 			side = 2,
 			bgName = "bg_story_nagato4",
-			withoutPainting = true,
-			dir = 1,
 			say = "来自东方的BIG7——{namecode:74}级战列舰，参上！",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

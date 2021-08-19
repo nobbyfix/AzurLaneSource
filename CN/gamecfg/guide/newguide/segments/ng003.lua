@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "潜艇战斗相关的内容可以点击帮助按钮查看更详细的内容",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},

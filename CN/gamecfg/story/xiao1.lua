@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAO1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"忍者修行之路？\n\n<size=45>一　迷路的忍者</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "今天是{namecode:11}担任秘书舰的第一天。",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不过，明明已经超过了预定的时间，{namecode:11}还是没有出现。",
 			typewriter = {
 				speed = 0.05,
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "会不会发生什么事了？",
 			typewriter = {
 				speed = 0.05,
@@ -82,15 +82,15 @@ return {
 			}
 		},
 		{
+			actor = 301010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，指挥官，早上好！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -115,8 +115,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -157,15 +157,15 @@ return {
 			}
 		},
 		{
+			actor = 301050,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:11}……？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -206,15 +206,15 @@ return {
 			}
 		},
 		{
+			actor = 301170,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 301170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:11}吗？吾辈记得看到过她来着。嗯……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -239,11 +239,11 @@ return {
 			}
 		},
 		{
+			actor = 301170,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 301170,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！想起来了，吾辈看到她往那个方向跑过去了！",
 			typewriter = {
 				speed = 0.05,
@@ -255,8 +255,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -265,13 +265,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_outdoor",
 			say = "集合目前收集到的线索，{namecode:11}似乎绕整个港区一圈……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -292,9 +292,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "难道……？",
 			typewriter = {
 				speed = 0.05,
@@ -334,11 +334,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸？已经这个时间了！？万、万分抱歉！在下原本是想准时到达指挥室的……",
 			typewriter = {
 				speed = 0.05,
@@ -350,8 +350,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -376,9 +376,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "看来果然是迷路了",
 			typewriter = {
 				speed = 0.05,
@@ -386,11 +386,11 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "欸欸欸？往指挥室的路是那个方向吗？！",
 			typewriter = {
 				speed = 0.05,
@@ -402,8 +402,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -428,9 +428,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "{namecode:11}鞠了一个躬，看起来十分愧疚。",
 			typewriter = {
 				speed = 0.05,
@@ -438,13 +438,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "带着{namecode:11}一起回到了指挥室",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

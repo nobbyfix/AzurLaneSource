@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "弹药匮乏",
 	init_effect = "",
-	id = 211,
+	name = "弹药匮乏",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "舰队伤害降低50%",
 	stack = 1,
-	color = "yellow",
+	id = 211,
 	icon = 211,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.5,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = -0.5
 			}
 		},
 		{

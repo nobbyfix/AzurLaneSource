@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 900012,
 			stopbgm = true,
-			side = 2,
 			nameColor = "#D6341DFF",
+			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
 			actorName = "观察者α",
 			say = "【关键点G】已经离开镜面海域，失去跟踪信号",
 			typewriter = {
@@ -57,12 +57,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者α",
 			say = "也许这就是所谓的【模因】在作祟吧，不管怎样，最后的她还是会和以前一样选择我们的",
 			typewriter = {
 				speed = 0.05,
@@ -74,12 +74,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者α",
 			say = "毕竟，人类有句话怎么说的来着？",
 			typewriter = {
 				speed = 0.05,
@@ -91,12 +91,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者α",
 			say = "——“强者永远都是孤独的”",
 			typewriter = {
 				speed = 0.05,
@@ -108,12 +108,12 @@ return {
 			}
 		},
 		{
+			actor = 900012,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "观察者α",
 			dir = 1,
 			blackBg = true,
-			actor = 900012,
-			actorName = "观察者α",
 			say = "呵呵呵呵……",
 			typewriter = {
 				speed = 0.05,

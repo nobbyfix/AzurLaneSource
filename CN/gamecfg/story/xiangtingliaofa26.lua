@@ -6,13 +6,13 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/boom2",
-			side = 2,
-			dir = 1,
-			bgm = "battle-boss-4",
 			actor = 103160,
+			side = 2,
+			bgm = "battle-boss-4",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "消失吧——！",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -78,8 +78,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 103160,
+			dir = 1,
 			say = "抱歉，看到这种用伙伴的样子作恶的家伙，我就没办法控制心中的怒火了。",
 			typewriter = {
 				speed = 0.05,
@@ -106,8 +106,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -161,8 +161,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,

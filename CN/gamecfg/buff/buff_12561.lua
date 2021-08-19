@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.08
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.092,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.092
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.104,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.104
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.12,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.12
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.132,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.132
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.144,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.144
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.16,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.16
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.172,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.172
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.184,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.184
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.2
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "贝奇1",
 	init_effect = "jinengchufablue",
-	id = 12561,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "降低受到的航空伤害",
 	stack = 1,
-	color = "blue",
+	id = 12561,
 	icon = 12560,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.08,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = -0.08
 			}
 		}
 	}

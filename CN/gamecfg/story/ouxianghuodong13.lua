@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG13",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊哈哈，果然输了呢……",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -44,8 +44,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你这么一说我挺开心的。不过我也没想到加斯科涅能这样参与到Polaris里来呢",
 			typewriter = {
@@ -61,8 +61,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……？",
 			typewriter = {
@@ -110,8 +110,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我们舰船存在的意义就是战斗…这点我当然知道",
 			typewriter = {
@@ -127,8 +127,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "但是当时的我，只知道“不带感情”的战斗，完全体会不到与大家一起时的快乐",
 			typewriter = {
@@ -144,8 +144,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "所以…看到加斯科涅能像这样与Polaris的各位一起享受，我真的觉得很棒",
 			typewriter = {
@@ -158,8 +158,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -171,8 +171,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -188,8 +188,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "也因为如此，我也觉得自己能够更加努力了。战斗也好，Live也好，都会加油的",
 			typewriter = {
@@ -221,13 +221,13 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哈哈，确实是这样。今天与其说是战斗，不如说是大家一起“享受快乐”呢",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -255,8 +255,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "毕竟是“Live”呢，心境上不太一样也是自然的吧",
 			typewriter = {
@@ -288,8 +288,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "请求验证“直接”的感情表现",
 			typewriter = {
@@ -305,8 +305,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "论对主人的直接感情表现，在这Polaris里，恐怕没人能赢得过她呢",
 			typewriter = {
@@ -319,11 +319,11 @@ return {
 			}
 		},
 		{
+			actor = 307100,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 307100,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "呵呵，说的是谁呢~？",
 			typewriter = {
 				speed = 0.05,
@@ -335,8 +335,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -348,8 +348,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊哈哈……",
 			typewriter = {

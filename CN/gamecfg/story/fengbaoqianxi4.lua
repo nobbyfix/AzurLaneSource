@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "白鹰近海 冲突海域 Risk 1",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "level02",
+			say = "白鹰近海 冲突海域 Risk 1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

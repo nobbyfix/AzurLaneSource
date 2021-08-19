@@ -1,14 +1,14 @@
 return {
-	mode = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU6",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			say = "次日16:00:00  对塞壬联合搜查舰队C3",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-italy",
+			say = "次日16:00:00  对塞壬联合搜查舰队C3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -52,8 +52,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 900197,
+			dir = 1,
 			say = "姐姐…这个人有点奇怪，尽说着一些听不懂的东西",
 			typewriter = {
 				speed = 0.05,
@@ -68,8 +68,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			say = "嘘…可能，皇家那边的舰船脑回路都比较奇怪吧，不要大惊小怪，不然会被看不起的",
 			typewriter = {
 				speed = 0.05,
@@ -84,8 +84,8 @@ return {
 			actor = 900197,
 			side = 2,
 			expression = 2,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "唔…唔",
 			typewriter = {
 				speed = 0.05,
@@ -127,8 +127,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -140,8 +140,8 @@ return {
 			actor = 601020,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "很可惜，我是LV10的",
 			typewriter = {
 				speed = 0.05,
@@ -168,8 +168,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -181,8 +181,8 @@ return {
 			actor = 900197,
 			side = 2,
 			expression = 2,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "姐姐…龙骑兵为什么能够和她正常交流（小声",
 			typewriter = {
 				speed = 0.05,
@@ -197,8 +197,8 @@ return {
 			actor = 603020,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -213,8 +213,8 @@ return {
 			actor = 603020,
 			side = 2,
 			expression = 1,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "当做没听到就好了，知道吗",
 			typewriter = {
 				speed = 0.05,
@@ -228,9 +228,9 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 603020,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "当做没听到！",
 			typewriter = {
 				speed = 0.05,
@@ -242,8 +242,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIAHAIBAO4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"碧海的偶像\n\n<size=45>四 旅途的终点</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = ".........",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = ".........",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -75,8 +75,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……不过，看来也已经不需要雷达了。",
 			typewriter = {
@@ -105,11 +105,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我果然很厉害吧！哼哼，我们一定会最先找到小海豹的！",
 			typewriter = {
 				speed = 0.05,
@@ -121,8 +121,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -147,11 +147,11 @@ return {
 			}
 		},
 		{
+			actor = 102220,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 102220,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等等啊！找小海豹这个没有什么先后之分吧！",
 			typewriter = {
 				speed = 0.05,
@@ -163,8 +163,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -176,8 +176,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "最后关头突然出现的劲敌……！？",
 			typewriter = {
@@ -190,9 +190,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "双方的前进方向一致，既然如此——！",
 			typewriter = {
 				speed = 0.05,
@@ -207,8 +207,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107034,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哇哇！指挥官，不要拉我啊！",
 			typewriter = {
@@ -221,8 +221,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -282,8 +282,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 102220,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "萨拉托加！…没办法了，赶快通知大家紧急启动！",
 			typewriter = {
@@ -296,8 +296,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			stopbgm = true,
+			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			say = "——就在那时，从海中浮现出了一个巨大的建筑物",
@@ -316,9 +316,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "建筑物的水槽里，各种各样的海洋动物们开心呢的嬉戏着",
 			typewriter = {
 				speed = 0.05,
@@ -336,9 +336,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "今天的主角正式登上了舞台……",
 			typewriter = {
 				speed = 0.05,

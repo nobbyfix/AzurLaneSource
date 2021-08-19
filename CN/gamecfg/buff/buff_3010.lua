@@ -1,12 +1,12 @@
 return {
+	time = 10,
 	name = "强袭空母",
 	init_effect = "jinengchufared",
-	id = 3010,
-	time = 10,
+	color = "red",
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
-	color = "red",
+	id = 3010,
 	icon = 3010,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 1
 			}
 		}
 	}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HAMAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"哈曼观察日志\n\n<size=45>四 不高兴的理由·下</size>",
@@ -20,9 +20,9 @@ return {
 			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
-			say = "被看到了…哈曼…被人看到了……",
-			dir = 1,
 			bgm = "story-1",
+			dir = 1,
+			say = "被看到了…哈曼…被人看到了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -36,8 +36,8 @@ return {
 			actor = 101240,
 			side = 0,
 			bgName = "bg_story_task",
-			say = "虽然不是故意要看的…你那是在干吗？",
 			dir = 1,
+			say = "虽然不是故意要看的…你那是在干吗？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -55,9 +55,9 @@ return {
 			actor = 101250,
 			side = 1,
 			bgName = "bg_story_task",
-			say = "事情是这样的——",
-			dir = 1,
 			bgm = "story-1",
+			dir = 1,
+			say = "事情是这样的——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,15 +68,15 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 1,
 			bgName = "bg_story_task",
+			say = "…刚才的事快忘掉！一定要忘掉哦！",
 			dir = 1,
 			bgm = "story-1",
-			actor = 101250,
-			say = "…刚才的事快忘掉！一定要忘掉哦！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -116,8 +116,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.15,
 					x = 30,
 					number = 4
@@ -125,12 +125,12 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 1,
 			bgName = "bg_story_task",
+			say = "就是很大的事啦！指挥官…不知道现在在怎么样了……",
 			dir = 1,
 			bgm = "story-1",
-			actor = 101250,
-			say = "就是很大的事啦！指挥官…不知道现在在怎么样了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -141,10 +141,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 3,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -179,14 +179,14 @@ return {
 			},
 			action = {
 				{
-					y = -30,
-					dur = 0.5,
 					number = 1,
-					type = "shake"
+					dur = 0.5,
+					type = "shake",
+					y = -30
 				},
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.15,
 					number = 3
@@ -224,17 +224,17 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.1,
 					number = 1,
-					type = "shake"
+					dur = 0.1,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
 		{
+			dir = 1,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "哈曼一溜烟地跑掉了。",
 			typewriter = {
 				speed = 0.05,
@@ -297,14 +297,14 @@ return {
 			}
 		},
 		{
+			actor = 101240,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			actor = 101240,
 			say = "吓！？指挥官，什么时候出现的！？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -329,8 +329,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 2,
 					dur = 0.15,
 					number = 1

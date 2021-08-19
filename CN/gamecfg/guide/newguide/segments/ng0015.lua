@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "点击help按钮查看每日任务帮助！",
 				mode = 1,
-				dir = -1,
 				posY = -63.794,
+				dir = -1,
 				posX = -663
 			},
 			ui = {

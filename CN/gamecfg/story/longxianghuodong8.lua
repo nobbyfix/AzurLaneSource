@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG8",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 103060,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level",
 			dir = 1,
 			say = "唉…不知道印第在阿留申群岛那边怎么样了。",
-			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,8 +87,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -187,8 +187,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.3,
 					dur = 0.15,
 					x = 0,

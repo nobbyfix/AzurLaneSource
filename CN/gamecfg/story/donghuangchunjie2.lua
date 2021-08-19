@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DONGHUANGCHUNJIE2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"闹腾嬉戏东煌春节\n\n<size=45>二 旧仓库的新发现</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·学院广场",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "main-chunjie",
-			say = "港区·学院广场",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 501041,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呜…抚顺姐，我们到底要去哪里找火药呀？",
 			typewriter = {
@@ -63,12 +63,12 @@ return {
 			}
 		},
 		{
-			say = "这个嘛，其实我也不知道啦~总之先找人问问吧！",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这个嘛，其实我也不知道啦~总之先找人问问吧！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -170,8 +170,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 501041,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:6}、拉菲和{namecode:32}的新衣服都好可爱…",
 			typewriter = {
@@ -218,11 +218,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301054,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "虽然比预想的花了更多时间…不过还是赶上了东煌的春节，问题不大…的说。",
 			typewriter = {
@@ -267,11 +267,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301054,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "…火药的话，之前祭典做烟花用的…应该还有，就在旧仓库…的说",
 			typewriter = {
@@ -284,11 +284,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦！旧仓库吗！嘿嘿嘿，没想到真的这么顺利就找到了～",
 			typewriter = {
 				speed = 0.05,
@@ -300,8 +300,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -313,8 +313,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 101173,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "爆竹…是什么？",
 			typewriter = {
@@ -413,13 +413,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "港区·旧仓库",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -494,11 +494,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301054,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "这个棋盘…{namecode:6}之前好像见过，是“双六”…的说？",
 			typewriter = {
@@ -527,11 +527,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "诶？这个不是“大富翁”的棋盘嘛！",
 			typewriter = {
 				speed = 0.05,
@@ -543,8 +543,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -553,10 +553,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
 			dir = 1,
 			actor = 101173,
 			actorName = "抚顺&拉菲&{namecode:6}",
@@ -588,8 +588,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 501041,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那、那要不要大家一起玩这个，鞭炮什么的就——",
 			typewriter = {
@@ -602,11 +602,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那就做完鞭炮以后再一起来玩这个吧！嘿嘿，游戏我可是很擅长的呢～",
 			typewriter = {
 				speed = 0.05,
@@ -618,8 +618,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -628,10 +628,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
 			actor = 101173,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "拉菲&{namecode:6}",
@@ -657,9 +657,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 501041,
 			dir = 1,
 			blackBg = true,
-			actor = 501041,
 			nameColor = "#a9f548",
 			say = "诶，诶诶诶！？——",
 			typewriter = {
@@ -672,8 +672,8 @@ return {
 			},
 			action = {
 				{
-					y = 67.5,
 					type = "shake",
+					y = 67.5,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,

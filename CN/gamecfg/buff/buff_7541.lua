@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "传颂之物后排航空上升3%",
 	init_effect = "",
-	id = 7541,
+	name = "传颂之物后排航空上升3%",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "传颂之物后排航空上升3%",
 	stack = 1,
-	color = "yellow",
+	id = 7541,
 	icon = 7540,
 	last_effect = "",
 	effect_list = {

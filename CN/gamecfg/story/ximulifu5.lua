@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIMULIFU5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"祈愿与祝福之宴\n\n<size=45>五　享受宴会的方式</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_115",
+			actor = 403053,
 			side = 2,
+			bgName = "star_level_bg_115",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "bsm-5",
-			actor = 403053,
-			nameColor = "#a9f548",
 			say = "和姐姐、还有同伴走散了…吗",
+			bgm = "bsm-5",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -71,8 +71,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301263,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我和{namecode:31}姐姐还有{namecode:17}想追上她，结果却不小心在人群里走散了……",
 			typewriter = {
@@ -88,8 +88,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 403053,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这、这样吗…重樱…还真是很多充满个性的人呢",
 			typewriter = {
@@ -121,8 +121,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301263,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没、没关系吗？",
 			typewriter = {
@@ -135,8 +135,8 @@ return {
 			},
 			action = {
 				{
-					y = 20,
 					type = "shake",
+					y = 20,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -148,8 +148,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 403053,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没事，反正我也…还没找到享受宴会的方式——",
 			typewriter = {
@@ -162,15 +162,15 @@ return {
 			}
 		},
 		{
+			actor = 403053,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
-			actor = 403053,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那边的…是你的伙伴们吧",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -230,8 +230,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301152,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "喔？是斯佩带着{namecode:32}找到我们的吗？",
 			typewriter = {
@@ -295,8 +295,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301152,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不知道怎么享受宴会？这还不简单吗～",
 			typewriter = {
@@ -328,8 +328,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301152,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你看，像白鹰那几位那样跳跳舞，或者像{namecode:16}那家伙那样放开了吃～只要自己觉得开心不就好了嘛～",
 			typewriter = {
@@ -361,8 +361,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_115",
-			dir = 1,
 			actor = 301152,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嘿嘿，不客气——",
 			typewriter = {
@@ -375,14 +375,14 @@ return {
 			}
 		},
 		{
+			actor = 301152,
 			side = 2,
 			bgName = "star_level_bg_115",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			soundeffect = "event:/battle/firework",
-			actor = 301152,
-			nameColor = "#a9f548",
 			say = "啊，这声音难道是——",
+			soundeffect = "event:/battle/firework",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -393,8 +393,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 1,
 					dur = 0,
 					x = 0,

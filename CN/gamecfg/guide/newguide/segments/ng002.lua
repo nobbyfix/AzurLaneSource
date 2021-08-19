@@ -12,8 +12,8 @@ return {
 			style = {
 				text = "指挥官，军部为港区派遣了能够在水下作战的舰娘协助我们，快去迎接一下新的伙伴吧",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -38,6 +38,7 @@ return {
 			}
 		},
 		{
+			delay = 1,
 			ui = {
 				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",
 				fingerPos = {
@@ -66,8 +67,8 @@ return {
 			style = {
 				text = "欢迎港区的第一个潜艇！给我们的新伙伴编队吧，指挥官！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -95,8 +96,8 @@ return {
 			ui = {
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships/308031",
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -104,7 +105,7 @@ return {
 		},
 		{
 			ui = {
-				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button"
+				path = "/OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button"
 			}
 		},
 		{
@@ -112,8 +113,8 @@ return {
 			style = {
 				text = "这样我们的第一支潜艇舰队就诞生了！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -122,8 +123,8 @@ return {
 			style = {
 				text = "不过，为了应对敌方也有可能出现潜艇的情况，请指挥官为舰娘配备反潜设备",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -139,11 +140,11 @@ return {
 		},
 		{
 			ui = {
-				pathIndex = 0,
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -154,8 +155,8 @@ return {
 			style = {
 				text = "反潜设备的相关内容可以点击帮助按钮查看详细内容哦",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},

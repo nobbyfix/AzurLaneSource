@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GANGQUTAOLI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港区逃离大作战！\n\n<size=45>四　到达终点！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			actor = 202180,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 202180,
-			nameColor = "#a9f548",
 			say = "这里就是码头了。出击或是执行委托的时候大家会从这里出海哦",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -71,8 +71,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咳、咳咳！是叫小贝法吧，辛苦了！感谢",
 			typewriter = {
@@ -85,11 +85,11 @@ return {
 			}
 		},
 		{
+			actor = 202180,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 202180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "如果有别的需要的话，尽管吩咐我吧（鞠躬",
 			typewriter = {
 				speed = 0.05,
@@ -101,8 +101,8 @@ return {
 			},
 			action = {
 				{
-					y = -22.5,
 					type = "shake",
+					y = -22.5,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -114,8 +114,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 304060,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "那个，嗯…小贝法？",
 			typewriter = {
@@ -179,8 +179,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那就和我们一起逃离魔掌，前往碧蓝的大海吧！",
 			typewriter = {
@@ -260,8 +260,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "怎、怎么……",
 			typewriter = {
@@ -309,8 +309,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊……",
 			typewriter = {
@@ -323,9 +323,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "呼……——",
 			typewriter = {
 				speed = 0.05,
@@ -401,14 +401,14 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actor = 304060,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			hideOther = true,
+			actorName = "小齐柏林&小{namecode:71}",
 			dir = 1,
 			blackBg = true,
-			actor = 304060,
-			actorName = "小齐柏林&小{namecode:71}",
+			hideOther = true,
+			nameColor = "#a9f548",
 			say = "那些人是——！？",
 			subActors = {
 				{
@@ -428,8 +428,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

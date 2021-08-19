@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BIRUI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:71}的宴会\n\n<size=45>一 好心情的秘书舰</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -66,9 +66,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "来到指挥室时，秘书舰{namecode:71}已经在工作了",
 			typewriter = {
 				speed = 0.05,
@@ -92,11 +92,11 @@ return {
 			}
 		},
 		{
+			actor = 304020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 304020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不过想到平时指挥官的辛苦，就不由得想让您多休息个10分钟呢",
 			typewriter = {
 				speed = 0.05,
@@ -178,9 +178,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "不愧是研究过皇家海军，{namecode:71}泡的红茶比起皇家的也毫不逊色，非常好喝",
 			typewriter = {
 				speed = 0.05,
@@ -236,9 +236,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "无论是行程表还是报告书都整理的十分清楚，无可挑剔，不过——",
 			typewriter = {
 				speed = 0.05,

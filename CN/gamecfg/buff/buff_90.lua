@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "危机出现",
 	init_effect = "",
-	id = 90,
+	name = "危机出现",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 90,
 	icon = 90,
 	last_effect = "",
 	effect_list = {}

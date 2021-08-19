@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 11501,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11501,
 	icon = 11500,
 	last_effect = "",
 	effect_list = {
@@ -16,9 +16,9 @@ return {
 				"onCombo"
 			},
 			arg_list = {
-				lowerBound = 1,
 				skill_id = 11501,
 				time = 1,
+				lowerBound = 1,
 				index = {
 					1
 				}

@@ -1,7 +1,7 @@
 return {
-	time = 1,
-	name = "168必爆",
 	init_effect = "",
+	name = "168必爆",
+	time = 1,
 	picture = "",
 	desc = "使得非装备武器发射的子弹暴击率提高100%",
 	stack = 1,
@@ -15,8 +15,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 1,
 				attr = "cri",
+				number = 1,
 				index = {
 					-1
 				}

@@ -1,41 +1,59 @@
 PathFinding = class("PathFinding")
-PathFinding.PrioNormal = 1
-PathFinding.PrioObstacle = 1000
-PathFinding.PrioForbidden = 100000
+slot0 = PathFinding
+slot0.PrioNormal = 1
+slot0.PrioObstacle = 1000
+slot0.PrioForbidden = 1000000
 
-PathFinding.Ctor = function (slot0, slot1, slot2, slot3)
+function slot0.Ctor(slot0, slot1, slot2, slot3)
 	slot0.cells = slot1
 	slot0.rows = slot2
 	slot0.columns = slot3
 end
 
-PathFinding.Find = function (slot0, slot1, slot2)
+function slot0.Find(slot0, slot1, slot2)
+	slot1 = {
+		row = slot1.row,
+		column = slot1.column
+	}
 	slot2 = {
 		row = slot2.row,
 		column = slot2.column
 	}
 
-	if slot0.cells[({
-		row = slot1.row,
-		column = slot1.column
-	})["row"]][()["column"]] < 0 or slot0.cells[slot2.row][slot2.column] < 0 then
+	if slot0.cells[slot1.row][slot1.column] < 0 or slot0.cells[slot2.row][slot2.column] < 0 then
 		return 0, {}
 	else
 		return slot0:_Find(slot1, slot2)
 	end
 end
 
-PathFinding._Find = function (slot0, slot1, slot2)
-	slot3 = 1
-	slot4 = slot0.PrioForbidden
-	slot5 = {}
-	slot6 = {
+slot1 = {
+	{
+		1,
+		0
+	},
+	{
+		-1,
+		0
+	},
+	{
+		0,
+		1
+	},
+	{
+		0,
+		-1
+	}
+}
+
+function slot0._Find(slot0, slot1, slot2)
+	slot3 = uv0.PrioForbidden
+	slot4 = {}
+	slot5 = {
 		slot1
 	}
+	slot6 = {}
 	slot7 = {
-		slot1
-	}
-	slot8 = {
 		[slot1.row] = {
 			[slot1.column] = {
 				priority = 0,
@@ -44,83 +62,71 @@ PathFinding._Find = function (slot0, slot1, slot2)
 		}
 	}
 
-	while #slot6 > 0 do
-		if table.remove(slot6, 1).row == slot2.row and slot9.column == slot2.column then
-			slot4 = slot8[slot9.row][slot9.column].priority
-			slot5 = slot8[slot9.row][slot9.column].path
+	while #slot5 > 0 do
+		if table.remove(slot5, 1).row == slot2.row and slot8.column == slot2.column then
+			slot9 = slot7[slot8.row][slot8.column]
+			slot3 = slot9.priority
+			slot4 = slot9.path
 
 			break
 		end
 
-		table.insert(slot7, slot9)
-		_.each({
-			{
-				row = 1,
-				column = 0
-			},
-			{
-				row = -1,
-				column = 0
-			},
-			{
-				row = 0,
-				column = 1
-			},
-			{
-				row = 0,
-				column = -1
+		table.insert(slot6, slot8)
+		_.each(uv1, function (slot0)
+			slot1 = {
+				row = uv0.row + slot0[1],
+				column = uv0.column + slot0[2]
 			}
-		}, function (slot0)
-			slot0.row = slot0.row + slot0.row
-			slot0.column = slot0.column + slot0.column
 
-			if not (_.any(_.any, function (slot0)
-				return slot0.row == slot0.row and slot0.column == slot0.column
-			end) or _.any(slot2, function (slot0)
-				return slot0.row == slot0.row and slot0.column == slot0.column
-			end)) and slot0.row >= 0 and slot0.row < slot3.rows and slot0.column >= 0 and slot0.column < slot3.columns then
-				if slot4[slot0.row][slot0.column].priority + slot3.cells[slot0.row][slot0.column] < slot5.PrioObstacle then
-					slot4 = Clone(slot2)
+			if not (_.any(uv1, function (slot0)
+				return slot0.row == uv0.row and slot0.column == uv0.column
+			end) or _.any(uv2, function (slot0)
+				return slot0.row == uv0.row and slot0.column == uv0.column
+			end)) and slot1.row >= 0 and slot1.row < uv3.rows and slot1.column >= 0 and slot1.column < uv3.columns then
+				if uv4[uv0.row][uv0.column].priority + uv3.cells[slot1.row][slot1.column] < uv5.PrioObstacle then
+					slot5 = Clone(slot3)
 
-					table.insert(slot4.path, slot0)
+					table.insert(slot5.path, slot1)
 
-					slot4.priority = slot3
-					slot4[slot0.row] = slot4[slot0.row] or {}
-					slot4[slot0.row][slot0.column] = slot4
-					slot5 = 0
+					slot5.priority = slot4
+					uv4[slot1.row] = uv4[slot1.row] or {}
+					uv4[slot1.row][slot1.column] = slot5
+					slot6 = 0
 
-					for slot9 = #slot1, 1, -1 do
-						if slot4[slot1[slot9].row][slot1[slot9].column].priority <= slot4.priority then
-							slot5 = slot9
+					for slot10 = #uv1, 1, -1 do
+						slot11 = uv1[slot10]
+
+						if uv4[slot11.row][slot11.column].priority <= slot5.priority then
+							slot6 = slot10
 
 							break
 						end
 					end
 
-					table.insert(slot1, slot5 + 1, slot0)
+					table.insert(uv1, slot6 + 1, slot1)
 				else
-					slot6 = math.min(slot6, slot3)
+					uv6 = math.min(uv6, slot4)
 				end
 			end
 		end)
 	end
 
-	if slot0.PrioObstacle <= slot4 then
-		slot9 = 1000000
-		slot10 = slot0.PrioForbidden
+	if uv0.PrioObstacle <= slot3 then
+		slot8 = 1000000
+		slot9 = uv0.PrioForbidden
 
-		for slot14, slot15 in pairs(slot8) do
-			for slot19, slot20 in pairs(slot15) do
-				if slot9 > math.abs(slot2.row - slot14) + math.abs(slot2.column - slot19) or (slot21 == slot9 and slot20.priority < slot10) then
-					slot9 = slot21
-					slot10 = slot20.priority
-					slot5 = slot20.path
+		for slot13, slot14 in pairs(slot7) do
+			for slot18, slot19 in pairs(slot14) do
+				if slot8 > math.abs(slot2.row - slot13) + math.abs(slot2.column - slot18) or slot20 == slot8 and slot19.priority < slot9 then
+					slot8 = slot20
+					slot9 = slot19.priority
+					slot4 = slot19.path
 				end
 			end
 		end
 	end
 
-	return slot4, slot5
+	return slot3, slot4
 end
 
-return PathFinding
+return slot0

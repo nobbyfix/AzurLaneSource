@@ -6,13 +6,13 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/boom2",
-			side = 2,
-			dir = 1,
-			bgm = "battle-boss-4",
 			actor = 107060,
+			side = 2,
+			bgm = "battle-boss-4",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "结束了。",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -150,12 +150,12 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 0,
+			stopbgm = true,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actorName = "？？？",
 			say = "（走…快走…离开这里）",
 			effects = {
 				{
@@ -173,8 +173,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 0,
+			actorName = "？？？",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -189,8 +189,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -205,8 +205,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "？？？",
+			nameColor = "#a9f548",
 			side = 0,
 			dir = 1,
 			blackBg = true,
@@ -221,8 +221,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ff5c5c",
 			actorName = "？？？",
+			nameColor = "#ff5c5c",
 			side = 1,
 			dir = 1,
 			blackBg = true,
@@ -237,8 +237,8 @@ return {
 			}
 		},
 		{
-			actorName = "萨拉托加",
 			side = 2,
+			actorName = "萨拉托加",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -253,8 +253,8 @@ return {
 			}
 		},
 		{
-			actorName = "萨拉托加",
 			side = 2,
+			actorName = "萨拉托加",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -271,10 +271,10 @@ return {
 		{
 			actor = 107030,
 			side = 2,
-			dir = 1,
-			bgm = "battle-boss-4",
 			nameColor = "#a9f548",
 			say = "<size=70>指挥官！！！！！</size>",
+			dir = 1,
+			bgm = "battle-boss-4",
 			effects = {
 				{
 					active = false,
@@ -304,10 +304,10 @@ return {
 			}
 		},
 		{
+			actor = 105130,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 105130,
 			say = "居然能在这样的炮火声中昏睡过去，实在是非常人所能。",
 			effects = {
 				{
@@ -325,8 +325,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（脑海里的声音变得越来越清晰了……）",
 			typewriter = {
 				speed = 0.05,
@@ -338,8 +338,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -432,8 +432,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "唔……既视感、么……",
 			typewriter = {
 				speed = 0.05,

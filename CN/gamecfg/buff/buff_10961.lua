@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1500
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 400
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1600
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1600
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 460,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 460
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1700
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1700,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1700
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 520
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1900,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1900
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1900,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1900
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 600
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2000
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2000
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 660,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 660
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2100
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2100
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 720
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2300,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2300
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2300,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2300
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 800
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2500
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 860,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 860
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2700
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2700,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2700
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 920,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 920
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3000
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3000
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "属性变更",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "炮击、机动、雷击提升",
 	stack = 1,
@@ -362,8 +362,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1500
 			}
 		},
 		{
@@ -372,8 +372,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1500
 			}
 		},
 		{
@@ -382,8 +382,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 400,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 400
 			}
 		}
 	}

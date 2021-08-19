@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ZUBING3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"前进吧，{namecode:144}！\n\n<size=45>三 挥剑吧，{namecode:144}！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "某日，从学院准备返回指挥室时，听到了{namecode:144}的声音——",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日，从学院准备返回指挥室时，听到了{namecode:144}的声音——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			say = "接招！",
 			flashN = {
 				color = {
@@ -83,8 +83,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -93,12 +93,12 @@ return {
 			}
 		},
 		{
-			say = "很好，气势不错！",
+			actor = 303070,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 303070,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "很好，气势不错！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -167,8 +167,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -193,12 +193,12 @@ return {
 			}
 		},
 		{
-			say = "有破绽！",
+			actor = 303070,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 303070,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "有破绽！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -216,8 +216,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "糟了！",
 			typewriter = {
@@ -230,8 +230,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -240,9 +240,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "啪——",
 			typewriter = {
 				speed = 0.05,
@@ -250,15 +250,15 @@ return {
 			}
 		},
 		{
+			actor = 303070,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 303070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "今天的对练就到此为止吧。{namecode:144}，你进步了许多呢",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -286,10 +286,10 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "等等，{namecode:63}姐，我还可以继续——",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "等等，{namecode:63}姐，我还可以继续——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -323,8 +323,8 @@ return {
 			expression = 5,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "唔……我知道了。",
 			typewriter = {
@@ -388,8 +388,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "{namecode:64}姐，谢谢了！",
 			typewriter = {
@@ -421,8 +421,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "诶诶？你，你是怎么知道的——",
 			typewriter = {
@@ -435,8 +435,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -512,8 +512,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 303090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "噢噢！明白了！我也不想再给指挥官添麻烦了，我会加油的！",
 			typewriter = {

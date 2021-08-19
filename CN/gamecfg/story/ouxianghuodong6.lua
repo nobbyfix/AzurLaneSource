@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "第二日 港区·Live会场",
+			bgm = "azumaster-ins",
 			side = 2,
 			bgName = "star_level_bg_120",
 			dir = 1,
-			bgm = "azumaster-ins",
+			say = "第二日 港区·Live会场",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -38,11 +38,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不过在激动之余，也要注意合理的饮食与休息喵！毕竟现在活动才进入了第二日喵~",
 			typewriter = {
 				speed = 0.05,
@@ -54,8 +54,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -80,11 +80,11 @@ return {
 			}
 		},
 		{
+			actor = 107039,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "现场的朋友们，屏幕前的朋友们，大家早上好~这里是魔法少女萨拉托加！",
 			typewriter = {
 				speed = 0.05,
@@ -96,8 +96,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -154,11 +154,11 @@ return {
 			}
 		},
 		{
+			actor = 107039,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "而是来自铁血的正经系偶像Z23以及来自重樱的冷静系偶像{namecode:6}！",
 			typewriter = {
 				speed = 0.05,
@@ -170,8 +170,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -196,11 +196,11 @@ return {
 			}
 		},
 		{
+			actor = 107039,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 107039,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，观众席的列克星敦姐姐也拜托了！",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -270,14 +270,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 905030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "萨拉托加的发言后，敌我的“干劲”出现了差异",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -320,8 +320,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "没错，但是战斗和舞台演出都不只是这些",
 			typewriter = {
 				speed = 0.05,
@@ -336,8 +336,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			say = "谢菲尔德？",
 			typewriter = {
 				speed = 0.05,
@@ -367,8 +367,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 307100,
+			dir = 1,
 			say = "到底要这边做什么才好？",
 			typewriter = {
 				speed = 0.05,
@@ -383,8 +383,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "当你快被对面气势压制住的时候——",
 			typewriter = {
 				speed = 0.05,
@@ -396,8 +396,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "谢菲尔德用力扯了一下话筒线",
 			typewriter = {
 				speed = 0.05,
@@ -412,8 +412,8 @@ return {
 			expression = 5,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "不用勉强给自己鼓劲，只要把对面的热气吹冷场即可",
 			typewriter = {
 				speed = 0.05,

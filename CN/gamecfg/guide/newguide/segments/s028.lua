@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "指挥官请点击<color=#ff7d36>出击</color>",
 				mode = 2,
-				dir = 1,
 				posY = -42,
+				dir = 1,
 				posX = 243
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -30,24 +30,21 @@ return {
 			style = {
 				text = "敌方旗舰出现！点击目标继续战斗！",
 				mode = 2,
-				dir = 1,
 				posY = 171.89,
+				dir = 1,
 				posX = 32.25
 			},
 			baseui = {
-				pathIndex = -1,
-				path = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7"
+				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
+				pathIndex = 0
 			},
 			ui = {
-				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
-				delay = 0.8,
-				pathIndex = -1,
-				scale = 1.8,
 				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
-				pos = {
-					x = 0,
-					y = -4.4
-				},
+				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
+				isLevelPoint = true,
+				delay = 0.8,
+				scale = 1.8,
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -66,13 +63,13 @@ return {
 			style = {
 				text = "点击<color=#ff7d36>出击</color>进行战斗！",
 				mode = 2,
-				dir = 1,
 				posY = -68.93,
+				dir = 1,
 				posX = 241.87
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/ChapterPreCombatUI(Clone)/right/start",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

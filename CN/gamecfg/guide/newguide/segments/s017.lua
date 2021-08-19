@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "让我们前往<color=#ff7d36>船坞</color>",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/dockBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,16 +28,16 @@ return {
 			style = {
 				text = "选择一名角色，查看她的详细情况",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -56,13 +56,13 @@ return {
 			style = {
 				text = "点击<color=#ff7d36>装备</color>按钮，查看她当前使用的装备",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = -366.9
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/blur_panel/adapt/left_length/frame/root/equpiment_toggle",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -77,8 +77,8 @@ return {
 			style = {
 				text = "在这里能看到该角色所有武器的装备情况哦！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -87,13 +87,13 @@ return {
 			style = {
 				text = "点击<color=#ff7d36>装备栏</color>添加新装备",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 13.5
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/equipment_r_container(Adapt)/equipment_r_container/equipment_r/equipment/equipment_r2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -109,13 +109,13 @@ return {
 			style = {
 				text = "选择刚刚制作的新装备",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0.37
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/equipment_scrollview/equipment_grid",
+				pathIndex = 0,
 				triggerType = {
 					1
 				},
@@ -131,13 +131,13 @@ return {
 			style = {
 				text = "点击确认按钮",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/EquipmentInfoUI(Clone)/replace/actions/action_button_2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

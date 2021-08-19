@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ZHALA4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"彼岸的玫瑰\n\n<size=45>四 午后闲聊</size>",
@@ -19,16 +19,16 @@ return {
 		{
 			expression = 2,
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
 			actor = 603020,
 			nameColor = "#a9f548",
-			bgName = "bg_story_task",
 			say = "今天带了午餐过来哦！叫……“便当”什么的，是重樱的朋友教我做的。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -63,8 +63,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "中午就好好尝尝扎拉的手艺吧~",
 			typewriter = {
@@ -77,9 +77,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "就这样，中午的指挥室，我和扎拉两个人正在享用着便当。",
 			effects = {
 				{
@@ -88,8 +88,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -133,8 +133,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "欸，她们几乎每天都开茶会吗？皇家也有我搞不懂的地方呢……",
 			typewriter = {
@@ -150,8 +150,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "啊对了，你知道加富尔和凯撒吗？她们两个看起来总是在较劲，谁也不服谁。",
 			typewriter = {
@@ -167,8 +167,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过，她们两个的关系其实比谁都好呢。",
 			typewriter = {
@@ -181,9 +181,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "扎拉很健谈，好像什么话题都能够聊上一些。",
 			typewriter = {
 				speed = 0.05,
@@ -195,9 +195,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "中午的休息时间也应该就在这个轻松的氛围中结束吧",
 			typewriter = {
 				speed = 0.05,
@@ -228,8 +228,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "如果要从两个里面选一个的话。你是喜欢龙骑兵那样认真的孩子，还是特伦托那样温柔的小姐姐呢？",
 			typewriter = {
@@ -258,9 +258,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这，这是什么问题啊",
 			typewriter = {
 				speed = 0.05,
@@ -272,9 +272,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "突如其来的“超级难题”，让我陷入了思考",
 			typewriter = {
 				speed = 0.05,
@@ -300,12 +300,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "指挥官喜欢认真的类型吗？原来如此啊。",
 			typewriter = {
 				speed = 0.05,
@@ -320,9 +320,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 1,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "不过和认真的孩子相处的话，可能会遇到一点问题呢。比如说，嗯，约会的时候对方因为考虑衣服的问题而迟到了好几个小时",
 			typewriter = {
@@ -338,9 +338,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 1,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "然后中午的时候因为菜单的营养性两人争执了起来，浪费了几个小时。接着想要拍照留念的时候，纠结拍照的背景而又过去了好几个小时。",
 			typewriter = {
@@ -353,12 +353,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "最后约会就这样结束了。虽然过程不怎么有趣，但是两个人经历的时光确是实实在在的，可喜可贺呢。",
 			typewriter = {
 				speed = 0.05,
@@ -373,9 +373,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 1,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "先不管这些，尝尝我做的牛排吧。啊~",
 			typewriter = {
@@ -421,9 +421,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 2,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "指挥官，喜欢一切都被包容的那种感觉吗？",
 			typewriter = {
@@ -439,9 +439,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 2,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "是啊，谁不希望自己伤心，失落，迷惘的时候，有一个温柔的声音，告诉自己“什么都不用担心哦”呢？只要在那个人面前，自己就像个小孩子一样容易安心……",
 			typewriter = {
@@ -457,9 +457,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 2,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "只是，一直处在温柔当中的话，自己也会渐渐变得软弱起来，最后变成废柴也说不定呢",
 			typewriter = {
@@ -472,12 +472,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "“没关系的，即使指挥官变成了小孩子，只要一切都交给我就好了哦”特伦托小姐估计会这样说吧。所以，即使变成了废柴也没关系的",
 			typewriter = {
 				speed = 0.05,
@@ -489,12 +489,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "那么，废柴指挥官，姐姐来喂你吃吧？来，张开嘴，啊~",
 			typewriter = {
 				speed = 0.05,
@@ -539,9 +539,9 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 3,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "指挥官是个优秀的人呢。",
 			typewriter = {
@@ -584,12 +584,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 3,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "嗯哼？指挥官，看你的表情有些沮丧啊。该不会是……当真了吧？",
 			typewriter = {
 				speed = 0.05,
@@ -604,9 +604,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
+			actor = 603020,
 			dir = 1,
 			optionFlag = 3,
-			actor = 603020,
 			nameColor = "#a9f548",
 			say = "别放在心上啦。无论如何，扎拉都会兑现当初的承诺：为你的舰队带来胜利与荣光，以及作为秘书舰陪伴在你的身边。",
 			typewriter = {
@@ -619,12 +619,12 @@ return {
 			}
 		},
 		{
+			actor = 603020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 3,
-			actor = 603020,
-			nameColor = "#a9f548",
 			say = "好啦好啦，你那沮丧的样子要是给同伴们看到，会引起误会的。先尝一口我做的牛排吧，来，啊~~",
 			typewriter = {
 				speed = 0.05,
@@ -666,12 +666,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -699,8 +699,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 603020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "和指挥官聊天感觉真有趣呢。不过工作时间到了呢，下次有机会继续吧！",
 			typewriter = {
@@ -713,9 +713,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "总感觉自己一直在被扎拉牵着鼻子走，她永远一副游刃有余的样子。",
 			typewriter = {
 				speed = 0.05,

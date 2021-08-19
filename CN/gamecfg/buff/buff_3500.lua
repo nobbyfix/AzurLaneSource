@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "日常关卡技能无效,全弹强化",
 	init_effect = "",
-	id = 3500,
+	name = "日常关卡技能无效,全弹强化",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 3500,
 	icon = 3500,
 	last_effect = "",
 	effect_list = {
@@ -26,8 +26,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 0.8,
 				attr = "damageRatioBullet",
+				number = 0.8,
 				index = {
 					-1
 				}

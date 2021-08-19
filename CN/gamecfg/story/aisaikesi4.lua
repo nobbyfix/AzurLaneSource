@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"前辈与心结\n\n<size=45>四　Essex vs Enterprise</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "battle-1",
-			say = "演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,13 +46,13 @@ return {
 			}
 		},
 		{
+			actor = 107060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这就是最后的胜负了，能一路赢过来，不愧是我引以为傲的后辈！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -66,10 +66,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			say = "前辈才是，总是游刃有余的样子…",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "前辈才是，总是游刃有余的样子…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -116,11 +116,11 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			actor = 107090,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			hideOther = true,
 			actorName = "埃塞克斯&企业",
 			say = "<size=45>哈啊啊啊啊啊！！！</size>",
@@ -145,11 +145,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哦哦…燃起来了~",
 			effects = {
 				{
@@ -183,124 +183,124 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "看招！",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 107060,
-			say = "不错！但还是太嫩了！",
-			flashN = {
-				color = {
-					1,
-					1,
-					1
-				},
-				alpha = {
-					{
-						0,
-						1,
-						0.2
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.2
-					},
-					{
-						0,
-						1,
-						0.2,
-						0.4
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.6
-					}
-				}
-			},
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
-			actor = 107090,
-			say = "前辈的攻击我已经预料到了！接下来是我的反击时间！",
-			flashN = {
-				color = {
-					1,
-					1,
-					1
-				},
-				alpha = {
-					{
-						0,
-						1,
-						0.2
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.2
-					},
-					{
-						0,
-						1,
-						0.2,
-						0.4
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.6
-					}
-				}
-			},
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			say = "——！！",
-			bgName = "bg_story_nepu1",
 			soundeffect = "event:/battle/plane",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 107060,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 2,
+			dir = 1,
+			say = "不错！但还是太嫩了！",
+			soundeffect = "event:/battle/boom2",
+			flashN = {
+				color = {
+					1,
+					1,
+					1
+				},
+				alpha = {
+					{
+						0,
+						1,
+						0.2
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.2
+					},
+					{
+						0,
+						1,
+						0.2,
+						0.4
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.6
+					}
+				}
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 107090,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 2,
+			dir = 1,
+			say = "前辈的攻击我已经预料到了！接下来是我的反击时间！",
+			soundeffect = "event:/battle/boom2",
+			flashN = {
+				color = {
+					1,
+					1,
+					1
+				},
+				alpha = {
+					{
+						0,
+						1,
+						0.2
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.2
+					},
+					{
+						0,
+						1,
+						0.2,
+						0.4
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.6
+					}
+				}
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			soundeffect = "event:/battle/plane",
+			bgName = "bg_story_nepu1",
+			say = "——！！",
 			flashN = {
 				color = {
 					1,

@@ -1,14 +1,14 @@
 return {
-	mode = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU9",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			say = "同日13:50:00",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-boss-5",
+			say = "同日13:50:00",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -97,8 +97,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "……",
 			typewriter = {
@@ -114,8 +114,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 205029,
+			dir = 1,
 			actorName = "厌战",
 			say = "如果，收到的是红色信号的话，你准备怎么做呢",
 			typewriter = {

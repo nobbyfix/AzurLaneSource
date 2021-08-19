@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIANLANGXING3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"天狼星改造计划\n\n<size=45>三 女仆队的支援</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_task",
-			bgm = "story-1",
-			actor = 202120,
-			nameColor = "#a9f548",
 			say = "“为了避免她在宴会上的举止被人看出是女仆，需要让她对女仆应有的举止拥有清晰的认识——",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -91,9 +91,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "拜托了皇家女仆队的贝尔法斯特等人对天狼星进行指导。",
 			effects = {
 				{
@@ -162,8 +162,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 202200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那就拜托各位了。……为了主人……！",
 			typewriter = {
@@ -176,15 +176,15 @@ return {
 			}
 		},
 		{
+			actor = 202220,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202220,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "礼仪举止也得一并教呢",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -225,15 +225,15 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……指挥室的扫除不要先擦地板，先整理柜子比较好做",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -258,10 +258,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
 			actor = 202200,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "天狼星&小贝法",
@@ -284,15 +284,15 @@ return {
 			}
 		},
 		{
+			actor = 203030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 203030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "emmm…肯特选手好像没什么可教的？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -320,8 +320,8 @@ return {
 			expression = 7,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 203040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我可以教你一点不会被女仆长发现的摸鱼方法哦？",
 			typewriter = {
@@ -350,9 +350,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……………………",
 			typewriter = {
 				speed = 0.05,
@@ -367,8 +367,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 202200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……深深感受到了自己的不足……",
 			typewriter = {

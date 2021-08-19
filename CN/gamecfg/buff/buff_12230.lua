@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "天真烂漫的少女",
 	init_effect = "",
-	id = 12230,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "防空炮开火时有30%概率触发，自身防空提高$1，持续5秒",
 	stack = 1,
-	color = "blue",
+	id = 12230,
 	icon = 12230,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				rant = 3000,
-				skill_id = 12230,
 				target = "TargetSelf",
+				skill_id = 12230,
 				time = 5
 			}
 		},

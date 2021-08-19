@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "轰——",
-			side = 2,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
 			bgm = "battle-boss-tiancheng",
+			dir = 1,
+			say = "轰——",
 			flashN = {
 				color = {
 					1,
@@ -57,8 +57,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "……呜！",
 			typewriter = {
 				speed = 0.05,
@@ -101,8 +101,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "没事，只是擦伤而已…没想到这家伙还设置有自爆机能…失策了",
 			typewriter = {
 				speed = 0.05,
@@ -147,8 +147,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "下棋归下棋。如果到了实战中，自己还躲在后方远远看着下属们因为自己的决策而牺牲….",
 			typewriter = {
 				speed = 0.05,
@@ -175,8 +175,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = -1,
+			side = 2,
 			say = "说完，{namecode:161}用力抹去了头上流下的汗水，扯下了因为爆炸损坏的衣袖。",
 			typewriter = {
 				speed = 0.05,
@@ -191,8 +191,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "呵呵，看，我们这不就找到收获了么？",
 			typewriter = {
 				speed = 0.05,
@@ -204,8 +204,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = -1,
+			side = 2,
 			say = "{namecode:161}指向远方海面上漂浮的，曾经属于{namecode:92}身上的衣服残片。",
 			typewriter = {
 				speed = 0.05,
@@ -235,8 +235,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "真是个…笨蛋",
 			typewriter = {
 				speed = 0.05,

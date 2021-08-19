@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U556STORY3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"小小的骑士誓言！\n\n<size=45>三　指挥官，找到你啦！</size>",
@@ -20,8 +20,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对，对不起啦……",
 			effects = {
@@ -39,8 +39,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "文件我确确实实交给{namecode:98}小姐了！但是，回来的时候，我见到U81她们在玩……",
 			typewriter = {
@@ -56,8 +56,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "然后……我就加入了她们，忘记了还在工作时间中……",
 			typewriter = {
@@ -73,8 +73,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "下次一定不会再犯这样的错误了！！",
 			typewriter = {
@@ -87,8 +87,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -100,8 +100,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "对了对了！明天是休息日，指挥官也一起来玩嘛！总是工作的话，身体会坏掉的！",
 			typewriter = {
@@ -114,9 +114,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "于是在U556奇怪的道歉兼邀请下，来到了今天U81举办的捉迷藏大会现场---",
 			effects = {
 				{
@@ -134,13 +134,13 @@ return {
 			}
 		},
 		{
+			actor = 408010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			bgm = "story-1",
-			actor = 408010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那就由抽签来决定第一个做“鬼”的人吧！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -154,8 +154,8 @@ return {
 			actor = 408040,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "一，二——",
 			subActors = {
@@ -185,8 +185,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哦哦，是我！",
 			typewriter = {
@@ -202,8 +202,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼，就等着我把你们都找出来吧！60、59……",
 			typewriter = {
@@ -216,9 +216,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "是时候思考一下藏身之处了。",
 			typewriter = {
 				speed = 0.05,
@@ -259,14 +259,14 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			optionFlag = 1,
 			say = "回到办公室，把门轻轻地关严。虽然规则不允许锁门，不过这样已经足够了。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -396,14 +396,14 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_105",
 			side = 2,
+			bgName = "star_level_bg_105",
 			dir = 1,
 			optionFlag = 2,
 			say = "…………居然是……海里？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -557,9 +557,9 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			actor = 408040,
 			dir = 1,
 			optionFlag = 3,
-			actor = 408040,
 			nameColor = "#a9f548",
 			say = "……",
 			typewriter = {
@@ -572,12 +572,12 @@ return {
 			}
 		},
 		{
+			actor = 408040,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 3,
-			actor = 408040,
-			nameColor = "#a9f548",
 			say = "指挥官？是以为我看不见吗？",
 			typewriter = {
 				speed = 0.05,
@@ -604,13 +604,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_outdoor",
 			say = "不知不觉，第一轮捉迷藏迎来了结束，大家又都聚到一起。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -654,8 +654,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "还不是因为你们都藏在些那么难找的地方啦！",
 			typewriter = {
@@ -668,8 +668,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -697,8 +697,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不过，为什么U556只找到了指挥官呢？而且是一下子就找到了~",
 			typewriter = {
@@ -714,8 +714,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "难道说，你们两位的关系已经到了心有灵犀的地步了吗？",
 			typewriter = {

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XUKUFU4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"絮库夫的一天\n\n<size=45>四 午饭中的絮库夫</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·食堂",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·食堂",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指挥官，给我肉丸子，还有小章鱼，还有这个……哦，这个好像也不错欸~",
 			typewriter = {
 				speed = 0.05,
@@ -119,8 +119,8 @@ return {
 			expression = "1",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "絮库夫，今天也和指挥官一起吃午饭吗，关系真好呢。",
 			typewriter = {
@@ -152,8 +152,8 @@ return {
 			expression = "2",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呵呵，是呢，对了，今天我做了一些点心哦，想吃的话记得来我这边。",
 			typewriter = {
@@ -166,11 +166,11 @@ return {
 			}
 		},
 		{
+			actor = 808010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 808010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "真的吗，太好了~指挥官，下班之后我们一起去敦刻尔克那里吃点心吧。",
 			typewriter = {
 				speed = 0.05,
@@ -219,9 +219,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -304,9 +304,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "确实，絮库夫虽然平常看起来那副样子…",
 			typewriter = {
 				speed = 0.05,
@@ -314,9 +314,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "但是无论是战斗还是任务上都没有偷懒，反而是受到嘉奖的次数更多",
 			typewriter = {
 				speed = 0.05,

@@ -1,18 +1,18 @@
 return {
-	fadeType = 1,
+	id = "TIEXUEYUYINFU9",
 	mode = 2,
 	once = true,
-	id = "TIEXUEYUYINFU9",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 2,
 			side = 0,
-			dir = -1,
-			bgm = "bsm-3",
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
 			say = "该结束这场无聊的闹剧了！",
+			bgm = "bsm-3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,9 +26,9 @@ return {
 			actor = 207020,
 			nameColor = "#a9f548",
 			side = 1,
+			soundeffect = "event:/battle/plane",
 			dir = 1,
 			say = "818中队，继续进攻！",
-			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -42,8 +42,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "啧…那个角度…是死角！",
 			typewriter = {
 				speed = 0.05,
@@ -58,8 +58,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "回避…来不及了",
 			typewriter = {
 				speed = 0.05,
@@ -73,11 +73,11 @@ return {
 		{
 			expression = 4,
 			side = 0,
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
 			say = "左侧转向舵失灵……不，是卡住了吗？",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -188,8 +188,8 @@ return {
 			actor = 405010,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			stopbgm = true,
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -204,8 +204,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -219,11 +219,11 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			bgm = "bsm-8",
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "俾斯麦号通告司令部",
+			bgm = "bsm-8",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -237,8 +237,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "莱茵行动已经失败",
 			typewriter = {
 				speed = 0.05,
@@ -253,8 +253,8 @@ return {
 			actor = 405010,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "我舰已失去行动能力",
 			typewriter = {
 				speed = 0.05,
@@ -268,11 +268,11 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
-			soundeffect = "event:/cannon-main-prepared",
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "但火炮犹在",
+			soundeffect = "event:/cannon-main-prepared",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -301,8 +301,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "铁血高于一切",
 			typewriter = {
 				speed = 0.05,
@@ -317,8 +317,8 @@ return {
 			expression = 4,
 			side = 2,
 			actor = 405010,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "Eisen und Blut über alles！",
 			effects = {
 				{

@@ -1,19 +1,21 @@
-slot0 = class("HaloAttachmentView")
+slot0 = class("HaloAttachmentView", import("view.level.cell.LevelCellView"))
 
-slot0.Ctor = function (slot0, slot1, slot2, slot3)
-	slot0.tf = slot1
+function slot0.Ctor(slot0, slot1, slot2, slot3)
+	uv0.super.Ctor(slot0)
+
+	slot0.go = slot1
+	slot0.tf = tf(slot1)
 	slot0.line = {
 		row = slot2,
 		column = slot3
 	}
+
+	slot0:OverrideCanvas()
+	slot0:ResetCanvasOrder()
 end
 
-slot0.getLine = function (slot0)
-	return slot0.line
-end
-
-slot0.getOrder = function (slot0)
-	return 4
+function slot0.GetOrder(slot0)
+	return ChapterConst.CellPriorityUpperEffect
 end
 
 return slot0

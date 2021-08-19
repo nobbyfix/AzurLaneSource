@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG8",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 401236,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "azumaster-ins",
 			dir = 1,
 			say = "{namecode:6}，这边！",
-			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -38,8 +38,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -81,8 +81,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 401236,
+			dir = 1,
 			say = "啊，是有这么回事！咳咳！",
 			typewriter = {
 				speed = 0.05,
@@ -109,8 +109,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -137,8 +137,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			say = "那啥，这是Z35还是Z36教你的吧",
 			typewriter = {
 				speed = 0.05,
@@ -153,8 +153,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 401236,
+			dir = 1,
 			say = "呜！？",
 			typewriter = {
 				speed = 0.05,
@@ -169,8 +169,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 301057,
+			dir = 1,
 			say = "萨拉托加老师，作战失败了",
 			typewriter = {
 				speed = 0.05,
@@ -185,8 +185,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			say = "轮不到这边出手了，本想说彻底让场面冷掉的",
 			typewriter = {
 				speed = 0.05,
@@ -216,8 +216,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 401236,
+			dir = 1,
 			say = "对不起……",
 			typewriter = {
 				speed = 0.05,
@@ -274,8 +274,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

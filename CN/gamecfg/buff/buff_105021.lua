@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 610,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 610
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 830,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 830
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 940
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1050
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1160
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1270
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1380
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,

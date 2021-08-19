@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAO2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"来自{namecode:146}的温柔\n\n<size=45>二　喜欢女孩子？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "和作为秘书舰的{namecode:146}来视察舰队的日常训练。",
 			typewriter = {
 				speed = 0.05,
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			say = "和{namecode:146}站在一起，树荫和海风带来了凉意。",
 			typewriter = {
 				speed = 0.05,
@@ -146,11 +146,11 @@ return {
 			}
 		},
 		{
+			actor = 301640,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301640,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊……并不是看大家辛苦才高兴的啦！{namecode:146}只是喜欢可爱的女孩子而已啦~",
 			typewriter = {
 				speed = 0.05,
@@ -162,8 +162,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -172,15 +172,15 @@ return {
 			}
 		},
 		{
+			say = "傍晚时分，一天的训练结束了。",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-1",
-			say = "傍晚时分，一天的训练结束了。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -201,9 +201,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "大家都开始返回各自的生活区。而{namecode:146}却提议“继续散散步吧”",
 			typewriter = {
 				speed = 0.05,
@@ -259,9 +259,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "听到这边的回复，{namecode:146}立刻跑向刚刚结束训练的众人。",
 			typewriter = {
 				speed = 0.05,

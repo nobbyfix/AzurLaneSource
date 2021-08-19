@@ -1,14 +1,14 @@
 return {
 	fadeOut = 2,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"记住，不要轻易去接触那些凡人，这样会有失你的神格",
@@ -25,8 +25,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "……",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,10 +35,10 @@ return {
 		{
 			actor = 305050,
 			side = 2,
-			say = "{namecode:75}，快帮我看看，等会用这样的站姿如何？",
+			bgm = "story-2",
 			dir = 1,
 			blackBg = true,
-			bgm = "story-2",
+			say = "{namecode:75}，快帮我看看，等会用这样的站姿如何？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -51,9 +51,9 @@ return {
 		{
 			actor = 305060,
 			side = 0,
-			say = "恩…有点死板呢，不如试试把两手伸直来看看？",
 			dir = 1,
 			blackBg = true,
+			say = "恩…有点死板呢，不如试试把两手伸直来看看？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -128,8 +128,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "少女露出了一个天真无邪的笑容",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

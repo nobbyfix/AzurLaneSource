@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SANLICHUANMO4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"{namecode:82}前辈的收藏大公开\n\n<size=45>四　新生{namecode:82}博物馆，开放！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 307060,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 307060,
-			nameColor = "#a9f548",
 			say = "呜哇…这就是传说中的——",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,8 +52,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 2,
 					dur = 0.2,
 					x = 0,
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "重建的收藏室！",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "重建的收藏室！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -82,8 +82,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -92,8 +92,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
 			side = 2,
+			actorName = "{namecode:82}",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -108,12 +108,12 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:71}",
 			side = 0,
+			actorName = "{namecode:71}",
 			bgName = "bg_sanli_cg_1",
-			say = "重建的速度前所未有的快……今晚宴会的规模也升级吧！",
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "重建的速度前所未有的快……今晚宴会的规模也升级吧！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -128,8 +128,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:95}",
 			side = 2,
+			actorName = "{namecode:95}",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -144,8 +144,8 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:82}",
 			side = 2,
+			actorName = "{namecode:82}",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -176,12 +176,12 @@ return {
 			}
 		},
 		{
-			say = "这是高兴的泪水呀，小{namecode:33}",
+			actor = 305110,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "这是高兴的泪水呀，小{namecode:33}",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -244,12 +244,12 @@ return {
 			}
 		},
 		{
-			say = "好啦，各位……往日的荣光已成过去，今天也要为了新时代而倍加努力！",
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "好啦，各位……往日的荣光已成过去，今天也要为了新时代而倍加努力！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -276,11 +276,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "就让我来为这博物馆正式揭幕吧——我按！",
 			effects = {
 				{
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom1",
 			side = 2,
 			bgName = "bg_story_task",
-			say = "轰隆隆……",
 			dir = 1,
-			soundeffect = "event:/battle/boom1",
+			say = "轰隆隆……",
 			effects = {
 				{
 					active = false,
@@ -320,11 +320,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "为……为什么按下按钮后，屋子又开始震动了！",
 			typewriter = {
 				speed = 0.05,
@@ -336,8 +336,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -346,12 +346,12 @@ return {
 			}
 		},
 		{
-			say = "屋子……屋子又要崩坏了？",
+			actor = 301320,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "屋子……屋子又要崩坏了？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -398,12 +398,12 @@ return {
 			}
 		},
 		{
-			say = "那是…新的收藏柜？",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "那是…新的收藏柜？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -418,9 +418,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "崭新的收藏柜里摆放着的是——",
 			typewriter = {
 				speed = 0.05,
@@ -428,11 +428,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "那是…船模？啊，是{namecode:82}前辈的船模！",
 			typewriter = {
 				speed = 0.05,
@@ -444,8 +444,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.7,
 					dur = 0.2,
 					x = 0,
@@ -454,11 +454,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "咦？！这个竟然是秘密收藏的按钮吗！！",
 			typewriter = {
 				speed = 0.05,
@@ -470,8 +470,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -512,11 +512,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "这种把丢脸的一面展示在后辈面前的感觉…难道就是所谓的“羞耻play”吗！？",
 			typewriter = {
 				speed = 0.05,
@@ -528,8 +528,8 @@ return {
 			},
 			action = {
 				{
-					y = -75,
 					type = "move",
+					y = -75,
 					delay = 1.2,
 					dur = 0.3,
 					x = 0
@@ -553,12 +553,12 @@ return {
 			}
 		},
 		{
-			say = "哇~{namecode:82}前辈的模型，好帅！",
+			actor = 301320,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "哇~{namecode:82}前辈的模型，好帅！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

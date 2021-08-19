@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GUANGRONG2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"荣光的间奏曲\n\n<size=45>二 演习海域上</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			bgm = "level",
+			say = "港区近海·演习场",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
-			say = "港区近海·演习场",
+			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -44,11 +44,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "了解！擅长空母运用的白鹰机动队的各位，请务必让我学习一下！",
 			typewriter = {
 				speed = 0.05,
@@ -60,8 +60,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -69,11 +69,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "好啊好啊！就让我萨拉托加给你表演一下什么叫空母运用♪",
 			typewriter = {
 				speed = 0.05,
@@ -85,8 +85,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					number = 2
@@ -94,12 +94,12 @@ return {
 			}
 		},
 		{
-			say = "呵呵，萨拉老师还是一如既往呢～",
+			actor = 207030,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "呵呵，萨拉老师还是一如既往呢～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -130,15 +130,15 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "虽然舰载机的搭载数量稍逊一筹，用我的38.1cm炮来场炮击战的话……咦？我不是空母吗……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -163,11 +163,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "诶，我怎么一个人先冲出来了啊！",
 			typewriter = {
 				speed = 0.05,
@@ -179,8 +179,8 @@ return {
 			},
 			action = {
 				{
-					y = 37.5,
 					type = "shake",
+					y = 37.5,
 					delay = 0,
 					dur = 0.1,
 					number = 1
@@ -188,12 +188,12 @@ return {
 			}
 		},
 		{
-			say = "光荣，你跑得太快了啊！",
+			actor = 207030,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "光荣，你跑得太快了啊！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -208,13 +208,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_nepu1",
 			say = "几小时后",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -267,12 +267,12 @@ return {
 			}
 		},
 		{
-			say = "没、没事！总算把目标舰都击沉了！",
+			actor = 207060,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "没、没事！总算把目标舰都击沉了！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "抱歉，给各位添麻烦了……",
 			typewriter = {
 				speed = 0.05,
@@ -319,8 +319,8 @@ return {
 			},
 			action = {
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 0,
 					dur = 0.5,
 					number = 1
@@ -328,12 +328,12 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 207060,
-			nameColor = "#a9f548",
 			say = "这么说来，皇家方舟还没到吗？她和我说过今天晚些时候会来参加的……",
 			typewriter = {
 				speed = 0.05,

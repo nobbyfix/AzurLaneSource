@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>二 黄金的友谊？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "爱丁堡似乎找埃米尔有事的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -89,8 +89,8 @@ return {
 			actor = 202110,
 			side = 0,
 			bgName = "bg_story_task",
-			say = "小埃米尔的话，三两下就能搞定啦～我的眼光是绝对不会出错的",
 			dir = 1,
+			say = "小埃米尔的话，三两下就能搞定啦～我的眼光是绝对不会出错的",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -105,9 +105,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "两人不知道什么时候关系变得非常好了",
 			typewriter = {
 				speed = 0.05,
@@ -160,13 +160,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "过了一段时间，秘书舰的工作差不多结束了",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -382,9 +382,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,

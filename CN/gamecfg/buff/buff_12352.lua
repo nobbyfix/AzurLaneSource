@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 600
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 660,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 660
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 720
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 800
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 860,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 860
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 920,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 920
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1000
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1060,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1060
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1120,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1120
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1200
 				}
 			}
 		}
 	},
+	time = 10,
 	name = "倔强",
 	init_effect = "jinengchufared",
-	id = 12351,
-	time = 10,
+	color = "red",
 	picture = "",
 	desc = "防空提高",
 	stack = 1,
-	color = "red",
+	id = 12351,
 	icon = 12350,
 	last_effect = "",
 	blink = {

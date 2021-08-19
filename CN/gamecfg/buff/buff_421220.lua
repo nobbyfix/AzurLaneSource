@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "巡洋-指挥-雷击II",
 	init_effect = "",
-	id = 421220,
+	name = "巡洋-指挥-雷击II",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 421220,
 	icon = 421220,
 	last_effect = "",
 	effect_list = {

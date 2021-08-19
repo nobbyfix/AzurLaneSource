@@ -1,7 +1,7 @@
 PLATFORM_LOCAL = "0"
 EPILOGUE_SKIPPABLE = false
 BATTLE_DEBUG = false
+BATTLE_DEFAULT_UNIT_DETAIL = false
 SFX_TEST = false
-GUIDE_WROLD = false
-
-return
+GUIDE_WROLD = true
+QTEGAME_DEBUG = false

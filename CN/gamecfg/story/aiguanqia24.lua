@@ -1,16 +1,16 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA24",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
+			say = "港区·宿舍",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-1",
-			say = "港区·宿舍",
 			flashin = {
 				delay = 1,
 				dur = 1,
@@ -33,8 +33,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这次的黑幕？",
 			typewriter = {
@@ -82,8 +82,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "说起来好像是这样，不过我之前也中过好几次病毒，因为太常遇到了反而每次都搞不明白是为什么呢～",
 			typewriter = {
@@ -131,8 +131,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "征服世界！？确实只要操纵我，想要征服世界也不是不可能……？不不不，怎么想都不可能啦！",
 			typewriter = {
@@ -180,8 +180,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "真是的～！大家都拿我开玩笑～！变得那么大会有各种各样的问题的啦！",
 			typewriter = {
@@ -213,8 +213,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "说到底，这次肯定也是塞壬搞的鬼吧！……开玩笑的，怎么可能每次都这么凑巧嘛，啊哈哈哈哈",
 			typewriter = {
@@ -227,8 +227,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -237,11 +237,11 @@ return {
 			}
 		},
 		{
+			hideOther = true,
 			side = 2,
 			bgName = "bg_story_room",
-			hideOther = true,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			actor = 101170,
 			actorName = "众人",
 			say = "………！",
@@ -300,11 +300,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "果、果然不至于这么……对吧？Z23？",
 			typewriter = {
 				speed = 0.05,
@@ -316,8 +316,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -326,11 +326,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没、没错……就算是塞壬也不可能干这种蠢事才对……",
 			typewriter = {
 				speed = 0.05,
@@ -342,8 +342,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -384,8 +384,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			bgName = "bg_story_room",
 			dir = 1,
 			say = "……一切的真相，恐怕只有神才知道了",

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"万能看板娘{namecode:20}\n\n<size=45>六　看板娘的真心·上</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·医务室",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·医务室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "医务室里，{namecode:20}安静地躺在一边的病床上。",
 			typewriter = {
 				speed = 0.05,
@@ -72,11 +72,11 @@ return {
 			}
 		},
 		{
-			dir = -1,
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 312010,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "果然吗……",
 			typewriter = {
@@ -105,11 +105,11 @@ return {
 			}
 		},
 		{
-			dir = -1,
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 312010,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "要是能早点发现的话……",
 			typewriter = {
@@ -154,12 +154,12 @@ return {
 			}
 		},
 		{
-			say = "啰嗦，蠢猫。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "啰嗦，蠢猫。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.6,
 					dur = 0.1,
 					x = 0,
@@ -184,11 +184,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "病人就乖乖躺着喵！{namecode:20}你就是太逞强了喵！",
 			typewriter = {
 				speed = 0.05,
@@ -200,8 +200,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -242,9 +242,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "从病床上坐起来的{namecode:20}脸上依然面无表情，不过相比平时，要显得柔弱不少。",
 			typewriter = {
 				speed = 0.05,
@@ -268,12 +268,12 @@ return {
 			}
 		},
 		{
-			say = "唯独不想被你说。",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "唯独不想被你说。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -288,11 +288,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_room",
 			withoutActorName = true,
-			actor = 301180,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "看到{namecode:20}没有事，稍微安心了一些，不过，果然这样下去不是办法。",
 			typewriter = {
@@ -343,9 +343,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "咦，为什么连{namecode:98}都表达了反对意见。",
 			typewriter = {
 				speed = 0.05,
@@ -353,12 +353,12 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301180,
-			nameColor = "#a9f548",
 			say = "哈……真是个笨蛋呢。",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMA1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"半人马与港区的“前辈”们\n\n<size=45>一　尊敬的前辈</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·港口",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·港口",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,13 +62,13 @@ return {
 			}
 		},
 		{
+			actor = 206010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 206010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "我的回合，抽卡！",
+			soundeffect = "event:/battle/plane",
 			effects = {
 				{
 					active = true,
@@ -85,9 +85,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "竞技神今天也是状态绝佳的样子。",
 			effects = {
 				{
@@ -101,13 +101,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_outdoor",
 			say = "……那边墙后面似乎有人在探头探脑的样子。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -137,8 +137,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "啊，指、指挥官，你好！",
 			typewriter = {
@@ -151,8 +151,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -164,8 +164,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "那个，我没在做什么可疑的事哦！只是……",
 			typewriter = {
@@ -178,9 +178,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "半人马的视线飘向不远处的竞技神。",
 			typewriter = {
 				speed = 0.05,
@@ -223,8 +223,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "指挥官能帮我……",
 			typewriter = {
@@ -237,8 +237,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -253,11 +253,11 @@ return {
 			}
 		},
 		{
+			actor = 206040,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 206040,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "欸欸欸！！！",
 			typewriter = {
 				speed = 0.05,
@@ -269,8 +269,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -298,10 +298,10 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			say = "那个，竞技神大前辈……",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "那个，竞技神大前辈……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -335,8 +335,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "是、是的！",
 			typewriter = {
@@ -349,8 +349,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -359,9 +359,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "半人马稍微松了一口气的样子。",
 			typewriter = {
 				speed = 0.05,
@@ -404,8 +404,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "欸，欸，欸？",
 			subActors = {
@@ -426,16 +426,16 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
 					number = 2
 				},
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.5,
 					dur = 1,
 					x = 2250
@@ -443,9 +443,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "半人马被竞技神拖走了。",
 			typewriter = {
 				speed = 0.05,

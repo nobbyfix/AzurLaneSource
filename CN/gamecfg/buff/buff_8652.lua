@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "boss白上吹雪",
 	init_effect = "",
-	id = 8652,
+	name = "boss白上吹雪",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8652,
 	icon = 8652,
 	last_effect = "hololive_bossbuff",
 	effect_list = {

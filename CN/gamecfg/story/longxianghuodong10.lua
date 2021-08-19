@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 306060,
 			nameColor = "#a9f548",
 			side = 1,
+			bgm = "battle-boss-2",
 			dir = 1,
 			say = "咕呜…还是力量不足啊……",
-			bgm = "battle-boss-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,8 +26,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 306060,
+			dir = 1,
 			say = "不过这样一来，也算是…帮上大家的忙了吧……",
 			typewriter = {
 				speed = 0.05,
@@ -54,8 +54,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0.3,
 					dur = 1,
 					x = 2250
@@ -63,14 +63,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 103060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "赢了……吗？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -159,14 +159,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 307050,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:90}最后…还是输掉了吗…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -240,12 +240,12 @@ return {
 			}
 		},
 		{
-			side = 0,
-			dir = 1,
-			bgm = "battle-boss-2",
 			actor = 307060,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "等等，姐姐！{namecode:39}那边传来情报，她带领的舰队突然遇袭，运输计划受阻！",
+			dir = 1,
+			bgm = "battle-boss-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -256,8 +256,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -281,8 +281,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

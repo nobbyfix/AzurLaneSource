@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JUNHEBOSS3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"穿越彼方的水线\n\n<size=45>三　领导能力</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu2",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "cw-story",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "被干掉啦——！",
 			typewriter = {
 				speed = 0.05,
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -79,8 +79,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "到此为止了吗……{namecode:22}，后撤至我方防卫线！之后就交给我和{namecode:97}吧！",
 			typewriter = {
@@ -96,8 +96,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "真是会使唤人……！{namecode:22}，趁现在！",
 			typewriter = {
@@ -128,14 +128,14 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_nepu2",
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "好不容易撑过了指挥官舰队的猛攻……不过这样下去战况只会慢慢恶化……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -179,8 +179,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没办法的事…以指挥官率领的舰队战力，一旦认真起来来，我方就算加上演习补正之类的，也很难撑得住吧",
 			typewriter = {
@@ -228,8 +228,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "的确，战况如此一边倒的话，大家的士气都会受到影响……但就算如此，也不能去使用{namecode:22}所说的那种赖招啊……",
 			typewriter = {
@@ -245,8 +245,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……………………",
 			typewriter = {
@@ -275,15 +275,15 @@ return {
 			}
 		},
 		{
+			actor = 900200,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "{namecode:97}，{namecode:22}，我有个策略。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -327,8 +327,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这种状况下还有什么逆转的方法吗？",
 			typewriter = {
@@ -376,8 +376,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不是让{namecode:22}去突击，而是将指挥官引诱到我方大本营，然后全军一起将其击破。",
 			typewriter = {
@@ -393,8 +393,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "炮击、轰炸，怎样都好，总之就是要将对方的旗舰击溃！听明白了吧！",
 			typewriter = {
@@ -426,8 +426,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哎呀？我本以为是{namecode:97}的话，一定能确实地找出来呢……索敌就交给你咯？",
 			typewriter = {
@@ -443,8 +443,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 307070,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "！？……嘴巴挺能说的嘛{namecode:175}，{namecode:97}今天就做给你看！",
 			typewriter = {
@@ -460,8 +460,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "十分感谢。详细的指示之后再说，现在注意不要指挥官发现我们的计划",
 			typewriter = {
@@ -474,12 +474,12 @@ return {
 			}
 		},
 		{
+			actor = 900200,
 			side = 2,
 			bgName = "bg_story_nepu2",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900200,
-			nameColor = "#a9f548",
 			say = "——{namecode:175}舰队，出击！",
 			typewriter = {
 				speed = 0.05,

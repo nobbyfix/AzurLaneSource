@@ -1,17 +1,17 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI11",
+	once = true,
+	fadeType = 1,
 	continueBgm = true,
 	occlusion = 2,
 	scripts = {
 		{
-			side = 2,
-			say = "卡萨布兰卡和土伦的悲剧已经过去了，一批伟大的圣教骑士们为了贯彻自己的信仰和誓言，选择了牺牲",
 			dir = 1,
+			side = 2,
 			bgm = "level-french2",
+			say = "卡萨布兰卡和土伦的悲剧已经过去了，一批伟大的圣教骑士们为了贯彻自己的信仰和誓言，选择了牺牲",
 			effects = {
 				{
 					active = true,
@@ -28,8 +28,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "她们是伟大的，她们是自由的",
 			typewriter = {
 				speed = 0.05,
@@ -41,8 +41,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "面对巨人的挑衅，大卫说：“你来攻击我，用的是刀枪和铜戟”",
 			typewriter = {
 				speed = 0.05,
@@ -54,8 +54,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "“而我的攻击，靠着万军耶和华之名！”",
 			typewriter = {
 				speed = 0.05,
@@ -67,8 +67,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "在崭新的时代，自由的力量已经觉醒",
 			typewriter = {
 				speed = 0.05,
@@ -80,8 +80,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "在崭新的时代，她们的名字令我们团结",
 			typewriter = {
 				speed = 0.05,
@@ -93,8 +93,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "在崭新的时代，我们必将夺回我们的家园！",
 			typewriter = {
 				speed = 0.05,
@@ -106,8 +106,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "我愿用我的红袍覆盖一切，愿天下向往自由之士共驻于洛林十字旗下",
 			typewriter = {
 				speed = 0.05,
@@ -119,8 +119,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "因父及子及圣神之名",
 			typewriter = {
 				speed = 0.05,
@@ -132,8 +132,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "自由鸢尾第一旗舰——黎塞留",
 			typewriter = {
@@ -157,8 +157,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -185,8 +185,8 @@ return {
 		{
 			actor = 801010,
 			side = 0,
-			say = "拦截追击这种工作对我们姐妹来说最擅长的啦，快下指示吧！",
 			dir = 1,
+			say = "拦截追击这种工作对我们姐妹来说最擅长的啦，快下指示吧！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

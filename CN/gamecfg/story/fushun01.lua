@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FUSHUN01",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"抚顺的大冒险\n\n<size=45>一　旧仓库的寻宝之旅</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
+			nameColor = "#a9f548",
+			say = "这里就是长春说的旧仓库吗，嘿嘿，一定能找到好玩的东西！",
 			dir = 1,
 			blackBg = true,
 			bgm = "story-china",
-			actor = 501020,
-			nameColor = "#a9f548",
-			say = "这里就是长春说的旧仓库吗，嘿嘿，一定能找到好玩的东西！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "呜…没经过允许就偷偷跑进来真的没关系吗…",
+			actor = 501040,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 501040,
-			nameColor = "#a9f548",
+			say = "呜…没经过允许就偷偷跑进来真的没关系吗…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -166,15 +166,15 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 501020,
-			nameColor = "#a9f548",
 			say = "咳咳…灰尘真多啊…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -199,12 +199,12 @@ return {
 			}
 		},
 		{
-			say = "咳咳咳…有好多看起来很难懂的书呢…",
+			actor = 501040,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 501040,
-			nameColor = "#a9f548",
+			say = "咳咳咳…有好多看起来很难懂的书呢…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

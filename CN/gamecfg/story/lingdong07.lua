@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG07",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 404010,
 			nameColor = "#ff0000",
 			side = 2,
+			bgm = "battle-boss-5",
 			dir = 1,
 			say = "...居然单舰追上来了吗...单单一艘轻巡洋舰居然敢正面挑战战列舰...",
-			bgm = "battle-boss-5",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

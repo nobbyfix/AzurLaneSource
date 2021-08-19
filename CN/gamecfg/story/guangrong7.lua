@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GUANGRONG7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"荣光的间奏曲\n\n<size=45>七 于她而言的荣光·下</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			bgm = "story-1",
+			say = "于她而言，作为给人们带去胜利，被大家所依赖的“光荣”是最重要的事。但——",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			say = "于她而言，作为给人们带去胜利，被大家所依赖的“光荣”是最重要的事。但——",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "没有的事。",
 			typewriter = {
 				speed = 0.05,
@@ -102,11 +102,11 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……啊……",
 			typewriter = {
 				speed = 0.05,
@@ -118,8 +118,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					number = 1
@@ -127,9 +127,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "拉过她的手，让她坐到身旁。",
 			typewriter = {
 				speed = 0.05,
@@ -137,9 +137,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "其实刚才偷偷和正在开会的大家联系过，让她们开完会就过来帮忙。",
 			typewriter = {
 				speed = 0.05,
@@ -184,7 +184,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "笨手笨脚又不小心的光荣（glorius），也能成为指挥官的光荣吗……？",
+			say = "笨手笨脚又不小心的光荣（glorious），也能成为指挥官的光荣吗……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -211,9 +211,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "光荣的声音里有一丝颤抖。",
 			typewriter = {
 				speed = 0.05,
@@ -237,9 +237,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "她轻轻地反握了一下牵着的手。肩膀上能感受到来自少女的重量。",
 			typewriter = {
 				speed = 0.05,

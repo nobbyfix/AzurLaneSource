@@ -1,4 +1,6 @@
-class("BlackWhiteGridOPCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("BlackWhiteGridOPCommand", pm.SimpleCommand)
+
+function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
 	slot3 = slot2.id
 	slot4 = slot2.activityId
@@ -16,28 +18,20 @@ class("BlackWhiteGridOPCommand", pm.SimpleCommand).execute = function (slot0, sl
 		cmd = 1,
 		activity_id = slot4,
 		arg1 = slot3,
-		arg2 = slot6
+		arg2 = slot6,
+		arg_list = {}
 	}, 11203, function (slot0)
 		if slot0.result == 0 then
-			slot1 = {}
+			slot1 = PlayerConst.addTranDrop(slot0.award_list)
 
-			for slot5, slot6 in ipairs(slot0.award_list) do
-				table.insert(slot1, slot7)
-				slot0:sendNotification(GAME.ADD_ITEM, Item.New({
-					type = slot6.type,
-					id = slot6.id,
-					count = slot6.number
-				}))
+			if not table.contains(uv0.data1_list, uv1) then
+				table.insert(uv0.data1_list, uv1)
 			end
 
-			if not table.contains(slot1.data1_list, table.contains) then
-				table.insert(slot1.data1_list, table.insert)
-			end
+			uv0.data2_list[table.indexof(uv0.data1_list, uv1)] = uv2
 
-			slot1.data2_list[table.indexof(slot1.data1_list, table.indexof)] = slot1.data2_list
-
-			slot1.data2_list:updateActivity(slot1)
-			slot0:sendNotification(GAME.BLACK_WHITE_GRID_OP_DONE, {
+			uv3:updateActivity(uv0)
+			uv4:sendNotification(GAME.BLACK_WHITE_GRID_OP_DONE, {
 				awards = slot1
 			})
 		else
@@ -46,4 +40,4 @@ class("BlackWhiteGridOPCommand", pm.SimpleCommand).execute = function (slot0, sl
 	end)
 end
 
-return class("BlackWhiteGridOPCommand", pm.SimpleCommand)
+return slot0

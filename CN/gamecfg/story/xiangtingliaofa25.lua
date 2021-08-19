@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA25",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "百慕大三角·第四舰队交战区",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "story-6",
+			say = "百慕大三角·第四舰队交战区",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -276,8 +276,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -319,8 +319,8 @@ return {
 			actor = 103160,
 			side = 2,
 			expression = 1,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "无论是我还是克利夫兰，还有蒙彼利埃也好，虽然大家平时不一定会把正义挂在嘴边，但是大家都和你一样是正义的伙伴哦。",
 			typewriter = {
 				speed = 0.05,
@@ -362,8 +362,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

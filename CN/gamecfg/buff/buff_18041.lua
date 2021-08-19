@@ -1,12 +1,12 @@
 return {
-	time = 11,
-	name = "底力爆发 +",
 	init_effect = "",
-	id = 18041,
+	name = "底力爆发 +",
+	time = 11,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 18041,
 	icon = 18040,
 	last_effect = "",
 	effect_list = {
@@ -17,11 +17,11 @@ return {
 			},
 			arg_list = {
 				check_target = "TargetSelf",
-				skill_id = 18043,
-				targetMaxHPRatio = 0.99,
 				minTargetNumber = 1,
+				targetMaxHPRatio = 0.99,
 				time = 2,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 18043
 			}
 		}
 	}

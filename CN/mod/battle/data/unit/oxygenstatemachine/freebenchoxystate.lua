@@ -1,38 +1,38 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleConst
-ys.Battle.FreeBenchOxyState = class("FreeBenchOxyState", ys.Battle.IOxyState)
-ys.Battle.FreeBenchOxyState.__name = "FreeBenchOxyState"
+slot0 = ys
+slot1 = slot0.Battle.BattleConst
+slot0.Battle.FreeBenchOxyState = class("FreeBenchOxyState", slot0.Battle.IOxyState)
+slot0.Battle.FreeBenchOxyState.__name = "FreeBenchOxyState"
+slot2 = slot0.Battle.FreeBenchOxyState
 
-ys.Battle.FreeBenchOxyState.Ctor = function (slot0)
-	slot0.super.Ctor(slot0)
+function slot2.Ctor(slot0)
+	uv0.super.Ctor(slot0)
 end
 
-ys.Battle.FreeBenchOxyState.GetWeaponUseableList = function (slot0)
+function slot2.GetWeaponUseableList(slot0)
 	return {}
 end
 
-ys.Battle.FreeBenchOxyState.GetDiveState = function (slot0)
-	return slot0.OXY_STATE.FLOAT
+function slot2.GetDiveState(slot0)
+	return uv0.OXY_STATE.FLOAT
 end
 
-ys.Battle.FreeBenchOxyState.GetBubbleFlag = function (slot0)
+function slot2.GetBubbleFlag(slot0)
 	return true
 end
 
-ys.Battle.FreeBenchOxyState.DoUpdateOxy = function (slot0, slot1)
+function slot2.DoUpdateOxy(slot0, slot1)
 	slot1:OxyRecover(true)
 end
 
-ys.Battle.FreeBenchOxyState.IsVisible = function (slot0)
+function slot2.IsVisible(slot0)
 	return false
 end
 
-ys.Battle.FreeBenchOxyState.GetBarVisible = function (slot0)
+function slot2.GetBarVisible(slot0)
 	return true
 end
 
-ys.Battle.FreeBenchOxyState.RunMode = function (slot0)
+function slot2.RunMode(slot0)
 	return true
 end
-
-return

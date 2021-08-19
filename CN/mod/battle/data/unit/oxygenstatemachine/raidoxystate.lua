@@ -1,36 +1,40 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleConst
-ys.Battle.RaidOxyState = class("RaidOxyState", ys.Battle.IOxyState)
-ys.Battle.RaidOxyState.__name = "RaidOxyState"
+slot0 = ys
+slot1 = slot0.Battle.BattleConst
+slot0.Battle.RaidOxyState = class("RaidOxyState", slot0.Battle.IOxyState)
+slot0.Battle.RaidOxyState.__name = "RaidOxyState"
+slot2 = slot0.Battle.RaidOxyState
 
-ys.Battle.RaidOxyState.Ctor = function (slot0)
-	slot0.super.Ctor(slot0)
+function slot2.Ctor(slot0)
+	uv0.super.Ctor(slot0)
 end
 
-ys.Battle.RaidOxyState.GetWeaponUseableList = function (slot0)
+function slot2.GetWeaponUseableList(slot0)
 	return {
-		slot0.OXY_STATE.DIVE
+		uv0.OXY_STATE.DIVE
 	}
 end
 
-ys.Battle.RaidOxyState.GetDiveState = function (slot0)
-	return slot0.OXY_STATE.DIVE
+function slot2.GetDiveState(slot0)
+	return uv0.OXY_STATE.DIVE
 end
 
-ys.Battle.RaidOxyState.GetBubbleFlag = function (slot0)
+function slot2.GetBubbleFlag(slot0)
 	return true
 end
 
-ys.Battle.RaidOxyState.IsVisible = function (slot0)
+function slot2.IsVisible(slot0)
 	return false
 end
 
-ys.Battle.RaidOxyState.GetBarVisible = function (slot0)
+function slot2.GetBarVisible(slot0)
 	return true
 end
 
-ys.Battle.RaidOxyState.RunMode = function (slot0)
+function slot2.RunMode(slot0)
 	return false
 end
 
-return
+function slot2.DoUpdateOxy(slot0, slot1)
+	slot1:OxyConsume()
+end

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAO7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"来自{namecode:146}的温柔\n\n<size=45>七　今后也请多多关照！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "治愈心灵的茶会也快到结束的时间了。",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "治愈心灵的茶会也快到结束的时间了。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "突然有种“自己的存在是不是有些多余？”的感觉",
 			typewriter = {
 				speed = 0.05,
@@ -56,9 +56,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "…似乎打扰了第八驱逐队四人的美妙时光？",
 			typewriter = {
 				speed = 0.05,
@@ -82,9 +82,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "一旁的{namecode:146}似乎看出了心中所想，走到了身旁。",
 			typewriter = {
 				speed = 0.05,
@@ -140,9 +140,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "大家纷纷走了过来。",
 			typewriter = {
 				speed = 0.05,
@@ -186,9 +186,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "似乎被{namecode:145}黏住了……",
 			typewriter = {
 				speed = 0.05,
@@ -196,11 +196,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 301660,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_103",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:148}",
 			say = "我会和{namecode:146}一起为指挥官准备更多好吃的点心！",
 			typewriter = {
@@ -213,11 +213,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 301660,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_103",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:148}",
 			say = "所以，请一定经常来我们的茶会哟~",
 			typewriter = {
@@ -230,9 +230,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "{namecode:147}向这边行了一个礼。",
 			typewriter = {
 				speed = 0.05,
@@ -272,9 +272,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "看着大家的笑脸，心中的疑虑完全消失了。",
 			typewriter = {
 				speed = 0.05,
@@ -282,12 +282,12 @@ return {
 			}
 		},
 		{
+			actor = 301630,
 			nameColor = "#a9f548",
-			side = 2,
 			bgName = "star_level_bg_103",
+			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 301630,
 			actorName = "{namecode:145}级四人",
 			say = "以后也请多多指教！指挥官~",
 			subActors = {

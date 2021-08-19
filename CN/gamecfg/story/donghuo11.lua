@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 102050,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-8",
 			dir = 1,
 			say = "情况不妙…虽然击破了2艘新型舰…但是还有大量的信号源在朝我们靠近",
-			bgm = "story-8",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -102,15 +102,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 3,
 				alpha = {
 					0,
@@ -252,15 +252,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.2,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.2,
 				number = 1,
 				alpha = {
 					0,
@@ -578,8 +578,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51> </size>",

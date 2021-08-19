@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JUNHEBOSS2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"穿越彼方的水线\n\n<size=45>二　幸运舰的激励</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·演习海域",
 			side = 2,
 			bgName = "bg_story_nepu2",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "cw-story",
-			say = "港区·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -69,8 +69,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不愧是这支舰队的指挥官，比任何人都要了解自己的舰队…",
 			typewriter = {
@@ -99,11 +99,11 @@ return {
 			}
 		},
 		{
+			actor = 900200,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 900200,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "是，目前正在与对方前线战力交战中。预料之内的战况——并不是呢…对方的行进速度比预想的快了许多——",
 			typewriter = {
 				speed = 0.05,
@@ -115,8 +115,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -176,8 +176,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "果然还是让前卫后撤一些比较…",
 			typewriter = {
@@ -190,11 +190,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "没必要那么做！",
 			typewriter = {
 				speed = 0.05,
@@ -206,8 +206,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -251,8 +251,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "你能自告奋勇确实是帮大忙了，不过，考虑到对方的行军速度，我们准备迎击也是需要一点时间的。",
 			typewriter = {
@@ -268,8 +268,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
 			actor = 900200,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "因此并非单纯引诱对方就好，还得想办法拖延一会时间——{namecode:22}你有什么好点子吗？",
 			typewriter = {
@@ -282,11 +282,11 @@ return {
 			}
 		},
 		{
+			actor = 301160,
 			side = 2,
 			bgName = "bg_story_nepu2",
-			dir = 1,
-			actor = 301160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哼哼！不需要使什么小手段！只要还有{namecode:22}大人的幸运加持，这点小事不成问题哒！",
 			typewriter = {
 				speed = 0.05,
@@ -298,8 +298,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -388,12 +388,12 @@ return {
 			}
 		},
 		{
+			actor = 900200,
 			side = 2,
 			bgName = "bg_story_nepu2",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900200,
-			nameColor = "#a9f548",
 			say = "……明，明白！",
 			typewriter = {
 				speed = 0.05,

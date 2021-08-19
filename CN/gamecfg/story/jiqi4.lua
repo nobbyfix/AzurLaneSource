@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"才不是小孩子！\n\n<size=45>四 意外！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区附近海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "港区附近海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,11 +78,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "啊，指挥官！",
 			typewriter = {
 				speed = 0.05,
@@ -94,8 +94,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -107,8 +107,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我们三个在举行潜泳比赛！谁输了就要请赢的人喝酸素可乐！",
 			typewriter = {
@@ -124,8 +124,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这样一来，败者就是棘鳍了呢！",
 			typewriter = {
@@ -173,8 +173,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "咦？等等，有些奇怪……棘鳍呢？",
 			typewriter = {
@@ -206,8 +206,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "不，后面没有人了……该不会她还在往前游？",
 			typewriter = {
@@ -223,8 +223,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "(小声)…难道是我故意把终点的标志弄模糊的原因——",
 			typewriter = {
@@ -256,8 +256,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "呃…指、指挥官，我们快去看看吧！",
 			typewriter = {
@@ -270,13 +270,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_nepu1",
 			say = "海域另一侧",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -301,13 +301,13 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "哇——！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -382,11 +382,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "噗哈！",
 			typewriter = {
 				speed = 0.05,
@@ -402,8 +402,8 @@ return {
 			},
 			action = {
 				{
-					y = 1000,
 					type = "move",
+					y = 1000,
 					delay = 0,
 					dur = 0.5,
 					x = 0
@@ -411,11 +411,11 @@ return {
 			}
 		},
 		{
+			actor = 307050,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "！！",
 			typewriter = {
 				speed = 0.05,
@@ -427,8 +427,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -440,8 +440,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哼哼，我是第一名！我就说她们两个怎么可能追得上……呃……奇怪？",
 			typewriter = {
@@ -470,13 +470,13 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			soundeffect = "event:/battle/plane",
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "姐姐就由我来守护！接招！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -490,8 +490,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "这个状况……难道是突发状况演习？",
 			typewriter = {
@@ -504,11 +504,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "既然这样的话……！",
 			typewriter = {
 				speed = 0.05,
@@ -526,17 +526,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 307050,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 1,
-			bgm = "story-1",
-			actor = 307050,
-			nameColor = "#a9f548",
 			say = "原来如此……是奋力向前的小鱼一不小心游过了终点呢。",
+			bgm = "story-1",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -564,8 +564,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "没，没想到我会犯这样的失误……",
 			typewriter = {
@@ -581,8 +581,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "非，非常抱歉！",
 			typewriter = {
@@ -595,8 +595,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -621,11 +621,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "对，对不起…吓到你了",
 			typewriter = {
 				speed = 0.05,
@@ -637,8 +637,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -663,10 +663,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_nepu1",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 0,
 			dir = 1,
 			actor = 108020,
 			actorName = "大青花鱼&鲦鱼",
@@ -708,8 +708,8 @@ return {
 			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "等等怎么又多了两个啊！！",
 			effects = {
 				{

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "RENQIBEIERFASITE",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"特别小故事\n\n<size=45>完美的女仆</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "……人，主人。",
 			typewriter = {
 				speed = 0.05,
@@ -43,18 +43,18 @@ return {
 			}
 		},
 		{
-			optionFlag = 1,
-			side = 2,
-			dir = 1,
 			bgmDelay = 2,
+			side = 2,
 			bgName = "bg_story_task",
+			dir = 1,
+			optionFlag = 1,
 			bgm = "story-2",
 			actor = 202120,
 			nameColor = "#a9f548",
 			say = "午安，主人。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -79,18 +79,18 @@ return {
 			}
 		},
 		{
-			optionFlag = 2,
-			side = 2,
-			dir = 1,
 			bgmDelay = 2,
+			side = 2,
 			bgName = "bg_story_task",
+			dir = 1,
+			optionFlag = 2,
 			bgm = "story-2",
 			actor = 202120,
 			nameColor = "#a9f548",
 			say = "到下午茶的时间了哦，主人。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -115,9 +115,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "睁开眼，首先看到的，就是女仆长美丽的脸庞。",
 			typewriter = {
 				speed = 0.05,
@@ -145,11 +145,11 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "不知贝尔法斯特的膝枕还让您满意吗？",
 			typewriter = {
 				speed = 0.05,
@@ -187,9 +187,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……？！",
 			dialogShake = {
 				speed = 0.09,
@@ -222,9 +222,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特的嘴角勾起一个美妙的弧度，或许，这样的对话本身令她感到满足吧。",
 			typewriter = {
 				speed = 0.05,
@@ -252,9 +252,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特忽然问出了一个奇怪的问题，难道说，今天是什么节日自己却忘了？！",
 			typewriter = {
 				speed = 0.05,
@@ -296,9 +296,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特露出了微笑",
 			typewriter = {
 				speed = 0.05,
@@ -326,9 +326,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "以不知道是开玩笑还是一本正经的语调，贝尔法斯特诉说着。",
 			typewriter = {
 				speed = 0.05,
@@ -468,9 +468,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特歪着头，陷入了思考",
 			typewriter = {
 				speed = 0.05,
@@ -482,9 +482,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "过了一会，又恢复到了她一如既往的表情——",
 			typewriter = {
 				speed = 0.05,
@@ -512,9 +512,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特起身整理了一下，开始做起了下午茶的准备",
 			typewriter = {
 				speed = 0.05,
@@ -542,9 +542,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特以优雅的动作摆好桌椅，撑起阳伞。",
 			typewriter = {
 				speed = 0.05,
@@ -572,9 +572,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特说着，像是变戏法一样端出一盘精致的蛋糕，一壶红茶，以及一套茶具。",
 			typewriter = {
 				speed = 0.05,
@@ -586,9 +586,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "夏末秋初，令人感到些许凉意的午后，被微风抚起的银色长发令人不禁感到心头一阵悸动。",
 			typewriter = {
 				speed = 0.05,
@@ -664,9 +664,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "顺着她的视线望去，在碧海的水平线那头，似乎隐约能看到同伴们的身姿",
 			typewriter = {
 				speed = 0.05,
@@ -710,9 +710,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "贝尔法斯特姿态优雅地靠了过来，微微行了个礼，拿起了茶杯。",
 			typewriter = {
 				speed = 0.05,
@@ -724,9 +724,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "以完美的女仆姿态，往杯子里倒入了红茶。",
 			typewriter = {
 				speed = 0.05,
@@ -754,12 +754,12 @@ return {
 			}
 		},
 		{
+			actor = 202120,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202120,
-			nameColor = "#a9f548",
 			say = "祈愿与您在一起的如梦似幻的时间，能够永远持续下去——",
 			typewriter = {
 				speed = 0.05,

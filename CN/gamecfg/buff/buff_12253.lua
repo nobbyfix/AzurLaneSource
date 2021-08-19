@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.035
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.04
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.045
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.05
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.055,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.055
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.06
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.065,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.065
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.07,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.07
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.075,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.075
 				}
 			}
 		}
@@ -133,21 +133,21 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.08
 				}
 			}
 		}
 	},
+	desc_get = "减伤",
 	name = "未经磨练的骑士",
 	init_effect = "",
-	id = 12253,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "小圣小海伦娜减伤",
-	desc_get = "减伤",
 	stack = 1,
-	color = "yellow",
+	id = 12253,
 	icon = 12250,
 	last_effect = "",
 	blink = {
@@ -164,8 +164,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.035,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = -0.035
 			}
 		}
 	}

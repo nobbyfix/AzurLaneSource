@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TEATIME3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -247,8 +247,8 @@ return {
 		{
 			say = "回到茶会中——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -276,8 +276,8 @@ return {
 			actor = 301111,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actorName = "{namecode:13}",
+			dir = -1,
 			say = "这个点心好好吃，是谁做的？",
 			typewriter = {
 				speed = 0.05,
@@ -367,8 +367,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "这个味道……怎么说呢，嗯，真是满溢着姐妹之情……",
 			typewriter = {
 				speed = 0.05,
@@ -383,8 +383,8 @@ return {
 			actor = 301111,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actorName = "{namecode:13}",
+			dir = -1,
 			say = "{namecode:14}，不要这么看着我啦……好啦，我知道了，我会向爱丁堡学司康饼的做法啦——虽然不一定能做得这么好吃",
 			typewriter = {
 				speed = 0.05,
@@ -399,8 +399,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "没关系，在姐姐的烘焙技艺登堂入室前，我会一直等待下去的！",
 			typewriter = {
 				speed = 0.05,
@@ -427,11 +427,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "此刻的{namecode:11}……",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -456,8 +456,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "【北纬28°东经167°】",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -468,12 +468,12 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "{namecode:11}",
 			dir = 1,
 			blackBg = true,
-			actor = 301090,
-			actorName = "{namecode:11}",
 			say = "重樱的北边也这么温暖吗……温室效应，好可怕！",
 			typewriter = {
 				speed = 0.05,

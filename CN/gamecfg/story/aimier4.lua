@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIMIER4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"自由的天使\n\n<size=45>四 “克制”的埃米尔</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -49,8 +49,8 @@ return {
 			expression = "1",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……以上就是本次任务的报告，指挥官，请过目。",
 			typewriter = {
@@ -63,9 +63,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "敦刻尔克把报告和一个装着点心的小盒子一块递了过来。",
 			typewriter = {
 				speed = 0.05,
@@ -76,8 +76,8 @@ return {
 			expression = "1",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "还有，指挥官，我做了一些点心一起带了过来，要尝尝吗？",
 			typewriter = {
@@ -96,9 +96,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……敦刻尔克每天都在做这些看着特别好吃的点心啊……",
 			typewriter = {
 				speed = 0.05,
@@ -109,8 +109,8 @@ return {
 			expression = "2",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "哎呀，埃米尔也在吗，你也过来一起吃吧？",
 			typewriter = {
@@ -142,8 +142,8 @@ return {
 			expression = "2",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "嗯…？哎呀，差点忘了，又到了埃米尔不吃甜食的时候了吗，那就等你要吃的时候，再来找我吧",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			expression = "1",
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 904010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "那我就先回去忙了，指挥官，慢用。",
 			typewriter = {
@@ -189,9 +189,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "敦刻尔克说着离开了指挥室。",
 			typewriter = {
 				speed = 0.05,
@@ -209,12 +209,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "指、指挥官，我是不会被你引诱的！",
 			typewriter = {
 				speed = 0.05,
@@ -226,12 +226,12 @@ return {
 			}
 		},
 		{
+			actor = 802010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 802010,
-			nameColor = "#a9f548",
 			say = "指挥官，你不用在意我的……",
 			typewriter = {
 				speed = 0.05,
@@ -291,9 +291,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "埃米尔罕见地苦恼了起来。",
 			typewriter = {
 				speed = 0.05,

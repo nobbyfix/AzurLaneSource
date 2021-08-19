@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"融冰\n\n<size=45>七　温度</size>",
@@ -17,8 +17,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "在那之后，过去了一段时间。",
 			typewriter = {
@@ -27,16 +27,16 @@ return {
 			}
 		},
 		{
-			bgmDelay = 2,
-			side = 2,
-			dir = 1,
 			blackBg = true,
+			side = 2,
 			bgName = "bg_night",
-			bgm = "story-2",
 			say = "港区·郊外",
+			dir = 1,
+			bgmDelay = 2,
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -57,9 +57,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "在提尔比茨的邀约下，来到了港区附近的某处高台",
 			typewriter = {
 				speed = 0.05,
@@ -99,9 +99,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "提尔比茨用手指向了天空",
 			typewriter = {
 				speed = 0.05,
@@ -291,9 +291,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "肩膀上传来了重量",
 			typewriter = {
 				speed = 0.05,
@@ -333,9 +333,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			say = "提尔比茨的表情，充满了柔和。",
 			typewriter = {
 				speed = 0.05,

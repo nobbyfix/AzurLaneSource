@@ -4,7 +4,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "bossguangxiao",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -15,7 +15,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "bossguangxiaobig",
+		top_cover_offset = false,
 		offset = {
 			-1.14,
 			0,
@@ -26,7 +26,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "bossguangxiaobig2",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -37,7 +37,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "danchuanlanghuaxiao",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -48,7 +48,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "danchuanlanghuazhong1",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -59,7 +59,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "danchuanlanghuazhong2",
+		top_cover_offset = false,
 		offset = {
 			-0.76,
 			-0.83,
@@ -70,7 +70,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "danchuanlanghuazhong3",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -81,7 +81,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "danchuanlanghuada",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -92,7 +92,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "movewave",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-2,
@@ -103,7 +103,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "gongjiBUFF",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -114,7 +114,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "feijiyingzi",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -125,7 +125,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "fangyuBUFF",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -136,7 +136,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "jiasuBUFF",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -147,7 +147,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "Darkness",
+		top_cover_offset = false,
 		offset = {
 			0,
 			3,
@@ -158,7 +158,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "ATK",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -169,7 +169,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 3,
-		id = "lansebuff",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-0.69,
@@ -180,7 +180,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "Shield",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-1.25,
@@ -191,7 +191,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "DEF",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -202,7 +202,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "SPD",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -213,7 +213,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "Heart",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -224,7 +224,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "zhuoshao",
+		top_cover_offset = false,
 		offset = {
 			-0.225,
 			0.8,
@@ -235,7 +235,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "hongsebuff",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -246,7 +246,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "caisedian",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -257,7 +257,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "lingxing",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -268,7 +268,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "Star",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -279,7 +279,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "fensebuff",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -290,7 +290,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "kulou",
+		top_cover_offset = false,
 		offset = {
 			0,
 			5,
@@ -301,7 +301,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "bigbang",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-1.25,
@@ -312,7 +312,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "gantanhao",
+		top_cover_offset = false,
 		offset = {
 			0,
 			3,
@@ -323,7 +323,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "jinengchufablue",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1.8,
@@ -334,7 +334,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "jinengchufared",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1.8,
@@ -345,7 +345,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jingyingguaibuffbaise",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -356,7 +356,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jingyingguaibuffzise",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -367,7 +367,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jingyingguaibuffhongse",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -378,7 +378,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jingyingguaibuffjinse",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -389,7 +389,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "Bossbomb",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-1.25,
@@ -400,7 +400,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "fangkongpaohuoshe2",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -411,7 +411,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "pofang",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -422,7 +422,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "shield02",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -433,7 +433,18 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "shield05",
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	shield06 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -444,7 +455,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "appearbig",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -455,7 +466,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "appearQ",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -466,7 +477,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "appearsmall",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -477,7 +488,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jineng",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-1.5,
@@ -488,7 +499,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jinengenemy",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1.5,
@@ -499,7 +510,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "Health",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -510,7 +521,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "jiguang_shouji",
+		top_cover_offset = false,
 		offset = {
 			0.49,
 			0.56,
@@ -521,7 +532,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = -1,
-		id = "bubble",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0.1,
@@ -532,7 +543,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "hit_bubble",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1.8,
@@ -543,7 +554,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "EVDdowm",
+		top_cover_offset = false,
 		offset = {
 			-0.75,
 			2.31,
@@ -554,7 +565,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "baiquan",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -565,7 +576,7 @@ pg.effect_offset = {
 		mirror = true,
 		y_scale = false,
 		container_index = 1,
-		id = "kinbuli_skill",
+		top_cover_offset = false,
 		offset = {
 			-0.12,
 			-2.41,
@@ -576,7 +587,7 @@ pg.effect_offset = {
 		mirror = true,
 		y_scale = false,
 		container_index = 1,
-		id = "ginbuli_skill",
+		top_cover_offset = false,
 		offset = {
 			-0.28,
 			-2.02,
@@ -587,7 +598,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "shock",
+		top_cover_offset = false,
 		offset = {
 			-1.5,
 			2,
@@ -598,7 +609,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = -1,
-		id = "Pojia01",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1,
@@ -609,7 +620,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "zhihuiRing02",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-0.5,
@@ -620,7 +631,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "zhihuiRing02_buff",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -631,7 +642,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "fangkongRing02",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-0.5,
@@ -642,7 +653,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "shield03",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -653,7 +664,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "shield03_1",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -664,7 +675,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 1,
-		id = "bisimai_buff",
+		top_cover_offset = false,
 		offset = {
 			0,
 			1,
@@ -675,7 +686,7 @@ pg.effect_offset = {
 		mirror = true,
 		y_scale = false,
 		container_index = 1,
-		id = "shengdiyage_chuchang",
+		top_cover_offset = false,
 		offset = {
 			0,
 			-2.8,
@@ -686,7 +697,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = true,
 		container_index = -1,
-		id = "music_AlertArea",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0,
@@ -697,7 +708,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "juguangdeng_STG",
+		top_cover_offset = false,
 		offset = {
 			-5,
 			8,
@@ -708,7 +719,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 2,
-		id = "juguangdeng_BOSS",
+		top_cover_offset = false,
 		offset = {
 			-3,
 			2,
@@ -719,7 +730,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "music_huanraoyinfu_changliangdanchuan",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0.2,
@@ -730,7 +741,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "music_huanraoyinfu_fusangdanchuan",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0.2,
@@ -741,7 +752,7 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "music_huanraoyinfu_gaoxiongdanchuan",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0.2,
@@ -752,13 +763,462 @@ pg.effect_offset = {
 		mirror = false,
 		y_scale = false,
 		container_index = 4,
-		id = "music_huanraoyinfu_yishidanchuan",
+		top_cover_offset = false,
 		offset = {
 			0,
 			0.2,
 			0
 		}
+	},
+	jiejie_dunpai = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			0,
+			4.5,
+			0
+		}
+	},
+	hanbingquyu_beiji = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			-1
+		}
+	},
+	hanbingquyu_jiansu = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			0,
+			4.5,
+			0
+		}
+	},
+	dianliu_BB = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			0.8,
+			0
+		}
+	},
+	dianliu_CA = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			0.8,
+			0
+		}
+	},
+	dianliu_CL = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			0.8,
+			0
+		}
+	},
+	dianliu_CV = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			1.2,
+			0
+		}
+	},
+	dianliu_DD = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			0.8,
+			0
+		}
+	},
+	dianliu_unknown1 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			2,
+			0
+		}
+	},
+	bullet_elf = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-1.5,
+			3.5,
+			0
+		}
+	},
+	AL_Laser01 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	AL_Laser02 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	hololive_laser01 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	hololive_laser02 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	music_laser01 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	music_laser02 = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = true,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	ganraozhe_120 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-1.1,
+			0.6,
+			0
+		}
+	},
+	ganraozhe_140 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			-0.5,
+			0.4,
+			0
+		}
+	},
+	weixi_qianghua = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			-0.5,
+			-0.6
+		}
+	},
+	weixi_heihuaSTG = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.3,
+			2.4,
+			-1.2
+		}
+	},
+	qianghuamo_kuangfeng = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			-6.86,
+			1.8,
+			-2.75
+		}
+	},
+	qianghuamo_aimierbeierding = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			12.75,
+			3.04,
+			-2.75
+		}
+	},
+	qianghuamo_aerjiliya = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.1,
+			3.37,
+			-2.75
+		}
+	},
+	qianghuamo_beiyaen = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			3.88,
+			-2.75
+		}
+	},
+	qianghuamo_bulietani = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			6.82,
+			2.5,
+			-2.75
+		}
+	},
+	fengzhijiejie = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			2.36,
+			0.68
+		}
+	},
+	fengzhijiejie_ceshizhe = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			1.7,
+			0.68
+		}
+	},
+	Hedandaji_warning = {
+		mirror = false,
+		y_scale = true,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	Shield_enemy = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.08,
+			1.24,
+			0
+		}
+	},
+	hudie_heise = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.5,
+			0,
+			0
+		}
+	},
+	hudie_hongse = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.5,
+			0,
+			0
+		}
+	},
+	juguangdeng_xingguang_STG = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-5,
+			8,
+			0
+		}
+	},
+	juguangdeng_xingguang_BOSS = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			2,
+			7.5,
+			0
+		}
+	},
+	bullet_ta02 = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-1.5,
+			3.5,
+			0
+		}
+	},
+	plane_shadow = {
+		mirror = false,
+		y_scale = false,
+		container_index = 4,
+		top_cover_offset = false,
+		offset = {
+			0,
+			-4,
+			0
+		}
+	},
+	plane_yinzhang_single = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			-0.2,
+			0,
+			0
+		}
+	},
+	plane_yinzhang_double = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0,
+			0
+		}
+	},
+	plane_yinzhang_single_xiaolong = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			-0.32,
+			0.05,
+			0
+		}
+	},
+	plane_miaozhun = {
+		mirror = false,
+		y_scale = false,
+		container_index = -1,
+		top_cover_offset = false,
+		offset = {
+			0,
+			0.3,
+			0
+		}
+	},
+	heihailunna_shadow = {
+		mirror = false,
+		y_scale = false,
+		container_index = 1,
+		top_cover_offset = false,
+		offset = {
+			0.3,
+			2.4,
+			-1.2
+		}
+	},
+	robot_yglh = {
+		mirror = false,
+		y_scale = false,
+		container_index = 2,
+		top_cover_offset = false,
+		offset = {
+			-2,
+			1.5,
+			0
+		}
 	}
 }
-
-return

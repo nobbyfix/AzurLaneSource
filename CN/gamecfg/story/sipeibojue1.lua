@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>一个人……</size>",
@@ -33,8 +33,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"港湾\n\n<size=45>一　愿望</size>",
@@ -43,15 +43,15 @@ return {
 			}
 		},
 		{
+			say = "港区·指挥室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "港区·指挥室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -88,9 +88,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "来到港区已久。借助着秘书舰的职务，逐渐融入了这里的生活",
 			typewriter = {
 				speed = 0.05,
@@ -102,9 +102,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "委托、出击、演习，还有日常中必不可少的招呼，也渐渐成为了习惯",
 			typewriter = {
 				speed = 0.05,
@@ -116,9 +116,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "或是分享喜悦，或是抱怨不快，或是倾诉烦恼，或是寻求认同…回应她人的交流，得到她人的响应，这是作为纯粹的战斗兵器时未曾有过的体验",
 			typewriter = {
 				speed = 0.05,
@@ -130,9 +130,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "那是…与她人有所交集的“温暖”。",
 			typewriter = {
 				speed = 0.05,
@@ -144,9 +144,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "我…逐渐沉浸在这种“温暖”之中。",
 			typewriter = {
 				speed = 0.05,
@@ -158,9 +158,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "这…究竟算是好事还是坏事…？",
 			typewriter = {
 				speed = 0.05,
@@ -236,9 +236,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "今天还剩下很多时间，会这样问也是自然……",
 			typewriter = {
 				speed = 0.05,
@@ -266,9 +266,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -280,9 +280,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "如此简单的问题，为什么无法立即回答呢？",
 			typewriter = {
 				speed = 0.05,
@@ -294,9 +294,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "我想做的事情……",
 			typewriter = {
 				speed = 0.05,

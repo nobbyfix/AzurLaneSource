@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 304050,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-6",
 			dir = -1,
 			say = "这里就是塞壬占领下的离岛么…明明不久前还在这里进行了演习，现在却…真是凄惨啊。",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,8 +26,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 301790,
+			dir = -1,
 			say = "没有人想到塞壬会突袭一处刚刚进行过大规模演习的地方…不过既然都发生了这种事，为什么还要---",
 			typewriter = {
 				speed = 0.05,
@@ -42,8 +42,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "好了。那件事上面一定有自己的考虑。现在重要的是眼前…",
 			typewriter = {
 				speed = 0.05,
@@ -73,8 +73,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 304050,
+			dir = -1,
 			say = "太好了！战斗能力先不论，至少在侦查上这些会飞的小东西确实有些真本事呢，呵呵……",
 			typewriter = {
 				speed = 0.05,

@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "势均力敌",
 	init_effect = "",
-	id = 241,
+	name = "势均力敌",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 241,
 	icon = 241,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.06,
-				attr = "damageRatioByAir"
+				attr = "damageRatioByAir",
+				number = -0.06
 			}
 		},
 		{
@@ -26,8 +26,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.03,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = -0.03
 			}
 		}
 	}
